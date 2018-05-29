@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+ 		<meta http-equiv="Pragma" content="no-cache" />
+  		<meta http-equiv="Expires" content="0" />
+  		<meta charset="utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<link rel="stylesheet" href="/fln/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+    	<script src="/fln/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+  <!--    <script src="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+		<link  href="/73h/__PUBLIC__/common/lib/i-radio/i-radio.css" rel="stylesheet" >
+  		<script src="/73h/__PUBLIC__/common/lib/i-radio/i-radio.js"></script>
+
+  		<script src="/73h/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+  		<script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>	
+	
+		<script type="text/javascript" src="/fln/__PUBLIC__/home/home/js/serviceDetail.js"></script>
+    	<link rel="stylesheet" type="text/css" href="/fln/__PUBLIC__/home/home/css/common.css">
+    	<link rel="stylesheet" type="text/css" href="/fln/__PUBLIC__/home/home/css/serviceDetail.css">
+		<title>服务详情</title>
+	</head>
+
+<body>
+	<div data-role="page" class="page" id="pageone">
+		<div class="header">
+			<div class="header_img">
+				<img src="/fln/__PUBLIC__/home/pic/bg/ser_det/1.png">
+				<div class="header_img_text">劳动合同（线上服务）</div>
+				<div class="header_img_price">￥15/次</div>
+				<div class="ui-grid-c header_ser">
+					<div class="ui-block-a header_ser_item">服务方式:线上服务</div>
+					<div class="ui-block-b header_ser_item sub_item"><img class="img_sub" src="/fln/__PUBLIC__/home/pic/bg/ser_det/3.png"></div>
+					<div class="ui-block-c header_ser_item "><input class="input_text num_item" type="number" name="" value="1"></div>
+					<div class="ui-block-d header_ser_item add_item"><img class="img_add" src="/fln/__PUBLIC__/home/pic/bg/ser_det/2.png"></div>
+				</div>
+			</div>
+			
+		</div>	
+	
+		<div class="container">
+			<div class="ui-grid-a container_info">
+				<div class="ui-block-a info_item">用 户 名</div>
+				<div class="ui-block-b info_item"><input class="info_item_input" type="text" name="user"></div>
+			</div>
+			<div class="ui-grid-a container_info">
+				<div class="ui-block-a info_item">手机号码</div>
+				<div class="ui-block-b info_item"><input class="info_item_input" type="number" name="user"></div>
+			</div>
+			<!-- <input class="info_item_input" type="text" name="user"> -->
+			<div class="ui-grid-b container_info filled_item_gender">
+				<div class="ui-block-a info_item">性&nbsp;&nbsp;别</div>
+				<div class="ui-block-b info_item f_ctrl"></div>
+				<div class="ui-block-c"></div>
+			</div>
+
+			<div class="container_payment"> 
+				<div class="ui-grid-b payment_title">
+					<div class="ui-block-a payment_title_item"></div>
+					<div class="ui-block-b payment_title_item">支付方式</div>
+					<div class="ui-block-c payment_title_item"></div>
+				</div>
+				<div class="ui-grid-a payment_style">
+					<div class="ui-block-b payment_style_item">
+						<img class="payment_style_img_btn" src="/fln/__PUBLIC__/home/pic/bg/ser_det/5.png">
+					</div>
+					<div class="ui-block-b payment_style_item">
+						<img src="/fln/__PUBLIC__/home/pic/bg/ser_det/4.png">
+					</div>
+					<div class="ui-block-c payment_style_item">
+						微信支付
+					</div>
+				</div>
+			</div>
+		
+			<div class="ui-grid-a container_total">
+				<div class="ui-block-a container_total_item">
+					<div class="container_total_price">合计</div>
+					<div class="container_total_price ">￥<span class="total_price">15</span></div>
+				</div>
+				<div class="ui-block-b container_total_item"><a class="container_total_item_btn confirm_item" href="/fln/tmpl/home/confirmInfo.html">确认购买</a></div>
+			</div>
+		</div>
+			
+			
+
+
+
+	</div>
+</body>
+<script type="text/javascript">
+	 var e_option = [
+      {"type":"system","selector":".container .filled_item_gender .f_ctrl","post_name":"gender"},
+      {"type":"text","title":"男","val":1},
+      {"type":"text","title":"女","val":0},
+    ];
+    
+    iRadio.initCtrl(e_option);
+
+    var parameter = {
+    	"total_price":"total_price",  // 合计价格
+    	"sub_item":"sub_item",
+    	"add_item":"add_item",
+    	"num_item":"num_item",
+    	"confirm_item":"confirm_item",
+    };
+    ServiceDetail.init(parameter);
+</script>
+</html>

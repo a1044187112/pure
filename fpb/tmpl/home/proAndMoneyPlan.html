@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="/fpb/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css"> -->
+  <script src="/fpb/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<!--   <script src="/fpb/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+
+
+  <!-- <link rel="stylesheet" type="text/css" href="/fpb/__PUBLIC__/home/home/css/common.css?xxx"> -->
+  <link rel="stylesheet" type="text/css" href="/fpb/__PUBLIC__/home/home/css/proAndMoneyPlan.css">
+  <script type="text/javascript" src="/fpb/__PUBLIC__/home/home/js/proAndMoneyPlan.js"></script>
+  <title>西秀扶贫</title>
+</head>
+
+<body >
+    <div data-role="page" id="pageone" >
+        <!-- <div class="header">
+            <div class="ui-grid-b header_img">
+              <div class="ui-block-a img_item"><img src="/fpb/__PUBLIC__/home/pic/bg/poor_work/1.png"></div>
+              <div class="ui-block-b img_item"></div>
+              <div class="ui-block-c img_item"><img src="/fpb/__PUBLIC__/home/pic/bg/poor_work/2.png"></div>
+            </div>
+            <div class="header_title">该村脱贫工作完成率</div>
+            <div class="header_per">
+              <div class="header_per_children1">64%</div> 
+              <div class="header_per_children2"></div>
+            </div>
+        </div> -->
+        
+        <div class="container">
+            <!-- <div class="poor_num">
+              <canvas id="poor_num_canvas"></canvas>
+            </div> -->
+            <!-- <div class="poor_rea">
+              <canvas id="poor_rea_canvas"></canvas>
+              <div class="poor_rea_intro">致贫原因</div>
+            </div> -->
+            <div class="year">
+              <div class="ui-grid-b year_num">
+                <div class="ui-block-a year_num_item">万元<span class="num_item">个</span></div>
+                <div class="ui-block-b year_num_item">
+                  <div class="year_num_rect"></div>扶贫资金
+                </div>
+                <div class="ui-block-c year_num_item">
+                  <div class="year_num_rect"></div>在建项目
+                </div>
+              </div>
+              <canvas id="year_canvas"></canvas>
+              <div class="year_text">五年脱贫项目及资金计划</div>
+            </div>
+
+        </div>
+
+
+
+    </div> 
+</body>
+
+<script>
+	$(document).ready(function() {
+    var parameter = [
+      
+      {"selector":{"rect_sel":"year","sel_canvas":"year_canvas"}},  // 数据表选择器
+      {"year":[{"data":{"year1":2015,"funds":100,"project":40}},
+      {"data":{"year1":2016,"funds":80,"project":32}},
+      {"data":{"year1":2017,"funds":60,"project":37}},
+      {"data":{"year1":2018,"funds":40,"project":15}},
+      {"data":{"year1":2019,"funds":20,"project":9}}]}, 
+      
+      
+    ];
+    ProAndMoneyPlan.init(parameter);  
+	});
+
+
+</script>
+
+</html>

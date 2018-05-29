@@ -1,0 +1,45 @@
+*{
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+}
+img{
+	width: 100%;
+}
+.page{
+	padding-top: 50px;
+}
+.header{
+	width: 30%;
+	margin:auto;
+}
+.text{
+	text-align: center;
+	font-size: 6vmin;
+	color: #26cacc;
+	margin-top: 20px;
+}
+.code{
+	text-align: center;
+	font-size: 7.3vmin;
+	color: #f94d0b;
+	margin-top: 10px;
+	font-weight: 600;
+}
+.note{
+	text-align: right;
+	margin-right: 6%;
+	color: #999;
+	margin-top: 15px;
+}
+.btn{
+	display: block;
+	width: 40%;
+	border-radius: 15px;
+	background-color: #26cacc;
+	margin-left: 50%;
+	color: #eee;
+	margin-top:30px;
+	text-align: center;line-height: 1.8;
+	font-size: 20px;
+}

@@ -1,0 +1,90 @@
+
+*{
+	/*font-family: "微软雅黑";*/
+}
+.page{
+	padding-top: 40px;
+}
+.pic_area{
+	margin-top: 45px;
+	padding: 0 20%;
+}
+
+.notice_area {
+	color: #48BAB8;
+	font-size: 23px;
+	margin-top: 30px;
+	padding: 0 30px;
+}
+
+.notice_area .main_notice_title{
+	text-align: center;
+}
+
+
+.notice_area .sub_notice_tsub{
+	text-align: right;
+	margin-top: 5px;
+}
+
+.action_btn_con{
+	margin-top: 30px;
+}
+
+.action_btn_con .abc_item:nth-child(1){
+	width: 25%;
+}
+
+.action_btn_con .abc_item:nth-child(2){
+	width: 50%;
+	padding: 5px 0px;
+	background-color: #15AFB9;
+	border-radius: 20px;
+	text-align: center; 
+	font-size: 22px;
+}
+.action_btn_con .abc_item:nth-child(2) .action_btn_con_submit{
+	color: #fff;
+	font-weight: 100;
+}
+.action_btn_con .abc_item:nth-child(3){
+	width: 25%;
+}
+.container_area {
+	width: 100%;
+}
+.container_area .container_area_name{
+	margin-top: 30px !important;
+	width: 90%;
+	margin: auto;
+}
+.container_area .container_area_name .container_area_name_name{
+	width: 34%;
+	text-align: right;
+	font-size: 18px;
+	color:#15AFB9;
+}
+.container_area .container_area_name:nth-child(2){
+	margin-top: 20px !important;
+}
+.container_area .container_area_name:nth-child(2) .container_area_name_name:first-child{
+	line-height: 1.7;
+}
+.container_area .container_area_name:nth-child(3){
+	margin-top: 20px !important;
+}
+.container_area .container_area_name .container_area_name_input{
+	padding-left: 10px;
+	width: 60%;
+}
+.container_area .container_area_name .container_area_name_input .input_item{
+	width: 90%;
+	line-height: 25px;
+	border-radius: 15px;
+	border: 1px solid #999;
+	padding-left: 15px;
+	outline: none;
+}
+::-webkit-inner-spin-button {
+     -webkit-appearance: none;    /* 上下小箭头按钮，你丫太丑了，滚粗，负分 */
+}

@@ -1,0 +1,87 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+	list-style: none;
+}
+img{
+	width: 100%;
+}
+.area{
+	margin-left: 2px;
+	border-left: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	padding-bottom: 6%;
+}
+.area .title{
+	width: 50%;
+	font-size: 18px;
+	border-bottom: 1px solid #aaa;
+	line-height: 1.8;
+	padding-top: 8px;
+	padding-left: 5%;
+}
+.area .area_item{
+	padding-top:7%;
+	color: #666;
+}
+.area .area_item .a_i_item:first-child{
+	width: 22%;
+
+}
+.area .area_item .a_i_item .a_i_item_img{
+	margin:auto;
+	width: 25px;
+	height: 25px;
+}
+.area .area_item .a_i_item:nth-child(2){
+	width: 23%;
+	/*text-align: right;*/
+	font-size: 14px;
+	line-height: 1.8;
+}
+.area .area_item .a_i_item:nth-child(3){
+	width: 50%;
+	/*text-align: right;*/
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+.con{
+	margin-left: 2px;
+	border:1px solid #bbb;
+	border-right: none;
+	margin-top: 5%;
+	padding-left: 8%;
+	padding-top: 6%;
+	padding-bottom: 8%;
+	color: #777;
+	font-size: 13px;
+	line-height: 2.3;
+}
+.con .con_item .c_i_value{
+	width: 28%;
+	
+}
+.con .con_item .c_i_key{
+	width: 67%;
+}
+
+
+
+.is_bth{
+	padding: 25px 0 30px 0;
+	width: 100%;
+}
+.is_bth .i_b_btn{
+	width: 45%;
+	display: block;
+	padding: 8px;
+	font-size: #000;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #f5e827;
+	margin:auto;
+	color: #000;
+}

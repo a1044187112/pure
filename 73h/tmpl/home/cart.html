@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+    <script src="/73h/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+    <!--  <script src="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+
+
+    <script type="text/javascript" src="/73h/__PUBLIC__/common/js/jquery.touchSwipe.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/home/home/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/home/home/css/cart.css">
+
+    <script src="/73h/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+    <script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+    <!-- <script type="text/javascript" src="/73h/__PUBLIC__/home/home/js/cart.js"></script> -->
+    <script type="text/javascript" src="/73h/__PUBLIC__/home/home/js/cart2.js"></script>
+    <script type="text/javascript" src="/73h/__PUBLIC__/home/home/js/failSubDataPopups.js"></script>
+  <title>我的药箱</title>
+</head>
+<body>
+  <div class="page" id="pageone">
+    
+    <div class="mdc_intro_list_area">
+      <div class="ui-grid-b mdc_intro_con">
+        <div class="ui-block-a mdi_ic_item mdi_ic_item_first">
+          <img class="mdi_sel_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/10.png">
+        </div>
+        <div class="ui-block-b mdi_ic_item">
+          <img src="/73h/__PUBLIC__/home/pic/test/medicine_list/1.png">
+        </div>
+        <div class="ui-block-c  mdi_ic_item mdi_info">
+          <div class="mdi_info_item">阿司匹林</div>
+          <div class="mdi_info_item">消炎止痛感冒
+          </div>
+          <div class="mdi_info_item mdi_pricebox">
+            <div class="ui-grid-b ">
+              <div class="ui-block-a mdii_item">
+                  <span class="sym">
+                    <span class="price_unit_sym">
+                      <span class="pus_item pus_up_tri1"></span>
+                      <span class="pus_item pus_up_tri2"></span>
+                      <span class="pus_item pus_hline1"></span>
+                      <span class="pus_item pus_hline2"></span>
+                      <span class="pus_item pus_vline"></span>
+                    </span>
+                  </span>               
+              </div>
+              <div class="ui-block-b mdii_item mdi_price_info">
+                  <span class="pi_value">20</span> 元/盒                
+              </div>
+              <div class="ui-block-c mdii_item mdii_counter">
+                <div class="ui-grid-b">
+                  <div class="ui-block-a mdiic_item mi_dec_btn">
+                    <div class="mi_subt_btn"></div>
+                  </div>
+                  <div class="ui-block-b mdiic_item">
+                  <form class="num_form">
+                    <input class="mdiic_item_item" maxlength="5" value="1" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+                      <div class="input_submit"
+                          data-url="/73h/php/buyNow1_ajax.php"
+                          data-data_src_type="self"
+                          data-fields="id,num"
+                          data-num="1"
+                        ></div>
+                  </form>
+                  </div>
+                  <div class="ui-block-c mdiic_item mi_inc_btn bi_clear_btn"
+                      data-url="/73h/php/buyNow1_ajax.php"
+                        data-data-src-type="form"
+                        data-form_slcr=".num_form"
+                  >
+                    <div class="mi_add_btn_vline"></div>
+                    <div class="mi_add_btn_hline"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-grid-d mdi_ic_item mdi_delete" style="display: none;">
+          <img class="mdi_del_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/3.png">
+        </div>
+      </div>
+      <div class="ui-grid-b mdc_intro_con">
+        <div class="ui-block-a mdi_ic_item mdi_ic_item_first">
+          <img class="mdi_sel_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/10.png">
+        </div>
+        <div class="ui-block-b mdi_ic_item">
+          <img src="/73h/__PUBLIC__/home/pic/test/medicine_list/1.png">
+        </div>
+        <div class="ui-block-c  mdi_ic_item mdi_info">
+          <div class="mdi_info_item">阿司匹林</div>
+          <div class="mdi_info_item">消炎止痛感冒
+          </div>
+          <div class="mdi_info_item mdi_pricebox">
+            <div class="ui-grid-b ">
+              <div class="ui-block-a mdii_item">
+                  <span class="sym">
+                    <span class="price_unit_sym">
+                      <span class="pus_item pus_up_tri1"></span>
+                      <span class="pus_item pus_up_tri2"></span>
+                      <span class="pus_item pus_hline1"></span>
+                      <span class="pus_item pus_hline2"></span>
+                      <span class="pus_item pus_vline"></span>
+                    </span>
+                  </span>               
+              </div>
+              <div class="ui-block-b mdii_item mdi_price_info">
+                  <span class="pi_value">20</span> 元/盒                
+              </div>
+              <div class="ui-block-c mdii_item mdii_counter">
+                <div class="ui-grid-b">
+                  <div class="ui-block-a mdiic_item mi_dec_btn">
+                    <div class="mi_subt_btn"></div>
+                  </div>
+                  <div class="ui-block-b mdiic_item">
+                  <form class="num_form">
+                    <input class="mdiic_item_item" maxlength="5" value="1" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+                      <div class="input_submit"
+                          data-url="/73h/php/buyNow1_ajax.php"
+                          data-data_src_type="self"
+                          data-fields="num"
+                          data-num="1"
+                        ></div>
+                  </form>
+                  </div>
+                  <div class="ui-block-c mdiic_item mi_inc_btn bi_clear_btn"
+                      data-url="/73h/php/buyNow1_ajax.php"
+                        data-data-src-type="form"
+                        data-form_slcr=".num_form"
+                  >
+                    <div class="mi_add_btn_vline"></div>
+                    <div class="mi_add_btn_hline"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-grid-d mdi_ic_item mdi_delete" style="display: none;">
+          <img class="mdi_del_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/3.png">
+        </div>
+      </div>
+      <div class="ui-grid-b mdc_intro_con">
+        <div class="ui-block-a mdi_ic_item mdi_ic_item_first">
+          <img class="mdi_sel_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/10.png">
+        </div>
+        <div class="ui-block-b mdi_ic_item">
+          <img src="/73h/__PUBLIC__/home/pic/test/medicine_list/1.png">
+        </div>
+        <div class="ui-block-c  mdi_ic_item mdi_info">
+          <div class="mdi_info_item">阿司匹林</div>
+          <div class="mdi_info_item">消炎止痛感冒
+          </div>
+          <div class="mdi_info_item mdi_pricebox">
+            <div class="ui-grid-b ">
+              <div class="ui-block-a mdii_item">
+                  <span class="sym">
+                    <span class="price_unit_sym">
+                      <span class="pus_item pus_up_tri1"></span>
+                      <span class="pus_item pus_up_tri2"></span>
+                      <span class="pus_item pus_hline1"></span>
+                      <span class="pus_item pus_hline2"></span>
+                      <span class="pus_item pus_vline"></span>
+                    </span>
+                  </span>               
+              </div>
+              <div class="ui-block-b mdii_item mdi_price_info">
+                  <span class="pi_value">20</span> 元/盒                
+              </div>
+              <div class="ui-block-c mdii_item mdii_counter">
+                <div class="ui-grid-b">
+                  <div class="ui-block-a mdiic_item mi_dec_btn">
+                    <div class="mi_subt_btn"></div>
+                  </div>
+                  <div class="ui-block-b mdiic_item">
+                  <form class="num_form">
+                    <input class="mdiic_item_item" maxlength="5" value="1" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+                      <div class="input_submit"
+                          data-url="/73h/php/buyNow1_ajax.php"
+                          data-data_src_type="self"
+                          data-fields="num"
+                          data-num="1"
+                        ></div>
+                  </form>
+                  </div>
+                  <div class="ui-block-c mdiic_item mi_inc_btn bi_clear_btn"
+                      data-url="/73h/php/buyNow1_ajax.php"
+                        data-data-src-type="form"
+                        data-form_slcr=".num_form"
+                  >
+                    <div class="mi_add_btn_vline"></div>
+                    <div class="mi_add_btn_hline"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-grid-d mdi_ic_item mdi_delete" style="display: none;">
+          <img class="mdi_del_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/3.png">
+        </div>
+      </div>
+      <div class="ui-grid-b mdc_intro_con">
+        <div class="ui-block-a mdi_ic_item mdi_ic_item_first">
+          <img class="mdi_sel_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/10.png">
+        </div>
+        <div class="ui-block-b mdi_ic_item">
+          <img src="/73h/__PUBLIC__/home/pic/test/medicine_list/1.png">
+        </div>
+        <div class="ui-block-c  mdi_ic_item mdi_info">
+          <div class="mdi_info_item">阿司匹林</div>
+          <div class="mdi_info_item">消炎止痛感冒
+          </div>
+          <div class="mdi_info_item mdi_pricebox">
+            <div class="ui-grid-b ">
+              <div class="ui-block-a mdii_item">
+                  <span class="sym">
+                    <span class="price_unit_sym">
+                      <span class="pus_item pus_up_tri1"></span>
+                      <span class="pus_item pus_up_tri2"></span>
+                      <span class="pus_item pus_hline1"></span>
+                      <span class="pus_item pus_hline2"></span>
+                      <span class="pus_item pus_vline"></span>
+                    </span>
+                  </span>               
+              </div>
+              <div class="ui-block-b mdii_item mdi_price_info">
+                  <span class="pi_value">20</span> 元/盒                
+              </div>
+              <div class="ui-block-c mdii_item mdii_counter">
+                <div class="ui-grid-b">
+                  <div class="ui-block-a mdiic_item mi_dec_btn">
+                    <div class="mi_subt_btn"></div>
+                  </div>
+                  <div class="ui-block-b mdiic_item">
+                  <form class="num_form">
+                    <input class="mdiic_item_item" maxlength="5" value="1" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+                      <div class="input_submit"
+                          data-url="/73h/php/buyNow1_ajax.php"
+                          data-data_src_type="self"
+                          data-fields="num"
+                          data-num="1"
+                        ></div>
+                  </form>
+                  </div>
+                  <div class="ui-block-c mdiic_item mi_inc_btn bi_clear_btn"
+                      data-url="/73h/php/buyNow1_ajax.php"
+                        data-data-src-type="form"
+                        data-form_slcr=".num_form"
+                  >
+                    <div class="mi_add_btn_vline"></div>
+                    <div class="mi_add_btn_hline"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-grid-d mdi_ic_item mdi_delete" style="display: none;">
+          <img class="mdi_del_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/3.png">
+        </div>
+      </div>
+      <div class="ui-grid-b mdc_intro_con">
+        <div class="ui-block-a mdi_ic_item mdi_ic_item_first">
+          <img class="mdi_sel_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/10.png">
+        </div>
+        <div class="ui-block-b mdi_ic_item">
+          <img src="/73h/__PUBLIC__/home/pic/test/medicine_list/1.png">
+        </div>
+        <div class="ui-block-c  mdi_ic_item mdi_info">
+          <div class="mdi_info_item">阿司匹林</div>
+          <div class="mdi_info_item">消炎止痛感冒
+          </div>
+          <div class="mdi_info_item mdi_pricebox">
+            <div class="ui-grid-b ">
+              <div class="ui-block-a mdii_item">
+                  <span class="sym">
+                    <span class="price_unit_sym">
+                      <span class="pus_item pus_up_tri1"></span>
+                      <span class="pus_item pus_up_tri2"></span>
+                      <span class="pus_item pus_hline1"></span>
+                      <span class="pus_item pus_hline2"></span>
+                      <span class="pus_item pus_vline"></span>
+                    </span>
+                  </span>               
+              </div>
+              <div class="ui-block-b mdii_item mdi_price_info">
+                  <span class="pi_value">20</span> 元/盒                
+              </div>
+              <div class="ui-block-c mdii_item mdii_counter">
+                <div class="ui-grid-b">
+                  <div class="ui-block-a mdiic_item mi_dec_btn">
+                    <div class="mi_subt_btn"></div>
+                  </div>
+                  <div class="ui-block-b mdiic_item">
+                  <form class="num_form">
+                    <input class="mdiic_item_item" maxlength="5" value="1" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+                      <div class="input_submit"
+                          data-url="/73h/php/buyNow1_ajax.php"
+                          data-data_src_type="self"
+                          data-fields="num"
+                          data-num="1"
+                        ></div>
+                  </form>
+                  </div>
+                  <div class="ui-block-c mdiic_item mi_inc_btn bi_clear_btn"
+                      data-url="/73h/php/buyNow1_ajax.php"
+                        data-data-src-type="form"
+                        data-form_slcr=".num_form"
+                  >
+                    <div class="mi_add_btn_vline"></div>
+                    <div class="mi_add_btn_hline"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-grid-d mdi_ic_item mdi_delete" style="display: none;">
+          <img class="mdi_del_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/3.png">
+        </div>
+      </div>
+      <div class="ui-grid-b mdc_intro_con">
+        <div class="ui-block-a mdi_ic_item mdi_ic_item_first">
+          <img class="mdi_sel_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/10.png">
+        </div>
+        <div class="ui-block-b mdi_ic_item">
+          <img src="/73h/__PUBLIC__/home/pic/test/medicine_list/1.png">
+        </div>
+        <div class="ui-block-c  mdi_ic_item mdi_info">
+          <div class="mdi_info_item">阿司匹林</div>
+          <div class="mdi_info_item">消炎止痛感冒
+          </div>
+          <div class="mdi_info_item mdi_pricebox">
+            <div class="ui-grid-b ">
+              <div class="ui-block-a mdii_item">
+                  <span class="sym">
+                    <span class="price_unit_sym">
+                      <span class="pus_item pus_up_tri1"></span>
+                      <span class="pus_item pus_up_tri2"></span>
+                      <span class="pus_item pus_hline1"></span>
+                      <span class="pus_item pus_hline2"></span>
+                      <span class="pus_item pus_vline"></span>
+                    </span>
+                  </span>               
+              </div>
+              <div class="ui-block-b mdii_item mdi_price_info">
+                  <span class="pi_value">20</span> 元/盒                
+              </div>
+              <div class="ui-block-c mdii_item mdii_counter">
+                <div class="ui-grid-b">
+                  <div class="ui-block-a mdiic_item mi_dec_btn">
+                    <div class="mi_subt_btn"></div>
+                  </div>
+                  <div class="ui-block-b mdiic_item">
+                  <form class="num_form">
+                    <input class="mdiic_item_item" maxlength="5" value="1" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+                      <div class="input_submit"
+                          data-url="/73h/php/buyNow1_ajax.php"
+                          data-data_src_type="self"
+                          data-fields="num"
+                          data-num="1"
+                        ></div>
+                  </form>
+                  </div>
+                  <div class="ui-block-c mdiic_item mi_inc_btn bi_clear_btn"
+                      data-url="/73h/php/buyNow1_ajax.php"
+                        data-data-src-type="form"
+                        data-form_slcr=".num_form"
+                  >
+                    <div class="mi_add_btn_vline"></div>
+                    <div class="mi_add_btn_hline"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-grid-d mdi_ic_item mdi_delete" style="display: none;">
+          <img class="mdi_del_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/3.png">
+        </div>
+      </div>
+      <div class="ui-grid-b mdc_intro_con">
+        <div class="ui-block-a mdi_ic_item mdi_ic_item_first">
+          <img class="mdi_sel_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/10.png">
+        </div>
+        <div class="ui-block-b mdi_ic_item">
+          <img src="/73h/__PUBLIC__/home/pic/test/medicine_list/1.png">
+        </div>
+        <div class="ui-block-c  mdi_ic_item mdi_info">
+          <div class="mdi_info_item">阿司匹林</div>
+          <div class="mdi_info_item">消炎止痛感冒
+          </div>
+          <div class="mdi_info_item mdi_pricebox">
+            <div class="ui-grid-b ">
+              <div class="ui-block-a mdii_item">
+                  <span class="sym">
+                    <span class="price_unit_sym">
+                      <span class="pus_item pus_up_tri1"></span>
+                      <span class="pus_item pus_up_tri2"></span>
+                      <span class="pus_item pus_hline1"></span>
+                      <span class="pus_item pus_hline2"></span>
+                      <span class="pus_item pus_vline"></span>
+                    </span>
+                  </span>               
+              </div>
+              <div class="ui-block-b mdii_item mdi_price_info">
+                  <span class="pi_value">20</span> 元/盒                
+              </div>
+              <div class="ui-block-c mdii_item mdii_counter">
+                <div class="ui-grid-b">
+                  <div class="ui-block-a mdiic_item mi_dec_btn">
+                    <div class="mi_subt_btn"></div>
+                  </div>
+                  <div class="ui-block-b mdiic_item">
+                  <form class="num_form">
+                    <input class="mdiic_item_item" maxlength="5" value="1" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+                      <div class="input_submit"
+                          data-url="/73h/php/buyNow1_ajax.php"
+                          data-data_src_type="self"
+                          data-fields="num"
+                          data-num="1"
+                        ></div>
+                  </form>
+                  </div>
+                  <div class="ui-block-c mdiic_item mi_inc_btn bi_clear_btn"
+                      data-url="/73h/php/buyNow1_ajax.php"
+                        data-data-src-type="form"
+                        data-form_slcr=".num_form"
+                  >
+                    <div class="mi_add_btn_vline"></div>
+                    <div class="mi_add_btn_hline"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-grid-d mdi_ic_item mdi_delete" style="display: none;">
+          <img class="mdi_del_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/3.png">
+        </div>
+      </div>
+
+      
+    </div>
+
+  
+    
+
+
+
+<!-- style="visibility: hidden; " -->
+      <!---尾部-->
+        <div class="hold_area" > 
+          <div class="ui-grid-a"> 
+               <div class="ui-grid-c" >
+                    <div class="ui-block-a btn_item chk_all" >
+                      <img class="mdi_sel_btn" src="/73h/__PUBLIC__/home/pic/bg/cart/10.png">                   
+                    </div>
+                    <div class="ui-block-b btn_item chk_all">
+                      
+                    </div>
+                    <div class="ui-block-c btn_item">
+                        <span class="bi_title">合计:</span>
+                        <!-- <span class="bi_value">4</span> -->
+                        <!-- <span class="bi_sym">元</span> -->
+                    </div>  
+                    <div class="ui-block-d btn_item">
+                      <div class="bi_clear_btn">
+                        结算(<span class="bi_total_cnt">3</span>)
+                      </div>
+                    </div>  
+              </div>
+                 
+          </div>
+        </div>
+      
+        <div class="i_footer_nav"  >
+          <form class="bil_form">
+          <div class="ui-grid-a"> 
+             <div class="ui-grid-c total_area" >
+                  <div class="ui-block-a btn_item chk_all" >
+                    <img src="/73h/__PUBLIC__/home/pic/bg/cart/10.png">                   
+                  </div>
+                  <div class="ui-block-b btn_item chk_all">
+                    全选
+                  </div>
+                  <div class="ui-block-c btn_item ">
+                      <span class="bi_title">合计:</span>
+                      <input type="text" class="bi_value total_cptl" name="price" size="3" maxlength='4' value="0" readonly="readonly"><span class="bi_sym">元</span>
+                  </div>  
+                  <div class="ui-block-d btn_item i_form_ctrl">
+                    <div class="bi_clear_btn i_title bill_shop_btn"
+                      data-url="/73h/php/ajax_test.php?get_id=6"
+                      data-data-src-type="form"
+                      data-form_slcr=".bil_form">
+                      结算(<input type="text" class="total_cnt" name="number" size="2" maxlength='3' value="0" readonly="readonly">)
+                    </div>
+                  </div>  
+            </div>
+          </form> 
+        </div>
+        
+      <!---尾部结束-->  
+        
+      
+  </div>
+
+</body>
+
+<script > 
+  $(document).ready(function(){
+    var parameter = {
+            "img_url":"/73h/__PUBLIC__/home/pic/bg/cart/", // 图片路径
+            "selector":".mdc_intro_list_area",  //主选择器
+            "sub_item_el_class_name":"mdc_intro_con", //子条目元素类名
+            "sub_item_col_class_name":"mdi_ic_item",  //子条目元素列类名
+            "sub_item_chg_col_width":"10%",   //变动的列的宽度
+            "sel_btn_cname":"mdi_sel_btn",   //变动的列的宽度
+            "item_cnt_dec_btn_cname":"mi_dec_btn",   //变动的列的宽度
+            "item_cnt_inc_btn_cname":"mi_inc_btn",   //变动的列的宽度
+            "item_been_sel_cname":"mdi_item_been_sel",   //变动的列的宽度
+            "item_conter_in_cname":"mdii_counter",   //列计数器
+            "item_price_info_cname":"mdi_price_info",   //价格信息框
+            "all_been_chk_cname":"all_been_chk",  
+            "check_all":"chk_all",
+            "pi_value":"pi_value",
+            "total_number":"total_cnt",
+            "total_price":"total_cptl",
+            "radio_comm_number":".mdiic_item [maxlength='5']",
+            "mdi_ic_item_first":"mdi_ic_item_first", // 单选按钮滑动隐藏
+            "mdi_delete":"mdi_delete",// 删除按钮
+            "bi_clear_btn":"bill_shop_btn", // 结算按钮点击事件
+            "input_submit":"input_submit",// 失去焦点后数据提交按钮
+        };
+        
+    Cart2.init(parameter);
+    
+
+    // CtrlElAction.isSimPost=true;
+    // HomeCtrlElAction.btnFunc.bindSbmtBtnClick(".bi_clear_btn");
+  });
+  
+
+</script>
+</html>

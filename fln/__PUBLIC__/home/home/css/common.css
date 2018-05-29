@@ -1,0 +1,41 @@
+img{
+	width: 100%;
+	padding:0px;
+	margin:0px;
+}
+
+.footer_nav{
+	background-color: #6695e3;
+	width: 100%;
+}
+.footer_nav>div{
+	padding:5px 32px 0px 32px;
+}
+.footer_hidden{
+	visibility: hidden;
+}
+.footer_show{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	z-index:500;
+}
+.a_btn{
+	display: block;
+	width: 43%;
+	position: fixed;
+	bottom: 8%;
+	left: 42%;
+	z-index: 1000;
+	display: none;
+}
+.a_btn .img_btn{
+	position: relative;
+}
+#mycanvas{
+	position: absolute;
+	/*background-color: white;*/
+	right: 0;
+	top: 0;
+	z-index: 9999;
+}

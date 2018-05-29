@@ -1,0 +1,70 @@
+img{
+	width: 100%;
+}
+.done_img{
+	/*margin-top: 80px;*/
+	background-color: #3dbabc;
+	padding-top: 30px;
+}
+
+.done_img .img_con{
+	padding: 0 20px;
+}
+
+.done_notice{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 30px;
+	color: #51B7B0;
+}
+
+.done_img .done_img_item:nth-child(1){
+	width: 40%;
+	padding-left: 60px;
+	padding-bottom: 20px;
+}
+
+.done_img .done_img_item:nth-child(2){
+	width: 60%;
+	color: #ffffff;
+	font-size: 22px;
+	padding-top: 20px;
+	line-height: 2.5;
+}
+
+
+.booking_sub_btn_area{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 20px 0px;
+	width: 90%;
+	margin:40px auto;
+}
+.booking_sub_btn_area .dis_area_item:first-child{
+	width: 45%;
+	margin-right: 10px;
+}
+.booking_sub_btn_area .booking_sub_btn{
+	border-radius: 20px;
+	background-color: #14AFB8;
+	color: #ffffff;
+	text-align: center;
+}
+
+.booking_sub_btn_area .booking_sub_btn .bst_text{
+	font-size: 20px;
+	padding: 5px 10px;
+	margin:auto;
+}
+.booking_sub_btn_area .dis_area_item:nth-child(2){
+	width: 45%;
+	margin-left: 5%;	
+}
+.booking_sub_btn_area .dis_area_item:nth-child(2) .dis_area_item_btn{
+	border-radius: 20px;
+	border:1px solid #3dbabc;
+	font-size: 20px;
+	padding: 5px 10px;
+	text-align: center;
+	color: #3dbabc;
+}

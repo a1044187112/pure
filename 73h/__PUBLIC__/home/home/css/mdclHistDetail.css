@@ -1,0 +1,91 @@
+
+.mdc_hist_intro_area{
+	padding: 20px;
+	font-size: 20px;
+}
+
+.mdc_hist_intro_area .mhi_item{
+	margin-top: 5px;
+}
+
+.mdc_hist_intro_area .mhi_item .mhi_info{
+	color: #BBBBBB;
+}
+
+
+
+/*病历详情*/
+.mdc_detail_area{
+	padding: 20px;
+	font-size: 20px;
+
+}
+
+.mdc_detail_area .mda_con{
+
+}
+
+.mdc_detail_area .mda_con .mdai_title{
+
+}
+
+.mdc_detail_area .mda_con .mdai_title .mdat_item:nth-child(1){
+	width: 30%;
+	text-align: right;
+}
+
+.mdc_detail_area .mda_con .mdai_title .mdat_item:nth-child(2){
+	width: 70%;
+}
+
+.mdc_detail_area .mda_con .mdai_info{
+
+}
+
+.mdc_detail_area .mda_con .mdai_info .mdaii_item:nth-child(1){
+	width: 30%;
+}
+
+.mdc_detail_area .mda_con .mdai_info .mdaii_item:nth-child(2){
+	width: 70%;
+	text-align: left;
+	text-align: justify;
+	color: #BBBBBB;
+}
+
+
+.action_btn_con{
+	margin-top: 30px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.action_btn_con .abc_item:nth-child(1){
+	width: 10%;
+}
+
+.action_btn_con .abc_item:nth-child(2){
+	width: 80%;
+	padding: 5px 15px;
+	/*background-color: #15AFB9;*/
+	border-radius: 20px;
+	text-align: center;
+	font-size: 25px;
+	/*font-family: "微软雅黑" !important;*/
+	
+}
+.action_btn_con a{
+	padding: 10px 0px 10px 0px;
+	display: block;
+	width: 80%;
+	margin: auto;
+	color: #fff !important;
+	/*font-weight: normal;*/
+	font-weight: 100;
+}
+.action_btn_con .abc_item:nth-child(3){
+	width: 10%;
+}
+
+
+/*病历详情结束*/

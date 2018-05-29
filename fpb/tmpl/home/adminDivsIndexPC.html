@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<link rel="stylesheet" href="/fpb/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+  	<script src="/fpb/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<!--   	<script src="/fpb/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+
+  	<script src="/fpb/__PUBLIC__/common/lib/action-popup/action-popup.js"></script>
+  	<link rel="stylesheet" href="/fpb/__PUBLIC__/common/lib/action-popup/action-popup.css?a=333">
+
+
+  	<link rel="stylesheet" type="text/css" href="/fpb/__PUBLIC__/home/home/css/common.css">
+  	<link rel="stylesheet" type="text/css" href="/fpb/__PUBLIC__/home/home/css/adminDivsIndex.css">
+
+	<title>某行政区域首页</title>
+</head>
+<body>
+    
+	<div class="page" id="pageone" style=" margin-top:-20px;">
+  
+
+ 
+
+    <div class="type_list_area">
+      <a href="/fpb/tmpl/home/DynamicWork.html" class="ui-grid-solo type_con">
+        <div class="ui-block-a tc_item tc_img">
+            <img src="/fpb/__PUBLIC__/home/pic/test/\work_news_list/1.png">
+        </div>
+        <div class="tc_title">
+          扶贫工作 扶贫工作开展
+        </div>
+     </a>
+
+     <a href="/fpb/tmpl/home/DynamicWork.html" class="ui-grid-solo type_con">
+        <div class="ui-block-a tc_item tc_img">
+            <img src="/fpb/__PUBLIC__/home/pic/test/\work_news_list/1.png">
+        </div>
+        <div class="tc_title">
+          扶贫工作 扶贫工作开展
+        </div>
+     </a>
+
+
+     <a href="/fpb/tmpl/home/DynamicWork.html" class="ui-grid-solo type_con">
+        <div class="ui-block-a tc_item tc_img">
+            <img src="/fpb/__PUBLIC__/home/pic/test/\work_news_list/1.png">
+        </div>
+        <div class="tc_title">
+          扶贫工作 扶贫工作开展
+        </div>
+     </a>
+
+
+     <a href="/fpb/tmpl/home/DynamicWork.html" class="ui-grid-solo type_con">
+        <div class="ui-block-a tc_item tc_img">
+            <img src="/fpb/__PUBLIC__/home/pic/test/\work_news_list/1.png">
+        </div>
+        <div class="tc_title">
+          扶贫工作 扶贫工作开展
+        </div>
+     </a>
+    </div>
+  </div>
+
+</body>
+<script>
+  $(document).ready(function() {
+    var con_width = $("body").width();
+    $(".type_con .tc_title").each(function(index, el) {
+      $(this).attr("style","width:"+con_width+"px;");
+    });
+  });  
+
+</script>
+</html>

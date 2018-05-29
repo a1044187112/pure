@@ -1,0 +1,89 @@
+body{
+	background-color: #E5E5E5;
+}
+
+.info_filled_area{
+	margin-bottom: 150px;
+}
+
+.info_filled_area .filled_item_con{
+	margin-top: 20px;
+	padding: 0 10px;
+}
+
+.info_filled_area .filled_item_con_i{
+	padding: 0 20px;
+}
+
+.info_filled_area .filled_item_con .item_ip{
+	border:1px solid #C7C7C7;
+	background-color: #ffffff;
+	border-radius: 5px;
+	padding: 5px;
+	color: #C7C7C7;
+}
+
+.info_filled_area .filled_item_con .fcon_item:nth-child(1){
+	width: 20%;
+	text-align: center;
+	padding-top: 4px;
+	font-size: 20px;
+}
+
+.info_filled_area .filled_item_con .fcon_item:nth-child(2){
+	width: 60%;
+	padding-top: 3px;
+}
+
+.info_filled_area .filled_item_con .fcon_item:nth-child(3){
+	width: 20%;
+	padding: 0 5%;
+}
+
+.info_filled_area .filled_item_con .item_ip input{
+	width: 100%; 
+	//border: 1px solid #B2B2B2;
+	outline: 0;
+	display: block;
+	margin: 0px;
+	padding: 6px 0;
+	border: 0px;
+	min-width: 0px;
+	font-family: "黑体";
+	color: #C7C7C7;
+}
+
+.filled_item_gender .f_ctrl{
+	padding-left: 20px;
+}
+
+.filled_item_con .ta_parent{
+	padding-right: 22px;
+}
+
+.info_filled_area textarea{
+	border-radius: 7px;
+    padding: 5px 10px;
+    border: 1px solid #B2B2B2;
+    font-size: 12px;
+    text-align: justify;
+    outline: 0;
+    width: 100%;
+	font-family: "黑体";
+}
+
+
+
+.submit_btn_con{
+	margin-top: 20px;
+	padding:0 20%;
+}
+
+.submit_btn_con .submit_btn{
+	font-size: 25px;
+	padding: 5px 0;
+	border-radius: 5px;
+	background-color: #11A9DB;
+	color: #ffffff;
+	text-align: center;
+}

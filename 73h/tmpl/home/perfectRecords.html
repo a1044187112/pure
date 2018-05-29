@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<link rel="stylesheet" href="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+  	<script src="/73h/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+	<!--   	<script src="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+
+    <script src="/73h/__PUBLIC__/common/lib/time_sel/js/mobiscroll_002.js" ></script>
+    <script src="/73h/__PUBLIC__/common/lib/time_sel/js/mobiscroll_004.js" ></script>
+    <link href="/73h/__PUBLIC__/common/lib/time_sel/css/mobiscroll_002.css" rel="stylesheet" type="text/css">
+    <link href="/73h/__PUBLIC__/common/lib/time_sel/css/mobiscroll.css" rel="stylesheet" type="text/css">
+    <script src="/73h/__PUBLIC__/common/lib/time_sel/js/mobiscroll.js" ></script>
+    <script src="/73h/__PUBLIC__/common/lib/time_sel/js/mobiscroll_003.js" ></script>
+    <script src="/73h/__PUBLIC__/common/lib/time_sel/js/mobiscroll_005.js" ></script>
+    <link href="/73h/__PUBLIC__/common/lib/time_sel/css/mobiscroll_003.css" rel="stylesheet" type="text/css">
+
+  	<link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/home/home/css/common.css">
+  	<link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/home/home/css/perfectRecords.css">
+    <script src="/73h/__PUBLIC__/home/home/js/perfectRecords.js"></script>
+
+    <script src="/73h/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+    <script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+
+	<title>个人信息</title>
+</head>
+<body>
+	<div class="page" id="pageone">
+    
+    <div class="container_area">
+      <form>
+        <div class="ui-grid-b container_area_name ">
+            <div class="ui-block-a container_area_name_item"></div>
+            <div class="ui-block-b container_area_input i_title">治疗时间 : &nbsp;<input size="10" class="input_text" type="text" id="booking_time" name="treatMentTime" /> </div>
+            <div class="ui-block-c ">
+                
+            </div>
+        </div>
+        <div class="i_form_ctrl">
+            <div class="ui-grid-b container_area_name ">
+                <div class="ui-block-a container_area_name_item" ></div>
+                <div class="ui-block-b container_input_name">
+                  <p class="i_title">主要症状 </p> 
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+            <div class="ui-grid-b container_textarea">
+                  <div class="ui-block-a container_textarea_item"></div>
+                  <div class="ui-block-b container_textarea_item">
+                    <textarea class="textarea_text" rows="5" name="symptom"></textarea>
+                  </div>
+                  <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div >
+            <div class="ui-grid-b container_area_name">
+                <div class="ui-block-a container_area_name_item"></div>
+                <div class="ui-block-b container_input_name">
+                  <p class="i_title">发病时间</p> 
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+            <div class="ui-grid-b container_textarea">
+                  <div class="ui-block-a container_textarea_item"></div>
+                  <div class="ui-block-b container_textarea_item" >
+                    <textarea class="textarea_text" rows="5" name="startTime"></textarea>
+                  </div>
+                  <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div >
+            <div class="ui-grid-b container_area_name">
+                <div class="ui-block-a container_area_name_item"></div>
+                <div class="ui-block-b container_input_name">
+                  <p class="i_title">既往史 </p> 
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+            <div class="ui-grid-b container_textarea">
+                  <div class="ui-block-a container_textarea_item"></div>
+                  <div class="ui-block-b container_textarea_item">
+                    <textarea class="textarea_text" rows="5" name="diseaseHistory"></textarea>
+                  </div>
+                  <div class="ui-block-c"></div>
+            </div>
+        </div>
+        <div >
+            <div class="ui-grid-b container_area_name">
+                <div class="ui-block-a container_area_name_item"></div>
+                <div class="ui-block-b container_input_name">
+                  <p class="i_title">现病史 </p> 
+                </div>
+                <div class="ui-block-c"></div>
+            </div>
+            <div class="ui-grid-b container_textarea">
+                  <div class="ui-block-a container_textarea_item"></div>
+                  <div class="ui-block-b container_textarea_item">
+                    <textarea class="textarea_text" rows="5" name="diseaseHistoryNow"></textarea>
+                  </div>
+                  <div class="ui-block-c"></div>
+            </div>
+        </div>
+      </form>
+    </div>
+      
+      
+
+      <div class="ui-grid-b action_btn_con">
+        	<div class="ui-block-a abc_item"></div>
+        	<div class="ui-block-b abc_item">
+	        	<!-- <a href="wtai://wp/mc;10000" style="width: 100%;display: block;	color: #E0E933;"> -->
+	        	<div class="abc_item_btn bi_clear_btn"
+            data-url="/73h/tmpl/home/creatingSuccess.html"
+            data-data-src-type ="form"
+            data-form="form"
+            data-form_slcr="form" >
+	        		添加
+	        	</div>
+        		
+        	</div>
+        	<div class="ui-block-c abc_item"></div>
+        </div>
+		
+
+
+
+
+
+      <!---尾部-->
+        <div class="hold_area" style="visibility: hidden;"> 
+             <div class="ui-grid-c" >
+                  <div class="ui-block-a btn_item" >
+                    <a target="_top" href="/73h/tmpl/home/index.html">
+                      <img src="/73h/__PUBLIC__/home/pic/bg/index/16.png"/>
+                    </a>
+                  </div>
+                  <div class="ui-block-b btn_item ">
+                    
+                      <img class="vip_center" src="/73h/__PUBLIC__/home/pic/bg/index/16.png"/>
+                  </div>
+                  <div class="ui-block-c btn_item">
+                      <img class="more_action" src="/73h/__PUBLIC__/home/pic/bg/index/17.png"/>
+                  </div>  
+                  <div class="ui-block-d btn_item">
+                      <img class="more_action" src="/73h/__PUBLIC__/home/pic/bg/index/18.png"/>
+                  </div>  
+            </div>
+               
+        </div>
+      
+        <div class="i_footer dis_area" >
+             <div class="ui-grid-c" >
+                  <a href="/73h/tmpl/home/index.html" class="ui-block-a btn_item" >
+                      <img src="/73h/__PUBLIC__/home/pic/bg/index/19.png"/>
+                  </a>
+                  <a href="/73h/tmpl/home/vip.html" class="ui-block-b btn_item ">
+                      <img class="vip_center" src="/73h/__PUBLIC__/home/pic/bg/index/20.png"/>
+                  </a>
+                  <a href="/73h/tmpl/home/cart.html" class="ui-block-c btn_item">
+                      <img class="more_action" src="/73h/__PUBLIC__/home/pic/bg/index/21.png"/>
+                  </a>  
+                  <a href="/73h/tmpl/home/feedBack.html" class="ui-block-d btn_item">
+                      <img class="more_action" src="/73h/__PUBLIC__/home/pic/bg/index/22.png"/>
+                  </a>  
+            </div>
+               
+        </div>
+      <!---尾部结束-->  	
+      
+	</div>
+
+</body>
+
+<script >
+    $(document).ready(function(){
+      CtrlElAction.isSimPost=true;
+      CtrlElAction.formBlur.inputBlur();
+      HomeCtrlElAction.btnFunc.bindSbmtBtnClick(".bi_clear_btn");
+
+
+      var parmeater = {
+          "abc_item_btn":"abc_item_btn", // 提交
+          "input_text":"input_text",  // input输入框
+          "textarea_text":"textarea_text", // textarea
+      };
+      PerfectRecords.init(parmeater);
+
+      //更新按钮绑定
+    // CtrlElAction.btnFunc.bindSbmtBtnClick(".submit_btn");
+
+    // 时间输入插件
+    var currYear = (new Date()).getFullYear();  
+    var opt={};
+    opt.date = {preset : 'date'};
+    opt.datetime = {preset : 'datetime'};
+    opt.time = {preset : 'time'};
+    opt.default = {
+      theme: 'android-ics light', //皮肤样式
+      display: 'modal', //显示方式 
+      mode: 'scroller', //日期选择模式
+      dateFormat: 'yyyy-mm-dd',
+      lang: 'zh',
+      showNow: true,
+      nowText: "今天",
+      //startYear: currYear - 10, //开始年份
+      startYear: currYear-100, //开始年份
+      endYear: currYear //结束年份
+    };
+    $("#booking_time").mobiscroll($.extend(opt['date'], opt['default']));
+    // $("#booking_time1").mobiscroll($.extend(opt['date'], opt['default']));
+    
+    });
+</script>
+</html>

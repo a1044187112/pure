@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+ 		<meta http-equiv="Pragma" content="no-cache" />
+  		<meta http-equiv="Expires" content="0" />
+  		<meta charset="utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<link rel="stylesheet" href="/tbh/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+    	<script src="/tbh/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+  <!--    <script src="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+
+    	<link rel="stylesheet" type="text/css" href="/tbh/__PUBLIC__/home/home/css/common.css">
+    	<link rel="stylesheet" type="text/css" href="/tbh/__PUBLIC__/home/home/css/categories.css">
+    	<script type="text/javascript" src="/tbh/__PUBLIC__/home/home/js/categories.js"></script>
+    	<script type="text/javascript" src="/tbh/__PUBLIC__/home/home/js/catefgriesDyn.js"></script>
+		
+		<script src="/tbh/__PUBLIC__/home/home/js/failSubDataPopups.js"></script>
+    	<script src="/tbh/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+    	<script src="/tbh/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+		<title>淘博会</title>
+	</head>
+
+	<body>
+	<div data-role="page" class="page" id="pageone">
+
+	<form class="submit">
+		<div class="ui-grid-d header_nav">
+			<div class="ui-block-a header_nav_btn"></div>
+			<div class="ui-block-b header_nav_item header_nav_btn">类别</div>
+			<div class="ui-block-c header_nav_btn"></div>
+			<div class="ui-block-d header_nav_item header_nav_btn menu_one">销量优先</div>
+			<div class="ui-block-e header_nav_btn"></div>
+		</div>
+		<div class="ui-grid-d header_nav">
+			<div class="ui-block-a header_nav_btn"></div>
+			<div class="ui-block-b header_nav_item header_nav_btn" >品牌</div>
+			<div class="ui-block-c header_nav_btn"></div>
+			<div class="ui-block-d header_nav_item header_nav_btn">价格</div>
+			<div class="ui-block-e header_nav_btn"></div>
+		</div>
+		<!-- 提交数据的div 请求的是商品信息-->
+		<div class="submit_form"  
+			data-url="/tbh/php/home_ajax_test.php"
+            data-data-src-type="form"
+            data-form_slcr=".submit"
+            style="display:none;" 
+		></div>
+		<!-- 提交数据的div 请求的是三级菜单信息-->
+		<div class="submit_form_menu"  
+			data-url="/tbh/php/ajax_test.php?get_id=21"
+            data-data-src-type="form"
+            data-form_slcr=".submit"
+            style="display:none;" 
+		></div>
+		<!-- /tbh/php/ajax_test.php?get_id=1 -->
+		<!-- /tbh/php/home_ajax_test.php -->
+		<!-- 用于保存一级菜单选中的值 -->
+		<input class="menu0" type="text" name="menu0" value="" style="display:none;"> 
+		<!-- 商品选择 -->
+		<div class="container_sel">
+			<div class=" container_sel_item container_sel_item_1">
+				<!-- <div  >材料</div>
+				<div >家电</div>
+				<div >家具</div>
+				<div >装修公司</div> -->
+			</div>
+			<div class="container_sel_item_sec container_sel_item_1">
+					<!-- <div >涂料</div>
+					<div >石材</div>
+					<div >陶瓷</div>
+					<div >五金</div>
+					<div >门窗</div>
+					<div >木材</div>
+					<div >电工</div>
+					<div >砖瓦</div> -->
+			</div>
+			<div class="container_sel_price container_sel_item_1" >
+				<!-- <div>价格由高到低</div>
+				<div>价格由低到高</div> -->
+			</div>
+			<!-- 用于保存二级菜单选中的值 -->
+			<input class="menu1" type="text" name="menu1" value="" style="display:none;">
+			<!-- 用于保存三级菜单选中的值 -->
+			<input class="menu2" type="text" name="menu2" value="" style="display:none;">
+		</div>
+	</form>
+	<div class="shop">
+		<!-- 商品 -->
+		<div class="ui-grid-d container_com">
+			<div class="ui-block-a container_com_space"></div>
+			<div class="ui-block-b container_com_item">
+				<div class="container_com_item_btn"
+					data-url="/tbh/php/ajax_test.php?get_id=8"
+					data-data_src_type='self'
+                    data-fields='id'
+                    data-id="5">
+				<img src="/tbh/__PUBLIC__/home/pic/bg/categories/1.png">
+				<div class="container_com_item_price">背景墙马赛克卫生间装修瓷砖墙贴建材</div>
+				<div class="container_com_item_price">￥99.00<span>48人付款</span></div></div>
+			</div>
+			<div class="ui-block-c container_com_space"></div>
+			<div class="ui-block-d container_com_item">
+				<div class="container_com_item_btn"
+					data-url="/tbh/php/ajax_test.php?get_id=8"
+					data-data_src_type='self'
+                    data-fields='id'
+                    data-id="5">
+				<img src="/tbh/__PUBLIC__/home/pic/bg/categories/2.png">
+				<div class="container_com_item_price">背景墙马赛克卫生间装修瓷砖墙贴建材</div>
+				<div class="container_com_item_price">￥88.00<span>340人付款</span></div></div>
+			</div>
+			<div class="ui-block-e container_com_space"></div>
+		</div>
+
+		<div class="ui-grid-d container_com">
+			<div class="ui-block-a container_com_space"></div>
+			<div class="ui-block-b container_com_item">
+				<div class="container_com_item_btn"
+					data-url="/tbh/php/ajax_test.php?get_id=8"
+					data-data_src_type='self'
+                    data-fields='id'
+                    data-id="5">
+				<img src="/tbh/__PUBLIC__/home/pic/bg/categories/3.png">
+				<div class="container_com_item_price">背景墙马赛克卫生间装修瓷砖墙贴建材</div>
+				<div class="container_com_item_price">￥99.00<span>48人付款</span></div></div>
+			</div>
+			<div class="ui-block-c container_com_space"></div>
+			<div class="ui-block-d container_com_item">
+				<div class="container_com_item_btn"
+					data-url="/tbh/php/ajax_test.php?get_id=8"
+					data-data_src_type='self'
+                    data-fields='id'
+                    data-id="5">
+				<img src="/tbh/__PUBLIC__/home/pic/bg/categories/4.png">
+				<div class="container_com_item_price">背景墙马赛克卫生间装修瓷砖墙贴建材</div>
+				<div class="container_com_item_price">￥88.00<span>340人付款</span></div></div>
+			</div>
+			<div class="ui-block-e container_com_space"></div>
+		</div>
+
+		<!-- <div class="ui-grid-d container_com">
+			<div class="ui-block-a container_com_space"></div>
+			<div class="ui-block-b container_com_item">
+				<a class="container_com_item_btn" href="/tbh/tmpl/home/productPar.html">
+				<img src="/tbh/__PUBLIC__/home/pic/bg/categories/1.png">
+				<div class="container_com_item_price">背景墙马赛克卫生间装修瓷砖墙贴建材</div>
+				<div class="container_com_item_price">￥99.00<span>48人付款</span></div></a>
+			</div>
+			<div class="ui-block-c container_com_space"></div>
+			<div class="ui-block-d container_com_item">
+				<a class="container_com_item_btn" href="/tbh/tmpl/home/productPar.html">
+				<img src="/tbh/__PUBLIC__/home/pic/bg/categories/2.png">
+				<div class="container_com_item_price">背景墙马赛克卫生间装修瓷砖墙贴建材</div>
+				<div class="container_com_item_price">￥88.00<span>340人付款</span></div></a>
+			</div>
+			<div class="ui-block-e container_com_space"></div>
+		</div> -->
+	</div>
+		
+	<div class="hidden_footer" style="visibility: hidden;">
+			<div class="ui-grid-d footer_nav">
+				<div class="ui-block-a btn_item">
+					<a href="#">
+						<img src="/tbh/__PUBLIC__/home/pic/bg/index/20.png">
+					</a>
+				</div>
+				<div class="ui-block-b btn_item">
+					<a href="#">
+						<img src="/tbh/__PUBLIC__/home/pic/bg/index/15.png">
+					</a>
+				</div>
+				<div class="ui-block-c btn_item">
+					<a href="#">
+						<img src="/tbh/__PUBLIC__/home/pic/bg/index/18.png">
+					</a>
+				</div>
+				<div class="ui-block-d btn_item">
+					<a href="#">
+						<img src="/tbh/__PUBLIC__/home/pic/bg/index/16.png">
+					</a>
+				</div>
+				<div class="ui-block-e btn_item">
+					<a href="#">
+						<img src="/tbh/__PUBLIC__/home/pic/bg/index/17.png">
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--  底部   背景圆弧部分--> 
+		<div class="footer">
+			<div class="ui-grid-d footer_nav">
+				<div class="ui-block-a btn_item">
+					<a href="/tbh/tmpl/home/index.html">
+						<img src="/tbh/__PUBLIC__/home/pic/bg/index/20.png">
+					</a>
+				</div>
+				<div class="ui-block-b btn_item" >
+					<a href="/tbh/tmpl/home/categories.html">
+						<img src="/tbh/__PUBLIC__/home/pic/bg/index/15.png">
+					</a>
+				</div>
+				<div class="ui-block-c btn_item">
+					<div class="footer_nav_radius">
+						<a href="#">
+							<img style="visibility:hidden;"  src="/tbh/__PUBLIC__/home/pic/bg/index/18.png">
+						</a>
+					</div>
+				</div>
+				<div class="ui-block-d btn_item">
+					<a href="#">
+						<img src="/tbh/__PUBLIC__/home/pic/bg/index/16.png">
+					</a>
+				</div>
+				<div class="ui-block-e btn_item">
+					<a href="#">
+						<img src="/tbh/__PUBLIC__/home/pic/bg/index/17.png">
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--  底部   最外层显示部分--> 
+			<div class="footer footer_show">
+			<div class="ui-grid-d footer_nav">
+				<div class="ui-block-a btn_item">
+					<a href="/tbh/tmpl/home/index.html">
+						<img src="/tbh/__PUBLIC__/home/pic/bg/index/20.png">
+					</a>
+				</div>
+				<div class="ui-block-b btn_item" >
+					<a href="/tbh/tmpl/home/other.html">
+						<img src="/tbh/__PUBLIC__/home/pic/bg/index/21.png">
+					</a>
+				</div>
+				<div class="ui-block-c btn_item" id="footer_nav_show">
+					<div class="footer_nav_radius">
+						<a href="/tbh/tmpl/home/specialOffer.html">
+							<img   src="/tbh/__PUBLIC__/home/pic/bg/index/18.png">
+						</a>
+					</div>
+				</div>
+				<div class="ui-block-d btn_item">
+					<a href="/tbh/tmpl/home/allGoods.html">
+						<img src="/tbh/__PUBLIC__/home/pic/bg/index/16.png">
+					</a>
+				</div>
+				<div class="ui-block-e btn_item">
+					<a href="/tbh/tmpl/home/myInfo.html">
+						<img src="/tbh/__PUBLIC__/home/pic/bg/index/17.png">
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+
+        dynGenCode.url="/tbh/php/ajax_test.php?get_id=8";
+
+
+		var parameter = {
+			"header_nav":"header_nav", // 选择导航
+			"header_nav_item":"header_nav_item",// 选择导航条目
+			"container_sel":"container_sel",  //第二级选择导航
+			"container_sel_item":"container_sel_item",// 动态生成的类别导航栏
+
+			"container_sel_item_sec":"container_sel_item_sec",// 三级导航
+
+
+			"container_sel_price":"container_sel_price",// 价格导航
+			"class_item":"class_item", // 类别导航 有三级菜单
+			"other_item":"other_item", //  类别导航  无三级菜单
+
+			 "class_item_sec":"class_item_sec",// 品牌三级导航
+			 "container_com_item_btn":"container_com_item_btn",
+			// "container_sel_price":"container_sel_price", // 价格导航栏
+			// "container_sel_price_first":"container_sel_price_first",
+			// // 价格导航条目
+			// "container_sel_item_1":"container_sel_item_1",// 类别导航三级菜单
+			// "container_sel_item_1_class":"container_sel_item_1_class", // 类别导航三级菜单item
+			// "page":"page",
+
+		}
+
+		var e_option = {
+			// menu1 是一级菜单  sub_id  是一级菜单提交的数据  指向menu1  第一个是类别  第二个是销量优先  第三个是品牌  第四个是价格
+			"menu1":[{"sub_id":"0"},{"sub_id":"0"},{"sub_id":"0"},{"sub_id":"0"}],
+			// class  是类别二级菜单内容  nav  对应菜单内容  sub_id  对应提交的id
+			"class":[{"nav":"材料","sub_id":"1"},{"nav":"家电","sub_id":"1"},{"nav":"家具","sub_id":"1"},{"nav":"装修公司","sub_id":"1"}],
+			// brands  是品牌二级菜单内容  nav  对应菜单内容  sub_id  对应提交的id
+			"brands":[{"nav":"立邦","sub_id":"1"},{"nav":"多乐士","sub_id":"1"},{"nav":"美涂士","sub_id":"1"},{"nav":"科温室","sub_id":"1"},{"nav":"其它","sub_id":"1"}],
+			// price  是价格二级菜单内容  nav  对应菜单内容  sub_id  对应提交的id
+			"price":[{"nav":"价格从高到低","sub_id":"1"},{"nav":"价格从低到高","sub_id":"1"}]
+			// classSecond  是类别三级菜单内容  nav  对应菜单内容  sub_id  对应提交的id
+			// "classSecond":[{"nav":"涂料","sub_id":"2"},{"nav":"石材","sub_id":"2"},{"nav":"陶瓷","sub_id":"2"},{"nav":"五金","sub_id":"2"},{"nav":"门窗","sub_id":"2"},{"nav":"木材","sub_id":"2"},{"nav":"电工","sub_id":"2"},{"nav":"砖瓦","sub_id":"2"}]
+		};
+
+		Categories.init(parameter,e_option);
+
+		// var e_option = [
+  //     {"type":"system","selector":".info_filled_area .filled_item_gender .f_ctrl","post_name":"gender"},
+  //     {"type":"text","title":"男","val":1},
+  //     {"type":"text","title":"女","val":0},
+	 //    ];
+	    
+	    // iRadio.initCtrl(e_option);
+	});
+</script>
+
+</html>

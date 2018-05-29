@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<script type="application/javascript" src="/tbh/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script type="application/javascript" src="/tbh/__PUBLIC__/common/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/tbh/__PUBLIC__/common/css/bootstrap.min.css" />
+
+<link rel="stylesheet" type="text/css" href="/tbh/__PUBLIC__/admin/index/css/left.css" />
+
+<title>管理员后台</title>
+</head>
+<body>
+    <div class="i_container">
+      <ul class="nav nav-pills nav-stacked"  id="action_menu">
+        
+
+        <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#article_ctrl_item" aria-expanded="false" aria-controls="ctrl_item_0">文章管理</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="article_ctrl_item">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="/tbh/tmpl/admin/Article/articleCatg1.html" target="right">
+                    文章类别一
+                  </a>
+                </li>
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="/tbh/tmpl/admin/Article/articleCatg2.html" target="right">
+                    文章类别二
+                  </a>
+                </li>
+                <li class="list-group-item url_grp_item">
+                    <a class="url_item" href="/tbh/tmpl/admin/Article/articleList.html" target="right">
+                        文章列表
+                    </a>
+                </li>
+            </ul>
+          </div>
+        </li>
+
+        <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#home_ctrl_item" aria-expanded="false" aria-controls="ctrl_item_0">首页设置</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="home_ctrl_item">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="/tbh/tmpl/admin/RegStore/regSrcList.html" target="right">
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </li>
+          <li role="presentation" class="panel panel-default">
+              <div class="ctrl_btn">
+                  <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#good_ctrl_item" aria-expanded="false" aria-controls="ctrl_item_0">商品设置</a>
+              </div>
+              <div class="collapse ctrl_item_list" id="good_ctrl_item">
+                  <ul class="list-group">
+                      <li class="list-group-item url_grp_item">
+                          <a class="url_item" href="/tbh/tmpl/admin/Goods/goods.html" target="right">
+                              商品列表
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </li>
+
+
+      </ul>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/kksq/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+  <script src="/kksq/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+
+  <link rel="stylesheet" href="/kksq/__PUBLIC__/common/lib/swiper/css/swiper.min.css">
+  <script src="/kksq/__PUBLIC__/common/lib/swiper/js/swiper.min.js"></script>
+  <link  href="/kksq/__PUBLIC__/common/lib/swiper-pic-slider/swiper-pic-slider.css" rel="stylesheet" >
+  <script src="/kksq/__PUBLIC__/common/lib/swiper-pic-slider/swiper-pic-slider.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/kksq/__PUBLIC__/home/home/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/kksq/__PUBLIC__/home/home/css/cartService/parkInfo.css">
+  <title>首页</title>
+</head>
+
+<body>
+    <div data-role="page" id="pageone">
+      
+     <!-- Banner -->
+      <div class="header">
+          <div id="pic_show"></div>
+          <!-- <img class="pic_banner" src="/kksq/__PUBLIC__/home/pic/bg/park_info/1.png"> -->
+          <!-- <ul class="point">
+              <li class="point_i"></li>
+              <li class="point_i"></li>
+              <li class="point_i"></li>
+              <li class="point_i"></li>
+              <li class="point_i"></li>
+          </ul> -->
+          <div class="ui-grid-a hea_info">
+              <div class="ui-block-a hea_info_item">普通车位</div>
+              <div class="ui-block-b hea_info_item">5元/天</div>
+          </div>
+      </div>
+    <!--  -->
+    <div class="con_bg">
+          <img class="con_bg_img" src="/kksq/__PUBLIC__/home/pic/bg/park_info/2.png">
+          <div class="con">
+              <div class="ui-grid-a con_sel">
+                  <h5 class="ui-block-a c_s_item">车位信息</h5>
+                  <div class="ui-block-b"></div>
+              </div>
+              <div class="ui-grid-a con_info">
+                  <div class="ui-block-a c_i_item">车位地址 :</div>
+                  <div class="ui-block-b c_i_item">
+                      <div class="">贵州省安顺市</div>
+                      <div class="">西秀区新天地小区</div>
+                  </div>
+              </div>
+              <div class="ui-grid-a con_info">
+                  <div class="ui-block-a c_i_item">车位区域 :</div>
+                  <div class="ui-block-b c_i_item">B区</div>
+              </div>
+              <div class="ui-grid-a con_info">
+                  <div class="ui-block-a c_i_item">车位号&nbsp; :</div>
+                  <div class="ui-block-b c_i_item">14号</div>
+              </div>
+              <div class="ui-grid-a con_info">
+                  <div class="ui-block-a c_i_item">车位价格 :</div>
+                  <div class="ui-block-b c_i_item">5元/天&nbsp;150元/月</div>
+              </div>
+
+              <div class="ui-grid-a con_info">
+                  <div class="ui-block-a c_i_item">状态&nbsp;&nbsp; :</div>
+                  <div class="ui-block-b c_i_item">可租用</div>
+              </div>
+              <div class="ui-grid-a con_info">
+                  <div class="ui-block-a c_i_item">最低周期 :</div>
+                  <div class="ui-block-b c_i_item">日租</div>
+              </div>
+            </div>
+      </div>
+      <div class="is_bth">
+         <a href="#" class="i_b_btn">立即租用</a>
+      </div>
+
+      <!--  footer_menu -->
+      <div class="ui-grid-b footer f_hidden">
+          <div class="ui-block-a footer_item">
+              <img class="f_i_img" src="/kksq/__PUBLIC__/home/pic/bg/index/9.png">
+              <div class="f_i_title">首页</div>
+          </div>
+          <!-- <div class="ui-block-b footer_item"></div> -->
+          <div class="ui-block-b footer_item">
+              <img class="f_i_img" src="/kksq/__PUBLIC__/home/pic/bg/index/9.png">
+              <div class="f_i_title">首页</div>
+          </div>
+          <!-- <div class="ui-block-d footer_item"></div> -->
+          <div class="ui-block-c footer_item">
+              <img class="f_i_img" src="/kksq/__PUBLIC__/home/pic/bg/index/9.png">
+              <div class="f_i_title">首页</div>
+          </div>
+      </div>
+      <!-- 隐藏部分 -->
+      <div class="ui-grid-b footer f_show">
+          <a href="#" class="ui-block-a footer_item">
+              <img class="f_i_img" src="/kksq/__PUBLIC__/home/pic/bg/index/9.png">
+              <div class="f_i_title">首页</div>
+          </a>
+          <!-- <div class="ui-block-b footer_item"></div> -->
+          <a href="#" class="ui-block-b footer_item">
+              <img class="f_i_img" src="/kksq/__PUBLIC__/home/pic/bg/index/10.png">
+              <div class="f_i_title">新奇</div>
+          </a>
+          <!-- <div class="ui-block-d footer_item"></div> -->
+          <a href="#" class="ui-block-c footer_item">
+              <img class="f_i_img" src="/kksq/__PUBLIC__/home/pic/bg/index/11.png">
+              <div class="f_i_title">我的</div>
+          </a>
+      </div>
+      <!-- 显示部分 -->
+
+    </div> 
+</body>
+
+<script>
+  var e_option = [
+      {"type":"system","selector":".i_footer","selector":"#pic_show"},
+      {"type":"img","pic_url":"/kksq/__PUBLIC__/home/pic/bg/park_info/1.png","action_url":"http://www.baidu.com"},  
+      {"type":"img","pic_url":"/kksq/__PUBLIC__/home/pic/bg/park_info/1.png","action_url":"http://www.baidu.com"},  
+      {"type":"img","pic_url":"/kksq/__PUBLIC__/home/pic/bg/park_info/1.png","action_url":"http://www.baidu.com"},  
+      {"type":"img","pic_url":"/kksq/__PUBLIC__/home/pic/bg/park_info/1.png","action_url":"http://www.baidu.com"},  
+
+    ];
+    
+    SwiperPicSlider.initCtrl(e_option);
+
+
+</script>
+
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/common/css/bootstrap.min.css" />
+
+<script src="__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script src="__PUBLIC__/common/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/common/js/funcs.js"></script>
+<script src="__PUBLIC__/common/js/notice.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/gzh/admin/css/common.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/gzh/admin/css/indexBanner.css" />
+
+
+<script src="__PUBLIC__/common/js/btn_action.js"></script>
+<script src="__PUBLIC__/gzh/admin/js/indexBanner.js"></script>
+
+
+<title>{$page_title}</title>
+</head>
+<body>
+<div class="i_content">
+	<div class="page_title">
+    	<h1>{$page_title}</h1>
+    </div>
+    <hr />
+    <div class="data_table">
+    	<div class="dis_table">
+        
+       
+    		<empty name="data.data">
+            	未设置首页Banner,点击编辑按钮进行设置
+            <else />
+                      <div class="img_scroll">
+                    	<div class="img_box">
+                        	<foreach name="data.data" item="item">
+                            	<div class="thumbnail img_item">
+                                
+									<div class="id_val" style="display:none">{$item.id}</div>
+                                	<if condition="$item.default_pic eq ''">
+                                    	无图无真相
+                                    <else />
+                                    	<img src="{$item.default_pic}" />
+                                    </if>
+                                    <div class="caption">
+                                        {$item.name}
+                                    </div>
+  
+                            	</div>
+                            
+                            </foreach>
+                            
+                        </div>
+                    </div>            
+            </empty>
+            
+
+
+
+         </div>
+         
+        <div class="collapse edit_box" id="set_area" style="width:1000px">
+            <div class="well" style="width:100%">
+               <div class="well container sel_container" style="width:100%">
+               
+                    <div class="cate_sel">
+                        <label class="title">类别:</label>
+                        <select class="form-control content_select" style="display:inline-block"
+                        data-fields="catg_id"
+                        data-url="{$show_url}"
+                        >
+                        	<option value="-1" <if condition="$catg_id eq -1">selected="selected"</if> >全部类别</option>
+                            <foreach name="cate_data" item="item" >
+                                <option value="{$item.id}" <if condition="$item.id eq $catg_id">selected="selected"</if> >{$item.name}</option>
+                            </foreach>
+                        </select>  
+                        <div style="clear:both"></div>
+                   	 	<hr /> 
+                    </div>
+                    
+                    <div class="row"  style="width:100%">
+						<foreach name="goods_data.data" item="item">
+                     		<div class="col-md-2">
+                                <div class="thumbnail">
+                                	<div class="id_val" style="display:none">{$item.id}</div>
+                                	<if condition="$item.default_pic eq ''">
+                                    	无图无真相
+                                    <else />
+                                    	<img src="{$item.default_pic}" />
+                                    </if>
+                                    <div class="caption">
+                                        {$item.name}
+                                    </div>
+                                    <p>
+                                        <button type="button" class="btn btn-xs sel_btn">选择</button>
+                                        <button type="button" class="btn btn-xs cancel_btn">取消</button>
+                                    </p>
+                                </div>
+                        	</div>
+                        
+                        </foreach>
+                    </div>
+                    
+       		<div class="page_info_box">
+              <ul class="pagination page_info">
+                <li>
+                  <a href="https://www.baidu.com/" aria-label="Previous"
+                            data-url="{$get_url}"
+                            data-fields="page_num,catg_id"
+                            data-catg_id="-1"
+                            data-page_num="<if condition="$goods_data['page_info']['page_num'] eq 0">{$goods_data['page_info']['page_num']}<else />{$goods_data['page_info']['page_num']-1} </if>"                   
+                    >
+                    <span aria-hidden="true">上一页</span>
+                  </a>
+                  <a href="" aria-label="Next"
+                            data-url="{$get_url}"
+                            data-fields="page_num,catg_id"
+                            data-catg_id="-1"
+                            data-page_num="<if condition="$goods_data['page_info']['page_num']+1 eq $goods_data['page_info']['page_count']"> {$goods_data['page_info']['page_count'] - 1}<else />{$goods_data['page_info']['page_num']+1} </if>"
+                  
+                  >
+                    <span aria-hidden="true">下一页</span>
+                  </a>
+                </li>
+                <li>{$goods_data['page_info']['page_num'] + 1}/{$goods_data.page_info.page_count}</li>
+              </ul>
+              
+        	</div>
+                    
+               </div>
+               
+               
+               <div class="well been_sel_con" id="been_sel_goods">
+               		<h1>已选择商品(已选择5件):</h1>
+               		<div class="img_scroll">
+                    	<div class="img_box">
+ 								<foreach name="data.data" item="item">
+                                    <div class="thumbnail img_item">
+                                    
+                                        <div class="id_val" style="display:none">{$item.id}</div>
+                                        <if condition="$item.default_pic eq ''">
+                                            无图无真相
+                                        <else />
+                                            <img src="{$item.default_pic}" />
+                                        </if>
+                                        <div class="caption">
+                                            {$item.name}
+                                        </div>
+                                         <p>
+                                            <button type="button" class="btn btn-xs sel_btn">选择</button>
+                                            <button type="button" class="btn btn-xs cancel_btn">取消</button>
+                                        </p>     
+                            	</div>
+                            
+                            </foreach>                           
+                        </div>
+                    </div>
+                    <form >
+                        <button type="button" class="btn btn-primary update_btn"  style=" font-size:12px;padding:5px;" 
+                            data-url="{$update_url}"
+                            data-notice_word="是否提交已选择的数据" 
+                            data-fields="index_dis,id"
+                            data-id="{$data.id}"
+                            data-index_dis="{$data.index_dis}"
+                       	>
+                    	提交
+                        </button>
+                    </form>
+               </div>
+            </div>
+        </div> 
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#set_area" data-data_option_type="add">
+  			编辑
+		</button>	
+    </div>
+</body>
+<script>
+$(document).ready(function(e) {
+	var update_url="{$update_url}";	
+	var img_up_url="{$img_up_url}";
+	var get_url = "{$get_url}";
+
+	//绑定删除按钮
+	BindBtnClick1(".data_table .sel_btn",SelBtnAction);
+	
+	
+	BindBtnClick(".update_btn");
+	
+	BindBtnClick1(".cancel_btn",CancelBtnAction);
+	//ChkGoodsItem();
+	
+	BindSelInputChange(get_url);
+	BindPageBtn();
+});
+
+
+</script>
+</html>

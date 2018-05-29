@@ -1,0 +1,35 @@
+
+.mdc_hist_intro_area{
+	padding: 35px;
+	font-size: 20px;
+}
+
+.mdc_hist_intro_area .mhi_item{
+	margin-top: 5px;
+}
+.mdc_hist_intro_area .mhi_item .mhi_title{
+	color: #3dbabc;
+}
+.mdc_hist_intro_area .mhi_item .mhi_info{
+	color: #BBBBBB;
+}
+.jump .jump_item{
+	width: 8%;
+	text-align: center;
+	font-size: 20px;
+	line-height: 1.8;
+	border-radius: 10px;
+	margin-top:30px;
+}
+.jump .jump_item:nth-child(2){
+	width: 30%;
+	background-color: #d25c2e;
+}
+.jump .jump_item:nth-child(4){
+	width: 45%;
+	background-color: #61c7ca;
+}
+.jump .jump_item .jump_item_btn{
+	color: #eee;
+}
+

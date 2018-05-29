@@ -1,0 +1,82 @@
+.action_popup_area{
+	z-index: 10;
+	position: absolute;
+
+}
+
+.action_popup_area_hide{
+	display: none;
+}
+
+.action_popup_area .action_popup_box{
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 80px;
+	border: 2px #C5C6C6 solid;
+	background-color: #FDFDFD;
+	border-radius: 10px;
+	//opacity: 0.5;
+	text-align: center;
+	padding: 0 15px;
+	font-size: 15px;
+}
+
+
+
+.action_popup_box .action_item:nth-child(1){
+	padding-top: 20px;
+}
+
+
+.action_popup_box .action_item:last-child{
+	margin-bottom: 10px;
+}
+
+.action_popup_box .action_item{
+	padding: 10px 0;
+	margin: 0;
+	border-bottom: dotted 1px #E74126;
+}
+.action_popup_box .action_item a{
+	text-decoration: none;
+	color: #E74126;
+}
+
+.action_popup_box .action_item a:hover{
+}
+
+.action_popup_box .action_item .item_line{
+	width: 
+}
+
+
+
+.apb_tri_line{
+	position: relative;
+	margin-top: -2px;
+	left: 46px;
+}
+
+.apb_tri_line .apb_tri1{
+	border-style: solid;
+	border-color: #C5C6C6 transparent transparent transparent;
+	border-width: 10px 10px 0px 10px;
+	height: 0;
+	width: 0;
+	line-height: 0;
+	position: absolute;
+	opacity: 0.5;
+
+}
+
+.apb_tri_line .apb_tri2{
+	border-style: solid;
+	border-color: #ffffff transparent transparent transparent;
+	border-width: 8px 8px 0px 8px;
+	height: 0;
+	width: 0;
+	line-height: 0;
+	position: absolute;
+	left: 2px;
+}

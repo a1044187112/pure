@@ -1,0 +1,36 @@
+body{
+	background-color: #E5E5E5;
+}
+
+.data_item_con{
+	background-color: #ffffff;
+	padding: 20px 10px;
+	margin-bottom: 5px;
+	border-top: 1px solid #BABABA;
+	border-bottom: 1px solid #BABABA;
+}
+
+.data_item_con:nth-child(1){
+	border-top: 0px solid #000000;
+
+}
+
+.data_item_con .dic_item:nth-child(1){
+	width: 85%;
+	font-size: 23px;
+}
+
+.data_item_con .dic_item:nth-child(2){
+	width: 15%;
+	padding-top: 2px;
+}
+
+.data_item_con .dic_item .tri{
+	width: 0;
+	height: 0;
+	font-size: 0;
+	border-width: 14px 0 14px 20px;
+	border-color: transparent transparent transparent #0CA4D6;
+	border-style: solid;
+	position: absolute;
+}

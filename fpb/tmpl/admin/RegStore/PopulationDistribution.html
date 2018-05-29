@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <link rel="stylesheet" href="/fpb/__PUBLIC__/common/css/bootstrap.min.css" />
+
+<script type="application/javascript" src="/fpb/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/js/bootstrap.min.js"></script>
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/js/funcs.js"></script>
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/js/notice.js"></script>
+<script type="application/javascript" src="/fpb/__PUBLIC__/common/js/btn_action.js"></script>
+<script type="application/javascript" src="/fpb/__PUBLIC__/common/js/ajax_data.js"> </script>
+
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/js/btn_action.js"></script>
+
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/lib/i_file_upload/file_upload.js"></script>
+<link rel="stylesheet" href="/fpb/__PUBLIC__/common/lib/i_file_upload/file_up.css" />
+
+
+<link href="/fpb/__PUBLIC__/common/lib//dis_content_set/dis_content_set.css" rel="stylesheet">
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/lib//dis_content_set/dis_content_set.js"></script>
+<script src="/fpb/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+
+
+<link href="/fpb/__PUBLIC__/common/lib/summernote/summernote.css" rel="stylesheet">
+<link href="/fpb/__PUBLIC__/common/lib/summernote/font-awesome/css/font-awesome.css" rel="stylesheet">
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/lib/summernote/summernote.min.js"></script>
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/lib/summernote/summernote-zh-CN.js"></script>
+
+<link rel="stylesheet" href="/fpb/__PUBLIC__/common/lib/data_editor/data-editor.css">
+<script type="application/javascript"  src="/fpb/__PUBLIC__/common/lib/data_editor/data-editor.js"></script>
+
+
+<link rel="stylesheet" href="/fpb/__PUBLIC__/gzh/admin/css/common.css" />
+<link rel="stylesheet" href="/fpb/__PUBLIC__/gzh/admin/css/indexBanner.css" />
+
+<script type="application/javascript"  src="/fpb/__PUBLIC__/gzh/admin/js/indexBanner.js"></script>
+<link rel="stylesheet" type="text/css" href="/fpb/__PUBLIC__/common/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/fpb/__PUBLIC__/admin/index/css/common.css" />
+
+<title>管理者后台</title>
+</head>
+<body>
+	<div class="i_content">
+		<div class="page_title">
+			<h1>
+		      贫困人口总体分布	
+			</h1>		
+		</div>
+		<hr>
+
+		<!-- 数据表 -->
+		  <div class="data_table">   
+        <table class="table table-bordered">
+            <tr>
+                <th class="dt_title">显示序号</th>
+                <th class="dt_title">名称</th>
+                <th class="dt_title">是否已审核</th>
+                <th class="dt_title">状态操作</th>
+                <th class="dt_title">详情操作</th>
+            </tr>
+            
+            <!-- 数据项 -->
+            <div class="data_item">
+                <tr class="t_row intro_row">
+                    <td class="t_col">
+                        1
+                    </td>
+                    <td class="t_col">
+                        产业和就业扶持
+                    </td>
+                    <td class="t_col">
+                        是
+                    </td>
+                    <td class="t_col action_box">
+                        <button type="button" 
+                        class="btn btn-primary btn-lg update_btn"  
+                        style=" font-size:12px;padding:5px;" 
+                        data-url="{$update_url}"
+                        data-notice_word="是否将产业和就业扶持设置为审核?" 
+                        data-fields="id,is_chk"
+                        data-id="_item_id_1" 
+                        data-is_chk="1"
+                        >
+                        审核
+                        </button>
+                        <button type="button" 
+                        class="btn btn-primary btn-lg update_btn"  
+                        style=" font-size:12px;padding:5px;" 
+                        data-url="{$update_url}"
+                        data-notice_word="是否将产业和就业扶持设置为取消审核?" 
+                        data-fields="id,is_chk"
+                        data-id="_item_id_1" 
+                        data-is_chk="0"
+                        >
+                        取消审核
+                        </button>
+                        <button type="button" 
+                            class="btn btn-primary btn-lg update_btn"  
+                            style=" font-size:12px;padding:5px;" 
+                            data-url="{$del_url}"
+                            data-notice_word="是否删除产业和就业扶持?" 
+                            data-fields="id"
+                            data-id="_item_id_1" 
+                        >
+                        删除
+                        </button>
+                    </td>
+                    <td class="t_col show_box">
+                        <button class="btn btn-primary btn-lg i_show_detail_box_link_btn " 
+                            type="button" data-toggle="collapse" 
+                            style=" font-size:12px;padding:5px;"
+                            aria-expanded="false"
+                            data-action="show"
+                            data-target="#show_detail_box_item_id_1" 
+                            aria-controls="show_detail_box_item_id_1"
+                            data-dis_name = "查看详细"
+                            data-anti_dis_name = "取消查看详细"
+                            data-show_sym_is_default   = 0
+                        >
+                        查看详细
+                        </button>
+                        <button type="button" 
+                            class="btn btn-primary btn-lg i_show_detail_box_link_btn data_edit_btn data_edit_btn_item_id_1"  
+                            type="button" 
+                            style=" font-size:12px;padding:5px;"
+                            aria-expanded="false"
+                            data-target=""
+                            data-toggle="collapse"                          
+                            data-action_type="modify"
+                            data-editor_selector=".modify_row_item_id_1 .td"
+                            data-dis_row_selr=".detail_row_item_id_1"          
+                            data-self_selr=".data_edit_btn_item_id_1"
+                            data-dis_name = "编辑"
+                            data-anti_dis_name = "取消编辑"
+                            data-show_sym_is_default   = 0
+                        >
+                        编辑
+                        </button>
+                        
+                    </td>
+                </tr>
+                <tr class="detail_row_item_id_1 detail_row info_detail_row" >
+                    <td colspan="5" class="td">
+                        <div class="collapse show_detail_box" id="show_detail_box_item_id_1">
+                            <div class="well container" style="width:100%">
+
+                                <div class="detail_item row order_num">
+                                    <div class="col-md-2">显示序号</div>
+                                    <div class="col-md-9 item_cnt real_data">1</div>
+                                </div>
+
+                                <div class="detail_item row name">
+                                    <div class="col-md-2">名称</div>
+                                    <div class="col-md-9 item_cnt real_data">产业和就业扶持</div>
+                                </div>
+
+                                <div class="detail_item row count">
+                                    <div class="col-md-2">数量</div>
+                                    <div class="col-md-9 item_cnt real_data">155555</div>
+                                </div>
+                                    
+                                <div class="detail_item row is_chk">
+                                    <div class="col-md-2">是否已审核</div>
+                                    <div class="col-md-9 item_cnt">
+                                        是
+                                        <span style="display:none" class="real_data">0</span>
+                                    </div>
+                                </div>
+
+                                
+
+                                <div class="detail_item row id" style="display: none;">
+                                    <div class="col-md-2">表id</div>
+                                    <div class="col-md-9 item_cnt real_data">_item_id_1</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="modify_row info_detail_row modify_row_item_id_1">
+                    <td colspan="5" class="td">
+
+                        
+                    </td>
+                </tr>
+                
+            </div>
+                
+
+            <!-- 数据项结束 -->
+            
+
+        </table>
+
+                        
+        </div>        
+        
+
+        <!-- 添加操作 -->
+        <div class="add_action_area">
+            <button type="button" class="btn btn-primary btn-lg i_show_detail_box_link_btn data_edit_btn data_edit_btn_add" 
+                data-target="" 
+                data-toggle="collapse"      
+                data-action_type="add"
+                data-editor_selector=".data_add_box"
+                data-dis_row_selr=""          
+                data-self_selr=".data_edit_btn_add"
+                data-dis_name = "添加人口分布"
+                data-anti_dis_name = "取消添加人口分布"
+                data-show_sym_is_default   = 0
+            >
+                添加人口分布
+            </button>
+            <div class="data_add_box"></div>            
+        </div>
+        <!-- 添加操作结束 -->
+
+    </div>    
+    <!-- 数据表结束 -->
+
+    
+
+		
+	</div>
+
+</body>
+<script>
+$(document).ready(function(e) {
+    var update_url="{$update_url}"; 
+    var img_up_url="{$img_up_url}";
+
+    var i_option =[
+        {"type":"system","submit_url":update_url,"box_title_prefix":"人口分布","file_up_url":img_up_url,/*"sim_post_if":true,*/},
+
+        {"type":"text","title":"显示序号","bind_key":"order_num","need_cols":4},
+        {"type":"text","title":"名称","bind_key":"name","need_cols":4},
+        {"type":"text","title":"数量","bind_key":"count","need_cols":4},
+
+        {"type":"radios","title":"是否已审核","need_cols":4,"bind_key":"is_chk","sub_el_title":[
+            {"title":"是","value":"1"},{"title":"否","value":"0"}],"default_value":"1"},
+
+        {"type":"hidden","title":"数据项id-添加框不需要","bind_key":"id","need_cols":1,"only_modify_has":true},
+
+    ];
+    DataEditor.bindAndLinkEditBtn(i_option);
+
+    //详情下拉框连接按钮显示姓名改变
+    CtrlElAction.btnFunc.detailBoxLinkBtnDis();
+    //更新按钮绑定
+    CtrlElAction.btnFunc.bindBtnClick(".data_table .update_btn");
+
+    //绑定选择框数据
+    //CtrlElAction.selCtrlFunc.contenSelChangeBind();
+});
+
+
+
+    
+</script>
+</html>

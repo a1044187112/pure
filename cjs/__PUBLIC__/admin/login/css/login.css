@@ -1,0 +1,18 @@
+/* CSS Document */
+body{
+	padding:0px;
+	background-color:#CCFFFF;
+	color:#99CCFF;
+}
+
+
+.login {
+	width:400px;
+	padding:10px 20px;
+	//height:100px;
+	border:1px solid #CCFF99;
+	border-radius:6px;
+	margin:0 auto;
+	position:relative;
+	top:200px;
+}

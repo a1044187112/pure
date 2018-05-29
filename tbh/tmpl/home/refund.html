@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+ 		<meta http-equiv="Pragma" content="no-cache" />
+  		<meta http-equiv="Expires" content="0" />
+  		<meta charset="utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<link rel="stylesheet" href="/tbh/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+    	<script src="/tbh/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+  <!--    <script src="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+		<script type="text/javascript" src="/73h/__PUBLIC__/common/js/funcs.js"></script>
+    <script type="text/javascript" src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js"></script>
+
+
+    	<link rel="stylesheet" type="text/css" href="/tbh/__PUBLIC__/home/home/css/refund.css">
+    	<script type="text/javascript" src="/tbh/__PUBLIC__/home/home/js/refund.js"></script>
+		<title>退款</title>
+	</head>
+
+	<body>
+	<div data-role="page" class="page" id="pageone">
+		
+		<div class="container">
+			<div class="container_item">退货原因：</div>
+			<div class="ui-grid-d container_reason">
+				<div class="ui-block-a container_rea_item"></div>
+				<div class="ui-block-b container_rea_item container_reason_item">少件/破损/污渍</div>
+				<div class="ui-block-c container_rea_item"></div>
+				<div class="ui-block-d container_rea_item container_reason_item">尺寸/规格不符</div>
+				<div class="ui-block-e container_rea_item"></div>
+			</div>
+			<div class="ui-grid-d container_reason">
+				<div class="ui-block-a container_rea_item"></div>
+				<div class="ui-block-b container_rea_item container_reason_item">假冒品牌</div>
+				<div class="ui-block-c container_rea_item"></div>
+				<div class="ui-block-d container_rea_item container_reason_item">质量问题</div>
+				<div class="ui-block-e container_rea_item"></div>
+			</div>
+			<div class="ui-grid-d container_reason">
+				<div class="ui-block-a container_rea_item"></div>
+				<div class="ui-block-b container_rea_item container_reason_item">卖家发错货</div>
+				<div class="ui-block-c container_rea_item"></div>
+				<div class="ui-block-d container_rea_item container_reason_item">商品描述不符</div>
+				<div class="ui-block-e container_rea_item"></div>
+			</div>
+			<form class="submit">
+			<div class="ui-grid-b container_textarea">
+				<div class="ui-block-a container_textarea_item"></div>
+
+				<div class="ui-block-b container_textarea_item">
+					
+						<textarea class="refund_textarea" rows="8" value="其它..." name="eva" onfocus="if(this.value=='其它...')this.value=''" onblur="if(this.value=='')this.value='其它...'">其它...</textarea>
+					
+				</div>
+				<div class="ui-block-c container_textarea_item"></div>
+			</div></form>
+			<div class="container_refund">退款金额：<span class="refund_price">￥789.00</span></div>
+			<div class="ui-grid-b container_submit">
+				<div class="ui-block-a container_submit_item"></div>
+				<div class="ui-block-b container_submit_item">
+					<div class="container_submit_item_btn" 
+						data-url="/tbh/php/ajax_test.php?get_id=2"
+                		data-data_src_type="form"
+                		data-form_slcr=".submit"
+					>提交申请</div>
+					
+				</div>
+				<div class="ui-block-c"></div>
+			</div>
+		</div>
+
+		
+	
+	</div>
+	</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+
+		var parameter = {
+			"submitURL":"/tbh/tmpl/home/requestRefund.html",// 提交数据之后跳转的页面
+			"container_reason":"container_reason", 
+			"container_reason_item":"container_reason_item", // 退款原因选项
+			"container_textarea":"container_textarea",
+			"refund_textarea":"refund_textarea",
+			"container_submit":"container_submit",
+			"refund_price":"refund_price",
+		}
+
+		Refund.init(parameter);
+
+
+
+	});
+</script>
+</html>

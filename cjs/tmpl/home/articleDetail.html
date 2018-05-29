@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<link rel="stylesheet" href="/cjs/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+  	<script src="/cjs/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+  	<script src="/cjs/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script>
+
+
+  	<link rel="stylesheet" type="text/css" href="/cjs/__PUBLIC__/home/home/css/common.css">
+  	<link rel="stylesheet" type="text/css" href="/cjs/__PUBLIC__/home/home/css/articleDetail.css">
+
+	<title>平安俱乐部-车检咨询</title>
+</head>
+<body>
+	<div class="page" id="pageone">
+
+		<div class="article_detail_area">
+			<div class="ui-grid-a title_intro_con ">
+				<div class="ui-block-a ti_tile">
+					六年免检
+				</div>
+				<div class="ui-block-b ti_time">
+					2016-01-24 12:58
+				</div>
+			</div>
+
+			<div class="ui-grid-solo">
+				<div class="ui-block-a">
+					<img src="/cjs/__PUBLIC__/home/pic/test/1.png">
+				</div>
+			</div>
+
+
+			<div class="ui-grid-solo">
+				<div class="ui-block-a">
+					&nbsp;&nbsp;近期，全国发生多起机动车因年审过期，导致出事故后保险公司不予理赔的情况。很多都是好几万元的大单。而这些车辆都有一个特点，就是误以为6年内不用年审。
+	　　公安部和国家质检总局于2014年4月29日联合下发了《关于加强和改进机动车检验工作的意见》，从2014年9月1日起试行非营运轿车等车辆6年内免检政策。注册登记日期在2012年9月1日之后的车辆，可以免检两次；注册登记日期在2010年9月1日至2012年8月31日之间的，可以适用免检一次；注册登记日期在2010年8月31日之前的，仍按照原检验规定办理年审业务。
+	　　<h2>车辆免检的条件</h2>
+	　　根据规定，对照车辆行驶证，免检车辆必须同时满足以下四个条件：非营运车辆；核定载人数为6人及以下；车辆类型限于微型轿车、小型轿车、中型轿车、大型轿车、小型普通客车、小型越野客车、小型专用客车、微型普通客车、微型越野客车等9种；注册登记日期在2010年9月1日（含）之后。
+	　　车型、年限等符合规定，但存在以下情况的，不能适用6年免检的规定：自车辆出厂之日起，超过4年未办理上牌手续的；发生过致人伤亡事故的；车辆的交通违法行为、交通事故未处理完毕的；车辆在2014年9月1日前应检而未检的，仍按原规定检验。
+				</div>
+			</div>			
+			
+		</div>
+		
+
+
+		<!---尾部-->
+	    <script src="/cjs/__PUBLIC__/common/lib/action-popup/action-popup.js"></script>
+	    <link rel="stylesheet" href="/cjs/__PUBLIC__/common/lib/action-popup/action-popup.css?a=333">
+	    <div class="hold_area" style="visibility: hidden;"> 
+	         <div class="ui-grid-b" >
+	              <div class="ui-block-a btn_item" >
+	                <a target="_top" href="/tmpl/weistore/index.html">
+	                  <img src="/cjs/__PUBLIC__/home/pic/bg/index/8.png"/>
+	                </a>
+	              </div>
+	              <div class="ui-block-b btn_item">
+	                <a target="_top" href="/tmpl/weistore/vip.html">
+	                  <img src="/cjs/__PUBLIC__/home/pic/bg/index/10.png"/>
+	                </a>
+	              </div>
+	              <div class="ui-block-c btn_item">
+	                <a target="_top" href="/tmpl/weistore/cart.html">
+	                  <img src="/cjs/__PUBLIC__/home/pic/bg/index/11.png"/>
+	                </a>
+	              </div>  
+	        </div>
+	           
+	    </div>
+	  
+	    <div class="i_footer" >
+
+	         <div class="ui-grid-b" >
+	              <div class="ui-block-a btn_item" >
+	                <a target="_top" href="/cjs/tmpl/home/index.html">
+	                  <img src="/cjs/__PUBLIC__/home/pic/bg/index/8.png"/>
+	                </a>
+	              </div>
+	              <div class="ui-block-b btn_item ">
+	                
+	                  <img class="vip_center" src="/cjs/__PUBLIC__/home/pic/bg/index/10.png"/>
+	              </div>
+	              <div class="ui-block-c btn_item">
+	                  <img class="more_action" src="/cjs/__PUBLIC__/home/pic/bg/index/11.png"/>
+	              </div>  
+	        </div>
+	           
+	    </div>
+
+	    <script>
+	        $(document).ready(function() {
+	          //配置项
+	          var e_option = [
+	            {"type":"system","selector":".i_footer","bind_el_selector":".vip_center","bind_el_unq_css_name":"vip_center"},
+	            {"type":"item","text":"我要评价","action_url":"http://www.baidu.com"},  
+	            {"type":"item","text":"投诉受理","action_url":"#"},
+	          ];
+	          
+	          ActionItemPopup.initCtrl(e_option);
+
+	          var e_option = [
+	            {"type":"system","selector":".i_footer","bind_el_selector":".more_action","bind_el_unq_css_name":"more_action"},
+	            {"type":"item","text":"驾考预约","action_url":"http://www.baidu.com"},  
+	            {"type":"item","text":"贵州交警APP","action_url":"#"},
+	          ];
+	          
+	          ActionItemPopup.initCtrl(e_option);
+	        });
+	    </script>
+	  
+	    <!---尾部结束-->  
+
+	</div>
+
+</body>
+</html>

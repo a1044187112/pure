@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+ <link rel="stylesheet" href="/fpb/__PUBLIC__/common/css/bootstrap.min.css" />
+
+<script type="application/javascript" src="/fpb/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/js/bootstrap.min.js"></script>
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/js/funcs.js"></script>
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/js/notice.js"></script>
+<script type="application/javascript" src="/fpb/__PUBLIC__/common/js/btn_action.js"></script>
+<script type="application/javascript" src="/fpb/__PUBLIC__/common/js/ajax_data.js"> </script>
+<script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/js/btn_action.js"></script>
+
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/lib/i_file_upload/file_upload.js"></script>
+<link rel="stylesheet" href="/fpb/__PUBLIC__/common/lib/i_file_upload/file_up.css" />
+
+<link href="/fpb/__PUBLIC__/common/lib//dis_content_set/dis_content_set.css" rel="stylesheet">
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/lib//dis_content_set/dis_content_set.js"></script>
+
+<link href="/fpb/__PUBLIC__/common/lib/summernote/summernote.css" rel="stylesheet">
+<link href="/fpb/__PUBLIC__/common/lib/summernote/font-awesome/css/font-awesome.css" rel="stylesheet">
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/lib/summernote/summernote.min.js"></script>
+<script  type="application/javascript" src="/fpb/__PUBLIC__/common/lib/summernote/summernote-zh-CN.js"></script>
+
+<link rel="stylesheet" href="/fpb/__PUBLIC__/common/lib/data_editor/data-editor.css">
+<script type="application/javascript"  src="/fpb/__PUBLIC__/common/lib/data_editor/data-editor.js"></script>
+
+<link rel="stylesheet" href="/fpb/__PUBLIC__/gzh/admin/css/common.css" />
+<link rel="stylesheet" href="/fpb/__PUBLIC__/gzh/admin/css/indexBanner.css" />
+
+<script type="application/javascript"  src="/fpb/__PUBLIC__/gzh/admin/js/indexBanner.js"></script>
+<link rel="stylesheet" type="text/css" href="/fpb/__PUBLIC__/common/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/fpb/__PUBLIC__/admin/index/css/common.css" />
+        
+<title>管理员后台</title>
+</head>
+<body style="overflow:scroll;">
+<div class="i_content">
+  <div class="page_title">
+      <h1>设置菜单项</h1>
+    </div>
+    <hr/>
+    <div class="data_table">
+        <!---表格显示-->
+        <table class="table table-bordered dis_table container">
+          <tr class="row">
+            <th class="col-md-3">菜单名称及链接</th>
+            <td class="col-md-6" style="word-wrap: break-word; word-break: break-all;" >
+              微商城;http://www.jack.com/index.php/Hone/Index/index
+
+               
+                  
+                  <div class="collapse edit_box" id="content_modify" style="width:600px">
+                      <div class="well">
+                          <form >
+                            <!-- <input type="text" name="content" value="{$data.content}"  style="width:200px;"> -->
+                            <textarea name="content" rows="5" cols="50" placeholder="微商城;http://www.jack.com/index.php/Hone/Index/index"></textarea>
+                            <div><input type="hidden" name="id" value="" /></div>
+                              
+                              <button type="button" class="btn btn-primary submit_btn" data-url="{$update_url}">提交</button>
+
+                            
+                            
+                          </form>
+                    </div>
+                  </div>
+                  
+            </td>
+            <td class="col-md-3"></td>
+          </tr>    
+
+
+       </table>
+        <!---表格显示结束-->
+    </div>
+ </div>   
+</body>
+<script type="application/javascript">
+
+$(document).ready(function(e) {
+  //绑定提交
+  BindSubmitBtnClick();
+  //添加编辑按钮
+  AddEditSet()
+  
+
+});//ready
+</script>
+</html>

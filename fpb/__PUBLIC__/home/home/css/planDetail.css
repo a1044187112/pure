@@ -1,0 +1,44 @@
+.data_content_area{
+	color: #ffffff;
+}
+.page_title_area{
+	font-size: 25px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.ex_title_area{
+	margin-top: 10px;
+	padding: 0 15%;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.ex_title_area .time_part_con{
+	
+}
+
+.ex_title_area .plan_title{
+	text-align: center;
+
+}
+
+.detail_info_area{
+	margin-top: 20px;
+	padding: 0 20px;
+}
+
+.detail_info_area .di_item{
+	
+}
+
+.detail_info_area .di_item:nth-child(1){
+	width: 20%;
+}
+
+.detail_info_area .di_item:nth-child(2){
+	width: 80%;
+	padding-left: 10px;
+	text-align: justify;
+	font-size: 15px;
+}

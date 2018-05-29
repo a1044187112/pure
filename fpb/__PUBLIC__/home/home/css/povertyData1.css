@@ -1,0 +1,502 @@
+*{
+	padding: 0px;
+	margin:0px;
+	font-family: "微软雅黑";
+}
+/* @font-face{
+	font-family: "逼格青春";
+	src: url(/fpb/__PUBLIC__/home/fonts/逼格青春粗黑体简2.0.TTF);
+} */
+@media screen and (min-width: 1900px){
+    body{font-size: 23px;
+    	 }
+  }
+@media screen and (min-width: 1500px) and (max-width: 1899px){
+    body{font-size: 18px;
+    	}
+  }
+@media screen and (min-width: 1200px) and (max-width: 1499px){
+    body{font-size: 13px;
+    	}
+  }
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    body{font-size: 14px;
+    	}
+    .area_money_img{
+    	font-size: 16px;
+    }
+  }
+@media screen and (min-width: 768px) and (max-width: 970px){
+    body{font-size: 12px;
+		
+    }
+  }
+@media screen and (min-width: 480px) and (max-width: 767px){
+    body{font-size: 9px;
+    	}
+    .area_money_img{
+    	font-size: 16px;
+    }
+  }
+@media screen and (max-width: 480px) {
+    body{font-size: 6px;
+		
+    }
+    .area_money_img{
+    	font-size: 12px;
+    }
+  }
+html{
+	font-size: 10px;
+}
+img{
+	width: 100%;
+}
+body{
+	background-color: #020724;
+}
+.bg {
+	position: absolute;
+	z-index: -100;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+	/*background-color: #020724;*/
+}
+.bg .bg_td{
+	width: 20px;
+	height: 25px;
+	border-right: 1px solid #125d85;
+	border-top: 1px solid #125d85;
+	opacity: 0.5;
+}
+#canvas{
+	position: absolute;
+	opacity: 0.9;
+	z-index: -50;
+} 
+.container{
+	width: 100%;
+}
+.header{
+	width: 96%;
+	margin: auto;
+	color: #eee;
+	font-size: 1em;
+	text-align: center;
+	line-height: 2.4;
+}
+.header .header_title{
+	width: 25%;
+	float: left;
+}
+.header .header_title .header_title_text{
+	width: 90%;
+	margin: auto;
+	background-color: #132637;
+	border-left:1px solid #0d6bbf;
+	border-bottom:1px solid #0d6bbf;
+	border-right:1px solid #0d6bbf;
+	padding-right: 8%;
+	position: relative;
+}
+.header .header_title .header_title_text .header_title_num{
+	font-family: "bgqc"; 
+	color: #03ffff;
+	font-size: 1.3em;
+}
+.header .header_title .header_title_pro{
+	width: 9%;
+	height: 38px;
+	border:1px solid #0d6bbf;
+	margin-right: 0px;
+	float: right;
+	position: absolute;
+	top: 1px;
+	right: 0px;
+
+}
+.header .header_title .header_title_pro .header_title_pro_children{
+	background-color: orange;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 15px;
+}
+/* 顶部脱贫人口完 */
+.area .area_money{
+	margin-top: 30px;
+}
+.area .area_money:nth-child(2){
+	
+}
+.area .area_money:nth-child(1) .area_money_key{
+	width: 85%;
+	margin:auto;
+	border-left: 3px solid #00b5ec;
+	border-right: 3px solid #00b5ec;
+	font-size: 2.2em;
+	color: #0fb9f6;
+	padding-left: 7%;
+	margin-top: 8%;
+	line-height: 1.0;
+}
+.area .area_money:nth-child(1) .area_money_key:nth-child(2){
+	margin-top:0px;
+	text-align: right;
+	padding-right: 4%;
+}
+.area .area_money:nth-child(1) .area_money_key .area_money_value{
+	font-family: "bgqc";
+	color: #0bda44;
+	font-size: 1.2em;
+}
+.area .area_money #return_canvas{
+	display: block;
+	width: 15%;
+	float: left;
+	margin-top:7.6%;
+	/*animation: return_canvas 3s;*/
+}
+/*@-webkit-keyframes return_canvas 
+{
+	from {margin-left: -90%;}
+	to {margin-left: 0%;}
+}*/
+.area .area_money #next_canvas{
+	display: block;
+	width: 10%;
+	position: absolute;
+	top: 32%;
+	right: 0;
+	height: 100%;
+}
+@media screen and (min-width: 1200px) and (max-width: 1499px){
+    .area .area_money #return_canvas{
+		margin-top:4%;
+    }
+    .area .area_money #next_canvas{
+    	top:4%;
+    }
+}
+.area .area_money .area_money_img{
+	width: 60%;
+	margin-left: 20%;
+	position: relative;
+}
+.area .area_money .area_money_img .img_text{
+	width: 100%;
+	text-align: center;
+	font-size: 2.5em;
+	color: white;
+	position: absolute;
+	top: 7.5%;
+}
+.area .area_money .area_money_img .img_num{
+	width: 100%;
+	text-align: center;
+	font-size: 2.5em;
+	/*font-size: 30px;*/
+	color: #f05565;
+	position: absolute;
+	bottom: 6%;
+}
+.area .area_money .area_money_img .img_num .img_num_text{
+	font-family: "bgqc";
+}
+/*  扶贫资金导航下面的内容  */
+
+.con .con_data{
+	margin-left: -15px;
+	margin-top: 20px;
+}
+.con .con_data .menu{
+	position: relative;
+	width: 60%;
+}
+.con .con_data .menu .menu_img_bg{
+	width: 100%;
+	animation: myfirst 3s;
+}
+.con .con_data .menu .menu_img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	animation: myfirst 3s;
+}
+.con .con_data .menu .menu_img_text{
+	color: #00ffff;
+	position: absolute;
+	top: 8%;
+	left: 17%;
+	font-size: 1.5em;
+	animation: myfirst1 3s;
+}
+.con .con_data .menu .data_nav{
+	width: 50%;
+	position: absolute;
+	left: 0;
+	top:50%;
+	animation: myfirst 3s;
+}
+.con .con_data .menu .data_nav .menu_nav_line{
+	width: 3.5%;
+	position: absolute;
+	top: 6%;
+	left: 8%;
+}	
+.con .con_data .menu .data_nav .menu_item{
+	display: block;
+	position: absolute;
+	left:38%;
+	font-size: 0.6em;
+	color: #07ffff;
+	text-decoration: none;
+}
+.con .con_data .menu .data_nav .menu_item:nth-child(3){
+	top:10.5%;
+	color: #0be826;
+}
+.con .con_data .menu .data_nav .menu_item:nth-child(4){
+	top:27.5%;
+}
+.con .con_data .menu .data_nav .menu_item:nth-child(5){
+	top:44%;
+}
+.con .con_data .menu .data_nav .menu_item:nth-child(6){
+	top:59.5%;
+}
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+	from {left: -84%;}
+	to {left: 0;}
+}
+@-webkit-keyframes myfirst1 /* Safari 和 Chrome */
+{
+	from {left: -67%;}
+	to {left: 17%;}
+}
+.con .con_data .img_border{
+	/*display: none;*/
+	position: relative;
+	width: 76%;
+	margin-left: 25%;
+	margin-top:-6%;
+	/*background-color: red;*/
+	/*animation: opacity_myfirst 3s;*/
+}
+@-webkit-keyframes opacity_myfirst /* Safari 和 Chrome */
+{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+.con .con_data .img_border .img_border_con{
+	display: none;
+	width: 82%;
+	position: absolute;
+	top: 33%;
+	left: 8%;
+}
+.con .con_data .img_border .img_border_line{
+	width: 2.4%;
+	position: absolute;
+	top: 38%;
+	right: 13.2%;
+}
+.con .con_data .img_border iframe{
+	width: 70%;
+	position: absolute;
+	top: 37%;
+	left: 10%;
+	height: 500px;
+	display: none;
+	z-index: 1;
+}
+
+/*  地图  */
+.con_map{
+	width: 41%;
+	margin-left: -15px;
+	margin-top:15px;
+	/*border-radius: 50%;*/
+}
+.map{
+	position: relative;
+	/*background-color: blue;*/
+	/*padding-top: 0px;*/
+}
+.map .map_bg1{
+	display: none;
+	width: 100%;
+	display: block;
+	margin:auto;
+	/*background-color: red;*/
+	/*margin-top: 18px;*/
+}
+.map .map2{
+	width: 96%;
+	margin: auto;
+	position: absolute;
+	top:1%;
+	left: 2%;
+	z-index: 100;
+	margin:0px;
+	/*background-color: red;*/
+}
+.map .map2 .map_bg2{
+	width: 100%;
+	border-radius: 50%;
+}
+.map .map3{
+	width: 90%;
+	margin:2% auto;
+	position: absolute;
+	top:4%;
+	left: 4.9%;
+	z-index: 100;
+	margin:0px;
+	border-radius: 50%;
+}
+.map .map3 .map_bg3{
+	width: 100%;
+	border-radius: 50%;	
+}
+.map .map4{
+	width: 88%;
+	margin:2% auto;
+	position: absolute;
+	top:5%;
+	left: 6%;
+	z-index: 100;
+	margin:0px;
+	border-radius: 50%;
+}
+.map .map4 .map_bg4{
+	width: 100%;
+	border-radius: 50%;
+}
+.map .map5{
+	width: 90%;
+	position: absolute;
+	top: 5%;
+	bottom:5%;
+	left: 5%;
+	/*border-radius: 50%;*/
+	z-index: 200;
+	overflow: hidden;
+	/*background-color: red;*/
+}
+.map .map_area{
+	width: 76%;	
+	/*margin-left: 12%;*/
+}
+.map .map_area{
+	overflow: hidden;
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	bottom:5%;
+	left: 3%;
+	border-radius: 50%;
+	z-index: 200;
+	/*background-color: red;*/
+}
+.map .map_area svg{
+	border-radius: 50%;
+}
+.con .draw_rect{
+	margin-left: -10px;
+	padding:0px;
+	padding-top: 10px;
+	margin-top: 4%;
+}
+.con .draw_rect .header{
+	position: relative;
+}
+.con .draw_rect .header .header_text{
+	position: absolute;
+	left: 5%;
+	top:2%;
+	font-size: 1em;
+	color: #00ffff;
+}
+.con .draw_rect  .content{
+	margin-top:10px;
+	color: #00ffff;
+	font-size: 0.82em;
+	line-height: 2.0;
+}
+.con .draw_rect  .content .content_item{
+	width: 90%;
+	margin:auto;
+}
+.con .draw_rect  .content .con_item_title{
+	width:45%;
+	float: left;
+
+}
+.con .draw_rect  .content .con_item_num{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+.con .draw_rect  .content .con_item_num .item_num{
+	color: #fffd00;
+}
+.con .draw_rect .content .con_item_com_rate{
+	float: left;
+	width: 30%;
+	text-align: right;
+}
+.con .draw_rect .content .con_item_com_rate .com_rate_num{
+	color: white;
+}
+.con .draw_rect .content_img{
+	/*margin-top: 20px;*/
+}
+/* ------------分割线------------*/
+/*   第三部分       */
+.con1{
+	/*background-color: red;*/
+	position: relative;
+}
+.con1 .menu{
+	margin-left: -15px;
+	/*padding-right: 4%;*/
+	margin-top: 25px;
+	width: 60%;
+	position: relative;
+	background-color: red;
+}
+.con1 .menu .menu_img_bg{
+	width:16%;
+	position: absolute;
+	z-index: 200;
+	display: none;
+}
+.con1 .menu .menu_img{
+	position: absolute;
+	z-index: 100;
+	animation: myfirst 4s;
+}
+.con_anim .menu .menu_text_data{
+	color: #00ffff;
+	position: absolute;
+	top: 7px;
+	animation: myfirst1 4s;
+	left: 17%;
+	font-size: 1.5em;
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+	from {left: -84%;}
+	to {left: 0;}
+}
+@-webkit-keyframes myfirst1 /* Safari 和 Chrome */
+{
+	from {left: -67%;}
+	to {left: 17%;}
+}

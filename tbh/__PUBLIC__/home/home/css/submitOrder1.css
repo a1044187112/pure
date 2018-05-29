@@ -1,0 +1,205 @@
+*{
+	margin: 0px;
+	padding:0px;
+	border:0px;
+	/*font-family: "微软雅黑";*/
+	list-style: none;
+}
+img{
+	width: 100%;
+}
+.container .container_size{
+	margin-top:25px;
+}
+.container .container_size>.container_size_item:first-child{
+	width: 10%;
+}
+.container .container_size>.container_size_item:nth-child(2){
+	width: 80%;
+}
+.container .container_size>.container_size_item:nth-child(2)>.container_size_item_sel:first-child{
+	color: #26c9d2;
+}
+.container .container_size .container_size_com{
+	margin-top:5px;
+	width: 80%;
+}
+.container .container_size .container_size_com .container_size_com_item{
+	border: 1px solid #bbb;
+	margin-right: 10px;
+	display: block;
+	float: left;
+	width: 10%;
+	text-align:center;
+	padding:5px;
+	border-radius: 15%;
+	color: #29eccc;
+	margin-top: 5px;
+}
+.container .container_color .container_color_com{
+	margin-top:5px;
+	width: 80%;
+}
+.container .container_color .container_color_com .container_color_com_item{
+	margin-right: 10px;
+	display: block;
+	float: left;
+	/*width: 10%;*/
+	text-align:center;
+	padding:7px 5px;
+	border-radius: 15%;
+	font-size: 14px;
+	margin-top:5px;
+}
+.container .container_color .container_color_com .container_color_com_item:first-child{
+	border:1px solid #bbb; 
+	color: #bbb;
+}
+.container .container_color .container_color_com .container_color_com_item:nth-child(2){
+	border:1px solid #111; 
+	color: #111;
+}
+.container .container_color .container_color_com .container_color_com_item:nth-child(3){
+	border:1px solid #f09d13; 
+	color: #f09d13;
+}
+.container .container_num{
+	margin-top:25px;
+}
+.container .container_num>.container_num_item:first-child{
+	width: 10%;
+}
+.container .container_num>.container_num_item:nth-child(2){
+	width: 40%;
+	color: #26c9d2;
+	font-size: 18px;
+}
+.container .container_num>.container_num_item:nth-child(3){
+	width: 50%;
+}
+.container .container_num>.container_num_item:nth-child(3)>.container_num_item_sel{
+	float: left;
+	margin-left: 15px;
+	padding:4px 8px ;
+	font-size: 20px;
+}
+.container .container_num>.container_num_item:nth-child(3)>.container_num_item_sel:nth-child(2){
+	border: 1px solid #26c9d2;
+	border-radius: 10%;
+}
+.container .container_num .container_num_number{
+	padding:0px !important;
+}
+input[type='text']{
+	-webkit-appearance: none;
+}
+.container .container_num .container_num_number .container_num_number_input{
+	border:none;
+	outline: none;
+	resize: none;
+	text-align: center;
+	padding:none;
+}
+.container_address{
+	margin-top:20px;
+	width: 100%;
+	text-align: center;
+	color: #eee;
+	padding: 8px 0px;
+	font-size: 18px;
+	background-color: #29eccc;
+	font-weight: 100;
+}
+.container_info{
+	padding-top:25px;
+
+}
+.container_info>.container_info_item:first-child{
+	width: 25%;
+	text-align: right;
+	color: #24cbd3;
+	font-size: 14px;
+	padding-right: 5px;
+	line-height: 1.9;
+}
+.container_info>.container_info_item:nth-child(2){
+	width: 75%;
+	color: #ddd;
+	font-size: 16px;
+}
+.container_info>.container_info_item:nth-child(2)>.input_text{
+	width: 80%;
+	border:none;
+	border: 1px solid #bbb;
+	outline: none;
+	padding-left: 10px;
+	color: #ccc;
+	font-size: 14px;
+	line-height: 1.8;
+}
+.container_info>.container_info_item:nth-child(2)>.input_text:focus{
+	color: #444;
+}
+.footer_hidden{
+	visibility: hidden;
+	margin-top:30px;
+}
+.footer_hidden>.footer_hidden_item:first-child{
+	padding:10px 0px;
+	width: 55%;
+	background-color: #29eccc;
+	color: #eee;
+	text-align: center;
+	font-size: 18px;
+
+}
+.footer_hidden>.footer_hidden_item:first-child>.footer_hidden_item_span{
+	color: white;
+	font-size: 22px;
+
+}
+.footer_hidden>.footer_hidden_item:nth-child(2){
+	background-color: #ff448b;
+	color: #ddd;
+	width: 45%;
+	font-size: 20px;
+	font-weight: 100;
+	padding:11px 0px 10px 0px;
+	text-align: center;
+}
+.footer_show{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+.footer_show>.footer_show_item:first-child{
+	padding:10px 0px;
+	width: 55%;
+	background-color: #29eccc;
+	color: #eee;
+	text-align: center;
+	font-size: 18px;
+
+}
+.footer_show>.footer_show_item:first-child>.footer_price{
+	color: white;
+	font-size: 19px;
+
+}
+.footer_show>.footer_show_item:nth-child(2){
+	background-color: #ff448b;
+	color: #ddd;
+	width: 45%;
+	font-size: 19px;
+	font-weight: 100;
+	padding:11px 0px 10px 0px;
+	text-align: center;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	right: 0;
+}
+.footer_show>.footer_show_item:nth-child(2) .footer_show_item_btn{
+	color: #ddd;
+	text-decoration: none;
+}

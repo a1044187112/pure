@@ -1,0 +1,100 @@
+*{
+	padding: 0px;
+	margin:0px;
+	border:0px;
+	/*font-family: "微软雅黑";*/
+}
+.container>.container_item:first-child{
+	margin-left: 10%;
+	color: #29eccc;
+	font-size: 18px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.container .container_reason>.container_rea_item{
+	width: 10%;
+	font-size: 16px;
+}
+.container .container_reason>.container_rea_item:nth-child(2){
+	text-align: center;
+	color: #eee;
+	border-radius: 5px;
+	padding:8px 0;
+	width: 37%;
+	background-color: #29eccc;
+}
+.container .container_reason>.container_rea_item:nth-child(3){
+	width: 6%;
+}
+.container .container_reason>.container_rea_item:nth-child(4){
+	width: 37%;
+	text-align: center;
+	color: #eee;
+	border-radius: 5px;
+	padding:8px 0;
+	width: 37%;
+	background-color: #8db8fc;
+}
+.container .container_reason:nth-child(3)>.container_rea_item:nth-child(2){
+	background-color: #f8b4c3;
+	margin-top: 25px;
+}
+.container .container_reason:nth-child(3)>.container_rea_item:nth-child(4){
+	background-color: #e1a6fa;
+	margin-top: 25px;
+}
+.container .container_reason:nth-child(4)>.container_rea_item:nth-child(2){
+	background-color: #d7d6ff;
+	margin-top: 25px;
+}
+.container .container_reason:nth-child(4)>.container_rea_item:nth-child(4){
+	background-color: #90eef8;
+	margin-top: 25px;
+}
+.container_textarea{
+	margin-top:20px;
+}
+.container .container_textarea>.container_textarea_item{
+	width: 6%;
+}
+.container .container_textarea>.container_textarea_item:nth-child(2){
+	width: 88%;
+}
+.container .container_textarea>.container_textarea_item:nth-child(2)>.refund_textarea{
+	width: 94%;
+	border: 1px solid #bbb;
+	outline: none;
+	resize: none;
+	padding:8px 10px 10px 10px ;
+	color: #bbb;
+}
+.container .container_refund{
+	margin-top:10px;
+	margin-left: 6%;
+	color: #31c3c2;
+	font-size: 18px;
+}
+.container .container_refund>.refund_price{
+	color: #f8627f;
+	font-size: 22px;
+	font-weight: 600;
+}
+.container .container_submit{
+	margin-top:30px;
+	padding-bottom: 50px;
+}
+.container .container_submit>.container_submit_item{
+	width:25%;
+}
+.container .container_submit>.container_submit_item:nth-child(2){
+	width: 50%;
+	text-align: center;
+	background-color: #ff448b;
+	border-radius: 7px;
+	padding: 10px 0px;
+	font-size: 22px;
+}
+.container .container_submit>.container_submit_item:nth-child(2) .container_submit_item_btn{
+	color: white;
+	text-decoration: none;
+}

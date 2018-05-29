@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta charset="utf-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no"/>
+   <script src="/73h/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+   <script src="/73h/__PUBLIC__/common/js/funcs.js"></script>
+  <link rel="stylesheet" href="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+  <script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js"></script>
+<!--   <script src="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+
+  <link rel="stylesheet" href="/73h/__PUBLIC__/common/lib/swiper/css/swiper.min.css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/home/home/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/admin-moblie/css/confirmSuccess.css">
+  <script type="text/javascript" src="/73h/__PUBLIC__/admin-moblie/wechatCon.js"></script>
+   <!--  <link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/home/home/css/firstAidCall.css"> -->
+
+  <title>挂号确认成功</title>
+</head>
+<body>
+       <!-- 中间背景框 -->
+       <div class="ui-block-b content_bg" style="background-image: url(/73h/__PUBLIC__/admin-moblie/pic/bg/confirm_success/1.png);">
+        <!-- 内容 -->
+         <div class="content">
+           <div class="con_title">
+             挂号预约信息
+           </div>
+          <!-- 数据表 -->
+           <div class="con_data">
+             <div class="con_data_item ui-grid-a">
+               <div class="ui-block-a item_title">
+                姓名:
+               </div>
+               <div class="ui-block-b item_data">
+                小毛
+               </div>
+             </div>
+             <div class="con_data_item ui-grid-a">
+               <div class="ui-block-a item_title">
+                电话:
+               </div>
+               <div class="ui-block-b item_data">
+                13789456759
+               </div>
+             </div>
+             <div class="con_data_item ui-grid-a">
+               <div class="ui-block-a item_title">
+                身份证:
+               </div>
+               <div class="ui-block-b item_data">
+                52011545845454555
+               </div>
+             </div>
+           </div>
+           <!-- 完成 -->
+           <div class="button">
+           <a href="/73h/tmpl/admin-moblie/verifyProject.html">
+             <img src="/73h/__PUBLIC__/admin-moblie/pic/bg/confirm_success/(23).png">
+            </a>
+           </div>
+         </div>
+       </div >
+       <!-- 印章！ -->
+       <div class="seal" style="background-image: url(/73h/__PUBLIC__/admin-moblie/pic/bg/confirm_success/2.png">
+         
+       </div>
+  
+</body>
+<script >
+  $(document).ready(function(){
+
+    CtrlElAction.isSimPost=false;
+    CtrlElAction.formBlur.inputBlur();
+      HomeCtrlElAction.btnFunc.bindSbmtBtnClick(".bi_clear_btn");
+
+  
+  });
+</script>
+</html>

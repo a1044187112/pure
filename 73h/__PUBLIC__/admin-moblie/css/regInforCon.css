@@ -1,0 +1,78 @@
+/*内容*/
+.content{
+	/*background-color: #ADDEFF;*/
+	width: 80%;
+	position: absolute;
+	left: 10%;
+	top:10%;
+	z-index: 1000;
+
+}
+.content .con_top{
+	/* background-color: #3DFFDD;*/
+	 height: 100px;
+	 line-height: 100px;
+	 
+}
+
+.content .con_top .con_top_img{
+	width: 28%;
+	float: left;
+	padding: 0px 15px 0px 20px;
+	height: 60px;
+}
+
+
+.content .con_top .con_top_text{
+	float: left;
+	font-size: 20px;
+	font-family:"黑体";
+	 
+	 
+
+}
+.content .con_center{
+	padding-top: 8%;
+	/*padding-top:50px;*/ 
+	/*height:200px;*/
+	/*padding-top:1px;*/
+
+}
+.content .con_center .con_center_img{
+	 
+}
+
+.content .con_text2{
+padding-top:10px;
+font-family: "黑体";
+}
+.content .con_text2 .con_center_firstcolor{
+float: left;
+color:#B6B6B7;
+}
+.content .con_text2 .con_center_numcolor{
+float: left;
+color: #FE9C80;
+}
+.content .con_text2 .con_center_endcolor{
+float: left;
+color:#B6B6B7;
+}
+.content .con_button{
+	padding-top: 80px;
+	padding-left: 30%; 
+	width: 35%;
+}
+.style{
+	padding-left:10px;
+	font-size: 20px;
+	height: 40px;
+	width: 100%;
+	border-radius: 14px;
+	border: 2px solid #3AB9BC;
+}
+ 
+.style:focus{
+	 outline: none;
+
+}

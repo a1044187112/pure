@@ -1,0 +1,61 @@
+body{
+	margin:0;
+	padding: 0;
+	background-color: #FDFDFD;
+}
+.content_bg{
+ 
+/*background-image: url(/kksq/__PUBLIC__/home/pic/bg/about_us/2.png);*/
+background-size: contain;
+background-repeat: no-repeat;
+padding-bottom: 10%;
+}
+.content_bg .img{
+padding-top: 9%;
+}
+/*padding-bottom: 1%;*/
+/*}*/
+.content_bg .img img{
+	width: 30%;
+	display:block;
+   	margin:auto;
+}
+.content_bg .con_text1{
+	padding-top: 3%;
+	font-size: 15px;
+	/*color: #FFFFFF;*/
+	text-align: center;
+	font-weight: 600;
+	color: rgba(252,252,252,0.7);
+}
+.content_bg .con_text2{
+	font-size: 14px;
+	font-weight: 600;
+	color: rgba(252,252,252,0.7);
+	text-align: center;
+ 
+}
+/*客服电话*/
+.content_bg .tel_box{
+padding-top: 15%;
+font-size: 21px;
+font-weight: 600;
+color: rgba(0,0,0,0.7);
+}
+.content_bg .tel_box .tel_box1{
+	 width: 20%;
+	 text-align: right;
+}
+.content_bg .tel_box .tel_box1 img{
+	width: 60%;	
+}
+.content_bg .tel_box .tel_box2{
+	padding-top: 2%;
+	 width: 35%;
+	 text-align: right;
+
+}
+.content_bg .tel_box .tel_box3{
+	 width: 45%;
+	 padding-top: 2%;
+}

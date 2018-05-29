@@ -1,0 +1,56 @@
+img{
+	width: 100%;
+}
+.done_img{
+	margin-top: 80px;
+}
+
+.done_img .img_con{
+	padding: 0 20px;
+}
+
+.done_notice{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 30px;
+	color: #51B7B0;
+}
+
+.done_notice {
+	text-align: center;
+	font-size: 18px;
+}
+.booking_sub_btn_area{
+	margin-top:40px;
+}
+.booking_sub_btn_area>.booking_sub_item{
+	border-radius: 15px;
+	text-align: center;
+}
+.booking_sub_btn_area>.booking_sub_item .booking_sub_item_btn{
+	font-family: "微软雅黑";
+	display: block;
+	width: 100%;
+	color: #eee;
+	font-size: 20px;
+	font-weight: 100;
+	line-height: 1.7;
+	text-decoration: none;
+}
+.booking_sub_btn_area>.booking_sub_item:first-child{
+	width: 8%;
+}
+.booking_sub_btn_area>.booking_sub_item:nth-child(2){
+	width: 38%;
+	background-color: #26cacc; 
+}
+.booking_sub_btn_area>.booking_sub_item:nth-child(3){
+	width: 8%;
+}
+.booking_sub_btn_area>.booking_sub_item:nth-child(4){
+	width: 38%;
+	background-color: #e25317;
+}
+.booking_sub_btn_area>.booking_sub_item:nth-child(5){
+	width: 8%;
+}

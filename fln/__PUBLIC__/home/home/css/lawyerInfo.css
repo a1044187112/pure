@@ -1,0 +1,102 @@
+*{
+	margin:0px;
+	padding:0px;
+	text-decoration: none;
+}
+img{
+	width: 100%;
+}
+.container_img_hea{
+	/*background-color: red;*/
+	position: relative;
+}
+.container_img .container_img_hea>.container_img_hea_item{
+	display: block;
+}
+.container_img .container_img_hea>.container_img_hea_item:first-child{
+	
+}
+.container_img .container_img_hea>.container_img_hea_item:nth-child(2){
+	position: absolute;
+	bottom: 0px;
+	z-index: 100;
+}
+.container_img .container_img_hea .container_img_info{
+	position: absolute;
+	bottom: 0px;
+	z-index: 200;
+	width: 100%;
+	color:#bbb;
+}
+.container_img .container_img_hea .container_img_info>.container_img_info_item>.container_img_address:first-child{
+	width: 50px;
+	float: left;
+	text-align: right;
+	font-weight: 100;
+	font-size: 15px;
+}
+.container_img .container_img_hea .container_img_info>.container_img_info_item>.container_img_address:nth-child(2){
+	width: 17px;
+	float: left;
+	padding-left:5px;
+}
+.container_img .container_img_hea .container_img_info>.container_img_info_item:nth-child(3){
+	width: 100px;
+	text-align:center;
+	float: right;
+	font-weight: 100;
+	font-size: 15px;
+}
+.container .container_lawyer_name{
+	font-size: 28px;
+	text-align: center;
+	color: #000;
+	padding:8px 0;
+	/*font-weight: 500;*/
+}
+.container_lawyer_intro{
+	color:#eee;
+	text-align: center;
+}
+.container_lawyer_intro .container_lawyer_intro_item{
+	width: 15%;
+	border-radius: 3px;
+	padding: 1px 0;
+	font-size: 15px;
+}
+.container_lawyer_intro .container_lawyer_intro_item:nth-child(2){
+	background-color: #6695e3;
+	width: 30%;
+}
+.container_lawyer_intro .container_lawyer_intro_item:nth-child(4){
+	background-color: #f39d9c;
+	width: 30%;
+}
+.container_lawyer_info{
+	margin-top: 25px;
+	text-align: center;
+	border-top: 2px solid #bbb;
+}
+.container_lawyer_info .container_lawyer_info_item{
+	padding:5px 0;
+	border-bottom: 3px solid #bbb;
+}
+.container_lawyer_info .container_lawyer_info_item .info_item_btn{
+	color:#000;
+}
+.container_lawyer_info .container_lawyer_info_item .item_onselected{
+	color: #6695e3;
+}
+.container_lawyer_info .container_lawyer_info_item:nth-child(2){
+	border-bottom: 3px solid #6798e5;
+}
+.container_lawyer_info_intro{
+	padding:30px 5% 0 5%;
+	line-height: 1.6;
+	font-size: 15px;
+	color:#000;
+	font-size: 700;
+}
+.container_lawyer_info_intro .container_lawyer_info_intro_item:nth-child(2){
+	text-indent:2em;
+}

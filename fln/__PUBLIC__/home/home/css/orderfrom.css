@@ -1,0 +1,96 @@
+*{
+	padding:0px;
+	margin:0px;
+	text-decoration: none;
+}
+img{
+	width: 100%;
+}
+.header{
+	position: relative;
+}
+.header .nav{
+	padding:15px 0px;
+	background: url(/fln/__PUBLIC__/home/pic/bg/orderfrom/1.png) no-repeat 0px 0px ;
+}
+.header .nav .nav_item{
+	text-align: center;
+	font-size: 18px;
+	color: #f07f7b;
+	font-weight: 700;
+}
+.header .nav .nav_item .nav_item_btn{
+	color: #f07f7b;
+}
+.header .nav .nav_item:first-child .nav_item_btn{
+	color: #6695e3;
+}
+.header .header_img{
+	width: 25%;
+	position: absolute;
+	bottom:0px;
+}
+.container .container_icon{
+	margin-top: 5px;
+}
+.container .container_icon .container_icon_header{
+	font-size: 14px;
+	background: #6695e3;
+	padding:5px 0;
+	color: #eee;
+	padding-left: 4%;
+}
+.container .container_icon .container_icon_header .container_icon_header_item:nth-child(2){
+	text-align: right;
+	padding-right: 5%;
+}
+.container .container_icon .container_icon_info{
+	width: 92%;
+	margin: auto;
+	padding:15px 0 0 0;
+}
+.container .container_icon .container_icon_info .container_icon_info_item:first-child{
+	width: 28%;
+}
+.container .container_icon .container_icon_info .container_icon_info_item:nth-child(2){
+	width:52%;
+	padding-left:3%;
+	font-size: 12px;
+	margin-top: 15px;
+	line-height: 1.4;
+	color: #888;
+}
+.container .container_icon .container_icon_info .container_icon_info_item:nth-child(2) .lawyer_info_span{
+	color: #000;
+}
+.container .container_icon .container_icon_info .container_icon_info_item:nth-child(2) .lawyer_info:nth-child(3) .lawyer_info_span{
+	color: #cd0011;
+}
+.container .container_icon .container_icon_info .container_icon_info_item:nth-child(3){
+	width: 20%;
+	text-align: center;
+}
+.container .container_icon .container_icon_info .container_icon_info_item:nth-child(3) .info_item_btn:first-child{
+	color: #6695e3;
+	margin-top: 15px;
+	font-size: 14px;
+}
+.container .container_icon .container_icon_info .container_icon_info_item:nth-child(3) .info_item_btn:nth-child(2){
+	background-color: #6695e3;
+	width: 100%;
+	line-height: 1.6;
+	margin: auto;
+	color: #eee;
+	margin-top: 1em;
+	font-size: 12px;
+}
+.container .container_icon .container_icon_info .container_icon_info_item:nth-child(3) .info_item_btn:nth-child(3) .mycanvas{
+	margin: auto;
+	margin-top: 8px;
+}
+.been_payment .info_item_btn:nth-child(2){
+	background-color: #f39d9c !important;
+}
+.container .container_icon .container_icon_info .container_icon_info_item .info_item_payment{
+	color: #eee;
+}

@@ -1,0 +1,277 @@
+.plan_content_area{
+	padding: 20px;
+}
+/*标题区域*/
+.paln_title_con{
+	font-size: 25px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.paln_title_con{
+	
+}
+/*标题区域结束*/
+
+/*高行政区域分叉线*/
+.up_link_class_line{
+	
+}
+
+.up_link_class_line .mid_line{
+
+}
+.up_link_class_line .mid_line .item_line{
+	height: 30px;
+}
+.up_link_class_line .mid_line .item_line:nth-child(1){
+	
+}
+
+.up_link_class_line .mid_line .item_line:nth-child(2){
+	border-left: 3px dotted #ffffff;
+}
+
+.up_link_class_line .bifurcate_line{
+	
+}
+
+.up_link_class_line .bifurcate_line .item_line{
+	height: 30px;
+}
+
+.up_link_class_line .bifurcate_line .item_line:nth-child(1){
+	width: 25%;
+}
+
+.up_link_class_line .bifurcate_line .item_line:nth-child(2){
+	width: 50%;
+	border-left: 3px dotted #ffffff;
+	border-right: 3px dotted #ffffff;
+	border-top: 3px dotted #ffffff;
+
+}
+
+.up_link_class_line .bifurcate_line .item_line:nth-child(3){
+	width: 25%;
+
+}
+
+.charge_leader{
+	margin: 5px 0;
+}
+
+.charge_leader .charge_leader_item:nth-child(1){
+	width: 25%;
+}
+
+.charge_leader .charge_leader_item:nth-child(2){
+	width: 50%;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	padding: 5px;
+}
+
+.charge_leader .charge_leader_item:nth-child(3){
+	width: 25%;
+}
+
+
+.principal_intro{
+	
+}
+
+.principal_intro .pintro_item{
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	padding: 5px;
+}
+
+.principal_intro .pintro_item:nth-child(1){
+	width: 45%;
+	margin-right: 5%;
+}
+
+.principal_intro .pintro_item:nth-child(2){
+	width: 45%;
+	margin-left: 5%;
+
+}
+/*高行政区域分叉线结束*/
+
+/*村级行政级别分叉线*/
+.up_link_class_line1{
+	
+}
+
+.up_link_class_line1 .mid_line{
+
+}
+.up_link_class_line1 .mid_line .item_line{
+	height: 30px;
+}
+.up_link_class_line1 .mid_line .item_line:nth-child(1){
+	
+}
+
+.up_link_class_line1 .mid_line .item_line:nth-child(2){
+	border-left: 3px dotted #ffffff;
+}
+
+.up_link_class_line1 .bifurcate_line{
+	
+}
+
+.up_link_class_line1 .bifurcate_line .item_line{
+	height: 20px;
+}
+
+.up_link_class_line1 .bifurcate_line .item_line:nth-child(1){
+	width: 40%;
+}
+
+.up_link_class_line1 .bifurcate_line .item_line:nth-child(2){
+	width: 20%;
+	border-left: 3px dotted #ffffff;
+	border-right: 3px dotted #ffffff;
+	border-bottom: 3px dotted #ffffff;
+
+}
+
+.up_link_class_line1 .bifurcate_line .item_line:nth-child(3){
+	width: 40%;
+
+}
+/*村级行政级别分叉线结束*/
+
+/*计划内容*/
+.plan_content_con{
+	margin-top: 20px;
+}
+
+.plan_content_con .plan_item_con{
+	margin:10px 0;
+	display: block;
+}
+
+.plan_content_con .plan_item_con .pic_item:nth-child(1){
+	width: 50%;
+	padding-right: 16px;
+}
+
+.plan_content_con .plan_item_con .pic_item:nth-child(2){
+	width: 50%;
+	padding-left: 13px;
+	position: relative;
+	border-left: 3px #ffffff dotted;
+}
+
+.plan_content_con .plan_item_con .sym_circle{
+	display: block;
+	width: 0px;
+	height: 0px;
+	border: 7px solid #ffffff;
+	border-radius: 20px;
+	position: absolute;
+	left: -8px;
+}
+
+.plan_content_con .plan_item_con .time_part{
+	text-align: right;
+	color: #ffffff;
+	font-size: 15px;
+	position: relative;
+	top: -4px;
+
+}
+
+/*偶数行的对齐方式*/
+.plan_content_con .plan_item_con_even .time_part{
+	text-align: left;
+}
+
+.plan_content_con .plan_item_con .sym_img{
+	padding: 0 20%;
+	margin-top: 10px;
+}
+
+.plan_content_con .part_item_title{
+	padding-top: 7px;
+	padding-right: 19px;
+	position: relative;
+}
+
+.plan_content_con .plan_item_con_even .part_item_title{
+	padding-right: 0px;
+	padding-left: 19px;
+}
+
+.plan_content_con .part_item_title .pit_item{
+}
+
+.plan_content_con .part_item_title .pit_item:nth-child(1){
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 40px 0 20px;
+	border-color: #ffffff transparent transparent transparent;
+	position: absolute;
+}
+
+.plan_content_con .part_item_title .pit_item:nth-child(2){
+	background-color: #ffffff;
+	float: left;
+	position: relative;
+	left: 19px;
+	padding: 6px;
+	font-size: 10px;
+	border-radius: 5px;
+}
+
+/*偶数行*/
+.plan_content_con .plan_item_con_even .part_item_title .pit_item:nth-child(1){
+/*	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 40px 0 20px;
+	border-color: #ffffff transparent transparent transparent;
+	position: absolute;*/
+	display: none;
+}
+
+.plan_content_con .plan_item_con_even .part_item_title .pit_item:nth-child(2){
+	background-color: #ffffff;
+	float: right;
+	position: relative;
+	left: -19px;
+	padding: 6px;
+	font-size: 10px;
+	border-radius: 0px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.plan_content_con .plan_item_con_even .part_item_title .pit_item:nth-child(3){
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 0 0px;
+	border-color: #ffffff transparent transparent transparent;
+	position: absolute;
+	right: 0;
+}
+/*偶数行结束*/
+
+
+
+.plan_content_con .plan_item_con .pic_item .part_item_intro{
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	font-size: 10px;
+	margin-top: 10px;
+	padding: 5px;
+	color: #ffffff;
+	text-align: justify;
+}
+
+/*计划内容结束*/

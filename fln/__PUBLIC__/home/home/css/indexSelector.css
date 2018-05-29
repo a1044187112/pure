@@ -1,0 +1,207 @@
+*{
+	margin:0px;
+	padding:0px;
+	text-decoration: none;
+	list-style: none;
+}
+img{
+	width: 100%;
+}
+body{
+	background-color: #faf2dd;
+}
+.header{
+	/*text-align: center;*/
+	position: relative;
+	background-color: white;
+}
+.header .header_sel .header_sel_item{
+	padding:5px 0px;
+	padding-left: 6%;
+	font-size: 17px;
+	position: relative;
+}
+.header .header_sel .header_sel_item .mycanvas{
+	position: absolute;
+	top:6px;
+	/*left: 5px;*/
+	/*margin-top:5px;*/
+}
+.address_ul{
+	width: 40%;
+	text-align: center;
+	background-color: white;
+	position: absolute;
+	top: 100%;
+	z-index: 800;
+	color: #333333;
+	border-top: 1px solid #555;
+	/*height: 280px;*/
+	overflow: auto;
+	/*position: relative;*/
+}
+.address_ul .address_li .address_btn{
+	display: block;
+	width: 100%;
+	color:#333333;
+	line-height: 3.0;
+	font-size: 14px;
+}
+.address_ul .address_li:first-child{
+	background-color: #faf2dd;
+}
+.address_ul .address_li:first-child .address_btn{
+	color: #e83e59;
+}
+.address_ul_sec{
+	position: absolute;
+	top:100%;
+	left: 40%;
+	width: 40%;
+	z-index: 800;
+	background-color: white;
+	text-align: center;
+	font-size: 14px;
+	line-height: 3.0;
+	border-top: 1px solid #555;
+	/*height: 280px;*/
+	overflow: auto;
+}
+.address_ul_sec .address_li_sec .address_btn_sec{
+	display: block;
+	width: 100%;
+	color:#333333;
+	line-height: 2.8;
+	font-size: 14px;
+}
+.address_ul_sec .address_li_sec:first-child{
+	background-color: #faf2dd;
+}
+.address_ul_sec .address_li_sec:first-child .address_btn_sec{
+	color: #e83e59;
+}
+.service{
+	position: absolute;
+	top:100%;
+	left: 40%;
+	width: 40%;
+	z-index: 800;
+	background-color: white;
+	text-align: center;
+	font-size: 14px;
+	line-height: 3.0;
+	border-top: 1px solid #555;
+	overflow: auto;
+}
+.service .service_li .service_btn{
+	display: block;
+	width: 100%;
+	color:#333333;
+	line-height: 2.8;
+	font-size: 14px;
+}
+.service .service_li:first-child{
+	background-color: #faf2dd;
+}
+.service .service_li:first-child .service_btn{
+	color: #e83e59;
+}
+
+
+.container{
+	background-color: white;
+}
+.container_img_hea{
+	/*background-color: red;*/
+	position: relative;
+}
+.container_img .container_img_hea .container_img_hea_item{
+	display: block;
+}
+.container_img .container_img_hea>.container_img_hea_item:first-child{
+	
+}
+.container_img .container_img_hea>.container_img_hea_item:nth-child(2){
+	position: absolute;
+	bottom: 0px;
+	z-index: 100;
+}
+.container_img .container_img_hea .container_img_info{
+	position: absolute;
+	bottom: 0px;
+	z-index: 200;
+	width: 100%;
+}
+.container_img .container_img_hea .container_img_info>.container_img_info_item>.container_img_address:first-child{
+	width: 50px;
+	float: left;
+	text-align: right;
+	color: white;
+	font-weight: 100;
+}
+.container_img .container_img_hea .container_img_info>.container_img_info_item>.container_img_address:nth-child(2){
+	width: 20px;
+	float: left;
+	padding-left:5px;
+}
+.container_img .container_img_hea .container_img_info>.container_img_info_item:nth-child(3){
+	width: 100px;
+	text-align:center;
+	color: white;
+	float: right;
+	font-weight: 100;
+}
+
+.container_info{
+	padding-bottom: 15px;
+}
+.container_info>div:first-child{
+	width: 72%;
+}
+.container_info>div:nth-child(2){
+	width: 28%;
+	text-align: center;
+}
+.container_info .container_info_name{
+	padding-left: 25px;
+	color: #2abac2;
+	font-size: 22px;
+	line-height: 1.7;
+}
+.container_info  .container_info_service{
+	text-align: center;
+	font-size: 14px;
+	padding-left: 2%;
+	/*margin-top: 4px;*/
+}
+.container_info .container_info_service>.container_info_service_item{
+	width: 28%;
+	padding:2px 0;
+	margin-left: 3%;
+	border-radius: 5px;
+	color: white;
+}
+.container_info .container_info_service>.container_info_service_item:first-child{
+	background-color: #6595e7;
+}
+.container_info .container_info_service>.container_info_service_item:nth-child(2){
+	background-color: #90c320;
+}
+.container_info .container_info_service>.container_info_service_item:nth-child(3){
+	background-color: #fd6bb6;
+}
+
+.container_info .container_info_price{
+	font-size: 22px;
+	color: #ccc;
+	line-height: 1.7;
+}
+.container_info .container_info_buy{
+	background-color: #f39d9c;
+	border-radius: 8px;
+	color: #eee;
+	margin-right: 5px;
+	padding:3px 0;
+	/*margin-top:2px;*/
+	font-size: 14px;
+}

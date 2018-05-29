@@ -1,0 +1,48 @@
+body {
+	background-color: #FFFFFF;
+
+}
+
+.head_pic_area{
+}
+.head_pic_area .head{
+	height: 100%;
+	width: auto;
+}
+.head_pic_area .head .head_pro{
+	height: auto;
+	width: 70%;
+	position: absolute;
+	top:16%;
+	left: 15%;
+	z-index: 1000;
+}
+.con{
+	position: absolute;
+	top:30%;
+	width: 100%;
+	z-index: 1000;
+}
+.con .con_reg{
+	font-size: 18px;
+	color: #2AA8A8;
+}
+.con .con_exa{
+	font-size: 18px;
+	color: #2AA8A8;
+}
+.con .con_1{
+	width: 15%;
+}
+.con .con_2{
+	width: 23%;
+}
+.con .con_3{
+	width: 24%;
+}
+.con .con_4{
+	width: 23%;
+}
+.con .con_5{
+	width: 15%;
+}

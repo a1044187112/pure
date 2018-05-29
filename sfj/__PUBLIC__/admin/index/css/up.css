@@ -1,0 +1,73 @@
+/* CSS Document */
+html{
+	height:100%;
+	
+}
+body{
+	//background-color:#CCFFFF;
+	margin:0px;
+	height:100%;
+	border-bottom:4px solid #D9131E;
+	overflow:hidden;
+	font-family: "黑体";
+	background: -webkit-linear-gradient(top,#2759A0,#10408C);
+}
+
+img{
+	//width: 60%;
+}
+
+.i_container{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+}
+
+.i_container .logo_area{
+	//padding-left: 5%;
+	height: 100%;
+	
+}
+.i_container .logo_area .logo_img{
+
+}
+.i_container .logo_area .logo_img .li_img{
+
+	padding: 10px;
+}
+
+
+.i_container .logo_area .logo_title{
+	font-size: 45px;
+	//padding-top: 2.5%;
+	color: #ffffff;
+	//padding: 30px 0;
+}
+.i_container .action_area{
+
+}
+
+.i_container .admin_info{
+	//top:80px;
+	//bottom: -80px;
+	right:30px;
+	//width:200px;
+	height:50px;
+	position:relative;
+	float:right;
+}
+
+.i_container .admin_info span{
+	display:inline-block;
+}
+
+.i_container .admin_info .amdin_name{
+	font-size: 20px;
+	color: #FFFF00;
+}
+.i_container .admin_info .logout_link a{
+	color: #FFFFFF;
+}
+
+

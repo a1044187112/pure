@@ -1,0 +1,39 @@
+*{
+	padding:0px;
+	margin:0px;
+	text-decoration: none;
+}
+img{
+	width: 100%;
+}
+body{
+	background-color: #f0f0f0;
+}
+.con{
+	margin-top: 8px;
+	background-color: white;
+}
+.con:first-child{
+	margin-top: 0px;
+}
+.con .item{
+	width: 45%;
+	padding-left: 4%;
+	border-bottom: 1px solid #ccc;
+	padding-top: 8px;
+	line-height: 1.8;
+}
+.con .item .item_img{
+	width: 9%;
+}
+.con .item .item_name{
+	margin-left: 5%;
+	font-size: 14px;
+}
+.con .container{
+	padding-top: 3%;
+	padding-bottom: 7%;
+	font-size: 14px;
+	text-align: center;
+	color: #777;
+}

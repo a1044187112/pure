@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<script type="application/javascript" src="/sfj/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script type="application/javascript" src="/sfj/__PUBLIC__/common/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/sfj/__PUBLIC__/common/css/bootstrap.min.css" />
+
+<link rel="stylesheet" type="text/css" href="/sfj/__PUBLIC__/admin/index/css/left.css" />
+
+<title>管理员后台</title>
+</head>
+<body>
+    <div class="i_container">
+      <ul class="nav nav-pills nav-stacked"  id="action_menu">
+        
+<!--         <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#admin_ctrl_item" aria-expanded="false" aria-controls="ctrl_item_0">管理员管理</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="admin_ctrl_item">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item"><a class="url_item" href="" target="right">管理员列表</a></li>
+                <li class="list-group-item url_grp_item"><a class="url_item" href="{$pwd_reset_url}" target="right">管理员密码重置</a></li>
+            </ul>
+          </div>
+        </li>        -->     
+
+        <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#aticle_ctrl_item" aria-expanded="false" aria-controls="ctrl_item_0">文章管理</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="aticle_ctrl_item">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item"><a class="url_item" href="/sfj/tmpl/admin/Index/articleCatg.html" target="right">文章类别</a></li>
+                <li class="list-group-item url_grp_item"><a class="url_item" href="/sfj/tmpl/admin/Index/article.html" target="right">文章列表</a></li>
+            </ul>
+          </div>
+        </li>  
+<!-- 
+        <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#lawer_ctrl_item" aria-expanded="false" aria-controls="ctrl_item_0">律师管理</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="lawer_ctrl_item">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="{$justical_inst_url}" target="right">
+                    律师事务所列表
+                  </a>
+                </li>
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="{$lawyer_url}" target="right">
+                    律师列表
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </li> -->
+          
+<!--         <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_5" aria-expanded="false" aria-controls="ctrl_item_0">微信公众号运营</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="ctrl_item_5">
+            <ul class="list-group">
+                <li class="list-group-item  url_grp_item"><a class="url_item" href="{$set_welcome_word_url}" target="right">设置欢迎语</a></li>
+                <li class="list-group-item  url_grp_item"><a class="url_item" href="{$create_menu_url}" target="right">创建自定义菜单</a></li>
+            </ul>
+          </div>
+        </li>   -->          
+            
+        
+        <!-- 咨询回复及评价 -->
+        <!-- 第一级别项 -->
+        <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#cmt_ret_ctrl_item_1" aria-expanded="false" aria-controls="ctrl_item_0">咨询回复及评价</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="cmt_ret_ctrl_item_1">
+            <ul class="list-group">
+              <!-- 当前级别 -->
+              <li class="list-group-item">
+                <ul class="nav nav-pills nav-stacked"  id="cr_action_menu">
+
+                  <li role="presentation" class="panel panel-default">
+                    <div class="ctrl_btn">
+                        <a data-parent="#cr_action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#cmt_ret_ctrl_item_1_sub_{$item.id}" aria-expanded="false" aria-controls="ctrl_item_0">{$item.name}</a>
+                    </div>
+                    <div class="collapse ctrl_item_list" id="cmt_ret_ctrl_item_1_sub_{$item.id}">
+                      <ul class="list-group">
+                        <li class="list-group-item url_grp_item">
+                          <a class="url_item" href="{$consult_url}?lawyer_id={$l_item.id}" 
+                            target="right">{$l_item.name}
+                          </a>
+
+                        </li>                                
+
+                        
+                      </ul>
+                    </div>
+                  </li>    
+
+
+                </ul>
+              </li>                    
+            </ul>
+          </div>
+        </li>          
+        <!-- 第一级别项结束 -->           
+        <!-- 咨询回复及评价结束 -->
+
+
+
+
+      </ul>
+    </div>
+    
+</body>
+</html>

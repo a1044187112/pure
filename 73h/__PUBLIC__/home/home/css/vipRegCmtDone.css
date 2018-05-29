@@ -1,0 +1,29 @@
+
+.done_img_area{
+	padding: 0 30%;
+	margin-top:100px;
+}
+
+.done_notic_area{
+	text-align: center;
+	font-size: 30px;
+	color: #14AFB8;
+	margin: 50px 0;
+}
+.cmt_sub_btn_area{
+	margin-bottom: 20px;
+	padding: 20px 0px;
+}
+
+.cmt_sub_btn_area .booking_sub_btn{
+	border-radius: 20px;
+	background-color: #14AFB8;
+	color: #ffffff;
+	text-align: center;
+	display: block;
+}
+
+.cmt_sub_btn_area .booking_sub_btn .bst_text{
+	font-size: 20px;
+	padding: 5px 10px;
+}

@@ -1,0 +1,13 @@
+/* CSS Document */
+.data_table .item_box .thum_pic{
+	width:100px;
+	 height:100px; 
+	 float:left; 
+	 margin-left:5px;
+}
+
+
+.data_table .item_box .default_pic{
+	border:2px solid #F00;
+}
+

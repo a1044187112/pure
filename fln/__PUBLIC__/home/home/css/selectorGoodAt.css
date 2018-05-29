@@ -1,0 +1,35 @@
+img{
+	width: 100%;
+}
+.container .container_service_sel{
+	margin-top: 10px;
+}
+.container .container_service_sel>.sel_item{
+	padding:0px 20px;
+	margin-top:10px;
+	position: relative;
+}
+.container .container_service_sel>.sel_item>.container_btn{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom: 40%;
+	right: 16%;
+}
+
+.footer{
+	padding:50px 0px 40px 0px;
+}
+.footer .footer_btn{
+	display: block;
+	margin:auto;
+	width: 60%;
+	font-size: 20px;
+	color: #eee;
+	background-color: #f39d9c;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 15px;
+	line-height: 1.8;
+
+}

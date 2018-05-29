@@ -1,0 +1,10 @@
+.i_header{
+	background-color: transparent;
+	font-size: 0px;
+	z-index: 2;
+}
+
+.i_header .h_item{
+	margin: 0 auto;
+	padding: 10px 10%;
+}

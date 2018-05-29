@@ -1,0 +1,11 @@
+.container .container_item .container_item_img{
+	width: 100%;
+	height: auto;
+}
+.container .container_item{
+	margin-top: 30px;
+}
+.container .container_item .container_item_list{
+	padding-left:32px;
+	padding-right: 32px;
+}

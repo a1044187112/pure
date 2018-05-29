@@ -1,0 +1,135 @@
+body{
+	background-color: #E1DEE1;
+}
+/*状态导航条*/
+.status_nav_area{
+	background-color: #37B9B9;
+	padding: 20px 10px;
+}
+
+.status_nav_area .status_nav_con{
+	border: 1px solid #ffffff;
+}
+
+.status_nav_area .status_nav_con .sn_item{
+	font-size: 20px;
+	text-align: center;
+	padding: 5px 0;
+	color: #ffffff;
+	display: block;
+}
+
+.status_nav_area .status_nav_con .sn_active{
+	background-color: #ffffff;
+	color: #37B9B9;
+}
+
+
+.status_nav_area .status_nav_con .sn_item:nth-child(1){
+	border-right: 1px solid #ffffff;
+}
+
+.status_nav_area .status_nav_con .sn_item:nth-child(2){
+	border-right: 1px solid #ffffff;
+}
+
+.status_nav_area .status_nav_con .sn_item:nth-child(3){
+}
+
+
+/*状态导航条结束*/
+
+/*挂号信息列表*/
+.reg_intro_area{
+
+}
+
+.reg_intro_area .ri_con{
+	margin-top: 20px;
+}
+
+.reg_intro_area .ri_con:nth-child(1){
+	margin-top: 0px;
+}
+
+.reg_intro_area .ri_con .ric_user_info{
+	padding: 10px;
+	background-color: #ffffff;
+	
+}
+
+.reg_intro_area .ri_con .ric_user_info .ricu_item{
+	font-size: 20px;
+	text-align: center;
+}
+
+.reg_intro_area .ri_con .ric_user_info .ricu_item:nth-child(1){
+
+}
+
+.reg_intro_area .ri_con .ric_user_info .ricu_item:nth-child(2){
+	color: #BEBEBE;
+}
+
+.reg_intro_area .ri_con .ric_user_info .ricu_item:nth-child(3){
+	color: #53AFCC;
+}
+
+
+.reg_intro_area .ri_con .ric_car_info_con{
+	background-color: #ffffff;
+}
+
+.reg_intro_area .ri_con .ric_care_info{
+	
+}
+
+.reg_intro_area .ri_con .ric_care_info .ricc_item{
+	padding: 10px;
+	
+}
+
+.reg_intro_area .ri_con .ric_care_info .ricc_item:nth-child(1){
+	width: 70%;
+}
+
+.reg_intro_area .ri_con .ric_care_info .ricc_item:nth-child(2){
+	width: 30%;
+	text-align: center;
+	color: #53AFCC;
+	font-size: 20px;
+
+}
+
+.reg_intro_area .ri_con .ric_action{
+	margin-top: 10px;
+}
+
+.reg_intro_area .ri_con .ric_action .rica_item{
+	padding: 10px;
+	font-size: 20px;
+	
+}
+
+.reg_intro_area .ri_con .ric_action .rica_item:nth-child(1){
+	width: 70%;
+	color: #BEBEBE;
+}
+
+.reg_intro_area .ri_con .ric_action .rica_item:nth-child(2){
+	width: 30%;
+	text-align: center;
+	padding: 0 20px;
+}
+
+.reg_intro_area .ri_con .ric_action .rica_item .ricc_cmt_btn{
+	background-color: #37B9B9;
+	padding: 5px 0px;
+	border-radius: 20px;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+
+
+/*挂号信息列表结束*/

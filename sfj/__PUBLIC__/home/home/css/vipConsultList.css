@@ -1,0 +1,109 @@
+body{
+	background-color: #E1DEE1;
+}
+/*状态导航条*/
+.status_nav_area{
+	padding: 40px 10px;
+	background-repeat: no-repeat;background-size: cover;
+}
+
+.status_nav_area .status_nav_con{
+	border: 1px solid #ffffff;
+}
+
+.status_nav_area .status_nav_con .sn_item{
+	font-size: 20px;
+	text-align: center;
+	padding: 5px 0;
+	color: #ffffff;
+	display: block;
+}
+
+.status_nav_area .status_nav_con .sn_active{
+	background-color: #ffffff;
+	color: #37B9B9;
+}
+
+
+.status_nav_area .status_nav_con .sn_item:nth-child(1){
+	border-right: 1px solid #ffffff;
+}
+
+.status_nav_area .status_nav_con .sn_item:nth-child(2){
+	border-right: 1px solid #ffffff;
+}
+
+.status_nav_area .status_nav_con .sn_item:nth-child(3){
+}
+
+
+/*状态导航条结束*/
+
+
+
+.consult_list_area{
+	margin-top: 20px;
+}
+
+.consult_list_area .consult_item_con{
+	margin: 10px 0;
+	background-color: #ffffff;
+	padding: 10px;
+}
+
+.consult_item_con .consult_item:nth-child(1){
+	width: 90%;
+}
+
+.consult_item_con .consult_item:nth-child(2){
+	width: 10%;
+	padding-top: 10px;
+}
+
+.consult_item_con .consult_item .c_title{
+	
+}
+.consult_item_con .consult_item .c_title .ct_item:nth-child(1){
+	width: 8%;
+}
+.consult_item_con .consult_item .c_title .ct_item:nth-child(2){
+	width: 92%;
+	font-size: 20px;
+	padding-left: 5px;
+}
+
+.consult_item_con .consult_item .c_status{
+	padding: 5px 10px;
+}
+.consult_item_con .consult_item .c_status .cs_item:nth-child(1){
+	width: 80%;
+	color: #BABABA;
+}
+.consult_item_con .consult_item .c_status .cs_item:nth-child(2){
+	width: 20%;
+	color: #EA818B;
+}
+
+
+/*绘制右三角箭头*/
+
+.tci_tri_line{
+	position: relative;
+}
+
+.tci_tri_line .tci_tri1{
+	border-width: 16px 0 16px 16px;
+	border-color: transparent transparent transparent #717171;
+	border-style: solid;
+	position: absolute;
+}
+
+.tci_tri_line .tci_tri2{
+	border-width: 12px 0 12px 12px;
+	border-color: transparent transparent transparent #ffffff;
+	border-style: solid;
+	position: absolute;
+	top:4px;
+	
+}
+/*绘制右三角箭头结束*/

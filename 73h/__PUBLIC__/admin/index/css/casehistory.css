@@ -1,0 +1,20 @@
+
+.v_col:nth-child(1){
+	width: 5%;
+}
+.v_col:nth-child(2){
+	width: 5%;
+}
+.v_col:nth-child(3){
+	width: 70%;
+}
+.v_col:nth-child(4){
+	width: 20%;
+}
+.astyle{
+	padding: 5px 10px;
+    font-size: 10px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+

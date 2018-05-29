@@ -1,0 +1,28 @@
+.done_img{
+	margin-top: 80px;
+}
+
+.done_img .img_con{
+	padding: 0 20px;
+}
+
+.done_notice{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 30px;
+	color: #E50012;
+}
+
+.done_notice div:nth-child(1){
+	width: 20%;
+}
+
+.done_notice div:nth-child(2){
+	width: 60%;
+	
+}
+
+.done_notice div:nth-child(3){
+	width: 20%;
+	
+}

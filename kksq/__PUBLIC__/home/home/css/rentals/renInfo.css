@@ -1,0 +1,142 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+}
+img{
+	width: 100%;
+}
+body{
+	/*background-color: #efeff0;*/
+}
+.header {
+	background-color: #fff;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	position: relative;
+}
+.header .pic_banner{
+	display: block;
+	width: 96%;
+	margin: auto;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	margin-top:-2px;
+}
+.header .point{
+	width: 100%;
+	position: absolute;
+	right:0%;
+	bottom: 10px;
+}
+.header .point{
+	float: right;
+	width: 32%;
+}
+.header .point .point_i{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	/*float: right;*/
+	/*margin-right: 8%;*/
+	background-color: #f5e827;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+.header .point .point_i:first-child{
+	margin-left: 8%;
+}
+.header .hea_info{
+	position: absolute;
+	left: 10%;
+	bottom: 10px;
+	color: #eee;
+	width: 50%;
+}
+.title{
+	width: 90%;
+	margin:auto;
+	padding: 5% 5% 4% 5%;
+	border-bottom: 1px solid #aaa;
+}
+.title  .title_info{
+	margin-top: 3%;
+
+}
+.title  .title_info .t_i_item:first-child{
+	color: #c41023;
+	font-size: 16px;
+}
+.title  .title_info .t_i_item:nth-child(2){
+	font-size: 12px;
+	color: #777;
+	text-align: right;
+	padding-top: 4px;
+}
+
+.con{
+	padding-top: 3%;
+	position: relative;
+	border-radius: 12px;
+	padding-bottom: 10px;
+}
+.con .con_info{
+	line-height:1.8;
+}
+.con .con_info:nth-child(3){
+	margin-top:8px;
+}
+.con .con_info .c_i_item:nth-child(1){
+	width: 21%;
+	padding-left: 8%;
+	/*text-align: right;*/
+	font-size: 14px;
+	color: #666;
+}
+.con .con_info .c_i_item:nth-child(2){
+	width: 70%;
+	padding-left: 7px;
+}
+.con .con_info_a .c_i_item:nth-child(1){
+	padding-left: 8%;
+	color: #666;
+	line-height: 1.8;
+}
+.con .con_info_a .c_i_item:nth-child(2){
+	line-height: 1.8;
+}
+.con_bg .tel .tel_item{
+	margin-top: 8px;
+	padding-top: 3%;
+}
+.con_bg .tel .tel_item:first-child{
+	border-top: 1px solid #aaa;
+	padding-left: 3%;
+	width: 94%;
+	color: #555;
+	font-size: 16px;
+	line-height: 1.9;
+}
+.con_bg .tel .tel_item .tel_item_img{
+	width: 15px;
+	height: 17px;
+	/*margin-top:2px;*/
+}
+
+
+/*.is_bth{
+	padding: 15px 0 30px 0;
+	width: 100%;
+}
+.is_bth .i_b_btn{
+	width: 45%;
+	display: block;
+	padding: 8px;
+	font-size: #000;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #f5e827;
+	margin:auto;
+}*/

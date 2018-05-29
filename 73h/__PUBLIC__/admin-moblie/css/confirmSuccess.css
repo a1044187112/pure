@@ -1,0 +1,58 @@
+body{
+
+}
+.content_bg{ 
+	margin-left:10%;
+	margin-right: 10%;
+	margin-top: 15%;
+	width: 80%;
+	height:500px;
+	/*background-image: url("/73h/__PUBLIC__/admin-moblie/pic/bg/confirm_success/(47).png");*/
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.content{
+	padding-top: 25%;
+	/* padding-right: 15%;*/
+	 text-align: center;
+
+}
+.content .con_title{
+	font-size: 25px;
+	color: #EB664F;
+}
+.content .con_data{
+	padding-top: 10%;
+	font-size: 14px;
+	color: rgba(0,0,0,0.7);
+}
+.content .con_data .con_data_item{
+padding-top: 5%;
+}
+.content .con_data .con_data_item .item_title{
+width: 40%;
+}
+.content .con_data .con_data_item .item_data{
+width: 60%;
+text-align: left;
+}
+
+
+/*按钮*/
+.button{
+	padding-top: 15%;
+	width: 30%;
+	padding-left:35%; 
+}
+/*印章*/
+.seal{
+	/*background-image: url("/73h/__PUBLIC__/admin-moblie/pic/bg/confirm_success/(37).png");*/
+	background-size: cover;
+	 
+	position: absolute;
+	 
+	 
+	/*background: blue;*/
+	z-index: 1000;
+}
+ 

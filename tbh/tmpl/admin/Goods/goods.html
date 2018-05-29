@@ -1,0 +1,372 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/tbh/__PUBLIC__/common/css/bootstrap.min.css"/>
+    <script src="/tbh/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+    <script src="/tbh/__PUBLIC__/common/js/bootstrap.min.js"></script>
+
+    <script src="/tbh/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+    <script src="/tbh/__PUBLIC__/common/js/notice.js?rand={$rand}"></script>
+    <script src="/tbh/__PUBLIC__/common/js/ajax_data.js?rand={$rand}"></script>
+
+    <script src="/tbh/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+
+    <script src="/tbh/__PUBLIC__/common/lib/i_file_upload/file_upload.js?rand={$rand}"></script>
+    <link rel="stylesheet" href="/tbh/__PUBLIC__/common/lib/i_file_upload/file_up.css?rand={$rand}"/>
+
+
+    <link href="/tbh/__PUBLIC__/common/lib/dis_content_set/dis_content_set.css?rand={$rand}" rel="stylesheet">
+    <script src="/tbh/__PUBLIC__/common/lib//dis_content_set/dis_content_set.js?rand={$rand}"></script>
+
+    <link href="/tbh/__PUBLIC__/common/lib/summernote/summernote.css" rel="stylesheet">
+    <link href="/tbh/__PUBLIC__/common/lib/summernote/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <script src="/tbh/__PUBLIC__/common/lib/summernote/summernote.min.js"></script>
+    <script src="/tbh/__PUBLIC__/common/lib/summernote/summernote-zh-CN.js"></script>
+
+    <link rel="stylesheet" href="/tbh/__PUBLIC__/common/lib/data_editor/data-editor.css?rand={$rand}">
+    <script src="/tbh/__PUBLIC__/common/lib/data_editor/data-editor.js?rand={$rand}"></script>
+
+
+    <link rel="stylesheet" href="/tbh/__PUBLIC__/admin/index/css/common.css?rand={$rand}"/>
+
+    <title>管理员后台</title>
+</head>
+<body>
+<div class="i_content">
+    <div class="page_title">
+        <h1>商品列表</h1>
+    </div>
+    <hr/>
+    请添加一级类别,然后才能添加商品
+    <div class="first_cate">
+        <form class="form-inline">
+            <div class="form-group">
+                <label>一级类别</label>
+                <select class="form-control content_select"
+                        data-fields="first_id"
+                        data-url="{$show_url}"
+                >
+                    <option value="0">一级商品类别1</option>
+                    <option value="1">一级商品类别2</option>
+                    <option value="2">一级商品类别3</option>
+                </select>
+            </div>
+
+        </form>
+    </div>
+    请添加二级级类别,然后才能添加商品
+    <div class="second_cate">
+        <form class="form-inline">
+            <div class="form-group">
+                <label>二级类别</label>
+                <select class="form-control content_select"
+                        data-fields="second_id"
+                        data-url="{$show_url}"
+                >
+                    <option value="0">二级商品类别1</option>
+                    <option value="1">二级商品类别2</option>
+                    <option value="2">二级商品类别3</option>
+                </select>
+            </div>
+
+        </form>
+    </div>
+    请添加三级类别，然后才能添加商品
+    <div class="third_cate">
+        <form class="form-inline">
+            <div class="form-group">
+                <label>三级类别</label>
+                <select class="form-control content_select"
+                        data-fields="third_id"
+                        data-url="{$show_url}"
+                >
+                    <option value="0">三级商品类别1</option>
+                    <option value="1">三级商品类别2</option>
+                    <option value="2">三级商品类别3</option>
+                </select>
+            </div>
+
+        </form>
+    </div>
+
+    <hr/>
+    <!-- 数据表 -->
+    <div class="data_table">
+        <table class="table table-bordered">
+            <tr>
+                <th class="dt_title">编号</th>
+                <th class="dt_title">商品名称</th>
+                <th class="dt_title">是否已审核</th>
+                <th class="dt_title">状态操作</th>
+                <th class="dt_title">详情操作</th>
+            </tr>
+
+            <!-- 数据项 -->
+            <div class="data_item">
+                <tr class="t_row intro_row">
+                    <td class="t_col">
+                        1
+                    </td>
+                    <td class="t_col">
+                        休闲服
+                    </td>
+                    <td class="t_col">
+                        <span class="data_item_yes">是</span>
+                    </td>
+                    <td class="t_col action_box">
+                        <button type="button"
+                                class="btn btn-primary btn-lg update_btn action_chk_btn"
+                                style=" font-size:12px;padding:5px;"
+                                data-url="{$update_url}"
+                                data-notice_word="是否将{$item.name}设置为审核?"
+                                data-fields="id,is_chk"
+                                data-id="_item_id_1"
+                                data-is_chk="1"
+                        >
+                            审核
+                        </button>
+                        <button type="button"
+                                class="btn btn-primary btn-lg update_btn action_chk_btn"
+                                style=" font-size:12px;padding:5px;"
+                                data-url="{$update_url}"
+                                data-notice_word="是否将{$item.name}设置为取消审核?"
+                                data-fields="id,is_chk"
+                                data-id="_item_id_1"
+                                data-is_chk="0"
+                        >
+                            取消审核
+                        </button>
+                        <button type="button"
+                                class="btn btn-primary btn-lg update_btn action_del_btn"
+                                style=" font-size:12px;padding:5px;"
+                                data-url="{$del_url}"
+                                data-notice_word="是否删除 {$item.name}?"
+                                data-fields="id"
+                                data-id="_item_id_1"
+                        >
+                            删除
+                        </button>
+                    </td>
+                    <td class="t_col show_box">
+                        <button class="btn btn-primary btn-lg show_detail_btn"
+                                type="button" data-toggle="collapse"
+                                style=" font-size:12px;padding:5px;"
+                                aria-expanded="false"
+                                data-action="show"
+                                data-target="#show_detail_box_item_id_1"
+                                aria-controls="show_detail_box_item_id_1"
+                                data-dis_name="查看详细"
+                                data-anti_dis_name="取消查看详细"
+                                data-show_sym_is_default=0
+                        >
+                            查看详细
+                        </button>
+                        <button type="button"
+                                class="btn btn-primary btn-lg data_edit_btn data_edit_btn_item_id_1 show_detail_btn"
+                                type="button"
+                                style=" font-size:12px;padding:5px;"
+                                aria-expanded="false"
+                                data-target=""
+                                data-toggle="collapse"
+                                data-action_type="modify"
+                                data-editor_selector=".modify_row_item_id_1 .td"
+                                data-dis_row_selr=".detail_row_item_id_1"
+                                data-self_selr=".data_edit_btn_item_id_1"
+                                data-dis_name="编辑"
+                                data-anti_dis_name="取消编辑"
+                                data-show_sym_is_default=0
+                        >
+                            编辑
+                        </button>
+
+                    </td>
+                </tr>
+                <tr class="detail_row_item_id_1 detail_row info_detail_row">
+                    <td colspan="5" class="td">
+                        <div class="collapse show_detail_box" id="show_detail_box_item_id_1">
+                            <div class="well container" style="width:100%">
+
+                                <div class="detail_item row num">
+                                    <div class="col-md-2">编号</div>
+                                    <div class="col-md-9 item_cnt real_data">1</div>
+                                </div>
+
+                                <div class="detail_item row name">
+                                    <div class="col-md-2">名称</div>
+                                    <div class="col-md-9 item_cnt real_data">休闲服</div>
+                                </div>
+
+
+                                <div class="detail_item row is_chk">
+                                    <div class="col-md-2">是否已审核</div>
+                                    <div class="col-md-9 item_cnt">
+                                            <span class="data_item_yes">是</span>
+                                        <span style="display:none" class="real_data">1</span>
+                                    </div>
+                                </div>
+                                <div class="detail_item row online_price">
+                                    <div class="col-md-2">线上价格</div>
+                                    <div class="col-md-9 item_cnt real_data">100</div>
+                                </div>
+                                <div class="detail_item row offline_price">
+                                    <div class="col-md-2">线下价格</div>
+                                    <div class="col-md-9 item_cnt real_data">100</div>
+                                </div>
+                                <div class="detail_item row intro_pics">
+                                    <div class="col-md-2">简介图片</div>
+                                    <div class="col-md-9 item_cnt">
+                                        <div class="files">
+                                            <div class="thumbnail thum_pic">
+                                                <img src="/tbh/test_pic/1.jpg" width="100%" height="100%" />
+                                            </div>
+                                            <div style="clear:both"></div>
+                                        </div>
+                                        <div class="default_file_num" style="display:none">0</div>
+                                    </div>
+                                </div>
+                                <div class="detail_item row pics">
+                                    <div class="col-md-2">商品图片</div>
+                                    <div class="col-md-9 item_cnt">
+                                        <div class="files">
+                                            <div class="thumbnail thum_pic">
+                                                <img src="/tbh/__PUBLIC__/home/pic/bg/policy/1.png" width="100%" height="100%" />
+                                            </div>
+                                            <div style="clear:both"></div>
+                                        </div>
+                                        <div class="default_file_num" style="display:none">0</div>
+                                    </div>
+                                </div>
+                                <div class="detail_item row intro">
+                                    <div class="col-md-2">商品介绍</div>
+                                    <div class="col-md-9 item_cnt real_data">
+                                        1、好穿<br>
+                                        2、特别凉快<br>
+                                        3、外观好看<br>
+                                    </div>
+                                </div>
+                                <div class="detail_item row detail">
+                                    <div class="col-md-2">商品详情</div>
+                                    <div class="col-md-9 item_cnt real_data">
+                                        1、特别凉快特别凉快特别凉快特别凉快特别凉快特别凉快特别凉快特别凉快特别凉快特别凉快特别凉快特别凉快特别凉快<br>
+                                        2、特别凉快特别凉快特别凉快特别凉快特别凉快特别凉快<br>
+                                        3、外观好看外观好看外观好看外观好看外观好看外观好看外观好看外观好看外观好看<br>
+                                    </div>
+                                </div>
+                                <div class="detail_item row catg_id" style="display: none;">
+                                    <div class="col-md-2">类别id</div>
+                                    <div class="col-md-9 item_cnt real_data">1</div>
+                                </div>
+
+                                <div class="detail_item row id" style="display: none;">
+                                    <div class="col-md-2">表id</div>
+                                    <div class="col-md-9 item_cnt real_data">_item_id_1</div>
+                                </div>
+
+                                <div class="detail_item row ">
+                                    <button class="btn btn-primary btn-lg  "
+                                            type="button" data-toggle="collapse"
+                                            style=" font-size:12px;padding:5px;"
+                                            aria-expanded="false"
+                                            data-action="show"
+                                            data-target="#show_detail_box_item_id_1"
+                                            aria-controls="show_detail_box_item_id_1"
+                                            data-dis_name="查看详细"
+                                            data-anti_dis_name="取消查看详细"
+                                            data-show_sym_is_default=0
+                                    >
+                                        取消查看详细
+                                    </button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="modify_row info_detail_row modify_row_item_id_1">
+                    <td colspan="5" class="td">
+
+
+                    </td>
+                </tr>
+
+            </div>
+
+
+            <!-- 数据项结束 -->
+
+
+        </table>
+
+        <include file="Index/pageInfo"/>
+
+        <!-- 添加操作 -->
+        <div class="add_action_area">
+            <button type="button" class="btn btn-primary btn-lg data_edit_btn data_edit_btn_add"
+                    data-target=""
+                    data-toggle="collapse"
+                    data-action_type="add"
+                    data-editor_selector=".data_add_box"
+                    data-dis_row_selr=""
+                    data-self_selr=".data_edit_btn_add"
+                    data-dis_name="添加商品"
+                    data-anti_dis_name="取消添加商品"
+                    data-show_sym_is_default=0
+            >
+                添加商品
+            </button>
+            <div class="data_add_box"></div>
+        </div>
+        <!-- 添加操作结束 -->
+
+    </div>
+    <!-- 数据表结束 -->
+    </empty>
+    </empty>
+    </empty>
+</div>
+</body>
+<script>
+    $(document).ready(function (e) {
+        var update_url = "{$update_url}";
+        var img_up_url = "{$img_up_url}";
+        var catg_id = "{$parent_id}";
+        var i_option = [
+            {
+                "type": "system",
+                "submit_url": update_url,
+                "box_title_prefix": "商品",
+                "file_up_url": img_up_url, /*"sim_post_if":true,*/
+            },
+
+            {"type": "text", "title": "编号", "bind_key": "num", "need_cols": 4},
+            {"type": "text", "title": "名称", "bind_key": "name", "need_cols": 4},
+            {
+                "type": "radios", "title": "是否已审核", "need_cols": 4, "bind_key": "is_chk", "sub_el_title": [
+                {"title": "是", "value": "1"}, {"title": "否", "value": "0"}], "default_value": "1"
+            },
+            {"type": "text", "title": "线上价格", "bind_key": "online_price", "need_cols": 2},
+            {"type": "text", "title": "线下价格", "bind_key": "offline_price", "need_cols": 2},
+            {"type": "file", "title": "简介图片", "bind_key": "intro_pics", "file_up_url": img_up_url, "need_cols": 4,},
+            {"type": "file", "title": "商品图片", "bind_key": "pics", "file_up_url": img_up_url, "need_cols": 4,},
+            {"type":"texteditor","title":"商品介绍","bind_key":"intro","need_cols":5},
+            {"type":"texteditor","title":"商品详情","bind_key":"detail","need_cols":5},d
+            {"type": "hidden", "title": "类别id", "bind_key": "catg_id", "need_cols": 1, "default_value": catg_id},
+
+            {"type": "hidden", "title": "数据项id-添加框不需要", "bind_key": "id", "need_cols": 1, "only_modify_has": true},
+
+        ];
+        DataEditor.bindAndLinkEditBtn(i_option);
+
+        //详情下拉框连接按钮显示姓名改变
+        //CtrlElAction.btnFunc.detailBoxLinkBtnDis();
+        //更新按钮绑定
+        CtrlElAction.btnFunc.bindBtnClick(".data_table .update_btn");
+
+        //绑定选择框数据
+//        CtrlElAction.selCtrlFunc.contenSelChangeBind();
+    });
+
+
+</script>
+</html>

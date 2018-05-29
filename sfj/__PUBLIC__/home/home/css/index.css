@@ -1,0 +1,74 @@
+/* CSS Document */
+/*分割线*/
+
+
+
+/*大类别*/
+.first_category {
+	position:relative;
+	margin-top: 10px;
+}
+
+.first_category a{
+	display: block;
+}
+
+.first_category .c_block{
+	padding: 20px;
+}
+
+.first_category .c_block .c_name{
+	text-align: center;
+	font-size: 20px;
+}
+
+.first_category .c_icon{
+	width:100%;
+	height:100%; 
+	border-radius:50%; 
+	text-align:center;
+}
+
+.first_category img{
+	width: 100%;
+}
+/*大类别结束*/
+
+
+/*首页置顶数据项*/
+.top_most_data{
+}
+
+.top_most_data a{
+	display: block;
+}
+
+.data_item_con{
+	margin:10px 0;
+}
+.data_item_con:nth-child(1){
+	margin:0;
+}
+
+.data_item_con .item_title{
+	//margin-top: 10px;
+	//padding: 15px;
+}
+
+.data_item_con .it_item{
+	padding: 5px 10px;
+	font-size: 18px;
+}
+
+.data_item_con .it_item:nth-child(1){
+	width: 30%;
+	text-align: right;
+	font-weight: bold;
+}
+
+.data_item_con .it_item:nth-child(2){
+	width: 70%;
+	border-left: 1px solid #000000;
+}
+
+/*首页置顶数据项结束*/

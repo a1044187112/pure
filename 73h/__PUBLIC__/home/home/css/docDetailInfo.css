@@ -1,0 +1,112 @@
+.doc_intro_area{
+	//margin-top: 20px;
+	background-color: #E5E4E4;
+}
+
+.doc_intro_area .dintro_con{
+	padding:5px 20px 5px 10px;
+	background-color: #ffffff;
+	
+}
+
+.doc_intro_area .dintro_con .tc_item:nth-child(1){
+	width: 40%;
+	padding-top: 5px;
+}
+.doc_intro_area .dintro_con .tc_item:nth-child(2){
+	width: 60%;
+	//text-align: center;
+	font-size: 14px;
+	color: #3F3F3F;
+	padding: 3px 13px;
+}
+
+
+.doc_intro_area a{
+	display: block;
+}
+
+.doc_intro_area .dintro_con .tc_name{
+
+}
+
+.doc_intro_area .dintro_con .tc_name .tcn_item{
+	margin-top: 3px;
+}
+
+.doc_intro_area .dintro_con .tc_name .doc_name{
+
+	font-size: 25px;
+}
+
+.doc_intro_area .dintro_con .tc_name .doc_level{
+	margin-top: 10px;
+}
+
+.doc_intro_area .dintro_con .tc_name .doc_skilled{
+	text-align: justify;
+	margin-top: 10px;
+}
+
+
+/*医生姓名信息区域*/
+.doc_name_info_area{
+	margin:10px;
+	font-size: 25px;
+}
+
+.doc_name_info_area .dni_item{
+	padding: 10px 10px;
+}
+.doc_name_info_area .dni_item .name_space{
+	letter-spacing: 6px;
+
+}
+.doc_name_info_area .dni_item .name{
+	float: left;
+}
+.doc_name_info_area .dni_item .sex_space{
+	padding-left:85px;
+}
+.doc_name_info_area .dni_item .sex{
+	/*letter-spacing: 20px;*/
+	float: left;
+}
+/*医生姓名信息区域结束*/
+
+.doc_skilled_area{
+	padding: 10px 10px;
+}
+
+.doc_skilled_area .dsa_title{
+	padding: 0px 10px;
+	font-size: 25px;
+}
+.doc_skilled_area .dsa_detail{
+	margin-top: 10px;
+	text-align: justify;
+	padding: 0px 10px;
+	font-size:18px;
+
+}
+
+
+.booking_sub_btn_area{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	background-color: #E1E1E1;
+	padding: 20px 0px;
+}
+
+.booking_sub_btn_area .booking_sub_btn{
+	//width: 120px;
+	border-radius: 20px;
+	background-color: #14AFB8;
+	color: #ffffff;
+	text-align: center;
+}
+
+.booking_sub_btn_area .booking_sub_btn .bst_text{
+	font-size: 20px;
+	padding: 5px 10px;
+}

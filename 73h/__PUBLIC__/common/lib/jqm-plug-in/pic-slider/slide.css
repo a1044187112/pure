@@ -1,0 +1,116 @@
+/* 焦点图 */
+.pic_slider{
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.pic_slider .imgs {
+	position: relative;
+	overflow: hidden;
+}
+.pic_slider .imgs .main_con {
+	position: relative;
+	width: 19999px;
+	display: block;
+	 font-size: 0; 
+}
+
+
+.pic_slider .imgs .main_con a{
+	float:left;
+	display:inline;
+}
+
+
+.pic_slider .imgs .main_con img{
+	margin:0px;
+}
+
+.pic_slider .imgs .main_con .sub_con{
+	position: relative;
+	float: left;
+	padding:0px;
+}
+
+/*控制圆圈*/
+.pic_slider .btns {
+	z-index: 10;
+	position:absolute;
+	width: 100%;
+}
+.pic_slider .btns .items {
+	position: relative;
+	display: block;
+	height: 14px;
+	overflow: hidden;
+	top: -20px;
+}
+.pic_slider .btns .items i {
+	width: 6px;
+	background: #414140;
+	float: left;
+	height: 6px;
+	font-size: 0px;
+	overflow: hidden;
+	cursor: pointer;
+	margin-right: 6px;
+	border: #414140 2px solid;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px
+}
+.pic_slider .btns .items i:hover {
+	background: #a7a7a6
+}
+.pic_slider .btns .items i.on {
+	background: #3cd2f1;
+	cursor: default
+}
+.pic_slider .btns .items i.on:hover {
+	background: #3cd2f1;
+	cursor: default
+}
+/*控制圆圈结束*/
+
+/*
+.pic_slider .btns S {
+	position: absolute;
+	WIDTH: 60px;
+	display: none;
+	height: 80px;
+	overflow: hidden;
+	top: 130px;
+	cursor: pointer
+}
+.pic_slider .btns S I {
+	position: absolute;
+	width: 60px;
+	background: url(../images/btn_show.png);
+	height: 160px;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="../images/btn_show.png");
+	_background: none;
+}
+.pic_slider .btns S.prev {
+	left: 0px
+}
+.pic_slider .btns S.prev I {
+	top: -80px
+}
+.pic_slider .btns S.next {
+	right: 0px
+}
+.show-hover.pic_slider .btns S {
+	display: block
+}
+.masks {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	height: 320px;
+	position: absolute;
+	background: #000;
+	overflow: hidden
+}
+*/

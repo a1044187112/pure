@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/sfj/__PUBLIC__/common/css/bootstrap.min.css" />
+<script src="/sfj/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script src="/sfj/__PUBLIC__/common/js/bootstrap.min.js"></script>
+
+<script src="/sfj/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+<script src="/sfj/__PUBLIC__/common/js/notice.js?rand={$rand}"></script>
+<script src="/sfj/__PUBLIC__/common/js/ajax_data.js?rand={$rand}"> </script>
+
+<script src="/sfj/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+
+<script src="/sfj/__PUBLIC__/common/lib/i_file_upload/file_upload.js?rand={$rand}"></script>
+<link rel="stylesheet" href="/sfj/__PUBLIC__/common/lib/i_file_upload/file_up.css?rand={$rand}" />
+
+
+<link href="/sfj/__PUBLIC__/common/lib/dis_content_set/dis_content_set.css?rand={$rand}" rel="stylesheet">
+<script src="/sfj/__PUBLIC__/common/lib//dis_content_set/dis_content_set.js?rand={$rand}"></script>
+
+<link href="/sfj/__PUBLIC__/common/lib/summernote/summernote.css" rel="stylesheet">
+<link href="/sfj/__PUBLIC__/common/lib/summernote/font-awesome/css/font-awesome.css" rel="stylesheet">
+<script src="/sfj/__PUBLIC__/common/lib/summernote/summernote.min.js"></script>
+<script src="/sfj/__PUBLIC__/common/lib/summernote/summernote-zh-CN.js"></script>
+
+<link rel="stylesheet" href="/sfj/__PUBLIC__/common/lib/data_editor/data-editor.css?rand={$rand}">
+<script src="/sfj/__PUBLIC__/common/lib/data_editor/data-editor.js?rand={$rand}"></script>
+
+
+<link rel="stylesheet" href="/sfj/__PUBLIC__/admin/index/css/common.css?rand={$rand}" />
+
+<title>管理员后台</title>
+</head>
+<body>
+<div class="i_content">
+    <div class="page_title">
+        <h1>待回复咨询列表</h1>
+    </div>
+    <hr /> 
+    <!-- 数据表 -->
+    <div class="data_table">   
+        <table class="table table-bordered">
+            <tr>
+                <th class="dt_title">编号</th>
+                <th class="dt_title">司法所名称</th>
+                <th class="dt_title">律师名称</th>
+                <th class="dt_title">电话号码</th>
+                <th class="dt_title">待回复的咨询数量</th>
+            </tr>
+            
+            <!-- 数据项 -->
+            <div class="data_item">
+                <tr class="t_row intro_row">
+                    <td class="t_col">
+                        1
+                    </td>
+                    <td class="t_col">
+                        东关司法所
+                    </td>
+                    <td class="t_col">
+                        王小额
+                    </td>
+                    <td class="t_col">
+                        123456789
+                    </td>
+                    <td class="t_col">
+                        <a href="/sfj/tmpl/admin/Index/consult.html">23条</a>
+                    </td>
+                </tr>
+
+                
+            </div>
+            <div class="data_item">
+                <tr class="t_row intro_row">
+                    <td class="t_col">
+                        1
+                    </td>
+                    <td class="t_col">
+                        东关司法所
+                    </td>
+                    <td class="t_col">
+                        王小额
+                    </td>
+                    <td class="t_col">
+                        123456789
+                    </td>
+                    <td class="t_col">
+                        23条
+                    </td>
+                </tr>
+
+                
+            </div>
+            <div class="data_item">
+                <tr class="t_row intro_row">
+                    <td class="t_col">
+                        1
+                    </td>
+                    <td class="t_col">
+                        东关司法所
+                    </td>
+                    <td class="t_col">
+                        王小额
+                    </td>
+                    <td class="t_col">
+                        123456789
+                    </td>
+                    <td class="t_col">
+                        23条
+                    </td>
+                </tr>
+
+                
+            </div>
+            <div class="data_item">
+                <tr class="t_row intro_row">
+                    <td class="t_col">
+                        1
+                    </td>
+                    <td class="t_col">
+                        东关司法所
+                    </td>
+                    <td class="t_col">
+                        王小额
+                    </td>
+                    <td class="t_col">
+                        123456789
+                    </td>
+                    <td class="t_col">
+                        23条
+                    </td>
+                </tr>
+
+                
+            </div>
+                
+
+            <!-- 数据项结束 -->
+            
+
+        </table>
+
+        <!-- 分页 -->
+        <div class="page_info_area">
+            <div class="page_info_box">
+              <ul class="pagination page_info">
+                <li>
+                  <a href="{$show_url}?page_num={$page_info.pre_page_num}" aria-label="Previous">
+                    <span aria-hidden="true">上一页</span>
+                  </a>
+                </li>
+                <li><a href="{$show_url}?page_num={$pg_item}">1</a></li> 
+                <li><a href="{$show_url}?page_num={$pg_item}">2</a></li> 
+           
+                <li>
+                  <a href="{$show_url}?page_num={$page_info.next_page_num}" aria-label="Next">
+                    <span aria-hidden="true">下一页</span>
+                  </a>
+                </li>
+                <li class="pg_progress">
+                    <b class="cur_pg">1</b>
+                    /
+                    <b class="total_pg">2</b>
+                </li>
+              </ul>
+              
+            </div>
+
+                        
+        </div>        
+        <!-- 分页结束 -->
+
+
+    </div>    
+    <!-- 数据表结束 -->
+
+    
+</div>
+</body>
+
+</html>

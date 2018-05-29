@@ -1,0 +1,104 @@
+*{
+	padding:0px;
+	margin:0px;
+	text-decoration: none;
+}
+body{
+	background-color: #efeef4;
+	/*background-size: 100%;*/
+	/*background: url(/fln/__PUBLIC__/home/pic/bg/my_info/2.png) 0px 0px;*/
+	width: 100%;
+	height: 100%;
+	/*position: relative;*/
+}
+body .body_bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 100;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+.bg_hidden{
+	/*height: 70%;*/
+	position: absolute;
+	z-index: 200;
+	bottom: 0;
+	/*top:30%;	*/
+	background-color: #555;
+	text-align: center;
+	width: 100%;
+	opacity: 0.5;
+}
+.page{
+	height: 100%;
+	position: absolute;
+	z-index: 300;
+	bottom: 0;
+	/*top:30%;	*/
+	/*background-color: #555;*/
+	/*text-align: center;*/
+	width: 100%;
+}
+.container{
+	width: 100%;
+	/*opacity: 0.8;*/
+}
+.container .container_mine{
+	
+	width: 100%;
+	padding-top:10px;
+	padding-bottom: 20px;
+}
+.container .container_mine>.container_info:first-child>.container_info_item:nth-child(2){
+	position: relative;
+	padding:13px;
+}
+.container .container_mine>.container_info:first-child>.container_info_item:nth-child(2) .container_mine_sex>.container_mine_sex_item:nth-child(3){
+	position: absolute;
+	bottom: 15px;
+	right: 0px;
+	padding:8px;
+}
+.container>.container_mine>.container_name:nth-child(2){
+	width: 100%;
+	text-align: center;
+	/*margin-top:10px;*/
+	color: white;
+	font-size:20px;
+	font-weight: 100;
+}
+.area{
+	/*background-color: #555;
+	opacity: 0.5;*/
+	padding-top:50px;
+	width: 100%	
+}
+.area .area_img{
+	width: 80%;
+	margin:auto;
+	height: 100%;
+}
+.area .area_img>.area_img_item{
+	padding: 0px 42px;
+	padding-top:20px;
+	padding-bottom: 15px;
+}
+.area .area_img:nth-child(2)>.area_img_item{
+	padding-bottom: 20px;
+}
+.area .area_img .area_img_item .img_first{
+	padding-top: 1px;
+}
+.area .area_img:first-child>.area_img_item:first-child{
+	border-right: 1px solid #aaa;
+	border-bottom:1px solid #aaa;
+}
+.area .area_img:first-child>.area_img_item:nth-child(2){
+	border-bottom:1px solid #aaa; 
+}
+.area .area_img:nth-child(2)>.area_img_item:first-child{
+	border-right: 1px solid #aaa;
+}

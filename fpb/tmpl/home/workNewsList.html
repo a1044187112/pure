@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<link rel="stylesheet" href="/fpb/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+  	<script src="/fpb/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<!--   	<script src="/fpb/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+
+  	<script src="/fpb/__PUBLIC__/common/lib/action-popup/action-popup.js"></script>
+  	<link rel="stylesheet" href="/fpb/__PUBLIC__/common/lib/action-popup/action-popup.css?a=333">
+
+
+  	<link rel="stylesheet" type="text/css" href="/fpb/__PUBLIC__/home/home/css/common.css">
+  	<link rel="stylesheet" type="text/css" href="/fpb/__PUBLIC__/home/home/css/workNewsList.css">
+
+	<title>工作动态</title>
+</head>
+<body>
+
+    <!-- 头部导航栏 -->
+    <div class="ui-grid-b i_header dis_area">
+      <a href="/fpb/tmpl/home/index.php" class="ui-block-a h_item">
+        <img src="/fpb/__PUBLIC__/home/pic/bg/header/2.png">
+      </a>
+      <a class="ui-block-b h_item">
+      </a>
+      <a href="javascript :;" onClick="javascript :history.back(-1);" class="ui-block-c h_item">
+        <img src="/fpb/__PUBLIC__/home/pic/bg/header/4.png">
+      </a>
+    </div>
+    <!-- 头部导航栏结束 -->
+    
+	<div class="page" id="pageone">
+		
+		<div class="type_list_area" style="background-image: url('/fpb/__PUBLIC__/home/pic/bg/ratio_dgm/9.png');
+            background-repeat: no-repeat;background-size: cover;">
+			<a href="/fpb/tmpl/home/articleDetail.html" class="ui-grid-solo type_con">
+        <div class="ui-block-a tc_item tc_img">
+          	<img src="/fpb/__PUBLIC__/home/pic/test/work_news_list/1.png">
+        </div>
+        <div class="ui-block-a tc_title">
+          扶贫工作 扶贫工作开展
+        </div>
+	   </a>
+
+     <a href="/fpb/tmpl/home/articleDetail.html" class="ui-grid-solo type_con">
+        <div class="ui-block-a tc_item tc_img">
+            <img src="/fpb/__PUBLIC__/home/pic/test/work_news_list/1.png">
+        </div>
+        <div class="tc_title">
+          扶贫工作 扶贫工作开展
+        </div>
+     </a>
+
+
+     <a href="/fpb/tmpl/home/articleDetail.html" class="ui-grid-solo type_con">
+        <div class="ui-block-a tc_item tc_img">
+            <img src="/fpb/__PUBLIC__/home/pic/test/work_news_list/1.png">
+        </div>
+        <div class="tc_title">
+          扶贫工作 扶贫工作开展
+        </div>
+     </a>
+
+
+     <a href="/fpb/tmpl/home/articleDetail.html" class="ui-grid-solo type_con">
+        <div class="ui-block-a tc_item tc_img">
+            <img src="/fpb/__PUBLIC__/home/pic/test/work_news_list/1.png">
+        </div>
+        <div class="tc_title">
+          扶贫工作 扶贫工作开展
+        </div>
+     </a>
+		</div>
+      
+	</div>
+
+</body>
+
+<script>
+  $(document).ready(function() {
+    var con_width = $("body").width();
+    $(".type_con .tc_title").each(function(index, el) {
+      $(this).attr("style","width:"+con_width+"px;");
+    });
+  });  
+
+</script>
+
+</html>

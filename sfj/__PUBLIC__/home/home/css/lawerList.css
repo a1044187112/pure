@@ -1,0 +1,80 @@
+body{
+	background-color: #E5E5E5;
+}
+
+.list_item_con{
+	background-color: #ffffff;
+	margin-bottom: 10px;
+	border-top: 1px solid #9E9E9E;
+	border-bottom: 1px solid #9E9E9E;
+	padding: 10px;
+}
+
+.list_item_con .lic_item:nth-child(1){
+	font-size: 0px;
+	width: 30%;
+}
+
+.list_item_con .lic_item:nth-child(2){
+	width: 60%;
+	padding:0 10px;
+}
+.list_item_con .lic_item:nth-child(3){
+
+	width: 10%;
+	padding-top: 60px;
+}
+
+.list_item_con .lic_item .title{
+	font-size: 20px;
+	color: #1B5994;
+
+}
+.list_item_con .lic_item .content{
+	margin-top: 10px;
+}
+
+.list_item_con .lic_item .name{
+	font-size: 20px;
+	color: #1D2088;
+	letter-spacing: 4px;
+}
+
+.list_item_con .lic_item .info_item{
+	margin: 5px 0;
+}
+
+.intro_item_con .intro_item:nth-child(1){
+	width: 40%;
+}
+
+.intro_item_con .intro_item:nth-child(2){
+	width: 60%;
+}
+
+.list_item_con .lic_item .action_img{
+	padding-right: 20%;
+}
+
+/*绘制右三角箭头*/
+
+.tci_tri_line{
+	position: relative;
+}
+
+.tci_tri_line .tci_tri1{
+	border-width: 16px 0 16px 16px;
+	border-color: transparent transparent transparent #717171;
+	border-style: solid;
+	position: absolute;
+}
+
+.tci_tri_line .tci_tri2{
+	border-width: 12px 0 12px 12px;
+	border-color: transparent transparent transparent #ffffff;
+	border-style: solid;
+	position: absolute;
+	top:4px;
+	
+}
+/*绘制右三角箭头结束*/

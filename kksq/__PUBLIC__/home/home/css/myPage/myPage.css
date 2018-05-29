@@ -1,0 +1,43 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #F8F8F8;
+} 
+.content{
+	
+}
+.content .con_bg_box{
+	background-image: url("/kksq/__PUBLIC__/home/pic/bg/my_page/(9).png");
+	background-size: cover;
+	padding: 5% 0 18% 0;
+}
+ .content .con_bg_box .bg_box_img{
+ 
+}
+
+.content .con_bg_box .bg_box_text{
+	text-align: center;
+	color: #FFFFFF;
+}
+/*条目*/
+.content .con_item_box{
+	padding-left: 5%;
+}
+.content .con_item_box .con_item_box_item1{
+	padding-top: 6%;
+	color: #222;
+
+}
+.content .con_item_box  .con_item_box_item1 .item_box1{
+width: 10%;
+
+}
+.content .con_item_box .con_item_box_item1 .item_box1 img{
+/*width: 20%;*/
+height: 20px;
+width: 20px;
+}
+.content .con_item_box  .con_item_box_item1 .item_box2{
+width: 90%;
+}
+

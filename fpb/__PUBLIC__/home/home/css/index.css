@@ -1,0 +1,370 @@
+body{
+
+}
+
+.i_header{
+	background-color: transparent;
+	font-size: 0px;
+	z-index: 2;
+	//background-color: #ffff00;
+	left: 0;
+}
+
+.i_header .h_item:nth-child(1){
+	text-align: left;
+	//background-color: #ff0000;
+}
+
+.info_dis_area{
+	overflow: hidden;
+}
+
+.info_dis_area a{
+	overflow: hidden;
+	display: block;
+}
+
+.info_dis_area .info_item{
+	position: relative;
+}
+.info_dis_area .info_item:child-nth(1){
+}
+
+.info_dis_area .info_item:child-nth(2){
+}
+
+.info_dis_area .fight_map_area{
+	background-color: #B0BF56;
+
+}
+
+.info_dis_area .menu_con .menu_item{
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+	font-size: 0px;
+	margin: 0;
+	padding: 0;
+}
+
+.info_dis_area .menu_con .menu_item .mi_img{
+	padding:0 30%;
+	padding-top: 10px;
+}
+
+.info_dis_area .menu_con .menu_item .mi_title{
+	font-size: 18px;
+
+}
+
+
+
+.info_dis_area .menu_con>.menu_item:nth-child(1){
+	background-color: #3BA2B3;
+}
+
+.info_dis_area .menu_con>.menu_item:nth-child(2){
+	background-color: #0D6068;
+
+}
+
+.info_dis_area .menu_con>.menu_item:nth-child(3){
+	background-color: #3BA2B3;
+
+}
+
+.info_dis_area .menu_con>.menu_item:nth-child(4){
+	background-color: #0D6068;
+
+}
+
+.info_dis_area .menu_con>.menu_item:nth-child(5){
+	background-color: #3BA2B3;
+}
+
+.info_dis_area .menu_con>.menu_item:nth-child(6){
+	background-color: #0D6068;
+
+}
+
+.info_dis_area .ratio_digm_area{
+	position: absolute;
+	z-index: 10;
+	//top: 0;
+}
+
+/*移动拉环*/
+.info_dis_area .ratio_digm_area .ratio_dgm_pring_area{
+	position: absolute; 
+	top: -38px;
+	left: 20px;
+	width: 40px;
+	height:40px;
+	//background-color: #ff0000;
+}
+
+
+.info_dis_area .ratio_digm_area .ratio_dgm_pring_area .rd_circle{
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	border: 1px solid #ffffff;
+	display: block;
+}
+
+.info_dis_area .ratio_digm_area .ratio_dgm_pring_area .rd_hline{
+	width: 0px;
+	height: 14px;
+	border: 1px solid #ffffff;
+	display: block;
+	position: relative;
+	left: 10px;
+}
+
+.ratio_dgm_pring_down_area{
+	position: absolute; 
+	top: 0px;
+	left: 20px;
+	width: 40px;
+	height:40px;
+	//background-color: #ff0000;
+}
+
+
+.ratio_dgm_pring_down_area .rd_circle{
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	border: 1px solid #ffffff;
+	display: block;
+	position: absolute;
+	z-index: 11;
+}
+
+.ratio_dgm_pring_down_area .rd_hline{
+	width: 0px;
+	height: 15px;
+	border: 1px solid #ffffff;
+	display: block;
+	position: relative;
+	left: 10px;
+}
+
+/*移动拉环结束*/
+
+.rd_area_1{
+	text-align: center;
+	color: #ffffff;
+	font-size: 20px;
+	padding-top: 5px;
+}
+
+.rd_title_area{
+	text-align: center;
+	color: #ffffff;
+	font-size: 20px;
+	padding-top: 10px;	
+}
+
+/*人口分布比例图*/
+.ratio_digm_area .popl_distb_dgm_area{
+	position: absolute;
+	width: 100%;
+}
+
+.ratio_digm_area .popl_distb_dgm_area .dgm_title{
+	text-align: center;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.ratio_digm_area .popl_distb_dgm_area .popl_distb_dgm_ctnt{
+	padding: 0px 20px;
+	//padding-top: 20px;
+}
+
+.popl_distb_dgm_area .pdd_item_con{
+	margin-top: 10px;
+}
+
+.popl_distb_dgm_area .pdd_item_con .pdd_data_item:nth-child(1){
+}
+
+.popl_distb_dgm_area .pdd_item_con .pdd_data_item:nth-child(2){
+	padding-left: 10px;
+}
+
+.ratio_digm_area .pdd_item_con .cnt_item{
+	margin: 0;
+}
+
+.ratio_digm_area .pdd_item_con .cnt_item:nth-child(1){
+	width: 20%;
+}
+
+.ratio_digm_area .pdd_item_con .cnt_item:nth-child(2){
+	width: 80%;
+	padding-left: 10px;
+	padding-top: 15px;
+}
+
+.ratio_digm_area .pdd_item_con .cnt_item .ci_title{
+	color: #ffffff;
+	font-size: 12px;
+}
+
+.ratio_digm_area .pdd_item_con .cnt_item .ci_cnt{
+	margin-top: 5px;
+	color: #729F3B;
+	font-size: 12px;
+}
+
+.ratio_digm_area .pdd_item_con .cnt_item .ci_cnt .val{
+	margin-top: 5px;
+	color: #E8DA26;
+	font-size: 16px;
+}
+
+.hp_intro_start_area{
+	position: absolute;
+	height: 30px;
+}
+
+.hp_intro_start_area .hp_intro_start_ctnt{
+}
+
+.hp_intro_start_area .hp_intro_start_ctnt .hpi_title{
+	color: #ffffff;
+	text-align: center;
+	font-size: 10px;
+}
+
+.hp_intro_start_area .hpi_btn{
+	position: relative;
+	left: 45%;
+	top: 5px;
+	//transform: rotate(-1deg);
+
+}
+.hp_intro_start_area .hpi_btn .htpi_tri1{
+	border-style: solid;
+	border-width: 4px 15px 4px 15px;
+	border-color: #ffffff #ffffff #ffffff #ffffff;
+	position: absolute;
+}
+
+.rd_area_5,.show_next_page{
+	background-color:rgba(40,39,50,1);
+
+}
+
+.show_more{
+	text-align: center;
+	font-size: 12px;
+	color: #ffffff;
+	padding-top: 5px;
+}
+
+.up_arrow{
+	position: relative;
+	height: 20px;
+	//background-color: #282732;
+	//opacity: 0.5;
+	//background-color:rgba(40,39,50,1);
+	left: 50%;
+}
+
+.up_arrow_outer{
+	position: relative;
+	left: -12px;
+	margin-top: 5px;
+}
+
+.up_arrow .ua_tri1{
+	position: absolute;
+	border-style: solid;
+	border-width: 0px 12px 12px 12px;
+	border-color: transparent transparent #ffffff transparent;
+	margin: 0 auto;
+	//left: 50%;
+}
+
+.up_arrow .ua_tri2{
+	position: absolute;
+	border-style: solid;
+	border-width: 0px 8px 8px 8px;
+	border-color: transparent transparent rgba(40,39,50,1) transparent;
+	top: 4px;
+	left: 4px;
+	//padding-left: 4px;
+}
+/*.hp_intro_start_area .hpi_btn .htpi_tri1{
+	border-style: solid;
+	border-width: 4px 15px 4px 15px;
+	border-color: #ffffff #ffffff #ffffff #ffffff;
+	position: absolute;
+	transform: rotate(-30deg);
+}
+
+.hp_intro_start_area .hpi_btn .htpi_tri2{
+	border-style: solid;
+	border-width: 4px 15px 4px 15px;
+	border-color: #ffffff #ffffff #ffffff #ffffff;
+	position: absolute;
+	//top:-1px;
+	left: 23px;
+	transform: rotate(30deg);
+}*/
+
+/*人口分布比例图结束*/
+
+/*扶贫概况*/
+.help_intro_area_1{
+	position: absolute;
+	z-index: 11;
+	//top: 0;
+	margin: 0;
+}
+.help_intro_area_2{
+	position: absolute;
+	z-index: 12;
+	//top: 0;
+	margin: 0;
+}
+.help_intro_area_3{
+	position: absolute;
+	z-index: 13;
+	//top: 0;
+	margin: 0;
+}
+.help_intro_area_4{
+	position: absolute;
+	z-index: 14;
+	//top: 0;
+	margin: 0;
+}
+
+
+
+.help_intro_area_1 .show_next_page{
+
+}
+
+.help_intro_area .hp_area_1 .ha_title{
+	text-align: center;
+	padding-top: 20px;
+	color: #ffffff;
+}
+.help_intro_area .hp_area_2 {
+	padding: 10px 10%;
+}
+
+.help_intro_area .show_next_page{
+	background-color: #299FC6;
+}
+.help_intro_area .up_arrow .ua_tri2{
+	border-color: transparent transparent #299FC6 transparent;
+}
+/*扶贫概况结束*/
+
+

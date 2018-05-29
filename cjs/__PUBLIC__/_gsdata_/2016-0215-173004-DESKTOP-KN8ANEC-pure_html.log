@@ -1,0 +1,12 @@
+2016-02-15 17:30:04: -- Analysis Started by User
+2016-02-15 17:30:04: /common/lib/data_editor/data-editor.js: 冲突：文件两侧都进行了改动
+2016-02-15 17:30:04: 分析完毕并发现冲突情况。如需解决冲突请选择正常的同步方向。
+2016-02-15 17:30:04: 变更：1， 冲突：1， 复制时间：， 复制状态：/， 错误： , All: 1322
+2016-02-15 17:30:04: ----- ：分析已结束。 历时 00:00:00， 速度： Many 个文件/秒 -----
+2016-02-15 17:30:04: 
+2016-02-15 17:30:27: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /common/lib/data_editor/data-editor.js
+2016-02-15 17:30:27: Done.
+2016-02-15 17:30:29: == Sync Started by User
+2016-02-15 17:30:29: 覆盖复制 'D:/php/weixingzh/Public/common/lib/data_editor/data-editor.js' -> 'D:/php/pure_html/__PUBLIC__/common/lib/data_editor/data-editor.js' (User Action)
+2016-02-15 17:30:29: ===== ：同步完毕。时间：00:00:00，速度： 0 字节/s =====, 项目同步未必： 1，错误： 
+2016-02-15 17:30:29: 

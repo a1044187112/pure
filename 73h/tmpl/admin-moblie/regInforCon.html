@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta charset="utf-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no"/>
+   <script src="/73h/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+   <script src="/73h/__PUBLIC__/common/js/funcs.js"></script>
+  <link rel="stylesheet" href="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+  <script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js"></script>
+<!--   <script src="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+
+  <link rel="stylesheet" href="/73h/__PUBLIC__/common/lib/swiper/css/swiper.min.css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/home/home/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/admin-moblie/css/regInforCon.css">
+  <script type="text/javascript" src="/73h/__PUBLIC__/admin-moblie/js/regInforCon.js"></script>
+   <!--  <link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/home/home/css/firstAidCall.css"> -->
+
+  <title>挂号确认码</title>
+</head>
+<body>
+   <div data-role="page" id="pageone">
+       <!-- 内容 -->
+       <div class="content">
+          <div class="con_top">
+            <div class="con_top_img ">
+              <img src="/73h/__PUBLIC__/admin-moblie/pic/bg/phyinforcon/(10).png" class="con_tup_img_image">
+            </div>
+            <div class="con_top_text">
+            请输挂号验证码
+            </div>
+          </div>
+
+          <div class="con_center">
+          <form>
+            <div class="con_center_img i_form_auth">
+                 <input  type="text" name="num" placeholder="请输入6位确认码" class="style input_ctrl" >
+            </div>
+          </form>
+          </div>
+
+          <div class="con_text2">
+              <div class="con_center_firstcolor"> 
+              请输入您微信上接收到的
+              </div>
+              <div class="con_center_numcolor">
+              6位
+              </div>
+              <div class="con_center_endcolor">
+              确认码
+              </div>
+          </div>
+          
+      <!-- <a href="/73h/tmpl/admin-moblie/regCon.html"> -->
+          <div class="con_button" >
+                <div class="bst_text bi_clear_btn"
+                data-url="/73h/tmpl/admin-moblie/regCon.html"
+                data-data-src-type ="form"
+                data-form_slcr="form"
+                >
+                  <img src="/73h/__PUBLIC__/admin-moblie/pic/bg/phyinforcon/(9).png">
+                </div>
+          
+    
+          </div>
+      <!-- </a> -->
+      <!-- /73h/php/ajax_test.php?get_id=8 -->
+      <a href="/73h/tmpl/admin-moblie/error.html">提交信息失败时跳转的页面</a>
+
+         
+       </div>
+   
+
+   </div>
+
+</body>
+<script >
+  $(document).ready(function(){
+    formAuth.formBlur.inputBlur();
+    // 提交按钮选择器  表单选择器
+    btnClick.btnEventClick(".bi_clear_btn","form");
+    // formAuth.formChk.formSubmitChk("form");
+  });
+</script>
+</html>

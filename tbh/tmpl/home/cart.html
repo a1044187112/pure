@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+ 		<meta http-equiv="Pragma" content="no-cache" />
+  		<meta http-equiv="Expires" content="0" />
+  		<meta charset="utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<link rel="stylesheet" href="/tbh/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+    	<script src="/tbh/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+  <!--    <script src="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+
+    	<link rel="stylesheet" type="text/css" href="/tbh/__PUBLIC__/home/home/css/common.css">
+    	<link rel="stylesheet" type="text/css" href="/tbh/__PUBLIC__/home/home/css/cart.css">
+    	<script type="text/javascript" src="/tbh/__PUBLIC__/home/home/js/cart.js"></script>
+    	<script type="text/javascript" src="/tbh/__PUBLIC__/home/home/js/failSubDataPopups.js"></script>
+    	<script src="/tbh/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+    <script src="/tbh/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+		<title>购物车</title>
+	</head>
+
+	<body>
+	<div data-role="page" class="page" id="pageone">
+
+	<!-- 购物车条目  -->
+	<div class="container_area">
+		<div class="ui-grid-c container_cart">
+			<div class="ui-block-a mdi_ic_item container_cart_check">
+				<img class="mdi_sel_btn" src="/tbh/__PUBLIC__/home/pic/bg/cart/3.png">
+			</div>
+			<div class="ui-block-b mdi_ic_item container_cart_img">
+				<a href="/tbh/tmpl/home/productPar.html"><img src="/tbh/__PUBLIC__/home/pic/bg/cart/2.png"></a>
+			</div>
+			<div class="ui-block-c mdi_ic_item container_cart_info">
+				<a class="container_cart_info_btn" href="/tbh/tmpl/home/productPar.html"><div>12mm强化复合木地板橡木地板耐磨防潮地暖环保 卫生
+				 实惠 安全</div></a>
+				 <div class="container_cart_info_btn">￥ <span class="pi_value">2059.00</span></div>
+			</div>
+			<div class="ui-block-d mdi_ic_item container_cart_select">
+				<div class="container_cart_select_item">
+					<div class="container_cart_select_add"
+						data-url="/tbh/php/ajax_test.php?get_id=5"
+                        data-data_src_type="self"
+                        data-fields="id,num"
+                        data-id="2"
+                        data-num="1"
+					>+</div>
+					<div class="container_cart_select_num">1</div>
+					<div class="container_cart_select_sub">-</div>
+				</div>
+				<div class="container_cart_select_item" style="visibility:hidden;">
+					<div>+</div>
+					<div>1</div>
+					<div>—</div>
+				</div>
+				<div class="container_delete_item container_cart_select_item"
+					data-url="/tbh/php/ajax_test.php?get_id=19"
+                        data-data_src_type="self"
+                        data-fields="id,num"
+                        data-id="2"
+                        data-num="1"
+				>删除</div>
+			</div>
+		</div>
+		
+
+		<div class="ui-grid-c container_cart">
+			<div class="ui-block-a mdi_ic_item container_cart_check">
+				<img class="mdi_sel_btn" src="/tbh/__PUBLIC__/home/pic/bg/cart/3.png">
+			</div>
+			<div class="ui-block-b mdi_ic_item container_cart_img">
+				<a href="/tbh/tmpl/home/productPar.html"><img src="/tbh/__PUBLIC__/home/pic/bg/cart/2.png"></a>
+			</div>
+			<div class="ui-block-c mdi_ic_item container_cart_info">
+				<a class="container_cart_info_btn" href="/tbh/tmpl/home/productPar.html"><div>12mm强化复合木地板橡木地板耐磨防潮地暖环保 卫生
+				 实惠 安全</div></a>
+				 <div class="container_cart_info_btn">￥ <span class="pi_value">2059.00</span></div>
+			</div>
+			<div class="ui-block-d mdi_ic_item container_cart_select">
+				<div class="container_cart_select_item">
+					<div class="container_cart_select_add"
+						data-url="/tbh/php/ajax_test.php?get_id=5"
+                        data-data_src_type="self"
+                        data-fields="id,num"
+                        data-id="2"
+                        data-num="1"
+					>+</div>
+					<div class="container_cart_select_num">1</div>
+					<div class="container_cart_select_sub">-</div>
+				</div class="container_cart_select_item">
+				<div class="container_cart_select_item" style="visibility:hidden;">
+					<div>+</div>
+					<div>1</div>
+					<div>—</div>
+				</div>
+				<div class="container_delete_item container_cart_select_item"
+					data-url="/tbh/php/ajax_test.php?get_id=19"
+                        data-data_src_type="self"
+                        data-fields="id,num"
+                        data-id="2"
+                        data-num="1"
+				>删除</div>
+			</div>
+		</div>
+		
+		<div class="ui-grid-c container_cart">
+			<div class="ui-block-a mdi_ic_item container_cart_check">
+				<img class="mdi_sel_btn" src="/tbh/__PUBLIC__/home/pic/bg/cart/3.png">
+			</div>
+			<div class="ui-block-b mdi_ic_item container_cart_img">
+				<img src="/tbh/__PUBLIC__/home/pic/bg/cart/2.png">
+			</div>
+			<div class="ui-block-c mdi_ic_item container_cart_info">
+				<a class="container_cart_info_btn" href="/tbh/tmpl/home/productPar.html"><div>12mm强化复合木地板橡木地板耐磨防潮地暖环保 卫生
+				 实惠 安全</div></a>
+				 <div class="container_cart_info_btn">￥ <span class="pi_value">2059.00</span></div>
+			</div>
+			<div class="ui-block-d mdi_ic_item container_cart_select">
+				<div class="container_cart_select_item">
+					<div class="container_cart_select_add"
+						data-url="/tbh/php/ajax_test.php?get_id=5"
+                        data-data_src_type="self"
+                        data-fields="id,num"
+                        data-id="2"
+                        data-num="1"
+					>+</div>
+					<div class="container_cart_select_num">1</div>
+					<div class="container_cart_select_sub">-</div>
+				</div>
+				<div class="container_cart_select_item" style="visibility:hidden;">
+					<div>+</div>
+					<div>1</div>
+					<div>—</div>
+				</div>
+				<div class="container_delete_item container_cart_select_item"
+					data-url="/tbh/php/ajax_test.php?get_id=19"
+                        data-data_src_type="self"
+                        data-fields="id,num"
+                        data-id="2"
+                        data-num="1"
+				>删除</div>
+			</div>
+		</div>
+
+	
+
+	
+		
+	</div>
+
+		<!-- 底部导航  -->
+		<div class="ui-grid-c footer_hidden" style="visibility:hidden;">
+			<div class="ui-block-a footer_nav_check_img ">
+				<img src="/tbh/__PUBLIC__/home/pic/bg/cart/3.png">
+			</div>
+			<div class="ui-block-b footer_nav_check_all">全选</div>
+			<div class="ui-block-c footer_nav_price">合计：2418.00</div>
+			<div class="ui-block-d footer_nav_num">结算(&nbsp;<span>2</span>&nbsp;)</div>
+		</div>
+
+		<div class="ui-grid-c footer">
+			<div class="ui-block-a footer_nav_check_img chk_all">
+				<img src="/tbh/__PUBLIC__/home/pic/bg/cart/3.png">
+			</div>
+			<div class="ui-block-b footer_nav_check_all">全选</div>
+			<div class="ui-block-c footer_nav_price">合计：<span class="total_cptl">0.00</span></div>
+			<div class="ui-block-d footer_nav_num"><div class="footer_nav_num_btn"
+				data-url="/tbh/php/ajax_test.php?get_id=20"
+                        data-data_src_type="self"
+                        data-fields="id,num,price"
+                        data-id="2"
+                        data-num="1"
+                        data-price="50.00">
+			结算(&nbsp;<span class="footer_nav_number">0</span>&nbsp;)</div></div>
+		</div>
+
+	</div>
+	</body>
+<script >
+   $(document).ready(function(){
+    var parameter = {
+            "img_url":"/tbh/__PUBLIC__/home/pic/bg/cart/", // 图片路径
+            "selector":".container_area",  //主选择器
+            "sub_item_el_class_name":"container_cart", //子条目元素类名
+            "sub_item_col_class_name":"mdi_ic_item",  //子条目元素列类名
+            "sub_item_chg_col_width":"10%",   //变动的列的宽度
+            "sel_btn_cname":"mdi_sel_btn",   //单选按钮选择器
+            "item_cnt_dec_btn_cname":"container_cart_select_add",   //增加数量按钮
+            "item_cnt_inc_btn_cname":"container_cart_select_sub",   //减少数量按钮
+            "item_been_sel_cname":"mdi_item_been_sel",   //变动的列的宽度
+            "item_conter_in_cname":"mdii_counter",   //列计数器
+            "item_price_info_cname":"mdi_price_info",   //价格信息框
+            "all_been_chk_cname":"all_been_chk",  
+            "check_all":"chk_all", // 全选按钮
+            "pi_value":"pi_value", //  单价选择器
+            "total_number":"footer_nav_number",  // 结算数量
+            "total_price":"total_cptl",   // 合计总价
+            "radio_comm_number":"container_cart_select_num",  // 每件商品数量的选择器
+            "delete_item":"container_delete_item",  // 删除商品按钮
+            "footer_nav_num_btn":"footer_nav_num_btn",// 结算按钮
+
+        };
+        
+    Cart2.init(parameter);
+  });
+</script>
+</html>

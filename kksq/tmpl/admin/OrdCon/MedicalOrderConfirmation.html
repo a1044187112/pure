@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/73h/__PUBLIC__/common/css/bootstrap.min.css" />
+<script src="/73h/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script src="/73h/__PUBLIC__/common/js/bootstrap.min.js"></script>
+
+<script src="/73h/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+<script src="/73h/__PUBLIC__/common/js/notice.js?rand={$rand}"></script>
+
+<script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+
+
+<link rel="stylesheet" href="/73h/__PUBLIC__/admin/index/css/common.css?rand={$rand}" />
+
+<title>管理员后台</title>
+</head>
+<body>
+<div class="i_content">
+    <div class="page_title">
+        <h1>订单确认码 0000001－病人体检信息查询结果</h1>
+    </div>  
+    <hr />
+    <!-- 数据表 -->
+    <div class="data_table well">   
+        <div class="show_detail_box container ">
+          <div>订单确认码查询失败或病人已就诊，点击<a class="btn btn-primary btn-sm" href="/73h/tmpl/admin/OrdCon/MedicalOrderTracking.html" 
+            role="button">重新查询</a></div>
+          <div class="detail_item row">
+            <div class="col-md-2">
+              套餐名
+            </div>
+            <div class="col-md-2">
+              职业体检
+            </div>
+          </div>
+          <div class="detail_item row">
+            <div class="col-md-2">
+              确认码
+            </div>
+            <div class="col-md-2">
+              110112
+            </div>
+          </div>
+          <div class="detail_item row">
+            <div class="col-md-2">
+              姓名
+            </div>
+            <div class="col-md-2">
+              赵本山
+            </div>
+          </div>
+          <div class="detail_item row">
+            <div class="col-md-2">
+              电话号码
+            </div>
+            <div class="col-md-8">
+              123234454545
+            </div>
+          </div>
+          <div class="detail_item row">
+            <div class="col-md-2">
+              <button type="button" 
+                class="btn btn-primary btn-lg update_btn"  
+                style=" font-size:12px;padding:5px;" 
+                data-url="/php/ajax_tran.php"
+                data-notice_word="是否确认病人信息?" 
+                data-fields="id,is_chk"
+                data-id="_item_id_1" 
+                data-is_chk="1"
+                >
+                确认完毕
+              </button>
+            </div>
+            <div class="col-md-8">
+              
+            </div>
+          </div>
+        </div>
+    </div>    
+    <!-- 数据表结束 -->
+
+
+    
+</div>
+</body>
+<script>
+$(document).ready(function(e) {
+    //更新按钮绑定
+    CtrlElAction.btnFunc.bindBtnClick(".data_table .update_btn");
+});
+
+
+
+    
+</script>
+</html>

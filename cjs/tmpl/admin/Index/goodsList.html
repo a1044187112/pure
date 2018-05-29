@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/common/css/bootstrap.min.css" />
+
+<script src="__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script src="__PUBLIC__/common/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/common/js/funcs.js"></script>
+<script src="__PUBLIC__/common/js/notice.js"></script>
+
+
+
+<script src="__PUBLIC__/common/js/btn_action.js"></script>
+
+<script src="__PUBLIC__/common/lib/i_file_upload/file_upload.js"></script>
+<link href="__PUBLIC__/common/lib/summernote/summernote.css" rel="stylesheet">
+<link href="__PUBLIC__/common/lib/summernote/font-awesome/css/font-awesome.css" rel="stylesheet">
+<script src="__PUBLIC__/common/lib/summernote/summernote.min.js"></script>
+<script src="__PUBLIC__/common/lib/summernote/summernote-zh-CN.js"></script>
+<script src="__PUBLIC__/common/js/edit_modal.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/common/lib/i_file_upload/file_up.css" />
+
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/gzh/admin/css/common.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/gzh/admin/css/catgList.css" />
+
+<title>管理员后台</title>
+</head>
+<body>
+<div class="i_content">
+	<div class="page_title">
+    	<h1>{$page_title}</h1>
+    </div>
+    <hr />
+    <div class="data_table">
+    	<div class="cate_sel">
+            <label class="title">类别:</label>
+            <select class="form-control content_select" style="display:inline-block"
+            data-fields="catg_id"
+         	data-url="{$show_url}"
+            >
+            	<foreach name="cate_data" item="item" >
+                	<option value="{$item.id}" <if condition="$item.id eq $catg_id">selected="selected"</if> >{$item.name}</option>
+            	</foreach>
+            </select>  
+          	<div style="clear:both"></div>
+    	<hr /> 
+  
+        </div>
+        
+        <table class="table table-bordered">
+            <tr>
+            	<th>
+                <div class="checkbox">
+                    <label>
+                      <input type="checkbox" class="select_all">
+                    </label>
+                  </div>
+               </th>
+                <th>商品名称</th>
+                <th>上架状态</th>
+                <th>操作</th>
+            </tr>
+            <!--数据遍历-->
+            <foreach name="goods_data.data" item="item" >
+              <tr class="t_row">
+                <td  class="sel_box">
+                <div class="checkbox">
+                    <label>
+                      <input type="checkbox" class="sel_item">
+                    </label>
+                  </div></td>
+                <td >{$item.name}
+                           	<div class="collapse show_detail_box" id="show_detail_box{$item.id}" style="width:600px">
+                              	<div class="well container" style="width:100%">
+									<div class="detail_item row"><div class="col-md-3"> 商品名称:</div><div class="col-md-9 item_cnt name">
+                                    	{$item.name}</div></div>
+									<div class="detail_item row"><div class="col-md-3">商品编号:</div><div class="col-md-9 item_cnt goods_num">
+                                    	{$item.goods_num}</div></div>
+                                    <div class="detail_item row"><div class="col-md-3">线上价格:</div><div class="col-md-9 item_cnt online_price">
+                                    	{$item.online_price}</div></div>
+                                    <div class="detail_item row"><div class="col-md-3">线下价格 ：</div><div class="col-md-9 item_cnt offline_price">
+                                    	{$item.offline_price}</div></div>
+                                    <div class="detail_item row"><div class="col-md-3">附加费用名称 ：</div><div class="col-md-9 item_cnt extra_price_name">
+                                    	{$item.extra_price_name}</div></div>
+                                    <div class="detail_item row"><div class="col-md-3">附加费用 ：</div><div class="col-md-9 item_cnt extra_price">
+                                    	{$item.extra_price}</div></div>
+                                    <div class="detail_item row"><div class="col-md-3">简介 ：</div><div class="col-md-9 item_cnt intro">
+                                    	{$item.intro}</div></div>
+                                   	<div class="detail_item row is_onsale"><div class="col-md-3">上架状态：</div>
+                                    	<div class="col-md-9 item_cnt">
+                                            <if condition="($item.is_onsale eq 0)">
+                                                已下架
+                                            <else />
+                                                上架销售中
+                                            </if>
+                                            <span style="display:none" class="real_data">{$item.is_onsale}</span>
+                                       	</div>
+                                    </div>
+                                   	<div class="detail_item row pics"><div class="col-md-3">商品图片 ：</div>
+                                    	<div class="col-md-9 item_cnt">
+                                             <div class="files">
+                                                <foreach name="item.pics.pics" item="pic_item" key="pic_key">
+                                                    <div class="thumbnail thum_pic <if condition="$pic_key eq $item['pics']['default_pic_num']"> default_pic</if>">
+                                                       <img src="{$pic_item}" width="100%" height="100%" />                        
+                                                    </div>
+                                                </foreach>   
+                                                <div style="clear:both"></div>                                
+                                            </div>
+                                            <div class="default_file_num" style="display:none">{$item.pics.default_pic_num}</div>
+                                        </div>
+                                    </div>
+                                    
+                                   	<div class="detail_item row intro_pics"><div class="col-md-3">简介图片 ：</div>
+                                    	<div class="col-md-9 item_cnt">
+                                            <div class="files">
+                                                <foreach name="item.intro_pics.pics" item="pic_item" key="pic_key">
+                                                    <div class="thumbnail thum_pic <if condition="$pic_key eq $item['pics']['default_pic_num']"> default_pic</if>">
+                                                       <img src="{$pic_item}" width="100%" height="100%" />                        
+                                                    </div>
+                                                </foreach>    
+                                                <div style="clear:both"></div>                      
+                                            </div>
+                                            <div class="default_file_num" style="display:none">{$item.intro_pics.default_pic_num}</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail_item row"><div class="col-md-3">详细数据 ：</div><div class="col-md-9 item_cnt goods_detail">{$item.goods_detail}</div></div>
+
+                                    <div class="detail_item row"><div class="col-md-3">商品参数 ：</div><div class="col-md-9 item_cnt goods_param">{$item.goods_param}</div></div>
+
+                                    <div class="detail_item">
+                                       <button type="button" class="btn btn-primary btn-lg update_btn"  style=" font-size:12px;padding:5px;" 
+                                        data-id="{$item.id}" 
+                                        data-url="{$update_url}"
+                                        data-notice_word="是否将商品{$item.name}上架" 
+                                        data-fields="is_onsale,id"
+                                        data-is_onsale="1"
+                                        >
+                                        上架
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-lg update_btn"  style=" font-size:12px;padding:5px;" 
+                                        data-id="{$item.id}" 
+                                        data-url="{$update_url}"
+                                        data-notice_word="是否将商品{$item.name}下架" 
+                                        data-fields="is_onsale,id"
+                                        data-is_onsale="0"
+                                        >
+                                        取消上架
+                                        </button>
+                                    </div>
+                                    
+                            	</div>
+                           	</div>                
+                </td>
+                <td>
+                  <if condition="($item.is_onsale eq 0)">
+                      	已下架
+                  <else />
+						上架销售中
+                 </if>
+                
+                </td>
+                <td class="id" style="display:none">{$item.id}</td>
+                <td class="get_url" style="display:none">{$get_data_url}</td>
+
+                <td class="action_box">
+                    <button type="button" class="btn btn-primary btn-lg update_btn"  style=" font-size:12px;padding:5px;" 
+                    data-id="{$item.id}" 
+         			data-url="{$update_url}"
+                    data-notice_word="是否将商品{$item.name}上架" 
+                    data-fields="is_onsale,id"
+         			data-is_onsale="1"
+                    >
+                    上架
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg update_btn"  style=" font-size:12px;padding:5px;" 
+                    data-id="{$item.id}" 
+         			data-url="{$update_url}"
+                    data-notice_word="是否将商品{$item.name}下架" 
+                    data-fields="is_onsale,id"
+         			data-is_onsale="0"
+                    >
+                    取消上架
+                    </button>
+                    
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#update_modal" style=" font-size:12px;padding:5px;" 
+                    	data-data_option_type="modify"
+                    >
+                    编辑
+                    </button>
+                </td>
+            </tr>
+            </foreach>
+            <!--数据遍历结束-->
+
+        </table>
+       		<div class="page_info_box">
+              <ul class="pagination page_info">
+                <li>
+                  <a href="{$entry_url}?catg_id={$catg_id}&page_num={$goods_data.page_info.pre_page_num}" aria-label="Previous">
+                    <span aria-hidden="true">上一页</span>
+                  </a>
+                </li>
+            <!--    <li><a href="#">1</a></li>-->
+                    <foreach name="page_info.page_data" item="item">
+                        <li class="<if condition='($page_info.page_num eq $item )'>active </if>">
+                            <a href="{$entry_url}?catg_id={$catg_id}&page_num={$item}">{$item + 1}</a>
+                        </li>
+                    </foreach>
+                <li>
+                  <a href="{$entry_url}?catg_id={$catg_id}&page_num={$goods_data.page_info.next_page_num}" aria-label="Next">
+                    <span aria-hidden="true">下一页</span>
+                  </a>
+                </li> 
+                <li>{$goods_data['page_info']['page_num'] + 1}/{$goods_data.page_info.page_count}</li>
+              </ul>
+              
+        	</div>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#add_modal" data-data_option_type="add">
+  			添加商品
+		</button>	
+    </div>
+</body>
+<script>
+$(document).ready(function(e) {
+	var update_url="{$update_url}";	
+	var img_up_url="{$img_up_url}";
+	var catg_id = '{$catg_id}';
+	
+	//alert(catg_id);
+	
+	//alert(upadte_url);
+    //初始化数据更新模态框
+	var add_form_option =[
+		{"type":"system","modal_title":"添加商品","submit_url":update_url,/*"sim_post_if":true,*/"submin_btn_title":"添加","modal_id":"add_modal"
+			,"file_up_url":img_up_url},
+		{"type":"text","title":"类别名称","bind_key":"name"},
+		{"type":"text","title":"产品编号","bind_key":"goods_num"},
+		{"type":"text","title":"线上价格","bind_key":"online_price"},
+		{"type":"text","title":"线下价格","bind_key":"offline_price"},
+		{"type":"text","title":"附加费用名","bind_key":"extra_price_name"},
+		{"type":"text","title":"附加费用","bind_key":"extra_price"},
+		{"type":"textarea","title":"简介","bind_key":"intro"},
+		{"type":"radios","title":"是否上架","bind_key":"is_onsale","sub_el_title":[
+			{"title":"是","value":"1"},{"title":"否","value":"0"}],"default_value":"1"},
+		{"type":"file","title":"商品显示图片","bind_key":"pics"},
+		{"type":"file","title":"商品简介图片","bind_key":"intro_pics"},
+		{"type":"texteditor","title":"商品详情","bind_key":"goods_detail"},
+        {"type":"texteditor","title":"商品参数","bind_key":"goods_param"},
+        {"type":"hidden","title":"类别编号","bind_key":"catg_id","default_value":catg_id},
+
+	];
+	EditSubmitModal.createNewModal(add_form_option);	
+	
+	//创建更新对话框
+	var update_form_option = [
+		{"type":"system","modal_title":"编辑商品","submit_url":update_url,/*"sim_post_if":true,*/"submin_btn_title":"修改","modal_id":"update_modal"
+			,"file_up_url":img_up_url},
+		{"type":"text","title":"类别名称","bind_key":"name"},
+		{"type":"text","title":"产品编号","bind_key":"goods_num"},
+		{"type":"text","title":"线上价格","bind_key":"online_price"},
+		{"type":"text","title":"线下价格","bind_key":"offline_price"},
+		{"type":"text","title":"附加费用名","bind_key":"extra_price_name"},
+		{"type":"text","title":"附加费用","bind_key":"extra_price"},
+		{"type":"textarea","title":"简介","bind_key":"intro"},
+		{"type":"radios","title":"是否上架","bind_key":"is_onsale","sub_el_title":[
+			{"title":"是","value":"1"},{"title":"否","value":"0"}],"default_value":"1"},
+		{"type":"file","title":"商品显示图片","bind_key":"pics"},
+		{"type":"file","title":"商品简介图片","bind_key":"intro_pics"},
+		{"type":"texteditor","title":"商品详情","bind_key":"goods_detail"},
+        {"type":"texteditor","title":"商品参数","bind_key":"goods_param"},
+        {"type":"hidden","title":"id","bind_key":"id"},
+
+	];
+	EditSubmitModal.createNewModal(update_form_option);	
+	
+	
+	//绑定删除按钮
+	BindBtnClick(".data_table .delete_btn");
+	BindBtnClick(".data_table .update_btn");
+	
+	//显示详细按钮设置
+	ShowDetailActionSet();
+	
+	//绑定选择框数据
+	ContenSelChangeBind();
+});
+
+
+</script>
+</html>

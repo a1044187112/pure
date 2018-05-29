@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+ 		<meta http-equiv="Pragma" content="no-cache" />
+  		<meta http-equiv="Expires" content="0" />
+  		<meta charset="utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name = "format-detection" content = "telephone=no">
+    	<link rel="stylesheet" href="/tbh/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+    	<script src="/tbh/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+  <!--    <script src="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+
+    	<link rel="stylesheet" type="text/css" href="/tbh/__PUBLIC__/home/home/css/submitOrder1.css">
+    	<script type="text/javascript" src="/tbh/__PUBLIC__/home/home/js/submitOrder1.js"></script>
+
+    	<script src="/73h/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+  <script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+		<title>提交订单</title>
+	</head>
+
+	<body>
+	<div data-role="page" class="page" id="pageone">
+		<form>
+		<div class="container">
+			<div class="ui-grid-a container_size">
+				<div class="ui-block-a container_size_item"></div>
+				<div class="ui-block-b container_size_item">
+					<div class="container_size_item_sel">尺码</div>
+					<ul class="container_size_com">
+						<li class="container_size_com_item">37</li>
+						<li class="container_size_com_item">38</li>
+						<li class="container_size_com_item">39</li>
+						<li class="container_size_com_item">40</li>
+						<li class="container_size_com_item">41</li>
+						<input class="get_size" type="text" name="size" value="38" style="display:none;">
+					</ul>
+				</div>
+			</div>
+
+			<div class="ui-grid-a container_size container_color">
+				<div class="ui-block-a container_size_item"></div>
+				<div class="ui-block-b container_size_item">
+					<div class="container_size_item_sel">颜色</div>
+					<ul class="container_color_com">
+						<li class="container_color_com_item">白色</li>
+						<li class="container_color_com_item">黑色</li>
+						<li class="container_color_com_item">黄色</li>
+						<input class="get_color" type="text" name="color" value="黑色"  style="display:none;">
+				</div>
+			</div>
+
+			<div class="ui-grid-b container_num">
+				<div class="ui-block-a container_num_item"></div>
+				<div class="ui-block-b container_num_item">
+					购买数量
+				</div>
+				<div class="ui-block-c container_num_item">
+					<div class="container_num_sub container_num_item_sel">-</div>
+					<div class="container_num_number container_num_item_sel">
+						<input class="container_num_number_input" name="num" value="1" size="3" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')" maxlength="2" /></div>
+					<div class="container_num_add container_num_item_sel">+</div>
+				</div>
+			</div>
+
+
+			<div class="container_address">编辑收货地址</div>
+			<div class="ui-grid-a container_info i_form_ctrl">
+				<div class="ui-block-a container_info_item i_title">收货人</div>
+				<div class="ui-block-b container_info_item">
+					<input class="input_text" type="text" name="name" placeholder="姓名" >
+				</div>
+			</div>
+			<div class="ui-grid-a container_info i_form_ctrl">
+				<div class="ui-block-a container_info_item i_title">联系电话</div>
+				<div class="ui-block-b container_info_item">
+					<input class="input_text" type="text" name="phone" placeholder="手机或固定电话">
+				</div>
+			</div>
+			<div class="ui-grid-a container_info i_form_ctrl">
+				<div class="ui-block-a container_info_item i_title">选中地区</div>
+				<div class="ui-block-b container_info_item">
+					<input class="input_text" type="text" name="area" placeholder="选择省份 选择城市 选择地区" >
+				</div>
+			</div>
+			<div class="ui-grid-a container_info i_form_ctrl">
+				<div class="ui-block-a container_info_item i_title">详细地址</div>
+				<div class="ui-block-b container_info_item">
+					<input class="input_text" type="text" name="address" placeholder="街道门牌信息" >
+				</div>
+			</div>
+			<div class="ui-grid-a container_info">
+				<div class="ui-block-a container_info_item i_title">邮政编码</div>
+				<div class="ui-block-b container_info_item">
+					<input class="input_text" type="text" name="id" placeholder="邮政编码（选填）"
+					>
+				</div>
+			</div>
+		</div>
+			<input class="total_price" type="text" name="total_price" value="55" style="display:none;" >
+		</form>		
+		
+
+		<div class="ui-grid-a footer_hidden">
+			<div class="ui-block-a footer_hidden_item">合计<span class="footer_hidden_item_span">￥2718.00</span>元</div>
+			<div class="ui-block-b footer_hidden_item">保存提交订单</div>
+		</div>
+	
+		<div class="ui-grid-a footer_show">
+			<div class="ui-block-a footer_show_item">合计 <span class="footer_price">￥359.00</span> 元</div>
+
+			<div class="ui-block-b footer_show_item submint_btn_order"><div class="footer_show_item_btn bi_clear_btn" 
+				data-url="/tbh/tmpl/home/pay.html"
+                data-data_src_type="form"
+                data-form_slcr="form"
+			>保存提交订单</div></div>
+			<!-- href="/tbh/tmpl/home/pay.html" -->
+		</div>
+
+		
+	
+	</div>
+	</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var parameter = {
+			"container":"container",  // 最外层选择器
+			"container_size":"container_size", // 尺码选择项的根部选择器
+			"container_size_com":"container_size_com",  // 尺码选择项的父选择器
+			"container_size_com_item":"container_size_com_item", // 尺码选择项
+			"container_color":"container_color",  // 颜色选择器根部选择器
+			"container_color_com":"container_color_com", // 颜色选择项父选择器
+			"container_color_com_item":"container_color_com_item", // 颜色选择项
+			"container_num":"container_num", // 数量选择器根部选择器
+			"container_num_sub":"container_num_sub", // 减少
+			"container_num_number":"container_num_number", // number
+			"container_num_add":"container_num_add", //增加
+			"container_info":"container_info",
+			"submint_btn_order":"submint_btn_order",
+			"footer_price":"footer_price",
+			"get_size":"get_size",
+			"get_color":"get_color",
+			"total_price":"total_price",
+		}
+
+		SubmitOrder1.init(parameter);
+
+
+	  CtrlElAction.isSimPost=true;
+      CtrlElAction.formBlur.inputBlur(); //表单验证  
+      HomeCtrlElAction.btnFunc.bindSbmtBtnClick(".bi_clear_btn");
+	});
+</script>
+</html>

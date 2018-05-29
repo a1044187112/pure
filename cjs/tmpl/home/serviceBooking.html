@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/cjs/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+    <script src="/cjs/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+    <script src="/cjs/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script>
+
+  <script src="/cjs/__PUBLIC__/common/lib/time_sel/js/mobiscroll_002.js" ></script>
+  <script src="/cjs/__PUBLIC__/common/lib/time_sel/js/mobiscroll_004.js" ></script>
+  <link href="/cjs/__PUBLIC__/common/lib/time_sel/css/mobiscroll_002.css" rel="stylesheet" type="text/css">
+  <link href="/cjs/__PUBLIC__/common/lib/time_sel/css/mobiscroll.css" rel="stylesheet" type="text/css">
+  <script src="/cjs/__PUBLIC__/common/lib/time_sel/js/mobiscroll.js" ></script>
+  <script src="/cjs/__PUBLIC__/common/lib/time_sel/js/mobiscroll_003.js" ></script>
+  <script src="/cjs/__PUBLIC__/common/lib/time_sel/js/mobiscroll_005.js" ></script>
+  <link href="/cjs/__PUBLIC__/common/lib/time_sel/css/mobiscroll_003.css" rel="stylesheet" type="text/css">
+
+
+<script src="/cjs/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+<script src="/cjs/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+
+<link rel="stylesheet" type="text/css" href="/cjs/__PUBLIC__/home/home/css/common.css">
+<link rel="stylesheet" type="text/css" href="/cjs/__PUBLIC__/home/home/css/serviceBooking.css">
+
+  <title><{$page_title}></title>
+</head>
+<body>
+  <div class="page" id="pageone">
+
+    
+    <div class="booking_form">
+      <form class="">
+        <div class="ui-grid-a bf_item">
+          <div class="ui-block-a bfi_title">
+            姓名:
+          </div>
+          <div class="ui-block-b bfi_input">
+            <input type="text" name="cstm_name"/>
+          </div>
+        </div>  
+
+        <div class="ui-grid-a bf_item">
+          <div class="ui-block-a bfi_title">
+            手机号码:
+          </div>
+          <div class="ui-block-b bfi_input">
+            <input type="text" name="phone_num"/>
+          </div>
+        </div>
+
+        <div class="ui-grid-a bf_item">
+          <div class="ui-block-a bfi_title">
+            车牌号:
+          </div>
+          <div class="ui-block-b bfi_input">
+            <input type="text" name="car_plt_num"/>
+          </div>
+        </div>
+
+        <div class="ui-grid-a bf_item">
+          <div class="ui-block-a bfi_title" style="font-size: 13px;padding-top: 20px;">
+            发动机号后6位:
+          </div>
+          <div class="ui-block-b bfi_input">
+            <input type="text" name="engine_num"/>
+          </div>
+        </div>
+
+        <div class="ui-grid-a bf_item">
+          <div class="ui-block-a bfi_title">
+            时间:
+          </div>
+          <div class="ui-block-b bfi_input">
+            <input type="text" name="time" id="booking_time"/>
+          </div>
+        </div>
+
+        <input type="hidden" name="csc_id" value="<{$cmb_id}>" />
+        
+
+        <a class="submit_btn" 
+          data-url="/php/booking_submit.php"
+          data-data_src_type="form"
+          data-form_slcr=".booking_form form"
+        >
+          <div class="ui-grid-b booking_sub_btn_area">
+            <div class="ui-block-a"></div>
+            <div class="ui-block-b">
+              <div class="booking_sub_btn">
+                <div class="bst_text">提交</div>
+              </div>
+            </div>
+            <div class="ui-block-c"></div>
+          </div>
+
+        </a>
+        
+
+      </form>
+
+    </div>
+
+
+
+
+  </div>
+
+</body>
+<script>
+$(document).ready(function(e) {
+    //更新按钮绑定
+    CtrlElAction.btnFunc.bindSbmtBtnClick(".submit_btn");
+
+    // 时间输入插件
+    var currYear = (new Date()).getFullYear();  
+    var opt={};
+    opt.date = {preset : 'date'};
+    opt.datetime = {preset : 'datetime'};
+    opt.time = {preset : 'time'};
+    opt.default = {
+      theme: 'android-ics light', //皮肤样式
+      display: 'modal', //显示方式 
+      mode: 'scroller', //日期选择模式
+      dateFormat: 'yyyy-mm-dd',
+      lang: 'zh',
+      showNow: true,
+      nowText: "今天",
+      //startYear: currYear - 10, //开始年份
+      startYear: currYear, //开始年份
+      endYear: currYear + 10 //结束年份
+    };
+    $("#booking_time").mobiscroll($.extend(opt['date'], opt['default']));
+
+});
+
+
+
+    
+</script>
+</html>

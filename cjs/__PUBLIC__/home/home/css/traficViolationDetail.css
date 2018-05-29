@@ -1,0 +1,49 @@
+.trafic_intro_area{
+	background-color: #E94F0B;
+	color: transparent;
+	padding: 15px 5px;
+	font-size: 20px;
+}
+
+.trafic_intro_area .ti_title{
+	color: #FFEF00;
+}
+
+.trc_vlt_rcd_area{
+	padding: 15px 15px;
+	margin-top: 10px;
+}
+
+.trc_vlt_rcd_area .tvr_item{
+
+}
+
+.trc_vlt_rcd_area .tvr_item .tvri_img{
+	width: 8%;
+	position: relative;
+	left: 4%;
+}
+
+.trc_vlt_rcd_area .tvr_item .trvri_info{
+	width: 92%;
+	border-left: dashed 1px #F4BC4A;
+	padding:20px 10%;
+
+}
+
+
+.trc_vlt_rcd_area .tvr_item .trvri_info .tvri_item{
+	margin-top: 10px;
+}
+
+
+.trc_vlt_rcd_area .tvr_item .trvri_info .tvri_item .tvrii_img{
+	width: 10%;
+}
+
+.trc_vlt_rcd_area .tvr_item .trvri_info .tvri_item .tvrii_info{
+	width: 85%;
+	margin-left: 5%;
+}
+
+

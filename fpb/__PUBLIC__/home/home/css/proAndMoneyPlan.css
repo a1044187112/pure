@@ -1,0 +1,72 @@
+*{
+	padding:0px;
+	margin: 0px;
+	font-family: "黑体";
+}
+img{
+	width: 100%;
+}
+#pageone{
+	width: 100%;
+	background-color: #0c1b27;
+	padding-top: 10px;
+}
+
+.container{
+	width: 100%;
+
+}
+.year{
+	margin-top: 10px;
+	padding-bottom: 50px;
+	position: relative;
+}
+.year .year_num .year_num_item:first-child{
+	width: 50%;
+	padding-left: 20px;
+	font-size: 16px;
+	color: #ad4b3e;
+}
+.year .year_num .year_num_item:first-child .num_item{
+	margin-left: 10%;
+}
+.year .year_num .year_num_item:nth-child(2){
+	width: 25%;
+	color: #74fbfd;
+	font-size: 12px;
+	-webkit-transform:scale(0.9);
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	z-index: 100;
+}
+.year .year_num .year_num_item:nth-child(3){
+	width: 25%;
+	color: #4aa9e4;
+	font-size: 12px;
+	-webkit-transform:scale(0.9);
+	position: absolute;
+	top: 15px;
+	left: 75%;
+	z-index: 100;
+}
+.year .year_num .year_num_item .year_num_rect{
+	float: left;
+	width: 15px;
+	height: 15px;
+	background-color: #74fbfd;
+	margin-right: 5px;
+}
+.year .year_num .year_num_item:nth-child(3) .year_num_rect{
+	background-color: #4aa9e4;
+	
+}
+.year #year_canvas{
+	display: block;
+	margin-top: 5px;
+}
+.year .year_text{
+	text-align: center;
+	color: #8ffa7f;
+	font-size: 18px;
+}

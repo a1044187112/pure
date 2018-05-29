@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/73h/__PUBLIC__/common/css/bootstrap.min.css" />
+<script src="/73h/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script src="/73h/__PUBLIC__/common/js/bootstrap.min.js"></script>
+
+<script src="/73h/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+<script src="/73h/__PUBLIC__/common/js/notice.js?rand={$rand}"></script>
+<script src="/73h/__PUBLIC__/common/js/ajax_data.js?rand={$rand}"> </script>
+
+<script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+
+<link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/admin/login/css/login.css" />
+
+<title>管理员登录</title>
+</head>
+	
+<body>
+	<div class="login_area">
+		<div class="title_con">
+			七十三医院后台管理系统
+		</div>
+		<div class="input_con row">
+			<div class="col-md-5 img_item">
+				<img src="/73h/__PUBLIC__/admin/login/pic/bg/1.png">
+			</div>
+			<div class="col-md-7 input_item">
+			    <form>
+			      <div class="form-group">
+			        <label for="exampleInputEmail1">用户名</label>
+			        <input type="text" class="form-control" id="acc" name="acc" placeholder="请输入用户名">
+			      </div>
+			      <div class="form-group">
+			        <label for="exampleInputPassword1">密码</label>
+			        <input type="password" class="form-control" id="pwd" name="pwd" placeholder="请输入密码">
+			      </div>
+			      
+			      <div class="submit_btn_area dis_area">
+			      	<a href="/73h/tmpl/admin/Index/index.html" class="submit_btn">
+			      		登陆
+			      	</a>
+			      </div>
+			    </form>			
+			</div>
+		</div>
+
+		
+    </div>
+
+    <div class="support_area">
+    	弄潮儿科技<span>提供技术支持</span>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">错误提示</h4>
+          </div>
+          <div class="modal-body">
+            登录账户名或密码错误
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Modal -->
+</body>
+
+<script type="application/javascript">
+	$(".submit_btn").click(function(event){
+		return;
+		event.preventDefault()
+		//alert("ok");
+		//获取数据
+		//使用ajax进行数据传递
+		var data_obj = {};	
+		data_obj.data = $("form").serialize();
+		//alert(data_obj.data);
+		var url = '{$chk_url}';//alert(url);
+		//SimPost(url,data_obj);return;
+		
+		$.post(url,$.param(data_obj),function(Json){
+			//alert(Json.ret_code);	
+			var ret_code = Json.ret_code;
+			//返回的数据需要进行url解码
+			var ret_state = decodeURIComponent(Json.ret_state);
+			//alert(ret_state);
+			//判断返回值,做响应
+			if(ret_code == 0)
+			{
+				//信息校验成功,跳转到指定的页面
+				top.location.href = ret_state;
+			}
+			else
+			{
+				//alert(ret_state);
+				//信息校验失败进行提示
+				$('#myModal').modal({
+				});    
+		
+			}
+		},"json");
+	});//click 绑定函数
+	
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

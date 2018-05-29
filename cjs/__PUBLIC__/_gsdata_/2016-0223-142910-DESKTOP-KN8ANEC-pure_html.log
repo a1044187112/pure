@@ -1,0 +1,27 @@
+2016-02-23 14:29:10: -- Analysis Started by User
+2016-02-23 14:29:10: 变更：19， 冲突：， 复制时间：， 复制状态：/， 错误： , All: 1454
+2016-02-23 14:29:10: Right to Left: Copy File: 19 
+2016-02-23 14:29:10: ----- ：分析已结束。 历时 00:00:00， 速度： Many 个文件/秒 -----
+2016-02-23 14:29:10: 
+2016-02-23 14:29:22: == Sync Started by User
+2016-02-23 14:29:22: 创建文件夹 'D:/php/weixingzh/Public/73h/pic/bg/cart'
+2016-02-23 14:29:22: 创建文件夹 'D:/php/weixingzh/Public/73h/pic/bg/vip'
+2016-02-23 14:29:22: 创建文件夹 'D:/php/weixingzh/Public/73h/pic/bg/vip_reg_cmt'
+2016-02-23 14:29:22: 创建文件夹 'D:/php/weixingzh/Public/73h/pic/bg/vip_reg_cmt_done'
+2016-02-23 14:29:22: 创建文件夹 'D:/php/weixingzh/Public/73h/pic/test/vip'
+2016-02-23 14:29:22: 新建复制 'D:/php/pure_html/__PUBLIC__/73h/home/css/cart.css' -> 'D:/php/weixingzh/Public/73h/home/css/cart.css'
+2016-02-23 14:29:22: 覆盖复制 'D:/php/pure_html/__PUBLIC__/73h/home/css/common.css' -> 'D:/php/weixingzh/Public/73h/home/css/common.css'
+2016-02-23 14:29:22: 覆盖复制 'D:/php/pure_html/__PUBLIC__/73h/home/css/docRecmdList.css' -> 'D:/php/weixingzh/Public/73h/home/css/docRecmdList.css'
+2016-02-23 14:29:22: 新建复制 'D:/php/pure_html/__PUBLIC__/73h/home/css/vip.css' -> 'D:/php/weixingzh/Public/73h/home/css/vip.css'
+2016-02-23 14:29:22: 新建复制 'D:/php/pure_html/__PUBLIC__/73h/home/css/vipRegCmt.css' -> 'D:/php/weixingzh/Public/73h/home/css/vipRegCmt.css'
+2016-02-23 14:29:22: 新建复制 'D:/php/pure_html/__PUBLIC__/73h/home/css/vipRegCmtDone.css' -> 'D:/php/weixingzh/Public/73h/home/css/vipRegCmtDone.css'
+2016-02-23 14:29:22: 新建复制 'D:/php/pure_html/__PUBLIC__/73h/home/css/vipRegList.css' -> 'D:/php/weixingzh/Public/73h/home/css/vipRegList.css'
+2016-02-23 14:29:22: 新建复制 'D:/php/pure_html/__PUBLIC__/73h/pic/bg/cart/10.png' -> 'D:/php/weixingzh/Public/73h/pic/bg/cart/10.png'
+2016-02-23 14:29:22: 新建复制 'D:/php/pure_html/__PUBLIC__/73h/pic/bg/cart/4.png' -> 'D:/php/weixingzh/Public/73h/pic/bg/cart/4.png'
+2016-02-23 14:29:22: 新建复制 'D:/php/pure_html/__PUBLIC__/73h/pic/bg/vip/1.png' -> 'D:/php/weixingzh/Public/73h/pic/bg/vip/1.png'
+2016-02-23 14:29:22: 新建复制 'D:/php/pure_html/__PUBLIC__/73h/pic/bg/vip/2.png' -> 'D:/php/weixingzh/Public/73h/pic/bg/vip/2.png'
+2016-02-23 14:29:22: 新建复制 'D:/php/pure_html/__PUBLIC__/73h/pic/bg/vip_reg_cmt/2.png' -> 'D:/php/weixingzh/Public/73h/pic/bg/vip_reg_cmt/2.png'
+2016-02-23 14:29:22: 新建复制 'D:/php/pure_html/__PUBLIC__/73h/pic/bg/vip_reg_cmt_done/1.png' -> 'D:/php/weixingzh/Public/73h/pic/bg/vip_reg_cmt_done/1.png'
+2016-02-23 14:29:22: 新建复制 'D:/php/pure_html/__PUBLIC__/73h/pic/test/vip/2.png' -> 'D:/php/weixingzh/Public/73h/pic/test/vip/2.png'
+2016-02-23 14:29:22: ===== ：同步完毕。时间：00:00:00，速度： 0 字节/s =====, 项目同步未必： 19，错误： 
+2016-02-23 14:29:22: 

@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/73h/__PUBLIC__/common/css/bootstrap.min.css" />
+<script src="/73h/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script src="/73h/__PUBLIC__/common/js/bootstrap.min.js"></script>
+
+<script src="/73h/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+<script src="/73h/__PUBLIC__/common/js/notice.js?rand={$rand}"></script>
+<script src="/73h/__PUBLIC__/common/js/ajax_data.js?rand={$rand}"> </script>
+
+<script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+
+<link rel="stylesheet" href="/73h/__PUBLIC__/admin/index/css/common.css?rand={$rand}" />
+
+<title>管理员后台</title>
+</head>
+<body>
+<div class="i_content">
+    <div class="page_title">
+        <h1>查询病历</h1>
+    </div>
+    <hr /> 
+    <div class="data_table">
+        <!---表格显示-->
+        <table class="table table-bordered dis_table container">
+          <tr class="row">
+            <td class="col-md-12">
+                    <form >
+                        <input type="text" name="note_code" value=""  style="width:200px;">
+                        <button type="button" class="btn btn-primary submit_btn" 
+                            data-url="/php/qry.php"
+                            data-form_slcr="form"
+                        >点击查询</button>
+                    </form>
+            </td>
+          </tr>    
+
+
+       </table>
+        <!---表格显示结束-->
+    </div>
+
+    
+</div>
+</body>
+<script>
+$(document).ready(function(e) {
+    //更新按钮绑定
+    CtrlElAction.isSimPost=true;
+    HomeCtrlElAction.btnFunc.bindSbmtBtnClick(".data_table .submit_btn");
+    
+
+});//ready
+
+
+    
+</script>
+</html>

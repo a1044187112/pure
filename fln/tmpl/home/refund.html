@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+ 		<meta http-equiv="Pragma" content="no-cache" />
+  		<meta http-equiv="Expires" content="0" />
+  		<meta charset="utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<link rel="stylesheet" href="/fln/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+    	<script src="/fln/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+  <!--    <script src="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+
+    	<link rel="stylesheet" type="text/css" href="/fln/__PUBLIC__/home/home/css/refund.css">
+    	<script type="text/javascript" src="/fln/__PUBLIC__/home/home/js/refund.js"></script>
+		<title>退款</title>
+	</head>
+
+	<body>
+	<div data-role="page" class="page" id="pageone">
+		
+		<div class="container">
+			<div class="container_title">退货原因：</div>
+			<div class="ui-grid-d container_reason">
+				<div class="ui-block-a container_reason_item"></div>
+				<div class="ui-block-b container_reason_item refund_btn">未能在规定时间内服务</div>
+				<div class="ui-block-c container_reason_item"></div>
+				<div class="ui-block-d container_reason_item refund_btn">不想买了</div>
+				<div class="ui-block-e container_reason_item"></div>
+			</div>
+			<div class="ui-grid-d container_reason">
+				<div class="ui-block-a container_reason_item"></div>
+				<div class="ui-block-b container_reason_item refund_btn">拍错了</div>
+				<div class="ui-block-c container_reason_item"></div>
+				<div class="ui-block-d container_reason_item"></div>
+				<div class="ui-block-e container_reason_item"></div>
+			</div>
+
+			<div class="ui-grid-b container_textarea">
+				<div class="ui-block-a container_textarea_item"></div>
+				<div class="ui-block-b container_textarea_item">
+					<textarea class="textarea_text" rows="8" value="其他..." onfocus="if(this.value=='其它...')this.value=''" onblur="if(this.value=='')this.value='其它...'">其它...</textarea>
+				</div>
+				<div class="ui-block-c container_textarea_item"></div>
+			</div>
+			<div class="container_refund">退款金额：<span class="container_refund_span">￥15.00</span></div>
+			<div class="ui-grid-b container_submit">
+				<div class="ui-block-a container_submit_item"></div>
+				<div class="ui-block-b container_submit_item">
+					<a class="container_submit_btn" href="/fln/tmpl/home/appSubmitSucc.html">提交申请</a>
+				</div>
+				<div class="ui-block-c container_submit_item"></div>
+			</div>
+		</div>
+
+		
+	
+	</div>
+	</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var parmetar = {
+			"refund_btn":"refund_btn",
+			"textarea_text":"textarea_text",
+			"container_submit_btn":"container_submit_btn",
+		};
+		Refund.init(parmetar);
+	});
+</script>
+
+</html>

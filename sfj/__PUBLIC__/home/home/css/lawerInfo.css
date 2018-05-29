@@ -1,0 +1,302 @@
+
+.head_pic_area{
+
+}
+
+.head_pic_area .hp_bg_con{
+	//padding: 40px 35%;
+	height: 130px;
+}
+
+
+.head_pic_area .hp_con .hp_info{
+	position: relative;
+	top: 100px;
+}
+
+.hp_info_con {
+	//margin-top: 20px;
+
+}
+
+/*头像信息*/
+.hp_info_con .info_item{
+	float: left;
+}
+
+.hp_info_con .info_item:nth-child(1){
+	width: 30%;
+	height: 20px;
+}
+
+.hp_info_con .info_item:nth-child(2){
+	width: 40%;
+
+}
+
+.hp_info_con .info_item:nth-child(3){
+	width: 30%;
+
+}
+
+.hp_info_con .info_item .imgainfo{
+	position: relative;
+	top: -60px;
+	padding:0 15%;
+}
+
+.hp_info_con .info_item .imgainfo .user_img{
+	border: 10px #ffffff solid;
+	border-radius: 100px;
+	padding: 0;
+	font-size: 0px;
+	margin: 0px;
+	background-color: #ffffff;
+}
+
+.hp_info_con .info_item .imgainfo .user_name{
+	text-align: center;
+	font-size: 30px;
+	word-spacing: 8px;
+}
+
+.cmt_count_con{
+	position: relative;
+	top: 20px;
+}
+
+.cmt_count_con .cc_item{
+}
+
+.cmt_count_con .cc_item:nth-child(1){
+	background-color: #EF9A00;
+
+	padding: 8%;
+	border-radius: 30px;
+	display: block;
+	width: 30%;
+}
+
+.cmt_count_con .cc_item:nth-child(2){
+	width: 70%;
+	font-size: 20px;
+	padding-left: 10px;
+	color: #51ACBD;
+	padding-top: 10px;
+	display: block;
+}
+/*头像信息结束*/
+
+/*导航*/
+.i_nav_area{
+
+}
+
+.i_nav_area .i_nav_con{
+
+}
+
+.i_nav_area .i_nav_con .i_nav_item{
+	text-align: center;
+	color: #C9C9C9;
+	border-top: 4px solid #CACACA;
+	border-bottom: 4px solid #CACACA;
+	padding: 10px 0;
+	font-size: 18px;
+}
+
+.i_nav_area .i_nav_con .active{
+	border-bottom: 4px solid #2099D3;
+	color: #2099D3;
+}
+
+/*导航结束*/
+
+/*律师介绍*/
+.intro_con{
+	margin-top: 20px;
+	padding: 0px 20px;
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+.intro_con .ic_title{
+
+}
+.intro_con .ic_detail{
+	color: #8D8D8D;
+	font-size: 15px;
+}
+
+.intro_con .submit_btn_area{
+	margin-top: 40px;
+}
+
+.intro_con .submit_btn_area .submit_btn{
+	border-radius: 0px;
+	padding: 0 10%;
+}
+
+/*律师介绍结束*/
+
+/*咨询回复*/
+.consult_con{
+	padding: 20px;
+	background-color: #E5E5E5;
+}
+.consult_item_con{
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+.consult_item_con .c_title{
+	
+}
+
+.consult_item_con .c_title .ct_item:nth-child(1){
+	width: 8%;
+}
+
+.consult_item_con .c_title .ct_item:nth-child(2){
+	width: 92%;
+	font-size: 20px;
+	padding-left: 5px;
+}
+
+.consult_item_con .c_time{
+	margin-top: 5px;
+}
+
+.consult_item_con .c_time .ct_item:nth-child(1){
+	width: 8%;
+}
+
+.consult_item_con .c_time .ct_item:nth-child(2){
+	width: 92%;
+	font-size: 15px;
+	padding-left: 10px;
+	color: #A0A0A0;
+	padding-top: 5px;
+}
+
+
+.consult_item_con .c_name{
+	margin: 10px 0;
+}
+
+.consult_item_con .c_name .ct_item:nth-child(1){
+	width: 8%;
+}
+
+.consult_item_con .c_name .ct_item:nth-child(2){
+	width: 92%;
+	font-size: 20px;
+	padding-left: 15px;
+}
+
+.consult_item_con .detail{
+	margin-top: 10px;
+	text-indent: 30px;
+	text-align: justify;
+}
+
+
+.consult_item_con .answerer{
+	margin-top: 10px;
+}
+
+.consult_item_con .answerer .ct_item:nth-child(1){
+	width: 60%;
+	text-align: right;
+}
+
+.consult_item_con .answerer .ct_item:nth-child(2){
+	width: 40%;
+	padding-left: 15px;
+}
+
+.consult_item_con .answer .c_time .ct_item:nth-child(1){
+	width: 8%;
+}
+
+.consult_item_con .answer .c_time .ct_item:nth-child(2){
+	width: 84%;
+}
+
+.consult_item_con .answer .c_time .ct_item:nth-child(3){
+	width: 8%;
+}
+
+
+.consult_item_con .no_answer .a_sym_con{
+	padding: 0 40%;
+}
+
+.consult_item_con .no_answer .a_notice_con{
+	text-align: center;
+	font-size: 20px;
+	margin: 20px 0;
+	color: #A0A0A0;
+}
+/*咨询回复结束*/
+
+/*评价*/
+.comment_con{
+	padding: 20px;
+}
+
+.comment_con .c_total_con{
+	
+}
+
+.comment_con .c_total_con .ct_item:nth-child(1){
+	width: 10%;
+}
+
+.comment_con .c_total_con .ct_item:nth-child(2){
+	width:90%;
+	padding-left: 10px;
+}
+
+.comment_con .c_total_con .ct_item .val{
+	color: #3A98CC;
+}
+
+.cmt_item_con{
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.cmt_title{
+	
+}
+
+.cmt_title .ct_item:nth-child(1){
+	width: 10%;
+}
+
+.cmt_title .ct_item:nth-child(2){
+	width: 40%;
+	color: #CACACA;
+	padding-left: 10px;
+	padding-top: 5px;
+	font-size: 20px;
+}
+
+.cmt_title .ct_item:nth-child(3){
+	width: 50%;
+	text-align: right;
+	color: #CACACA;
+	padding-top: 10px;
+	font-size: 15px;
+}
+
+.cmt_content{
+	font-size: 25px;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+
+/*评价结束*/

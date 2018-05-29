@@ -1,0 +1,59 @@
+*{
+	padding:0px;
+	margin: 0px;
+	/*font-family: "微软雅黑";*/
+	text-decoration: none;
+}
+img{
+	width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	display: block;
+}
+.page{
+	padding-top: 5px;
+	font-size: 20px;
+}
+.item_hotel{
+	width: 100%;
+	margin-top:20px;
+}
+.item_hotel>.item_hotel_item:first-child{
+	width: 7%;
+}
+.item_hotel>.item_hotel_item:nth-child(2){
+	width: 86%;
+	color: #fff;
+	/*background-color: #29eccc;*/
+	padding-bottom:20px;
+	border-radius: 10px;
+
+}
+.item_hotel>.item_hotel_item:nth-child(2)>.item_hotel_btn>.item_hotel_btn_item:nth-child(2){
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top:10px;
+}
+.item_hotel>.item_hotel_item:nth-child(2)>.item_hotel_btn>.item_hotel_btn_item:nth-child(3){
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.item_hotel>.item_hotel_item:nth-child(2)>.item_hotel_btn>.item_hotel_btn_item:nth-child(4){
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.item_hotel>.item_hotel_item:nth-child(2) .item_hotel_btn{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+.item_hotel>.item_hotel_item:nth-child(3){
+	width: 7%;
+}
+.page .item_hotel:nth-child(2)>.item_hotel_item:nth-child(2){
+	/*background-color: #6ea4fa;*/
+}
+.page .item_hotel:nth-child(3)>.item_hotel_item:nth-child(2){
+	/*background-color: #fa8aa2;*/
+}

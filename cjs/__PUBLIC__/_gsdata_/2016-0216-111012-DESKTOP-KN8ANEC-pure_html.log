@@ -1,0 +1,9 @@
+2016-02-16 11:10:12: -- Analysis Started by User
+2016-02-16 11:10:12: 变更：1， 冲突：， 复制时间：， 复制状态：/， 错误： , All: 1324
+2016-02-16 11:10:12: Left to Right: Copy File: 1 
+2016-02-16 11:10:12: ----- ：分析已结束。 历时 00:00:00， 速度： Many 个文件/秒 -----
+2016-02-16 11:10:12: 
+2016-02-16 11:10:13: == Sync Started by User
+2016-02-16 11:10:13: 覆盖复制 'D:/php/weixingzh/Public/common/lib/swiper-pic-slider/swiper-pic-slider.js' -> 'D:/php/pure_html/__PUBLIC__/common/lib/swiper-pic-slider/swiper-pic-slider.js'
+2016-02-16 11:10:13: ===== ：同步完毕。时间：00:00:00，速度： 0 字节/s =====, 项目同步未必： 1，错误： 
+2016-02-16 11:10:13: 

@@ -1,0 +1,128 @@
+body{
+	margin:0;
+	padding:0;
+	background-color: #EEEEEE;
+}
+.content{
+
+}
+.content .pay_box{
+text-align: center;
+margin-top: 2.5%;
+font-size: 18px;
+font-weight: 500;
+background-color: #F8F8F8;
+	
+}
+.content .pay_box .pay_box_1{
+	 color: #222;
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+	
+}
+.content .pay_box .pay_box_2{
+	 color: #222;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: rgba(0,0,0,0.1);
+	
+}
+.content .pay_box .pay_box_3{
+	color: #222;
+	padding-top: 5%;
+	padding-bottom:5%;
+	
+}
+.content .line1{
+	border-right: 1px solid rgba(0,0,0,0.4);
+}
+.content .line2{
+	border-right: 1px solid rgba(0,0,0,0.4);
+}
+
+.content .pay_box .pay_line .line{
+	height: 20px;
+	width: 1px;
+	background-color: rgba(0,0,0,0.2);
+}
+/*清洁服务*/
+.content .clean_box{
+	background-color: #F8F8F8;
+	margin-top: 2%;
+	padding-bottom: 1%;
+
+}
+.content .clean_box .clean_title{
+padding-left: 5%;
+padding-top: 3%;
+padding-bottom: 2%;
+	
+}
+.content .clean_box .clean_title .title_img{ 
+	width: 10%;
+
+	/*padding-right: 0;*/
+	
+}
+.content .clean_box .clean_title .title_img img{ 
+	width: 20px;
+	height: 20px;
+		/*padding-left: 35%;*/
+
+}
+.content .clean_box .clean_title .title_text{ 
+	width: 90%;
+	font-size: 18px;
+	font-weight: 600;
+	
+}
+ 
+.content .clean_box .clean_line{
+	width: 45%;
+	height: 0.5px;
+	background-color: rgba(0,0,0,0.6);
+}
+.content .clean_box .clean_item{
+font-size: 14px;
+font-weight: 500;
+padding-left: 6%;
+padding-top: 3%;
+}
+.content .clean_box .clean_item .clean_item_box1{
+width: 42%;
+}
+.content .clean_box .clean_item .clean_item_box2{
+width: 15%;
+
+}
+.content .clean_box .clean_item .clean_item_box3{
+width: 15%;
+
+}
+.content .clean_box .clean_item .clean_item_box4{
+width: 28%;
+}
+.content .clean_box .clean_time{
+	padding-left: 6%;
+	font-size: 10px;
+	color: rgba(0,0,0,0.3);
+	padding-left: 6%;
+	padding-top: 3%;
+}
+.content .clean_button{
+margin-right: 0;
+}
+.content .clean_button .button_box{
+	color: #FFFFFF;
+	background-color: #78BFCA;
+	border: 1px solid #FDFACF;
+	padding-top:3px; 
+	padding-bottom:3px; 
+	width: 25%;
+	text-align: center;
+	border-radius: 8px;
+	font-size: 6px;
+	margin-left: 70%;
+
+}

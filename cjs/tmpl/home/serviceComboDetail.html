@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<link rel="stylesheet" href="/cjs/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+  	<script src="/cjs/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+  	<script src="/cjs/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script>
+
+
+  	<link rel="stylesheet" type="text/css" href="/cjs/__PUBLIC__/home/home/css/common.css">
+  	<link rel="stylesheet" type="text/css" href="/cjs/__PUBLIC__/home/home/css/serviceComboDetail.css">
+
+	<title>平安俱乐部-车辆检修套餐</title>
+</head>
+<body>
+	<div class="page" id="pageone">
+
+		<div class="ui-grid-solo combo_img_area">
+      <div class="ui-block-a">
+        <img src="/cjs/__PUBLIC__/home/pic/bg/combo_detail/1.png">
+      </div>  
+    </div>
+    
+    <div class="ui-grid-solo combo_detail_area">
+      <div class="ui-block-a">
+
+        <div class="ui-grid-solo cd_name_con">
+          <div class="ui-block-a">
+            A 套餐 包括
+          </div>
+        </div>
+        
+        <div class="ui-grid-solo cd_info_con">
+          <div class="ui-block-a">
+            <p>
+              1、全场代办<br/>
+              2、协助车管服务<br/>
+              3、车间到期提醒<br/>
+              4、车间材料服务<br/>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact_intro_area">
+
+      <div class="ui-grid-a ci_item">
+        <div class="ui-block-a cii_img">
+          <img src="/cjs/__PUBLIC__/home/pic/bg/combo_detail/5.png">
+        </div>
+        <div class="ui-block-b cii_info">
+          地址:安顺市两六路丰隆车检中心
+        </div>
+
+      </div>
+
+      <div class="ui-grid-a ci_item">
+        <div class="ui-block-a cii_img">
+          <img src="/cjs/__PUBLIC__/home/pic/bg/combo_detail/4.png">
+        </div>
+        <div class="ui-block-b cii_info">
+          电话:0851-33740355
+        </div>
+
+      </div>
+
+      <div class="ui-grid-a ci_item">
+        <div class="ui-block-a cii_img">
+          <img src="/cjs/__PUBLIC__/home/pic/bg/combo_detail/3.png">    
+        </div>
+        <div class="ui-block-b cii_info">
+          价格:770元
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="ui-grid-b">
+      <div class="ui-block-a"></div>
+      <div class="ui-block-b">
+
+        <a target="_top" href="/cjs/tmpl/home/serviceBooking.html">
+          <img src="/cjs/__PUBLIC__/home/pic/bg/combo_detail/2.png">
+          
+        </a>
+      </div>
+      <div class="ui-block-c"></div>
+    </div>
+
+		      <!---尾部-->
+        <script src="/cjs/__PUBLIC__/common/lib/action-popup/action-popup.js"></script>
+        <link rel="stylesheet" href="/cjs/__PUBLIC__/common/lib/action-popup/action-popup.css?a=333">
+        <div class="hold_area" style="visibility: hidden;"> 
+             <div class="ui-grid-b" >
+                  <div class="ui-block-a btn_item" >
+                    <a target="_top" href="/cjs/tmpl/home/index.html">
+                      <img src="/cjs/__PUBLIC__/home/pic/bg/index/8.png"/>
+                    </a>
+                  </div>
+                  <div class="ui-block-b btn_item">
+                    <a target="_top" href="/cjs/tmpl/home/vip.html">
+                      <img src="/cjs/__PUBLIC__/home/pic/bg/index/10.png"/>
+                    </a>
+                  </div>
+                  <div class="ui-block-c btn_item">
+                    <a target="_top" href="/cjs/tmpl/home/cart.html">
+                      <img src="/cjs/__PUBLIC__/home/pic/bg/index/11.png"/>
+                    </a>
+                  </div>  
+            </div>
+               
+        </div>
+      
+        <div class="i_footer" >
+ 
+             <div class="ui-grid-b" >
+                  <div class="ui-block-a btn_item" >
+                    <a target="_top" href="/cjs/tmpl/home/index.html">
+                      <img src="/cjs/__PUBLIC__/home/pic/bg/index/8.png"/>
+                    </a>
+                  </div>
+                  <div class="ui-block-b btn_item ">
+                    
+                      <img class="vip_center" src="/cjs/__PUBLIC__/home/pic/bg/index/10.png"/>
+                  </div>
+                  <div class="ui-block-c btn_item">
+                      <img class="more_action" src="/cjs/__PUBLIC__/home/pic/bg/index/11.png"/>
+                  </div>  
+            </div>
+               
+        </div>
+
+        <script>
+            $(document).ready(function() {
+              //配置项
+              var e_option = [
+                {"type":"system","selector":".i_footer","bind_el_selector":".vip_center","bind_el_unq_css_name":"vip_center"},
+                {"type":"item","text":"我要评价","action_url":"http://www.baidu.com"},  
+                {"type":"item","text":"投诉受理","action_url":"#"},
+              ];
+              
+              ActionItemPopup.initCtrl(e_option);
+
+              var e_option = [
+                {"type":"system","selector":".i_footer","bind_el_selector":".more_action","bind_el_unq_css_name":"more_action"},
+                {"type":"item","text":"驾考预约","action_url":"http://www.baidu.com"},  
+                {"type":"item","text":"贵州交警APP","action_url":"#"},
+              ];
+              
+              ActionItemPopup.initCtrl(e_option);
+            });
+        </script>
+  
+      <!---尾部结束-->  
+
+	</div>
+
+</body>
+</html>

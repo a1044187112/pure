@@ -1,0 +1,21 @@
+/*三角箭*/
+.tci_tri_line{
+	position: relative;
+}
+
+.tci_tri_line .tci_tri1{
+	border-width: 20px 0 20px 20px;
+	border-color: transparent transparent transparent #717171;
+	border-style: solid;
+	position: absolute;
+}
+
+.tci_tri_line .tci_tri2{
+	border-width: 16px 0 16px 16px;
+	border-color: transparent transparent transparent #ffffff;
+	border-style: solid;
+	position: absolute;
+	top:4px;
+	
+}
+/*三角箭结束*/

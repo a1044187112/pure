@@ -1,0 +1,46 @@
+.info_notice_area{
+	padding: 40px;
+}
+
+.info_notice_con{
+	margin-top: 60px;
+}
+
+.info_notice_con .info_item:nth-child(1){
+	width: 20%;
+}
+
+.info_notice_con .info_item:nth-child(2){
+	width: 80%;
+}
+
+.info_notice_con .info_item .content{
+	padding-left: 10px;
+	text-align: justify;
+	line-height: 20px;
+	font-size: 20px;
+	color: #35A6CB;
+	text-indent: 20px;
+	line-height: 2;
+}
+
+
+
+
+
+
+
+
+.return_btn_area{
+	margin-top: 20px;
+	padding: 20%;
+}
+
+.return_btn_area .return_btn{
+	font-size: 25px;
+	padding: 5px 0;
+	border-radius: 5px;
+	background-color: #11A9DB;
+	color: #ffffff;
+	text-align: center;
+}

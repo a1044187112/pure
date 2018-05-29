@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/common/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/73h/__PUBLIC__/admin/index/css/common.css" />
+
+
+
+<script type="application/javascript" src="/73h/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script type="application/javascript" src="/73h/__PUBLIC__/common/js/bootstrap.min.js"></script>
+<script type="application/javascript" src="/73h/__PUBLIC__/common/js/funcs.js"></script>
+<script type="application/javascript" src="/73h/__PUBLIC__/common/js/notice.js"></script>
+
+<script src="/73h/__PUBLIC__/common/js/btn_action.js"></script>
+        
+<title>管理员后台</title>
+</head>
+<body style="overflow:scroll;">
+<div class="i_content">
+	<div class="page_title">
+    	<h1>设置欢迎语</h1>
+    </div>
+    <hr />
+    <div class="data_table">
+        <!---判断第二级别是否有数据,如果没有则进行添加-->
+        <!---表格显示-->
+        <table class="table table-bordered dis_table container">
+<!-- 
+          <tr>
+            <td>
+     			请设置预装数据
+            </td>
+          </tr> -->
+
+  
+          <tr class="row">
+            <th class="col-md-3">用户关注时的欢迎语</th>
+            <td class="col-md-6">
+              您好! 
+             	<div class="collapse edit_box" id="sub_welcom_word_modify" style="width:600px">
+                	<div class="well">
+                      <form >
+                    		<input type="text" name="sub_welcom_word" value=""  style="width:200px;">
+                      	<input type="hidden" name="id" value="{$data.id}">
+                          <button type="button" class="btn btn-primary submit_btn" data-url="{$update_url}">提交</button>
+                      </form>
+              	</div>
+             	</div>
+                  
+            </td>
+            <td class="col-md-3"></td>
+          </tr>    
+            
+
+
+       </table>
+        <!---表格显示结束-->
+    </div>
+ </div>   
+</body>
+<script type="application/javascript">
+
+$(document).ready(function(e) {
+	//绑定提交
+	BindSubmitBtnClick();
+	//添加编辑按钮
+	AddEditSet()
+	
+
+});//ready
+</script>
+</html>

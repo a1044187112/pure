@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name = "format-detection" content = "telephone=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+ 		<meta http-equiv="Pragma" content="no-cache" />
+  		<meta http-equiv="Expires" content="0" />
+  		<meta charset="utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<link rel="stylesheet" href="/tbh/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+    	<script src="/tbh/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+  
+  		<script src="/73h/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+  <script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+
+    	<link rel="stylesheet" type="text/css" href="/tbh/__PUBLIC__/home/home/css/pay.css">
+		<title>提交订单</title>
+	</head>
+
+	<body>
+	<div data-role="page" class="page" id="pageone">
+		
+		<div class="container">
+			<div class="ui-grid-a container_pay_info">
+				<div class="ui-block-a container_pay_info_item">
+					<div class="container_info_item">
+					<img src="/tbh/__PUBLIC__/home/pic/bg/pay/1.png"></div>
+					<div class="container_info_item">收货人：张晓晓</div>
+				</div>
+				<div class="ui-block-b container_pay_info_item"></div>
+			</div>
+			<div class="container_phone">18373864824</div>
+			<div class="container_address">
+				收货地址：贵州省安顺市西秀区黄果树大街大润发超市
+			</div>
+
+			<div class="ui-grid-a container_com">
+				<div class="ui-block-a container_com_item">
+					<img src="/tbh/__PUBLIC__/home/pic/bg/cart/2.png">
+				</div>
+				<div class="ui-block-b container_com_item">
+					<div>12mm强化复合木地板橡木地板耐磨防潮地暖环保 卫生 实惠 安全
+					</div>
+					<div class="ui-grid-b container_com_info">
+						<div class="ui-block-a container_com_info_item">￥359.00</div>
+						<div class="ui-block-b container_com_info_item">运费 包邮</div>
+						<div class="ui-block-c container_com_info_item">x1</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container_price">合计<span class="container_price_total">（含运费）</span>：<span class="container_price_total">￥2359.00</span>
+			</div>
+
+			<div class="ui-grid-b contianer_pay">
+				<div class="ui-block-a contianer_pay_item"></div>
+				<div class="ui-block-b contianer_pay_item"><div class="contianer_pay_item_btn onsubmit"
+					data-url="/tbh/php/ajax_test.php?get_id=11"
+		            data-data_src_type="self"
+		            data-fields="id,num"
+		            data-id="0"
+		            data-num="5"
+				>
+				 <!-- href="/tbh/tmpl/home/paymentSucc.html"> -->
+				支付</div></div>
+				<div class="ui-block-c contianer_pay_item"></div>
+			</div>
+
+		</div>
+
+	</div>
+	</body>
+<script>
+	$(document).ready(function(){
+
+	  CtrlElAction.isSimPost=false;
+      HomeCtrlElAction.init(".onsubmit");
+	});
+
+</script>
+</html>

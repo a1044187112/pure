@@ -1,0 +1,47 @@
+.done_img{
+	margin-top: 80px;
+}
+
+.done_img .img_con{
+	padding: 0 20px;
+}
+
+.done_notice{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 30px;
+	color: #51B7B0;
+}
+
+.done_notice div:nth-child(1){
+	width: 20%;
+}
+
+.done_notice div:nth-child(2){
+	width: 60%;
+	
+}
+
+.done_notice div:nth-child(3){
+	width: 20%;
+	
+}
+
+.booking_sub_btn_area{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 20px 0px;
+}
+
+.booking_sub_btn_area .booking_sub_btn{
+	//width: 120px;
+	border-radius: 20px;
+	background-color: #14AFB8;
+	color: #ffffff;
+	text-align: center;
+}
+
+.booking_sub_btn_area .booking_sub_btn .bst_text{
+	font-size: 20px;
+	padding: 5px 10px;
+}

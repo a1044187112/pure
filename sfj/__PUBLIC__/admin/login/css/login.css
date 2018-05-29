@@ -1,0 +1,73 @@
+/* CSS Document */
+body{
+	padding:0px;
+	margin: 0px;
+	//background-color:#285DA1;
+	font-family: "黑体";
+	background: -webkit-linear-gradient(top,#2F65AF,#063A91);
+}
+
+.login_area{
+	width: 860px;
+	height: 520px;
+	background-color: #9CA1C9;
+	margin: 0 auto;
+	border-radius: 20px;
+	position: relative;
+	top: 150px;
+}
+
+.title_con{
+	text-align: center;
+	font-size: 50px;
+	padding: 20px 0;
+	color: #ffffff;
+	font-weight: 100;
+}
+
+.input_con .img_item{
+	//padding:0 50px;
+	padding-top: 70px;
+	padding-left: 150px;
+}
+
+.input_con .input_item{
+	font-size: 20px;
+	padding-top: 50px;
+	padding-left: 3%;
+	padding-right: 10%;
+}
+
+.submit_btn_area{
+	margin-top: 40px;
+	padding: 0 10%;
+}
+
+.submit_btn_area a{
+	display: block;
+	text-decoration: none;
+}
+
+.submit_btn_area .submit_btn{
+	text-align: center;
+	letter-spacing: 20px;
+	font-size: 30px;
+	background-color: #D61518;
+	color: #ffffff;
+	//padding: 10px;
+	border-radius: 10px;
+
+}
+
+.support_area{
+	position: relative;
+	top: 260px;
+	text-align: center;
+	font-size: 25px;
+	color: #ffffff;
+	letter-spacing: 5px;
+}
+
+.support_area span{
+	font-size: 25px;
+}

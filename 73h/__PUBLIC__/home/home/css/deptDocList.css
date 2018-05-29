@@ -1,0 +1,95 @@
+
+.i_schedule{
+	padding: 0 20px 0 10px;
+}
+
+.warm_prompt{
+	color: #59AFB0;
+	text-align: center;
+	background-color: #E1E1E1;
+	padding: 10px 0;
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.type_list_area{
+	//margin-top: 20px;
+	background-color: #E5E4E4;
+}
+
+.type_list_area a{
+	display: block;
+}
+
+.type_list_area .type_con{
+	padding:5px 20px 5px 10px;
+	background-color: #ffffff;
+	
+}
+
+.type_list_area .type_con .tc_item:nth-child(1){
+	width: 30%;
+	padding-top: 25px;
+}
+.type_list_area .type_con .tc_item:nth-child(2){
+	width: 65%;
+	//text-align: center;
+	font-size: 12px;
+	color: #3F3F3F;
+	padding: 0 10px;
+}
+.type_list_area .type_con .tc_item:nth-child(3){
+	width: 5%;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.type_list_area .type_con .tc_name{
+}
+
+.type_list_area .type_con .tc_name .tcn_item{
+	margin-top: 3px;
+}
+
+.type_list_area .type_con .tc_name .doc_name{
+	font-size: 25px;
+}
+
+.type_list_area .type_con .tc_name .doc_skilled{
+	text-align: justify;
+}
+
+.type_list_area .type_con .tc_name .patients{
+	color: #DFAF96;
+}
+
+.type_list_area .type_con .tc_name .rest_reg{
+	color: #71B3B5;
+	font-size: 20px;
+}
+	
+
+
+
+/*三角箭*/
+.tci_tri_line{
+	position: relative;
+}
+
+.tci_tri_line .tci_tri1{
+	border-width: 20px 0 20px 20px;
+	border-color: transparent transparent transparent #717171;
+	border-style: solid;
+	position: absolute;
+}
+
+.tci_tri_line .tci_tri2{
+	border-width: 16px 0 16px 16px;
+	border-color: transparent transparent transparent #ffffff;
+	border-style: solid;
+	position: absolute;
+	top:4px;
+	
+}
+/*三角箭结束*/
+

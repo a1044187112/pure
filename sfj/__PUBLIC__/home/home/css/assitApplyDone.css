@@ -1,0 +1,29 @@
+.notice_area{
+	margin-top: 100px;
+}
+
+.notice_area .sym_pic{
+	padding: 0 40%;
+}
+
+.notice_area .word{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 20px;
+	color: #43B1B7;
+}
+
+
+.notice_area .return_btn_area{
+	margin-top: 20px;
+	padding: 20%;
+}
+
+.notice_area .return_btn_area .return_btn{
+	font-size: 25px;
+	padding: 5px 0;
+	border-radius: 5px;
+	background-color: #11A9DB;
+	color: #ffffff;
+	text-align: center;
+}

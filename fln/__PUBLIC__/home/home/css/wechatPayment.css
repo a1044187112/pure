@@ -1,0 +1,64 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background-color: #ddd;
+}
+.container{
+	background-color: white;
+}
+.container_company{
+	text-align: center;
+	font-size: 26px;
+	color: block;
+	padding-top:30px;
+}
+.container_price{
+	text-align: center;
+	font-size: 50px;
+	font-weight: 500;
+	margin-top: 3px;
+}
+.container_rece{
+	margin-top:15px;
+	border-top:1px solid #aaa;
+	border-bottom:1px solid #bbb;
+	padding:10px 0;
+	line-height: 1.5;
+}
+.container_rece>div:first-child{
+	width: 25%;
+	text-align: center;
+	font-size: 18px;
+	color: #bbb;
+}
+.container_rece>div:nth-child(2){
+	width: 40%;
+
+}
+.container_rece>div:nth-child(3){
+	width: 35%;
+	text-align: center;
+}
+.btn_payment{
+	display: block;
+	width: 80%;
+	margin:auto;
+	background-color: #29a239;
+	color: #eee;
+	padding-top:2px;
+	padding: 7px 0px;
+	font-size: 22px;
+	border-radius: 5px;
+	border:none;
+	margin-top:80px;
+}
+.btn_payment a{
+	display: block;
+	width: 100%;
+	color: #eee;
+	text-decoration: none;
+	text-align: center;
+	line-height: 1.8;
+}

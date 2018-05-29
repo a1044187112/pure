@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/fpb/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+  <script src="/fpb/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<!--   <script src="/fpb/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+
+  <script type="text/javascript" src="/fpb/__PUBLIC__/common/js/jquery.touchSwipe.min.js"></script>
+
+  <!-- <link rel="stylesheet" type="text/css" href="/fpb/__PUBLIC__/home/home/css/common.css?xxx"> -->
+  <link rel="stylesheet" type="text/css" href="/fpb/__PUBLIC__/home/home/css/outOfPovertyWork.css">
+  <script type="text/javascript" src="/fpb/__PUBLIC__/home/home/js/outOfPovertyWork.js"></script>
+  <title>西秀扶贫</title>
+</head>
+
+<body >
+    <div data-role="page" id="pageone" >
+        <div class="header">
+            <div class="ui-grid-b header_img">
+              <div class="ui-block-a img_item"><img src="/fpb/__PUBLIC__/home/pic/bg/poor_work/1.png"></div>
+              <div class="ui-block-b img_item"></div>
+              <div class="ui-block-c img_item"><img src="/fpb/__PUBLIC__/home/pic/bg/poor_work/2.png"></div>
+            </div>
+            <div class="header_title">该村脱贫工作完成率</div>
+            <div class="header_per">
+              <div class="header_per_children1">64%</div> 
+              <div class="header_per_children2"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="poor_num">
+              <canvas id="poor_num_canvas"></canvas>
+            </div>
+            <div class="poor_rea">
+              <canvas id="poor_rea_canvas"></canvas>
+              <div class="poor_rea_intro">致贫原因</div>
+            </div>
+            <div class="year">
+              <div class="ui-grid-b year_num">
+                <div class="ui-block-a year_num_item">万元<span class="num_item">个</span></div>
+                <div class="ui-block-b year_num_item">
+                  <div class="year_num_rect"></div>扶贫资金
+                </div>
+                <div class="ui-block-c year_num_item">
+                  <div class="year_num_rect"></div>在建项目
+                </div>
+              </div>
+              <canvas id="year_canvas"></canvas>
+              <div class="year_text">五年脱贫项目及资金计划</div>
+            </div>
+
+        </div>
+
+
+
+    </div> 
+</body>
+
+<script>
+	$(document).ready(function() {
+    // var pic_dir_path = "/fpb/__PUBLIC__/home/pic/bg/ratio_dgm/";
+    // var redirect_rul  = "/fpb/tmpl/home/subAdminDivMap.php";
+    var parameter = {
+      // "poor_num":[{}];
+      "header_per_children1":"header_per_children1",  // 显示脱贫的比例数
+      "header_per_children2":"header_per_children2", // 脱贫进度条
+      "poor_num":"poor_num",
+      "poor_num_canvas":"poor_num_canvas",  // 圆环部分选择器
+      "poor_rea_canvas":"poor_rea_canvas", // 正方形画布选择器
+      "year_canvas":"year_canvas",  // 数据表选择器
+      // beenPN  已经脱贫的人数  willPN 未脱贫的人数
+      "poorNum":[{"beenPN":5,"willPN":1}], // 已脱贫和未脱贫人数
+      // 第一个数据是“因无力”的数值 ，  逆时针旋转，依次赋值  最后一个是总数
+      /* PR1 因无力  PR2 两有户  PR3 因学  PR4 因病  PR5  因灾  PR6  因失业 */
+      "poorRea":[{"PR1":80,"PR2":50,"PR3":60,"PR4":20,"PR5":30,"PR6":20}], 
+      /* poorRea中各项的基数   按顺序排列 和上一条顺序一致  */
+      "poorReaCnumber":[[{"PRCnumber":1000}],[{"PRCnumber":1000}],[{"PRCnumber":1000}],[{"PRCnumber":1000}],[{"PRCnumber":100}],[{"PRCnumber":100}]],
+      /* 最后一个数据表的各项数据  每一个data的第一项  year1  表示年份
+        funds  表示扶持资金 单位 万元  project  表示在建项目 单位 个
+       */
+      "year":[{"data":{"year1":2015,"funds":0,"project":0}},
+      {"data":{"year1":2016,"funds":0,"project":0}},
+      {"data":{"year1":2017,"funds":0,"project":0}},
+      {"data":{"year1":2018,"funds":0,"project":0}},
+      {"data":{"year1":2019,"funds":0,"project":0}}], 
+      
+      
+    };
+    OutOfPovertyWork.init(parameter);  
+	});
+
+
+</script>
+
+</html>

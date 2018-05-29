@@ -1,0 +1,95 @@
+body {
+	background-color: #E1E1E1;
+
+}
+
+.head_pic_area{
+
+}
+
+.head_pic_area .hp_con{
+	padding-top: 15px;
+	padding-bottom: 10px;
+	position: relative;
+}
+.head_pic_area .hp_con .hp_con_bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: -50px;
+	z-index: -1;
+}
+.head_pic_area .hp_con .hp_con_hp{
+	display: block;
+	width: 30%;
+	margin: auto;
+}
+.head_pic_area .hp_con .hp_con_sex{
+	width:8%;
+	position: absolute;
+	top:57%;
+	left: 56%;
+}
+.head_pic_area .hp_con .hp_con_name{
+	width:100%;
+	text-align: center;
+	font-size: 25px;
+	color: #eee;
+}
+.vip_option_area{
+	
+}
+
+.vip_option_area .voa_con{
+	padding: 10px 0px;
+	background-color: #ffffff;
+	margin-top: 10px;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	display: block;
+}
+
+.vip_option_area .voa_con:nth-child(1){
+	margin-top: 0px;
+	border-top: 0px solid #000000;
+	
+}
+
+.vip_option_area .voa_con .v_option_item:nth-child(1){
+	padding-left: 10%;
+	font-size: 25px;
+}
+
+.vip_option_area .voa_con .v_option_item:nth-child(2){
+
+}
+
+.vip_option_area .voa_con .v_option_item .tci_tri_line{
+	float: right;
+	padding-right: 40px;
+}
+
+
+/*绘制右三角箭头*/
+
+.tci_tri_line{
+	position: relative;
+}
+
+.tci_tri_line .tci_tri1{
+	border-width: 16px 0 16px 16px;
+	border-color: transparent transparent transparent #717171;
+	border-style: solid;
+	position: absolute;
+}
+
+.tci_tri_line .tci_tri2{
+	border-width: 12px 0 12px 12px;
+	border-color: transparent transparent transparent #ffffff;
+	border-style: solid;
+	position: absolute;
+	top:4px;
+	
+}
+/*绘制右三角箭头结束*/

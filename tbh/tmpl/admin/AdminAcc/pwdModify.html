@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/73h/__PUBLIC__/common/css/bootstrap.min.css" />
+<script src="/73h/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script src="/73h/__PUBLIC__/common/js/bootstrap.min.js"></script>
+
+<script src="/73h/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+<script src="/73h/__PUBLIC__/common/js/notice.js?rand={$rand}"></script>
+<script src="/73h/__PUBLIC__/common/js/ajax_data.js?rand={$rand}"> </script>
+
+<script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+
+<script src="/73h/__PUBLIC__/common/lib/i_file_upload/file_upload.js?rand={$rand}"></script>
+<link rel="stylesheet" href="/73h/__PUBLIC__/common/lib/i_file_upload/file_up.css?rand={$rand}" />
+
+
+<link href="/73h/__PUBLIC__/common/lib/dis_content_set/dis_content_set.css?rand={$rand}" rel="stylesheet">
+<script src="/73h/__PUBLIC__/common/lib//dis_content_set/dis_content_set.js?rand={$rand}"></script>
+
+<link href="/73h/__PUBLIC__/common/lib/summernote/summernote.css" rel="stylesheet">
+<link href="/73h/__PUBLIC__/common/lib/summernote/font-awesome/css/font-awesome.css" rel="stylesheet">
+<script src="/73h/__PUBLIC__/common/lib/summernote/summernote.min.js"></script>
+<script src="/73h/__PUBLIC__/common/lib/summernote/summernote-zh-CN.js"></script>
+
+<link rel="stylesheet" href="/73h/__PUBLIC__/common/lib/data_editor/data-editor.css?rand={$rand}">
+<script src="/73h/__PUBLIC__/common/lib/data_editor/data-editor.js?rand={$rand}"></script>
+
+
+<link rel="stylesheet" href="/73h/__PUBLIC__/admin/index/css/common.css?rand={$rand}" />
+
+<title>管理员后台</title>
+</head>
+<body>
+<div class="i_content">
+    <div class="page_title">
+        <h1>管理员密码重置</h1>
+    </div>
+    <hr />
+    <div class="data_table">   
+        <table class="table table-bordered">
+            <tr>
+                <th class="dt_title">管理员昵称</th>
+                <th class="dt_title">管理员级别</th>
+                <th class="dt_title">是否已激活</th>
+                <th class="dt_title">状态操作</th>
+                <th class="dt_title">详情操作</th>
+            </tr>
+            
+            <!-- 数据项 -->
+            <div class="data_item">
+                <tr class="t_row intro_row">
+                    <td class="t_col">
+                        超级管理员
+                    </td>
+                    <td class="t_col">
+                        草集管理员
+                    </td>
+                    <td class="t_col">
+                        是
+                    </td>
+                    <td class="t_col action_box">
+                        <button type="button" 
+                        class="btn btn-primary btn-lg update_btn"  
+                        style=" font-size:12px;padding:5px;" 
+                        data-url="{$update_url}"
+                        data-notice_word="是否将{$item.name}激活?" 
+                        data-fields="id,is_chk"
+                        data-id="_item_id_1" 
+                        data-is_chk="1"
+                        >
+                        激活
+                        </button>
+                        <button type="button" 
+                        class="btn btn-primary btn-lg update_btn"  
+                        style=" font-size:12px;padding:5px;" 
+                        data-url="{$update_url}"
+                        data-notice_word="是否将{$item.name}设置为取消激活?" 
+                        data-fields="id,is_chk"
+                        data-id="_item_id_1" 
+                        data-is_chk="0"
+                        >
+                        取消激活
+                        </button>
+                    </td>
+                    <td class="t_col show_box">
+                        <button class="btn btn-primary btn-lg  " 
+                            type="button" data-toggle="collapse" 
+                            style=" font-size:12px;padding:5px;"
+                            aria-expanded="false"
+                            data-action="show"
+                            data-target="#show_detail_box_item_id_1" 
+                            aria-controls="show_detail_box_item_id_1"
+                            data-dis_name = "修改密码"
+                            data-anti_dis_name = "取消修改密码"
+                            data-show_sym_is_default   = 0
+                        >
+                        修改密码
+                        </button>
+                        
+                    </td>
+                </tr>
+                <tr class="detail_row_item_id_1 detail_row info_detail_row" >
+                    <td colspan="5" class="td">
+                        <div class="collapse show_detail_box" id="show_detail_box_item_id_1">
+                            <div class="well container" style="width:100%">
+
+                            <form class="form-inline">
+                              <div class="form-group">
+                                <label for="pwd">新密码:</label>
+                                <input type="text" class="form-control" id="pwd" placeholder="请输入新密码">
+                              </div>
+                                    <button class="btn btn-primary btn-lg respone_submit_btn" 
+                                        type="button"
+                                        style=" font-size:12px;padding:5px;"
+                                        aria-expanded="false"
+                                        data-data_src_type="form"
+                                        data-form_slcr="#show_detail_box_item_id_1 form"
+                                        data-url="{$update_url}"
+                                        data-notice_word="是否提交回复?" 
+
+                                    >
+                                    提交回复
+                                    </button>
+                                    <button class="btn btn-primary btn-lg  " 
+                                        type="button" data-toggle="collapse" 
+                                        style=" font-size:12px;padding:5px;"
+                                        aria-expanded="false"
+                                        data-action="show"
+                                        data-target="#show_detail_box_item_id_1" 
+                                        data-dis_name = "查看详细"
+                                        data-anti_dis_name = "取消查看详细"
+                                        data-show_sym_is_default   = 0
+                                    >
+                                    取消
+                                    </button>
+
+                            </form>
+                                    
+                                
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="modify_row info_detail_row modify_row_item_id_1">
+                    <td colspan="5" class="td">
+
+                        
+                    </td>
+                </tr>            
+            </div>
+
+            <!-- 数据项结束 -->
+            
+
+        </table>
+
+
+        <button type="button" class="btn btn-primary btn-lg data_edit_btn data_edit_btn_add" 
+            data-target="" 
+            data-toggle="collapse"      
+            data-action_type="add"
+            data-editor_selector=".data_add_box"
+            data-dis_row_selr=""          
+            data-self_selr=".data_edit_btn_add"
+            data-dis_name = "添加管理员"
+            data-anti_dis_name = "取消添加管理员"
+            data-show_sym_is_default   = 0
+        >
+            添加管理员
+        </button>
+        <div class="data_add_box"></div>
+    </div>
+    
+</div>
+</body>
+<script>
+$(document).ready(function(e) {
+    //详情下拉框连接按钮显示名称改变
+    //CtrlElAction.btnFunc.detailBoxLinkBtnDis();
+    //更新按钮绑定
+    CtrlElAction.btnFunc.bindBtnClick(".data_table .update_btn");
+
+    //绑定选择框数据
+    //CtrlElAction.selCtrlFunc.contenSelChangeBind();
+});
+
+
+
+    
+</script>
+</html>

@@ -1,0 +1,29 @@
+body{
+
+}
+
+.title_area{
+	margin-top: 20px;
+}
+
+.title_area .title_item:nth-child(1){
+	width: 30%;
+}
+
+.title_area .title_item:nth-child(2){
+	width: 40%;
+	text-align: center;
+	color: #ffffff;
+	background-color: #11A8DA;
+	font-size: 20px;
+	border-radius: 10px;
+	padding: 10px 0;
+}
+
+.title_area .title_item:nth-child(3){
+	width: 30%;
+}
+
+.detail_area{
+	padding: 10px 20px;
+}

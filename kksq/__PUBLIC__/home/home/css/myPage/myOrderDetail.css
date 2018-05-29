@@ -1,0 +1,107 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #EEEEEE;
+} 
+.content{
+
+}
+.content .con_detail_box{
+	background-color: #FDFDFD;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+.content .con_detail_box .detail_all{
+	
+}
+.content .con_detail_box .detail_all .detail_all_box1{
+	width: 25%;
+	padding-left: 2%;
+
+}
+.content .con_detail_box .detail_all .detail_all_box2{
+	width: 75%;
+	padding-left: 2%;
+}
+.content .con_detail_box .detail_all .detail_all_box2 .detail_all_box1_item1{
+	 font-size: 15px;
+	 font-weight: 600;
+}
+.content .con_detail_box .detail_all .detail_all_box2 .detail_all_box1_item2 {
+	padding-top: 5%;
+	color: rgba(0,0,0,0.4);
+}
+.content .con_detail_box .detail_all .detail_all_box2 .detail_all_box1_item3 {
+	padding-top: 5%;
+	color: #EE824E;
+}
+.content .con_detail_box .detail_all .detail_all_box2 .detail_all_box1_item2 .all_box1_item2_1{
+	 width: 80%;
+	 font-size: 7px;
+}
+.content .con_detail_box .detail_all .detail_all_box2 .detail_all_box1_item2 .all_box1_item2_2{
+	  width: 20%;
+	  
+}
+.content .con_detail_box .detail_all .detail_all_box2 .detail_all_box1_item2 .all_box1_item2_2 .style{
+	  border-width: 6px;
+	  border-style: solid;
+	  border-color: transparent transparent transparent #000000; 
+	  
+}
+.content .con_detail_box .detail_all .detail_all_box2 .detail_all_box1_item3 .all_box1_item3_1{
+	 width: 70%;
+}
+.content .con_detail_box .detail_all .detail_all_box2 .detail_all_box1_item3 .all_box1_item3_2{
+	   width: 30%;
+}
+/*缴费内容*/
+.content .con_payment_box{
+	background-color: #F8F8F8;
+	margin-top: 4%;
+	padding-bottom: 10%;
+	color: rgba(0,0,0,0.7);
+
+}
+.content .con_payment_box .payment_title{
+	font-size: 18px;
+	font-weight: 600;
+	padding-left: 6%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+}
+.content .con_payment_box .payment_line{
+width: 40%;
+height: 1px;
+background-color: rgba(0,0,0,0.3);
+}
+.content .con_payment_box .payment_item{
+	font-size: 13px;
+	padding-left: 6%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+}
+.content .con_payment_box .payment_item .payment_item_box1{
+ width: 15%;
+}
+.content .con_payment_box .payment_item .payment_item_box2{
+ width: 85%;
+}	 
+/*订单详情*/
+.content .con_order_box{
+background-color: #F8F8F8;
+padding-bottom: 5%;
+margin-top: 5%;
+color: rgba(0,0,0,0.3);
+}
+.content .con_order_box .order_box_item{
+	padding-left: 6%;
+	font-size:10px; 
+	padding-top: 4%;
+}
+.content .con_order_box .order_box_item .order_item_box1{
+	width:20%;
+}
+.content .con_order_box .order_box_item .order_item_box2{
+	width: 80%;
+}

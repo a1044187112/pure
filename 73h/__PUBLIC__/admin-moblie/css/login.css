@@ -1,0 +1,117 @@
+
+body{
+	/*background-image: url("/73h/__PUBLIC__/admin-moblie/pic/(31).png");
+	/*background-size: cover;*/
+	/*background-repeat: no-repeat;*/
+	/*background-color: red;*/
+	/*height: 100%;
+	width: 100%;
+*/
+}
+.body_bg{
+/*	background-image: url("/73h/__PUBLIC__/admin-moblie/pic/bg/login/(31).png"); */
+	background-size: cover;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background-position: center;
+
+
+/*	background: blue;*/
+	z-index: -1;
+}
+/*.style_img{
+	display: block;
+	position: absolute;
+	width: 100%;
+	top:0;
+	bottom: 0;
+	z-index: -1;
+}*/
+
+.content{
+
+
+}
+.content .con_img{
+	width: 64%;
+	padding-top: 15%;
+	padding-left: 18%;
+}
+
+.content .con_body{
+	height: 150px;
+	padding-top: 10%;
+	/*background-color: red;*/
+}
+.content .con_body .con_body_1{
+	width: 20%;
+	height: 150px;
+}
+.content .con_body .con_body_content{
+	width: 60%;
+	height: 150px;
+}
+.content .con_body .con_body_content .con_num{
+	height: 30%;
+}
+.content .con_body .con_body_content .con_num .con_num_img{
+	width: 20%;
+	/*background-image: url("/73h/__PUBLIC__/admin-moblie/pic/(34).png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;*/
+}
+.content .con_body .con_body_content .con_num .con_num_data{
+	width: 70%;
+	height:85%;
+	border-bottom: 1px solid rgba(250,250,250,0.4);
+	margin-left: 5px;
+} 
+.content .con_body .con_body_content .con_pwd{
+	padding-top: 10px;
+	height: 30%;
+
+}
+
+.content .con_body .con_body_content .con_pwd .con_pwd_img{
+	width: 20%;
+
+}
+.content .con_body .con_body_content .con_pwd .con_pwd_data{
+	margin-left: 5px;
+	width: 70%;
+	border-bottom: 1px solid rgba(250,250,250,0.4);
+	color: #FFFFFF;
+	height: 85%;
+	text-align: center;
+}
+
+.style{
+	border: none;
+	background-color: rgba(0,0,0,0.0);
+ 	height: 100%;
+ 	width: 100%;
+ } 
+.style:focus{
+	outline:none;
+}
+
+.content .con_body .con_body_2{
+	width: 20%;
+	height: 150px;
+}
+.con_body_box{
+	padding-left: 35%;
+	width: 30%;
+	margin-top: 40px;
+}
+
+.prompt{
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: red;
+	margin-top: -50px;
+}

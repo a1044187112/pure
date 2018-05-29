@@ -1,0 +1,11 @@
+body{
+	background-color: #E1DEE1;
+}
+
+.link_area{
+	margin: 50px 20px;
+}
+
+.link_area .link_item{
+	padding: 5%;
+}

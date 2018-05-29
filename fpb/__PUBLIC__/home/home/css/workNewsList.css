@@ -1,0 +1,21 @@
+.type_list_area{
+
+}
+.type_list_area .type_con{
+	position: relative;
+	font-size: 0px;
+}
+
+.type_list_area .type_con .tc_title{
+	position: absolute;
+	//width: 80px;
+	text-align: center;
+	color: #ffffff;
+	background-color: rgba(111,104,96,0.5);
+	top: -20px;
+	z-index: 10;
+	float: left;
+	font-size: 16px;
+	height: 20px;
+
+}

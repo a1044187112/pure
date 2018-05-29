@@ -1,0 +1,263 @@
+body{
+	margin:0;
+	padding: 0;
+}
+
+.receipt{
+	
+}
+.receipt .receipt_up{
+	padding-left: 5%;
+}
+/*条目1*/
+.receipt .receipt_item1{
+	/*padding-left: 5%;*/
+	padding-top: 5%;
+}
+
+.receipt .receipt_item1 .receipt_item1_box1{
+	width: 25%;
+	font-weight: 700;
+	font-size: 18px;
+}
+.receipt .receipt_item1 .receipt_item1_box2{
+	width: 20%;
+
+}
+.receipt .receipt_item1 .receipt_item1_box2 img{
+	width: 20%;
+	padding-left: 35%;
+
+}
+.receipt .receipt_item1_box3{
+	width: 55%;
+	text-align: right;
+	font-size: 10px;
+	padding-bottom: 0;
+}
+/*条目2*/
+.receipt .receipt_item2{
+	padding: 2% 0 2% 0;
+}
+.receipt .receipt_item2 .receipt_item2_box1{
+	width: 20%;
+}
+.receipt .receipt_item2 .receipt_item2_box2{
+	width: 80%;
+}
+
+/*条目3*/
+.receipt .receipt_item3{
+	padding: 2% 0 2% 0;
+
+}
+.receipt .receipt_item3 .receipt_item3_box1{
+	width: 50%;
+
+}
+.receipt .receipt_item3 .receipt_item3_box2{
+	width: 20%;
+	 
+}
+.receipt .receipt_item3 .receipt_item3_box3{
+	width: 30%;
+
+}
+.receipt_line{
+	width: 70%;
+	height: 1px;
+	background-color: #000000;
+}
+/*配送时间*/
+.receipt_item4{
+	padding: 2% 0 2% 5%;
+	border-bottom:1px solid rgba(0,0,0,0.2); 
+
+}
+  .receipt_item4 .receipt_item4_box1{
+  	font-weight: 700;
+	font-size: 18px;
+	width: 50%;
+}
+  .receipt_item4 .receipt_item4_box2{
+	width: 30%;
+}
+  .receipt_item4 .receipt_item4_box3{
+	width: 15%;
+}
+  .receipt_item4 .receipt_item4_box4{
+	width: 5%;
+}
+
+/*支付方式*/
+.pay{
+	margin-top: 3%;
+	padding: 2% 0 2% 5%;
+	border-bottom:1px solid rgba(0,0,0,0.2); 
+	border-top:1px solid rgba(0,0,0,0.2); 
+}
+.pay .pay_box1{
+	font-weight: 700;
+	font-size: 18px;
+	width: 60%;
+}
+.pay .pay_box2{
+width: 15%;
+}
+.pay .pay_box2 img{
+width: 40%;
+}
+
+.pay .pay_box3{
+	font-weight: 600;
+	font-size: 15px;
+	width: 25%;
+}
+/*清单-配送-总计框*/
+.list_send_totle{
+	margin-top: 4%;
+	border-top:1px solid rgba(0,0,0,0.2);
+	border-bottom:1px solid rgba(0,0,0,0.2);
+}
+
+/*商品清单*/
+.list{
+	padding: 2% 0 2% 5%;
+}
+.list .list_title{
+	font-weight: 700;
+	font-size: 18px;
+}
+.list .list_item1{
+	padding-top: 4%;
+
+}
+.list .list_item1 .list_item1_box1{
+width: 10%;
+}
+.list .list_item1 .list_item1_box2{
+width: 50%;
+}
+.list .list_item1 .list_item1_box3{
+width: 20%;
+text-align: center;
+}
+.list .list_item1 .list_item1_box4{
+width: 20%;
+}
+/*清单线：*/
+.list_line{
+	height: 1px;
+	background-color: #000000;
+	width: 65%;
+}
+/*配送费*/
+.send{
+padding: 2% 0 2% 5%;
+}
+.send .send_box1{
+font-weight: 700;
+	font-size: 18px;
+	width: 20%;
+}
+.send .send_box2{
+	width: 60%;
+}
+.send .send_box3{
+	width: 20%;
+}
+/*配送线*/
+.send_line{
+height: 1px;
+background-color: rgba(0,0,0,0.4);
+width: 65%;
+}
+/*总计*/
+.totle{
+padding: 2% 0 2% 5%;
+
+}
+.totle .totle_box1{
+font-weight: 700;
+	font-size: 18px;
+	width: 80%;
+}
+.totle .totle_box2{
+/*text-align: right;*/
+color:#DE767E; 
+font-weight: 600;
+width: 20%;
+padding-bottom: 2%;
+}
+
+/*三角箭*/
+.tci_tri_line{
+	position: relative;
+
+}
+
+.tci_tri_line .tci_tri1{
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent #717171;
+	border-style: solid;
+	position: absolute;
+}
+
+.tci_tri_line .tci_tri2{
+	border-width: 8px 0 8px 8px;
+	border-color: transparent transparent transparent #ffffff;
+	border-style: solid;
+	position: absolute;
+	top:2px;
+}
+/*浮动框*/
+.infor{
+position: fixed;
+bottom: 0;
+color: #FFFFFF;
+font-size: 20px;
+font-weight: 600;
+width: 100%;
+text-align: center;
+
+}
+.infor .infor_left{
+ 	background-color: #DF6791;
+ 	padding-top: 3%;
+ 	padding-bottom: 3%;
+}
+.infor .infor_right{
+	background-color: #CF0D4B;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+/*三角箭结束*/
+ /*收货地址三角箭*/
+.tci_tri_line_portrait{
+	position: relative;
+	margin-left: 50%;
+}
+
+.tci_tri_line_portrait .tci_tri1{
+	border-width: 8px 8px 8px 8px;
+	border-color:  #717171 transparent transparent transparent;
+	border-style: solid;
+	position: absolute;
+}
+
+.tci_tri_line_portrait .tci_tri2{
+	border-width: 6px 6px 6px 6px;
+	border-color: #ffffff transparent transparent transparent ;
+	border-style: solid;
+	position: absolute;
+	left: 2px;
+}
+/*原点*/
+.yuan{
+	margin:20%;
+	width: 5px;
+	height: 5px;
+	border-radius: 10px;
+	background-color: #B3B3B4;
+}

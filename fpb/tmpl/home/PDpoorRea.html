@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta charset="utf-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">	 -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  	<script src="/fpb/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/fpb/__PUBLIC__/common/css/bootstrap.min.css">
+    <!-- <script src="/fpb/__PUBLIC__/common/js/bootstrap.min.js"></script> -->
+
+
+  	<link rel="stylesheet" type="text/css" href="/fpb/__PUBLIC__/home/home/css/povertyData.css">
+    <script type="text/javascript" src="/fpb/__PUBLIC__/home/home/js/PDpoorRea.js"></script>
+	<title>工作动态</title>
+</head>
+<body>
+  <!-- 背景网格开始  -->
+  <!-- 背景网格结束  -->
+  <div class="container">
+      
+      <!-- 顶部脱贫人口完 -->
+      <
+      <div class="row con">
+          
+          <div class="col-sm-5 col-md-4 col-lg-3 area_money draw_rect">
+              <canvas id="poor_rea_canvas"></canvas>
+              
+          </div>
+      </div>
+  </div>
+ 
+</body>   
+<script>
+  $(document).ready(function() {
+    var parameter = [
+      
+      // draw_rect   外层div选择器  poor_rea_canvas  画布选择器  id选择器  
+     {"poorReaSel":{"draw_rect":"draw_rect","poor_rea_canvas":"poor_rea_canvas",}},
+      /* PR 因无力  两有户  因学  因病   因灾   因失业 */
+      {"poorRea":[{"PR":80,"PRCnumber":100},{"PR":50,"PRCnumber":100},{"PR":60,"PRCnumber":100},{"PR":20,"PRCnumber":100},{"PR":30,"PRCnumber":100},{"PR":20,"PRCnumber":100}]}, 
+    ];
+    PoorRea.init(parameter);  
+  });
+
+</script>
+</html>

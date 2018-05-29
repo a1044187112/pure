@@ -1,0 +1,102 @@
+*{
+	margin:0px;
+	padding: 0px;
+	/*font-family: "微软雅黑";*/
+}
+img{
+	width: 100%;
+}
+.container_success>.container_success_item:first-child{
+	width: 30%;
+}
+.container_success>.container_success_item:nth-child(2){
+	width: 40%;
+}
+.container_success>.container_success_item:nth-child(2)>.container_success_img_item:first-child{
+	padding:30px 35px 0px 35px;
+}
+.container_success>.container_success_item:nth-child(2)>.container_success_img_item:nth-child(2){
+	text-align: center;
+	color: #29eccc;
+	font-size: 24px;
+	padding-bottom: 25px;
+}
+
+
+.container_com{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding:10px 20px 10px 10px;
+	position: relative;
+}
+.container_com>.container_com_item:first-child{
+	width: 25%;
+}
+.container_com>.container_com_item:nth-child(2){
+	width: 75%;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.container_com .container_com_info{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 75%;
+}
+.container_com .container_com_info>.container_com_info_item:first-child{
+	width: 40%;
+	font-size: 20px;
+	color: #fc6375;
+	font-weight: 700;
+	padding-left: 12px;
+	padding-top:7px;
+}
+.container_com .container_com_info>.container_com_info_item:nth-child(2){
+	font-size: 14px;
+	color: #fc6375;
+	line-height: 1.8;
+	padding-left: 15px;
+	width: 40%;
+	padding-top:9px;
+}
+.container_com .container_com_info>.container_com_info_item:nth-child(3){
+	width: 20%;
+	font-size: 24px;
+	color: #f29a00;
+	padding-left: 15px;
+	line-height: 1.6;
+	padding-bottom: 5px;
+}
+
+.container_info{
+	padding-top:45px;
+	/*position: relative;*/
+}
+.container_info>.container_info_item{
+	text-align: center;
+	font-size: 18px;
+	margin-top:10px;
+}
+.container_info>.container_info_item:first-child{
+	color: #e4001b;
+}
+.container_info>.container_info_item:nth-child(2){
+	font-size: 15px;
+	color: #29eccc;
+}
+.container_info>.container_info_item:nth-child(2)>.container_info_item_span{
+	color: #201d92;
+}
+.container_info>.container_info_item:nth-child(3){
+	color: #e4001b;		
+}
+.container_info .container_info_text{
+	text-align: center;
+	width: 100%;
+	position: relative;
+}
+.container_info .container_info_img{
+	width: 6% ;
+	position: absolute;
+	left: 65%;
+}

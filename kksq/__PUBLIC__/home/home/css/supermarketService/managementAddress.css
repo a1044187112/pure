@@ -1,0 +1,106 @@
+body{
+	padding:0;
+	margin:0;
+	background-color: #EEEFEF;
+}
+.con_item1{
+	/*padding-left: 7%;*/
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	border: rgba(0,0,0,0.3) solid 0.5px;
+	margin-bottom: 2%;
+}
+.con_item1 .con_item1_up{
+	padding-top: 4%;
+}
+.con_item1 .con_item1_up .con_item1_up_box1{
+width: 10%;
+text-align: right;
+ 
+}
+.con_item1 .con_item1_up .con_item1_up_box1 img{
+width: 40%;
+padding-right: 15%;
+
+}
+.con_item1 .con_item1_up .con_item1_up_box2{
+width:18%;
+}
+.con_item1 .con_item1_up .con_item1_up_box3{
+width: 72%;
+}
+
+/*默认*/
+.con_item1 .con_item2_up{
+	padding-top: 4%;
+}
+.con_item1 .con_item2_up .con_item2_up_box1{
+width: 10%;
+text-align: right;
+ 
+}
+.con_item1 .con_item2_up .con_item2_up_box1 img{
+width: 40%;
+padding-right: 15%;
+
+}
+.con_item1 .con_item2_up .con_item2_up_box2{
+width:18%;
+}
+.con_item1 .con_item2_up .con_item2_up_box3{
+width: 55%;
+}
+
+.con_item1 .con_item2_up .con_item2_up_box4{
+width: 17%;
+}
+.con_item1 .con_item2_up .con_item2_up_box4 .style{
+background-color: #E58EAA;
+width: 60%;
+text-align: center;
+border-radius: 5px;
+color: #FFFFFF;
+font-size: 13px;
+padding: 3%;
+}
+
+
+
+/*下*/
+.con_item1 .con_item1_down{
+	padding-top: 5%;
+	padding-bottom: 8%;
+}
+
+.con_item1 .con_item1_down .con_item1_down_box1{
+width: 10%;
+}
+.con_item1 .con_item1_down .con_item1_down_box2{
+width: 15%;
+}
+.con_item1 .con_item1_down .con_item1_down_box3{
+width: 14%;
+}
+.con_item1 .con_item1_down .con_item1_down_box4{
+width: 46%;
+}
+.con_item1 .con_item1_down .con_item1_down_box5{
+width: 15%;
+}
+
+/*添加按钮*/
+.add_button{
+margin-top: 25%;
+}
+.add_button .add_button_box{
+text-align: center;
+}
+.add_button .add_button_img{
+ width: 40%;
+ padding-left:30%;
+/*padding-left: 50%;*/
+}
+.add_button .add_button_text{
+ font-size: 20px;
+ font-weight: 400;
+}

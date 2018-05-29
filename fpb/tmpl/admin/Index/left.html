@@ -1,0 +1,830 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<script type="application/javascript" src="/fpb/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script type="application/javascript" src="/fpb/__PUBLIC__/common/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/fpb/__PUBLIC__/common/css/bootstrap.min.css" />
+
+<link rel="stylesheet" type="text/css" href="/fpb/__PUBLIC__/admin/index/css/left.css" />
+
+<title>管理员后台</title>
+</head>
+<body>
+    <div class="i_container">
+       <ul class="nav nav-pills nav-stacked"  id="action_menu">
+       <!-- 管理员管理 -->
+         <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#adminadmin" aria-expanded="false" aria-controls="ctrl_item_0">管理员管理</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="adminadmin">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/Adminadmin/adminList.html" target="right">管理员列表</a></li>
+                <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/Adminadmin/reaetPwd.html" target="right">重置管理员密码</a></li>
+            </ul>
+          </div>
+        </li>
+
+
+        <!-- 行政区划 -->
+          <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_4" aria-expanded="false" aria-controls="ctrl_item_0">行政区划</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="ctrl_item_4">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/Village.html" target="right">区</a></li>
+                <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/TownShip.html" target="right">乡镇</a></li>
+                 <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/Area.html" target="right">村</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- 首页数据 -->
+
+          <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_3" aria-expanded="false" aria-controls="ctrl_item_0">首页数据</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="ctrl_item_3">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/TownshipPoor.html" target="right">乡镇贫困人口</a></li>
+                <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/PopulationDistribution.html" target="right">贫困人口总体分布</a></li>
+                 <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/PovertyOverview.html" target="right">扶贫概况</a></li>
+         
+            </ul>
+          </div>
+        </li>
+
+        <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_5" aria-expanded="false" aria-controls="ctrl_item_0">微信公众号运营</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="ctrl_item_5">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/GzhManage/setSubWelcomeWord.html" target="right">设置欢迎语</a></li>
+                <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/GzhManage/createMenu.html" target="right">创建自定义菜单</a></li>
+            </ul>
+          </div>
+        </li>
+
+
+
+
+        <!-- 第一级别项 -->
+        <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#ada_ctrl_item_2" aria-expanded="false" aria-controls="ctrl_item_0">西秀区内容填充</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="ada_ctrl_item_2">
+            <ul class="list-group">
+                <!-- 当前级别 -->
+                <li class="list-group-item">
+                  <ul class="nav nav-pills nav-stacked"  id="adb_action_menu_1">
+                    <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#adb_action_menu_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adb_ctrl_item_1" aria-expanded="false" aria-controls="ctrl_item_0">本级别设置</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="adb_ctrl_item_1">
+                        <ul class="list-group">
+                           <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/PovertyReductionProgram.html" target="right">扶贫计划</a></li>
+                                         <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/MainInformation.html" target="right">责任主体信息</a></li>
+                                          <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/ArticlesCategory.html" target="right">文章类别</a></li>
+                                           <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/Articlelist.html" target="right">文章列表</a></li>
+                                            <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/" target="right">乡村数据</a></li>
+                          
+                        </ul>
+                      </div>
+                    </li>                                
+                  </ul>
+                </li>                            
+                <!-- 当前级别 -->
+                <!-- 第二级别项 -->
+                <li class="list-group-item">
+                  <ul class="nav nav-pills nav-stacked"  id="adb_action_menu_2">
+                     <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#adb_action_menu_2" class="btn btn-primary" role="button" data-toggle="collapse" href="#adb_ctrl_item_2" aria-expanded="false" aria-controls="ctrl_item_0">岩蜡乡</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="adb_ctrl_item_2">
+                        <ul class="list-group">
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_1">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_1" aria-expanded="false" aria-controls="ctrl_item_0">本级别设置</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_1">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="" target="right">科室设置</a></li>
+                                      
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_2_1">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_2_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_2_1_1" aria-expanded="false" aria-controls="ctrl_item_0">谭山村</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_2_1_1">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/PovertyReductionProgram.html" target="right">扶贫计划</a></li>
+                                         <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/MainInformation.html" target="right">责任主体信息</a></li>
+                                          <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/ArticlesCategory.html" target="right">文章类别</a></li>
+                                           <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/Articlelist.html" target="right">文章列表</a></li>
+                                            <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/" target="right">乡村数据</a></li>
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_2_2">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_2_2" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_2_1_2" aria-expanded="false" aria-controls="ctrl_item_0">高债村</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_2_1_2">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/PovertyReductionProgram.html" target="right">扶贫计划</a></li>
+                                         <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/MainInformation.html" target="right">责任主体信息</a></li>
+                                          <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/ArticlesCategory.html" target="right">文章类别</a></li>
+                                           <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/Articlelist.html" target="right">文章列表</a></li>
+                                            <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/" target="right">乡村数据</a></li>
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+
+                        </ul>
+                      </div>
+                    </li>                      
+                  </ul>
+                </li>                
+                <!-- 第二级别项结束 -->
+
+                <!-- 第二级别项 -->
+                <li class="list-group-item">
+                  <ul class="nav nav-pills nav-stacked"  id="adb_action_menu_2">
+                     <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#adb_action_menu_2" class="btn btn-primary" role="button" data-toggle="collapse" href="#adb_ctrl_item_3" aria-expanded="false" aria-controls="ctrl_item_0">新场乡</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="adb_ctrl_item_3">
+                        <ul class="list-group">
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_1">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_3" aria-expanded="false" aria-controls="ctrl_item_0">本级别设置</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_3">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="" target="right">科室设置</a></li>
+                                      
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_3_1">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_3_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_3_1_1" aria-expanded="false" aria-controls="ctrl_item_0">谭山村</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_3_1_1">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/PovertyReductionProgram.html" target="right">扶贫计划</a></li>
+                                         <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/MainInformation.html" target="right">责任主体信息</a></li>
+                                          <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/ArticlesCategory.html" target="right">文章类别</a></li>
+                                           <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/Articlelist.html" target="right">文章列表</a></li>
+                                            <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/" target="right">乡村数据</a></li>
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_3_2">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_3_2" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_3_1_2" aria-expanded="false" aria-controls="ctrl_item_0">高债村</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_3_1_2">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/PovertyReductionProgram.html" target="right">扶贫计划</a></li>
+                                         <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/MainInformation.html" target="right">责任主体信息</a></li>
+                                          <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/ArticlesCategory.html" target="right">文章类别</a></li>
+                                           <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/Articlelist.html" target="right">文章列表</a></li>
+                                            <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/" target="right">乡村数据</a></li>
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+
+                        </ul>
+                      </div>
+                    </li>                      
+                  </ul>
+                </li>                
+                <!-- 第二级别项结束 -->
+
+                <!-- 第二级别项 -->
+                <li class="list-group-item">
+                  <ul class="nav nav-pills nav-stacked"  id="adb_action_menu_2">
+                     <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#adb_action_menu_2" class="btn btn-primary" role="button" data-toggle="collapse" href="#adb_ctrl_item_4" aria-expanded="false" aria-controls="ctrl_item_0">杨武乡</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="adb_ctrl_item_4">
+                        <ul class="list-group">
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_1">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_4" aria-expanded="false" aria-controls="ctrl_item_0">本级别设置</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_4">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="" target="right">科室设置</a></li>
+                                      
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_4_1">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_4_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_4_1_1" aria-expanded="false" aria-controls="ctrl_item_0">白水村</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_4_1_1">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/PovertyReductionProgram.html" target="right">扶贫计划</a></li>
+                                         <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/MainInformation.html" target="right">责任主体信息</a></li>
+                                          <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/ArticlesCategory.html" target="right">文章类别</a></li>
+                                           <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/Articlelist.html" target="right">文章列表</a></li>
+                                            <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/" target="right">乡村数据</a></li>
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_4_2">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_4_2" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_4_1_2" aria-expanded="false" aria-controls="ctrl_item_0">杉木村</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_4_1_2">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/PovertyReductionProgram.html" target="right">扶贫计划</a></li>
+                                         <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/MainInformation.html" target="right">责任主体信息</a></li>
+                                          <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/ArticlesCategory.html" target="right">文章类别</a></li>
+                                           <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/Articlelist.html" target="right">文章列表</a></li>
+                                            <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/" target="right">乡村数据</a></li>
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+
+                        </ul>
+                      </div>
+                    </li>                      
+                  </ul>
+                </li>                
+                <!-- 第二级别项结束 -->
+
+                <!-- 第二级别项 -->
+                <li class="list-group-item">
+                  <ul class="nav nav-pills nav-stacked"  id="adb_action_menu_2">
+                     <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#adb_action_menu_2" class="btn btn-primary" role="button" data-toggle="collapse" href="#adb_ctrl_item_5" aria-expanded="false" aria-controls="ctrl_item_0">刘官乡</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="adb_ctrl_item_5">
+                        <ul class="list-group">
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_1">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_5" aria-expanded="false" aria-controls="ctrl_item_0">本级别设置</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_5">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="" target="right">科室设置</a></li>
+                                      
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_5_1">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_3_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_5_1_1" aria-expanded="false" aria-controls="ctrl_item_0">大黑村</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_5_1_1">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/PovertyReductionProgram.html" target="right">扶贫计划</a></li>
+                                         <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/MainInformation.html" target="right">责任主体信息</a></li>
+                                          <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/ArticlesCategory.html" target="right">文章类别</a></li>
+                                           <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/Articlelist.html" target="right">文章列表</a></li>
+                                            <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/" target="right">乡村数据</a></li>
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_5_2">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_3_2" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_5_1_2" aria-expanded="false" aria-controls="ctrl_item_0">兴红村</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_5_1_2">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/PovertyReductionProgram.html" target="right">扶贫计划</a></li>
+                                         <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/MainInformation.html" target="right">责任主体信息</a></li>
+                                          <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/ArticlesCategory.html" target="right">文章类别</a></li>
+                                           <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/Articlelist.html" target="right">文章列表</a></li>
+                                            <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/" target="right">乡村数据</a></li>
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+
+                        </ul>
+                      </div>
+                    </li>                      
+                  </ul>
+                </li>                
+                <!-- 第二级别项结束 -->
+
+                <!-- 第二级别项 -->
+                <li class="list-group-item">
+                  <ul class="nav nav-pills nav-stacked"  id="adb_action_menu_2">
+                     <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#adb_action_menu_2" class="btn btn-primary" role="button" data-toggle="collapse" href="#adb_ctrl_item_6" aria-expanded="false" aria-controls="ctrl_item_0">旧州乡</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="adb_ctrl_item_6">
+                        <ul class="list-group">
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_1">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_6" aria-expanded="false" aria-controls="ctrl_item_0">本级别设置</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_6">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="" target="right">科室设置</a></li>
+                                      
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_6_1">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_3_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_6_1_1" aria-expanded="false" aria-controls="ctrl_item_0">文星村</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_6_1_1">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/PovertyReductionProgram.html" target="right">扶贫计划</a></li>
+                                         <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/MainInformation.html" target="right">责任主体信息</a></li>
+                                          <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/ArticlesCategory.html" target="right">文章类别</a></li>
+                                           <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/Articlelist.html" target="right">文章列表</a></li>
+                                            <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/" target="right">乡村数据</a></li>
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+                            <!-- 第三级别项 -->
+                            <li class="list-group-item">
+                              <ul class="nav nav-pills nav-stacked"  id="adc_action_menu_6_2">
+                                <li role="presentation" class="panel panel-default">
+                                  <div class="ctrl_btn">
+                                      <a data-parent="#adc_action_menu_6_2" class="btn btn-primary" role="button" data-toggle="collapse" href="#adc_ctrl_item_6_1_2" aria-expanded="false" aria-controls="ctrl_item_0">西地村</a>
+                                  </div>
+                                  <div class="collapse ctrl_item_list" id="adc_ctrl_item_6_1_2">
+                                    <ul class="list-group">
+                                        <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/PovertyReductionProgram.html" target="right">扶贫计划</a></li>
+                                         <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/MainInformation.html" target="right">责任主体信息</a></li>
+                                          <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/ArticlesCategory.html" target="right">文章类别</a></li>
+                                           <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/Articlelist.html" target="right">文章列表</a></li>
+                                            <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/RegStore/" target="right">乡村数据</a></li>
+                                    </ul>
+                                  </div>
+                                </li>                                
+                              </ul>
+                            </li>                            
+                            <!-- 第三级别项结束 -->
+
+                        </ul>
+                      </div>
+                    </li>                      
+                  </ul>
+                </li>                
+                <!-- 第二级别项结束 -->
+                
+
+
+                
+              
+            </ul>
+          </div>
+        </li>          
+        <!-- 第一级别项结束 -->
+
+          
+<!--   			<li role="presentation" class="panel panel-default">
+
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_1" 
+              aria-expanded="false" aria-controls="ctrl_item_0">西秀区</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="ctrl_item_1">
+            <ul class="list-group">
+                <li class="list-group-item">
+
+                  <ul class="nav nav-pills nav-stacked"  id="action_menu1">
+                    <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#action_menu1" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_1_1" aria-expanded="false" aria-controls="ctrl_item_0">双堡镇</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="ctrl_item_1_1">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                              <ul class="list-group">
+                                <li class="list-group-item">
+
+                                  <ul class="nav nav-pills nav-stacked"  id="action_menu11">
+                          
+                                    <li role="presentation" class="panel panel-default">
+                                      <div class="ctrl_btn">
+                                          <a data-parent="#action_menu11" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_1_11" aria-expanded="false" aria-controls="ctrl_item_0">花旗</a>
+                                      </div>
+                                      <div class="collapse ctrl_item_list" id="ctrl_item_1_11">
+                                        <ul class="list-group">
+                                            <li class="list-group-item url_grp_item">
+                                              <a class="url_item" href="/fpb/tmpl/admin/GzhManage/setSubWelcomeWord.html" target="right">
+                                                数据添加
+                                              </a>
+                                            </li>
+                                        </ul>
+                                      </div>
+                                    </li>
+                                    <li role="presentation" class="panel panel-default">
+                                      <div class="ctrl_btn">
+                                          <a data-parent="#action_menu11" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_1_11" aria-expanded="false" aria-controls="ctrl_item_0">花旗</a>
+                                      </div>
+                                      <div class="collapse ctrl_item_list" id="ctrl_item_1_11">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                              
+                                            </li>
+                                        </ul>
+                                      </div>
+                                    </li>
+                                    <li role="presentation" class="panel panel-default">
+                                      <div class="ctrl_btn">
+                                          <a data-parent="#action_menu11" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_1_11" aria-expanded="false" aria-controls="ctrl_item_0">花旗</a>
+                                      </div>
+                                      <div class="collapse ctrl_item_list" id="ctrl_item_1_11">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                              sdfsdfdsf
+                                            </li>
+                                        </ul>
+                                      </div>
+                                    </li>
+
+
+                                  </ul>
+                                  
+
+                                </li>
+                            </ul>
+                            </li>
+                        </ul>
+                      </div>
+                    </li>
+
+
+                    <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#action_menu1" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_1_2" aria-expanded="false" aria-controls="ctrl_item_0">红旗镇</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="ctrl_item_1_2">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                              <ul class="list-group">
+                                <li class="list-group-item">
+
+                                  <ul class="nav nav-pills nav-stacked"  id="action_menu11">
+                          
+                                    <li role="presentation" class="panel panel-default">
+                                      <div class="ctrl_btn">
+                                          <a data-parent="#action_menu11" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_1_12" aria-expanded="false" aria-controls="ctrl_item_0">花旗</a>
+                                      </div>
+                                      <div class="collapse ctrl_item_list" id="ctrl_item_1_12">
+                                        <ul class="list-group">
+                                            <li class="list-group-item url_grp_item">
+                                              <a class="url_item" href="/fpb/tmpl/admin/GzhManage/setSubWelcomeWord.html" target="right">
+                                                数据添加
+                                              </a>
+                                            </li>
+                                        </ul>
+                                      </div>
+                                    </li>
+                                    <li role="presentation" class="panel panel-default">
+                                      <div class="ctrl_btn">
+                                          <a data-parent="#action_menu11" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_1_12" aria-expanded="false" aria-controls="ctrl_item_0">花旗</a>
+                                      </div>
+                                      <div class="collapse ctrl_item_list" id="ctrl_item_1_12">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                              
+                                            </li>
+                                        </ul>
+                                      </div>
+                                    </li>
+                                    <li role="presentation" class="panel panel-default">
+                                      <div class="ctrl_btn">
+                                          <a data-parent="#action_menu11" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_1_12" aria-expanded="false" aria-controls="ctrl_item_0">花旗</a>
+                                      </div>
+                                      <div class="collapse ctrl_item_list" id="ctrl_item_1_12">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                              sdfsdfdsf
+                                            </li>
+                                        </ul>
+                                      </div>
+                                    </li>
+
+
+                                  </ul>
+                                  
+
+                                </li>
+                            </ul>
+                            </li>
+                        </ul>
+                      </div>
+                    </li>
+
+
+                  </ul>
+                  
+
+                </li>
+            </ul>
+
+          </div>
+
+        </li> -->
+ 
+<!--        
+        <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_2" aria-expanded="false" aria-controls="ctrl_item_0">医生资源</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="ctrl_item_2">
+            <ul class="list-group">
+                <li class="list-group-item"><a class="url_item" href="/fpb/tmpl/admin/Index/deptOfficeList.html" target="right">科室设置</a></li>
+                <li class="list-group-item"><a class="url_item" href="/fpb/tmpl/admin/Index/docList.html" target="right">医生列表</a></li>
+                <li class="list-group-item"><a class="url_item" href="/fpb/tmpl/admin/Index/regTimePartList.html" target="right">挂号时段</a></li>
+                <li class="list-group-item"><a class="url_item" href="/fpb/tmpl/admin/Index/docWorkList.html" target="right">医生排班表</a></li>
+                <li class="list-group-item"><a class="url_item" href="/fpb/tmpl/admin/Index/regDataList.html" target="right">挂号资源表</a></li>
+              
+            </ul>
+          </div>
+        </li>              
+            
+        <li role="presentation" class="panel panel-default">
+                  <div class="ctrl_btn">
+                      <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_5" aria-expanded="false" aria-controls="ctrl_item_0">微信公众号运营</a>
+                  </div>
+                  <div class="collapse ctrl_item_list" id="ctrl_item_5">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="{:U('Admin/GzhManage/setSubWelcomeWord')}" target="right">设置欢迎语</a></li>
+                        <li class="list-group-item"><a href="{:U('Admin/GzhManage/createMenu')}" target="right">创建自定义菜单</a></li>
+                    </ul>
+                  </div>
+        </li>  -->
+
+   
+          <!-- 西秀区地图映射 -->
+         <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_1" aria-expanded="false" aria-controls="ctrl_item_0">西秀区地图映射</a>
+          </div>
+          <!-- 第二层级 -->
+          <div class="collapse ctrl_item_list" id="ctrl_item_1">
+           <ul class="list-group">
+                <!-- 当前级别 -->
+                <li class="list-group-item">
+                  <ul class="nav nav-pills nav-stacked"  id="adb_action_menu_1">
+                    <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#adb_action_menu_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adb_ctrl_item_9" aria-expanded="false" aria-controls="ctrl_item_0">本级别设置</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="adb_ctrl_item_9">
+                        <ul class="list-group">
+                            <li class="list-group-item url_grp_item"><a class="url_item" href="" target="right">科室设置</a></li>
+                          
+                        </ul>
+                      </div>
+                    </li>                                
+                  </ul>
+                </li>              
+            </ul>
+      
+           <ul class="list-group">
+                <!-- 当前级别 -->
+                <li class="list-group-item">
+                  <ul class="nav nav-pills nav-stacked"  id="adb_action_menu_1">
+                    <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#adb_action_menu_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adb_ctrl_item_11" aria-expanded="false" aria-controls="ctrl_item_0">岩蜡乡</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="adb_ctrl_item_11">
+                        <ul class="list-group">
+                            <li class="list-group-item url_grp_item"><a class="url_item" href="" target="right">岩蜡乡地图映射</a></li>
+                          
+                        </ul>
+                      </div>
+                    </li>                                
+                  </ul>
+                </li>              
+            </ul>
+
+             <ul class="list-group">
+                <!-- 当前级别 -->
+                <li class="list-group-item">
+                  <ul class="nav nav-pills nav-stacked"  id="adb_action_menu_1">
+                    <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#adb_action_menu_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adb_ctrl_item_12" aria-expanded="false" aria-controls="ctrl_item_0">鸡场乡</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="adb_ctrl_item_12">
+                        <ul class="list-group">
+                            <li class="list-group-item url_grp_item"><a class="url_item" href="" target="right">鸡场乡地图映射</a></li>
+                          
+                        </ul>
+                      </div>
+                    </li>                                
+                  </ul>
+                </li>              
+            </ul>
+
+             <ul class="list-group">
+                <!-- 当前级别 -->
+                <li class="list-group-item">
+                  <ul class="nav nav-pills nav-stacked"  id="adb_action_menu_1">
+                    <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#adb_action_menu_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adb_ctrl_item_13" aria-expanded="false" aria-controls="ctrl_item_0">杨武乡</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="adb_ctrl_item_13">
+                        <ul class="list-group">
+                            <li class="list-group-item url_grp_item"><a class="url_item" href="" target="right">杨武乡地图映射</a></li>
+                          
+                        </ul>
+                      </div>
+                    </li>                                
+                  </ul>
+                </li>              
+            </ul>
+
+             <ul class="list-group">
+                <!-- 当前级别 -->
+                <li class="list-group-item">
+                  <ul class="nav nav-pills nav-stacked"  id="adb_action_menu_1">
+                    <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#adb_action_menu_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adb_ctrl_item_14" aria-expanded="false" aria-controls="ctrl_item_0">东屯乡</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="adb_ctrl_item_14">
+                        <ul class="list-group">
+                            <li class="list-group-item url_grp_item"><a class="url_item" href="" target="right">东屯乡地图映射</a></li>
+                          
+                        </ul>
+                      </div>
+                    </li>                                
+                  </ul>
+                </li>              
+            </ul>
+
+             <ul class="list-group">
+                <!-- 当前级别 -->
+                <li class="list-group-item">
+                  <ul class="nav nav-pills nav-stacked"  id="adb_action_menu_1">
+                    <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#adb_action_menu_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adb_ctrl_item_15" aria-expanded="false" aria-controls="ctrl_item_0">新场乡</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="adb_ctrl_item_15">
+                        <ul class="list-group">
+                            <li class="list-group-item url_grp_item"><a class="url_item" href="" target="right">新场乡地图映射</a></li>
+                        </ul>
+                      </div>
+                    </li>                                
+                  </ul>
+                </li>              
+            </ul>
+
+             <ul class="list-group">
+                <!-- 当前级别 -->
+                <li class="list-group-item">
+                  <ul class="nav nav-pills nav-stacked"  id="adb_action_menu_1">
+                    <li role="presentation" class="panel panel-default">
+                      <div class="ctrl_btn">
+                          <a data-parent="#adb_action_menu_1" class="btn btn-primary" role="button" data-toggle="collapse" href="#adb_ctrl_item_16
+                          " aria-expanded="false" aria-controls="ctrl_item_0">刘官乡</a>
+                      </div>
+                      <div class="collapse ctrl_item_list" id="adb_ctrl_item_16">
+                        <ul class="list-group">
+                            <li class="list-group-item url_grp_item"><a class="url_item" href="" target="right">刘官乡地图映射</a></li>
+                        </ul>
+                      </div>
+                    </li>                                
+                  </ul>
+                </li>              
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#permissions" aria-expanded="false" aria-controls="ctrl_item_0">权限设置</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="permissions">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/Permissions/permissions.html" target="right">权限设置</a></li>
+                <li class="list-group-item url_grp_item"><a class="url_item" href="/fpb/tmpl/admin/Permissions/changePwd.html" target="right">修改密码</a></li>
+            </ul>
+          </div>
+        </li>
+
+        
+
+
+
+
+
+
+
+
+<!-- -->
+      </ul>
+    </div>
+    
+</body>
+</html>

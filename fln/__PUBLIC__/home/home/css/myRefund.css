@@ -1,0 +1,75 @@
+*{
+	padding:0px;
+	margin:0px;
+	text-decoration: none;
+}
+img{
+	width: 100%;
+}
+
+
+
+
+.container .container_class{
+	background-color: #6695e3;
+	color: #eee;
+	line-height: 1.8;
+	font-size: 14px;
+	font-weight: 100;
+}
+.container .container_class>.container_class_item:first-child{
+	padding-left: 5%;
+}
+.container .container_class>.container_class_item:nth-child(2){
+	text-align: right;
+	padding-right: 5%;
+}
+
+.contaienr_com{
+	width: 100%;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	/*padding-right: 5%;*/
+	/*padding:10px 0px 10px 10px ;*/
+}
+.contaienr_com>.contaienr_com_item:first-child{
+	width: 30%;
+	padding:10px 0px 0px 10px;
+}
+.contaienr_com>.contaienr_com_item:nth-child(2){
+	width: 48%;
+	line-height: 1.8;
+	padding: 20px 0px 10px 20px; 
+	font-size: 13px;
+	color: #888;
+}
+.contaienr_com>.contaienr_com_item:nth-child(2)>.com_item_det>.com_item_det_item{
+	color: #111;
+}
+.contaienr_com>.contaienr_com_item:nth-child(2)>.com_item_det:nth-child(3)>.com_item_det_item{
+	color: #ea0011;
+}
+.contaienr_com>.contaienr_com_item:nth-child(3){
+	width: 17%;
+	font-size: 14px;
+	color: #6695e3;
+	margin-top:25px;
+	text-align: center;
+}
+.contaienr_com>.contaienr_com_item:nth-child(3) .com_item_refund:nth-child(2){
+	/*margin:auto;*/
+	/*background-color: red;*/
+}
+.contaienr_com>.contaienr_com_item:nth-child(3) .com_item_refund .mycanvas{
+	/*background-color: red;*/
+	margin:auto;
+	margin-top: 20px;
+}
+
+.container .contaienr_create_msg{
+	color:#999;
+	font-size: 14px;
+	padding-left: 5%;
+	line-height: 1.5;
+}
+

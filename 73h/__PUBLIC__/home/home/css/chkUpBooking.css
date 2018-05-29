@@ -1,0 +1,87 @@
+.booking_cmb_intro_area{
+	margin: 20px 0;
+}
+
+.booking_cmb_intro_area .cmb_intro_con{
+	margin:2px 0;
+}
+
+.booking_cmb_intro_area .cmb_intro_con .cic_item{
+	font-size: 20px;
+}
+
+.booking_cmb_intro_area .cmb_intro_con .cic_item:nth-child(1){
+	width: 40%;
+	text-align: right;
+	color: #75CACF;
+}
+
+.booking_cmb_intro_area .cmb_intro_con .cic_item:nth-child(2){
+	width: 60%;
+	padding-left: 5px;
+	color: #464342;
+}
+.booking_cmb_intro_area .pay_cptl_con .cic_title .val{
+	color: #E2A645;
+}
+.booking_cmb_intro_area .pay_cptl_con .cic_cptl .val{
+	color: #DA0511;
+}
+
+/*预约资料输入区域*/
+.input_booking_info_area{
+	margin-top: 60px;
+	padding: 0 10px;
+}
+
+.input_booking_info_area .input_text{
+	border-radius: 20px;
+	width: 80%; 
+	padding: 5px 10px;
+	border: 1px solid #B2B2B2;
+}
+
+
+
+.input_booking_info_area .ibi_item_con{
+	margin-top: 20px;	
+}
+
+.input_booking_info_area .ibi_item_con .ibii_msg{
+	padding-top: 25px;
+}
+.input_booking_info_area .ibi_item_con .ibi_ic_item:nth-child(1){
+	width: 40%;
+	text-align: right;
+	font-size: 20px;
+	padding-right: 10px;
+
+}
+
+.input_booking_info_area .ibi_item_con .ibi_ic_item:nth-child(2){
+	width: 60%;
+}
+
+
+.booking_sub_btn_area{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	background-color: #E1E1E1;
+	padding: 20px 0px;
+}
+
+.booking_sub_btn_area .booking_sub_btn{
+	border-radius: 20px;
+	background-color: #14AFB8;
+	color: #ffffff;
+	text-align: center;
+}
+
+.booking_sub_btn_area .booking_sub_btn .bst_text{
+	font-size: 20px;
+	/*padding: 5px 0px;*/
+	line-height: 1.7;
+	width:100%;
+	height: 100%;
+}
+/*预约资料输入区域结束*/

@@ -1,0 +1,138 @@
+/* CSS Document */
+/*分割线*/
+
+
+
+/*大类别*/
+.first_category img{
+	width: 100%;
+}
+.first_category {
+	position:relative;
+	margin-top: 10px;
+}
+
+.first_category a{
+	display: block;
+}
+
+.first_category .c_block{
+	padding-bottom: 20px;
+}
+
+.first_category .c_block .c_name{
+	text-align: center;
+	font-size: 5.0vmin;
+	width: 100%;
+}
+
+.first_category .c_block .c_icon{
+	display: block;
+	padding:20px;
+	padding-bottom: 0px;
+}
+
+.first_category .c_block .c_icon img{
+	width: 100%;
+}
+
+/*大类别结束*/
+
+
+/*首页置顶数据项*/
+.top_most_data{
+	/*padding-top: 10px;
+	padding-bottom: 10px;*/
+	/*height: 50px;*/
+}
+
+.top_most_data .tmd_title{
+	/*height: 40px;*/
+	font-size: 25px;
+	line-height: 50px;
+}
+
+.top_most_data .tmd_title .tmd_title_name{
+	padding-top: 2px;
+	padding-left: 10px;
+	width:60%;
+}
+
+.top_most_data .tmd_title .tmd_title_tri{
+	height: 50px;
+	position: relative;
+	width: 40%;
+	height: 100%;
+	padding-right:10px; 
+	padding-top: 11px;
+}
+
+
+.top_most_data .tmd_title  .tci_tri_line{
+	float: right;
+	right: 20px;
+}
+
+
+
+.top_most_data .tmd_row{
+	margin-top: 10px;
+	width: 100%;
+}
+
+
+.top_most_data .tmd_row .tmd_item{
+	color: #000;
+	font-size: 16px;
+	font-weight: 100;
+}
+.top_most_data .tmd_row .tmd_item .tmd_btn{
+	border: 1px solid #F39700;
+	color: #F39700;
+	border-radius: 15px;
+}
+
+.top_most_data .tmd_row .tmd_item:nth-child(1){
+	width: 16%;
+}
+.top_most_data .tmd_row .tmd_item:nth-child(2){
+	width: 20%;
+	margin-left: 1%;
+	font-size: 20px;
+	padding-top: 16px;
+}
+.top_most_data .tmd_row .tmd_item:nth-child(3){
+	width: 45%;
+	font-size: 12px;
+	-webkit-transform:scale(0.8);
+	margin-left: -4%;
+}
+.top_most_data .tmd_row .tmd_item:nth-child(4){
+	width: 16%;
+	text-align: center;
+	padding-top: 18px;
+}
+/*首页置顶数据项结束*/
+
+/*绘制右三角箭头*/
+
+.tci_tri_line{
+	position: relative;
+}
+
+.tci_tri_line .tci_tri1{
+	border-width: 16px 0 16px 16px;
+	border-color: transparent transparent transparent #717171;
+	border-style: solid;
+	position: absolute;
+}
+
+.tci_tri_line .tci_tri2{
+	border-width: 12px 0 12px 12px;
+	border-color: transparent transparent transparent #ffffff;
+	border-style: solid;
+	position: absolute;
+	top:4px;
+	
+}
+/*绘制右三角箭头结束*/

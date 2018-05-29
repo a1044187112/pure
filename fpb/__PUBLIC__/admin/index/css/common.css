@@ -1,0 +1,181 @@
+/* CSS Document */
+body{
+	background-color:#99CCCC;
+	margin:0px;
+	padding:10px;
+	width: 100%;
+}
+
+.i_content{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+	position:relative;
+	top:10px;
+}
+
+.i_content .page_title{
+	position:relative;
+	padding:10px 10px 10px 20px;
+}
+
+.i_content .data_table{
+	border:1px solid #66CC66;
+	padding:20px;
+}
+
+.cate_sel .title {
+	position:relative;
+	float:left;
+	font-size:20px;
+	display:inline-block;
+	top:3px;
+}
+
+.cate_sel .content_select {
+	position:relative;
+	float:left;
+	width:200px;
+	display:inline-block;
+	margin-left:10px;
+}
+
+
+.files{
+}
+
+.files .thum_pic{
+	width:100px;
+	 height:100px; 
+	 float:left; 
+	 margin-left:5px;
+	background-color: #CCCCFF;
+}
+
+
+.files .default_pic{
+	border:2px solid #F00;
+}
+
+
+.data_table .show_detail_box .detail_item{
+	padding:3px;
+	border-bottom:1px #99CCCC solid;
+}
+
+
+.data_table .show_detail_box .detail_item .detail_sub_item{
+	padding:6px;
+	border-bottom:1px #FC7E7E solid;
+	width: 100%;
+}
+
+
+.data_table .show_detail_box .detail_item .item_cnt{
+	text-align:left;
+}
+
+
+.img_scroll{
+    margin-top:10px;
+    overflow-x:auto;
+    overflow-y:hidden;
+}
+
+.img_scroll .img_box{
+    margin-top:10px;
+    width:2000px;
+}
+
+
+.img_scroll .img_box .img_item{
+	width:150px;
+	height:150px;
+	position:relative;
+	float:left;
+	margin-left:5px;
+}
+
+
+.img_scroll .img_box .img_item .title{
+	margin-top:3px;
+}
+.img_scroll .img_box .img_item .at{
+	margin-top:3px;
+}
+
+.page_info_box .page_info{
+	margin:5px 0;
+}
+
+.note-editor .note-image-dialog .modal-dialog {
+	width: 600px;
+    margin: 30px auto;
+    top: 300px;
+}
+
+
+.data_table .info_detail_row .td{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+.t_col:nth-child(1){
+	width: 10%;
+}
+.t_col:nth-child(2){
+	width: 40%;
+}
+.t_col:nth-child(3){
+	width: 10%;
+}
+.t_col:nth-child(4){
+	width: 20%;
+}
+.t_col:nth-child(5){
+	width: 20%;
+}
+
+
+.page_info_box{
+	
+}
+
+.page_info_box .pg_progress{
+	margin-left: 10px;
+	//padding-top: 30px;
+	font-size: 20px;
+}
+
+.fi_item{
+	margin: 10px;
+}
+
+/*标志位*/
+.data_table .data_item_no{
+	color: #ff0000;
+}
+.data_table .data_item_yes{
+	color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

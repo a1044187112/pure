@@ -1,0 +1,52 @@
+
+.notice_area {
+	color: #48BAB8;
+	font-size: 23px;
+	margin-top: 30px;
+	padding: 0 30px;
+}
+
+.notice_area .main_notice_title{
+	text-align: center;
+}
+
+
+.notice_area .sub_notice_tsub{
+	text-align: right;
+	margin-top: 5px;
+}
+
+.action_area {
+	margin-top: 20px;
+	font-size: 23px;
+	padding: 0 20px;
+}
+
+
+.action_area .aa_btn{
+	color: transparent;
+	background-color: #48BAB8;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 30px;
+}
+
+.pic_area{
+	margin-top: 20px;
+	position: fixed;
+	bottom: 0px;
+}
+
+ .return_btn_area{
+	margin-top: 20px;
+	padding: 5% 10% 0 30%;
+}
+
+ .return_btn_area .return_btn{
+	font-size: 25px;
+	padding: 5px 0;
+	border-radius: 5px;
+	background-color: #11A9DB;
+	color: #ffffff;
+	text-align: center;
+}

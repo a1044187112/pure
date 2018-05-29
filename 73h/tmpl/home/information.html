@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<link rel="stylesheet" href="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+  	<script src="/73h/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+
+	  <!-- <script src="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+    <script type="text/javascript" src="/73h/__PUBLIC__/common/js/funcs.js"></script>
+    <script type="text/javascript" src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js"></script>
+
+  <script src="/73h/__PUBLIC__/common/lib/time_sel/js/mobiscroll_002.js" ></script>
+  <script src="/73h/__PUBLIC__/common/lib/time_sel/js/mobiscroll_004.js" ></script>
+  <link href="/73h/__PUBLIC__/common/lib/time_sel/css/mobiscroll_002.css" rel="stylesheet" type="text/css">
+  <link href="/73h/__PUBLIC__/common/lib/time_sel/css/mobiscroll.css" rel="stylesheet" type="text/css">
+  <script src="/73h/__PUBLIC__/common/lib/time_sel/js/mobiscroll.js" ></script>
+  <script src="/73h/__PUBLIC__/common/lib/time_sel/js/mobiscroll_003.js" ></script>
+  <script src="/73h/__PUBLIC__/common/lib/time_sel/js/mobiscroll_005.js" ></script>
+  <link href="/73h/__PUBLIC__/common/lib/time_sel/css/mobiscroll_003.css" rel="stylesheet" type="text/css">
+
+  <link  href="/73h/__PUBLIC__/common/lib/i-radio/i-radio.css" rel="stylesheet" >
+  <script src="/73h/__PUBLIC__/common/lib/i-radio/i-radio.js"></script>
+
+  <script src="/73h/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+  <script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+
+
+  	<link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/home/home/css/common.css">
+  	<link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/home/home/css/information.css">
+    <script src="/73h/__PUBLIC__/home/home/js/information.js"></script>
+	<title>完善病历本信息</title>
+</head>
+<body>
+	<div class="page" id="pageone">
+    <form class="submit">
+    <div class="container_area">
+        <div class="ui-grid-a container_area_name i_form_ctrl" >
+            <div class="ui-block-a container_area_name_name i_title">姓名 : </div>
+            <div class="ui-block-b container_area_name_input">
+                <input class="input_item" type="textarea" name="name"  />
+            </div>
+        </div>
+
+        <div class="ui-grid-b container_area_name filled_item_gender i_form_ctrl">
+            <div class="ui-block-a container_area_name_name i_title">性别 : </div>
+            <div class="ui-block-b container_area_name_input f_ctrl">
+                <!-- <input class="input_item" type="textarea" name="name"  /> -->
+                  <!-- <input type="radio" checked="checked" name="Sex" value="male" />&nbsp;&nbsp;男
+                  <br />
+                  <input type="radio" name="Sex" value="female" />&nbsp;&nbsp;女 -->
+            </div>
+            <div class="ui-block-c"></div>
+        </div>
+
+        <div class="ui-grid-a container_area_name i_form_ctrl">
+            <div class="ui-block-a container_area_name_name i_title">出生日期 : </div>
+            <div class="ui-block-b container_area_name_input">
+                <input class="input_item" type="text" name="time" id="booking_time"  />
+            </div>
+        </div>
+
+        <div class="ui-grid-a container_area_name i_form_ctrl">
+            <div class="ui-block-a container_area_name_name i_title">电话号码 : </div>
+            <div class="ui-block-b container_area_name_input">
+                <input class="input_item" type="number" name="phone" maxlength="11"  />
+            </div>
+        </div>
+    </div>
+      </form>
+      
+
+      <div class="ui-grid-b action_btn_con">
+        	<div class="ui-block-a abc_item"></div>
+        	<div class="ui-block-b abc_item">
+	        	<!-- <a href="wtai://wp/mc;10000" style="width: 100%;display: block;	color: #E0E933;"> -->
+	        	<div class="action_btn_con_submit" 
+                data-url="/73h/tmpl/home/infoSuccess.html"
+                data-data_src_type="form"
+                data-form_slcr=".submit"
+             >
+	        		提交
+	        	</div>
+        		<!-- href="/73h/tmpl/home/infoSuccess.html" -->
+        	</div>
+        	<div class="ui-block-c abc_item"></div>
+        </div>
+		
+
+
+
+
+
+      <!---尾部-->
+        <div class="hold_area" style="visibility: hidden;"> 
+             <div class="ui-grid-c" >
+                  <div class="ui-block-a btn_item" >
+                    <a target="_top" href="/73h/tmpl/home/index.html">
+                      <img src="/73h/__PUBLIC__/home/pic/bg/index/16.png"/>
+                    </a>
+                  </div>
+                  <div class="ui-block-b btn_item ">
+                    
+                      <img class="vip_center" src="/73h/__PUBLIC__/home/pic/bg/index/19.png"/>
+                  </div>
+                  <div class="ui-block-c btn_item">
+                      <img class="more_action" src="/73h/__PUBLIC__/home/pic/bg/index/17.png"/>
+                  </div>  
+                  <div class="ui-block-d btn_item">
+                      <img class="more_action" src="/73h/__PUBLIC__/home/pic/bg/index/18.png"/>
+                  </div>  
+            </div>
+               
+        </div>
+      
+        <div class="i_footer dis_area" >
+             <div class="ui-grid-c" >
+                  <a href="/73h/tmpl/home/index.html" class="ui-block-a btn_item" >
+                      <img src="/73h/__PUBLIC__/home/pic/bg/index/19.png"/>
+                  </a>
+                  <a href="/73h/tmpl/home/vip.html" class="ui-block-b btn_item ">
+                      <img class="vip_center" src="/73h/__PUBLIC__/home/pic/bg/index/20.png"/>
+                  </a>
+                  <a href="/73h/tmpl/home/cart.html" class="ui-block-c btn_item">
+                      <img class="more_action" src="/73h/__PUBLIC__/home/pic/bg/index/21.png"/>
+                  </a>  
+                  <a href="/73h/tmpl/home/feedBack.html" class="ui-block-d btn_item">
+                      <img class="more_action" src="/73h/__PUBLIC__/home/pic/bg/index/22.png"/>
+                  </a>  
+            </div>
+               
+        </div>
+      <!---尾部结束-->  	
+      
+	</div>
+
+</body>
+
+<script >
+    $(document).ready(function(){
+
+      CtrlElAction.isSimPost=true;
+      CtrlElAction.formBlur.inputBlur();
+      HomeCtrlElAction.btnFunc.bindSbmtBtnClick(".bi_clear_btn");
+
+      var parmeater = {
+          "action_btn_con_submit":"action_btn_con_submit", // 提交
+          "input_item":"input_item",  // 输入框
+      };
+      Information.init(parmeater);
+
+    //更新按钮绑定
+    // CtrlElAction.btnFunc.bindSbmtBtnClick(".submit_btn");
+
+    // 时间输入插件
+    var currYear = (new Date()).getFullYear();  
+    var opt={};
+    opt.date = {preset : 'date'};
+    opt.datetime = {preset : 'datetime'};
+    opt.time = {preset : 'time'};
+    opt.default = {
+      theme: 'android-ics light', //皮肤样式
+      display: 'modal', //显示方式 
+      mode: 'scroller', //日期选择模式
+      dateFormat: 'yyyy-mm-dd',
+      lang: 'zh',
+      showNow: true,
+      nowText: "今天",
+      //startYear: currYear - 10, //开始年份
+      startYear: currYear-100, //开始年份
+      endYear: currYear //结束年份
+    };
+    $("#booking_time").mobiscroll($.extend(opt['date'], opt['default']));
+
+      CtrlElAction.isSimPost = true;
+      HomeCtrlElAction.btnFunc.bindSbmtBtnClick(".action_btn_con_submit");
+    });
+
+    var e_option = [
+      {"type":"system","selector":".container_area .filled_item_gender .f_ctrl","post_name":"gender"},
+      {"type":"text","title":"男","val":1},
+      {"type":"text","title":"女","val":0},
+    ];
+    
+    iRadio.initCtrl(e_option);
+</script>
+</html>

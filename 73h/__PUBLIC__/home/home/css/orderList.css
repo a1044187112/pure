@@ -1,0 +1,167 @@
+body{
+	background-color: #E1DEE1;
+}
+/*状态导航条*/
+.status_nav_area{
+	background-color: #37B9B9;
+	padding: 20px 10px;
+}
+
+.status_nav_area .status_nav_con{
+	border: 1px solid #ffffff;
+}
+
+.status_nav_area .status_nav_con .sn_item{
+	font-size: 20px;
+	text-align: center;
+	padding: 5px 0;
+	color: #ffffff;
+	display: block;
+}
+
+.status_nav_area .status_nav_con .sn_active{
+	background-color: #ffffff;
+	color: #37B9B9;
+}
+
+
+.status_nav_area .status_nav_con .sn_item:nth-child(1){
+	border-right: 1px solid #ffffff;
+}
+
+.status_nav_area .status_nav_con .sn_item:nth-child(2){
+	border-right: 1px solid #ffffff;
+}
+
+.status_nav_area .status_nav_con .sn_item:nth-child(3){
+	border-right: 1px solid #ffffff;
+}
+
+.status_nav_area .status_nav_con .sn_item:nth-child(4){
+}
+
+
+/*状态导航条结束*/
+
+/*订单简介列表*/
+.order_intro_list_area{
+	
+}
+
+.order_intro_list_area .order_intro_con{
+
+}
+
+.order_intro_list_area .order_intro_con .goods_intro_list_area{
+
+}
+
+.order_intro_list_area .order_intro_con .goods_intro_list_area .goods_intro_con{
+	background-color: #ffffff;
+	padding: 10px 0;
+	margin-top: 10px;
+}
+
+.order_intro_list_area .order_intro_con .goods_intro_list_area .goods_intro_con .gic_item{
+
+}
+
+.order_intro_list_area .order_intro_con .goods_intro_list_area .goods_intro_con .gic_item:nth-child(1){
+	width: 30%;
+	padding: 0 10px;
+}
+
+.order_intro_list_area .order_intro_con .goods_intro_list_area .goods_intro_con .gic_item:nth-child(2){
+	width: 50%;
+	font-size: 20px;
+	padding-top: 10px;
+	color: #353334;
+}
+
+.order_intro_list_area .order_intro_con .goods_intro_list_area .goods_intro_con .gic_item:nth-child(3){
+	width: 20%;
+	color: #DC9F4A;
+	text-align: center;
+}
+
+.order_intro_list_area .order_intro_con .goods_intro_list_area .goods_intro_con .gic_status_item {
+}
+
+
+.order_intro_list_area .order_intro_con .goods_intro_list_area .goods_intro_con .gic_status_item .gic_si_item{
+
+}
+
+.order_intro_list_area .order_intro_con .goods_intro_list_area .goods_intro_con .gic_status_item .gic_si_item:nth-child(1){
+
+}
+
+.order_intro_list_area .order_intro_con .goods_intro_list_area .goods_intro_con .gic_status_item .gic_si_item:nth-child(2){
+
+}
+
+.order_intro_list_area .order_intro_con .goods_intro_list_area .goods_intro_con .gic_status_item .gic_si_item:nth-child(3){
+	padding-top: 15px;
+	font-size: 20px;
+	color: #9C9C9C;
+}
+
+.order_intro_list_area .order_intro_con .action_info_area{
+	padding: 15px 0;
+}
+
+.order_intro_list_area .order_intro_con .action_info_area .total_info{
+
+}
+
+.order_intro_list_area .order_intro_con .action_info_area .total_info .ti_item{
+	text-align: center;
+	color: #9C9C9C;
+}
+
+.order_intro_list_area .order_intro_con .action_info_area .total_info .ti_item .val{
+	color: #D10A10;
+	font-size: 20px;
+}
+
+.order_intro_list_area .order_intro_con .action_info_area .total_info .ti_item:nth-child(1){
+	width: 20%;
+
+}
+
+.order_intro_list_area .order_intro_con .action_info_area .total_info .ti_item:nth-child(2){
+	width: 30%;
+	padding-top: 3px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.order_intro_list_area .order_intro_con .action_info_area .total_info .ti_item:nth-child(3){
+	width: 50%;
+
+}
+
+.order_intro_list_area .order_intro_con .action_info_area .action_btn_con{
+	margin-top: 10px;
+}
+
+.order_intro_list_area .order_intro_con .action_info_area .action_btn_con .btn_item{
+	padding: 0 10px;
+}
+
+.order_intro_list_area .order_intro_con .action_info_area .action_btn_con .btn_item .btn_item_btn{
+	display: block;
+	background-color: #15AFB9;
+	color: #ffffff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 20px;
+}
+/*订单简介列表结束*/
+
+
+
+
+
+
+

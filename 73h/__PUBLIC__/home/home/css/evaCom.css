@@ -1,0 +1,38 @@
+body{
+	background-color: #ddd;
+	/*font-family: "微软雅黑";*/
+}
+.container_textarea>div:first-child{
+	width: 3%;
+}
+.container_textarea>div:nth-child(2){
+	width: 94%;
+}
+.container_textarea>div:nth-child(2) .con_textarea{
+	resize: none;
+	outline: none;
+	width: 100%;
+	font-size: 14px;
+	padding:10px 10px 10px 15px ;
+	color: #bbb;
+	border:1px solid #bbb;
+}
+.container_textarea>div:nth-child(2) .con_textarea:focus{
+	color: #111;
+}
+.container_eva{
+	width: 70%;
+	border-radius:15px;
+	margin: auto;
+	background-color: #3dbabc;
+	margin-top:80px;
+}
+.container_eva .eva_btn{
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #eee;
+	font-size: 22px;
+	line-height: 1.6;
+}

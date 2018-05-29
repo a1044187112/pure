@@ -1,0 +1,43 @@
+
+/*滚动日历*/
+.i_schedule{
+	
+}
+
+.i_schedule .schedule_con{
+	padding: 10px 0;
+}
+
+.i_schedule .schedule_con .sc_dir_prev{
+	float: right;
+    width: 0;
+    height: 0;
+    border-width:  15px 30px 15px 0px;
+    border-style: solid;
+    border-color: transparent #009CC8 transparent transparent ;
+}
+
+.i_schedule .schedule_con .sc_dir_next{
+	float: left;
+    width: 0;
+    height: 0;
+    border-width:  15px 0 15px 30px;
+    border-style: solid;
+    border-color: transparent transparent transparent #009CC8 ;
+}
+
+.i_schedule .schedule_con .sc_item:nth-child(1){
+	width: 25%;
+}
+
+.i_schedule .schedule_con .sc_item:nth-child(2){
+	width: 50%;
+	font-size: 20px;
+	text-align: center;
+}
+
+.i_schedule .schedule_con .sc_item:nth-child(3){
+	width: 25%;
+	
+}
+/*滚动日历结束*/

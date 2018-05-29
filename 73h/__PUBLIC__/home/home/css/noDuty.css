@@ -1,0 +1,96 @@
+.doc_intro_area{
+	//margin-top: 20px;
+	background-color: #E5E4E4;
+}
+
+.doc_intro_area a{
+	display: block;
+}
+
+.doc_intro_area .dintro_con{
+	padding:5px 20px 5px 10px;
+	background-color: #ffffff;
+	
+}
+
+.doc_intro_area .dintro_con .tc_item:nth-child(1){
+	width: 30%;
+	padding-top: 15px;
+}
+.doc_intro_area .dintro_con .tc_item:nth-child(2){
+	width: 65%;
+	//text-align: center;
+	font-size: 12px;
+	color: #3F3F3F;
+	padding: 0 10px;
+}
+.doc_intro_area .dintro_con .tc_item:nth-child(3){
+	width: 5%;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.doc_intro_area .dintro_con .tc_name{
+}
+
+.doc_intro_area .dintro_con .tc_name .tcn_item{
+	margin-top: 3px;
+}
+
+.doc_intro_area .dintro_con .tc_name .doc_name{
+	font-size: 25px;
+}
+
+.doc_intro_area .dintro_con .tc_name .doc_skilled{
+	text-align: justify;
+}
+
+.doc_intro_area .dintro_con .tc_name .patients{
+	color: #DFAF96;
+}
+
+.doc_intro_area .dintro_con .tc_name .rest_reg{
+	color: #71B3B5;
+	font-size: 20px;
+}
+
+/*三角箭*/
+.tci_tri_line{
+	position: relative;
+}
+
+.tci_tri_line .tci_tri1{
+	border-width: 20px 0 20px 20px;
+	border-color: transparent transparent transparent #717171;
+	border-style: solid;
+	position: absolute;
+}
+
+.tci_tri_line .tci_tri2{
+	border-width: 16px 0 16px 16px;
+	border-color: transparent transparent transparent #ffffff;
+	border-style: solid;
+	position: absolute;
+	top:4px;
+	
+}
+/*三角箭结束*/
+
+.no_duty{
+	width: 45%;
+	margin:auto;
+	margin-top:30px;
+}
+.intro_text{
+	width: 100%;
+	text-align: center;
+	font-size: 6vmin;
+	color: #019fcc;
+	margin-top:25px;
+}
+
+
+
+
+
+

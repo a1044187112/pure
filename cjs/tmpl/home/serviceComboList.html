@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<link rel="stylesheet" href="/cjs/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+  	<script src="/cjs/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+  	<script src="/cjs/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script>
+
+  	<script src="/cjs/__PUBLIC__/common/lib/action-popup/action-popup.js"></script>
+  	<link rel="stylesheet" href="/cjs/__PUBLIC__/common/lib/action-popup/action-popup.css?a=333">
+
+
+  	<link rel="stylesheet" type="text/css" href="/cjs/__PUBLIC__/home/home/css/common.css">
+  	<link rel="stylesheet" type="text/css" href="/cjs/__PUBLIC__/home/home/css/serviceComboList.css">
+
+	<title>平安俱乐部-车辆检修套餐</title>
+</head>
+<body>
+	<div class="page" id="pageone">
+		
+		<div class="list_area">
+      
+      <a target="_top" href="/cjs/tmpl/home/serviceComboDetail.html">
+        <div class="ui-grid-a combo_item">
+
+            <div class="ui-block-a ci_img">
+              <img src="/cjs/__PUBLIC__/home/pic/bg/service_combo/1.png">
+            </div>
+            <div class="ui-block-b ci_info">
+              <div class="ui-grid-solo cii_name">
+                <div class="ui-block-a">
+                  检修服务A套餐
+                </div>
+                
+              </div>
+              <div class="ui-grid-solo cii_price">
+                <div class="ui-block-a">
+                  <span class="cp_item sym1">￥</span>
+                  <span class="cp_item val">700</span>
+                  <span class="cp_item sym2">元</span>
+                  
+                </div>
+                
+              </div>
+            </div>
+
+        </div>
+      </a>
+			
+
+	        <div class="ui-grid-a combo_item">
+
+	          <div class="ui-block-a ci_img">
+	            <img src="/cjs/__PUBLIC__/home/pic/bg/service_combo/1.png">
+	          </div>
+	          <div class="ui-block-b ci_info">
+	            <div class="ui-grid-solo cii_name">
+	            	<div class="ui-block-a">
+	            		检修服务A套餐
+	            	</div>
+	            	
+	            </div>
+	            <div class="ui-grid-solo cii_price">
+	            	<div class="ui-block-a">
+	            		<span class="cp_item sym1">￥</span>
+	            		<span class="cp_item val">700</span>
+	            		<span class="cp_item sym2">元</span>
+	            		
+	            	</div>
+	            	
+	            </div>
+	          </div>
+
+	        </div>
+
+		</div>
+
+		      <!---尾部-->
+        <div class="hold_area" style="visibility: hidden;"> 
+             <div class="ui-grid-b" >
+                  <div class="ui-block-a btn_item" >
+                    <a target="_top" href="/cjs/tmpl/home/index.html">
+                      <img src="/cjs/__PUBLIC__/home/pic/bg/index/8.png"/>
+                    </a>
+                  </div>
+                  <div class="ui-block-b btn_item">
+                    <a target="_top" href="/cjs/tmpl/home/vip.html">
+                      <img src="/cjs/__PUBLIC__/home/pic/bg/index/10.png"/>
+                    </a>
+                  </div>
+                  <div class="ui-block-c btn_item">
+                    <a target="_top" href="/cjs/tmpl/home/cart.html">
+                      <img src="/cjs/__PUBLIC__/home/pic/bg/index/11.png"/>
+                    </a>
+                  </div>  
+            </div>
+               
+        </div>
+      
+        <div class="i_footer" >
+ 
+             <div class="ui-grid-b" >
+                  <div class="ui-block-a btn_item" >
+                    <a target="_top" href="/cjs/tmpl/home/index.html">
+                      <img src="/cjs/__PUBLIC__/home/pic/bg/index/8.png"/>
+                    </a>
+                  </div>
+                  <div class="ui-block-b btn_item ">
+                    
+                      <img class="vip_center" src="/cjs/__PUBLIC__/home/pic/bg/index/10.png"/>
+                  </div>
+                  <div class="ui-block-c btn_item">
+                      <img class="more_action" src="/cjs/__PUBLIC__/home/pic/bg/index/11.png"/>
+                  </div>  
+            </div>
+               
+        </div>
+
+        <script>
+            $(document).ready(function() {
+              //配置项
+              var e_option = [
+                {"type":"system","selector":".i_footer","bind_el_selector":".vip_center","bind_el_unq_css_name":"vip_center"},
+                {"type":"item","text":"我要评价","action_url":"http://www.baidu.com"},  
+                {"type":"item","text":"投诉受理","action_url":"#"},
+              ];
+              
+              ActionItemPopup.initCtrl(e_option);
+
+              var e_option = [
+                {"type":"system","selector":".i_footer","bind_el_selector":".more_action","bind_el_unq_css_name":"more_action"},
+                {"type":"item","text":"驾考预约","action_url":"http://www.baidu.com"},  
+                {"type":"item","text":"贵州交警APP","action_url":"#"},
+              ];
+              
+              ActionItemPopup.initCtrl(e_option);
+            });
+        </script>
+  
+      <!---尾部结束-->  
+
+	</div>
+
+</body>
+</html>

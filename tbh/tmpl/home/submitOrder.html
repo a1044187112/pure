@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+ 		<meta http-equiv="Pragma" content="no-cache" />
+  		<meta http-equiv="Expires" content="0" />
+  		<meta charset="utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<link rel="stylesheet" href="/tbh/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+    	<script src="/tbh/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+  <!--    <script src="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+
+    	<link rel="stylesheet" type="text/css" href="/tbh/__PUBLIC__/home/home/css/submitOrder.css">
+    	<script  src="/tbh/__PUBLIC__/home/home/js/submitOrder.js"></script>
+
+    	<script src="/73h/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+  		<script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+		<title>提交订单</title>
+	</head>
+
+	<body>
+	<div data-role="page" class="page" id="pageone">
+		<form>	
+		<div class="container">
+			<div class="ui-grid-a container_com">
+				<div class="ui-block-a container_com_item">
+					<img src="/tbh/__PUBLIC__/home/pic/bg/cart/1.png">
+				</div>
+				<div class="ui-block-b container_com_item">
+					<div>12mm强化复合木地板橡木地板耐磨防潮地暖环保 卫生 实惠 安全
+					</div>
+					<div class="ui-grid-b container_com_info">
+						<div class="ui-block-a container_com_info_item">￥359.00</div>
+						<div class="ui-block-b container_com_info_item">运费 包邮</div>
+						<div class="ui-block-c container_com_info_item">x1</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ui-grid-a container_com">
+				<div class="ui-block-a container_com_item">
+					<img src="/tbh/__PUBLIC__/home/pic/bg/cart/2.png">
+				</div>
+				<div class="ui-block-b container_com_item">
+					<div>[多功能沙发] 集沙发 床 桌子 工作台于一身的沙发
+					</div>
+					<div class="ui-grid-b container_com_info">
+						<div class="ui-block-a container_com_info_item">￥2059.00</div>
+						<div class="ui-block-b container_com_info_item">运费￥300.00</div>
+						<div class="ui-block-c container_com_info_item">x1</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ui-grid-b container_price">
+				<div class="ui-block-a container_price_item"></div>
+				<div class="ui-block-b container_price_item">合计<span class="container_price_item_span">（含运费）</span>: <span class="container_price_item_span">￥2718.00</span></div>
+			</div>
+
+
+			<div class="container_address">编辑收货地址</div>
+			<div class="ui-grid-a container_info i_form_ctrl">
+				<div class="ui-block-a container_info_item i_title">收货人</div>
+				<div class="ui-block-b container_info_item">
+					<input class="container_info_item_input" type="text" name="name" placeholder="姓名" >
+				</div>
+			</div>
+			<div class="ui-grid-a container_info i_form_ctrl">
+				<div class="ui-block-a container_info_item i_title">联系电话</div>
+				<div class="ui-block-b container_info_item">
+					<input class="container_info_item_input" type="text" name="phone" maxlength="11" placeholder="手机或固定电话"
+					>
+				</div>
+			</div>
+			<div class="ui-grid-a container_info i_form_ctrl">
+				<div class="ui-block-a container_info_item i_title">选中地区</div>
+				<div class="ui-block-b container_info_item">
+					<input class="container_info_item_input" type="text" name="area" placeholder="选择省份 选择城市 选择地区" >
+				</div>
+			</div>
+			<div class="ui-grid-a container_info i_form_ctrl">
+				<div class="ui-block-a container_info_item i_title">详细地址</div>
+				<div class="ui-block-b container_info_item">
+					<input class="container_info_item_input" type="text" name="address" placeholder="街道门牌信息" >
+				</div>
+			</div>
+			<div class="ui-grid-a container_info">
+				<div class="ui-block-a container_info_item">邮政编码</div>
+				<div class="ui-block-b container_info_item">
+					<input class="container_info_item_input" type="text" name="id" placeholder="邮政编码（选填）"
+					>
+				</div>
+			</div>
+		</div>
+			<input class="total_price" type="text" name="total_price" value="55" style="display:none;" >
+		</form>		
+		
+
+		<div class="ui-grid-a footer_hidden">
+			<div class="ui-block-a footer_hidden_item">合计<span class="footer_hidden_item_span">￥2718.00</span>元</div>
+			<div class="ui-block-b footer_hidden_item">保存提交订单</div>
+		</div>
+	
+		<div class="ui-grid-a footer_show">
+			<div class="ui-block-a footer_show_item">合计 <span class="footer_show_item_item">￥2718.00</span> 元</div>
+			<div class="ui-block-b footer_show_item submint_btn_order"><div class="footer_show_item_btn bi_clear_btn"
+				data-url="/tbh/php/ajax_test.php?get_id=12"
+                data-data_src_type="form"
+                data-form_slcr="form"
+			  >保存提交订单</a></div>
+		</div>
+		<!-- href="/tbh/tmpl/home/pay.html" -->
+		
+	
+	</div>
+	</body>
+<script type="text/javascript">
+$(document).ready(function(){
+    var parameter = {
+            "container_info":"container_info", // 信息输入item
+            "submint_btn_order":"submint_btn_order",// 提交订单
+            "footer_show_item_item":"footer_show_item_item",
+            "total_price":"total_price",
+            
+        };
+
+        
+    SubmitOrder.init(parameter);
+
+    CtrlElAction.isSimPost=false;
+    CtrlElAction.formBlur.inputBlur(); //表单验证  
+    HomeCtrlElAction.btnFunc.bindSbmtBtnClick(".bi_clear_btn");
+    
+  });
+</script>
+</html>

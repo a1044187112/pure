@@ -1,0 +1,50 @@
+body{
+	font-family: "黑体";
+}
+
+.combo_detail_area{
+	margin-top: 10px;
+}
+
+.combo_detail_area .cd_name_con{
+	padding: 0px 20px;
+	color: #CA3581;
+	font-size: 20px;
+	font-family: "黑体";
+}
+
+.combo_detail_area .cd_info_con{
+	padding: 0 10%;
+	font-family: "黑体";
+
+}
+
+.contact_intro_area{
+	padding: 0 10%;
+	margin: 20px 0;
+}
+
+.contact_intro_area .ci_item{
+	margin: 10px 0;
+}
+
+
+.contact_intro_area .ci_item .cii_img{
+	width: 8%;
+}
+
+.contact_intro_area .ci_item .cii_info{
+	width: 90%;
+	margin-left: 2%;
+	padding-top: 3px;
+}
+
+
+
+
+
+
+
+
+
+

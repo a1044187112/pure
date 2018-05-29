@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/73h/__PUBLIC__/common/css/bootstrap.min.css" />
+<script src="/73h/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script src="/73h/__PUBLIC__/common/js/bootstrap.min.js"></script>
+
+<script src="/73h/__PUBLIC__/common/js/funcs.js?rand={$rand}"></script>
+<script src="/73h/__PUBLIC__/common/js/notice.js?rand={$rand}"></script>
+<script src="/73h/__PUBLIC__/common/js/ajax_data.js?rand={$rand}"> </script>
+
+<script src="/73h/__PUBLIC__/common/lib/ctrl_el_action/ctrl-el-action.js?rand={$rand}"></script>
+
+<script src="/73h/__PUBLIC__/common/lib/i_file_upload/file_upload.js?rand={$rand}"></script>
+<link rel="stylesheet" href="/73h/__PUBLIC__/common/lib/i_file_upload/file_up.css?rand={$rand}" />
+
+
+<link href="/73h/__PUBLIC__/common/lib/dis_content_set/dis_content_set.css?rand={$rand}" rel="stylesheet">
+<script src="/73h/__PUBLIC__/common/lib//dis_content_set/dis_content_set.js?rand={$rand}"></script>
+
+<link href="/73h/__PUBLIC__/common/lib/summernote/summernote.css" rel="stylesheet">
+<link href="/73h/__PUBLIC__/common/lib/summernote/font-awesome/css/font-awesome.css" rel="stylesheet">
+<script src="/73h/__PUBLIC__/common/lib/summernote/summernote.min.js"></script>
+<script src="/73h/__PUBLIC__/common/lib/summernote/summernote-zh-CN.js"></script>
+
+<link rel="stylesheet" href="/73h/__PUBLIC__/common/lib/data_editor/data-editor.css?rand={$rand}">
+<script src="/73h/__PUBLIC__/common/lib/data_editor/data-editor.js?rand={$rand}"></script>
+
+
+<link rel="stylesheet" href="/73h/__PUBLIC__/admin/index/css/common.css?rand={$rand}" />
+
+<title>管理员后台</title>
+</head>
+<body>
+<div class="i_content">
+    <div class="page_title">
+        <h1>商城配置数据</h1>
+    </div>
+    <hr />
+    <!-- 数据表 -->
+    <div class="data_table">   
+        <table class="table table-bordered">
+            <tr>
+                <th class="dt_title">配置名称</th>
+                <th class="dt_title">当前值</th>
+                <th class="dt_title">操作</th>
+            </tr>
+            
+            <!-- 数据项 -->
+            <div class="data_item">
+                <tr class="t_row intro_row">
+                    <td class="t_col">
+                        商品统一价
+                    </td>
+                    <td class="t_col">
+                        10元
+                    </td>
+
+                    <td class="t_col show_box">
+                        <button type="button" 
+                            class="btn btn-primary btn-lg i_show_detail_box_link_btn data_edit_btn data_edit_btn_item_id_1"  
+                            type="button" 
+                            style=" font-size:12px;padding:5px;"
+                            aria-expanded="false"
+                            data-target=""
+                            data-toggle="collapse"                          
+                            data-action_type="modify"
+                            data-editor_selector=".modify_row_item_id_1 .td"
+                            data-dis_row_selr=".detail_row_item_id_1"          
+                            data-self_selr=".data_edit_btn_item_id_1"
+                            data-dis_name = "编辑"
+                            data-anti_dis_name = "取消编辑"
+                            data-show_sym_is_default   = 0
+                        >
+                        编辑
+                        </button>
+                        
+                    </td>
+                </tr>
+                <tr class="detail_row_item_id_1 detail_row info_detail_row" >
+                    <td colspan="5" class="td">
+                        <div class="collapse show_detail_box" id="show_detail_box_item_id_1">
+                            <div class="well container" style="width:100%">
+
+                                <div class="detail_item row uniform_price">
+                                    <div class="col-md-2">统一售价</div>
+                                    <div class="col-md-9 item_cnt real_data">10</div>
+                                </div>
+
+
+                                <div class="detail_item row id" style="display: none;">
+                                    <div class="col-md-2">表id</div>
+                                    <div class="col-md-9 item_cnt real_data">_item_id_1</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="modify_row info_detail_row modify_row_item_id_1">
+                    <td colspan="3" class="td">
+                    </td>
+                </tr>
+                
+            </div>
+                
+
+            <!-- 数据项结束 -->
+            
+
+        </table>
+
+    </div>    
+    <!-- 数据表结束 -->
+
+    
+</div>
+</body>
+<script>
+$(document).ready(function(e) {
+    var update_url="{$update_url}"; 
+
+    var i_option =[
+        {"type":"system","submit_url":update_url,"box_title_prefix":"统一售价",/*"sim_post_if":true,*/},
+        {"type":"text","title":"统一售价","bind_key":"uniform_price","need_cols":4},
+        {"type":"hidden","title":"数据项id-添加框不需要","bind_key":"id","need_cols":1,"only_modify_has":true},
+
+    ];
+    DataEditor.bindAndLinkEditBtn(i_option);
+
+    //详情下拉框连接按钮显示姓名改变
+    //CtrlElAction.btnFunc.detailBoxLinkBtnDis();
+    //更新按钮绑定
+    CtrlElAction.btnFunc.bindBtnClick(".data_table .update_btn");
+
+    //绑定选择框数据
+    //CtrlElAction.selCtrlFunc.contenSelChangeBind();
+});
+
+
+
+    
+</script>
+</html>

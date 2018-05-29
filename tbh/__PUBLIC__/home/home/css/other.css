@@ -1,0 +1,17 @@
+*{
+	margin:0px;
+	padding:0px;
+	text-decoration: none;
+}
+img{
+	width: 100%;
+}
+.container{
+	width: 100%;
+}
+.container .container_class{
+	width: 100%;
+}
+.container .container_group>.container_group_item{
+	padding:22px 27px 22px 27px;
+}

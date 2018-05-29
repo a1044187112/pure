@@ -1,0 +1,10 @@
+img{
+	width: 100%;
+}
+.container .container_service_sel{
+	margin-top: 10px;
+}
+.container .container_service_sel>.sel_item{
+	padding:0px 16px;
+	margin-top:10px;
+}

@@ -1,0 +1,34 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+img{
+	width: 100%;
+}
+body{
+	background-color: rgba(18,64,112,0.6);
+}
+.intro{
+	margin-left: 2%;
+	color: rgba(12,252,253,0.8);
+	margin-top: 5px;
+}
+.intro .intro_title{
+
+}
+.intro .intro_con{
+	margin: 8px 8px 8px 8px;
+	/*font-size: 12px !important;*/
+	font-size: 12px !important;
+	line-height: 2.0;
+}
+.intro .intro_img{
+	border:1px solid #0cfcfd;
+	width: 90%;
+	margin:5px auto;
+	margin-bottom: 20px;
+	padding:5px 8px;
+}
+.intro .intro_title .intro_img img{
+	display: block;
+}

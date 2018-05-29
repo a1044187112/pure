@@ -1,0 +1,62 @@
+body{
+	background-color: #E1DEE1;
+}
+
+.info_input_area{
+	padding: 10px 35px 10px 10px;
+}
+
+.info_input_area textarea{
+	width: 100%;
+	padding: 10px;
+	text-align: justify;
+	font-family: "ºÚÌå";
+}
+
+.click_good_notice{
+	padding-left: 10px;
+	color: #909090;
+}
+
+.click_good_area{
+}
+
+.click_good_area .click_good_con{
+	padding: 20px;
+}
+
+.click_good_area .click_good_con .cgc_item{
+
+}
+
+.click_good_area .click_good_con .cgc_item:nth-child(1){
+	padding-left: 35%;
+
+}
+
+.click_good_area .click_good_con .cgc_item:nth-child(2){
+	padding-left: 10px;
+	font-size: 25px;
+	padding-top: 15px;
+	color: #4CB0AF;
+}
+
+
+.cmt_sub_btn_area{
+	margin-bottom: 20px;
+	background-color: #E1E1E1;
+	padding: 20px 0px;
+}
+
+.cmt_sub_btn_area .booking_sub_btn{
+	//width: 120px;
+	border-radius: 20px;
+	background-color: #14AFB8;
+	color: #ffffff;
+	text-align: center;
+}
+
+.cmt_sub_btn_area .booking_sub_btn .bst_text{
+	font-size: 20px;
+	padding: 5px 10px;
+}

@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+ 		<meta http-equiv="Pragma" content="no-cache" />
+  		<meta http-equiv="Expires" content="0" />
+  		<meta charset="utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<link rel="stylesheet" href="/fln/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+    	<script src="/fln/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+
+		 
+    	<link rel="stylesheet" type="text/css" href="/fln/__PUBLIC__/home/home/css/evaluation.css" >
+    	<script src="/fln/__PUBLIC__/home/home/js/evaluation.js" ></script>
+
+		<title>个人中心</title>
+	</head>
+
+	<body>
+	<div data-role="page" class="page" id="pageone">
+		<div class="container">
+			<div class="container_title">请对此次的律师咨询进行评价！</div>
+			<div class="ui-grid-b container_eva">
+				<div class="ui-block-a container_eva_item">
+					<img class="img_btn active" src="/fln/__PUBLIC__/home/pic/bg/evaluation/6.png">
+				</div>
+				<div class="ui-block-b container_eva_item eva_sel">满&nbsp;&nbsp;意</div>
+				<div class="ui-block-c container_eva_item">
+					<img class="container_eva_item_img" src="/fln/__PUBLIC__/home/pic/bg/evaluation/2.png">
+				</div>
+			</div>
+
+			<div class="ui-grid-b container_eva">
+				<div class="ui-block-a container_eva_item">
+					<img class="img_btn" src="/fln/__PUBLIC__/home/pic/bg/evaluation/7.png">
+				</div>
+				<div class="ui-block-b container_eva_item eva_sel">基本满意</div>
+				<div class="ui-block-c container_eva_item">
+					<img class="container_eva_item_img" src="/fln/__PUBLIC__/home/pic/bg/evaluation/3.png">
+				</div>
+			</div>
+
+			<div class="ui-grid-b container_eva">
+				<div class="ui-block-a container_eva_item">
+					<img class="img_btn" src="/fln/__PUBLIC__/home/pic/bg/evaluation/7.png">
+				</div>
+				<div class="ui-block-b container_eva_item eva_sel">不 满 意</div>
+				<div class="ui-block-c container_eva_item">
+					<img class="container_eva_item_img" src="/fln/__PUBLIC__/home/pic/bg/evaluation/4.png">
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="eva"><a class="eva_btn" href="/fln/tmpl/home/evaSuccess.html">评价</a></div>
+		
+	
+
+	</div>
+	</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var parmetar = {
+			"container_eva":"container_eva",  // item 
+			"container_eva_item":"container_eva_item", // 图片点击按钮父选择器
+			"img_btn":"img_btn", //图片按钮
+			"eva_sel":"eva_sel", // 评语
+			"eva_btn":"eva_btn",// 提交
+			"selImgURL":"/fln/__PUBLIC__/home/pic/bg/evaluation/6.png", // 选中时图片url 
+			"unselImgURL":"/fln/__PUBLIC__/home/pic/bg/evaluation/7.png",// 未选中是图片url
+
+		};
+		Evaluation.init(parmetar);
+	});
+</script>
+</html>

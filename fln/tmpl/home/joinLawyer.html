@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+ 		<meta http-equiv="Pragma" content="no-cache" />
+  		<meta http-equiv="Expires" content="0" />
+  		<meta charset="utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<link rel="stylesheet" href="/fln/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.css">
+    	<script src="/fln/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+  <!--    <script src="/73h/__PUBLIC__/common/lib/jqm/jquery.mobile-1.4.5.min.js"></script> -->
+
+  
+    	<link rel="stylesheet" type="text/css" href="/fln/__PUBLIC__/home/home/css/joinLawyer.css">
+    	<script type="text/javascript" src="/fln/__PUBLIC__/home/home/js/joinLawyer.js"></script>
+		<title>加入律师</title>
+	</head>
+
+<body>
+	<div data-role="page" class="page" id="pageone">
+		<div class="header">加入律师</div>
+		<form action="#" class="form">
+			<input class="input_text" type="text" name="name" value="姓&nbsp;&nbsp;名" >
+
+			<input class="input_text" type="text" name="phone" value="手机号码"	>
+
+			<input class="input_text" type="text" name="idCard" value="身 份 证">
+
+			<input class="input_text" type="text" name="id" value="律师执业号">
+
+			<input class="input_text" type="text" name="unit" value="所在律师事务所">
+
+			<input class="input_text" type="text" name="address" value="执业所在地（填写到县区级）">
+
+			<input class="input_text" type="text" name="time" value="初次执业时间">
+
+			
+		</form>
+			<div class="submit"><a class="submit_btn" href="#">下一步</a></div>
+	</div>		
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var parmetar = {
+			"input_text":"input_text",
+			"submit_btn":"submit_btn",
+		};
+		JoinLawyer.init(parmetar);
+	});
+</script>
+
+</html>

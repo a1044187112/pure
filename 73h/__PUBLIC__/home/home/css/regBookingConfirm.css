@@ -1,0 +1,112 @@
+/*医生专业资料*/
+.doc_intro_area{
+	//margin-top: 20px;
+	background-color: #E5E4E4;
+}
+
+.doc_intro_area .dintro_con{
+	padding:5px 20px 5px 10px;
+	background-color: #ffffff;
+	
+}
+
+.doc_intro_area .dintro_con .tc_item:nth-child(1){
+	width: 40%;
+	padding-top: 5px;
+}
+.doc_intro_area .dintro_con .tc_item:nth-child(2){
+	width: 60%;
+	//text-align: center;
+	font-size: 16px;
+	color: #3F3F3F;
+	padding: 3px 13px;
+}
+
+
+.doc_intro_area .dintro_con .tc_name{
+}
+
+.doc_intro_area .dintro_con .tc_name .tcn_item{
+	margin-top: 3px;
+}
+
+.doc_intro_area .dintro_con .tc_name .doc_name{
+	font-size: 25px;
+}
+
+.doc_intro_area .dintro_con .tc_name .doc_level{
+	margin-top: 10px;
+}
+
+.doc_intro_area .dintro_con .tc_name .doc_skilled{
+	text-align: justify;
+	margin-top: 10px;
+}
+
+/*医生专业资料结束*/
+
+.order_intro_area{
+	padding: 20px 30px;
+	font-size: 20px;
+}
+
+.order_intro_area .order_num{
+	color: #86C0BF;
+	margin-bottom: 10px;
+}
+.order_intro_area .buy_time{
+	color: #BBBBBB;
+}
+
+/*预约就诊详情*/
+.booking_detail_area{
+	margin-top: 20px;
+}
+
+.booking_detail_area .booking_item_con{ 
+	
+}
+
+.booking_detail_area .booking_item_con .bic_item{ 
+	font-size: 18px;
+}
+
+
+.booking_detail_area .booking_item_con .bic_item:nth-child(1){
+	width: 40%;
+	text-align: right;
+	padding-right: 10px;
+	color: #86C0BF;
+}
+
+.booking_detail_area .booking_item_con .bic_item:nth-child(2){
+	width: 60%;
+	color: #BBBBBB;
+	padding-right: 20px;
+	text-align: justify;
+}
+
+.booking_detail_area .booking_item_con .need_pay_cptl{ 
+	
+}
+/*预约就诊详情结束*/
+
+.booking_sub_btn_area{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	background-color: #E1E1E1;
+	padding: 20px 0px;
+}
+
+.booking_sub_btn_area .booking_sub_btn{
+	//width: 120px;
+	border-radius: 20px;
+	background-color: #14AFB8;
+	color: #ffffff;
+	text-align: center;
+}
+
+.booking_sub_btn_area .booking_sub_btn .bst_text{
+	font-size: 20px;
+	padding: 5px 10px;
+}

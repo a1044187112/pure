@@ -1,0 +1,26 @@
+.content{
+
+}
+.content .con_img_up{
+
+}
+.content .con_img_up img{
+	padding-top: 10%;
+	width: 70%;
+	padding-left: 5%;
+
+}
+
+.content .con_img_down{
+	
+}
+.content .con_img_down img{
+	width: 80%;
+	padding-left: 10%;
+
+}
+.content .con_button{
+	width: 40%;
+	padding-left: 30%;
+	padding-top:20%;
+}

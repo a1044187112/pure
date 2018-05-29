@@ -1,0 +1,52 @@
+
+.pic_area{
+	padding: 0px 20%;
+	width: 18%;
+	margin: auto;
+	padding-top: 50px;
+}
+
+.notice_area {
+	color: #48BAB8;
+	font-size: 23px;
+	margin-top: 30px;
+	padding: 0px 30px;
+}
+
+.notice_area .main_notice_title{
+	text-align: center;
+	font-size: 30px;
+}
+
+
+.notice_area .sub_notice_tsub{
+	text-align: right;
+	margin-top: 5px;
+}
+
+.action_btn_con{
+	margin-top: 30px;
+	width: 100%;
+}
+
+.action_btn_con .abc_item:nth-child(1){
+	width: 10%;
+}
+
+.action_btn_con .abc_item:nth-child(2){
+	width: 80%;
+	padding: 5px 15px;
+	background-color: #15AFB9;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 25px;
+}
+.action_btn_con .abc_item_btn{
+	color: #fff !important;
+	font-weight: normal;
+	display: block;
+	width: 100%;
+}
+.action_btn_con .abc_item:nth-child(3){
+	width: 10%;
+}

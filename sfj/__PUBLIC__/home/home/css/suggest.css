@@ -1,0 +1,39 @@
+body{
+	background-color: #E1DEE1;
+}
+
+.data_area{
+	padding: 10px;
+}
+
+.i_title{
+	margin-top: 10px;
+	padding-left: 15px;
+	font-size: 20px;
+}
+
+.info_input_area{
+	padding: 10px 35px 10px 10px;
+}
+
+.info_input_area textarea{
+	width: 100%;
+	padding: 10px;
+	text-align: justify;
+	font-family: "黑体";
+}
+
+
+.submit_btn_area{
+	margin-top: 20px;
+	padding:0 20%;
+}
+
+.submit_btn_area .submit_btn{
+	font-size: 25px;
+	padding: 5px 0;
+	border-radius: 20px;
+	background-color: #11A9DB;
+	color: #ffffff;
+	text-align: center;
+}

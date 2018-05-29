@@ -1,0 +1,146 @@
+.doc_intro_area{
+	//margin-top: 20px;
+	background-color: #E5E4E4;
+}
+
+.doc_intro_area a{
+	display: block;
+}
+
+.doc_intro_area .dintro_con{
+	padding:5px 20px 5px 10px;
+	background-color: #ffffff;
+	
+}
+
+.doc_intro_area .dintro_con .tc_item:nth-child(1){
+	width: 30%;
+	padding-top: 15px;
+}
+.doc_intro_area .dintro_con .tc_item:nth-child(2){
+	width: 65%;
+	//text-align: center;
+	font-size: 12px;
+	color: #3F3F3F;
+	padding: 0 10px;
+}
+.doc_intro_area .dintro_con .tc_item:nth-child(3){
+	width: 5%;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.doc_intro_area .dintro_con .tc_name{
+}
+
+.doc_intro_area .dintro_con .tc_name .tcn_item{
+	margin-top: 3px;
+}
+
+.doc_intro_area .dintro_con .tc_name .doc_name{
+	font-size: 25px;
+}
+
+.doc_intro_area .dintro_con .tc_name .doc_skilled{
+	text-align: justify;
+}
+
+.doc_intro_area .dintro_con .tc_name .patients{
+	color: #DFAF96;
+}
+
+.doc_intro_area .dintro_con .tc_name .rest_reg{
+	color: #71B3B5;
+	font-size: 20px;
+}
+
+/*三角箭*/
+.tci_tri_line{
+	position: relative;
+}
+
+.tci_tri_line .tci_tri1{
+	border-width: 20px 0 20px 20px;
+	border-color: transparent transparent transparent #717171;
+	border-style: solid;
+	position: absolute;
+}
+
+.tci_tri_line .tci_tri2{
+	border-width: 16px 0 16px 16px;
+	border-color: transparent transparent transparent #ffffff;
+	border-style: solid;
+	position: absolute;
+	top:4px;
+	
+}
+/*三角箭结束*/
+
+/*可用挂号单表*/
+.reg_booking_list_area {
+	padding: 0 10px;
+}
+.reg_booking_list_area a{
+	display: block;
+}
+
+.reg_booking_list_area .reg_booking_con:nth-child(2){
+	margin:20px 0;
+}
+
+.reg_booking_list_area .reg_booking_con .rbc_item:nth-child(1){
+	width: 20%;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 80px;
+}
+
+.reg_booking_list_area .reg_booking_con .rbc_item:nth-child(2){
+	width: 80%;
+
+}
+
+.reg_booking_list_area .reg_booking_con .rb_item_con{
+	//margin-top: 20px;
+}
+
+.reg_booking_list_area .reg_booking_con .rb_item_con .rbic_item{
+	margin-top: 20px;
+}
+
+.reg_booking_list_area .reg_booking_con .rb_item_con .rbii_item{
+	text-align: center;
+}
+
+.reg_booking_list_area .reg_booking_con .rb_item_con .rbii_item:nth-child(1){
+	width: 38%;
+	background-color: #36B8BB;
+	color: #ffffff;
+	padding: 5px 2px;
+}
+
+.reg_booking_list_area .reg_booking_con .rb_item_con .rbii_item:nth-child(2){
+	width: 24%;
+	padding-top: 2px;
+	color: #D99D51;
+	font-size: 20px;
+}
+
+.reg_booking_list_area .reg_booking_con .rb_item_con .rbii_item:nth-child(3){
+	width: 38%;
+	background-color: #009DCA;
+	color: #ffffff;
+	padding: 5px 2px;
+	border-radius: 20px;
+}
+/*可用挂号单表结束*/
+
+.reg_booking_list_area .reg_booking_con .rb_item_con .rbic_item .rbi_action_btn_expire{
+	background-color: #E2E1E1;
+
+}
+
+
+
+
+

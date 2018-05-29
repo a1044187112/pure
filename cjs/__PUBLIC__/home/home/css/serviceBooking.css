@@ -1,0 +1,51 @@
+.ui-page-theme-a .ui-body-inherit{
+	background-color: #fff;
+    border-color: #f00;
+    color: #333;
+    text-shadow: 0 1px 0 #f3f3f3;
+    border-radius: 20px;
+}
+
+body{
+	font-family: "黑体";
+}
+
+.booking_form{
+	margin-top: 60px;
+	padding: 0 20px;
+}
+
+
+.booking_form .bf_item{
+	margin-top: 10px;	
+}
+
+
+.booking_form .bf_item .bfi_title{
+	width: 30%;
+	text-align: right;
+	font-size: 20px;
+	padding-top: 15px;
+}
+
+.booking_form .bf_item .bfi_input{
+	margin-left: 5%;
+	width: 65%;
+}
+
+.booking_sub_btn{
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	background-color: #14AFB8;
+	color: transparent;
+}
+
+.booking_sub_btn_area{
+	margin-top: 40px;
+}
+.booking_sub_btn .bst_text{
+	padding-top: 35px;
+	padding-left: 30px;
+	font-size: 30px;
+}

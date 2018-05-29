@@ -1,0 +1,81 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+body{
+	background-color: #f7f7f7;
+}
+.con{
+	width: 82%;
+	margin-left: 13%;
+	margin-top: 40px;
+	position: relative;
+}
+.con .con_bg{
+	width: 100%;
+	background-color: #f5e927;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	z-index: -1;
+	transform:rotate(-7deg);
+	left: -5%;
+}
+.con .con_info{
+	background-color: #fff;
+	padding-bottom: 14%;
+}
+.con .con_info .c_i_title{
+	width: 88%;
+	padding-top: 8%;
+	font-size: 20px;
+	margin: auto;
+	text-align: center;
+	border-bottom: 1px solid #aaa;
+	line-height: 1.7;
+}
+.con .con_info .c_i_item{
+	width: 94%;
+	/*margin: auto;*/
+	margin-left: 6%;
+	padding-top: 10px;
+	font-size: 14px;
+}
+.con .con_info .c_i_item:nth-child(2){
+	margin-top: 12px;
+}
+.con .con_info .c_i_item .c_i_class:first-child{
+	width: 20%;
+}
+.con .con_info .c_i_item .c_i_class:first-child .c_i_img{
+	width: 25px;
+	height: 25px;
+}
+.con .con_info .c_i_item .c_i_class:nth-child(2){
+	width: 80%;
+	font-size: 13px;
+	color: #444;
+	line-height: 1.9;
+}
+.con .con_info .c_i_item .c_i_class .c_i_class_value{
+	color: #888;
+}
+
+
+
+.is_bth{
+	padding: 55px 0 30px 0;
+	width: 100%;
+}
+.is_bth .i_b_btn{
+	width: 45%;
+	display: block;
+	padding: 8px;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #f5e827;
+	margin:auto;
+	color: #444;
+}

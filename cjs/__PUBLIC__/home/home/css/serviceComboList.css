@@ -1,0 +1,52 @@
+body{
+}
+.list_area{
+	background-color: #E5E4E4;
+	margin: 10px 0;
+}
+
+.list_area .combo_item{
+	border-color: #000000;
+	border-width: 1px 0 1px 0;
+	border-style: solid;
+	margin: 10px 0;
+	background-color: #ffffff;
+}
+
+
+.list_area .combo_item .ci_img{
+	width: 35%;
+	font-size: 0px;
+}
+
+.list_area .combo_item .ci_info{
+	margin-left: 5%;
+	width: 60%;
+}
+
+.list_area .combo_item .ci_info .cii_name{
+	padding:30px 10px;
+	font-family: "黑体";
+	font-size: 23px;
+	color: #3F3F3F;
+
+}
+
+.list_area .combo_item .ci_info .cii_price{
+	text-align: right;
+	padding-right: 10%;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+
+.list_area .combo_item .ci_info .cii_price .sym1{
+	font-size: 35px;
+	color: #E95414;
+}
+
+
+
+
+
+

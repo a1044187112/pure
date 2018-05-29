@@ -1,0 +1,150 @@
+
+/*价格单位的标志*/
+body{
+	background-color: #E1E1E1;
+}
+img{
+	width: 100% !important;
+}
+.price_unit_sym{
+	position: relative;
+	left: 0px;
+}
+
+.price_unit_sym .pus_item{
+	width: 0;
+	height: 0;
+	font-size: 0;
+}
+
+.price_unit_sym .pus_up_tri1{
+	border-style: solid;
+	border-width: 10px 10px 0px 10px;
+	border-color: #E9561A transparent transparent transparent;	
+	position: absolute;
+}
+
+.price_unit_sym .pus_up_tri2{
+	border-style: solid;
+	border-width: 6px 6px 0px 6px;
+	border-color: #e3e2e2 transparent transparent transparent;
+	position: absolute;
+	left: 4px;
+}
+
+.price_unit_sym .pus_hline1{
+	border-style: solid;
+	border-width: 2px 6px 2px 6px;
+	border-color: #E9561A #E9561A #E9561A #E9561A;
+	position: absolute;
+	left: 4px;
+	top: 5px;
+}
+
+.price_unit_sym .pus_hline2{
+	border-style: solid;
+	border-width: 2px 6px 2px 6px;
+	border-color: #E9561A #E9561A #E9561A #E9561A;
+	position: absolute;
+	left: 4px;
+	top: 11px;
+}
+
+.price_unit_sym .pus_vline{
+	border-style: solid;
+	border-width: 7px 2px 7px 2px;
+	border-color: #E9561A #E9561A #E9561A #E9561A;
+	position: absolute;
+	left: 8px;
+	top: 8px;
+}
+/*价格单位的标志结束*/
+
+/*药品详情*/
+.meidicine_detail_area{
+	background-color: #E1E1E1;
+}
+
+.meidicine_detail_area .mda_item{
+	font-size: 20px;
+	padding: 10px 0px;
+}
+
+.meidicine_detail_area .mda_item:nth-child(1){
+	width: 40%;
+	color: #4DB0AB;
+	padding-left: 20px;
+}
+
+.meidicine_detail_area .mda_item:nth-child(2){
+	width: 30%;
+	text-align: right;
+	padding-right: 8%;
+	background-color: #e3e2e2;
+}
+.meidicine_detail_area .mda_item:nth-child(2) .sym .price_unit_sym{
+	background-color: #e3e2e2;
+}
+.meidicine_detail_area .mda_item:nth-child(2) .sym .price_unit_sym .pus_up_tri2{
+	/*opacity: 0.5;*/
+	/*background-color: #e3e2e2; */
+}
+.meidicine_detail_area .mda_item:nth-child(3){
+	width: 30%;
+	color: #D8AA48;
+}
+
+.meidicine_detail_area .mda_content{
+	margin-top: 10px;
+	text-align: justify;
+	color: #8E8E8E;
+	font-size: 12px;
+	padding: 5px 20px;
+}
+
+/*药品详情结束*/
+
+/*操作按钮区域*/
+.action_btn_area{
+	margin-top: 20px;
+	width: 90%;
+	margin:20px auto;
+	padding-bottom: 30px;
+	color: #eee;
+}
+
+.action_btn_area .aba_item .abai_btn{
+	font-size: 18px;
+	border-radius: 20px;
+	text-align: center;
+	padding: 5px 5px;
+}
+
+.action_btn_area .aba_item:nth-child(1){
+	padding-right: 5px;
+}
+
+.action_btn_area .aba_item:nth-child(2){
+	padding-left: 5px;
+}
+
+.action_btn_area .aba_item:nth-child(1) .abai_btn{
+	background-color: #15AFB9;
+	padding-right: 5px;
+}
+
+.action_btn_area .aba_item:nth-child(2) .abai_btn{
+	background-color: #D7511C;
+	padding-left: 5px;
+	color: #eee;
+	font-size: 18px;
+}
+/*操作按钮区域结束*/
+.img_content{
+	width: 100%;
+}
+.img_content img{
+	display: block;
+	width: 100%;
+	font-size: 0px;
+}

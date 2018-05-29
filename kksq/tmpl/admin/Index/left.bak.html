@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<script type="application/javascript" src="/73h/__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script type="application/javascript" src="/73h/__PUBLIC__/common/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/common/css/bootstrap.min.css" />
+
+<link rel="stylesheet" type="text/css" href="/73h/__PUBLIC__/admin/index/css/left.css" />
+
+<title>管理员后台</title>
+</head>
+<body>
+    <div class="i_container">
+      <ul class="nav nav-pills nav-stacked"  id="action_menu">
+        
+
+        <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#doc_ctrl_item" aria-expanded="false" aria-controls="ctrl_item_0">医生管理</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="doc_ctrl_item">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="/73h/tmpl/admin/Doc/deptOfficeList.html" target="right">
+                    科室列表
+                  </a>
+                </li>
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="/73h/tmpl/admin/Doc/docList.html" target="right">
+                    医生列表
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </li>
+
+        <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#reg_ctrl_item" aria-expanded="false" aria-controls="ctrl_item_0">挂号资源</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="reg_ctrl_item">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="/73h/tmpl/admin/RegStore/docWorkCycle.html" target="right">
+                    医生排班周期
+                  </a>
+                </li>
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="/73h/tmpl/admin/RegStore/docWorkList.html" target="right">
+                    医生排班
+                  </a>
+                </li>
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="/73h/tmpl/admin/RegStore/regTimePartList.html" target="right">
+                    挂号时段
+                  </a>
+                </li>
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="/73h/tmpl/admin/RegStore/StoreConf.html" target="right">
+                    挂号统一价格
+                  </a>
+                </li>
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="/73h/tmpl/admin/RegStore/regSrcList.html" target="right">
+                    挂号数据
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </li>
+          
+        <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_5" aria-expanded="false" aria-controls="ctrl_item_0">微信公众号运营</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="ctrl_item_5">
+            <ul class="list-group">
+                <li class="list-group-item  url_grp_item"><a class="url_item" href="{$set_welcome_word_url}" target="right">设置欢迎语</a></li>
+                <li class="list-group-item  url_grp_item"><a class="url_item" href="{$create_menu_url}" target="right">创建自定义菜单</a></li>
+            </ul>
+          </div>
+        </li>   
+
+        <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#ctrl_item_mdc_his" aria-expanded="false" aria-controls="ctrl_item_0">用户病历</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="ctrl_item_mdc_his">
+            <ul class="list-group">
+                <li class="list-group-item  url_grp_item"><a class="url_item" href="/73h/tmpl/admin/UseStore/medicalRecords.html" target="right">病历本</a></li>
+            </ul>
+          </div>
+        </li> 
+
+        <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#examina_package" aria-expanded="false" aria-controls="ctrl_item_0">体检套餐</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="examina_package">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="/73h/tmpl/admin/RegStore/examinationPackage.html" target="right">
+                    体检套餐
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </li>
+
+         <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#banner" aria-expanded="false" aria-controls="ctrl_item_0">banner</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="banner">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="/73h/tmpl/admin/Banner/bannerSet.html" target="right">
+                    Banner
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </li>
+
+         <li role="presentation" class="panel panel-default">
+          <div class="ctrl_btn">
+              <a data-parent="#action_menu" class="btn btn-primary" role="button" data-toggle="collapse" href="#healthMall" aria-expanded="false" aria-controls="ctrl_item_0">健康商城</a>
+          </div>
+          <div class="collapse ctrl_item_list" id="healthMall">
+            <ul class="list-group">
+                <li class="list-group-item url_grp_item">
+                  <a class="url_item" href="/73h/tmpl/admin/RegStore/healthMall.html" target="right">
+                    健康商城
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </li>
+           
+
+      </ul>
+    </div>
+    
+</body>
+</html>

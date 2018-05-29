@@ -1,0 +1,28 @@
+.article_list_are{
+	margin-top: 10px;
+}
+
+.page_title{
+	text-align: center;
+	font-size: 22px;
+	color: #00b5ec;
+}
+
+.ex_title{
+	text-align: right;
+	padding: 0 15px;
+	margin-top: 20px;
+	color: #00b5ec;
+	font-size: 14px;
+}
+
+.pic{
+	margin-top: 10px;
+}
+
+.detail{
+	padding: 0 20px;
+	text-align: justify;
+	font-size: 13px;
+	color: #00b5ec;
+}

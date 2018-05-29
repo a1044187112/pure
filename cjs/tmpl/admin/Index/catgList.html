@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/common/css/bootstrap.min.css" />
+
+<script src="__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script src="__PUBLIC__/common/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/common/js/funcs.js"></script>
+<script src="__PUBLIC__/common/js/notice.js"></script>
+
+
+
+<script src="__PUBLIC__/common/js/btn_action.js"></script>
+
+<script src="__PUBLIC__/common/lib/i_file_upload/file_upload.js"></script>
+<script src="__PUBLIC__/common/js/edit_modal.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/common/lib/i_file_upload/file_up.css" />
+
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/gzh/admin/css/common.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/gzh/admin/css/catgList.css" />
+
+<title>管理员后台</title>
+</head>
+<body>
+<div class="i_content">
+	<div class="page_title">
+    	<h1>{$page_title}</h1>
+    </div>
+    <hr />
+    <div class="data_table">
+        <table class="table table-bordered"  id="data_table">
+            <tr>
+                <th>名称</th>
+                <th>类别图标</th>
+                <th>是否在前端显示</th>
+                <th>前端显示序号</th>
+                <th>操作</th>
+            </tr>
+            <!--数据遍历-->
+            <foreach name="data" item="item" >
+              <tr class="item_box">
+                <td class="name">{$item.name}</td>
+                <td class="pics">
+                		<div class="files">
+                            <foreach name="item.pics.pics" item="pic_item" key="pic_key">
+                                <div class="thumbnail thum_pic <if condition="$pic_key eq $item['pics']['default_pic_num']"> default_pic</if>">
+                                   <img src="{$pic_item}" width="100%" height="100%" />                        
+                                </div>
+                            </foreach>                          
+                        </div>
+                  		<div class="default_file_num" style="display:none">{$item.pics.default_pic_num}</div>
+                </td>
+                <td class="show_front_if">
+                    <if condition="($item.show_front_if eq 0)">
+                        否
+                    <else /> 
+                        是
+                    </if>
+                    <span style="display:none" class="real_data">{$item.show_front_if}</span>
+                </td>
+                <td class="front_order">{$item.front_order}</td>
+                <td  class="id" style="display:none">{$item.id}</td>
+                <td  class="pic_tid" style="display:none">{$item.pics.id}</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#update_modal" style=" font-size:12px;padding:5px;" 
+                        data-id="" 
+                        data-data_option_type="modify"
+                    >
+                    编辑
+                    </button>
+                    
+                    <button type="button" class="btn btn-primary delete_btn" 
+                    data-url="{$del_url}" 
+                    data-notice_word="是否删除类别{$item.name}" 
+                    style=" font-size:12px;padding:5px;"
+                    data-fields="id" 
+                    data-id="{$item.id}" 
+                    >
+                    删除
+                    </button>                    
+                </td>
+            </tr>
+            </foreach>
+            <!--数据遍历结束-->
+    
+        </table>   
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#add_modal" data-data_option_type="add">
+  			添加类别
+		</button>	
+    </div>
+</body>
+<script>
+$(document).ready(function(e) {
+	var update_url="{$update_url}";	
+	var img_up_url="{$img_up_url}";
+	
+	//alert(upadte_url);
+    //初始化数据更新模态框
+	var add_form_option =[
+		{"type":"system","modal_title":"添加类别","submit_url":update_url,/*"sim_post_if":true,*/"submin_btn_title":"添加","modal_id":"add_modal"
+			,"file_up_url":img_up_url},
+		{"type":"text","title":"类别名称","bind_key":"name"},
+		{"type":"radios","title":"显示在前端","bind_key":"show_front_if","sub_el_title":[
+			{"title":"是","value":"1"},{"title":"否","value":"0"}],"default_value":"1"},
+		{"type":"text","title":"前端显示编号","bind_key":"front_order"},
+		{"type":"file","title":"类别图标","bind_key":"pics"},
+	];
+	EditSubmitModal.createNewModal(add_form_option);	
+	
+	//创建更新对话框
+	var update_form_option = [
+		{"type":"system","modal_title":"添加类别","submit_url":update_url,/*"sim_post_if":true,*/"submin_btn_title":"添加","modal_id":"update_modal"
+			,"file_up_url":img_up_url},
+		{"type":"text","title":"类别名称","bind_key":"name"},
+		{"type":"radios","title":"显示在前端","bind_key":"show_front_if","sub_el_title":[
+			{"title":"是","value":"1"},{"title":"否","value":"0"}],"default_value":"1"},
+		{"type":"text","title":"前端显示编号","bind_key":"front_order"},
+		{"type":"file","title":"类别图标","bind_key":"pics"},
+		{"type":"hidden","title":"id","bind_key":"id"},
+		{"type":"hidden","title":"图片","bind_key":"pic_tid"},
+	];
+	EditSubmitModal.createNewModal(update_form_option);	
+	
+	
+	//绑定删除按钮
+	BindBtnClick(".data_table .delete_btn");
+});
+
+
+</script>
+</html>

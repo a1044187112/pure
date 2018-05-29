@@ -1,0 +1,44 @@
+
+.pic_area{
+	margin-top: 45px;
+	padding: 0 20%;
+}
+
+.notice_area {
+	color: #48BAB8;
+	font-size: 23px;
+	margin-top: 30px;
+	padding: 0 30px;
+}
+
+.notice_area .main_notice_title{
+	text-align: center;
+}
+
+
+.notice_area .sub_notice_tsub{
+	text-align: right;
+	margin-top: 5px;
+}
+
+.action_btn_con{
+	margin-top: 30px;
+}
+
+.action_btn_con .abc_item:nth-child(1){
+	width: 25%;
+}
+
+.action_btn_con .abc_item:nth-child(2){
+	width: 50%;
+	padding: 5px 0px;
+	background-color: #15AFB9;
+	border-radius: 20px;
+	text-align: center;
+	color: #E0E933;
+	font-size: 25px;
+}
+
+.action_btn_con .abc_item:nth-child(3){
+	width: 25%;
+}

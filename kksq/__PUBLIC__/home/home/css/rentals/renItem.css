@@ -1,0 +1,91 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+img{
+	width: 100%;
+}
+
+
+.selector{
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+	padding: 10px 0;
+}
+.selector .selector_item{
+	text-align: center;
+}
+.selector .selector_item .s_i_left{
+	font-size: 14px;
+	width: 75%;
+	/*background: red;*/
+}
+.selector .selector_item:first-child{
+	border-right: 1px solid #999;
+}
+.selector .selector_item:nth-child(2){
+	border-right: 1px solid #999;
+}
+.selector .selector_item:nth-child(3){
+	border-right: 1px solid #999;
+}
+.selector .s_i_btn{
+	float: left;
+	width: 0px;
+	height: 0px;
+	border-top:8px solid #aaa;
+	border-left:8px solid #fff;
+	border-right:8px solid #fff;
+	margin-top: -13px;
+	margin-left: 65%;
+}
+.selector .an_active .s_i_btn{
+	border-top:8px solid #000;
+	border-left:8px solid #fff;
+	border-right:8px solid #fff;
+}
+
+.each{
+	width: 94%;
+	padding: 3% 3%;
+	border-bottom: 1px solid #aaa;
+	position: relative;
+}
+.each .each_item .e_i_img{
+	width: 40%;
+}
+.each .each_item .e_i_info{
+	width: 58%;
+	margin-left: 2%;
+}
+.each .each_item .e_i_info .info_title{
+	font-size: 14px;
+}
+.each .each_item .e_i_info .info_keyWord{
+	font-size: 12px;
+	margin-top:4%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #888;
+}
+.each .each_item .e_i_info .info_more{
+	position: absolute;
+	left: 42%;
+	width: 56%;
+	bottom: 12%;
+	/*margin-top:6%;*/
+	/*background-color: red;*/
+}
+.each .each_item .e_i_info .info_more .i_m_price{
+	width: 45%;
+	color: #ed7d62;
+	font-size: 16px;
+}
+.each .each_item .e_i_info .info_more .i_m_source{
+	width: 55%;
+	font-size: 12px;
+	text-align: right;
+	color: #888;
+}
+

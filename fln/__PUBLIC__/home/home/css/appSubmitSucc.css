@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+img{
+	width: 100%;
+}
+.header>.header_item:nth-child(2){
+	padding:20% 30px 10% 30px;
+}
+.header_succ{
+	padding-left: 10%;
+	font-size: 20px;
+	color: #6695e3;
+	margin-top:8px;
+}
+.header_btn{
+	padding-bottom: 30px;
+}
+.header_btn .header_btn_return{
+	display: block;
+	width: 45%;
+	color: #eee;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.8;
+	background-color: #f39d9c;
+	border-radius: 15px;
+	margin-left: 45%;
+	margin-top: 20%;
+	font-weight: 100;
+}

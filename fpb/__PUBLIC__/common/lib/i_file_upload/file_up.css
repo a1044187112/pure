@@ -1,0 +1,35 @@
+/* CSS Document */
+.i_file_upload{
+	position:relative;
+}
+.i_file_upload .img_scroll{
+	margin-top:10px;
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+
+.i_file_upload .img_box{
+	margin-top:10px;
+	width:2000px;
+}
+
+.i_file_upload .img_box .img_item{
+	position:relative;
+	margin-left:10px;
+	float:left;
+	width:180px;
+	height:180px;
+}
+
+.i_file_upload .img_box .img_item img{
+	background-color: #CCCCFF;
+}
+
+.i_file_upload .img_box .img_item_del{
+	display:none;
+}
+.i_file_upload .img_box img{
+	position:relative;
+	width:100%;
+	height:80%;
+}

@@ -1,0 +1,43 @@
+
+.ui-datepicker {
+    width: 100%;
+    padding: .2em .2em 0;
+    display: none;
+}
+
+.ui-widget {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.6em;
+}
+.ui-datepicker table {
+    width: 100%;
+    font-size: 0.8em;
+    border-collapse: collapse;
+    margin: 0 0 .4em;
+}
+
+.ui-widget-header .ui-icon {
+    background-image: url("");
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    position: absolute;
+    top: 0.4em;
+    left: 0.8em;
+    width: 0;
+    height: 0;
+    border-width:  15px 45px 15px 0px;
+    border-style: solid;
+    border-color: transparent #009CC8 transparent transparent ;
+}
+
+.ui-datepicker .ui-datepicker-next{
+	position: absolute;
+    top: 0.4em;
+    right: 0.8em;
+    width: 0;
+    height: 0;
+    border-width:  15px 0 15px 45px;
+    border-style: solid;
+    border-color: transparent transparent transparent #009CC8 ;
+}

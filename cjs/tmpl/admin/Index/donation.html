@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/common/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/yijia/admin/index/css/common.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/yijia/admin/index/css/donation.css" />
+
+<script type="application/javascript" src="__PUBLIC__/common/js/jquery-1.11.3.min.js"></script>
+<script type="application/javascript" src="__PUBLIC__/common/js/bootstrap.min.js"></script>
+<script type="application/javascript" src="__PUBLIC__/common/js/funcs.js"></script>
+<script type="application/javascript" src="__PUBLIC__/common/js/notice.js"></script>
+<script type="application/javascript" src="__PUBLIC__/yijia/admin/js/donation.js"></script>
+<title>管理员后台</title>
+</head>
+<body style="overflow:visible">
+<div class="i_content">
+	<div class="page_title">
+    	<h1>立即捐助审核</h1>
+    </div>
+    <hr />
+    <div class="data_table">
+        <table class="table table-bordered">
+            <tr>
+            	<th>
+                <div class="checkbox">
+                    <label>
+                      <input type="checkbox" class="select_all">
+                    </label>
+                  </div>
+               </th>
+                <th>姓名</th>
+                <th>是否已审核</th>
+                <th>操作</th>
+            </tr>
+            <!--数据遍历-->
+            <foreach name="data" item="item" >
+              <tr class="t_row">
+                <td  class="sel_box">
+                <div class="checkbox">
+                    <label>
+                      <input type="checkbox" class="sel_item">
+                    </label>
+                  </div></td>
+                <td class="name">{$item.name}
+                           	<div class="collapse show_detail_box" id="show_detail_box{$item.id}" style="width:600px">
+                              	<div class="well">
+									<div class="detail_item">姓名：{$item.name}</div>
+                                    <div class="detail_item">身份证号码 ：{$item.id_card}</div>
+                                    <div class="detail_item">联系电话 ：{$item.contact_phone}</div>
+                                    <div class="detail_item">详情 ：{$item.content}</div>
+                                    <div class="detail_item">捐助人姓名 ：{$item.donor_name}</div>
+                                    <div class="detail_item">电话 ：{$item.phone}</div>
+                                   	<div class="detail_item">图片 ：<img src="{$item.pic}" width="300px"/></div>
+                                   	<div class="detail_item">是否已审核 ：
+                                        <if condition="($item.is_check eq 0)">
+                                            待审核
+                                        <else />
+                                            已审核
+                                        </if>
+                                    </div>
+                                    <div class="detail_item">
+                                        <button type="button" class="btn btn-primary btn-lg submit_btn"  style=" font-size:12px;padding:5px;" 
+                                        data-id="{$item.id}" 
+                                        data-submit_url="{$update_url}"
+                                        data-is_check="1"  
+                                        >
+                                        审核
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-lg submit_btn"  style=" font-size:12px;padding:5px;" 
+                                        data-id="{$item.id}" 
+                                        data-submit_url="{$update_url}"
+                                        data-is_check="0"  
+                                        >
+                                        取消审核
+                                        </button>
+                                    
+                                    </div>
+                                    
+                            	</div>
+                           	</div>                
+                </td>
+                <td class="name">
+                	<if condition="($item.is_check eq 0)">
+                    	待审核
+                    <else />
+                    	已审核
+                    </if>
+                
+                </td>
+                <td class="id" style="display:none">{$item.id}</td>
+                <td class="get_url" style="display:none">{$get_data_url}</td>
+
+                <td class="action_box">
+                    <button type="button" class="btn btn-primary btn-lg submit_btn"  style=" font-size:12px;padding:5px;" 
+                    data-id="{$item.id}" 
+         			data-submit_url="{$update_url}"
+         			data-is_check="1"  
+                    >
+                    审核
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg submit_btn"  style=" font-size:12px;padding:5px;" 
+                    data-id="{$item.id}" 
+         			data-submit_url="{$update_url}"
+         			data-is_check="0"  
+                    >
+                    取消审核
+                    </button>
+                    
+<!--                    <button type="button" class="btn btn-primary show_detail_btn" style=" font-size:12px;padding:5px;" >
+                    查看详细
+                    </button>-->
+                    
+                </td>
+            </tr>
+            </foreach>
+            <!--数据遍历结束-->
+    
+        </table>
+    	<button type="button" class="btn btn-primary btn-lg submit_btn"
+         data-submit_url="{$update_url}"
+         data-is_check="1"  
+        >
+       批量审核
+    	</button>
+    	<button type="button" class="btn btn-primary btn-lg submit_btn"
+         data-submit_url="{$update_url}" 
+         data-is_check="0"  
+        >
+       批量取消审核
+    	</button>
+    </div>
+</body>
+<script type="application/javascript">
+$(document).ready(function(e) {
+	var update_url="{$update_url}";
+	var fc_id="{$fc_id}";
+	//alert("ok");
+	
+	//绑定全选操作
+	BindSelectAllAction();
+	
+	//绑定提交按钮
+	BindSubmitBtnClick(GetSubmiParamStr);
+	
+	//消息操作设置
+	ShowDetailActionSet();
+});
+
+
+</script>
+</html>

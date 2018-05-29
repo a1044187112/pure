@@ -1,0 +1,36 @@
+.article_list_area{     
+	margin-top: 10px;      
+	padding:10px  0 ;
+	background-color: #E5E4E4; 
+}
+
+.article_list_area .article_item{
+	background-color: #ffffff;
+	margin-top: 10px;
+	padding: 10px 10px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.article_list_area .article_item .ai_text{
+	width: 85%;
+	color: #000000;
+	font-size: 25px;
+}
+
+
+.article_list_area .article_item .ai_tri{
+	width: 15%;
+	padding-top: 5px;
+}
+
+.tci_tri_line{
+	position: relative;
+}
+
+.tci_tri_line .tci_tri1{
+	border-width: 10px 0 10px 25px;
+	border-color: transparent transparent transparent #F29600;
+	border-style: solid;
+	position: absolute;
+}
