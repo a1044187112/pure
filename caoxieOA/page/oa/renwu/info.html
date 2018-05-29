@@ -1,0 +1,173 @@
+<style type="text/css">
+    .details-warp{
+    	width: 100%;
+    }
+    .details-warp .warp-top{
+    	width: 100%;
+    	font-size: 14px;
+    	color: #7F7F7F;
+    	padding: 5px;
+    }
+    .details-warp .warp-bottom{
+    	width: 100%;
+    	margin-top: 10px;
+    	margin: 0px;
+    	padding: 0px;
+    }
+	h2.title{
+		font-size: 22px;
+		margin-bottom: 10px;
+		color: #7EC0EE;
+	}
+	label{
+		font-size: 16px;
+		color: #B7B7B7;
+	}
+	.details-warp .row-item{
+		margin-bottom: 6px;
+	}
+	.details-warp .progress-bar{
+		background-color: #AEEEEE;
+	}
+	img.img-circle{width:32px;height:32px}
+	.img-circle{border-radius:50%}
+	
+	/*tab*/
+	/*
+	.nav-tabs{border-bottom:1px solid transparent}
+	.nav-tabs>li{float:left;margin-bottom:-1px}
+	.nav-tabs>li>a{margin-right:2px;line-height:1.42857143;border:1px solid transparent;border-radius:0}
+	.nav-tabs>li>a:hover{border-color:#eee #eee transparent}
+	.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{color:#555;background-color:#f0f0f0;border:1px solid #fff;border-bottom-color:transparent;cursor:default}
+	.nav-tabs.nav-justified{width:100%;border-bottom:0}
+	.nav-tabs.nav-justified>li{float:none}
+	.nav-tabs.nav-justified>li>a{text-align:center;margin-bottom:5px;margin-right:0;border-radius:0}
+	.nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:focus,.nav-tabs.nav-justified>.active>a:hover{border:1px solid #ddd}
+	@media (min-width:768px){
+		.nav-tabs.nav-justified>li{display:table-cell;width:1%}
+		.nav-tabs.nav-justified>li>a{margin-bottom:0;border-bottom:1px solid #ddd;border-radius:0}
+		.nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:focus,.nav-tabs.nav-justified>.active>a:hover{border-bottom-color:#F0F8FF}
+	}
+	.nav-pills>li{float:left}
+	.nav-justified>li,.nav-stacked>li{float:none}
+	.nav-pills>li>a{border-radius:0}
+	.nav-pills>li+li{margin-left:2px}
+	.nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover{color:#fff;background-color:#ef6262}
+	.nav-stacked>li+li{margin-top:2px;margin-left:0}
+	.nav-justified{width:100%;}
+	.nav-justified>li>a{text-align:center;margin-bottom:5px}
+	.nav-tabs-justified{border-bottom:0}
+	.nav-tabs-justified>li>a{margin-right:0;border-radius:0}
+	.nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:focus,.nav-tabs-justified>.active>a:hover{border:1px solid #ddd}
+	@media (min-width:768px){
+		.nav-justified>li{display:table-cell;width:1%}
+		.nav-justified>li>a{margin-bottom:0}.nav-tabs-justified>li>a{border-bottom:1px solid #ddd;border-radius:0}
+		.nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:focus,.nav-tabs-justified>.active>a:hover{border-bottom-color:#f0f0f0}
+	}
+	.tab-content>.tab-pane{display:none}
+	.tab-content>.active{display:block}
+	.nav-tabs .dropdown-menu{margin-top:-1px;border-top-right-radius:0;border-top-left-radius:0}
+	*/
+	.details-warp .tab-panel{height:100%;display:table-row;}
+	.details-warp .nav-tabs{height: 35px;border-bottom: 1px solid #F2F2F2;}
+	.details-warp .nav-tabs li,.details-warp .nav-tabs li a{height: 34px;line-height: 18px;}
+	.details-warp .tab-navigation .nav-tabs>li>a:focus,.details-warp .tab-navigation .nav-tabs>li>a:hover{border:0;border-bottom: 2px solid #C6E2FF;}
+	.details-warp .tab-navigation .nav-tabs>li>a{background-color:transparent;border-width:0;padding:10px 20px;min-width:auto;color: #8A959E;font-weight: normal;}
+	.details-warp .tab-navigation .nav-tabs>li>a i{font-size:14px;margin-right: 10px;}
+	.details-warp .tab-navigation .nav-tabs>li.active{
+		border-bottom: 2px solid #00B2EE;
+	}
+	.details-warp .tab-navigation .nav-tabs>li.active a{
+		color: #00B2EE;
+	}
+	@media (max-width:767px){
+		.tab-navigation .nav-justified{display:table;}
+		.tab-navigation .nav-justified>li{display:table-cell}
+		.tab-navigation .nav-justified>li>a{margin-bottom:0;min-width:40px}
+	}
+	.details-warp .tab-panel .tab-content{height:100%;position:relative;width:100%;padding:0;background:0 0;}
+	.details-warp .tab-panel .tab-content .tab-pane{height:100%;position:relative;width:100%;display: none;padding: 10px;}
+	.details-warp .tab-panel .tab-content .tab-pane>.content{overflow:auto;bottom:0;left:0;position:absolute;right:0;top:0}
+	.details-warp .tab-panel .tab-content .tab-pane h2{color:#e1e1e1;font-size:15px;font-weight:400;padding-bottom:15px;border-bottom:1px solid #6d6b6b;padding-left:5px;margin-bottom:25px;margin-top:18px;}
+	.details-warp .tab-panel .tab-content .tab-pane.active{display: block;}
+</style>
+<div class="details-warp">
+	<div class="warp-top">
+		<h2 class="title">任务标题 (RW-001)</h2>
+		<div class="row row-item">
+			<div class="col-md-2"><label>发&nbsp;&nbsp;起&nbsp;&nbsp;人</label></div>
+			<div class="col-md-10">留校</div>
+		</div>
+		<div class="row row-item">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-4"><label>负&nbsp;&nbsp;责&nbsp;&nbsp;人</label></div>
+					<div class="col-md-8">梁XX</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-4"><label>参&nbsp;&nbsp;与&nbsp;&nbsp;者</label></div>
+					<div class="col-md-8">
+						<a href="javascript:;"><img alt="image" class="img-circle" src="../../img/avatar.jpg"></a>
+						<a href="javascript:;"><img alt="image" class="img-circle" src="../../img/avatar.jpg"></a>
+						<a href="javascript:;"><img alt="image" class="img-circle" src="../../img/avatar.jpg"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row row-item">
+			<div class="col-md-2"><label>截止时间</label></div>
+			<div class="col-md-10">2016-6-26 至 2016-7-30</div>
+		</div>
+		<div class="row row-item">
+			<div class="col-md-2"><label>任务进度</label></div>
+			<div class="col-md-10">
+				<div class="progress" style="margin-bottom:0"><div class="progress-bar" role="progressbar" style="width:68%" ;="">88%</div></div>
+			</div>
+		</div>
+	</div>
+	<div class="warp-bottom">
+		<div class="tab-navigation">
+			<ul role="tablist" class="nav nav-tabs">
+				<li class="active"><a href="#tab1">介绍</a></li>
+				<li><a href="#tab2">活动</a></li>
+				<li><a href="#tab3">问题</a></li>
+				<li><a href="#tab4">资料</a></li>
+			</ul>
+		</div>
+		<div class="tab-panel">
+			<div class="tab-content">
+				<div id="tab1" role="tabpanel" class="tab-pane active am-scroller nano">
+					<p style="font-size: 14px;color: #9C9C9C;">拖动成员头像到任务上，可以把任务分配给成员</p>
+				</div>
+				<div id="tab2" role="tabpanel" class="tab-pane am-scroller nano">
+					<ul class="sortable-list connectList agile-list">
+						<li class="success-element" style="background-color: #FFFFFF;">
+                                                                                   全面、较深入地掌握我们“产品”的功能、特色和优势并做到应用自如。
+                            <div class="agile-detail">
+                                <a href="#" class="pull-right btn btn-xs btn-white">标签</a>
+                                <i class="fa fa-clock-o"></i> 2015.09.01
+                            </div>
+                        </li>
+                        <li class="success-element" style="background-color: #FFFFFF;">
+                                                                                   根据自己以前所了解的和从其他途径搜索到的信息，录入客户资料150家。
+                            <div class="agile-detail">
+                                <a href="#" class="pull-right btn btn-xs btn-white">标记</a>
+                                <i class="fa fa-clock-o"></i> 2015.05.12
+                            </div>
+                        </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		$('.warp-bottom .tab-navigation a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		});
+	});
+</script>

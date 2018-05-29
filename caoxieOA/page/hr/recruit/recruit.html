@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>布局表格</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+	<!--	<link rel="stylesheet" href="../../../css/ui.jqgrid-bootstrap.css" />-->
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style type="text/css">
+			/*body{overflow-y:hidden;background: #F0F3F4;}*/
+			body{overflow: hidden;background-color: #F0F3F4;}
+			.tree-selector{
+				margin-top: 10px;
+			}
+			
+			.tree-selector li{
+				width: 100%;
+				height: 35px;
+				line-height: 35px;
+				padding-left: 30px;
+				color: #A1AABA;
+				cursor:pointer;
+			}
+			.tree-selector li:hover{
+				background: #EAF0FB;
+				color: #76B0F3;
+			}
+			
+			.tree-selector li.active{
+				background: #EAF0FB;
+				color: #76B0F3;
+			}
+			
+			.tree-selector li i{
+				font-size: 16px;
+			}
+			
+			.tree-selector li span{
+				margin-left: 5px;
+			}
+			
+			.progress-bar{
+				background-color: #FF7F00;
+				border: none;
+				color: #fff !important;
+			}
+			
+			/*---------------- 表格 ------------------*/*
+			.right-wrap {position:absolute;clear: both;left: 215px;top: 0px;right: 0px;bottom: 0px;}
+			.editvalue{
+				width:250px;
+			}
+			.sidebar-content {
+				 height: 2000px;
+				 overflow: hidden;
+				}
+			.null_div{
+				height:5px;
+				background-color:#F0F3F4;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cf">
+			<div class="fl cf left-panel" id='tree'>
+				<div class="header" align="center"  style="border: 0;">
+					招聘信息
+				</div>
+				<div class="null_div"></div>
+				<div class="sidebar-content" >
+					<ul class="tree-selector">
+						<li  id="recruit_plan_id" onclick="loadmenusset('../../../page/hr/recruit/plan/plan_info.html','recruit_plan_id')">
+						    <span>招聘计划</span>
+						</li>
+						<li  id="recruit_resume_id"  onclick="loadmenusset('../../../page/hr/recruit/resume/resume_info.html','recruit_resume_id')">
+						    <span>简历库</span>
+						</li>
+						<li id="recruit_interview_id"  onclick="loadmenusset('../../../page/hr/recruit/interview/interview_info.html','recruit_interview_id')">
+						    <span>面试记录</span>
+						</li>
+						<li id="recruit_offer_id"  onclick="loadmenusset('../../../page/hr/recruit/offer/offer_info.html','recruit_offer_id')">
+						    <span>OFFER记录</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right-wrap fl cf" style="overflow: auto;">
+				<div class="wrapper"  id="load_data_recruitid">
+					<!--加载数据内容-->
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/i18n/grid.locale-cn.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/jchGrid/jsh.jGrid.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/jquery.jqGrid.min.js" ></script>
+		<script type="text/javascript" src="../../../js/common.js" ></script>
+		
+		<script type="text/javascript" src="../../../js/app/hr/recruit/recruit.js" ></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				loadmenusset('../../../page/hr/recruit/plan/plan_info.html','recruit_plan_id');
+			})
+		</script>
+	</body>
+</html>

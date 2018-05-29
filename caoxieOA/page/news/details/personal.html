@@ -1,0 +1,100 @@
+<style>
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	.container{
+		padding:0px;
+		padding-top: 15px;
+	}
+	.title{
+		font-size: 16px;
+		color: #111 !important;
+	}
+	.container .item{
+		width: 100%;
+		padding: 8px 0px;
+		position: relative;
+	}
+	.container .item .item_more{
+		position: absolute; 
+		right: 18px; 
+		visibility: hidden;
+	}
+	.container .item:hover .item_more{
+		visibility: visible !important;
+	}
+	.container .item img{
+		width: 60px;
+		height: 60px;
+		margin-left: 18px;
+		display: block;
+		/*float: left;*/
+	}
+	.container .item .con{
+		/*float: left;*/
+		position: absolute;
+		right: 0;
+		left: 78px;
+		top: 8px;
+		padding-left: 15px;
+		color: #777;
+		font-size: 15px;
+		line-height: 1.4;
+		padding-top: 8px;
+	}
+	.table-width{width:100%;}
+	.table-bor tr{border-bottom:1px solid #e7eaec  !important;}
+	.tr-height{height: 50px;vertical-align: bottom;}
+</style>
+
+<div class="container" style="width: 100%; ">
+	<div class="item ">
+		<img alt="image" src="../../img/avatar.jpg">
+		<div class="con">
+			<span class="title">XXXXX</span><i class="fa fa-navicon item_more" ></i></br >
+			<span class="file_class">@XXXX</span>
+		</div>
+	</div>
+	
+	<div style="padding-top: 10px;;">
+		<table  class="table-width  table-bor"  border="0" >
+				<tr  class="tr-height">
+					<td style="width:50%;"  >
+						<div class="ctn-wrap  td-titleconter"  ><label for="name" class="datacolor">手机号</label></div>
+					</td>
+					<td style="width:50%;"  align="right">
+						<div class="ctn-wrap  td-titleconter"  ><label for="name" class="datacolor">暂无填写</label></div>
+					</td>
+				</tr>
+				<tr  class="tr-height">
+					<td >
+						<div class="ctn-wrap  td-titleconter"  ><label for="name"  class="datacolor">邮箱</label></div>
+					</td>
+					<td  align="right">
+						<div class="ctn-wrap  td-titleconter"  ><label for="name"  class="datacolor">654968521@qq.com</label></div>
+					</td>
+				</tr>
+				<tr  class="tr-height">
+					<td >
+						<div class="ctn-wrap  td-titleconter"  ><label for="name"  class="datacolor">职位</label></div>
+					</td>
+					<td  align="right">
+						<div class="ctn-wrap  td-titleconter"  ><label for="name"  class="datacolor">暂无填写</label></div>
+					</td>
+				</tr>
+				<tr  class="tr-height">
+					<td >
+						<div class="ctn-wrap  td-titleconter"  ><label for="name"  class="datacolor">职务</label></div>
+					</td>
+					<td  align="right">
+						<div class="ctn-wrap  td-titleconter"  ><label for="name"  class="datacolor">暂无填写</label></div>
+					</td>
+				</tr>
+		</table>
+	</div>
+	
+</div>
+
+
+<script type="text/javascript" src="../../js/app/news/details/personal.js" ></script>

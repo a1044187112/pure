@@ -1,0 +1,130 @@
+<style>
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	.container{
+		padding:0px !important;
+	}
+	.sidepanel-body{
+		padding: 0px !important;
+		margin: 0px !important;
+	}
+	.title{
+		font-size: 20px;
+		color: #111 !important;
+	}
+	.page_title{
+		display: block;
+		border-left: 4px solid #fff;
+	}
+	.page_title:hover{
+		background-color: #edf8f8;
+		border-left: 4px solid #69d0d1;
+	}
+	.container .mem_item .item{
+		height: 60px;
+		line-height: 40px;
+		padding: 8px 0px 8px 0px;
+		border-left: 4px solid #fff;
+		position: relative;
+	}
+	.container .mem_item .item .mem_name{
+		margin-left: 6px;
+		letter-spacing: 2px;
+		font-size: 16px;
+	}
+	.container .mem_item .item .item_more{
+		position: absolute;
+		right: 18px;
+		top: 23px;
+		visibility: hidden;
+	}
+	.container .mem_item .item:hover{
+		background-color: #edf8f8;
+		border-left: 4px solid #69d0d1;
+	}
+	.container .mem_item .item:hover .item_more{
+		visibility: visible;
+	}
+	.container .mem_item .item img{
+		margin-left: 18px;
+		width: 44px;
+		height: 44px;
+	}
+	.sel{
+		position: absolute;
+		top: 0;
+		right: 40px;
+		top: 35px;
+		padding-top:5px;
+		padding-bottom: 5px;
+		border: 1px solid #ccc;
+		width: 150px;
+		background-color: white;
+		display: none;
+		z-index: 100;
+		font-size: 16px;
+		color: #111;
+	}
+	.sel .sel_item{
+		width: 100%;
+		height: 30px;
+		line-height: 30px;
+		color: #888;
+		font-size: 16px;
+		text-align: center;
+	}
+	.sel .sel_item:hover{
+		border-left:4px solid #3b8cff;
+		background-color: #e5f0fb;
+	}
+</style>
+
+<div class="container" style="width: 100%; position: relative;">
+	<a href="javascript:;"  id="choiceaddnewmanid"   class="page_title" style="width: 100%; color: #6fbbcf; height: 40px; line-height: 40px;">
+		<i class="fa fa-user-plus" style="font-size: 18px; margin-left: 26px;"></i>
+		<span class="add" style="margin-left: 3px;"  >添加新成员</span>
+	</a>
+	<ul class="mem_item">
+		<li class="item">
+			<img alt="image" src="../../img/avatar.jpg" >
+			<span class="mem_name">xx</span>
+			<i class="fa fa-list item_more"></i>
+			<ul class="sel" >
+				<li class="sel_item s_i_install">移除群组</li>
+				<li class="sel_item s_i_info">成员资料</li>
+			</ul>
+		</li>
+		<li class="item">
+			<img alt="image" src="../../img/avatar.jpg" >
+			<span class="mem_name">xx</span>
+			<i class="fa fa-list item_more"></i>
+			<ul class="sel" >
+				<li class="sel_item s_i_install">移除群组</li>
+				<li class="sel_item s_i_info">成员资料</li>
+			</ul>
+		</li>
+		<li class="item">
+			<img alt="image" src="../../img/avatar.jpg">
+			<span class="mem_name">xx</span>
+			<i class="fa fa-list item_more"></i>
+			<ul class="sel" >
+				<li class="sel_item s_i_install">移除群组</li>
+				<li class="sel_item s_i_info">成员资料</li>
+			</ul>
+		</li>
+		<li class="item">
+			<img alt="image" src="../../img/avatar.jpg" >
+			<span class="mem_name">xx</span>
+			<i class="fa fa-list item_more"></i>
+			<ul class="sel" >
+				<li class="sel_item s_i_install">移除群组</li>
+				<li class="sel_item s_i_info">成员资料</li>
+			</ul>
+		</li>
+	</ul>
+	
+</div>
+
+<script type="text/javascript" src="../../js/app/news/member.js" ></script>

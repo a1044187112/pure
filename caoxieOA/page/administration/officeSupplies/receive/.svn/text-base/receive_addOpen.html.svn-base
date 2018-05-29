@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>入库</title>
+		<link rel="stylesheet" href="../../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../../css/common.css" />
+		<style type="text/css">
+			.chengBoder{padding-top: 20px  !important;padding-left:12px  !important; padding-right:10px !important;) ;}
+		</style>
+	</head>
+	<body class="bgwh">
+		<div class="container fix p20 chengBoder">
+			<div class="grid-wrap">
+		    <table id="grid_receive_addOpen">
+		    </table>
+		    <div id="page_receive_addOpen"></div>
+		  </div>
+		</div>
+		<script type="text/javascript" src="../../../../js/common.js" ></script>
+		<script type="text/javascript" src="../../../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../../../js/lib/i18n/grid.locale-cn.js" ></script>
+		<script type="text/javascript" src="../../../../js/lib/jquery.jqGrid.min.js" ></script>
+		<script type="text/javascript" src="../../../../js/app/administration/officeSupplies/receive/receive_addOpen.js"></script>
+	</body>
+</html>

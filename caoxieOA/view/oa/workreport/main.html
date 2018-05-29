@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>简报-工作报告</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style type="text/css">
+		    body{
+		    	background-color: #FFFFFF;
+		    }
+			/*---------------- 表格 ------------------*/*
+			.right-wrap {position:absolute;clear: both;left: 215px;top: 0px;right: 0px;bottom: 0px;}
+		</style>
+	</head>
+	<body>
+		<!-- siled begin -->
+		<div class="sidebard-panel" style="background-color: #F0F3F4;">
+			<div class="header" style="text-align: center;padding: 10px;">
+				<h2>工作报告</h2>
+			</div>
+			<div class="sidebar-content p5">
+				<div id="treeview" class="test"></div>
+			</div>
+		</div>
+		<!-- siled end -->
+		<div class="right-wrap" style="overflow: auto;">
+			<div class="wrapper">
+				<div class="mod-search cf">
+					<div class="fl">
+						<ul class="ul-inline">
+							<li>
+								<input type="email" placeholder="成员姓名" class="form-control">
+							</li>
+							<li>
+								<a class="btn btn-white btn-bitbucket">
+		                            <i class="fa fa-search"></i>
+		                        </a>
+							</li>
+						</ul>
+					</div>
+					<div class="fr">
+						<div class="btn-group">
+                            <a class="btn btn-white" type="button">编辑</a>
+                            <a class="btn btn-white" type="button">锁定</a>
+                            <a class="btn btn-white" type="button">授权</a>
+                        </div>
+					</div>
+				</div>
+				<div class="grid-wrap noborder-warp">
+					<table id="grid"></table>
+					<div id="page"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap-treeview.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/i18n/grid.locale-cn.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/jquery.jqGrid.min.js" ></script>
+		<script type="text/javascript" src="../../../js/common.js" ></script>
+		<script type="text/javascript" src="../../../js/app/oa/workreport/main.js" ></script>
+	</body>
+</html>

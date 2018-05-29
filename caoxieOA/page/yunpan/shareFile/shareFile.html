@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+		
+</head>
+<style>
+	*{
+		padding:0px;
+		margin:0px;
+		text-decoration: none;
+		list-style: none;
+	}
+	.title{
+		margin-top:15px;
+		font-size: 14px;
+		color: #888;
+		margin-left: 20px;
+	}
+	.container{
+		margin-top:20px;
+		border:1px solid #ccc;
+		width: 44%;
+		margin-left: 4%;
+		padding-top:10px;
+		height: 280px;
+		overflow: auto;
+	}
+	.con_group,.con_py{
+		margin-left: -15px;
+	}
+	.sel{
+		margin-left: 5px;
+	}
+	.con_g_item, .con_py_item{
+		margin-left: 10px;
+		position: relative;
+	}
+	.con_sel_item{
+		margin-left: 10px;
+		position: relative;
+	}
+	.con_g_item .name,.con_py_item .name{
+		height: 30px;
+		position: absolute;
+		top: 0;
+		left: 40px;
+		line-height: 30px;
+	}
+	.con_sel_item .name{
+		height: 30px;
+		position: absolute;
+		top: 0;
+		left: 40px;
+		line-height: 30px;
+	}
+	.fp img{
+		width: 25px;
+		height: 25px;
+		margin-top: 3px;
+	}
+	.con_g_item .sel,.con_py_item .sel {
+		position: absolute;
+		right: 20px;
+		height: 15px;
+		width: 15px;
+		border-radius: 50%;
+		border:1px solid #888;
+		top:8px;
+	}
+	.con_sel_item .sel{
+		position: absolute;
+		right: 20px;
+		height: 15px;
+		width: 15px;
+		border-radius: 50%;
+		border:1px solid #888;
+		top:8px;
+	}
+	.list{
+		width: 100%;
+		margin-top: 5px;
+		margin-left: 15px;
+	}
+	.list li:hover{
+		background: #eee;
+	}
+	.con_r_title{
+		width: 100%;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		border-bottom: 1px solid #ccc;
+		background: #fefefe;
+	}
+	.con_r_title .sel_num{
+		color: #64be33;
+	}
+	.selected .selected_none{
+		display: block;
+		width: 100%;
+		line-height: 200px;
+		text-align: center;
+	}
+	.group_sel{
+		margin-left: 15px;
+	}
+	.group_sel:hover{
+		background: #eee;
+	}
+</style>
+<body>
+	<div class="title">选择好友分享文件  一次最多20人</div>
+	<div class="col-xs-1 col-sm-1 container_left container">
+		<div class="con_group">
+			
+			<div class="group_sel" >
+				<i class="fa fa-caret-right" style="font-size: 22px;"></i>
+				<i class="fa fa-sort-down" style="font-size: 22px;display: none; margin-left: -1px;" ></i><span class="sel" >群组</span></div>
+			<ul class="list group_list" style="display: none;">
+				<li class="con_g_item" data-id="1">
+					<div class=" fp"><img class="fp_img" src="../../img/avatar.jpg"></div>
+					<div class="name">技术部</div>
+					<div class="sel"></div>
+				</li>
+				<li class="con_g_item" data-id="2">
+					<div class=" fp"><img class="fp_img" src="../../img/avatar.jpg"></div>
+					<div class=" name">行政</div>
+					<div class="sel"></div>
+				</li>
+				<li class="con_g_item" data-id="3">
+					<div class="fp"><img class="fp_img" src="../../img/avatar.jpg"></div>
+					<div class="name">人力资源</div>
+					<div class="sel"></div>
+					
+				</li>
+				<li class="con_g_item" data-id="4">
+					<div class="fp"><img class="fp_img" src="../../img/avatar.jpg"></div>
+					<div class="name">xxxy</div>
+					<div class="sel"></div>
+				</li>
+			</ul>
+		</div>
+		<div class="con_py">
+			<div class="group_sel" >
+				<i class="fa fa-caret-right" style="font-size: 22px;"></i>
+				<i class="fa fa-sort-down" style="font-size: 22px; display: none; margin-left: -1px;"></i><span class="sel">好友</span></div>
+			<ul class="list py_list" style="display: none;">
+				<li class="con_py_item" data-id="6">
+					<div class="fp"><img class="fp_img" src="../../img/avatar.jpg"></div>
+					<div class="name">x</div>
+					<div class="sel"></div>
+				</li>
+				<li class="con_py_item" data-id="7">
+					<div class="fp"><img class="fp_img" src="../../img/avatar.jpg"></div>
+					<div class="name">xxx</div>
+					<div class="sel"></div>
+				</li>
+				<li class="con_py_item" data-id="8">
+					<div class="fp"><img class="fp_img" src="../../img/avatar.jpg"></div>
+					<div class="name">xxxx</div>
+					<div class="sel"></div>
+				</li>
+				<li class="con_py_item" data-id="5">
+					<div class="fp"><img class="fp_img" src="../../img/avatar.jpg"></div>
+					<div class="name">xx</div>
+					<div class="sel"></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-xs-1 col-sm-1 container_right container">
+		<div class="con_r_title">已选择<span class="sel_num">0</span>个收件人</div>
+		<div class="selected" style="margin-left: -15px;">
+			<span class="selected_none">你好没有选择好友</span>
+			<ul class="list sel_list" >
+				<!--<li class="con_sel_item">
+					<div class="fp"><img src="../../img/avatar.jpg"></div>
+					<div class="name">xxx</div>
+					<div class="sel"></div>
+				</li>
+				<li class="con_sel_item">
+					<div class="fp"><img src="../../img/avatar.jpg"></div>
+					<div class="name">xxx</div>
+					<div class="sel"></div>
+				</li>
+				<li class="con_sel_item">
+					<div class="fp"><img src="../../img/avatar.jpg"></div>
+					<div class="name">xxx</div>
+					<div class="sel"></div>
+				</li>
+				<li class="con_sel_item">
+					<div class="fp"><img src="../../img/avatar.jpg"></div>
+					<div class="name">xxx</div>
+					<div class="sel"></div>
+				</li>-->
+			</ul>
+		</div>
+	</div>
+		
+</body>
+<script src="../../js/lib/jquery.js"></script>
+<script src="../../js/app/yunpan/shareFile/shareFile.js"></script>
+</html>

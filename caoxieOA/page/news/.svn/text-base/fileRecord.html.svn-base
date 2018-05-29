@@ -1,0 +1,118 @@
+<style>
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	.container{
+		padding:0px;
+		padding-top: 15px;
+	}
+	.sidepanel-body{
+		padding: 0px !important;
+		margin: 0px !important;
+	}
+	.title{
+		font-size: 20px;
+		color: #111 !important;
+	}
+	.container .item{
+		width: 100%;
+		padding: 8px 0px;
+		position: relative;
+	}
+	.container .item .item_more{
+		position: absolute; 
+		right: 18px; 
+		visibility: hidden;
+	}
+	.container .item:hover .item_more{
+		visibility: visible !important;
+	}
+	.container .item img{
+		width: 60px;
+		height: 60px;
+		margin-left: 18px;
+		display: block;
+		/*float: left;*/
+	}
+	.container .item .con{
+		/*float: left;*/
+		position: absolute;
+		right: 0;
+		left: 78px;
+		top: 8px;
+		padding-left: 15px;
+		color: #777;
+		font-size: 15px;
+		line-height: 1.4;
+		padding-top: 8px;
+	}
+	.sel{
+		position: absolute;
+		top: 0;
+		right: 0px;
+		top: 35px;
+		padding-top:5px;
+		padding-bottom: 5px;
+		border: 1px solid #ccc;
+		width: 150px;
+		background-color: white;
+		display: none;
+		z-index: 100;
+	}
+	.sel .sel_item{
+		width: 100%;
+		height: 30px;
+		line-height: 30px;
+		color: #888;
+		font-size: 16px;
+		text-align: center;
+	}
+	.sel .sel_item:hover{
+		border-left:4px solid #3b8cff;
+		background-color: #e5f0fb;
+	}
+</style>
+
+<div class="container" style="width: 100%; ">
+	<div class="item ">
+		<img alt="image" src="../../img/avatar.jpg">
+		<div class="con">
+			<span class="info">xxx上传于 2016年9月15日</span><i class="fa fa-navicon item_more" ></i></br >
+			<span class="file_size">17.5k</span>
+			<span class="file_class">xls文件</span>
+		</div>
+		<ul class="sel" >
+			<li class="sel_item s_i_install">下载</li>
+			<li class="sel_item s_i_delete">删除</li>
+		</ul>
+	</div>
+	
+	<div class="item">
+		<img alt="image" src="../../img/avatar.jpg">
+		<div class="con">
+			<span class="info">xxx上传于 2016年9月15日</span><i class="fa fa-navicon item_more" ></i></br >
+			<span class="file_size">17.5k</span>
+			<span class="file_class">xls文件</span>
+		</div>
+		<ul class="sel" >
+			<li class="sel_item s_i_install">下载</li>
+			<li class="sel_item s_i_delete">删除</li>
+		</ul>
+	</div>
+	
+	<div class="item">
+		<img alt="image" src="../../img/avatar.jpg">
+		<div class="con">
+			<span class="info">xxx上传于 2016年9月15日</span><i class="fa fa-navicon item_more" ></i></br >
+			<span class="file_size">17.5k</span>
+			<span class="file_class">xls文件</span>
+		</div>
+		<ul class="sel" >
+			<li class="sel_item s_i_install">下载</li>
+			<li class="sel_item s_i_delete">删除</li>
+		</ul>
+	</div>
+	<script src="../../js/app/news/group/fileRecord.js"></script>
+	
+</div>

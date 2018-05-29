@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加成员</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<link rel="stylesheet" href="../../../js/lib/validator/jquery.validator.css" />
+		<style type="text/css">
+			.wrapper .n-invalid {border: 1px solid #f00;}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper" style="width: 588px;height: 229px;">
+			<form id="manage-form" style="width: 100%;">
+				<p class="read">系统生成密码，通过手机短信发送</p>
+				<div class="form-group">
+                    <label class="col-sm-3 control-label" for="no">选择部门：</label>
+                    <div class="col-sm-8">
+                        <span id="category"></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label class="col-sm-3 control-label" for="phone">手机号码：</label>
+                    <div class="col-sm-8">
+                        <input type="email" id="phone" name="phone" placeholder="手机号码"  class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="username">用户名：</label>
+                    <div class="col-sm-8">
+                        <input type="email" id="username" name="username" placeholder="真实姓名" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="no">编号：</label>
+                    <div class="col-sm-8">
+                        <input type="email" id="no" name="no"  placeholder="员工编号" class="form-control">
+                    </div>
+                </div>
+			</form>
+		</div>
+		<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/validator/jquery.validator.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/validator/zh_CN.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/plugins.js" ></script>
+		<script type="text/javascript" src="../../../js/common.js" ></script>
+		<script type="text/javascript" src="../../../js/app/manager/member/add.js" ></script>
+	</body>
+</html>

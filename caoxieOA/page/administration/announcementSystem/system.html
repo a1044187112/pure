@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>会议</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../js/lib/validator/jquery.validator.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style type="text/css">
+			.clearfix:after {
+				content: " ";
+				display: block;
+				clear: both;
+				height: 0;
+			}
+			
+			.clearfix {
+				zoom: 1;
+			}
+			
+			.h_float {
+				float: left;
+			}
+			
+			.span_float {
+				float: right;
+				display: block;
+				margin-right: 20px;
+				margin-top: 2px;
+			}
+			
+			.panel-group_magenTop {
+				/*margin-top: 10px;*/
+			}
+			
+			.a_active:hover {
+				color: #1E90FF !important;
+			}
+			
+			.i_ok {
+				color: #EEC900;
+			}
+			
+			.i_position {
+				padding: 3px 4px;
+			}
+			
+			.ui-input {
+				width: 220px;
+			}
+			
+			.a_commonly {
+				display: block;
+				width: 10px;
+				height: 10px;
+				background-color: #EEC900;
+				border-radius: 5px;
+				margin-top: 5px;
+			}
+			
+			.a_important {
+				display: block;
+				width: 10px;
+				height: 10px;
+				background-color: #EE6A50;
+				border-radius: 5px;
+				margin-top: 5px;
+			}
+			
+			.ui_inputSty {
+				height: 30px !important;
+				width: 128px !important;
+				border: 1px solid white;
+				line-height: 10px;
+				margin-top: -2px;
+			}
+			
+			.label-fontAlign {
+				text-align: center;
+			}
+			
+			.label-fontAlign {
+				text-align: center;
+			}
+			
+			.upfiles_main {
+				width: 100%;
+				margin-top: 3px;
+				background-color: white;
+			}
+			
+			.upfiles_inputWidth {
+				width: 160px !important;
+				height: 35px !important;
+				border: 1px solid white !important;
+			}
+			
+			.upfiles_ul {
+				width: 66.5%;
+				height: 100%;
+				border-top: 1px solid #ddd;
+				border-left: 1px solid #ddd;
+				border-right: 1px solid #ddd;
+			}
+			
+			.upfiles_li {
+				width: 100%;
+				height: 35px;
+				clear: both !important;
+				border-bottom: 1px solid #ddd;
+			}
+			
+			.upfiles_div1 {
+				width: 30%;
+				height: 35px;
+				float: left;
+				text-align: center;
+				font: 24px;
+				line-height: 35px;
+			}
+			
+			.upfiles_div2 {
+				width: 54%;
+				height: 35px;
+				float: left;
+				border-left: 1px solid #ddd;
+				text-align: center;
+				line-height: 35px;
+			}
+			
+			.upfiles_div3 {
+				width: 15%;
+				height: 35px;
+				float: left;
+				border-left: 1px solid #ddd;
+				text-align: center;
+				line-height: 35px;
+			}
+			
+			.upfiles_h {
+				line-height: 35px;
+			}
+			
+			.upfiles_ok {
+				margin-top: 6px;
+				margin-left: 20px;
+			}
+			.work_log{display: inline-block; width: 40px; height: 40px;margin-top: -45px; margin-left: 10px;position: relative; top:10px;}
+			.row-item_magen {
+                              margin-bottom: 10px !important;
+                              /*zoom: 1;*/
+            }
+            .dl-horizontal1 dt {
+				width: 80px !important;
+			}
+			
+			.dl-horizontal1 dd {
+				margin-left: 80px !important;
+			}
+			.i_chang:hover{color: #CC3333 !important;}
+			.open_file{filter:alpha(opacity=0) !important; opacity:0 !important;position: relative; right: 53px;width:50px;height: 20px;}
+			.img_sty{width: 70px; height: 70px;}
+			.webkit{height: 0px; transition:height 1s;-webkit-transition:height 1s;overflow: hidden;}
+			.webkit_1{height: 0px; transition:height 1s;-webkit-transition:height 1s;overflow: hidden;}
+			.addSpan span{width: 100% !important;}
+			.addSpan span input{width: 100% !important;}
+			.label_w{text-align: right; line-height: 40px;width: 60px;}
+		</style>
+	</head>
+
+	<body>
+		<div class="ibox-title">
+			<h5>制度</h5>
+			<div class="ibox-tools">
+				<div class="fr">
+					<div class="btn-group">
+						<a class="btn btn-link a_active" id="add_system" href="javascript:;" style="color:#00B2EE; margin-top: -9px;">
+							<i class="fa fa-plus"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ibox-content">
+
+			<div>
+				<div class="feed-activity-list">
+
+					<div class="feed-element">
+						<a href="profile.html" class="pull-left a_commonly">
+							<!--<i class="fa fa-clock-o"></i>-->
+						</a>
+						<div class="media-body ">
+							<small class="pull-right">2014.11.8 12:22</small>
+							<strong>工作效率问题</strong>
+							<span class="work_log">
+								<a class="btn btn-link i_position" href="javascript:;">
+									<i class="fa fa-file-word-o fa-2x"></i>									
+								</a>
+							</span>
+							<br>
+							<small class="text-muted">小刚 小赵 小明...</small>
+							<div class="fr">
+								<div class="btn-group">
+									<a class="btn btn-link i_position delete_system" href="javascript:;">
+										<i class="fa fa-trash-o"></i>
+									</a>
+								</div>
+							</div>
+							<div class="fr">
+								<div class="btn-group">
+									<a class="btn btn-link i_position edit_system" href="javascript:;">
+										<i class="fa fa-pencil"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="feed-element">
+						<a href="profile.html" class="pull-left a_important">
+							<!--<i class="fa fa-check"></i>-->
+						</a>
+						<div class="media-body ">
+							<small class="pull-right">2014.11.8 12:22</small>
+							<strong>田亮</strong> 参加了<strong>《粑粑去哪儿》</strong>
+							<span class="work_log">
+								<a class="btn btn-link i_position" href="javascript:;">
+									<i class="fa fa-file-excel-o fa-2x"></i>									
+								</a>
+							</span>
+							<br>
+							<small class="text-muted">小刚 小赵 小明...</small>
+							<div class="fr">
+								<div class="btn-group">
+									<a class="btn btn-link i_position delete_system" href="javascript:;">
+										<i class="fa fa-trash-o"></i>
+									</a>
+								</div>
+							</div>
+							<div class="fr">
+								<div class="btn-group">
+									<a class="btn btn-link i_position edit_system" href="javascript:;">
+										<i class="fa fa-pencil"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="feed-element">
+						<a href="profile.html" class="pull-left a_important">
+							<!--<i class="fa fa-check"></i>-->
+						</a>
+						<div class="media-body ">
+							<small class="pull-right">2014.11.8 12:22</small>
+							<strong>林依晨Ariel</strong> 刚刚起床
+							<span class="work_log">
+								<a class="btn btn-link i_position" href="javascript:;">
+									<i class="fa fa-file-text fa-2x"></i>									
+								</a>
+							</span>
+							<br>
+							<small class="text-muted">小刚 小赵 小明...</small>
+							<div class="fr">
+								<div class="btn-group">
+									<a class="btn btn-link i_position delete_system" href="javascript:;">
+										<i class="fa fa-trash-o"></i>
+									</a>
+								</div>
+							</div>
+							<div class="fr">
+								<div class="btn-group">
+									<a class="btn btn-link i_position edit_system" href="javascript:;">
+										<i class="fa fa-pencil"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="feed-element">
+						<a href="profile.html" class="pull-left a_important">
+							<!--<i class="fa fa-check"></i>-->
+						</a>
+						<div class="media-body ">
+							<small class="pull-right">2014.11.8 12:22</small>
+							<strong>颜文字君</strong> 评论了
+							<span class="work_log">
+								<a class="btn btn-link i_position" href="javascript:;">
+									<i class="fa fa-file-zip-o fa-2x"></i>									
+								</a>
+							</span>
+							<br>
+							<small class="text-muted">小刚 小赵 小明...</small>
+							<div class="fr">
+								<div class="btn-group">
+									<a class="btn btn-link i_position delete_system" href="javascript:;">
+										<i class="fa fa-trash-o"></i>
+									</a>
+								</div>
+							</div>
+							<div class="fr">
+								<div class="btn-group">
+									<a class="btn btn-link i_position edit_system" href="javascript:;">
+										<i class="fa fa-pencil"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../../js/app/administration/announcementSystem/system.js"></script>
+	</body>
+
+</html>

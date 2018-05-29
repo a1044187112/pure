@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>会议申请</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../../css/file/file.css" />
+		<link rel="stylesheet" href="../../../css/conference/newMeeting.css" />
+		<link rel="stylesheet" href="../../../css/conference/meeting_room.css" />
+		<link rel="stylesheet" href="../../../css/conference/DateTimePicker.css" />
+		<link rel="stylesheet" href="../../../css/fm.selectator.jquery.css" />
+	</head>
+
+	<body>
+		<form>
+			<div class="row con_page">
+				<div class="col-md-8 con row_item">
+					<div class="form_item">会议名称:<input type="text" name="meet_name" /></div>
+					<!--
+					<div class="row row_item_c">
+						<div class="col-xs-6 ">
+							<div class="form_item">周期性会议申请:
+								<input type="text" name="meet_cycle" style="display: none;" />
+								<select class="m_is_cycle">
+									<option value="volvo">不使用</option>
+									<option value="saab">使用</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-xs-6 row_item_c">
+							<div class="form_item">预约状态:
+								<input type="text" name="meet_name" style="display: none;" />
+								<div class="m_is_available">该时段可以预约<i class="fa fa-check-circle-o"></i></div>
+							</div>
+						</div>
+					</div>
+					-->
+					<div class="row row_item_c">
+						<div class="col-xs-6 row_item_c">
+							<div class="form_item">开始时间:
+								<input type="text" id="beginDate" value="" class="ui-input ui-datepicker-input" data-field="datetime" readonly></div>
+						</div>
+						<div class="col-xs-6 row_item_c">
+							<div class="form_item">结束时间:
+								<input type="text" id="endDate" value="" class="ui-input ui-datepicker-input" data-field="datetime" readonly></div>
+						</div>
+					</div>
+					<div class="form_item" >出席人员:
+						<!--<input type="text" name="meet_name" />-->
+						<select id="select4" name="select4" multiple style="width: 100%;">
+							<optgroup label="部门" class="group_one">
+								<option value="1" class="option_one" data-left="<img src='../../../img/avatar.jpg'>" data-right="1">技术部</option>
+								<option value="2" class="option_two" data-left="<img src='../../../img/avatar.jpg'>" data-right="2">人力资源</option>
+							</optgroup>
+							<optgroup label="公司" class="group_two">
+								<option value="3" class="option_three" data-left="<img src='../../../img/avatar.jpg'>" data-right="3">草鞋科技</option>
+								<option value="4" class="option_four" data-left="<img src='../../../img/avatar.jpg'>" data-right="4">4</option>
+								<option value="5" class="option_five" data-left="<img src='../../../img/avatar.jpg'>" data-right="5">5</option>
+								<option value="6" class="option_six">6</option>
+							</optgroup>
+							<option value="7" class="option_seven">7</option>
+							<option value="8" class="option_eight">8</option>
+							<option value="9" class="option_nine">9</option>
+							<option value="10" class="option_ten">10</option>
+							<option value="11" class="option_eleven">11</option>
+							<option value="12" class="option_twelve">12</option>
+							<option value="13" class="option_thirteen">13</option>
+							<option value="14" class="option_fourteen">14</option>
+						</select>
+						<input value="activate selectator" id="activate_selectator4" type="button" style="display: none;">
+					</div>
+					<div class="row row_item_c">
+						<div class="col-xs-6 row_item_c">
+							<div class="form_item">会议主持人:<input type="text" name="meet_name" placeholder="请输入会议主持人" /></div>
+						</div>
+						<div class="col-xs-6 row_item_c">
+							<div class="form_item">会议纪要员:<input type="text" name="meet_name" placeholder="请输入会议纪要员" /></div>
+						</div>
+					</div>
+					<!--<div class="form_item">外部出席人员:<input type="text" name="meet_name" placeholder="请输入外部出席人员，中间以逗号隔开" /></div>-->
+					<div class="form_item">主要议题:<textarea type="text" name="meet_name" rows="4" /></div>
+					<!--<div class="form_item">备注:<textarea type="text" name="meet_name" rows="4" /></div>
+					<!--<div class="up_file">
+						<input type="file" name="file" id="file" value="上传文件" />
+						<div class="file_show">
+							<div class="file">
+								<a class="icon icon-folder"></a>
+							</div>
+						</div>
+					</div>-->
+				</div>
+				<div class="col-md-4 row_item">
+					<div class="sle_meet_room">会议室选择</div>
+					<div class="row_item_m_s">
+						<div class="s_m_r">
+							<select>
+								<option value="volvo">圆桌会议</option>
+								<option value="saab">测试会议</option>
+								<option value="opel">52228</option>
+								<option value="audi">777485</option>
+							</select>
+							<img src="../../../img/conference/meet.jpg">
+						</div>
+						<div class="been_sel_is">
+							<span class="been_sel_is_span"><span class="been_m_num">0</span>预约个</span>
+							<button class="been_m_info">查看</button>
+						</div>
+					</div>
+					<ul class="equipment-list" id="equipment_list">
+							<li class="selectEquipment">
+								<i class="o-equit-1"></i>
+								<p class="title">投影幕</p>
+								<input type="checkbox" name="roomdevice[]" value="1" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-2"></i>
+								<p class="title">录音笔</p>
+								<input type="checkbox" name="roomdevice[]" value="2" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-3"></i>
+								<p class="title">音响</p>
+								<input type="checkbox" name="roomdevice[]" value="3" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-4"></i>
+								<p class="title">投影仪</p>
+								<input type="checkbox" name="roomdevice[]" value="4" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-5"></i>
+								<p class="title">笔记本电脑</p>
+								<input type="checkbox" name="roomdevice[]" value="5" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-6"></i>
+								<p class="title">麦克风</p>
+								<input type="checkbox" name="roomdevice[]" value="6" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-7"></i>
+								<p class="title">无线网络</p>
+								<input type="checkbox" name="roomdevice[]" value="7" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-8"></i>
+								<p class="title">摄像机</p>
+								<input type="checkbox" name="roomdevice[]" value="8" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-9"></i>
+								<p class="title">相机</p>
+								<input type="checkbox" name="roomdevice[]" value="9" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-10"></i>
+								<p class="title">白板</p>
+								<input type="checkbox" name="roomdevice[]" value="10" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-11"></i>
+								<p class="title">有线网络</p>
+								<input type="checkbox" name="roomdevice[]" value="11" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-12"></i>
+								<p class="title">座位牌</p>
+								<input type="checkbox" name="roomdevice[]" value="12" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-13"></i>
+								<p class="title">茶水</p>
+								<input type="checkbox" name="roomdevice[]" value="13" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-14"></i>
+								<p class="title">横幅</p>
+								<input type="checkbox" name="roomdevice[]" value="14" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-15"></i>
+								<p class="title">水果</p>
+								<input type="checkbox" name="roomdevice[]" value="15" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-16"></i>
+								<p class="title">显示屏</p>
+								<input type="checkbox" name="roomdevice[]" value="16" />
+							</li>
+							<li class="selectEquipment">
+								<i class="o-equit-17"></i>
+								<p class="title">文具</p>
+								<input type="checkbox" name="roomdevice[]" value="17" />
+							</li>
+						</ul>
+				</div>
+			</div>
+		</form>
+		<div id="dtBox"></div>
+	</body>
+	<script src="../../../js/app/administration/announcementSystem/fm.selectator.jquery.js"></script>
+	<script type="text/javascript" src="../../../js/app/administration/conference/DateTimePicker.js" ></script>
+	<script>
+			$(document).ready(function()
+			{
+				$("#dtBox").DateTimePicker(
+				{
+					dateFormat: "yyyy-MM-dd",
+					dateTimeFormat: "yyyy-MM-dd HH:mm:ss",
+					timeFormat: "HH:mm",
+					shortDayNames: ["日", "一", "二", "三", "四", "五", "六"],
+					fullDayNames: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+					shortMonthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+					fullMonthNames:  ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],			
+					titleContentDate: "设置日期",
+					titleContentTime: "设置时间",
+					titleContentDateTime: "设置日期和时间",					
+					buttonsToDisplay: ["HeaderCloseButton", "SetButton", "ClearButton"],
+					setButtonContent: "确定",
+					clearButtonContent: "取消"
+				});
+			});
+	
+		$(function() {
+			var $activate_selectator4 = $('#activate_selectator4');
+			$activate_selectator4.click(function() {
+				var $select4 = $('#select4');
+				if($select4.data('selectator') === undefined) {
+					$select4.selectator({
+						showAllOptionsOnFocus: true
+					});
+					$activate_selectator4.val('destroy selectator');
+				} else {
+					$select4.selectator('destroy');
+					$activate_selectator4.val('activate selectator');
+				}
+			});
+			$activate_selectator4.trigger('click');
+		});
+	</script>
+
+</html>

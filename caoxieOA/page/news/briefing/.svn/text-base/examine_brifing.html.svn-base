@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>简报助手</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.css"/>
+		<link rel="stylesheet" href="../../../css/common.css" />
+		
+		<style type="text/css">
+			.colortd{ color: #333;}
+			.title_btn{width:100%;}
+			.btn {
+			    border-radius: 3px;
+			    font-weight: 500;
+			    border: 0;
+			}
+			.btn-group-sm>.btn, .btn-sm {
+			    padding: 5px 25px;
+			    font-size: 12px;
+			    line-height: 1.5;
+			    border-radius: 3px;
+			}
+			.btn-primary {
+			    color: #fff;
+			    background-color: #69d0d1;
+			    border-color: #55cacb;
+			}
+			.btn-danger {
+			    color: #fff;
+			    background-color: #F99;
+			    border-color: #ff8080;
+			}
+			.titlecenter{color: #4e545f;font-size: 16px;}
+			.markdown-body {
+			    padding-bottom: 10px;
+			    color: #84939d;
+			    font-size: 15px;
+			    line-height: 150%;
+			    word-break: break-all;
+			}
+			 .stamp {
+			    position: absolute;
+			    background: url("../../../img/reviewed.png) center no-repeat;
+			    background-size: 100%;
+			    width: 90px;
+			    height: 90px;
+			    left: 220px;
+			    top: 10px;
+			}
+		</style>
+		
+	</head>
+
+	<body style="background-color: white; position: relative;">
+		<div class="wrapper clearfix container" >
+			<form id="examine_brifing-form" class="team_info" style="width: 100%;">
+				<div  style="height: auto;"  >
+					<div class="title_btn">
+						<table  style="width:100%;"  border="0">
+							<tr>
+								<td  style="width:50%;">
+									<p class="colortd"  style="font-size: 20px;">mmm的周报-40周报</p>
+						            <p  style="font-size:15px;">10月3日-10月9日</p>
+								</td>
+								<td  style="width:50%;"  align="right"  >
+									<img alt="image" src="../../../img/reviewed.png" style="width:60px; height:60px;" >
+									<button  type="button" class="btn btn-danger btn-sm ng-scope" >评审</button>
+								</td>
+							</tr>
+						</table>
+					 </div>
+				</div>
+				<div style="padding-top: 10px;width:100%;"><hr /></div>
+					<div  style="padding-top: 10px;">
+						<div  class="titlecenter">
+							1.  本周你完成了哪些工作？最有成就的是什么？
+						</div>
+						<div class="markdown-body">
+							1
+						</div>
+					</div>
+					<div  style="padding-top: 15px;">
+						<div  class="titlecenter">
+							2.  下周你计划做什么？要完成什么目标？
+						</div>
+						<div class="markdown-body">
+							2222
+						</div>
+					</div>
+					<div  style="padding-top: 15px;">
+						<div  class="titlecenter">
+							3.  本周工作你遇到的困难是什么？希望得到哪些帮助？
+						</div>
+						<div class="markdown-body">
+							33333
+						</div>
+					</div>
+					<div  style="padding-top: 15px;">
+						<div  class="titlecenter">
+							4.  本周工作中，有什么想要与团队分享的？
+						</div>
+						<div class="markdown-body">
+							44444
+						</div>
+					</div>
+					
+				<div style="padding-top: 5px;width:100%;height: 50;"><hr /></div>
+				<div  style="padding-top: 15px;">
+					
+					<div class="ctn-wrap">
+		            	<div class="approval-steps">
+		            		<div class="step-item step-default">
+		            			<span class="status-icon fa fa-dashboard"></span>
+		            			<div class="lc-avatar lc-avatar-40 ">
+		            				<img class="lc-avatar-avatar" src="../../../img/avatar.jpg"  />
+		            			</div>
+		            			msc
+		            			<span class="status-name ng-binding">发起申请</span>
+		            			<span class="time ng-binding">2016年9月13日 13:50</span>
+		            		</div>
+		            		<div class="step-item step-default">
+		            			<span class="status-icon fa fa-dashboard">
+		            				<span class="line"></span>
+		            			</span>
+		            			<div class="lc-avatar lc-avatar-40 ">
+		            				<img class="lc-avatar-avatar" src="../../../img/avatar.jpg"  />
+		            			</div>
+		            			msc
+		            			<span class="status-name ng-binding">发起申请</span>
+		            			<span class="time ng-binding">2016年9月13日 13:50</span>
+		            		</div>
+		            		<div class="step-item step-default step-waiting">
+		            			<span class="status-icon fa fa-dashboard">
+		            				<span class="line"></span>
+		            			</span>
+		            			<div class="lc-avatar lc-avatar-40 ">
+		            				<img class="lc-avatar-avatar" src="../../../img/avatar.jpg"  />
+		            			</div>
+		            			msc
+		            			<span class="status-name ng-binding ng-scope" ng-if="!item.stepEmpty">审批中</span>
+		            			<span class="notice hand btn-link-primary ng-binding ng-scope"><i class="lcfont fa fa-bell-o"></i>提醒</span>
+		            		</div>
+		            	</div>
+		            </div>
+					
+				</div>
+			</form>
+		</div>
+		<!-- 第二层 -->
+		<div></div>
+		<script type="text/javascript" src="../../../js/lib/jquery.js"></script>
+		<script type="text/javascript" src="../../../js/lib/validator/jquery.validator.js"></script>
+		<script type="text/javascript" src="../../../js/lib/validator/zh_CN.js"></script>
+		<script type="text/javascript" src="../../../js/lib/plugins.js"></script>
+		<script type="text/javascript" src="../../../js/common.js"></script>
+		<script type="text/javascript" src="../../../js/app/news/briefing/examine_brifing.js"></script>
+	</body>
+
+</html>

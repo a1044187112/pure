@@ -1,0 +1,369 @@
+
+		<style type="text/css">
+			a {
+				-webkit-font-smoothing: subpixel-antialiased;
+				color: #69d0d1;
+			}
+			
+			.site-content {
+				display: -webkit-box;
+				display: flex;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-webkit-flex-direction: column;
+				height: 100%;
+				width: 100%;
+				/*padding: 10px;*/
+				background: #FFFFFF;
+			}
+			
+			.site-content .module-header {
+				height: 60px;
+				/*margin-right: 30px;*/
+			}
+			
+			.site-content .module-body .header-with-nav,
+			.site-content .module-header {
+				border-bottom: solid 1px #eaeff1;
+			}
+			
+			.site-content .module-header:after,
+			.site-content .module-header:before {
+				content: " ";
+				display: table;
+			}
+			
+			.clearfix:after {
+				content: " ";
+				display: block;
+				clear: both;
+				height: 0;
+			}
+			
+			.clearfix {
+				zoom: 1;
+			}
+			
+			.site-content .module-header:after {
+				content: '';
+				height: 0;
+				clear: both;
+			}
+			
+			.site-content .module-header .title {
+				font-size: 20px;
+				line-height: 60px;
+				color: #6f8092;
+				display: inline-block;
+			}
+			
+			.site-content .module-header .flex-panel {
+				float: right;
+				display: inline-block;
+			}
+			
+			.site-content .module-header .flex-panel .lc-tabs {
+				/*margin-top: 15px;*/
+			}
+			
+			.site-content .module-body {
+				/*padding: 10px;*/
+			}
+			
+			.lc-tabs li {
+				border: none;
+				background: #FFFFFF;
+			}
+			
+			.lc-tabs li a {
+				padding: 10px 20px;
+				margin-right: 20px;
+				font-size: 16px;
+				border-radius: 0;
+				color: #6f8092;
+			}
+			
+			.lc-tabs>li.active {
+				border-left: none;
+				background: #fff;
+			}
+			
+			.lc-tabs li.active a,
+			.lc-tabs li.active a:focus,
+			.lc-tabs li.active a:hover {
+				background: #FFFFFF;
+				border: none;
+				color: #00B2EE;
+				border: none;
+				border-bottom: solid 3px #00B2EE;
+			}
+			
+			.lc-tabs li.active a {
+				background: #FFFFFF;
+				color: #6f8092;
+				border-left: none !important;
+				border-right: none !important;
+				border-bottom: solid 3px #00B2EE;
+			}
+			
+			.profile {
+				/*padding: 20px;*/
+			}
+			
+			.profile .form-control {
+				width: 100%;
+			}
+			
+			.ui-combo-active:hover {
+				border: 1px solid #1ab394 !important;
+			}
+			
+			.ui-combo-wrap {
+				width: 100% !important;
+			}
+			
+			.input-txt {
+				width: 98% !important;
+			}
+			
+			.ui-tree-wrap {
+				width: 100% !important;
+			}
+			
+			.ui-tree-wrap:hover {
+				border: 1px solid #1ab394 !important;
+			}
+			
+			.a_active:hover {
+				color: #1E90FF !important;
+			}
+			/*.but_cheng{background-color: #E0E0E0 !important;}*/
+			
+			.but_cheng:hover {
+				background-color: #00B2EE !important;
+			}
+			
+			.form-group div p {
+				display: block;
+				margin-top: 8px;
+			}
+			
+			.form-group div p a {
+				display: inline-block;
+				position: relative;
+				top: 5px;
+				right: 5px;
+			}
+			
+			#typeSelected span input {
+				width: 96% !important;
+			}
+			
+			.table_sty {
+				width: 100%;
+				text-align: center;
+			}
+			
+			.table_sty tr {
+				height: 50px !important;
+			}
+			
+			.table_sty tr td {
+				width: 25% !important;
+			}
+			
+			.plan_div div {
+				float: left;
+				width: 33.3%;
+			}
+			
+			.plan_div1 div {
+				float: left;
+				width: 50%;
+			}
+		</style>
+
+		<div class="site-content" style="box-shadow: 1px 2px 3px rgba(0,0,0,0.1);margin: 5px auto; width: 98%; margin-right: 1.5%;margin-bottom: 15px;">
+			<div class="module-body">
+				<div class="profile setting">
+					<form method="get" class="form-horizontal" id="form-group-addBepartment">
+						<div class="form-group">
+							<label class="col-sm-3 control-label" style="padding-top: 25px;font-size: 16px;"><h5></h5></label>
+							<div class="col-sm-9">
+								<div class="col-sm-12" style="float: right;">
+									<div class="fr" style="margin-top: 20px;">
+
+										<a class="btn btn-link blue" href="javascript:void(0);" id="btn-sendAcar">
+											结束用车
+										</a>
+										<a href="javascript:void(0);" class="btn btn-link blue" id="btn-return"><i class="fa fa-mail-reply"></i></a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="hr-line-dashed"></div>
+
+						<div class="clearfix" style="margin-top: -20px;">
+							<div class="form-group">
+								<label class="col-sm-2 control-label"><h1 style="font-size: 18px; margin-top: 20px;">用车信息</h1></label>
+								<div class="col-sm-6">
+
+								</div>
+							</div>
+
+							<div class="hr-line-dashed"></div>
+
+							<div class="form-group">
+								<label class="col-sm-3 control-label">使用车辆</label>
+								<div class="col-sm-6">
+									<p>京BJD990</p>
+								</div>
+							</div>
+
+							<div class="hr-line-dashed"></div>
+
+							<div class="form-group">
+								<label class="col-sm-3 control-label">司机</label>
+								<div class="col-sm-6">
+									<p>XXXXX</p>
+								</div>
+							</div>
+
+							<div class="hr-line-dashed"></div>
+
+							<div class="form-group">
+								<label class="col-sm-3 control-label">司机手机</label>
+								<div class="col-sm-6">
+									<p>130XXXXXX</p>
+								</div>
+							</div>
+
+							<div class="hr-line-dashed"></div>
+
+							<div class="form-group">
+								<label class="col-sm-3 control-label">实际开始时间</label>
+								<div class="col-sm-6">
+									<p>2016-8-8</p>
+								</div>
+							</div>
+
+							<div class="hr-line-dashed"></div>
+
+							<div class="form-group">
+								<label class="col-sm-3 control-label">实际结束时间</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" aria-required="true" name="username">
+								</div>
+							</div>
+
+							<div class="hr-line-dashed"></div>
+
+							<div class="form-group">
+								<label class="col-sm-3 control-label">车辆情况</label>
+								<div class="col-sm-6">
+									<p>XXXXXXX</p>
+								</div>
+							</div>
+
+							<div class="hr-line-dashed"></div>
+
+							<div class="form-group">
+								<label class="col-sm-2 control-label"><h1 style="font-size: 18px;margin-top: 20px;">派车单</h1></label>
+								<div class="col-sm-6">
+
+								</div>
+							</div>
+
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<div style="width: 90%; margin: 10px auto;">
+									<div class="plan_div1 clearfix" style="padding-bottom: 10px;">
+										<div>
+											<p>填写时间：<span>216-8-8</span></p>
+										</div>
+										<div style="text-align: right;">
+											<p style="color: red;">单号：<span style="font-size: 18px;">009876</span></p>
+										</div>
+									</div>
+									<table class="table_sty" border="1">
+										<tr>
+											<td>用车人</td>
+											<td>管理员</td>
+											<td>用车理由</td>
+											<td>路程太远</td>
+										</tr>
+										<tr>
+											<td>计划情况</td>
+											<td colspan="3" class="plan_div">
+												<div>
+													<p>办事地点：<span>XXXXX</span></p>
+												</div>
+												<div>
+													<p>出车时间：<span>216-8-8</span></p>
+												</div>
+												<div>
+													<p>返回时间：<span>216-8-8</span></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>部门经理</td>
+											<td>管理员</td>
+											<td>行政部经理</td>
+											<td>路程太远</td>
+										</tr>
+										<tr>
+											<td>派车</td>
+											<td colspan="3" class="plan_div1">
+												<div>
+													<p>出车司机：<span>XXXXX</span></p>
+												</div>
+												<div>
+													<p>主管签字：<span>XXXXX</span></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>实际出车情况</td>
+											<td colspan="3" class="plan_div1">
+												<div>
+													<p>出车时间：<span>XXXXX</span></p>
+												</div>
+												<div>
+													<p>返回时间：<span>XXXXX</span></p>
+												</div>
+												<div>
+													<p>行驾里程：<span>XXXXX</span></p>
+												</div>
+												<div>
+													<p>司机签字：<span>XXXXX</span></p>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="hr-line-dashed"></div>
+						</div>
+						<div class="form-group">
+							<!--<div class="col-sm-8 col-sm-offset-2">
+                                <button class="btn but_cheng" type="submit" style="margin-left:13.3%;background-color: #00BFFF;color: white;width: 80px; text-align: center;">派车</button>
+                            </div>-->
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../../js/lib/jquery.js"></script>
+		<script type="text/javascript" src="../../../js/lib/validator/jquery.validator.js"></script>
+		<script type="text/javascript" src="../../../js/lib/validator/zh_CN.js"></script>
+		<script type="text/javascript" src="../../../js/lib/plugins.js"></script>
+		<script type="text/javascript" src="../../../js/common.js"></script>
+		<script type="text/javascript" src="../../../js/app/administration/vehicle/pieOrder/sendAcar_end.js"></script>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>OFFER记录</title>
+	<head>
+	<body>
+		<div class="mod-search cf">
+				<div class="fl">
+					<ul class="ul-inline">
+						<li>
+							姓名:<input type="text" id="matchCon" class="ui-input ui-input-ph" placeholder="搜索职位" />
+						</li>
+						<li>
+							职位:<input type="text" id="matchCon" class="ui-input ui-input-ph" placeholder="搜索部门" />
+						</li>
+						<li>
+							入职部门:
+							<span id="entry_department"></span>
+						</li>
+						<li>
+				            要求入职时间:<input type="text" id="beginDate" value="2016-06-08" class="ui-input ui-datepicker-input">
+				            <i>至</i>
+				            <input type="text" id="endDate" value="2016-06-14" class="ui-input ui-datepicker-input">
+				        </li>
+					</ul>
+				</div>
+				<div class="fr">
+					<!--<a class="ui-btn ui-btn-sp" id="add_demand" href="javascript:void(0);">添加</a>-->
+					<a class="ui-btn" id="edit_offer" target="_blank" href="javascript:void(0);">修改</a>
+					<a class="ui-btn" id="edit_offernot" target="_blank" href="javascript:void(0);">未入职</a>
+					<a href="#" class="ui-btn" id="btn-batchDel">删除</a>
+				</div>
+			</div>
+			<div class="grid-wrap">
+				<table id="offer_grid"></table>
+				<div id="offer_page"></div>
+			</div>
+			<script type="text/javascript" src="../../../js/app/hr/recruit/offer/offer_info.js" ></script>
+			<script type="text/javascript">
+				$(function(){
+					sexCom = $("#entry_department").combo({
+						data: [{
+							id: 0,
+							name: "男"
+						}, {
+							id: 1,
+							name: "女"
+						}],
+						value: "id",
+						text: "name",
+						name:"gender",
+						width: 220,
+						defaultSelected: null || 0
+					}).getCombo();
+				})
+			</script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<div class="manage-wrapper">
+	<div id="manage-wrap" class="manage-wrap" style="line-height: 30px;">
+		<div class="clearfix">
+			<div class="form-group" style="float:left;width: 45%;margin-bottom: 0px;">
+				<div class="clearfix">
+					<label class="col-sm-6 control-label font_sty" for="username">证照名称：</label>
+			        <div class="col-sm-6">
+				        <span class="span_sty">小赵</span>
+			        </div>
+				</div>
+				<div class="clearfix">
+					<label class="col-sm-6 control-label font_sty" for="username">办理人员：</label>
+			        <div class="col-sm-6">
+				        <span class="span_sty">121111</span>
+			        </div>
+				</div>
+				<div class="clearfix">
+					<label class="col-sm-6 control-label font_sty" for="username">发证时间：</label>
+			        <div class="col-sm-6">
+				        <span class="span_sty">121111</span>
+			        </div>
+				</div>
+				<div class="clearfix">
+					<label class="col-sm-6 control-label font_sty" for="username">办证机构：</label>
+			        <div class="col-sm-6">
+				        <span class="span_sty">121111</span>
+			        </div>
+				</div>
+		    </div>
+		    <div class="form-group" style="float:left;width: 45%;margin-bottom: 0px;">
+		    	<div class="clearfix">
+		    		<label class="col-sm-6 control-label font_sty" for="username">证照编号：</label>
+			        <div class="col-sm-6">
+				       <span class="span_sty">99909</span>
+			        </div>
+		    	</div>
+		    	<div class="clearfix">
+		    		<label class="col-sm-6 control-label font_sty" for="username">办理时间：</label>
+			        <div class="col-sm-6">
+				       <span class="span_sty">2016-8-8</span>
+			        </div>
+		    	</div>
+		    	<div class="clearfix">
+		    		<label class="col-sm-5 control-label font_sty" for="username">有效期至：</label>
+			        <div class="col-sm-7">
+				       <span class="span_sty">有效期至：</span>
+			        </div>
+		    	</div>
+		    </div>
+		</div>	
+		<div class="form-group" style="width: 90%;">
+			<div class="clearfix">
+					<label class="col-sm-3 control-label font_sty" for="username">办理说明：</label>
+			        <div class="col-sm-7">
+				        <span class="span_sty">备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注</span>
+			        </div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="../../../js/app/administration/licence/information/information_see.js"></script>

@@ -1,0 +1,65 @@
+.app-frame {
+	border: 1px #D6DEE3 solid;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.tborder {
+	border-top: 1px #f2f2f2 solid;
+	padding: 0;
+}
+
+.fright {
+	float: right;
+}
+
+.tb-header {
+	height: 50px;
+	line-height: 50px;
+	background-color: #FCFDFC;
+}
+
+.app-icon {
+	height: 40px;
+	width: 40px;
+	background-color: #555;
+	background-color: rgba(255, 255, 255, .2);
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.app-menus {
+	padding: 25px 10px 0px 10px;
+	font-size: 18px;
+}
+
+.menus {
+	padding: 10px 20px;
+	font-size: 16px;
+	border-right: 1px #f2f2f2 solid;
+}
+
+.menuss {
+	padding: 15px;
+	font-size: 12px;
+	border-right: 1px #f2f2f2 solid;
+}
+
+.mright {
+	float: right;
+}
+
+.pd0 {
+	padding: 0;
+}
+
+.menulf{
+	padding:10px;
+}
+
+span.menu_handle{
+	height: 50px;
+	line-height: 50px;
+	margin-left: 28px;
+	display:none;
+}

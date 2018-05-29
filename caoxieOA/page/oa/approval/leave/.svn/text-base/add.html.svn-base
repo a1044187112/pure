@@ -1,0 +1,110 @@
+<style type="text/css">
+	.warp-top{
+    	width: 100%;
+    	font-size: 14px;
+    	color: #7F7F7F;
+    	padding: 5px;
+    }
+    h2.title{
+		font-size: 22px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	h2.title a{
+		font-weight: normal;
+		font-size: 12px;
+		color: #00B2EE;
+		float: right;
+	}
+	.label-wrap label{
+		font-size: 14px;
+		color: #9e9e9e;
+		float: left;
+	}
+	.mod-form-rows .label-wrap{font-size:12px;}
+	.mod-form-rows .row-item {padding-bottom: 15px;margin-bottom: 0;}/*兼容IE7 ，重写common的演示*/
+	.manage-wrapper{margin:20px auto 10px;}
+	.manage-wrap .ui-input{width: 168px;}
+	.base-form{*zoom: 1;}
+	.base-form:after{content: '.';display: block;clear: both;height: 0;overflow: hidden;}
+	.base-form li{float: left;width: 290px;}
+	.base-form li.odd{padding-right:20px;}
+	.manage-wrap textarea.ui-input{width: 80%;height:90px;}
+	.ui-input-wid{width: 80%;height: 30px;overflow:hidden;}
+	#receiveFunds,#periodReceiveFunds{text-align: right;}
+	
+	.contacters{margin-bottom: 10px; padding-top: 10px;}
+	.contacters h3{margin-bottom: 10px;font-weight: normal;color: #9e9e9e;padding-top: 10px;}
+
+	.label-color{
+		color: #948B96;
+	}
+	.goods-div-Relation{padding-top: 5px;}
+	.datacolor{color: #6B6B6B;padding-left: 15px;}
+	.btncolor{color:#6B6B6B !important; font-size: 15px !important;}
+	.table-width{width:100%;}
+	.table-td-width{width:10%;text-align: center;}
+	.table-td-width2{width:22%;}
+	.div-top{padding-top: 20px;}
+	.td-conter-left{margin-left: 100px  !important;}
+</style>
+<div class="wrapper wuliao-warp">
+	<div class="warp-top">
+		<form id="addwiped-form">
+		<h2 class="title">请假申请单
+			<a href="javascript:void(0);"   class="btn btn-link  btncolor" id="btn-leaveback" >返回</a>
+		</h2>
+		<hr style="border: 1px solid #FAFAFA; margin-bottom: 10px;"/>
+		<div class="manage-wrap">
+			<div class="contacters">
+				 <table  class="table-width" border="0" >
+					<tr  class="tr-height">
+						<td class="table-td-width4"  >
+							 <label for="name" style="margin-right:25px; ">请示人</label>
+						</td>
+						<td class="table-td-width3">
+							<div class="ctn-wrap"><input type="text" value="王XX" class="ui-input"  name="user_name"></div>
+						</td>
+						<td class="table-td-width4" style="margin-right:25px; ">
+							<label for="name" style="margin-right:25px; ">部门</label>
+						</td>
+						<td class="table-td-width3">
+							<div class="ctn-wrap"><input type="text" value="营销部" class="ui-input"   name="department_name"></div>
+						</td>
+					</tr>
+				 </table>
+			</div>
+			<div class="contacters">
+                 <div  class="div-top">
+			        <div class="label-wrap "><label for="name">外出原因:</label></div>
+                    <div class="ctn-wrap td-conter-left"><textarea name="marke" id="marke" class="ui-input"  placeholder="请填写外出原因"></textarea></div>
+                 </div>
+                 <div  class="div-top">
+			        <div class="label-wrap"><label for="name">外出时间:</label></div>
+                    <div class="ctn-wrap td-conter-left"><input type="text" value="2016-09-09" class="ui-input ui-datepicker-input"  >   至     <input type="text" value="2016-09-19" class="ui-input ui-datepicker-input"  ></div>
+                 </div>
+			</div>
+		</div>
+		<div class="contacters  goods-div-Relation"  >
+             <label for="name"  class="sizelab">附件</label>
+        	 <span style="margin-left: 20px;"><a  id="i-attach" title="添加附件" for="#workflow"  href="javascript:void(0);"  class="blue"><i class="fa fa-paperclip"></i>上传附件</a></span>
+        </div>
+        <div style="height:10px;"></div>
+		<div class="contacters  goods-div-Relation"  >
+			<div class="label-wrap"><label for="name">关联项目</label></div>
+            <div class="ctn-wrap" style="margin-left: 70px;"><a class="ui-btn ui-btn-sp" id="add"><i class="fa fa-plus"></i> </a></div>
+		</div>
+		 <div style="height:10px;"></div>
+		<div class="contacters  goods-div-Relation"  >
+			<div class="label-wrap"><label for="name">审批人</label></div>
+            <div class="ctn-wrap" style="margin-left: 70px;"><a class="ui-btn ui-btn-sp" id="add"><i class="fa fa-plus"></i> </a></div>
+		</div>
+           
+		</form>
+	</div>
+</div>
+<div id="initCombo" class="dn">
+	<input type="text" class="textbox goodsAuto" name="goods" autocomplete="off" />
+</div>
+<script type="text/javascript" src="../../../js/app/oa/approval/leave/add.js" ></script>

@@ -1,0 +1,108 @@
+<style>
+	*{
+		padding:none;
+		margin:none;
+		text-decoration: none;
+		list-style: none;
+		  font-family: Helvetica, "Helvetica Neue", "Century Gothic", "微软雅黑", "Microsoft Yahei", "STXihei";
+	}
+	.header{
+		padding:15px 30px 0px 20px;
+	}
+	.header .h_icon{
+		width: 50px;
+		height: 30px;
+		border:1px solid #ccc;
+		margin-left: 18px;
+		/*text-align: center !important;*/
+	}
+	.header .h_icon i{
+		color: #999;
+		line-height: 30px;
+	}
+	.header .h_i input{
+		display: block;
+		width: 100%;
+		outline: none;
+		height: 30px;
+		margin-left: 5px;
+		border-radius: 3px;
+		border:1px solid #ccc;
+		padding-left: 15px;
+	}
+	.header .h_sel{
+		padding-left: 10px;
+		border:1px solid #ccc;
+		color: #888;
+		line-height: 30px;
+		height: 30px;
+		margin-left: 5px;
+		position: relative;
+		background: #fefefe;
+	}
+	.header .h_sel i{
+		display: block;
+		float: right;
+		width: 20px;
+		height: 20px;
+		margin-top:8px;
+		margin-right: -15px;
+	}
+	.header .h_sel .pre_sel{
+		position: absolute;
+		top:29px;
+		width: 100%;
+		text-align: center;
+		line-height: 30px;
+		border:1px solid #ccc;
+		left:0;
+		padding:0px;
+		z-index: 1000;
+		background-color: white;
+	}
+	.header .h_sel .pre_sel .p_s_item{
+		width: 100%;
+		text-align: center;
+		/*background: red;*/
+	}
+	.header .h_sel .pre_sel .p_s_item:hover{
+		background: #efefef;
+	}
+	.con{
+		width: 85%;
+		margin:auto;
+		padding-top: 50px;
+	}
+	.con textarea{
+		display: block;
+		width: 100%;
+		resize: none;
+		outline: none;
+		padding:8px;
+	}
+</style>
+<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+<div class="frame">
+	<div class="header">
+		<div class="col-xs-2 h_icon"><i class="fa fa-user-plus"></i></div>
+		<div class="col-xs-7 h_i"><input type="text" placeholder="新成员的账号，群组或者部门名称"></input></div>
+		<div class="col-xs-3 h_sel">
+			<span class="h_s_coo"><span class="pre_value">协作</span><i class="fa fa-caret-down"></i></span>
+			<ul class="pre_sel" style="display: none;">
+				<li class="p_s_item">管理员</li>
+				<li class="p_s_item">可预览,下载</li>
+				<li class="p_s_item">可预览,上传</li>
+				<li class="p_s_item">只可上传</li>
+				<li class="p_s_item">只可预览</li>
+				<li class="p_s_item">禁止访问</li>
+			</ul>
+		</div>
+		
+	</div>
+	<div class="con">
+		<textarea name="remarks" rows="4" cols="20" placeholder="邀请附言(可选)"></textarea>
+	</div>
+</div>
+<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+<script src="../../../js/app/yunpan/pre/preAddMem.js"></script>

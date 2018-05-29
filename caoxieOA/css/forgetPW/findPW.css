@@ -1,0 +1,25 @@
+.phone_code{
+	position: relative;
+}
+.phone_code .get_phone_code{
+	position: absolute;
+	right: 10px;
+	line-height: 3.0;
+	font-size: 16px;
+	z-index: 100;
+	color: #999;
+}
+.phone_code .get_phone_code:hover{
+	color: #4487ef;
+}
+body{
+	background: url('../img/login/register.jpg') 100%  100%;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+.regPanel{
+	margin-top:1% !important;
+}

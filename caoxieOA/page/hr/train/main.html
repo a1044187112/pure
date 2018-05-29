@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>培训</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../js/lib/validator/jquery.validator.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style type="text/css">
+			.btn-yello {
+				background-color: #FFA500;
+			}
+			
+			.progress-bar {
+				background-color: #FF7F00;
+				border: none;
+				color: #fff !important;
+			}
+			
+			.tree-selector {
+				margin-top: 10px;
+			}
+			
+			.tree-selector li {
+				width: 100%;
+				height: 39px;
+				margin-top: 2px;
+				line-height: 39px;
+				padding-left: 30px;
+				color: #A1AABA;
+				cursor: pointer;
+				border-left: 3px solid #FFFFFF;
+			}
+			
+			.tree-selector li:hover {
+				border-left: 3px solid #00BFFF;
+				background: #EAF0FB;
+				color: #76B0F3;
+			}
+			
+			.tree-selector li.active {
+				border-left: 3px solid #00BFFF;
+				background: #EAF0FB;
+				color: #76B0F3;
+			}
+			
+			.tree-selector li i {
+				font-size: 16px;
+			}
+			
+			.tree-selector li span {
+				margin-left: 5px;
+			}
+			
+			.train_tap {
+				line-height: 45px;
+			}
+			
+			.divNone {
+				display: none;
+				width: 100%;
+			}
+			
+			/*.input_text {
+				width: 200px !important;
+			}
+			.input_text1 {
+				width: 350px !important;
+			}
+			.input_text2{
+				width: 198px !important;
+			}*/
+			.spanSty{    width: 100%;border: 0px solid #ddd;display: block;color: #7F7F7F;font-size: 14px;overflow-wrap: break-word;}
+			.clearfix:after {content: " ";display: block;clear: both;height: 0;}
+            .clearfix {zoom: 1;}	
+            .font_sty{
+            	color: #b7b7b7; font-size: 16px;
+            }
+			.manage-wrap .ui-input {
+				width: 220px;
+			}
+			.float_left{float: left !important; width: 40% !important;margin-left: 20px !important;}
+			.float_right{float: left !important; width: 40% !important; margin-left: 40px !important;}
+			.li_magenLift{margin-left: 20px !important;}
+			
+			.base-form {
+				*zoom: 1;
+				margin:0 -10px;
+				/*margin-top: 15px;*/
+			}
+			
+			.base-form:after {
+				content: '.';
+				display: block;
+				clear: both;
+				height: 0;
+				overflow: hidden;
+			}
+			
+			.base-form .row-item {
+				/*float: left;*/
+				/*height: 31px;*/
+				margin: 0 10px;
+				overflow: visible;
+				padding-bottom: 10px;
+			}
+			
+			.new-liclass .row-item {
+				width: 320px;
+			}
+			
+			.new-liclass .row-item {
+				padding-right: 20px;
+			}
+			
+			.new-liclassm .no_padding {
+				padding-right: 0
+			}
+			
+			.tab-wrapper {
+				display: -webkit-box;
+				display: flex;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-webkit-flex-direction: column;
+				height: 100%;
+				/*padding: 10px;*/
+			}
+			.nav-tabs{border-bottom: 1.9px solid #D6D6D6 !important;}
+			.tab-wrapper .tab-navigation .nav-tabs>li>a:focus,
+			.details-warp .tab-navigation .nav-tabs>li>a:hover {
+				border: 0;
+				/*border-bottom: 1px solid #C6E2FF;*/
+			}
+			/*.row-item1{height: 100%!important;}*/
+			/*.row-item2{margin-left: 10px !important;}*/
+			.sidepanel-footer{
+				position: absolute;
+                bottom: 0;
+                width: 100%;
+                padding: 4px 20px;
+                margin-left: 80px;
+                border-bottom: 1px solid #f2f2f2;
+                font-size: 14px;
+                height: 45px;
+                box-sizing: border-box;
+                clear: both;
+			}
+			
+			.tab-wrapper .tab-navigation .nav-tabs>li>a {
+				background-color: transparent;
+				border-width: 0;
+				padding: 10px 20px;
+				min-width: auto;
+				color: #8A959E;
+				font-weight: normal;
+			}
+			
+			.tab-wrapper .tab-navigation .nav-tabs>li>a i {
+				font-size: 14px;
+				margin-right: 10px;
+			}
+			
+			.tab-wrapper .tab-navigation .nav-tabs>li.active {
+				border-bottom: 2px solid #00B2EE;
+			}
+			
+			.tab-wrapper .tab-panel .tab-content {
+				height: 100%;
+				position: relative;
+				width: 100%;
+				padding: 0;
+				background: 0 0;
+			}
+			
+			.tab-wrapper .tab-panel .tab-content .tab-pane {
+				height: 100%;
+				position: relative;
+				width: 100%;
+				display: none;
+				/*padding: 10px;*/
+			}
+			
+			.tab-wrapper .tab-panel .tab-content .tab-pane>.content {
+				overflow: auto;
+				bottom: 0;
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 0
+			}
+			
+			.tab-wrapper .tab-panel .tab-content .tab-pane h2 {
+				color: #e1e1e1;
+				font-size: 15px;
+				font-weight: 400;
+				padding-bottom: 15px;
+				border-bottom: 1px solid #6d6b6b;
+				padding-left: 5px;
+				margin-bottom: 25px;
+				margin-top: 18px;
+			}
+			
+			.tab-wrapper .tab-panel .tab-content .tab-pane.active {
+				display: block;
+			}
+			.none_a{display: none;}
+			.btn_border{border: 1px solid #ddd!important;}
+			.btn_float{float:right!important; margin-right: 20px; margin-top: 2px !important;}
+			.btn-group{height: 30px !important;}
+			.log_heighe{height: 35px !important;}
+			.i_log_height{line-height: 25px !important;}
+			.upfiles_main{width: 100%; margin-top: 3px;  background-color: white;}
+			.upfiles_inputWidth{width: 160px !important;height:35px !important;border: 1px solid white !important;}
+		    .upfiles_ul{width: 90%;height: 100%;border-top: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;}
+		    .upfiles_li{width: 100%; height: 35px; clear: both !important; border-bottom: 1px solid #ddd;}
+		    .upfiles_div1{width: 30%;height: 35px; float:left;text-align: center; font:24px;line-height: 35px;}
+		    .upfiles_div2{width: 54%;height: 35px; float:left;border-left: 1px solid #ddd;text-align: center; line-height: 35px;} 
+		    .upfiles_div3{width: 15%;height: 35px; float:left;border-left: 1px solid #ddd;text-align: center; line-height: 35px;}
+		    .upfiles_h{line-height: 35px;}
+		    .upfiles_ok{margin-top: 20px; margin-left: 20px;}
+		    .displayNone{display: none;}
+		    .show_course{display: none;}
+		    .showLog{display: block;}
+		    .btn-groupSty{margin-top: -5px !important;}
+		    .ui_inputSty{height: 30px !important; width: 135px !important; border:1px solid white;line-height: 10px;margin-top: -2px;}
+		    .upfiles_ok{margin-top: 5px !important;}
+			/*---------------- 表格 ------------------*/
+			
+			* .right-wrap {
+				position: absolute;
+				clear: both;
+				left: 215px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- siled begin -->
+		<div class="sidebard-panel">
+			<div class="header" style="text-align: center;padding: 10px;">
+				<a class="btn btn-yello btn-block" href="javascript:;" id="addOnwFrom"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp; 新建培训计划</a>
+			</div>
+			<div class="sidebar-content p5">
+				<ul class="tree-selector " id='allActive'>
+					<li class="active" id="active1" onclick="ifopen(this);">
+						<h2 class="train_tap">培训计划</h2>
+					</li>
+					<li id="active2" onclick="ifopen(this);">
+						<h2 class="train_tap">培训课程</h2>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- siled end -->
+
+		<div class="right-wrap" style="overflow: auto;">
+			<div class="wrapper">
+				<div class="mod-search cf">
+					<div class="fl">
+						<ul class="ul-inline">
+							<li>
+								<input type="email" placeholder="成员姓名" class="form-control">
+							</li>
+							<li>
+								<a class="btn btn-white btn-bitbucket">
+									<i class="fa fa-search"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="fr">
+						<div class="btn-group">
+							<a class="btn btn-white btn_border" type="button" id="editFrom">编辑</a>
+							<a class="btn btn-white btn_border" type="button">删除</a>
+						</div>
+					</div>
+				</div>
+				<div class="grid-wrap noborder-warp" id="allDiv">
+					<div id='div_active1'>
+						<table id="grid"></table>
+						<div id="page"></div>
+					</div>
+					<div id='div_active2' class="divNone">
+						<div class="tab-wrapper">
+							<div class="tab-navigation">
+								<ul role="tablist" class="nav nav-tabs" id="allCouesr">
+									<li class="active" id='couesr1' onclick="course(this);">
+										<a href="javascript:;">安全教育</a>
+									</li>
+									<li id='couesr2' onclick="course(this);">
+										<a href="javascript:;">专业知识</a>
+									</li>
+									<li id='couesr3' onclick="course(this);">
+										<a href="javascript:;">公司规范</a>
+									</li>
+									<li id='couesr4' onclick="course(this);">
+										<a href="javascript:;">外语培训</a>
+									</li>
+									<li class="btn_float">
+										<div class="fr">
+						                    <div class="btn-group">
+										        <a class="btn btn-link" href="javascript:;" onclick="newAddCommon()">
+										        	<i class="fa fa-plus"></i> 新增课程
+										        </a>
+										    </div> 
+										</div>     
+									</li>
+								</ul>
+							</div>
+							<div class="tab-panel">
+								<div class="tab-content" id='allTab'>
+									<div id="tab_couesr1" role="tabpanel" class="tab-pane active am-scroller nano">
+										<div class="manage-wrap">
+											<div id="manage-wrap" class="manage-wrap">
+												<div class="upfiles_main">
+												    <ul class="message_basics">
+													    <li>
+														    <table id="course1_grid"></table>
+						                                    <div id="course1_page"></div>
+													    </li>
+												    </ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="tab_couesr2" role="tabpanel" class="tab-pane am-scroller nano">
+										<div class="manage-wrap">
+											<div id="manage-wrap" class="manage-wrap">
+												<div class="upfiles_main">
+												    <ul class="message_basics">
+													    <li>
+														    <table id="course2_grid"></table>
+						                                    <div id="course2_page"></div>
+													    </li>
+												    </ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="tab_couesr3" role="tabpanel" class="tab-pane am-scroller nano">
+										<div class="manage-wrap">
+											<div id="manage-wrap" class="manage-wrap">
+												<div class="upfiles_main">
+												    <ul class="message_basics">
+													    <li>
+														    <table id="course3_grid"></table>
+						                                    <div id="course3_page"></div>
+													    </li>
+												    </ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="tab_couesr4" role="tabpanel" class="tab-pane am-scroller nano">
+										<div class="manage-wrap">
+											<div id="manage-wrap" class="manage-wrap">
+												<div class="upfiles_main">
+													<ul>
+														<li>
+															<table id="course4_grid"></table>
+						                                    <div id="course4_page"></div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- script -->
+		<script type="text/javascript" src="../../../js/lib/jquery.js"></script>
+		<script type="text/javascript" src="../../../js/lib/validator/jquery.validator.js"></script>
+		<script type="text/javascript" src="../../../js/lib/i18n/grid.locale-cn.js"></script>
+		<script type="text/javascript" src="../../../js/lib/jquery.jqGrid.min.js"></script>
+		<script type="text/javascript" src="../../../js/common.js"></script>
+		<script type="text/javascript" src="../../../js/app/hr/train/main.js"></script>
+		<script type="text/javascript" src="../../../js/app/hr/train/mainData.js"></script>
+		<script type="text/javascript" src="../../../js/app/hr/train/addPlay.js"></script>
+	</body>
+
+</html>

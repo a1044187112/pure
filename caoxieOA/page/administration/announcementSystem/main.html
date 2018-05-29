@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>公告/制度</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<style type="text/css">
+			a {
+				-webkit-font-smoothing: subpixel-antialiased;
+				color: #69d0d1;
+			}
+			.site-content {
+				display: -webkit-box;
+				display: flex;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-webkit-flex-direction: column;
+				height: 100%;
+				/*padding: 10px;*/
+				background-color: #F0F3F4;
+			}
+			
+			.site-content .module-header {
+				height: 60px;
+				/*margin-right: 30px;*/
+			}
+			
+			.site-content .module-body .header-with-nav,
+			.site-content .module-header {
+				border-bottom: solid 1px #eaeff1;
+				width: 100%;
+				background: white;
+			}
+			
+			.site-content .module-header:after,
+			.site-content .module-header:before {
+				content: " ";
+				display: table;
+			}
+			
+			.clearfix:after,
+			.site-content .module-header:after {
+				content: '';
+				height: 0;
+				clear: both;
+			}
+			
+			.site-content .module-header .title {
+				font-size: 20px;
+				line-height: 60px;
+				color: #6f8092;
+				display: inline-block;
+			}
+			
+			.site-content .module-header .flex-panel {
+				/*float: right;*/
+				margin-left: 45%;
+				display: inline-block;
+			}
+			
+			.site-content .module-header .flex-panel .lc-tabs {
+				margin-top: 15px;
+			}
+			
+			.site-content .module-body {
+				/*background-color: #F0F3F4;*/
+			}
+			.site-content .module-body .typ{
+				width: 80%;
+				height: 100%;
+				margin: auto;
+				margin-top: 20px;
+				box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+			}
+			
+			.lc-tabs li {
+				border: none;
+				background-color: #FFFFFF;
+			}
+			
+			.lc-tabs li a {
+				/*padding: 10px 20px;*/
+				/*margin-right: 20px;*/
+				font-size: 16px;
+				border-radius: 0px !important;
+				color: #6f8092;
+			}
+			
+			.lc-tabs>li.active {
+				border-left: none !important;
+				background: #fff !important;
+			}
+			
+			.lc-tabs li.active a,
+			.lc-tabs li.active a:focus,
+			.lc-tabs li.active a:hover {
+				background-color: #FFFFFF !important;
+				border: none !important;
+				color: #00B2EE !important;
+				/*border: none;*/
+				border-bottom: solid 2px #00B2EE !important;
+			}
+			
+			.lc-tabs li.active a {
+				background-color: #FFFFFF !important;
+				border: none !important;
+				color: #00B2EE !important;
+				border-bottom: solid 2px #00B2EE !important;
+			}
+			
+			.profile {
+				padding: 20px;
+			}
+			
+			.profile .form-control {
+				width: 60%;
+			}
+			
+			.a_active:hover {
+				color: #00B2EE !important;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: #F0F3F4;">
+		<div class="site-content">
+			<div class="module-header">
+				<div class="flex-panel">
+					<ul class="nav nav-pills lc-tabs">
+						<li class="active" id="announcement">
+							<a href="javascript:void(0);"><strong>公告</strong></a>
+						</li>
+						<li id="system">
+							<a href="javascript:void(0);"><strong>制度</strong></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="module-body">
+				<div class="typ">
+					
+				</div>
+			</div>
+			
+			<script type="text/javascript" src="../../../js/lib/jquery.js"></script>
+			<script type="text/javascript" src="../../../js/lib/validator/jquery.validator.js"></script>
+			<script type="text/javascript" src="../../../js/lib/validator/zh_CN.js"></script>
+			<script type="text/javascript" src="../../../js/lib/plugins.js"></script>
+			<script type="text/javascript" src="../../../js/common.js"></script>
+
+			<script type="text/javascript" src="../../../js/app/administration/announcementSystem/main.js"></script>
+	</body>
+
+</html>

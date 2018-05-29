@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>员工信息</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style type="text/css">
+		    .manage-wrap .ui-input{ width: 220px;}
+			.base-form{*zoom: 1;/*margin:0 -10px;*/margin-top: 15px;}
+			.base-form:after{content: '.';display: block;clear: both;height: 0;overflow: hidden;}
+			.base-form .row-item{float: left;height: 31px;margin: 0 10px;overflow: visible;padding-bottom:15px; }
+			.new-liclass .row-item{width: 320px;}
+			.new-liclass .row-item{padding-right:20px;}
+			.new-liclassm .no_padding{ padding-right:0 }
+
+			.tab-wrapper{
+				display: -webkit-box;
+			    display: flex;
+			    display: -ms-flexbox;
+			    display: -webkit-flex;
+			    -webkit-box-orient: vertical;
+			    -webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			    flex-direction: column;
+			    -webkit-flex-direction: column;
+			    height: 100%;
+			    padding: 10px;
+			}
+			.tab-wrapper .tab-navigation .nav-tabs>li>a:focus,.details-warp .tab-navigation .nav-tabs>li>a:hover{border:0;border-bottom: 2px solid #C6E2FF;}
+			.tab-wrapper .tab-navigation .nav-tabs>li>a{background-color:transparent;border-width:0;padding:10px 20px;min-width:auto;color: #8A959E;font-weight: normal;}
+			.tab-wrapper .tab-navigation .nav-tabs>li>a i{font-size:14px;margin-right: 10px;}
+			.tab-wrapper .tab-navigation .nav-tabs>li.active{
+				border-bottom: 2px solid #00B2EE;
+			}
+			.tab-wrapper .tab-panel .tab-content{height:100%;position:relative;width:100%;padding:0;background:0 0;}
+			.tab-wrapper .tab-panel .tab-content .tab-pane{height:100%;position:relative;width:100%;display: none;padding: 10px;}
+			.tab-wrapper .tab-panel .tab-content .tab-pane>.content{overflow:auto;bottom:0;left:0;position:absolute;right:0;top:0}
+			.tab-wrapper .tab-panel .tab-content .tab-pane h2{color:#e1e1e1;font-size:15px;font-weight:400;padding-bottom:15px;border-bottom:1px solid #6d6b6b;padding-left:5px;margin-bottom:25px;margin-top:18px;}
+			.tab-wrapper .tab-panel .tab-content .tab-pane.active{display: block;}
+			.message_basics{border-top:1px solid #ddd;}
+			.message_basics_li{border-bottom:1px solid #ddd ;}
+			.clearfix:after {content: " ";display: block;clear: both;height: 0;}
+            .clearfix {zoom: 1;}	
+			.message_basics_li div{width: 160px;height: 40px;border-left: 1px solid #ddd;float:left;text-align: left;line-height: 40px;}
+		    .li_width1{width: 80%;border-right: 1px solid #ddd;}
+		    .li_width2{width: 100%;border-right: 1px solid #ddd;}
+		    .div_width1{width: 20% !important;}
+		    .div_width2{width: 40% !important;}
+		    .div_width3{width: 16% !important;}
+		    .div_width4{width: 52% !important;}
+		    .div_width5{width: 84% !important;}
+		    .div_background{background-color: #F8F8F8;}
+		    .message_img{display: block; float:right;width: 19.5%;height: 207px;border:1px solid #ddd;position:absolute;top:10px;right:10px;}
+		    .user_img{width: 100%;height: 100%;}
+		    .upfiles_main{width: 90%; margin: 15px 5%;  background-color: white;}
+		    .upfiles_ul{width: 100%;height: 100%;border-top: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;}
+		    .upfiles_li{width: 100%; height: 55px; clear: both !important; border-bottom: 1px solid #ddd;}
+		    .upfiles_div1{width: 30%;height: 55px; float:left;text-align: center; font:24px;line-height: 55px;}
+		    .upfiles_div2{width: 54%;height: 55px; float:left;border-left: 1px solid #ddd;text-align: center; line-height: 55px;} 
+		    .upfiles_div3{width: 15%;height: 55px; float:left;border-left: 1px solid #ddd;text-align: center; line-height: 55px;}
+		    .upfiles_h{line-height: 55px;}
+		    .upfiles_ok{margin-top: 20px; margin-left: 20px;}
+		</style>
+	</head>
+	<body>
+		<div class="tab-wrapper">
+			<div class="tab-navigation">
+				<ul role="tablist" class="nav nav-tabs">
+					<li class="active"><a href="#tab1">员工基本信息</a></li>
+					<li><a href="#tab2">入职信息</a></li>
+					<li><a href="#tab3">教育信息</a></li>
+					<li><a href="#tab4">附件</a></li>
+				</ul>
+			</div>
+			<div class="tab-panel">
+				<div class="tab-content">
+					<div id="tab1" role="tabpanel" class="tab-pane active am-scroller nano">
+						<div class="manage-wrap">
+							<ul class="message_basics">
+								<li class="message_basics_li clearfix li_width1">
+									<div class="div_width1"><strong>&nbsp;&nbsp;档案编号</strong></div>
+									<div class="div_width1 div_background" name="record_code">&nbsp;&nbsp;012</div>
+									<div class="div_width1"><strong>&nbsp;&nbsp;员工工号</strong></div>
+									<div class="div_width2 div_background" name="user_code">&nbsp;&nbsp;1212</div>
+								</li>
+								<li class="message_basics_li clearfix li_width1">
+									<div class="div_width1"><strong>&nbsp;&nbsp;姓名</strong></div>
+									<div class="div_width1 div_background" name="name">&nbsp;&nbsp;1</div>
+									<div class="div_width1"><strong>&nbsp;&nbsp;性别</strong></div>
+									<div class="div_width2 div_background" name="sex">&nbsp;&nbsp;女</div>
+								</li>
+								<li class="message_basics_li clearfix li_width1">
+									<div class="div_width1"><strong>&nbsp;&nbsp;民族</strong></div>
+									<div class="div_width1 div_background" name="z_nation_id">&nbsp;&nbsp;女</div>
+									<div class="div_width1"><strong>&nbsp;&nbsp;籍贯</strong></div>
+									<div class="div_width2 div_background" name="native">&nbsp;&nbsp;23</div>
+								</li>
+								<li class="message_basics_li clearfix li_width1">
+									<div class="div_width1"><strong>&nbsp;&nbsp;身份证号</strong></div>
+									<div class="div_width1 div_background" name="card_code">&nbsp;&nbsp;浙江</div>
+									<div class="div_width1"><strong>&nbsp;&nbsp;出生日期</strong></div>
+									<div class="div_width2 div_background" name="birthday">&nbsp;&nbsp;汉</div>
+								</li>
+								<li class="message_basics_li clearfix li_width1">
+									<div class="div_width1"><strong>&nbsp;&nbsp;健康状况</strong></div>
+									<div class="div_width1 div_background" name="z_health_id">&nbsp;&nbsp;522131212231245</div>
+									<div class="div_width1"><strong>&nbsp;&nbsp;婚姻状况</strong></div>
+									<div class="div_width2 div_background" name="z_marriage_id">&nbsp;&nbsp;2004-04-15</div>
+								</li>
+								<li class="message_basics_li clearfix li_width2">
+									<div class="div_width3"><strong>&nbsp;&nbsp;政治面貌</strong></div>
+									<div class="div_width3 div_background" name="z_political_id">&nbsp;&nbsp;sisi</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;户口地址</strong></div>
+									<div class="div_width4 div_background" name="address">&nbsp;&nbsp;1</div>
+								</li>
+								<li class="message_basics_li clearfix li_width2">
+									<div class="div_width3"><strong>&nbsp;&nbsp;专长爱好</strong></div>
+									<div class="div_width5 div_background" name="hobby">&nbsp;&nbsp;未婚</div>
+								</li>
+								<li class="message_img">
+									<img class="user_img" name="img_url" src="../../../img/avatar.jpg">
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="tab2" role="tabpanel" class="tab-pane am-scroller nano">
+						<div class="manage-wrap">
+							<div id="manage-wrap" class="manage-wrap">
+								<ul class="message_basics">
+								<li class="message_basics_li clearfix li_width2">
+									<div class="div_width3"><strong>&nbsp;&nbsp;职位</strong></div>
+									<div class="div_width3 div_background" ame="hr_position">&nbsp;&nbsp;合同工</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;入职日期</strong></div>
+									<div class="div_width3 div_background" name="hiredate">&nbsp;&nbsp;在职</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;转正日期</strong></div>
+									<div class="div_width1 div_background" name="formal">&nbsp;&nbsp;2015-06-11</div>
+								</li>
+								<li class="message_basics_li clearfix li_width2">
+									<div class="div_width3"><strong>&nbsp;&nbsp;工龄</strong></div>
+									<div class="div_width3 div_background" name="aged">&nbsp;&nbsp;建筑</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;上岗时间</strong></div>
+									<div class="div_width3 div_background" name="on_work_date">&nbsp;&nbsp;建筑工程师</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;合同签定日</strong></div>
+									<div class="div_width1 div_background" name="contract_start">&nbsp;&nbsp;2015-06-11</div>
+								</li>
+								<li class="message_basics_li clearfix li_width2">
+									<div class="div_width3"><strong>&nbsp;&nbsp;合同到期</strong></div>
+									<div class="div_width3 div_background" name="contract_end">&nbsp;&nbsp;2015-06-11</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;聘用方式</strong></div>
+									<div class="div_width3 div_background" name="employ_type">&nbsp;&nbsp;1</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;聘用来源</strong></div>
+									<div class="div_width1 div_background" name="employ_from">&nbsp;&nbsp;1</div>
+								</li>
+								<li class="message_basics_li clearfix li_width2">
+									<div class="div_width3"><strong>&nbsp;&nbsp;全职/兼职</strong></div>
+									<div class="div_width3 div_background" name="is_full_time">&nbsp;&nbsp;15144321234</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;职称</strong></div>
+									<div class="div_width3 div_background" name="hr_title">&nbsp;&nbsp;01044321</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;部门</strong></div>
+									<div class="div_width1 div_background" name="hr_department_id">&nbsp;&nbsp;1234111234</div>
+								</li>
+							</ul>
+							</div>
+						</div>
+					</div>
+					<div id="tab3" role="tabpanel" class="tab-pane am-scroller nano">
+						<div class="manage-wrap">
+							<div id="manage-wrap" class="manage-wrap">
+								<ul class="message_basics">
+								<li class="message_basics_li clearfix li_width2">
+									<div class="div_width3"><strong>&nbsp;&nbsp;学历</strong></div>
+									<div class="div_width3 div_background" name="z_education_id">&nbsp;&nbsp;大专</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;学位</strong></div>
+									<div class="div_width3 div_background" name="z_degree_id">&nbsp;&nbsp;MBA</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;毕业学校</strong></div>
+									<div class="div_width1 div_background" name="school">&nbsp;&nbsp;XXXXXX</div>
+								</li>
+								<li class="message_basics_li clearfix li_width2">
+									<div class="div_width3"><strong>&nbsp;&nbsp;专业</strong></div>
+									<div class="div_width3 div_background" name="professional">&nbsp;&nbsp;建筑学院</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;毕业时间</strong></div>
+									<div class="div_width3 div_background" name="graduation_date">&nbsp;&nbsp;建筑学</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;普通话等级</strong></div>
+									<div class="div_width1 div_background" name="mandarin_class">&nbsp;&nbsp;二级</div>
+								</li>
+								<li class="message_basics_li clearfix li_width2">
+									<div class="div_width3"><strong>&nbsp;&nbsp;外语语种</strong></div>
+									<div class="div_width3 div_background" name="language">&nbsp;&nbsp;20015-03-11</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;驾照</strong></div>
+									<div class="div_width3 div_background" name="drive_ability">&nbsp;&nbsp;20015-06-11</div>
+									<div class="div_width3"><strong>&nbsp;&nbsp;驾照时间</strong></div>
+									<div class="div_width1 div_background" name="drive_ability_time">&nbsp;&nbsp;良好</div>
+								</li>
+							</ul>
+							</div>
+						</div>
+					</div>
+					<div id="tab4" role="tabpanel" class="tab-pane am-scroller nano">
+						<div class="manage-wrap">
+							<div id="manage-wrap" class="manage-wrap">
+								<div class="upfiles_main">
+									<ul class="upfiles_ul" id="upfiles_ul">
+										<li class="upfiles_li">
+											<div class="upfiles_div1">
+													<h4 class="upfiles_h">名称</h4>
+											</div>
+											<div class="upfiles_div2">
+												<h4 class="upfiles_h">文件</h4>
+											</div>
+										</li>
+										<li class="upfiles_li">
+											<div class="upfiles_div1">
+													<span class="upfiles_h" name="name">名称</span>
+											</div>
+											<div class="upfiles_div2">
+												<span class="upfiles_h" name="path">文件.doc</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/plugins.js" ></script>
+		<script type="text/javascript" src="../../../js/app/hr/records/message.js" ></script>
+	</body>
+</html>

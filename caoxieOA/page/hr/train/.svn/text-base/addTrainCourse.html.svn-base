@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>编辑</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../js/lib/validator/jquery.validator.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style type="text/css">
+			.main_div {
+				height: 100%;
+				background-color: #F5F5F5;
+			}
+			
+			.name_div {
+				padding: 10px 15px;
+				margin-left: 20px;
+			}
+			
+			.input_txex {
+				width: 220px;
+			}
+			
+			.bottom_div {
+				margin-left: 20px;
+				padding: 20px 20px;
+			}
+			
+			.textSty {
+				width: 88.5% !important;
+				height: 90px !important;
+			}
+			
+			.remarks {
+				margin-top: -80px;
+			}
+			
+			.div_folat {
+				float: left;
+			}
+			
+			.margin_textSty {
+				margin-left: 10px;
+				width: 76%;
+				margin-bottom: 20px !important;
+			}
+			
+			.clearfix:after {
+				content: " ";
+				display: block;
+				clear: both;
+				height: 0;
+			}
+			
+			.clearfix {
+				zoom: 1;
+			}
+			
+			.width_div {
+				width: 65px;
+				line-height: 40px;
+			}
+			
+			.fontSty {
+				font: 24px !important;
+			}
+			
+			.m_top {
+				padding-top: 10px;
+			}
+			
+			.calUpload {
+				/*width: 545px;*/
+				/*height: 100px;*/
+				background-color: white;
+				border: 1px solid #ddd;
+				border-bottom: 0px solid #ddd;
+				overflow: auto;
+				overflow-x: hidden;
+			}
+			
+			.upfiles_main {
+				/*width: 543px;*/
+				background-color: white;
+			}
+			
+			.upfiles_inputWidth {
+				width: 170px !important;
+				border: 1px solid white !important;
+			}
+			
+			.upfiles_ul {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.upfiles_li {
+				width: 100%;
+				height: 35px;
+				clear: both !important;
+				border-bottom: 1px solid #ddd;
+			}
+			
+			.upfiles_h {
+				line-height: 35px;
+			}
+			
+			.upfiles_ok {
+				margin-top: 20px;
+				margin-left: 20px;
+			}
+			
+			.displayNone {
+				display: none;
+			}
+			
+			.btn-groupSty {
+				margin-top: -5px !important;
+			}
+			
+			.ui_inputSty {
+				height: 30px !important;
+				width: 135px !important;
+				border: 1px solid white;
+				line-height: 10px;
+				margin-top: -2px;
+			}
+			
+			.upfiles_ok {
+				margin-top: 5px !important;
+			}
+			
+			.magen_left {
+				margin-left: 30px;
+				text-align: right;
+			}
+			
+			.magen_top {
+				margin-top: 10px;
+			}
+			
+			.up_imgLog {
+				width: 20px;
+				height: 20px;
+				margin-top: 7px;
+				float: right;
+				margin-right: 10px;
+				display: none;
+			}
+			.tab-wrapper{
+				display: -webkit-box;
+			    display: flex;
+			    display: -ms-flexbox;
+			    display: -webkit-flex;
+			    -webkit-box-orient: vertical;
+			    -webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			    flex-direction: column;
+			    -webkit-flex-direction: column;
+			    height: 100%;
+			    padding: 10px;
+			}
+			.tab-wrapper .tab-navigation .nav-tabs>li>a:focus,.details-warp .tab-navigation .nav-tabs>li>a:hover{border:0;border-bottom: 2px solid #C6E2FF;}
+			.tab-wrapper .tab-navigation .nav-tabs>li>a{background-color:transparent;border-width:0;padding:10px 20px;min-width:auto;color: #8A959E;font-weight: normal;}
+			.tab-wrapper .tab-navigation .nav-tabs>li>a i{font-size:14px;margin-right: 10px;}
+			.tab-wrapper .tab-navigation .nav-tabs>li.active{
+				border-bottom: 2px solid #00B2EE;
+			}
+			.tab-wrapper .tab-panel .tab-content{height:100%;position:relative;width:100%;padding:0;background:0 0;}
+			.tab-wrapper .tab-panel .tab-content .tab-pane{height:100%;position:relative;width:100%;display: none;padding: 10px;}
+			.tab-wrapper .tab-panel .tab-content .tab-pane>.content{overflow:auto;bottom:0;left:0;position:absolute;right:0;top:0}
+			.tab-wrapper .tab-panel .tab-content .tab-pane h2{color:#e1e1e1;font-size:15px;font-weight:400;padding-bottom:15px;border-bottom:1px solid #6d6b6b;padding-left:5px;margin-bottom:25px;margin-top:18px;}
+			.tab-wrapper .tab-panel .tab-content .tab-pane.active{display: block;}
+			
+			.open_file {
+				filter: alpha(opacity=0) !important;
+				opacity: 0 !important;
+				position: relative;
+				top: 0px;
+				left: 480px;
+				width: 60px;
+				height: 35px;
+			}
+			.addDivLeftSty{width: 45%; float: left;margin-left: 35px; }
+			.addDivRightSty{width: 45%; float: right;margin-right: 35px;}
+		</style>
+	</head>
+
+	<body>
+		<div class="main_div m_top">
+			<form id="manage-form" action="">
+				<div id="base-form">
+					<ul class="mod-form-rows base-form cf new-liclass" style="margin-top: 10px;">
+						<li class="row-item addDivLeftSty">
+							<div class="label-wrap"><label for="number">课程名称</label></div>
+							<div class="ctn-wrap"><input name="record_code" type="text" value="" class="ui-input" name="number" id="number"style="width: 220px;"></div>
+						</li>
+						<li class="row-item addDivRightSty">
+							<div class="label-wrap"><label for="number">课程分类</label></div>
+							<div class="ctn-wrap"><span id="classCourse"></span></div>
+						</li>
+						<li class="row-item addDivLeftSty"  style="margin-top: 10px;">
+							<div class="label-wrap"><label for="number">课时(小时)</label></div>
+							<div class="ctn-wrap"><span id="getTime"></span></div>
+						</li>
+					</ul>
+				</div>	
+					<div class="name_div clearfix">
+						<div class="div_folat width_div">
+							<span class="remarks">课件上传</span>
+						</div>
+						<div class="div_folat margin_textSty" style="margin-left: 15px; padding-bottom: 15px;">
+							<div class="calUpload">
+								<div class="upfiles_main">
+									<ul class="upfiles_ul" id="upfiles_ul">
+										<li class="upfiles_li" onmouseover="showLog();" onmouseout="hindLog();">
+											<img class="up_imgLog" src="../../../img/kuaipan/upload.png">
+											<input type="file" class="open_file" onchange="add_new();" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="base-form">
+					<ul class="mod-form-rows base-form cf new-liclass">
+						<li class="row-item" style="width: 90%;margin-left: 35px;">
+							<div class="label-wrap"><label for="number">说明</label></div>
+							<div class="ctn-wrap"><textarea class="textSty ui-input" name="describe"></textarea></div>
+						</li>
+					</ul>
+				</div>	
+			</form>
+			</div>
+			<script type="text/javascript" src="../../../js/lib/jquery.js"></script>
+			<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="../../../js/lib/validator/jquery.validator.js"></script>
+			<script type="text/javascript" src="../../../js/lib/plugins.js"></script>
+			<script type="text/javascript" src="../../../js/lib/eui.dialog.js"></script>
+			<script type="text/javascript" src="../../../js/app/hr/train/addTrainCourse.js"></script>
+	</body>
+
+</html>

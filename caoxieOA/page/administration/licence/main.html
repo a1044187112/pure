@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>车辆管理</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style type="text/css">
+		    .left-selector{
+				margin-top: 10px;
+			}
+			
+			.left-selector li{
+				width: 100%;
+				height: 35px;
+				margin-top: 3px;
+				line-height: 35px;
+				padding-left: 30px;
+				color: #A1AABA;
+				cursor:pointer;
+			}
+			.font_sty{font-size: 16px; color: #BDBDBD; width: 115px !important; padding-right: 0px !important;}
+			.span_sty{font-size: 16px;}
+			.car_fontSty{font-size: 16px; color: #BDBDBD; width: 100px !important; padding-right: 0px !important;}
+			.left-selector li:hover{
+				background: #EAF0FB;
+				color: #76B0F3;
+			}
+			
+			.left-selector li.active{
+				border-left: 3px solid #00BFFF;
+                background: #EAF0FB;
+                color: #76B0F3;
+			}
+			
+			.left-selector li i{
+				font-size: 16px;
+			}
+			.but_cheng:hover{background-color: #00B2EE !important;}
+			
+			.left-selector li span{
+				margin-left: 5px;
+			}
+			.clearfix:after {content: " ";display: block;clear: both;height: 0;}
+            .clearfix {zoom: 1;}	
+			.webkit{height: 0px; transition:height 1s;-webkit-transition:height 1s;overflow: hidden;}
+			.seeReceive:hover{color: #4487f0;}
+			/*---------------- 表格 ------------------*/*
+			.right-wrap {position:absolute;clear: both;left: 215px;top: 0px;right: 0px;bottom: 0px;}
+			.displayNone_1{display: none;};
+			.displayNone_3{display: none;};
+			.car_img{width: 105%;height:150px;display: block;margin-left: 5%;}
+			.carInformation_register{width: 95%; margin: 5px auto; }
+			.carInformation_register div a{display: block;border:1px solid #DDDDDD;float:left;width: 19%;margin: 1px 1px;}
+		    .sidebard-panel .header a:hover{background-color: #FF7F00;color: #DDDDDD;}
+		</style>
+	</head>
+	<body>
+		<!-- siled begin -->
+		<div class="sidebard-panel">
+			<div class="header" style="text-align: center;">
+				<a href="javascript:;" class="ui-btn btn-yello" id="add-main"><i class="fa fa-plus"></i>证照申请</a>
+			</div>
+			<div class="sidebar-content p5">
+				<ul id="nav-btn" class="left-selector">
+					<li class="active" id="collar" url="information/information.html">
+						<i class="fa fa-file-text"></i>
+					    <span>证照信息</span>
+					</li>
+					<li  id="storage" url="delayed/delayed.html">
+						<i class="fa fa-paste"></i>
+					    <span>证照延期</span>
+					</li>
+					<li  id="supplies" url="change/change.html">
+						<i class="fa fa-copy"></i>
+					    <span>证照变更</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- siled end -->
+		<div class="right-wrap" style="overflow: auto;">
+			<div class="wrapper">
+				
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/i18n/grid.locale-cn.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/jquery.jqGrid.min.js" ></script>
+		<script type="text/javascript" src="../../../js/common.js" ></script>
+		<script type="text/javascript" src="../../../js/app/administration/licence/main.js" ></script>
+	</body>
+</html>

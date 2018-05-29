@@ -1,0 +1,411 @@
+<style>
+	.gtna_right{
+		display: inline-block;
+	    padding: 13px;
+	    padding-left: 0px;
+	    /*margin: 0 8px;*/
+	    vertical-align: middle;
+	    color: #8f8f8f;
+	    font-size: 22px;
+	    
+	}
+	.gtna_right:last-child{
+		margin-right: 35px;
+	}
+	/*.xw_head .xw_hable .right {
+		width: 10%;
+	}*/
+	.xw_head .xw_hable  .right_icon{
+		margin-left: 10px;
+	}
+	.container{
+		padding-top:30px;
+		width: 97%;
+	}
+	.history_chattime{
+		/*text-align: center;*/
+	    line-height: 0px;
+	    position: absolute;
+	    width: 100%;
+	    color: #aaa;
+	    font-size: 14px;
+	    
+	}
+	.ng-binding{
+		background: white;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-left: 30px;
+	}
+	.xw_head{height:45px;}
+	.xw_hable{width:100%;font-size: 18px;}
+	.xw_remark{height: 40px;color: #B0B0B0;margin-top: 20px;font-size: 16px;}
+	.xw_addbtn{height: 60px;margin-top: 10px;font-size: 16px;}
+	
+	.member_info{
+		width: 350px;
+		height: 180px;
+		position: absolute;
+		z-index: 1000;
+		top:100px;
+		right:300px;
+		border:1px solid #ccc;
+		background-color: white;
+		padding-top: 10px;
+	}
+	.member_info .fp{
+		width: 35%;
+		/*margin-left: -5px;*/
+		padding-top: 15px;
+		/*background-color: red;*/
+	}
+	.member_info .fp img{
+		width: 30;
+		width: 80px;
+		height: 80px;
+	}
+	.member_info .fp p{
+		width: 100%;
+		height: 25px;
+		line-height: 25px;
+		text-align: center;
+		font-weight: 600;
+		font-size: 20px;
+		color: #111;
+		margin-top:5px;
+	}
+	.member_info .fp p:last-child{
+		color: #999;
+		font-size: 14px;
+		margin-top:-5px;
+	}
+	.member_info .info{
+		width: 65%;
+		padding-top: 15px;
+	}
+	.member_info .info .info_item{
+		font-size: 14px;
+		color: #111;
+		font-weight: 600;
+		margin-top:3px;
+	}
+	.member_info .info .info_item .i_i_content{
+		font-weight: 400;
+		color: #888;
+		margin-left: 15px;
+	}
+	.member_info .info .info_item:nth-child(5){
+		height: 25px;
+		margin-top:8px;
+	}
+	.member_info .info .info_item:nth-child(5) .i_i_bg{
+		height: 25px;
+		width: 40px;
+		text-align: center;
+		font-size: 20px;
+		line-height: 25px;
+		background-color: #69d0d1;
+		margin-left: 5px;
+		float: left;
+		border-radius: 4px;
+	}
+	.member_info .info .info_item:nth-child(5) .i_i_bg:first-child{
+		margin-left: 0px;
+	}
+</style>
+<link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css" />
+<!---企业公告--->
+<div style="margin-left: 20px;margin-top: 10px;height:100%;background: white;margin-right: 10px; position: relative; ">
+	<div class="xw_head" style="padding-right: 2%; position: fixed;z-index: 100; top: 0px; background: white; width: 89%; opacity: 1;">
+		<table class="xw_hable" >
+			<tr>
+				<td style="font-size: 20px;">
+				   <i class="fa fa-paste" ></i>
+				           企业公告
+				    <a href="javascript:;"   class="gtna_right"  id="choicgroupAnswer_fitid">
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				   <span  style="color: #B0B0B0;font-size: 14px;">用于全企业成员发布公告</span>
+			    </td>
+			    <td align="right" >
+					<a href="javascript:;" class="gtna_right right_icon" id="login_user">
+						<i class="fa fa-user"  ></i>
+					</a>
+					<!--<a href="javascript:;"  class="gtna_right" >
+						<i class="fa fa-phone" ></i>
+					</a>
+					<a href="javascript:;"  class="gtna_right">
+						<i class="fa fa-thumb-tack" ></i>
+					</a>-->
+					<a href="javascript:;"  class="gtna_right right_icon" id="file_record" >
+						<i class="fa fa-folder-o" ></i>
+					</a>
+			   </td>
+			  
+			</tr> 
+		</table>
+		<div style="font-size: 17px width:20px; height: 31px; margin-top: -15px; background: #fff; text-align: center;line-height: 40px;border-top: 1px solid #ddd;">加载更多</div>
+	</div>
+	<div class="xw_head" style="padding-right: 2%; visibility: hidden;">
+		<table class="xw_hable" >
+			<tr>
+				<td style="font-size: 20px;">
+				   <i class="fa fa-paste" ></i>
+				           企业公告
+				    <a href="javascript:;"   class="gtna_right"  id="choicgroupAnswer_fitid">
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+				   <span  style="color: #B0B0B0;font-size: 14px;">用于全企业成员发布公告</span>
+			    </td>
+			    <td align="right" >
+					<a href="javascript:;" class="gtna_right right_icon" id="login_user">
+						<i class="fa fa-user"  ></i>
+					</a>
+					<!--<a href="javascript:;"  class="gtna_right" >
+						<i class="fa fa-phone" ></i>
+					</a>
+					<a href="javascript:;"  class="gtna_right">
+						<i class="fa fa-thumb-tack" ></i>
+					</a>-->
+					<a href="javascript:;"  class="gtna_right right_icon" id="file_record" >
+						<i class="fa fa-folder-o" ></i>
+					</a>
+			   </td>
+			</tr> 
+		</table>
+	</div>
+	<hr/>
+	<!--加载内容-->
+	<div class="container"  style="font-size: 16px; overflow: auto; margin-top: 5px;">
+		<div  style="width: 100%; ">
+			<div class="history_chattime" ><span class="ng-binding">9月23日 星期五</span></div>
+		    <hr />
+		</div>
+		<div class="row" style="margin-top: 40px; width: 100%;">
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:70px;"  align="right"  id="member_details_personalid"  >
+				<img alt="image" src="../../img/avatar.jpg" style="width:50px; height:50px;"   />
+			</div>
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:90%;  ">
+				<p>XXXX  <span>10:56</span></p>
+				<p>邀请 @王力宏 加入了群组</p>
+				<p>它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它
+					返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返
+					回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回
+					该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它
+					返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该
+					它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该</p>
+			</div>
+		</div>
+		
+		<div class="row" style="margin-top: 40px; width: 100%;">
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:70px;"  align="right"  id="member_details_personalid"  >
+				<img alt="image" src="../../img/avatar.jpg" style="width:50px; height:50px;"   />
+			</div>
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:90%;  ">
+				<p>XXXX  <span>10:56</span></p>
+				<p>邀请 @王力宏 加入了群组</p>
+				<p>它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它
+					返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返
+					回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回
+					该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它
+					返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该
+					它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该</p>
+			</div>
+		</div>
+		
+		<div class="row" style="margin-top: 40px; width: 100%;">
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:70px;"  align="right"  id="member_details_personalid"  >
+				<img alt="image" src="../../img/avatar.jpg" style="width:50px; height:50px;"   />
+			</div>
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:90%;  ">
+				<p>XXXX  <span>10:56</span></p>
+				<p>邀请 @王力宏 加入了群组</p>
+				<p>它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它
+					返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返
+					回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回
+					该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它
+					返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该
+					它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该</p>
+			</div>
+		</div>
+		
+		<div class="row" style="margin-top: 40px; width: 100%;">
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:70px;"  align="right"  id="member_details_personalid"  >
+				<img alt="image" src="../../img/avatar.jpg" style="width:50px; height:50px;"   />
+			</div>
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:90%;  ">
+				<p>XXXX  <span>10:56</span></p>
+				<p>邀请 @王力宏 加入了群组</p>
+				<p>它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它
+					返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返
+					回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回
+					该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它
+					返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该
+					它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该</p>
+			</div>
+		</div>
+		
+		<div class="row" style="margin-top: 40px; width: 100%;">
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:70px;"  align="right"  id="member_details_personalid"  >
+				<img alt="image" src="../../img/avatar.jpg" style="width:50px; height:50px;"   />
+			</div>
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:90%;  ">
+				<p>XXXX  <span>10:56</span></p>
+				<p>邀请 @王力宏 加入了群组</p>
+				<p>它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它
+					返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返
+					回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回
+					该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它
+					返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该
+					它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该</p>
+			</div>
+		</div>
+		
+		<div class="row" style="margin-top: 40px; width: 100%;">
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:70px;"  align="right"  id="member_details_personalid"  >
+				<img alt="image" src="../../img/avatar.jpg" style="width:50px; height:50px;"   />
+			</div>
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:90%;  ">
+				<p>XXXX  <span>10:56</span></p>
+				<p>邀请 @王力宏 加入了群组</p>
+				<p>它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它
+					返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返
+					回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回
+					该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它
+					返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该
+					它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该</p>
+			</div>
+		</div>
+		
+		<div class="row" style="margin-top: 40px; width: 100%;">
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:70px;"  align="right"  id="member_details_personalid"  >
+				<img alt="image" src="../../img/avatar.jpg" style="width:50px; height:50px;"   />
+			</div>
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:90%;  ">
+				<p>XXXX  <span>10:56</span></p>
+				<p>邀请 @王力宏 加入了群组</p>
+				<p>1111111111它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它
+					返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返
+					回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回
+					该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它
+					返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该
+					它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该它返回该</p>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 40px;">
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:70px;"  align="right"  id="member_details_personalid"  >
+				<img alt="image" src="../../img/avatar.jpg" style="width:50px; height:50px;"   />
+			</div>
+			<div class="col-xs-1 col-sm-1 col-md-1" style="width:90%;  ">
+				<p>XXXX  <span>10:56</span></p>
+				<p>共享了文件</p>
+				<div class="share_file" style="border:1px solid #ccc; padding:5px 10px; margin-top: 6px; position: relative; width: 400px;">
+					<div class=" s_f_img" style="width: 50px; height: 50px; ">
+						<img src="../../img/avatar.jpg" style="width: 50px; height: 50px;" />
+					</div>
+					<div class="" style=" margin-left: 60px; position: absolute; left: 20px; top:10px;">
+						<p style="color: #444;"> 文件设计模块.docx</p>
+						<p style="color: #aaa;">365k&nbsp;&nbsp;docx</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--
+        	作者：1044187112@qq.com
+        	时间：2016-09-29
+        	描述：输入窗口按钮
+        -->
+          <div class="channel-footer"  style="width: 96%;margin-top:5px; margin-left: 1%; border-top: 1px solid #ddd; padding-top: 8px; visibility: hidden;">
+				<div style="width: 100%; ">
+					<span style="padding-left: 0px;">
+						<a href="javascript:;" class="toolbtn" >
+					       <i class="fa fa-smile-o" ></i>
+					    </a>
+					</span>
+					<span style="padding-left: 35px;">
+						<a href="javascript:;" class="toolbtn">
+					       <i class="fa fa-paperclip" ></i>
+					    </a>
+					</span>
+					<span style="padding-left: 35px;">
+						<a href="javascript:;" class="toolbtn">
+					     <i class="fa fa-get-pocket"  ></i>
+					    </a>
+					</span>
+					<span style="padding-left: 35px;">
+						<a href="javascript:;" class="toolbtn">
+					    	<i class="fa fa-plus-square" ></i>
+					    </a>
+					</span>
+				</div>
+				
+				<div class="text-wrap ng-scope" ng-if="!vm.showMenu" >
+					<textarea  id="txtSendMessage" placeholder="按Enter键发送消息" style="margin-top: 6px; font-size: 14px; overflow: hidden; word-wrap: break-word; resize: none; height: 70px; width: 100%; border:none; outline: none;"></textarea>
+				</div>
+		 </div>
+        <div class="channel-footer"  style="width: 90%; margin-left: 0%;background: white; border-top: 1px solid #ddd; position: fixed; bottom: 0px; padding-top: 8px;">
+				<div style="width: 96%; ">
+					<span style="padding-left: 0px;">
+						<a href="javascript:;" class="toolbtn" >
+					       <i class="fa fa-smile-o" ></i>
+					    </a>
+					</span>
+					<span style="padding-left: 35px;">
+						<a href="javascript:;" class="toolbtn">
+					       <i class="fa fa-paperclip" ></i>
+					    </a>
+					</span>
+					<span style="padding-left: 35px;">
+						<a href="javascript:;" class="toolbtn">
+					     <i class="fa fa-get-pocket"  ></i>
+					    </a>
+					</span>
+					<span style="padding-left: 35px;">
+						<a href="javascript:;" class="toolbtn">
+					    	<i class="fa fa-plus-square" ></i>
+					    </a>
+					</span>
+				</div>
+				
+				<div class="text-wrap ng-scope" ng-if="!vm.showMenu" >
+					<textarea  id="txtSendMessage" placeholder="按Enter键发送消息" style="margin-top: 6px;overflow-y:visible; font-size: 14px; overflow: hidden;
+						 word-wrap: break-word; resize: none; height: 70px; width: 90%; border:none; outline: none;overflow-y:auto;"></textarea>
+				</div>
+		 </div>
+	</div>
+  </div>
+
+   <div style="display: none;">
+		<div id="group_sendnewsfitid">
+			<div style="padding: 10px 0px;">
+				<a><div class="quik-time"   onclick="GROUPPAGE.news_notify_fit();"><i class="fa fa-bell-o" style="font-size: 15px;margin-right: 10px;"></i>消息通知设置</div></a>
+			</div>
+		</div>
+	</div>
+	<div class="member_info" style="display: none;">
+		<div class="col-xs-1 col-sm-1 fp">
+			<img src="../../img/avatar.jpg" />
+			<p class="name">wh</p>
+			<p class="address">@wh</p>
+		</div>
+		<div class="col-xs-1 col-sm-1 info">
+			<div class="info_item">部门<span class="i_i_content">技术部</span></div>
+			<div class="info_item">职务<span class="i_i_content">技术部</span></div>
+			<div class="info_item">手机<span class="i_i_content">技术部</span></div>
+			<div class="info_item">邮箱<span class="i_i_content">技术部</span></div>
+			<div class="info_item">
+				<div class="i_i_bg">
+					<i class="fa  fa-comment-o"></i>
+				</div>
+				<div class="i_i_bg">
+					<i class="fa  fa-shield"></i>
+				</div>
+				<div class="i_i_bg">
+					<i class="fa  fa-phone"></i>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+<script type="text/javascript" src="../../js/app/news/group.js" ></script>

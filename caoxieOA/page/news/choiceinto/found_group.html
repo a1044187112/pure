@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>创建群组</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<link rel="stylesheet" href="../../../js/lib/validator/jquery.validator.css" />
+		
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			.clearfix{
+				padding:0px !important;
+				padding-top: 15px !important;
+			}
+			.team_id{
+				width: 73%;
+				margin-left: 5%;
+				line-height: 40px;
+				border: 1px solid #999;
+				padding-left: 15px;
+				font-size: 18px;
+				color: #111;
+				border-radius: 4px;
+			}
+			.team_theme{
+				width: 100%;
+				margin-top: 15px;
+			}
+			.team_theme .theme{
+				padding-top: 8px;
+				width: 22%;
+				text-align: right;
+				font-size: 16px;
+				color: #111;
+			}
+			.team_theme .theme .theme_intro{
+				font-size: 14px;
+				color: #999;
+			}
+			.team_theme .theme_textarea{
+				width: 58%;
+				padding-top:10px;
+				padding-left: 10px;
+				border-radius: 4px;
+				font-size: 16px;
+				color: #111;
+			}
+			.range{
+				margin-top:15px;
+				line-height: 38px;
+				position: relative;
+			}
+			.range .range_name{
+				width: 22%;
+				text-align: right;
+				font-size: 16px;
+				color: #111;
+			}
+			.range .range_input{
+				width: 55%;
+				border-radius: 4px;
+				font-size: 16px;
+				border: 1px solid #999;
+				line-height: 40px;
+			}
+			.range .range_icon{
+				/*position: absolute;
+				line-height: 40px;
+				font-size: 18px;
+				right: 0;*/
+			}
+			.member{
+				margin-top: 15px;
+			}
+			.member .mem_title{
+				width: 22%;
+				font-size: 16px;
+				color: #111;
+				text-align: right;
+				line-height: 40px;
+			}
+			.member .mem_name{
+				height: 40px;
+				width: 50px;
+				font-size: 16px;
+				color: #eee;
+				background-color: cornflowerblue;
+				margin-left: 10px;
+				border-radius: 5px;
+				text-align: center;
+				line-height: 40px;
+			}
+			.member .mem_name:last-child{
+				border: 1px solid #aaa;
+				font-size: 24px;
+				color: #999;
+				background-color: #fff;
+			}
+			.member .mem_name:last-child:hover{
+				border: 1px solid #666;
+				color: #666;
+			}
+			.message_img{display: block; float:right;width: 180px;height: 200px;position:absolute;top:40px;right:10px;}
+		    .user_img{width: 70%;height: 70%;border:1px solid #ddd;margin-left: 8%;}
+		    .open_file{filter:alpha(opacity=0) !important; opacity:0 !important;position: relative; top:-30px;right: 15px;width:100px;height: 30px;}
+		    .img_upload{ margin: 10% auto;margin-left: 23%;overflow: hidden; width:100px !important;}
+		    
+		    .ctn-wrap{overflow: visible;}
+		    ul.member-list{
+				margin: 0;
+			    padding: 0;
+			    display: block;
+			}
+			
+			ul.member-list li{
+				margin-right: 12px;
+			    margin-bottom: 8px;
+			    float: left;
+			    list-style-type: none;
+			}
+			
+			ul.member-list li a{
+				position: relative;
+			}
+			
+			ul.member-list li a .lc-avatar{
+				display: inline-block;
+			}
+			
+			ul.member-list li a .avatar-close{
+				background-image: url(https://cdn.worktile.com/pro/image/app/lc-close.png);
+			    position: absolute;
+			    top: -6px;
+			    right: -6px;
+			    display: inline-block;
+			    width: 13px;
+			    height: 13px;
+			    background-size: cover;
+			    visibility: hidden;
+			    cursor: pointer;
+			    z-index: 99999;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: white; position: relative;">
+		<div class="wrapper clearfix container" >
+			<form id="add-department-form" class="team_info" style="width: 100%;">
+				<span>
+				    <input class="team_id" type="text" name="id" placeholder="群组名称" />
+				</span>
+				<span>
+				   <div class="message_img" id="localImag">
+						 <img class="user_img" name="img_url" id='vehicle_changeImg' src="../../../img/avatar.jpg"></img>
+						<a href="javascript:;" class="img_upload ui-btn ui-btn-sp" style="margin-left: 20%;">&nbsp;&nbsp;上传图像
+							 <input type="file" id="vehicle_uploadFile" name="files" class="open_file"/>
+						</a>
+					</div>
+				</span>
+				<div class="row team_theme "> 
+					<div class="col-md-5 col-sm-5 theme">
+						<div class="theme-title">主题</div>
+						<div class="theme_intro">(可选内容)</div>
+					</div>
+					<textarea class="col-md-7 col-sm-5 theme_textarea" name="intro" placeholder="说明群组主要讨论内容" rows="3"></textarea>
+				</div>
+				<div class="row range">
+					
+					<div class="col-md-5 col-sm-5 range_name">可见范围</div>
+					<input class="col-md-7 col-sm-7 range_input" name="range" value="私有群组" />
+					<!--<i class="col-md-1 col-sm-1 fa fa-caret-down range_icon"></i>-->
+				</div>
+				<div class="row member">
+					<div class="col-md-5 col-sm-5 mem_title">群组成员</div>
+					<div class="col-md-7 col-sm-7 row">
+						<div class="col-md-1 col-sm-1 mem_name">张三</div>
+						<div class="col-md-1 col-sm-1 mem_name">李四</div>
+						<div class="col-md-1 col-sm-1 mem_name">王五</div>
+						<a id="btn_addManber" href="javascript:;"   >
+						   <div class="col-md-1 col-sm-1 mem_name">+</div>
+						</a>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- 第二层 -->
+		<div></div>
+		
+		
+	
+		<script type="text/javascript" src="../../../js/lib/jquery.js"></script>
+		<script type="text/javascript" src="../../../js/lib/validator/jquery.validator.js"></script>
+		<script type="text/javascript" src="../../../js/lib/validator/zh_CN.js"></script>
+		<script type="text/javascript" src="../../../js/lib/plugins.js"></script>
+		<script type="text/javascript" src="../../../js/common.js"></script>
+		
+		<!-- 用户树模板 -->
+<script id="groupTreeTemp" type="text/html">
+	<ul class="lc-tree">
+		{{each list as item i}}
+		<li class="member">
+			<a href="javascript:;" class="lvl0">
+				<span class="expand-tree-icon"><i class="fa fa-caret-right "></i></span>
+				<span>
+					<i class="lcfont lc-department-o"></i>
+					<span class="title">
+						<span class="ng-binding">{{item.text}}</span>
+						<span class="title-desc ng-binding">( 2人 )</span>
+					</span>
+				</span>
+			</a>
+			<ul data-ul="ul-{{item.id}}" style="display: none;">
+				<li>
+					{{each item.nodes as nod j}}
+					<a class="lvl0 member-item" href="javascript:;" data-name="{{nod.text}}" data-userid="member-{{nod.id}}" data-selected="{{nod.selected ? 0 : 1}}">
+						<img class="member-avatar-30" src="../../../img/avatar.jpg" />
+						<span class="flex-se1 text-overflow pl5">{{nod.text}}</span>
+						{{if nod.selected}}
+						<i class="fa fa-check"></i>
+						{{/if}}
+					</a>
+					{{/each}}
+				</li>
+			</ul>
+		</li>
+		{{/each}}
+	</ul>
+</script>
+<!-- 用户列表模板 -->
+<script id="memberLiTemp" type="text/html">
+	<div class="member-panel-body">
+		<ul>
+			{{each list as item i}}
+			<li class="member">
+				<div class="lc-avatar lc-avatar-30 ">
+					<img src="{{item.img}}" class="lc-avatar-avatar member-avatar-30" />
+					<div class="lc-avatar-name">{{item.name}}</div>
+				</div>
+				{{if item.selected}}
+				<i class="lc-check fa fa-check"></i>
+				{{/if}}
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</script>
+		<script type="text/javascript" src="../../../js/app/news/choiceinto/found_group.js"></script>
+	</body>
+
+</html>

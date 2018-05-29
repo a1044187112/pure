@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>编辑</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style type="text/css">
+			.main_div {
+				height: 100%;
+				background-color: white;
+			}
+			
+			.name_div {
+				padding: 3px 20px;
+				margin-left: 20px;
+			}
+			
+			.input_txex {
+				width: 220px;
+			}
+			
+			.bottom_div {
+				margin-left: 20px;
+				padding: 20px 20px;
+			}
+			
+			.textSty {
+				width: 545px !important;
+				height: 90px !important;
+			}
+			
+			.remarks {
+				margin-top: -80px;
+			}
+			
+			.div_folat {
+				float: left;
+			}
+			
+			.margin_textSty {
+				margin-left: 10px;
+			}
+			
+			.clearfix:after {
+				content: " ";
+				display: block;
+				clear: both;
+				height: 0;
+			}
+			
+			.clearfix {
+				zoom: 1;
+			}
+			
+			.width_div {
+				width: 65px;
+				line-height: 40px;
+			}
+			
+			.fontSty {
+				font: 24px !important;
+			}
+			
+			.m_top {
+				padding-top: 30px;
+			}
+			.addLiWidth{width: 80%; margin-left: 10%;}
+		</style>
+	</head>
+
+	<body>
+		<div class="main_div m_top">
+			<form id="manage-form" action="">
+					<ul class="mod-form-rows base-form cf new-liclass" style="margin-top: 10px;">
+						<li class="row-item addLiWidth" style="margin-top: 25px;">
+							<div class="label-wrap"><label for="number">培训讲师</label></div>
+							<div class="ctn-wrap"><input name="users_id" type="text" value="" class="ui-input" name="number" id="number"style="width: 220px;"></div>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="../../../js/lib/jquery.js"></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../../js/lib/plugins.js"></script>
+		<script type="text/javascript" src="../../../js/app/hr/train/addlecturer.js"></script>
+	</body>
+
+</html>

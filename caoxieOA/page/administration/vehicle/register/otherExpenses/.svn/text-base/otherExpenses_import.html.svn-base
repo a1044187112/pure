@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>导入</title>
+		<link rel="stylesheet" href="../../../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../../../css/common.css" />
+		<link rel="stylesheet" href="../../../../../js/lib/validator/jquery.validator.css" />
+		<style type="text/css">
+			/*.wrapper .n-invalid {border: 1px solid #f00;}*/
+			
+			.open_file {
+				filter: alpha(opacity=0) !important;
+				opacity: 0 !important;
+				position: relative;
+				top: -34px;
+				right: 0px;
+				width: 320px;
+				height: 35px;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: white;">
+		<div class="wrapper" style="width: 90%;margin: 0 auto; height: 80px;">
+			<form id="manage-form" style="width: 100%;">
+				<div class="form-group" style="margin-top: 10px;">
+					<label class="col-sm-3 control-label" for="username">导入来源文件：</label>
+					<div class="col-sm-9">
+						<input type="text" id="username" name="username" placeholder="" class="form-control" style="width: 60%;display: inline;">
+						<a href="javascript:;" class="btn btn-white" style="height: 35px;margin-top: -2px;">&nbsp;&nbsp;浏览...
+							<!--<input type="file" id="uploadFile" class="open_file" />-->
+						</a>
+						<input type="file" id="uploadFile" class="open_file" />
+					</div>
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="../../../../../js/lib/jquery.js"></script>
+		<script type="text/javascript" src="../../../../../js/lib/validator/jquery.validator.js"></script>
+		<script type="text/javascript" src="../../../../../js/lib/validator/zh_CN.js"></script>
+		<script type="text/javascript" src="../../../../../js/lib/plugins.js"></script>
+		<script type="text/javascript" src="../../../../../js/common.js"></script>
+		<script type="text/javascript" src="../../../../../js/app/administration/vehicle/register/otherExpenses/otherExpenses_import.js"></script>
+	</body>
+
+</html>

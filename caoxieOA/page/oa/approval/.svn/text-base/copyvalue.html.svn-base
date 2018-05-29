@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>申请物品备注</title>
+		
+		<style type="text/css">
+		    .body_b{background-color: #F0F3F4;}
+		    .div_sif{ text-align: center; }
+		    .textareacopysif{ height: 250px;width:450px;}
+		</style>
+	     <script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+	</head>
+	<body  class="body_b">
+		<div class="div_sif">
+			<textarea class="textareacopysif" name="copy_xqiuremark"  id="copy_xqiuremark"></textarea>
+		</div>
+		<script type="text/javascript">
+		   var iframe = parent.document.getElementById("home_iframe").contentWindow;
+		   document.getElementById("copy_xqiuremark").value=iframe.textareavalue;
+			function copyxuqiu(){
+				var copy_xqiuremark=document.getElementById("copy_xqiuremark").value;
+				iframe.copyvalue(copy_xqiuremark);
+				//关闭窗口
+				 parent.layer.closeAll();
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>简历库</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		
+	<head>
+	<body>
+		<div class="mod-search cf">
+				<div class="fl"  >
+					<ul class="ul-inline">
+						<li>
+							姓名:<input type="text"  class="ui-input ui-input-ph" placeholder="搜索姓名" />
+						</li>
+						<li>
+							职位:<input type="text" class="ui-input ui-input-ph" placeholder="搜索职位" />
+						</li>
+						<li>
+							工作经验:
+							<!--<span id="seach_gzjy"></span>-->
+							<input type="text" class="ui-input ui-input-ph" placeholder="搜索工作经验" />
+						</li>
+						<li>
+							<a class="btn btn-white btn-bitbucket">
+	                            <i class="fa fa-search"></i>
+	                        </a>
+						</li>
+					</ul>
+				</div>
+				<div class="fr">
+					<a class="ui-btn ui-btn-sp" id="add_resume" href="javascript:void(0);">添加</a>
+					<a class="ui-btn" id="eidt_resumebyid" target="_blank" href="javascript:void(0);">修改</a>
+					<a class="ui-btn" id="interviewbyid" target="_blank" href="javascript:void(0);">面试记录</a>
+					<a class="ui-btn" id="editadd_offer" target="_blank" href="javascript:void(0);">OFFER记录</a>
+					<a class="ui-btn" id="openWin" target="_blank" href="javascript:void(0);">入职</a>
+					<a class="ui-btn" id="openWin" target="_blank" href="javascript:void(0);">导入</a>
+					<a class="ui-btn" id="openWin" target="_blank" href="javascript:void(0);">导出</a>
+					<a href="#" class="ui-btn" id="btn-batchDel">删除</a>
+				</div>
+			</div>
+			<div class="grid-wrap">
+				<table id="demand_grid"></table>
+				<div id="page"></div>
+			</div>
+			<script type="text/javascript" src="../../../js/app/hr/recruit/resume/resume_info.js" ></script>
+    </body>
+</html>

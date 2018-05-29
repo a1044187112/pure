@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>新增部门</title>
+		<link rel="stylesheet" href="../../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../../css/common.css" />
+		<link rel="stylesheet" href="../../../../js/lib/validator/jquery.validator.css" />
+		<style type="text/css">
+			.wrapper .n-invalid {
+				border: 1px solid #f00;
+			}
+			
+			label {
+				text-align: right;
+			}
+			
+			.ui-combo-wrap {
+				width: 100% !important;
+			}
+			
+			.input-txt {
+				width: 96% !important;
+			}
+			
+			.ui-tree-wrap {
+				width: 100% !important;
+			}
+			
+			.ui-tree-wrap:hover {
+				border: 1px solid #1ab394 !important;
+			}
+			
+			.clearfix:after {
+				content: " ";
+				display: block;
+				clear: both;
+				height: 0;
+			}
+			
+			.clearfix {
+				zoom: 1;
+			}
+			
+			.message_img {
+				display: block;
+				float: right;
+				width: 180px;
+				height: 200px;
+				position: absolute;
+				top: 40px;
+				right: 10px;
+			}
+			
+			.user_img {
+				width: 70%;
+				height: 70%;
+				border: 1px solid #ddd;
+				margin-left: 8%;
+			}
+			
+			.open_file {
+				filter: alpha(opacity=0) !important;
+				opacity: 0 !important;
+				position: relative;
+				top: -30px;
+				right: 15px;
+				width: 100px;
+				height: 30px;
+			}
+			
+			.img_upload {
+				margin: 10% auto;
+				margin-left: 23%;
+				overflow: hidden;
+				width: 100px !important;
+			}
+			
+			.input_text {
+				width: 560px !important;
+			}
+			
+			.div_float {
+				width: 45%;
+				float: left
+			}
+			
+			.purchase_sty {
+				display: inline-block;
+				margin-top: -2%;
+			}
+			
+			;
+			.time_sty {
+				display: inline-block;
+				margin-left: -3%;
+			}
+			
+			.width_sty {
+				width: 97%;
+				margin-left: -1.5%;
+			}
+			
+			;
+			.span_sty{font-size: 14px; color: #9EA6B9;}
+		</style>
+	</head>
+
+	<body>
+		<!--<div style="position: absolute;top:50px;left:20px; width: 150px; height: 150px;">
+			<img src="../../../../img/avatar.jpg" style="width: 100px; height: 120px;">
+		</div>-->
+		<div class="ibox-content">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="../../../../img/avatar.jpg" style="width: 220px; height: 250px;">
+				</div>
+				<div class="col-sm-8 clearfix">
+					<h2 style="font-size: 24px;font-weight: 700px;color: #000000;">固定资产信息</h2>
+					  <div style="font-size: 15px; margin-top: 13px;" class="clearfix">
+					  	  <div style="float: left;width: 50%;">
+							<p><strong>品名：</strong>&nbsp;&nbsp;<span class="span_sty">板凳</span></p>
+							<p><strong>编号：</strong>&nbsp;&nbsp;<span class="span_sty">ZZFFFTT666</span></p>
+							<p><strong>类型：</strong>&nbsp;&nbsp;<span class="span_sty">椅子</span></p>
+							<p><strong>规格：</strong>&nbsp;&nbsp;<span class="span_sty">白色 170cm</span></p>
+							<p><strong>价格：</strong>&nbsp;&nbsp;<span class="span_sty" style="color: red;">120￥</span></p>
+							<p><strong>单位：</strong>&nbsp;&nbsp;<span class="span_sty">个</span></p>
+							<p><strong>使用年限：</strong>&nbsp;&nbsp;<span class="span_sty">XXXX有限公司</span></p>
+							<p><strong>折旧资金：</strong>&nbsp;&nbsp;<span class="span_sty">10000</span></p>
+						</div>
+						<div style="float: left;width: 50%;">
+							<p><strong>保管部门：</strong>&nbsp;&nbsp;<span class="span_sty">板凳</span></p>
+							<p><strong>保管人员：</strong>&nbsp;&nbsp;<span class="span_sty">ZZFFFTT666</span></p>
+							<p><strong>厂商：</strong>&nbsp;&nbsp;<span class="span_sty">椅子</span></p>
+							<p><strong>供货商：</strong>&nbsp;&nbsp;<span class="span_sty">白色 170cm</span></p>
+							<p><strong>存放地点：</strong>&nbsp;&nbsp;<span class="span_sty">10000</span></p>
+							<p><strong>购置时间：</strong>&nbsp;&nbsp;<span class="span_sty">XXXX有限公司</span></p>
+							<p><strong>登记时间：</strong>&nbsp;&nbsp;<span class="span_sty">10000</span></p>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="panel blank-panel" style="height: 240px; overflow: auto;background-color: white;">
+				<div class="panel-heading">
+					<div class="panel-options">
+						<ul class="nav nav-tabs">
+							<li>
+								<h3 style="padding:10px 10px 0px 10px;color:#63B8FF; margin-top:10px;display: block; background: white;" class="a_color">备注</h3>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="panel-body">
+
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab-1">
+							<div class="feed-activity-list">
+								<span>已经领取了已经领取了已经领取了已经领取了已经领取了已经领取了已经领取了已经领取了已经领取了已经领取了已经领取了已经领取了已经领取了</span>
+							</div>
+
+						</div>
+						
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../../js/lib/jquery.js"></script>
+		<script type="text/javascript" src="../../../../js/lib/plugins.js"></script>
+		<script type="text/javascript" src="../../../../js/common.js"></script>
+		<script type="text/javascript" src="../../../../js/app/administration/fixedAssets/information/information_see.js"></script>
+	</body>
+
+</html>

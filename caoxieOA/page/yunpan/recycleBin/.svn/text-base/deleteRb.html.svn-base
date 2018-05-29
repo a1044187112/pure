@@ -1,0 +1,6 @@
+<style>
+	*{
+		  font-family: Helvetica, "Helvetica Neue", "Century Gothic", "微软雅黑", "Microsoft Yahei", "STXihei";
+	}
+</style>
+<div style="text-align:center;overflow:hidden;font-size:16px;line-height: 100px;">确认清空回收站？</div>

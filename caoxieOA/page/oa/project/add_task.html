@@ -1,0 +1,190 @@
+<style type="text/css">
+	.row-item{margin-bottom: 20px !important;}
+	.row-item label{color: #999;}
+	.p25{padding: 25px;}
+	h2.title{
+		font-size: 22px;
+		margin-bottom: 10px;
+		color: #7EC0EE;
+	}
+	.subtask-remark{
+		display: none;
+	}
+	
+	.subtask-remark .simditor{
+		border-radius: 3px;
+	}
+	
+	.subtask-remark .simditor-wrapper{
+	}
+	
+	.subtask-remark .simditor-body{
+	    outline: 0px solid transparent;
+	    padding: 10px 12px 60px;
+		min-height: 100px;
+	}
+	
+	.subtask-remark .simditor-body, .editor-style {
+	    font-size: 15px;
+	    line-height: 1.6;
+	}
+		
+	.subtask-editor{
+		display: none;
+	}
+	.task-add-quick{
+		position: relative;
+	    margin: 10px 0;
+	    padding: 5px 15px;
+	    border-radius: 3px;
+	    border: 1px solid #f3f3f3;
+	    background: #fbfbfb;
+	}
+	.subtask-editor .task-add-quick input {
+	    padding: 0 120px 0 0;
+	    height: 34px;
+	}
+	.task-add-quick input[type=text] {
+	    background: 0 0;
+	    border: 0;
+	    border-radius: 0;
+	    box-shadow: none;
+	    padding: 0 190px 0 12px;
+	    font-size: 15px;
+	    color: #333;
+	}
+	/*
+	.stask-add-quick .form-control {
+	    border: 1px solid #f3f3f3;
+	    background: #fbfbfb;
+	    box-shadow: none;
+	    border-radius: 3px;
+	    height: 40px;
+	    font-size: 16px;
+	    padding: 5px 18px;
+	}
+	/*
+	.task-add-quick .form-control {
+	    width: 100%;
+	    background-color: #fff;
+	    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	}*/
+	.task-add-quick .form-control, output {
+	    line-height: 1.42857143;
+	    color: #555;
+	    display: block;
+	}
+	
+	.task-add-quick .task-add-meta {
+	    position: absolute;
+	    top: 10px;
+	    right: 5px;
+	}
+	a.actor{
+		padding: 0 5px;
+	    margin: 0 5px;
+	    color: #8f8f8f;
+	    vertical-align: middle;
+	}
+	.todo-completed{
+		text-decoration: none;
+	}
+	</style>
+<div class="manage-wrapper p25">
+	<div id="manage-wrap" class="manage-wrap">
+		<form id="manage-form" action="">
+			<ul class="mod-form-rows base-form cf" id="base-form">
+				<li class="row-item">
+    				<div class="ctn-wrap">
+    					<h2 class="title">任务名称</h2>
+    				</div>
+    			</li>
+    			<li class="row-item">
+    				<div class="ctn-wrap">
+    					<div class="task_description" style="color: #999;"></div>
+    					<a href="javascript:;" class="btn btn-link gray" id="btn-add-remark-show">添加描述</a>
+    					<div class="subtask-remark">
+    						<div>
+    							<textarea name="note" id="note" autofocus required class="remark"></textarea>
+    						</div>
+    						<div style="margin-top: 10px;">
+								<a href="javascript:;" class="btn btn-info confirm">保 存</a>
+								<a href="javascript:;" class="btn btn-link cencal">取 消</a>
+							</div>
+    					</div>
+    				</div>
+    			</li>
+    			<li class="row-item">
+    				<div class="label-wrap"><label for="name">参与</label></div>
+    				<div class="ctn-wrap">
+    					<ul></ul>
+    					<a id="btn_addCharnge" href="javascript:;" class="btn btn-white btn-circle"><i class="fa fa-plus"></i></a>
+    				</div>
+    			</li>
+    			<li class="row-item">
+    				<div class="label-wrap"><label for="name">起止时间</label></div>
+    				<div class="ctn-wrap">
+    					<div class="input-daterange input-group" id="datepicker">
+                            <input type="text" class="input-sm form-control" name="start" value="2014-11-11">
+                            <span class="input-group-addon">到</span>
+                            <input type="text" class="input-sm form-control" name="end" value="2014-11-17">
+                        </div>
+    				</div>
+    			</li>
+    			<li class="row-item">
+    				<div class="label-wrap"><label for="name">检查项</label></div>
+    				<div class="ctn-wrap">
+    					<div class="progress">
+						  <div class="progress-bar progress-bar-info" style="width: 10%;">10%</div>
+						</div>
+						<ul id="task-check-item" class="todo-list m-t small-list">
+                            <li>
+                                <a href="javascript:;" class="check-link"><i class="fa fa-check-square selected" data-select="fa-check-square" data-cancel-select="fa-square-o"></i> </a>
+                                <span class="m-l-xs todo-completed">开会</span>
+
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="check-link"><i class="fa fa-check-square selected" data-select="fa-check-square" data-cancel-select="fa-square-o"></i> </a>
+                                <span class="m-l-xs  todo-completed">项目开发</span>
+
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="check-link"><i class="fa fa-square-o" data-select="fa-check-square" data-cancel-select="fa-square-o"></i> </a>
+                                <span class="m-l-xs">修改bug</span>
+                                <small class="label label-primary"><i class="fa fa-clock-o"></i> 1小时</small>
+                            </li>
+                        </ul>
+						<a href="javascript:;" class="btn btn-link blue" id="btn-show-add-task">＋ 添加检查项</a>
+						<div class="subtask-editor">
+							<div class="ng-isolate-scope">
+								<div class="task-add-quick">
+									<input class="form-control taskName" type="text" placeholder="添加子任务，按回车键（Enter）保存" />
+									<!--
+									<div class="task-add-meta">
+										<a class="actor"><i class="fa fa-calendar-o"></i></a>
+										<a class="actor"><i class="fa fa-user-plus"></i></a>
+									</div>
+									-->
+								</div>
+							</div>
+							<div>
+								<button type="button" class="btn btn-info" id="btn-confirm-stack-add">保 存</button>
+								<button type="button" class="btn btn-link" id="btn-cencal-stack-add">取 消</button>
+							</div>
+						</div>
+    				</div>
+    			</li>
+			</ul>
+		</form>
+	</div>
+</div>
+<!--<script type="text/template" id="temp-project-task-checkItem">
+	{{each list as o i}}
+	<li data-selected="{{o.selected}}">
+        <a href="javascript:;" class="check-link"><i class="fa fa-check-square"></i> </a>
+        <span class="m-l-xs todo-completed">{{o.text}}</span>
+    </li>
+    {{/each}}
+</script>-->
+<script type="text/javascript" src="../../../js/app/oa/project/add_task.js" ></script>

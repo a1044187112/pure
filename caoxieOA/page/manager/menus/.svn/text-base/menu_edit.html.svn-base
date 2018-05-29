@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>菜单编辑</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<style type="text/css">
+			label{
+				font-family: "微软雅黑";
+			}
+			.manage-wrap{
+				padding-top: 60px;
+				padding-left: 140px;
+			}
+			.ui-input,.input-txt {
+				width: 220px;
+			}
+			
+			a#add_icon{
+				margin-top:10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="manage-wrap" class="manage-wrap">
+			<form id="manage-form">
+				<div id="base-form">
+					<ul class="mod-form-rows">
+	                    <li class="row-item">
+	                        <div class="label-wrap"><label for="app_name">父模块名</label></div>
+	                        <div ><span id="app_name"></span></div>
+	                    </li>
+					</ul>
+					<ul class="mod-form-rows">
+						<li class="row-item">
+	                        <div class="label-wrap"><label for="apps_icon">应用图标</label></div>
+	                        <div><input type="text" id="apps_icon" class="ui-input" placeholder="请选择图片上传" /><a id="add_icon" href="javascript:void(0)">选择</a></div>
+	                    </li>
+					</ul>
+					<ul class="mod-form-rows">
+						<li class="row-item">
+	                        <div class="label-wrap"><label for="menu_url">URL路径</label></div>
+	                        <div><input class="ui-input" type="text" id="menu_url" placeholder="输入访问url"/></div>
+	                    </li>
+					</ul>
+					<ul class="mod-form-rows">
+						<li class="row-item">
+	                        <div class="label-wrap"><label for="menu_name">菜单导航</label></div>
+	                        <div><input class="ui-input" type="text" id="menu_name" placeholder="菜单或导航名称" /></div>
+	                    </li>
+					</ul>
+					<ul class="mod-form-rows">
+						<li class="row-item">
+	                        <div class="label-wrap"><label for="functions">权限设置</label></div>
+	                        <div class="ctn-wrap">
+				                <span class="ui-combo-wrap" id="rights">
+				                  <input type="text" id="functions" name="functions" readOnly="true" placeholder="请选择权限按钮" class="input-txt" autocomplete="off" value="" data-ref="date">
+				                  <i class="ui-icon-ellipsis"></i>
+				                </span>
+				            </div>
+	                    </li>
+	                    <li class="row-item">
+	                    	<div class="label-wrap">
+	                    		<a class="fileinput-button" id="icon-upload">
+	                    			+图标上传
+	                    			<input id="upfile" type="file" name="files[]" multiple>
+	                    		</a>
+	                    	</div>
+	                    	<div class="ctn-wrap">
+	                    		
+	                    	</div>
+	                    </li>
+					</ul>
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="../../../js/lib/jquery.js"></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/plugins.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/eui.dialog.js" ></script>
+		<script type="text/javascript" src="../../../js/app/manager/menus/menu_edit.js"></script>
+	</body>
+</html>

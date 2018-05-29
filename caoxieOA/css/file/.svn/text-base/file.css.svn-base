@@ -1,0 +1,740 @@
+@charset "utf-8";
+
+html{
+	overflow-x:hidden;
+    background-attachment:fixed;
+    *cursor:default;
+    background:#e3e7ec;
+}
+
+body{
+	background-image:none;
+    background-color:#e3e7ec;
+}
+
+/*按钮*/
+.btn {
+	border-radius: 0px;
+}
+
+.btn-white {
+	color: inherit;
+	background: #fff;
+	border: 1px solid #e7eaec
+}
+
+.btn-white.active,.btn-white:active,.btn-white:focus,.btn-white:hover,.open .dropdown-toggle.btn-white {
+	color: inherit;
+	border: 1px solid #d2d2d2
+}
+
+.btn-white.active,.btn-white:active {
+	box-shadow: 0 2px 5px rgba(0,0,0,.15)inset
+}
+
+.btn-white.active,.btn-white:active,.open .dropdown-toggle.btn-white {
+	background-image: none
+}
+
+.btn-white.active[disabled],.btn-white.disabled,.btn-white.disabled.active,.btn-white.disabled:active,.btn-white.disabled:focus,.btn-white.disabled:hover,.btn-white[disabled],.btn-white[disabled]:active,.btn-white[disabled]:focus,.btn-white[disabled]:hover,fieldset[disabled] .btn-white,fieldset[disabled] .btn-white.active,fieldset[disabled] .btn-white:active,fieldset[disabled] .btn-white:focus,fieldset[disabled] .btn-white:hover {
+	color: #cacaca
+}
+
+.fixedPanel{
+	position: relative;
+	height: 35px;
+	margin: 0px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.filePanel{
+	position: absolute;
+	width: 100%;
+	top: 100px;
+	bottom: 0px;
+	min-width: 636px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+}
+
+.breadcrumb {
+    border-bottom: 1px solid #f4f4f4;
+    background: #fff;
+}
+.breadcrumb .radio {
+    padding-right:8px;
+    float:left;
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+}
+.breadcrumb a.checkedimg {
+    display:block;
+    padding:0px 0px 0px 0px;
+    height:20px;
+    width:20px;
+    background:transparent url(images/checkbox.png) 0px -1px no-repeat;
+}
+.breadcrumb .selected a {
+    background:transparent url(images/checkbox.png) -20px 0px no-repeat;
+}
+.selected .radio a{
+	background:transparent url(images/checkbox.png) -20px 0px no-repeat;
+}
+.crumbNav {
+    overflow:hidden;
+    white-space:nowrap;
+}
+.crumbNav li {
+    float:left;
+    background:transparent url(images/crumb.jpg) right -147px no-repeat;
+    padding-right:25px;
+    max-width:108px\9\0;
+}
+.crumbNav li.no_bg{ background:none;padding-right:10px;}
+.crumbNav a {
+    float:left;
+    color:#777777;
+    max-width:108px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    display:inline-block;
+    _width:50px;
+}
+
+.wrapper .file-list dd.file,.search_all .file-list dd.file{
+	cursor:default;
+    border-bottom:1px solid #F4F4F4;
+}
+
+.file-icon .summary,.search_all .file-list dd.file .summary{
+	position:relative;
+    padding-right:116px;
+}
+
+.wrapper .file-list .dd.file:hover{
+	background-color:#ffffcb;
+}
+
+.file-icon .discuss-panel{
+	/*display: none;*/
+}
+
+.wrapper .file-list dd.selected, .wrapper .file-list dd.selected:hover{
+	 background-color:#ffffcb;
+}
+
+.file-icon .time,.search_all .file-list dd.file .time,.search_result .file-list dd.file .time{
+    font-size:11px;
+    color:#888888;
+    text-align:center;
+    line-height:56px;
+    float:right;
+    padding-right:3px;
+}
+
+.file-icon .radio,.search_all .file-list dd.file .radio,.search_result .file-list dd.file .radio {
+    float:left;
+    overflow:hidden;
+    padding: 0 10px 0 3px;
+}
+
+.file-icon .radio a, #crumbNav a.checkedimg,.search_all .file-list dd.file .radio a,.search_result .file-list dd.file .radio a{
+    display:block;
+    padding:0px;
+    margin: 10px 0px 0px 12px;
+    height:30px;
+    width:20px;
+    background:transparent url(images/checkbox.png) 0px 0px no-repeat;
+}
+
+.wrapper .file-list dd.selected .radio a,.search_all .file-list dd.selected .radio a {
+    background:transparent url(images/checkbox.png) -20px 0px no-repeat;
+}
+
+.file-icon .vnum {
+    background:#A5C2EA;
+    color:#FFF;
+    padding:0 2px;
+    border-radius:3px;
+    margin-right:5px;
+}
+.file-icon .editor {
+    margin-right:5px;
+}
+
+.file-icon .brief .info,.search_all .file-list dd.file .brief .info,.search_result .file-list dd.file .brief .info {
+    float:left;
+    padding:10px 0;
+    display:inline;
+    position:relative;
+}
+.file-icon hgroup,.search_all .file-list dd.file hgroup,.search_result .file-list dd.file hgroup{
+    float:left;
+    padding-left:10px;
+    overflow:hidden;
+    width:350px;
+}
+.file-icon hgroup h3,.search_all .file-list dd.file hgroup h3,.search_result .file-list dd.file hgroup h3{
+    float:left;
+    line-height:20px;
+    max-width:350px;
+    cursor:pointer;
+    word-wrap: break-word;
+    word-break: normal;
+    word-break:break-all;
+    margin-right:10px;
+    _width:350px;
+}
+.search_all .file-list dd.file hgroup h3 a,.search_all .file-list dd.file hgroup h2 a,.search_result .file-list dd.file hgroup h3 a{ color:red;}
+.file-icon hgroup h3:hover {
+    text-decoration:underline;
+}
+
+.file-icon hgroup .pathTo:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+.file-icon hgroup h5 {
+    float:left;
+    font-weight:normal;
+    color:#999999;
+    line-height:20px;
+    _display:none;
+}
+.file-icon hgroup h5.tagList span{
+    display: block; 
+	float: left; 
+	margin-right: 8px;
+	border: 1px solid #ccc; 
+	border-radius: 17px; 
+	padding: 2px 8px 2px 8px;
+	height:16px;
+	line-height:14px;
+}
+.file-icon hgroup h4,.search_all .file-list dd.file hgroup h4 ,.search_all .file-list dd.file hgroup h2,.search_result .file-list dd.file hgroup h4 {
+    font-size:11px;
+    color:#999999;
+    font-weight:normal;
+    clear:both;
+    max-width:360px;
+    /*text-overflow:ellipsis;*/
+    /*white-space:nowrap;*/
+    /*overflow:hidden;*/
+}
+.search_all .file-list dd.file hgroup h2{color:#333; padding:2px 0px;} 
+
+.file-icon .icon,.search_all .file-list dd.file .icon {
+    float:left;
+    background:transparent url(images/icons_v3.png) -11px -600px no-repeat;
+    width:33px;
+    height:36px;
+}
+.file-icon .icon {
+    _background:transparent url(images/icons.png) 0 -447px no-repeat;
+    width:33px;
+    height:36px;
+}
+.file-icon .icon-xt {
+    background-position:-11px -450px;
+}
+.file-icon .icon-folder,.search_all .file-list dd.file .icon-folder {
+    background-position:-60px -50px;
+}
+.file-icon .icon-ml {
+    background-position:-10px -643px;
+}
+.file-icon .icon-ai {
+    background-position:-10px 0px;
+}
+.file-icon .icon-fa {
+    background-position:-10px -50px;
+}
+.file-icon .icon-fl {
+    background-position:-10px -50px;
+}
+.file-icon .icon-pd,.search_all .file-list dd.file .icon-pd {
+    background-position:-10px -100px;
+}
+.file-icon .icon-xs {
+    background-position:-10px -200px;
+}
+.file-icon .icon-wd {
+    background-position:-10px -300px;
+}
+.file-icon .icon-docx {
+    background-position:-61px -551px;
+}
+.file-icon .icon-xls {
+    background-position:-61px -600px;
+}
+.file-icon .icon-ps {
+    background-position:-10px -250px;
+}
+.file-icon .icon-pt {
+    background-position:-10px -150px;
+}
+.file-icon .icon-zi {
+    background-position:-11px -350px;
+}
+.file-icon .icon-im {
+    background-position:-10px -400px;
+}
+.file-icon .icon-vi {
+    background-position:-10px -500px;
+}
+.file-icon .icon-mp {
+    background-position:-10px -550px;
+}
+.file-icon .icon-pptx {
+    background-position:-60px -644px;
+}
+.file-icon .icon-print {
+    background-position:-60px -100px;
+}
+.file-icon .icon-get-share {
+    background-position:-60px -150px;
+}
+.file-icon .icon-video {
+    background-position:-60px -200px;
+}
+.file-icon .icon-share {
+    background-position:-60px -250px;
+}
+.file-icon .icon-public {
+    background-position:-60px -300px;
+}
+.file-icon .icon-folder-lock {
+    background-position:-60px -403px;
+}
+.file-icon .icon-share-lock {
+    background-position:-60px -453px;
+}
+.file-icon .icon-get-share-lock {
+    background-position:-61px -500px;
+}
+.file-icon .icon-shortcut {
+    background-position:-60px -350px;
+}
+.file-icon .actions {
+    float:right;
+}
+.file-icon .actions.position-abs {
+    position:absolute;
+    right:110px;
+}
+.file-icon .actions li {
+    float:left;
+}
+.wrapper .file-list dd.selected .actions .link {
+	/*background-image: url(images/icon.png);*/
+    /*background-position:5px -132px;*/
+}
+.wrapper .file-list dd .selected  .mark {
+	background-position:-147px -29px;
+    /*background-position:-33px -132px;*/
+}
+.wrapper .file-list dd.selected .actions .sync {
+    /*background-position:-66px -132px;*/
+}
+.file-icon .actions a, .file-icon .xstar a {
+    display:block;
+    width:25px;
+    height:56px;
+    margin:0 8px;
+    overflow:hidden;
+    text-indent:-9999px;
+    background:transparent url(images/icon.png) center center no-repeat;
+}
+.file-icon .summary .xstar {
+    float:left;
+}
+.file-icon .summary .xstar a {
+    width:15px;
+    margin:0 10px 0 0px
+}
+.file-icon .actions .link {
+    background-position:-50px 20px;
+}
+.file-icon .actions .mark {
+    background-position:-149px 21px;
+}
+.file-icon .actions .sync {
+    background-position:0px 20px;
+}
+.file-icon .actions .download {
+    background-position:-100px 20px;
+}
+.file-icon .actions .twoD{
+    background-position:-187px 20px;
+}
+.file-icon .actions .active .link {
+    background-position:-50px -30px;
+}
+.file-icon .actions .active .mark, .file-icon .active .mark {
+    background-position:-149px -30px;
+}
+.file-icon .actions .active .sync {
+    background-position:0px -30px;
+}
+.file-icon .actions .active .download {
+    background-position:-100px -30px;
+}
+.file-icon .actions .active .twoD{
+    background-position:-187px -30px;
+}
+.file-icon .actions .hide {
+    display:none;
+}
+.file-icon .xstar.hide {
+    visibility: hidden;
+}
+.file-icon .link-panel {
+    border-top:1px solid #F4F4F4;
+    border-bottom:1px solid #E9E9E9;
+    background-color:#F2F5F9;
+}
+.file-icon .link-panel .pos-box {
+    position:relative;
+    margin:12px 145px 12px 60px;
+}
+.file-icon .link-panel h3 {
+    float: left;
+    line-height: 26px;
+    zoom:1;
+}
+.file-icon .link-panel .box {
+    position:relative;
+    margin-left:80px;
+    height:26px;
+    border:1px solid #D7D7D7;
+    background:#FFFFFF;
+    overflow:hidden;
+}
+.file-icon .link-panel .address {
+    position:absolute;
+    left:10px;
+    border:none;
+    background:transparent;
+    ine-height:15px;
+    padding:6px 0 5px;
+    width:100%;
+    color:#888888;
+}
+.file-icon .link-panel .settings {
+    position:absolute;
+    top:0;
+    right:0;
+}
+.file-icon .link-panel .settings li {
+    float:left;
+    height:26px;
+    line-height:26px;
+    background:transparent url(/webstatic/images/home/link-button.png) 0 0 repeat-x;
+    border-left:1px solid #D7D7D7;
+}
+.file-icon .link-panel .settings li a {
+    padding:0 15px 0 30px;
+    color:#57667C;
+    background:transparent url(/webstatic/images/home/operate.png) 8px -745px no-repeat;
+    text-decoration:none;
+}
+.file-icon .link-panel .settings .email a {
+    background-position:-290px -301px;
+}
+.file-icon .link-panel .settings .authority a {
+    background-position:-290px -332px;
+}
+.file-icon .link-panel .settings .close a {
+    background-position:-290px -180px;
+}
+.file-icon .link-panel .pos-box .corner {
+    position:absolute;
+    right:183px;
+    top:-9px;
+    width:16px;
+    height:9px;
+    background:transparent url(/webstatic/images/home/link-corner.png) 0 0 no-repeat;
+}
+
+/*---------------- thumb ----------------*/
+.wrapper .thumb-list {
+    padding-top:10px;
+    padding-left: 10px;
+}
+
+.file-icon {
+    border:none;
+    float:left;
+    height:124px;
+    border:#FFF solid 1px;
+    margin:1px;
+}
+
+.wrapper .thumb-list dd.selected, .wrapper .thumb-list dd.selected:hover {
+    background-color:#ffffcb;
+    border:#fdef93 solid 1px;
+}
+
+.file-icon .summary {
+    width:135px;
+    padding-right:0;
+    text-align:center;
+}
+
+.file-icon .summary .thumbTu .thumH3 {
+    cursor: pointer;
+    max-width:120px;
+    padding:0 2px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+.file-icon .summary .thumbTu .thumH3:hover {
+    text-decoration: underline;
+}
+
+.file-icon .summary .thumbTu .thumSpan {
+    color:#999999;
+    font-weight:normal;
+    max-width:120px;
+    padding:0 5px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+.file-icon .thumbshow {
+    position:absolute;
+    top:0;
+    left:-1px;
+    display:none;
+}
+
+.file-icon .thumbshow span.bg {
+    cursor: pointer;
+    background-position:-3px -700px;
+    margin-top:0;
+    width:36px;
+    height:33px;
+}
+
+.file-icon .thumbshow span b {
+    position:absolute;
+    left:5px;
+    top:3px;
+}
+
+.file-icon .thumbshow span b.checkedimg {
+    display:inline-block;
+    height:20px;
+    width:20px;
+    background:transparent url(images/checkbox.png) 0px 0px no-repeat;
+}
+
+.wrapper .thumb-list dd.selected .thumbshow span b.checkedimg {
+    background:transparent url(images/checkbox.png) -20px 0px no-repeat;
+}
+
+.wrapper .thumb-list dd.homeThumb:hover, .wrapper .thumb-list dd.selected:hover {
+    background-color:#ffffde;
+}
+
+.wrapper .thumb-list dd.homeThumb:hover .thumbshow, .wrapper .thumb-list dd.homeThumb.selected .thumbshow {
+    display:block;
+}
+
+.file-icon .thumbimg {
+    cursor: pointer;
+    background:transparent url(images/thumbimg_v3.png) -130px -428px no-repeat;
+    width:70px;
+    height:60px;
+    display:inline-block;
+    margin-top:12px;
+}
+
+.file-icon .t-folder {
+    background-position:-130px -530px;
+}
+.file-icon .t-folder-lock {
+    background-position:-227px -530px;
+}
+.file-icon .t-share {
+    background-position:-130px -630px;
+}
+.file-icon .t-share-lock {
+    background-position:-227px -630px;
+}
+.file-icon .t-shortcut {
+    background-position:-130px -730px;
+}
+.file-icon .t-get-share {
+    background-position:-130px -830px;
+}
+.file-icon .t-get-share-lock {
+    background-position:-227px -730px;
+}
+.file-icon .t-ai {
+    background-position:-33px -30px;
+}
+.file-icon .t-xs {
+    background-position:-33px -630px;
+}
+.file-icon .t-fl {
+    background-position:-33px -130px;
+}
+.file-icon .t-wd {
+    background-position:-33px -530px;
+}
+.file-icon .t-pptx {
+    background-position:-227px -428px;
+}
+.file-icon .t-docx {
+    background-position:-227px -129px;
+}
+.file-icon .t-xls {
+    background-position:-227px -230px;
+}
+.file-icon .t-xt {
+    background-position:-130px -30px
+}
+.file-icon .t-ml {
+    background-position:-35px -775px
+}
+.file-icon .t-ps {
+    background-position:-33px -430px;
+}
+.file-icon .t-pt {
+    background-position:-33px -330px;
+}
+.file-icon .t-pd {
+    background-position:-33px -230px;
+}
+.file-icon .t-im {
+    background-position:-230px -30px;
+}
+.file-icon .t-vi {
+    background-position:-127px -130px;
+}
+.file-icon .t-mp {
+    background-position:-127px -230px;
+}
+.file-icon .t-zi {
+    background-position:-127px -330px;
+}
+.file-icon .actions {
+    display:none;
+    float:left;
+    margin-left:24px;
+}
+.wrapper .thumb-list dd.homeThumb:hover .actions, .wrapper .thumb-list dd.homeThumb.selected .actions {
+    display:none;
+}
+.wrapper .thumb-list dd.homeThumb:hover .thumSpan, .wrapper .thumb-list dd.homeThumb.selected .summary .thumbTu .thumSpan {
+    display:block;
+}
+.file-icon .actions li {
+    width:30px;
+}
+.file-icon .actions a, .file-icon .xstar a {
+    height:30px;
+}
+.file-icon .actions .link {
+    background-position:-50px 7px;
+}
+.file-icon .actions .sync {
+    background-position:0px 7px;
+}
+.file-icon .actions .download {
+    background-position:-100px 5px;
+}
+.file-icon .actions .active .link {
+    background-position:-50px -43px;
+}
+.file-icon .actions .active .sync {
+    background-position:0px -43px;
+}
+.file-icon .actions .active .download {
+    background-position:-100px -45px;
+}
+.file-icon .actions .mark {
+    background-position:-150px 8px;
+}
+.file-icon .actions .active .mark {
+    background-position:-150px -42px;
+}
+.file-icon .actions.share {
+    margin-left:10px;
+}
+.file-icon .actions.share a, .file-icon .xstar.share a {
+    width:17px;
+}
+
+/***************** menu *********************/
+.context-menu {
+    position:absolute;
+    overflow: hidden;
+    z-index:200;
+    padding:5px 0;
+    width:160px;
+    display: none;
+    background-color:#FFF;
+    border: 1px solid #c8ccd5;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    color:#616161;
+}
+.context-menu .text {
+    padding:0 30px;
+    display:block;
+    text-decoration:none;
+    color:#616161;
+    line-height:32px;
+}
+.context-menu .text:hover {
+    background-color:#efefef;
+}
+.context-menu .xian {
+    border-bottom:#e5e5e5 solid 1px;
+    background-color:#FFF;
+    margin:3px 0;
+    height: 0px;
+}
+.context-menu .ie7height {
+    +height:24px;
+}
+.context-menu .menubar .sanjiao {
+    background-position:0 -390px;
+    position:absolute;
+    width:10px;
+    height:9px;
+    top:7px;
+    right:15px;
+    *top:12px;
+}
+.context-menu .sub-menu .text:hover {
+    background-color:#efefef;
+}
+.context-menu .menubar {
+    position:relative;
+    position:static;
+    zoom:1;
+}
+.context-menu .sub-menu {
+    position:absolute;
+    left:140px;
+    top:-6px;
+    padding-left:3px;
+    background:transparent;
+    height:100px;
+    display:none;
+}
+.context-menu .sub-left {
+    left:auto;
+    right:170px;
+    padding-right:5px;
+}
+.context-menu .menubar:hover .sub-menu {
+    display:block;
+}

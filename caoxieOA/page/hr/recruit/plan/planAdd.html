@@ -1,0 +1,74 @@
+<style type="text/css">
+	.table_td_wid{
+		width:21%;
+		text-align: center;
+		vertical-align: middle;
+		border-top: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;border-bottom: 1px solid #ddd;
+	}
+	.input_edit{
+		width:90px;
+	}
+	.table_td_wid_bj{
+		width:16%;
+		text-align: center;
+		vertical-align: middle;
+		border-top: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;border-bottom: 1px solid #ddd;
+	}
+</style>
+<div class="manage-wrapper">
+	<div id="manage-wrap" class="manage-wrap">
+		<form id="manage-form" action="">
+			<ul class="mod-form-rows base-form cf" id="base-form">
+				<li class="row-item">
+    				<div class="label-wrap input_sif"  ><label for="number">计划名称:</label></div>
+    				<div class="ctn-wrap">
+    					<input type="text" value="" class="ui-input  editvalue" name="number"    >
+    				</div>
+    			</li>
+    			<li class="row-item">
+    				<div class="label-wrap input_sif" ><label for="number">招聘计划:</label></div>
+    			</li>
+    			<li class="row-item">
+    				<div class="ctn-wrap" title="招聘计划">
+	    				<table  style="width: 100%;" cellpadding="0" cellspacing="0"  border="1px solid #ccc;"  id="addpost_reruitchoice_table">
+	    					<tr >
+	    						<td class="table_td_wid" > 部门 </td>
+	    						<td class="table_td_wid"> 职位 </td>
+	    						<td class="table_td_wid"> 人数 </td>
+	    						<td class="table_td_wid"> 职位需求描述 </td>
+	    						<td class="table_td_wid_bj"><a class="ui-btn btn-blue"href="javascript:void(0);" onclick="THISPAGE.addpost_reruitchoiceid();">新增<a></td>
+	    					</tr>
+	    				</table>
+    				</div>
+    			</li>
+    			<li class="row-item">
+    				<div class="label-wrap input_sif" ><label for="number">人数合计:</label></div>
+    				<div class="ctn-wrap"><input type="text" value="0" class="ui-input editvalue" name="rstatol" id="rstatol_hjid" readonly="readonly"></div>
+    			</li>
+    			<li class="row-item">
+    				<div class="label-wrap input_sif" ><label for="number">招聘渠道:</label></div>
+    				<div class="ctn-wrap"  >
+							<input type="checkbox"  name="name"  />介绍;
+							<input type="checkbox"  name="name"  />网络;
+							<input type="checkbox"  name="name"   />招聘会;
+							<input type="checkbox"  name="name"   />校园专场
+    				</div>
+    			</li>
+    			<li class="row-item">
+    				<div class="label-wrap input_sif" ><label for="number">预计费用:</label></div>
+    				<div class="ctn-wrap"><input type="text" value="" class="ui-input editvalue" name="rstatol" id="rstatol"  onKeyUp="clearNoNum_esfz(event,this)" onBlur="checkNum_esfz(this)">（元）</div>
+    			</li>
+    			<li class="row-item">
+    				<div class="label-wrap input_sif"  ><label for="name">招聘时间:</label></div>
+    				<div class="ctn-wrap"><input type="text" value="2016-06-14" class="ui-input ui-datepicker-input  input_date">至<input type="text" value="2016-07-14" class="ui-input ui-datepicker-input  input_date"></div>
+    			</li>
+			</ul>
+			<ul class="mod-form-rows remark">
+    			<li class="row-item">
+    				<div class="label-wrap input_sif" ><label for="note">说明:</label></div>
+    				<div class="ctn-wrap"><textarea name="" id="note" class="ui-input "  style="width:400px;" placeholder="本次计划说明" ></textarea></div>
+    			</li>
+    		</ul>
+		</form>
+	</div>
+</div>

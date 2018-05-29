@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" href="../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/hplus.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/font-awesome/css/font-awesome.css" />
+		<style type="text/css">
+			body{
+				overflow: auto;
+			}
+			.wrapper,.wrapper-content{
+				padding: 20px;
+				margin: 0px;
+			}
+			.widget{
+				padding: 0px;
+			}
+			.h211{
+				height: 311px;
+			}
+			.ibox-content{
+				border-top: 2px solid #00BFFF;
+			}
+			
+			.easy-pie-chart {
+			  position: relative;
+			  display: inline-block;
+			  width: 110px;
+			  height: 110px;
+			  margin-left:10px;
+			  text-align: center;
+			}
+			
+			.easy-pie-chart canvas {
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			}
+			.percent {
+			  display: inline-block;
+			  height:90px;
+			  width: 90px;
+			  line-height: 90px;
+			  z-index: 2;
+			  font-size: 14px;
+			  text-align: center;
+			  margin-left: -20px;
+			}
+			.percent:after {
+			  content: '%';
+			  margin-left: 0.1em;
+			  font-size: .8em;
+			}
+			.count-circle-text{
+				width: 100%;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper wrapper-content">
+			 <div class="row">
+			 	<div class="col-md-3">
+		 			<div class="ibox-content text-center h211">
+                        <div class="m-b-sm">
+                            <img alt="image" class="img-circle" src="../img/avatar.jpg">
+                        </div>
+                        <p class="font-bold">张XX</p>
+                        <p class="font-bold gray">研发部</p>
+                        <div class="text-center">
+                            <a class="btn btn-white"><i class="fa fa-thumbs-up"></i> 上班 </a>
+                        </div>
+                        <div style="margin-top: 5px;">
+                        	<table class="table">
+                        		<tr>
+                        			<td><button type="button" class="btn btn-info">消息 12</button></td>
+                        			<td><button type="button" class="btn btn-warning">任务 28</button></td>
+                        			<td><button type="button" class="btn btn-info">通知 30</button></td>
+                        		</tr>
+                        	</table>
+                        </div>
+                    </div>
+			 	</div>
+			 	<div class="col-md-3">
+			 		<div class="ibox-content h211">
+			 			<h2>待处理任务</h2>
+		 				<ul class="todo-list m-t ui-sortable">
+	                        <li style="background: #fff;border-top: 1px solid #EEEEEE;border-bottom: 1px solid #EEEEEE; border-radius: 0;">
+	                            <div class="icheckbox_square-green" style="position: relative;"><input type="checkbox" value="" name="" class="i-checks" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
+	                            <span class="m-l-xs">开会</span>
+	                            <small class="label label-primary"><i class="fa fa-clock-o"></i> 1小时</small>
+	                        </li>
+	                        <li style="background: #fff;border-top: 1px solid #EEEEEE;border-bottom: 1px solid #EEEEEE; border-radius: 0;">
+	                            <div class="icheckbox_square-green checked" style="position: relative;"><input type="checkbox" value="" name="" class="i-checks" checked="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
+	                            <span class="m-l-xs">项目开发</span>
+	                            <small class="label label-info"><i class="fa fa-clock-o"></i> 3小时</small>
+	                        </li>
+	                        <li style="background: #fff;border-top: 1px solid #EEEEEE;border-bottom: 1px solid #EEEEEE; border-radius: 0;">
+	                            <div class="icheckbox_square-green" style="position: relative;"><input type="checkbox" value="" name="" class="i-checks" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
+	                            <span class="m-l-xs">去杭州出差</span>
+	                            <small class="label label-warning"><i class="fa fa-clock-o"></i> 2小时</small>
+	                        </li>
+	                        <li style="background: #fff;border-top: 1px solid #EEEEEE;border-bottom: 1px solid #EEEEEE; border-radius: 0;">
+	                            <div class="icheckbox_square-green" style="position: relative;"><input type="checkbox" value="" name="" class="i-checks" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
+	                            <span class="m-l-xs">修改bug</span>
+	                            <small class="label label-warning"><i class="fa fa-clock-o"></i> 2小时</small>
+	                        </li>
+	                    </ul>
+		 			</div>
+			 	</div>
+			 	<div class="col-md-6">
+		 			<div class="ibox-content h211">
+		 				<h2>个人办公情况</h2>
+		 				<div class="row mt20">
+		 					<div class="col-md-3">
+		 						<div class="easy-pie-chart percentage" data-text="考勤" data-color="#FFD700" data-percent="91" data-size="90">
+                                    <span class="percent">91</span>
+                                </div>
+                                <div class="count-circle-text">考勤 <a class="red">缺勤3次</a></div>
+		 					</div>
+		 					<div class="col-md-3">
+		 						<div class="easy-pie-chart percentage" data-color="#00FA9A" data-percent="91" data-size="90">
+                                    <span class="percent">91</span>
+                                </div>
+                                <div class="count-circle-text">任务情况 <a class="red">3个未处理</a></div>
+		 					</div>
+		 					<div class="col-md-3">
+		 						<div class="easy-pie-chart percentage" data-color="#FF83FA" data-percent="91" data-size="90">
+                                    <span class="percent">91</span>
+                                </div>
+                                <div class="count-circle-text">项目情况 <a class="red">2个待完成</a></div>
+		 					</div>
+		 					<div class="col-md-3">
+		 						<div class="easy-pie-chart percentage" data-color="rgba(135,194,245,1)" data-percent="91" data-size="90">
+                                    <span class="percent">91</span>
+                                </div>
+                                <div class="count-circle-text">活动指数 <a class="red">99+</a></div>
+		 					</div>
+		 				</div>
+		 			</div>
+			 	</div>
+			 </div>
+			 
+			<!-- row 2 begin -->
+			<div class="row mt20">
+				<div class="col-md-6">
+					<div class="ibox-content h211">
+						<div class="row">
+							<div class="col-md-6">
+								<strong>制度</strong>
+                                <ul class="list-group clear-list">
+                                    <li class="list-group-item fist-item">
+                                        <span class="pull-right"> 09:00</span> 请联系我
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="pull-right"> 10:16 </span> 签合同
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="pull-right"> 08:22 </span> 开新公司
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="pull-right"> 11:06 </span> 打电话给李四
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="pull-right"> 08:22 </span> 开新公司
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="pull-right"> 11:06 </span> 打电话给李四
+                                    </li>
+                                </ul>
+							</div>
+							<div class="col-md-6">
+								<strong>公告</strong>
+                                <ul class="list-group clear-list">
+                                    <li class="list-group-item fist-item">
+                                        <a><span class="pull-right"> 2016 05-16</span> 2016考核</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="pull-right"> 10:16 </span> 签合同
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="pull-right"> 08:22 </span> 开新公司
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="pull-right"> 11:06 </span> 打电话给李四
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="pull-right"> 08:22 </span> 开新公司
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="pull-right"> 11:06 </span> 打电话给李四
+                                    </li>
+                                </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="ibox-content h211">
+						<h2>项目情况</h2>
+		 				<table class="table table-hover no-margins">
+                            <thead>
+                                <tr>
+                                    <th>状态</th>
+                                    <th>日期</th>
+                                    <th>用户</th>
+                                    <th>值</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><small>进行中...</small>
+                                    </td>
+                                    <td><i class="fa fa-clock-o"></i> 11:20</td>
+                                    <td>青衣5858</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 24%</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="label label-warning">已取消</span>
+                                    </td>
+                                    <td><i class="fa fa-clock-o"></i> 10:40</td>
+                                    <td>徐子崴</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 66%</td>
+                                </tr>
+                                <tr>
+                                    <td><small>进行中...</small>
+                                    </td>
+                                    <td><i class="fa fa-clock-o"></i> 01:30</td>
+                                    <td>姜岚昕</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 54%</td>
+                                </tr>
+                                <tr>
+                                    <td><small>进行中...</small>
+                                    </td>
+                                    <td><i class="fa fa-clock-o"></i> 02:20</td>
+                                    <td>武汉大兵哥</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 12%</td>
+                                </tr>
+                                <tr>
+                                    <td><small>进行中...</small>
+                                    </td>
+                                    <td><i class="fa fa-clock-o"></i> 09:40</td>
+                                    <td>荆莹儿</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 22%</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="label label-primary">已完成</span>
+                                    </td>
+                                    <td><i class="fa fa-clock-o"></i> 04:10</td>
+                                    <td>栾某某</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 66%</td>
+                                </tr>
+                                <tr>
+                                    <td><small>进行中...</small>
+                                    </td>
+                                    <td><i class="fa fa-clock-o"></i> 12:08</td>
+                                    <td>范范范二妮</td>
+                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 23%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</div>
+				</div>
+			</div>
+			<!-- row 2 end -->
+		</div>
+		<script type="text/javascript" src="../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../js/lib/easypiechart/jquery.easypiechart.min.js" ></script>
+		<script type="text/javascript" src="../js/app/home.js" ></script>
+	</body>
+</html>

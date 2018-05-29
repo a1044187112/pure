@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../css/ui.jqgrid-bootstrap.css" />
+		<link rel="stylesheet" href="../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../css/common.css" />
+		<style type="text/css">
+			/* 表格 */
+			
+			/*
+			.wrapper .ui-widget-content {border: none;}
+			.wrapper .ui-jqgrid .ui-jqgrid-btable {*margin-top: -1px;}
+			.wrapper.ui-jqgrid .ui-jqgrid-sdiv {border-top: 1px solid #f2f2f2;}
+			.wrapper .ui-jqgrid .ui-jqgrid-sdiv td {border-top:none;}
+			.wrapper .ui-jqgrid .frozen-div {background:#fff !important;}
+			.wrapper .ui-jqgrid .frozen-div .ui-jqgrid-resize-ltr {margin: 0 -2px 0 0px;}
+			.wrapper .ui-jqgrid .frozen-bdiv table {background:#fff}
+			.warning .ui-jqgrid .ui-jqgrid-pager{height: 43px;}
+			.ui-jqgrid tr.ui-row-ltr td {  word-break: normal;  word-wrap: normal;white-space: pre;}
+			.ui-jqgrid tr.ui-row-ltr{
+				height: 40px;
+			}
+			*/
+		</style>
+		<style>
+		/*
+		.mod-form-rows .label-wrap{font-size:12px;}
+		.mod-form-rows .row-item {padding-bottom: 15px;margin-bottom: 0;}/*兼容IE7 ，重写common的演示*
+		.manage-wrapper{margin:20px auto 10px;width:600px;}
+		.manage-wrap .ui-input{width: 198px;}
+		.base-form{*zoom: 1;}
+		.base-form:after{content: '.';display: block;clear: both;height: 0;overflow: hidden;}
+		.base-form li{float: left;width: 290px;}
+		.base-form li.odd{padding-right:20px;}
+		.base-form li.last{width:350px}
+		.manage-wrap textarea.ui-input{width: 588px;height: 32px;overflow:hidden;}
+		#receiveFunds,#periodReceiveFunds,#taxRate{text-align: right;}
+		.contacters{margin-bottom: 10px;}
+		.contacters h3{margin-bottom: 10px;font-weight: normal;}
+		.remark .row-item{padding-bottom:0;}
+		.mod-form-rows .ctn-wrap{overflow: visible;}
+		.ui-combo-wrap {position: static;}*/
+		.manage-wrap .ui-input{width: 198px;}
+		.manage-wrap textarea.ui-input{width: 510px;height: 32px;overflow:hidden;}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="mod-search cf">
+				<div class="fl">
+					<ul class="ul-inline">
+						<li>
+							<input type="text" id="matchCon" class="ui-input ui-input-ph" value="XXXX" />
+						</li>
+						<li>
+				            <label>日期:</label>
+				            <input type="text" id="beginDate" value="2016-06-08" class="ui-input ui-datepicker-input">
+				            <i>-</i>
+				            <input type="text" id="endDate" value="2016-06-14" class="ui-input ui-datepicker-input">
+				        </li>
+					</ul>
+				</div>
+				<div class="fr">
+					<a class="ui-btn ui-btn-sp" id="add" href="javascript:void(0);">滑动弹窗</a>
+					<a class="ui-btn" id="openWin" target="_blank" href="javascript:void(0);">弹窗</a>
+					<a href="#" class="ui-btn" id="btn-batchDel">删除</a>
+				</div>
+			</div>
+			<div class="grid-wrap">
+				<table id="grid"></table>
+				<div id="page"></div>
+			</div>
+		</div>
+		<!--
+		<div id="addWin" class="sidepanel active">
+			<div class="sidepanel-toolbar">
+				<div class="title"><i class="fa fa-plus"></i>任务添加</div>
+				<div class="close"><i class="fa fa-close"></i></div>
+			</div>
+			<div class="sidepanel-body">
+				<div class="manage-wrapper">
+					<div id="manage-wrap" class="manage-wrap">
+						<form id="manage-form" action="">
+							<ul class="mod-form-rows base-form cf" id="base-form">
+								<li class="row-item">
+				    				<div class="label-wrap"><label for="number">项目名称</label></div>
+				    				<div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+				    			</li>
+				    			<li class="row-item">
+				    				<div class="label-wrap"><label for="name">指派对象</label></div>
+				    				<div class="ctn-wrap"><input type="text" value="" class="ui-input" name="name" id="name"></div>
+				    			</li>
+				    			<li class="row-item">
+				    				<div class="label-wrap"><label for="name">起始日期</label></div>
+				    				<div class="ctn-wrap"><input type="text" value="2016-06-14" class="ui-input ui-datepicker-input"></div>
+				    			</li>
+				    			<li class="row-item">
+				    				<div class="label-wrap"><label for="name">起始日期</label></div>
+				    				<div class="ctn-wrap"><input type="text" value="2016-06-14" class="ui-input ui-datepicker-input"></div>
+				    			</li>
+							</ul>
+							<ul class="mod-form-rows remark">
+				    			<li class="row-item">
+				    				<div class="label-wrap"><label for="note">备注</label></div>
+				    				<div class="ctn-wrap"><textarea name="" id="note" class="ui-input ui-input-ph">添加备注信息</textarea></div>
+				    			</li>
+				    		</ul>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="sidepanel-footer">
+				<a class="ui-btn ui-btn-sp">确定</a>
+				<a class="ui-btn canel">取消</a>
+			</div>
+		</div>
+		-->
+		<script type="text/javascript" src="../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../js/lib/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../../js/lib/i18n/grid.locale-cn.js" ></script>
+		<script type="text/javascript" src="../../js/lib/jquery.jqGrid.min.js" ></script>
+		<script type="text/javascript" src="../../js/common.js" ></script>
+		<script type="text/javascript" src="../../js/app/oa/list.js" ></script>
+	</body>
+</html>

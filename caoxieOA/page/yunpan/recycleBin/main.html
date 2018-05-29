@@ -1,0 +1,111 @@
+				<div class="title">
+					<div class="title_prompt">提示：回收站不占用网盘空间，文件保存10天后将被自动清除。</div>
+					<div class="delete_r_b"><i class="fa fa-trash"></i><span>清空回收站</span></div>
+				</div>
+				<div class="nav">
+					<span class="nav_r">回收站</span>
+					<div class="nav_load">已加载<span class="nav_num">0</span>项</div>
+				</div>
+				<div class="menu">
+					<div class="radio"><span class="m_f_name">文件名</span><a class="rb_sel_all"></a><div class="rb_menu_return"><i class="fa fa-reply"></i>   还原</div></div>
+					<div class="size">大小</div>
+					<div class="d_time">删除时间</div>
+					<div class="time">有效时间</div>
+				</div>
+				<table class="file_table file_table_rb" >
+					<tr class="table_item" >
+						<td class="item_sel" >
+							<div class="radio"><a></a></div>
+							<div class="file" ><a class="icon icon-folder"></a><span class="m_f_name">网页设计</span></div>
+						</td>
+						<td class="item_size" >30kb</td>
+						<td class="item_d_time" >2016-10-12 10:00</td>
+						<td class="item_r_time" >10天</td>
+						<td class="item_r_time">
+							<span class="return" style="visibility: hidden;"><i class="fa fa-repeat"></i><span style="margin-left: 5px;">还原</span></span>
+							<span class="rb_file_del" style="margin-left: 8px;visibility: hidden;">删除</span>
+						</td>
+					</tr>
+					<tr class="table_item" >
+						<td class="item_sel" >
+							<div class="radio" ><a></a></div>
+							<div class="file" ><a class="icon icon-folder"></a><span class="m_f_name">网页设计</span></div>
+						</td>
+						<td class="item_size" >30kb</td>
+						<td class="item_d_time" >2016-10-12 10:00</td>
+						<td class="item_r_time" >10天</td>
+						<td class="item_r_time">
+							<span class="return" style="visibility: hidden;"><i class="fa fa-repeat"></i><span style="margin-left: 5px;">还原</span></span>
+							<span class="rb_file_del" style="margin-left: 8px;visibility: hidden;">删除</span>
+						</td>
+					</tr>
+					<tr class="table_item" >
+						<td class="item_sel" >
+							<div class="radio" ><a></a></div>
+							<div class="file" ><a class="icon icon-folder"></a><span class="m_f_name">网页设计</span></div>
+						</td>
+						<td class="item_size" >30kb</td>
+						<td class="item_d_time" >2016-10-12 10:00</td>
+						<td class="item_r_time" >10天</td>
+						<td class="item_r_time">
+							<span class="return" style="visibility: hidden;"><i class="fa fa-repeat"></i><span style="margin-left: 5px;">还原</span></span>
+							<span class="rb_file_del" style="margin-left: 8px;visibility: hidden;">删除</span>
+						</td>
+					</tr>
+				</table>
+				<div class="rb_op" style="display: none;" >
+					<div class="rb_op_item rb_op_return">还原</div>
+					<div class="rb_op_item rb_op_delete">删除</div>
+				</div>
+<script>
+	// 加载数据
+	function initFileList(){
+		var fileListsT = {
+			status: '',
+			fileList:[{
+				getIcon: 't-folder',
+				getIconBg: 'icon-folder',
+				name: '文档.mp3',
+				size: '35kb',
+				pov: '5天',
+				iconNumClass: 'share',
+				hasSync: '',
+				hasMark: '',
+				hasLink: '',
+				hasDownload: '',
+				delTime: '2016-08-17 22:55:14',
+				id:1,
+			},{
+				getIcon: 't-folder',
+				getIconBg: 'icon-folder',
+				name: '文档.pptx',
+				size: '35kb',
+				pov: '5天',
+				iconNumClass: 'share',
+				hasSync: '',
+				hasMark: '',
+				hasLink: '',
+				hasDownload: '',
+				delTime: '2016-08-17 22:55:14',
+				id:2,
+			},{
+				getIcon: 't-folder',
+				getIconBg: 'icon-folder',
+				name: '文档.png',
+				size: '35kb',
+				pov: '5天',
+				iconNumClass: 'share',
+				hasSync: '',
+				hasMark: '',
+				hasLink: '',
+				hasDownload: '',
+				delTime: '2016-08-17 22:55:14',
+				id:3,
+			}]
+		};
+		var fileListDom = "";
+		fileListDom = template('file_table_rb', fileListsT);
+		$('.recycle_bin .file_table_rb').html(fileListDom);
+	}
+//	initFileList();
+</script>

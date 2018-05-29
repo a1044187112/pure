@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>成员管理</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style type="text/css">
+		    body{
+		    	overflow: hidden;
+		    }
+			.tree-selector{
+				padding-left:30px ;
+			}
+			
+			.tree-selector li{
+				width: 100%;
+				height: auto;
+				line-height: 39px;
+				/*padding-left: 30px;*/
+				color: #A1AABA;
+				cursor:pointer;
+				border-left:3px solid #FFFFFF;
+			}
+			.tree-selector div:hover{
+				border-left:3px solid #00BFFF;
+				background: #EAF0FB;
+				color: #76B0F3;
+			}
+			/*.tree-selector li:hover{
+				border-left:3px solid #00BFFF;
+				background: #EAF0FB;
+				color: #76B0F3;
+			}*/
+			
+			.tree-selector div.active{
+				border-left:3px solid #00BFFF;
+				background: #EAF0FB;
+				color: #76B0F3;
+			}
+			.tree-selector li div{
+				width: 100%;
+				height: 100%;
+				padding-left: 30px;
+			}
+			.tree-selector li i{
+				font-size: 16px;
+			}
+			
+			.tree-selector li span{
+				margin-left: 5px;
+			}
+			.ml215{
+				margin-left: 215px;
+			}
+			img.img-circle{width:38px;height:38px}
+			/*---------------- 表格 ------------------*/*
+			.right-wrap {position:absolute;clear: both;left: 215px;top: 0px;right: 0px;bottom: 0px;}
+			.bottomField {
+			    position: fixed;
+			    top: 0;
+			    right: 25px;
+			    background-color: rgba(138, 138, 138, 0.21);
+			    border-radius: 0px 0px 3px 3px;
+			    padding: 8px;
+			}
+			
+			
+			.app-frame{border: 1px #D6DEE3 solid;padding: 0;margin-bottom: 20px;}
+			.tborder{border-top:  1px #f2f2f2 solid;}
+			.fright{float: right;}
+			.tb-header{height: 50px;line-height:50px;background-color: #FCFDFC;}
+			.app-icon{height: 40px;width:40px;background-color: #555; background-color: rgba(255,255,255,.2); border-radius: 8px;border: 1px solid rgba(255,255,255,0.5);}
+			
+			.app-menus{padding: 25px 10px 0px 10px;font-size: 18px;}
+			
+			.menus{padding: 10px 20px;font-size: 16px;border-right: 1px #f2f2f2 solid;}
+			.menuss{padding: 10px;font-size: 12px;width: 85px;}
+			.mright{float: right;}
+			.pd0{padding: 0;}
+		</style>
+	</head>
+	<body>
+		<!-- siled begin -->
+		<div class="sidebard-panel">
+			<div class="header" style="text-align: center;">
+				<a href="javascript:;" class="ui-btn btn-yello" id="roles-grant-add-roles">添加角色</a>
+				<a href="javascript:;" class="ui-btn btn-blue" id="roles-grant-edit-roles">编辑角色</a>
+			</div>
+			<div class="sidebar-content p5" >
+				<!--<ul class="tree-selector" >
+					<li >
+						<div class="active">
+						<i class="fa fa-users"></i>
+					    <span>所有成员<span class="gray">(10人)</span>
+					    </div>
+					    	<ul class="tree-selector"  >
+								<li >
+									<div>
+									<i class="fa fa-users"></i>
+								    <span>所有成员<span class="gray">(10人)</span>
+								    </div>
+								</li>
+								<li>
+									<div>
+									<i class="fa fa-users"></i>
+								    <span>市场部<span class="gray">(10人)</span></span>
+								    </div>
+								</li>
+								<li>
+									<div>
+									<i class="fa fa-users"></i>
+								    <span>业务部<span class="gray">(10人)</span></span>
+								    </div>
+								</li>
+							</ul>
+							
+					</li>
+					<li>
+						<div>
+						<i class="fa fa-users"></i>
+					    <span>市场部<span class="gray">(10人)</span></span>
+					    </div>
+					</li>
+					<li>
+						<div>
+						<i class="fa fa-users"></i>
+					    <span>业务部<span class="gray">(10人)</span></span>
+					    </div>
+					</li>
+				</ul>-->
+				
+				
+				
+				 <div id="treeview" class="test"></div>
+			</div>
+		</div>
+		<!-- siled end -->
+		<div class="right-wrap" style="overflow: auto;">
+			<div class="wrapper">
+				<div class="mod-search cf">
+					<div class="fl">
+						<ul class="ul-inline">
+							<li>
+								<input type="email" placeholder="应用名称" class="form-control">
+							</li>
+							<li>
+								<a class="btn btn-white btn-bitbucket">
+		                            <i class="fa fa-search"></i>
+		                        </a>
+							</li>
+						</ul>
+					</div>
+					<!--
+					<div class="fr">
+						<div class="btn-group">
+                            <a class="ui-btn btn-blue" type="button">保存</a>
+                        </div>
+					</div>
+					-->
+				</div>
+				<div class="grid-wrap noborder-warp" style="border: 0;">
+					<div class="col-sm-12" style="padding: 0;border: 0;" id="rightPanel">
+						
+						<div class="col-sm-12 app-frame" >
+							<div class="col-sm-12 tb-header" data-id="01">
+								<img class="app-icon" alt="" src="../../../css/images/app-oa.png">
+								<span class="app-menus"> 日常管理&nbsp;<input type="checkbox" name="menus" /></span>
+							</div>
+							<div class="col-sm-12 pd0 read-write" style="background: #fff;">
+								<div class="col-sm-12 tborder">
+									<div class="col-sm-1 menus " data-id="001" data-parentid="01" data-right="0">
+										<span class="fright"> 项目 <input type="checkbox" name="menus" /></span>
+									</div>
+									<div class="col-sm-1   menuss">
+										<span class="mright"> 多查询&nbsp;<input type="checkbox" name="menus" /></span>
+									</div>
+									<div class="col-sm-1   menuss">
+										<span class="mright"> 编辑&nbsp;<input type="checkbox" name="menus" /></span>
+									</div>
+									<div class="col-sm-1   menuss">
+										<span class="mright"> 删除&nbsp;<input type="checkbox" name="menus" checked="checked"/></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-12 app-frame" >
+							<div class="col-sm-12 tb-header" data-id="01">
+								<img class="app-icon" alt="" src="../../../css/images/app-oa.png">
+								<span class="app-menus"> 日常管理&nbsp;<input type="checkbox" name="menus" /></span>
+							</div>
+							<div class="col-sm-12 pd0 read-write" style="background: #fff;">
+								<div class="col-sm-12 tborder">
+									<div class="col-sm-1 menus " data-id="001" data-parentid="01" data-right="0">
+										<span class="fright"> 项目 <input type="checkbox" name="menus" /></span>
+									</div>
+									<div class="col-sm-1   menuss">
+										<span class="mright"> 多查询&nbsp;<input type="checkbox" name="menus" onclick="return false"/></span>
+									</div>
+									<div class="col-sm-1   menuss">
+										<span class="mright"> 编辑&nbsp;<input type="checkbox" name="menus" disabled="disabled" /></span>
+									</div>
+									<div class="col-sm-1   menuss">
+										<span class="mright"> 删除&nbsp;<input type="checkbox" name="menus" disabled="false"/></span>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="cf bottomField">
+				<div class="fr" id="toolBottom">
+					<span >
+						<a class="ui-btn ui-btn-sp" id="roles-grant-save">保存</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap-treeview.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/i18n/grid.locale-cn.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/jquery.jqGrid.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/eui.dialog.js" ></script>
+		<script type="text/javascript" src="../../../js/common.js" ></script>
+		<script type="text/javascript" src="../../../js/app/manager/roles/main.js" ></script>
+	</body>
+</html>

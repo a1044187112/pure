@@ -1,0 +1,128 @@
+<link rel="stylesheet" href="../../../js/lib/simditor/css/simditor.css" />
+<link rel="stylesheet" href="../../../css/fm.selectator.jquery.css"  />
+<div class="manage-wrapper" style="margin-top: 10px;">
+	<div id="manage-wrap" class="manage-wrap">
+		<form id="manage-form_announcementSystem" action="">
+			<ul class="mod-form-rows base-form cf" id="base-form">
+				<li class="row-item row-item_magen clearfix">
+					<div class="form-group">
+						<label class="col-sm-1 control-label label_w">消息标题</label>
+						<div class="col-sm-10">
+							<input type="text" value="" class="ui-input" name="name" style="width: 93.7%;">
+						</div>
+					</div>
+				</li>
+				<li class="row-item row-item_magen clearfix">
+					<div class="form-group">
+						<label class="col-sm-1 control-label label_w">发布范围</label>
+						<div class="col-sm-10">
+							<!--<input type="text" value="" class="ui-input" name="fb_name" style="width: 93.7%;">-->
+								<!--<div id="wrapper">-->
+							<select id="select4" name="select4" multiple>
+								<optgroup label="部门" class="group_one">
+									<option value="1" class="option_one" data-left="<img src='../../../img/avatar.jpg'>" data-right="1">技术部</option>
+									<option value="2" class="option_two" data-left="<img src='../../../img/avatar.jpg'>" data-right="1">人力资源</option>
+								</optgroup>
+								<optgroup label="公司" class="group_two">
+									<option value="3" class="option_three" data-left="<img src='../../../img/avatar.jpg'>" data-right="2">草鞋科技</option>
+									<option value="4" class="option_four" data-left="<img src='../../../img/avatar.jpg'>" data-right="2">4</option>
+									<option value="5" class="option_five" data-left="<img src='../../../img/avatar.jpg'>" data-right="2">5</option>
+									<option value="6" class="option_six">6</option>
+								</optgroup>
+								<option value="7" class="option_seven" data-right="0">7</option>
+								<option value="8" class="option_eight" data-right="0">8</option>
+								<option value="9" class="option_nine" data-right="0">9</option>
+								<option value="10" class="option_ten" data-right="0">10</option>
+								<option value="11" class="option_eleven" data-right="0">11</option>
+								<option value="12" class="option_twelve" data-right="0">12</option>
+								<option value="13" class="option_thirteen" data-right="0">13</option>
+								<option value="14" class="option_fourteen" data-right="0">14</option>
+							</select>
+							<input value="activate selectator" id="activate_selectator4" type="button" style="display: none;">
+							<!--</div>-->
+						</div>
+					</div>
+				</li>
+				<li class="row-item row-item_magen clearfix">
+					<label class="col-sm-1 control-label label_w">部门</label>
+					<div class="col-sm-4 addSpan" id="addSpan">
+						<span id="superiorTree"></span>
+					</div>
+					<label class="col-sm-2 control-label" style="text-align: right; line-height: 40px;">时间</label>
+					<div class="col-sm-4">
+						<input type="text" value="" class="ui-input ui-datepicker-input" name="crTime" id="crTime" style="width: 83%;">
+					</div>
+				</li>
+				<li class="row-item  row-item2 row-item_magen">
+					<div class="form-group">
+						<label class="col-sm-1 control-label label_w">内容</label>
+						<div class="col-sm-10">
+							<textarea name="note" id="note" autofocus required></textarea>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="mod-form-rows remark" style="margin-top: -15px;">
+				<li class="row-item row-item1 row-item2 upfiles_up">
+					<div class="form-group clearfix">
+						<div class="col-sm-2 clearfix" style="width: 140px;">
+							<div class="fr">
+								<div class="btn-group">
+									<a class="btn btn-link i_position delete_announcement i_chang" href="javascript:;" style="height: 30px;">文件
+										<i class="fa fa-cloud-upload"></i>
+										<input type="file" id="uploadFile" class="open_file" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="row-item row-item1 row-item2 upfiles_up" style="margin-top: -20px;">
+					<div class="form-group clearfix">
+						<label class="col-sm-1 control-label label_w">&nbsp;</label>
+						<div class="col-sm-10">
+							<div style="width: 93.7%;">
+								<img src="../../../img/avatar.jpg" class="img_sty">
+								<img src="../../../img/avatar.jpg" class="img_sty">
+								<img src="../../../img/avatar.jpg" class="img_sty">
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</form>
+	</div>
+</div>
+<script type="text/javascript" src="../../../js/lib/validator/jquery.validator.js"></script>
+<script type="text/javascript" src="../../../js/lib/validator/zh_CN.js"></script>
+<!-- simditor -->
+<script type="text/javascript" src="../../../js/lib/simditor/module.min.js"></script>
+<script type="text/javascript" src="../../../js/lib/simditor/uploader.min.js"></script>
+<script type="text/javascript" src="../../../js/lib/simditor/hotkeys.js"></script>
+<script type="text/javascript" src="../../../js/lib/simditor/simditor.js"></script>
+<script type="text/javascript" src="../../../js/lib/simditor/simditor-fullscreen.js"></script>
+<script type="text/javascript" src="../../../js/lib/simditor/markdown/marked.js"></script>
+<script type="text/javascript" src="../../../js/lib/simditor/markdown/to-markdown.js"></script>
+<script type="text/javascript" src="../../../js/lib/simditor/markdown/simditor-markdown.js"></script>
+<script type="text/javascript" src="../../../js/lib/simditor/simditor-emoji.js"></script>
+<!-- 编辑器 -->
+<script type="text/javascript" src="../../../js/app/administration/announcementSystem/announcementSystem_add.js"></script>
+<script src="../../../js/app/administration/announcementSystem/fm.selectator.jquery.js"></script>
+<script>
+	$(function () {
+		var $activate_selectator4 = $('#activate_selectator4');
+			$activate_selectator4.click(function () {
+				var $select4 = $('#select4');
+				if ($select4.data('selectator') === undefined) {
+					$select4.selectator({
+						showAllOptionsOnFocus: true
+					});
+					$activate_selectator4.val('destroy selectator');
+				} else {
+					$select4.selectator('destroy');
+					$activate_selectator4.val('activate selectator');
+				}
+			});
+			$activate_selectator4.trigger('click');
+	});
+</script>

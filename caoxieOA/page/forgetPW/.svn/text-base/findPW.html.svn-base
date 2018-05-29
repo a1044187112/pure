@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>企业注册</title>
+		<link rel="stylesheet" href="../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../js/lib/validator/jquery.validator.css" />
+		<link rel="stylesheet" href="../../css/register.css" />
+		<link rel="stylesheet" href="../../css/forgetPW/findPW.css" />
+	</head>
+	<body>
+		<!--<img class="img_bg" src="../../img/login/register.jpg"/>-->
+		<!--<nav class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<span class="navbar-logo">企业注册</span>
+				</div>
+			</div>
+		</nav>-->
+		<div id="content">
+			<div class="container" >
+				<div class="regPanel">
+					<div class="header">
+						<title>企业注册</title>
+						<div class="title">找回密码</div>
+						<!--<a href="../../login.html" class="back">返回登陆</a>-->
+					</div>
+					<div class="container">
+						<from id="registerForm">
+							<div class="form-group mt10">
+								<div class="input-group">
+						            <input id="orgName" name="orgName" class="form-control" placeholder="请输入手机号码" type="text" />
+						        </div>
+							</div>
+							<div class="form-group mt10">
+								<div class="input-group phone_code">
+						            <input id="phone" name="phone" class="form-control" placeholder="请输入短信验证码" type="text" />
+						            <div class="get_phone_code">获取验证码</div>
+						        </div>
+							</div>
+							<div class="form-group mt10">
+								<div class="input-group">
+						            <input id="password" name="password" class="form-control" placeholder="请设置新密码" type="password" />
+						        </div>
+							</div>
+							<div class="form-group mt10">
+								<div class="input-group">
+						            <input id="verify" name="verify" class="form-control" placeholder="请确认密码" type="password" />
+						        </div>
+							</div>
+							<div class="form-group mt10">
+								<div class="input-group phone-group">
+						            <input id="code" name="code" class="form-control" placeholder="验证码" type="text" />
+						            <img src="../../img/imgCode.png" height="48" width="136" id="imgCode" alt="验证码" title="点击可刷新"/>
+						        </div>
+							</div>
+							<input id="btn-register" class="btn btn-lg btn-block submit mt30" data-loading-text="找回密码" autocomplete="off" type="button" value="确定" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="site-footer mt30">
+			<div class="site-footer-copyright">
+				2016 @ <a href="#" target="_blank">贵州草鞋科技有限公司</a>
+			    | <a href="" target="_blank">关于我们</a>
+			    | <a href="" target="_blank">服务协议</a>
+			</div>
+		</footer>
+		<script type="text/javascript" src="../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../js/lib/validator/jquery.validator.js" ></script>
+		<script type="text/javascript" src="../../js/lib/validator/zh_CN.js" ></script>
+		<script type="text/javascript" src="../../js/app/register/orgRegister.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选择物品</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style type="text/css">
+		    .body_b{background-color: #F0F3F4;}
+		    .div_sif{ text-align: center; }
+		    
+		</style>
+	     <script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+	</head>
+	<body  class="body_b">
+		<div class="right-wrap" style="overflow: auto;">
+			<div class="wrapper">
+				<div class="mod-search cf">
+					<div class="fl">
+						<ul class="ul-inline">
+							<li>
+								<label  id="choicegoodstype_titleid"></label>
+								<label>物品名称:  <input type="text" id="seach_choicegppds"  class="ui-input "   placeholder="搜索物品名称">
+					            </label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="grid-wrap noborder-warp">
+					<table id="choice_goods_grid"></table>
+					<div id="choice_goods_page"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap-treeview.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/i18n/grid.locale-cn.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/jquery.jqGrid.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/plugins.js" ></script>
+		<script type="text/javascript" src="../../../js/common.js" ></script>
+		
+		<script type="text/javascript">
+		      $(function(){
+		 			createGrid();
+				})
+			   var iframe = parent.document.getElementById("home_iframe").contentWindow;
+			   $("#choicegoodstype_titleid").html(iframe.choicetype);
+				function copyxuqiu(){
+					//关闭窗口
+					 parent.layer.closeAll();
+				}
+				//加载产品信息的datagrid
+				function  createGrid(){
+					var i = Public.setGrid();
+					var data = [
+					    {no:1,name:'杀猪刀',unit:'把',price:'15.6'},
+					    {no:2,name:'台式电脑',unit:'台',price:'1295.4'},
+					    {no:3,name:'笔记本电脑',unit:'台',price:'5555'},
+					    {no:4,name:'钢筋',unit:'根',price:'75'}
+					   
+					   
+					];
+					$("#choice_goods_grid").jqGrid({
+						data: data,
+						datatype: "local",
+						autowidth: !0,
+						height: i.h - 15,
+						altRows: !0,
+						gridview: !0,
+						styleUI : 'Bootstrap',
+						multiselect: !0,
+						colModel:[{
+							name:"name",
+							label: '物品名称',
+							width:170,
+							fixed: !1,
+							align: 'left'
+						},{
+							name:"unit",
+							label: '单位',
+							width:100,
+							fixed: !1,
+							align: 'left'
+						},{
+							name:"price",
+							label: '单价',
+							width:100,
+							fixed: !1,
+							align: 'left'
+						}],
+						cmTemplate: {
+							sortable: !0,
+							title: !1
+						},
+						page: 1,
+						pager: "#choice_goods_page",
+						rowNum: 100,
+						rowList: [100, 200, 500],
+						viewrecords: !0,
+						shrinkToFit: !0,
+						forceFit: !0,
+						jsonReader: {
+							root: "data.rows",
+							records: "data.records",
+							total: "data.total",
+							userdata: "data.userdata",
+							repeatitems: !1,
+							id: "id"
+						},
+						loadComplete: function(a) {
+						},
+						gridComplete: function() {
+						},
+						loadError: function(a, b, c) {},
+						ondblClickRow: function(a, b, c, d) {
+						},
+						resizeStop: function(a, b) {
+						}
+					});
+				}
+		</script>
+	</body>
+</html>

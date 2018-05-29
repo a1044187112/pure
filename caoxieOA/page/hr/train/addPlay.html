@@ -1,0 +1,152 @@
+<div class="manage-wrapper">
+	<div id="manage-wrap" class="manage-wrap">
+		<form id="manage-form" action="">
+			<ul class="mod-form-rows base-form cf" id="base-form">
+				<li class="row-item">
+					<div class="label-wrap"><label for="title">标题</label></div>
+					<div class="ctn-wrap"><input type="text" value="" class="ui-input readonly" name="title"></div>
+				</li>
+				<li class="row-item">
+					<div class="label-wrap"><label for="users_id">培训讲师</label></div>
+					<div class="ctn-wrap">
+						<span class="ui-combo-wrap" id="rights" style="border: 0px; width: 220px !important;">
+				            <input type="text" name="users_id" readonly="true" placeholder="请选择权限按钮" class="readonly ui-input" autocomplete="off" value="" data-ref="date">
+				            <i class="ui-icon-ellipsis showLog" onclick="open_lecturer();" style="margin-right: 2px;"></i>
+				        </span>
+					</div>
+				</li>
+				<li class="row-item">
+					<div class="label-wrap"><label for="users_id">培训人员</label></div>
+					<div class="ctn-wrap">
+						<span class="ui-combo-wrap" id="rights"style="border: 0px; width: 220px !important;">
+				            <input type="text" name="users_id" readonly="true" placeholder="请选择权限按钮" class="readonly ui-input" autocomplete="off" value="" data-ref="date">
+				            <i class="ui-icon-ellipsis showLog" onclick="open_man();" style="margin-right: 2px;"></i>
+				        </span>
+					</div>
+				</li>
+				<li class="row-item">
+					<div class="label-wrap"><label for="number">培训课程</label></div>
+					<div class="ctn-wrap"><span id="courseNmame"></span>
+						<input name="approve_users_id" type="text" value="" class=" readonly ui-input show_course">
+					</div>
+				</li>
+				<li class="row-item  displayNone">
+					<div class="label-wrap"><label for="approve_users_id">审批人</label></div>
+					<div class="ctn-wrap"><input name="approve_users_id" type="text" value="" class="readonly ui-input"></div>
+				</li>
+				<li class="row-item displayNone">
+					<div class="label-wrap"><label for="approve_time">审批时间</label></div>
+					<div class="ctn-wrap"><input name="approve_time" type="text" value="2016-06-14" class="readonly ui-input"></div>
+				</li>
+				<li class="row-item displayNone">
+					<div class="label-wrap"><label for="approve_result">审批结果</label></div>
+					<div class="ctn-wrap"><input name="approve_result" type="text" value="2016-06-14" class="readonly ui-input"></div>
+				</li>
+			</ul>
+			<ul class="mod-form-rows remark">
+				<li class="row-item row-item2">
+					<div class="label-wrap"><label for="content">培训内容</label></div>
+					<div class="ctn-wrap"><textarea name="content" id="note" class="ui-input ui-input-ph"style="width: 420px;">添加备注信息</textarea></div>
+				</li>
+				<li class="row-item row-item1 row-item2 displayNone">
+					<div class="label-wrap"><label for="approve_opinion">审批意见</label></div>
+					<div class="ctn-wrap"><textarea name="approve_opinion" id="note" class="ui-input ui-input-ph" style="width: 420px;">添加备注信息</textarea></div>
+				</li>
+				<li class="row-item row-item1 row-item2 upfiles_up">
+					<div class="label-wrap"><label for="note">文件上传</label></div>
+				</li>
+				<li class="row-item row-item1 row-item2 upfiles_up1">
+					<div class="label-wrap"><label for="note">文件</label></div>
+				</li>
+			</ul>
+			<div class="upfiles_main">
+				<ul class="upfiles_ul" id="upfiles_ul">
+					<li class="upfiles_li">
+						<div class="upfiles_div1">
+							<h4 class="upfiles_h">名称</h4>
+						</div>
+						<div class="upfiles_div2">
+							<h4 class="upfiles_h">文件</h4>
+						</div>
+						<div class="upfiles_div3">
+						<div class="fr">
+						    <div class="btn-group btn-groupSty">
+								<a class="btn btn-link" href="javascript:;" onclick="add_new();">
+									<i class="fa fa-plus"></i> 新增
+								</a>
+							</div> 
+						</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="upfiles_main upfiles_main_show">
+				<ul class="upfiles_ul" id="upfiles_ul">
+					<li class="upfiles_li">
+						<div class="upfiles_div1">
+							<h4 class="upfiles_h">名称</h4>
+						</div>
+						<div class="upfiles_div2">
+							<h4 class="upfiles_h">文件</h4>
+						</div>
+					</li>
+					<li class="upfiles_li">
+						<div class="upfiles_div1">
+							<span class="upfiles_h" name="name">名称</span>
+						</div>
+						<div class="upfiles_div2">
+							<span class="upfiles_h" name="path">文件.doc</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</form>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+//		console.log(addForm_type);
+		jQuery.getScript('../../../js/lib/plugins.js', function() {
+			sexCom = $("#courseNmame").combo({
+			data: [{
+				id: 0,
+				name: "HTML详解"
+			}, {
+				id: 1,
+				name: "css"
+			}, {
+				id: 2,
+				name: "公司规范"
+			}, {
+				id: 3,
+				name: "外语培训"
+			}],
+			value: "id",
+			text: "name",
+			name:"gender",
+			width: 220,
+			defaultSelected: null || 0
+		}).getCombo();
+		});
+		if(addForm_type === '查看') {
+			$(".readonly").attr("readonly","true");
+			$("textarea").attr("readonly","true");
+			$("#courseNmame").attr("readonly","true");
+			$(".displayNone").removeClass("displayNone");
+			$(".upfiles_main").css("display", "none");
+			$(".upfiles_up").css("display", "none");
+			$(".upfiles_up1").css("display", "block");
+			$(".upfiles_main_show").css("display", "block");
+			$(".ok").css("display", "none");
+			$(".showLog").css("display", "none");
+			$("#courseNmame").css("display", "none");
+			$(".show_course").css("display", "block");
+		} else {
+			$(".show_course").css("display", "none");
+			$(".displayNone").addClass("displayNone");
+			$(".upfiles_up1").css("display", "none");
+			$(".upfiles_main_show").css("display", "none");
+//			$(".ok").css("display", "block");
+		}
+	})
+</script>

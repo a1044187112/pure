@@ -1,0 +1,90 @@
+Public.grantPanel = function(options){ return new Public.grantPanel(options); }
+
+Public.grantPanel = function(options){
+	var defaults = {
+		renderTo: 'body',
+		autoClose : true,
+		removeOthers : true,
+		onClose : null,
+		onShow : null
+	}
+	this.options = $.extend({},defaults,options);
+	this._init();
+	!Public.grantPanel._collection ?  Public.grantPanel._collection = [this] : Public.grantPanel._collection.push(this);
+}
+
+Public.grantPanel.removeAll = function(){
+	try {
+		for(var i=Public.grantPanel._collection.length-1; i>=0; i--){
+			Public.grantPanel._collection[i].remove();
+		}
+	}catch(e){}
+}
+
+Public.grantPanel.prototype = {
+	_init:function(){
+		var self = this,opts = this.options;
+		if($('.grantPanel')){
+			$('.grantPanel').remove();
+		}
+		this._create();
+		this._event();
+	},
+	
+	_create:function(){
+		var opts = this.options, self = this;
+		this.obj = $('<div class="grantPanel">'+
+			'<div class="grantPanel-toolbar">'+
+			   '<div class="title"><i class="fa '+opts.icon+'"></i>'+opts.title+'</div>'+
+			   '<div class="close"><i class="fa fa-close"></i></div>'+
+			'</div>'+
+			'<div class="grantPanel-body">'+opts.content+'</div>'+
+			'<div class="grantPanel-footer">'+
+				'<a class="ui-btn btn ui-btn-sp" style="margin-right:10px;">确定</a>'+
+				'<a class="ui-btn btn canel">取消</a>'+ 
+			'</div>'+
+		'</div>');
+		this.closeBtn = this.obj.find('.close');
+		this.canelBtn = this.obj.find('.canel');
+		this.closeBtn.bind('click',function(){
+			self.obj.css('transform','translateX(600)');
+		});
+		this.canelBtn.bind('click',function(){
+			self.obj.css('transform','translateX(600)');
+		});
+	    this.obj.appendTo('body');
+	    if(opts.type == 0){
+	    	this.obj.find('.grantPanel-body').html(opts.content);
+	    }else if(opts.type == 1){
+	    	this.obj.find('.grantPanel-body').load(opts.content);
+	    }else if(opts.type == 2){
+	    	this.obj.find('.grantPanel-body').html('<iframe src='+opts.content+' style="width: 100%;height: 100%;"  marginwidth="0" marginheight="0" frameborder="0" scrolling="auto" />');
+	    }
+	    this._setPos();
+	},
+	
+	_setPos:function(){
+		var self = this, opts = this.options;
+		window.setTimeout(function(){
+			self.obj.css('transform','translateX(0)');
+		},50);
+	},
+	
+	_event:function(){
+		var self = this, opts = this.options;
+		$(document).on('click', function (e) {
+			var item = e.target;
+			if($(item).is(self.closeBtn)){
+				self.obj.css('transform','translateX(600)');
+			}else{
+				if(!$(item).closest(self.obj).length){
+					self.obj.css('transform','translateX(600)');
+				}
+			}
+		});
+	},
+	
+	close:function(){
+		self.obj.css('transform','translateX(600)');
+	}
+};

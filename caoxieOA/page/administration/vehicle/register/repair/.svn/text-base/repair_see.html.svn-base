@@ -1,0 +1,55 @@
+<div class="manage-wrapper">
+	<div id="manage-wrap" class="manage-wrap" style="line-height: 30px;">
+		<div class="clearfix">
+			<div class="form-group" style="float:left;width: 45%;margin-bottom: 0px;">
+				<div class="clearfix">
+					<label class="col-sm-6 control-label font_sty" for="username">车牌号：</label>
+			        <div class="col-sm-6">
+				        <span class="span_sty">小赵</span>
+			        </div>
+				</div>
+				<div class="clearfix">
+					<label class="col-sm-6 control-label font_sty" for="username">维修日期：</label>
+			        <div class="col-sm-6">
+				        <span class="span_sty">121111</span>
+			        </div>
+				</div>
+				<div class="clearfix">
+					<label class="col-sm-6 control-label font_sty" for="username">费用：</label>
+			        <div class="col-sm-6">
+				        <span class="span_sty">121111</span>
+			        </div>
+				</div>
+		    </div>
+		    <div class="form-group" style="float:left;width: 45%;margin-bottom: 0px;">
+		    	<div class="clearfix">
+		    		<label class="col-sm-6 control-label font_sty" for="username">修配厂：</label>
+			        <div class="col-sm-6">
+				       <span class="span_sty">99909</span>
+			        </div>
+		    	</div>
+		    	<div class="clearfix">
+		    		<label class="col-sm-6 control-label font_sty" for="username">经办人：</label>
+			        <div class="col-sm-6">
+				       <span class="span_sty">2016-8-8</span>
+			        </div>
+		    	</div>
+		    	<!--<div class="clearfix">
+		    		<label class="col-sm-5 control-label font_sty" for="username">投保日期1：</label>
+			        <div class="col-sm-7">
+				       <span>投保日期111</span>
+			        </div>
+		    	</div>-->
+		    </div>
+		</div>	
+		<div class="form-group" style="width: 90%;">
+			<div class="clearfix">
+					<label class="col-sm-3 control-label font_sty" for="username">内容：</label>
+			        <div class="col-sm-7">
+				        <span class="span_sty">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</span>
+			        </div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="../../../js/app/administration/vehicle/register/repair/repair_see.js"></script>

@@ -1,0 +1,5 @@
+<div class="grid-wrap">
+	<table id="grid_receive"></table>
+    <div id="page_receive"></div>
+</div>
+<script type="text/javascript " src="../../../js/app/administration/officeSupplies/receive/receive.js "></script>

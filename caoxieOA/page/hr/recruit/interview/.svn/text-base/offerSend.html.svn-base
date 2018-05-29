@@ -1,0 +1,57 @@
+
+<div class="manage-wrapper">
+	<div id="manage-wrap" class="manage-wrap">
+		<form id="manage-form" action="">
+			<ul class="mod-form-rows base-form cf" id="base-form">
+    			
+    			<li class="row-item">
+    				<div class="label-wrap "  style="width:90px;text-align: right;"><label for="name">预计用工时间</label></div>
+    				<div class="ctn-wrap"><input type="text" value="2016-06-14" class="ui-input ui-datepicker-input  editvalue"  style="width:200px;"></div>
+    			</li>
+    			<li class="row-item">
+    				<div class="label-wrap " style="width:90px;text-align: right;" ><label for="name">入职部门</label></div>
+    				<div class="ctn-wrap">
+    					<div class="ctn-wrap"><input type="text" value="" class="ui-input  editvalue" name="buname" id="buname"  style="width:200px;"></div>
+    				</div>
+    			</li>
+    			<li class="row-item">
+    				<div class="label-wrap " style="width:90px;text-align: right;"><label for="number">试用期薪资</label></div>
+    				<div class="ctn-wrap"><input type="text" value="" class="ui-input  editvalue" name="number1" id="number1" onKeyUp="clearNoNum_esfz(event,this)" onBlur="checkNum_esfz(this)"  style="width:200px;">元</div>
+    			</li>
+    			<li class="row-item">
+    				<div class="label-wrap " style="width:90px;text-align: right;"><label for="number">转正后薪资</label></div>
+    				<div class="ctn-wrap"><input type="text" value="" class="ui-input  editvalue" name="number2" id="number2" onKeyUp="clearNoNum_esfz(event,this)" onBlur="checkNum_esfz(this)"  style="width:200px;">元</div>
+    			</li>
+			</ul>
+			<ul class="mod-form-rows remark">
+    			<li class="row-item">
+    				<div class="label-wrap " style="width:90px;text-align: right;"><label for="note">其他协商事宜</label></div>
+    				<div class="ctn-wrap"><textarea name="" id="note" class="ui-input ui-input-ph" placeholder="其他协商事宜" ></textarea></div>
+    			</li>
+    		</ul>
+		</form>
+	</div>
+</div>
+<script type="text/javascript">
+	function clearNoNum_esfz(event,obj){ 
+        //响应鼠标事件，允许左右方向键移动 
+	    event = window.event||event; 
+	    if(event.keyCode == 37 | event.keyCode == 39){ 
+	        return; 
+	    } 
+	    //先把非数字的都替换掉，除了数字和. 
+	    obj.value = obj.value.replace(/[^\d.]/g,""); 
+	    //必须保证第一个为数字而不是. 
+	    obj.value = obj.value.replace(/^\./g,""); 
+	    //保证只有出现一个.而没有多个. 
+	    obj.value = obj.value.replace(/\.{2,}/g,"."); 
+	    //保证.只出现一次，而不能出现两次以上 
+	    obj.value = obj.value.replace(".","$#$").replace(/\./g,"").replace("$#$","."); 
+	} 
+	function checkNum_esfz(obj){ 
+	    //为了去除最后一个. 
+	    obj.value = obj.value.replace(/\.$/g,""); 
+	} 
+	
+	
+</script>

@@ -1,0 +1,175 @@
+/*
+    jch.jGrid-主要CSS
+    需要bootstrap样式，宽高全部基于border-box计算
+*/
+
+/*基础样式*/
+.jGrid { width: 100%; table-layout: fixed; margin: 0 auto; border-collapse: collapse; position: relative; }
+.jGrid tr { height: 100px; background: #fff; border-bottom: 1px solid #efefef; }
+.jGrid tr[rowtype="jRowColHeader"] { height: 50px; }
+.jGrid [rowtype="jRowToolBar"] { position: absolute; height: 50px; line-height: 50px; top: 0; right: 0; }
+.jGrid tr[rowtype="jRowFooter"] { height: 50px; }
+.jGrid td, .jGrid th { text-align: left; border: none; /*border: 1px solid #ddd;*/ text-overflow: ellipsis; overflow: hidden; white-space: nowrap; text-align: left; }
+.jGrid td { padding: 0 5px; height: inherit; }
+.jGrid th { padding: 0 5px; }
+.jGrid td a { text-decoration: none; color: rgb(0,149,217); }
+.jGrid td a:hover { text-decoration: underline; color: rgb(0,149,217); cursor: pointer; }
+.jGrid span, .jGrid img { vertical-align: middle; }
+.jGrid .jCell { display: inline; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.jGrid thead { -moz-user-select: none; -webkit-user-select: none; user-select: none; }
+
+/*全选框样式*/
+.jGrid thead .jCheckBox { margin-left: 0; }
+.jGrid thead .checkallLabel { position: absolute; padding: 0 5px; font-weight: normal; }
+
+/*列头排序*/
+.jGrid thead .sort { width: 10px; height: 14px; display: inline-block; margin-left: 5px; background-image: url("images/sort.png"); }
+.jGrid thead .sort.default { background-position: 0 0; }
+.jGrid thead .sort.asc { background-position: -20px 0; }
+.jGrid thead .sort.desc { background-position: -10px 0; }
+
+/*图片单元格*/
+.jGrid td[celltype="jCellIcon"] .jCellIcon { display: block; margin: 0 auto; max-width: 80px; max-height: 80px; }
+
+/*行头单元格*/
+.jGrid td[celltype="jCellRowHeader"] .jCheckBox { display: block; margin: 0 auto; }
+
+/*双行字段单元格*/
+.jGrid td[celltype="jCellField"] .jCell { width: 100%; display: inline-block; }
+
+/*单行字段单元格*/
+.jGrid td[celltype="jCellSingleField"] b { margin-right: 10px; vertical-align: middle; }
+
+/*展开按钮单元格*/
+.jGrid td[celltype="jCellExpandButton"] span { width: 40px; height: 25px; display: inline-block; -moz-user-select: none; -webkit-user-select: none; user-select: none; }
+.jGrid td[celltype="jCellExpandButton"] span:hover { cursor: pointer; }
+.jGrid td[celltype="jCellExpandButton"] .collapse { background-image: url("images/collapse.png"); visibility: visible; }
+.jGrid td[celltype="jCellExpandButton"] .expand { background-image: url("images/expand.png"); }
+
+/*复合型单元格*/
+.jGrid .jComplexCell { padding: 0; }
+.jGrid .jComplexCell * { border: none; }
+.jGrid .jComplexCell table { width: 100%; height: 80%; table-layout: fixed; margin: 0 auto; border-collapse: collapse; }
+.jGrid .jComplexCell tr { height: 50%; }
+.jGrid .jComplexCell .jCellComplexTitleTr * { vertical-align: top; }
+.jGrid .jComplexCell .jCellComplexFieldTr td { vertical-align: bottom; }
+
+/*复合型单元格 次要字段单元格*/
+.jGrid td[celltype="jCellComplexField"] .jCell { width: 100%; display: inline-block; }
+
+/*头像单元格*/
+.jGrid .jCellAvatarBox { display: block; position: relative; float: left; overflow: hidden; }
+.jGrid .jCellAvatarBox .jCellIcon { position: relative; left: 0; top: 0; width: 40px; height: 40px; }
+.jGrid .jCellAvatarBox .jCellAvatar { position: absolute; right: 1%; bottom: 1%; width: 16px; height: 16px; }
+.jGrid .jCellAvatarBox .jCellAvatar.iconMale { background-image: url("images/jCellAvatar/Male.png"); }
+.jGrid .jCellAvatarBox .jCellAvatar.iconFemale { background-image: url("images/jCellAvatar/Female.png"); }
+
+/*工具栏单元格*/
+.jGrid td[celltype="jCellToolBar"] a { font-weight: normal; }
+.jGrid td[celltype="jCellToolBar"] a:hover { text-decoration: none; cursor: pointer; }
+.jGrid td[celltype="jCellToolBar"] .jCell { margin-left: 8px; margin-right: 8px; }
+
+/*单元格编辑*/
+.jGrid .jCellEditBox { border: 1px solid rgb(240, 240, 240); border-radius: 5px; height: 32px; }
+.jGrid .jCellEditBox .ltCont { float: left; margin-left: -68px; width: 100%; height: 100%; }
+.jGrid .jCellEditBox .ltLeft { margin-left: 68px; height: 100%; }
+.jGrid .jCellEditBox .ltRight { float: left; width: 68px; height: 100%; }
+.jGrid .jCellEditBox .ebText { outline: none; border: none; width: 100%; border-radius: 5px; height: 100%; padding: 0 5px; }
+.jGrid .jCellEditBox .btn { height: 100%; border: none; padding-left: 12px; padding-right: 12px; }
+.jGrid .jCellEditBox .ebCancel { border-radius: 0 5px 5px 0; }
+.jGrid .jCellEditBox .ebEnter { border-radius: 5px 0 0 5px; }
+
+/*拖拽单元格*/
+.jGrid td[celltype="jCellDrag"] { padding: 0; }
+.jGrid td[celltype="jCellDrag"] .dragBlock { background-image: url("images/drag.png"); width: 100%; height: 30px; cursor: pointer; background-repeat: repeat; }
+.jGrid tr.dargHidden { opacity: 0.1; }
+.jGrid .dragPop { position: absolute; right: 0; top: 0; opacity: 0.9; }
+.jGrid .dragPop thead tr { height: 0; border: none; }
+.jGrid .dragPop > table > tbody > tr { box-shadow: 0px 0px 2px #aaaaaa; }
+.jGrid .dragPop tbody tr.dragEmptyTr { border: none; box-shadow: none; }
+
+/*页码*/
+.jPager { overflow: hidden; }
+.jPager .pageInfo { float: left; margin: 23px 0; }
+
+.jPager .pager { display: inline-block; float: right; overflow: hidden; margin: 4px; -moz-user-select: none; -webkit-user-select: none; user-select: none; }
+.jPager .pageItemBox { display: inline-block; overflow: hidden; }
+.jPager .pagerItem.firstBtn { background: url(images/jPager/firstBtn.png) no-repeat center; }
+.jPager .pagerItem.lastBtn { background: url(images/jPager/lastBtn.png) no-repeat center; }
+.jPager .pagerItem.prevBtn { background: url(images/jPager/prevBtn.png) no-repeat center; }
+.jPager .pagerItem.nextBtn { background: url(images/jPager/nextBtn.png) no-repeat center; }
+.jPager .pagerItem.pagePrevBtn { background: url(images/jPager/pagePrevBtn.png) no-repeat center; }
+.jPager .pagerItem.pageNextBtn { background: url(images/jPager/pageNextBtn.png) no-repeat center; }
+.jPager .pagerItem { background: white; color: rgb(56, 69, 79); display: inline-block; text-align: center; margin: 10px 0; width: 30px; height: 25px; line-height: 25px; cursor: pointer; border-radius: 5px; }
+.jPager .pagerItem:hover { background-color: rgb(238,240,241); color: rgb(56, 69, 79); text-decoration: none; }
+.jPager .borderChecked { background-color: rgb(0,149,217); color: white; }
+.jPager .borderChecked:hover { background-color: rgb(0,149,217); color: white; }
+
+.jPager .pageSearch { float: right; margin: 16px 0; position: relative; border: 1px solid rgb(191, 199, 217); border-radius: 4px; }
+.jPager .pageSearch .pageSearch_text { border: none; width: 50px; border-radius: 3px; padding: 0 5px; outline: none; }
+.jPager .pageSearch .pageSearch_btn { color: white; background-color: rgb(0,149,217); border: medium none; border-radius: 4px; height: 35px; left: 1px; position: relative; top: 0; width: 65px; cursor: pointer; }
+
+@media (max-width: 778px) {
+    .jPager .pageInfo { display: none; }
+    .jPager .pager { float: left; }
+}
+
+/*无数据*/
+.jGrid .jEmpty { width: 100%; display: block; text-align: center; }
+.jGrid .jEmpty_icon { display: block; background: url(images/empty.png) no-repeat!important; width: 128px; height: 128px; margin: 40px auto 10px auto; }
+.jGrid .jEmpty_info { color: rgb(191,199,218); }
+
+/*----- 复选框 ------*/
+.jCheckBox { width: 20px; height: 20px; display: inline-block; background-image: url(images/jCheckBoxBg.png); }
+.jCheckBox:hover { }
+.jCheckBox[jenabled='false'] { }
+.jCheckBox[jenabled='true']:hover { background-color: rgb(243,249,255); border-radius: 3px; }
+.jCheckBox[jchecked='true'][jenabled='true'] { background-position: -20px 0px; }
+.jCheckBox[jchecked='true'][jenabled='false'] { background-position: 0px 0px; }
+.jCheckBox[jchecked='false'][jenabled='true'] { background-position: -20px -40px; }
+.jCheckBox[jchecked='false'][jenabled='false'] { background-position: 0px -40px; }
+
+.jCheckBox[jenabled='true'][stylemode*='radioButton']:hover { background-color: rgb(243,249,255); border-radius: 27px; }
+.jCheckBox[jchecked='true'][jenabled='true'][stylemode*='radioButton'] { background-position: -20px -60px; }
+.jCheckBox[jchecked='true'][jenabled='false'][stylemode*='radioButton'] { background-position: 0px -60px; }
+.jCheckBox[jchecked='false'][jenabled='true'][stylemode*='radioButton'] { background-position: -20px -80px; }
+.jCheckBox[jchecked='false'][jenabled='false'][stylemode*='radioButton'] { background-position: 0px -80px; }
+
+/*------------- file grid --------------*/
+#dm_kuaipan { font-size: 12px; }
+#dm_kuaipan .checkallLabel { display: none; }
+#dm_kuaipan .jGrid tbody tr { height: 45px; }
+#dm_kuaipan td[celltype="jCellIcon"] .jCellIcon { float: left; height: 32px; width: 32px; }
+/*// #dm_kuaipan td[celltype="jCellIconText"] .jCellIcon { padding-right: 8px;position: absolute;}*/
+#dm_kuaipan .link { color: black; position: absolute; }
+#dm_kuaipan .link:hover { color: black; }
+#dm_kuaipan .btns { visibility: hidden; }
+#dm_kuaipan .jGrid tbody tr:hover .btns { visibility: visible; }
+#dm_kuaipan .jGrid tbody tr:hover { background-color: rgb(240, 248, 253); }
+#dm_kuaipan .jGrid tbody tr.hover { background-color: rgb(240, 248, 253); }
+#dm_kuaipan .jGrid td { position: relative; }
+#dm_kuaipan .jGrid .tdCss { padding: 0; }
+#dm_kuaipan .btnIcon { background: url("images/kuaipan/237.png"); cursor: pointer; float: left; height: 34px; width: 30px; }
+#dm_kuaipan .btnIcon.uploadIcon { background-position: 5px -45px; }
+#dm_kuaipan .btnIcon.uploadIcon:hover { background-position: 5px -70px; }
+#dm_kuaipan .btnIcon.deleteIcon { background-position: 5px -95px; }
+#dm_kuaipan .btnIcon.deleteIcon:hover { background-position: 5px -120px; }
+#dm_kuaipan .btnIcon.editIcon { background-position: 4px 55px; }
+#dm_kuaipan .btnIcon.editIcon:hover { background-position: 4px 30px; }
+#dm_kuaipan .btnIcon.renameIcon { background-position: 5px -245px; }
+#dm_kuaipan .btnIcon.renameIcon:hover { background-position: 5px -270px; }
+#dm_kuaipan .btnIcon.empty { width: 30px; height: 18px; background: white; cursor: default; }
+#dm_kuaipan .tokyoSort { background-image: url("images/kuaipan/sort2.png"); display: inline-block; height: 11px; margin-left: 5px; width: 10px; }
+#dm_kuaipan .tokyoSort.defalut { background: white; }
+#dm_kuaipan .tokyoSort.asc { background-position: 0 0px; }
+#dm_kuaipan .tokyoSort.desc { background-position: 0 10px; }
+#dm_kuaipan .jCheckBox { background-image: url("images/kuaipan/check.png"); display: inline-block; height: 14px; width: 14px; }
+#dm_kuaipan .jCheckBox[jchecked="false"][jenabled="true"] { background-position: 0 69px; }
+#dm_kuaipan .jCheckBox[jchecked="true"][jenabled="true"] { background-position: 0 27px; }
+#dm_kuaipan .jGrid .jCellEditBox { height: 30px; margin: -31px 45px; position: absolute; width: 100%; }
+#dm_kuaipan .jGrid .jCellEditBox .ltCont { margin-left: 0px; }
+#dm_kuaipan .jGrid .jCellEditBox .ltLeft { margin-left: 0px; }
+#dm_kuaipan .jGrid .spanMargin { margin-left: 14px; }
+#dm_kuaipan .jPager .pageSearch{display: none;}
+#dm_kuaipan .jPager .pagerItem.pagePrevBtn {display: none;}
+#dm_kuaipan .jPager .pagerItem.pageNextBtn {display: none;}

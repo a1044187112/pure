@@ -1,0 +1,297 @@
+<style type="text/css">
+	.warp-top{
+    	width: 100%;
+    	font-size: 14px;
+    	color: #7F7F7F;
+    	padding: 5px;
+    }
+    h2.title{
+		font-size: 22px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	h2.title a{
+		font-weight: normal;
+		font-size: 12px;
+		color: #00B2EE;
+		float: right;
+	}
+	.label-wrap label{
+		font-size: 14px;
+		color: #9e9e9e;
+		float: left;
+	}
+	.mod-form-rows .label-wrap{font-size:12px;}
+	.mod-form-rows .row-item {padding-bottom: 15px;margin-bottom: 0;}/*兼容IE7 ，重写common的演示*/
+	.manage-wrapper{margin:20px auto 10px;}
+	.manage-wrap .ui-input{width: 168px;}
+	.base-form{*zoom: 1;}
+	.base-form:after{content: '.';display: block;clear: both;height: 0;overflow: hidden;}
+	.base-form li{float: left;width: 290px;}
+	.base-form li.odd{padding-right:20px;}
+	.manage-wrap textarea.ui-input{width: 100%;height: 60px;overflow:hidden;}
+	#receiveFunds,#periodReceiveFunds{text-align: right;}
+	
+	.contacters{margin-bottom: 10px; }
+	.contacters h3{margin-bottom: 10px;font-weight: normal;color: #9e9e9e;}
+	.mod-form-rows .pb0{padding-bottom:0;}
+    .mod-form-rows .ctn-wrap{overflow: visible;}
+	#manage-wrap .n-invalid {border: 1px solid #f00;}
+	.select-table-warp .title{
+		color:#878787;
+	}
+	.select-table-warp td{border-color: #F5F5F5;}
+	.select-table-warp td input{margin: 0px !important;}
+	.select-table-warp .ui-jqgrid .ui-th-div{
+		text-align: center;
+		color: #969696 !important;
+	}
+	.select-table-warp td.edit-cell.success{
+		height: 40px;
+	}
+	.select-table-warp .operating span{
+		margin: 0px !important;
+	}
+</style>
+<div class="wrapper wuliao-warp">
+	<div class="warp-top">
+		<form id="add-form">
+		<h2 class="title">办公用品入库</h2>
+		<hr style="border: 1px solid #FAFAFA; margin-bottom: 10px;"/>
+		<div class="manage-wrap">
+			<ul class="mod-form-rows base-form cf">
+				<li class="row-item">
+                    <div class="label-wrap"><label for="name">入库人</label></div>
+                    <div class="ctn-wrap"><input type="text" value="" class="ui-input"></div>
+                </li>
+                <li class="row-item odd">
+                    <div class="label-wrap"><label for="name">部门</label></div>
+                    <div class="ctn-wrap"><input type="text" value="" class="ui-input"></div>
+                </li>
+                <li class="row-item">
+                    <div class="label-wrap"><label for="name">时间</label></div>
+                    <div class="ctn-wrap"><input type="text" value="" class="ui-input"></div>
+                </li>
+				<li class="row-item odd">
+					<div class="label-wrap"><label>入库方式</label></div>
+					<div class="ctn-wrap">
+						<label class="radio">
+			                <input type="radio" name="classes" value="150601">采购
+			            </label>
+			            <label class="radio">
+			              <input type="radio" name="classes" value="150602">回库
+			            </label>
+					</div>
+				</li>
+			</ul>
+			<div class="contacters">
+				<h3><a id="select-goods" href="javascript:;" class="blue"><i class="fa fa-download"></i> 入库</a></h3>
+				<div class="grid-wrap" style="background: #ff0000;">
+		           <table id="select-grid"></table>
+		        </div>
+			</div>
+			
+			<ul class="mod-form-rows">
+		        <li class="row-item pb0">
+		            <div class="ctn-wrap">
+		               <textarea name="marke" id="marke" class="ui-input ui-input-ph">添加备注信息</textarea>
+		            </div>
+		        </li>
+		    </ul>
+		   
+		</div>
+		</form>
+	</div>
+</div>
+<div id="initCombo" class="dn">
+	<input type="text" class="textbox goodsAuto" name="goods" autocomplete="off" />
+</div>
+<script type="text/javascript">
+var $select_grid = $("#select-grid"),curRow, curCol,
+WuLiaoPage = {
+	
+	init:function(){
+		this.initDom();
+		this.initGrid();
+		this.addEvent();
+	},
+	
+	initDom:function(){
+		var self = this;
+	},
+	
+	initGrid:function(){
+		e = [{
+			id: "1"
+		}, {
+			id: "2"
+		}, {
+			id: "3"
+		}, {
+			id: "4"
+		}];
+		
+		$select_grid.jqGrid({
+			data: e,
+			datatype: "clientSide",
+			autowidth: !0,
+			height:140,
+			gridview: !0,
+			rownumbers: !0,
+			gridview: !0,
+			onselectrow: !1,
+			styleUI : 'Bootstrap',
+			colModel:[{
+				name: "operating",
+				label: " ",
+				width: 50,
+			    fixed: !0,
+				formatter: Public.billsOper,
+				align: "center"
+		    },{
+				name: "goods",
+				label: "物品名称",
+				width: 110,
+				title: !1,
+				editable: !0
+			},{
+				name: "boxNumber",
+				label: "单位",
+				width: 60,
+				title: !1,
+				align: 'center',
+				editable: !0
+			},{
+				name: "number",
+				label: "数量",
+				width: 60,
+				title: !1,
+				editable: !0
+			},{
+				name: "remark",
+				label: "备注",
+				width: 90,
+				title: !1,
+				align: 'center',
+				editable: !0
+			}],
+			cmTemplate: {
+			    sortable: !1,
+				title: !1
+			},
+			shrinkToFit: !0,
+			forceFit: !0,
+			rowNum: 1e3,
+			cellEdit: !0,
+			forceFit: !0,
+			footerrow: !0,
+			userDataOnFooter: !0,
+			cellsubmit: "clientArray",
+			localReader: {
+				root: "rows",
+				records: "records",
+				repeatitems: !1,
+				id: "id"
+			},
+			jsonReader: {
+				root: "rows",
+				records: "records",
+				repeatitems: !1,
+				id: "id"
+			},
+			loadComplete:function(t){
+				//alert(t.rows);
+			},
+			gridComplete:function(){
+				
+			},
+			afterEditCell:function(t, e, i, a, n){
+				//alert(e);
+			},
+			formatCell: function() {
+				
+			},
+			beforeSaveCell: function(t, e, i) {
+				//编辑完成后触发
+				setTimeout(function() {
+					$select_grid.jqGrid("editCell", curRow, 2, !0);
+					$select_grid.jqGrid("setCell", curRow, 2, "");
+					alert(curRow);
+				}, 10);
+			},
+			afterSaveCell: function(t, i, a, n, r){
+				alert(i);
+				switch(i){
+				    case "name":
+				    	var d = $("#" + t).data("spaceInfo");
+				    break;
+				}
+			},
+			userData: {
+				goods: "合计：",
+				number: 0
+			},
+		});
+	},
+	
+	addEvent:function(){
+		var _self = this;
+		$('.wuliao-warp').on('click','#btn-back',function(e){
+			THISPAGE.sidePanel.options.closeBtn = 1;
+			THISPAGE.sidePanel.realod('addNav.html');
+			e.stopImmediatePropagation();
+		});
+		
+		//新增分录
+		$('.select-table-warp').on('click', '.ui-icon-plus', function(e){
+			var rowId = $(this).parent().data('id');
+			var newId = $('#select-grid tbody tr').length;
+			var datarow = { id: _self.newId };
+			var su = $("#select-grid").jqGrid('addRowData', _self.newId, datarow, 'after', rowId);
+			if(su) {
+				$(this).parents('td').removeAttr('class');
+				$(this).parents('tr').removeClass('selected-row ui-state-hover');
+				$("#select-grid").jqGrid('resetSelection');
+				_self.newId++;
+			}
+		});
+		//删除分录
+		$('.select-table-warp').on('click', '.ui-icon-trash', function(e){
+			if($('#select-grid tbody tr').length === 2) {
+				parent.Public.tips({type: 2, content: '至少保留一条分录！'});
+				return false;
+			}
+			var rowId = $(this).parent().data('id');
+			var su = $("#select-grid").jqGrid('delRowData', rowId);
+			if(su) {
+				//_self.calTotal();
+			};
+		});
+		
+		//取消分录编辑状态
+		$(document).bind('click.cancel', function(e){
+			console.log(curRow + " --------" + curCol);
+			if(!$(e.target).closest(".ui-jqgrid-bdiv").length > 0 && curRow !== null && curCol !== null){
+			   console.log(curRow + " --------" + curCol + " == " + $(e.target).closest(".ui-jqgrid-bdiv").length)
+			   $("#select-grid").jqGrid("saveCell", curRow, curCol);
+			   curRow = null;
+			   curCol = null;
+			};
+		});
+		
+		$('.wuliao-warp').on('click','#select-goods',function(e){
+			
+		});
+		
+		this.bindEventForEnterKey();
+	},
+	
+	bindEventForEnterKey:function() {
+		Public.bindEnterSkip($("#add-form"), function() {
+			$("#select-grid tr.jqgrow:eq(0) td:eq(0)").trigger("click")
+		});
+	}
+};
+WuLiaoPage.init();
+</script>

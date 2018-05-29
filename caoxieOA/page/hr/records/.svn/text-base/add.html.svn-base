@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>职员添加</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<link rel="stylesheet" href="../../../js/lib/validator/jquery.validator.css" />
+		<style type="text/css">
+		    .manage-wrap .ui-input{ width: 220px;}
+		    .ui-input1{ width: 190px !important;}
+			.base-form{*zoom: 1;/*margin:0 -10px;*/margin-top: 15px;}
+			.base-form:after{content: '.';display: block;clear: both;height: 0;overflow: hidden;}
+			.base-form .row-item{float: left;height: 31px;margin: 0 10px;overflow: visible;padding-bottom:15px; }
+			.new-liclass .row-item{width: 380px;}
+			.row-item1{width: 320px !important;}
+			.row-item2{width: 100% !important;}
+			.new-liclass .row-item{padding-right:20px;}
+			.new-liclassm .no_padding{ padding-right:0 }
+            .clearfix:after {
+				content: " ";
+				display: block;
+				clear: both;
+				height: 0;
+			}
+			
+			.clearfix {
+				zoom: 1;
+			}
+
+			.tab-wrapper{
+				display: -webkit-box;
+			    display: flex;
+			    display: -ms-flexbox;
+			    display: -webkit-flex;
+			    -webkit-box-orient: vertical;
+			    -webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			    flex-direction: column;
+			    -webkit-flex-direction: column;
+			    height: 100%;
+			    padding: 10px;
+			}
+			.tab-wrapper .tab-navigation .nav-tabs>li>a:focus,.details-warp .tab-navigation .nav-tabs>li>a:hover{border:0;border-bottom: 2px solid #C6E2FF;}
+			.tab-wrapper .tab-navigation .nav-tabs>li>a{background-color:transparent;border-width:0;padding:10px 20px;min-width:auto;color: #8A959E;font-weight: normal;}
+			.tab-wrapper .tab-navigation .nav-tabs>li>a i{font-size:14px;margin-right: 10px;}
+			.tab-wrapper .tab-navigation .nav-tabs>li.active{
+				border-bottom: 2px solid #00B2EE;
+			}
+			.tab-wrapper .tab-panel .tab-content{height:100%;position:relative;width:100%;padding:0;background:0 0;}
+			.tab-wrapper .tab-panel .tab-content .tab-pane{height:100%;position:relative;width:100%;display: none;padding: 10px;}
+			.tab-wrapper .tab-panel .tab-content .tab-pane>.content{overflow:auto;bottom:0;left:0;position:absolute;right:0;top:0}
+			.tab-wrapper .tab-panel .tab-content .tab-pane h2{color:#e1e1e1;font-size:15px;font-weight:400;padding-bottom:15px;border-bottom:1px solid #6d6b6b;padding-left:5px;margin-bottom:25px;margin-top:18px;}
+			.tab-wrapper .tab-panel .tab-content .tab-pane.active{display: block;}
+			.message_img{display: block; float:right;width: 180px;height: 300px;position:absolute;top:28px;right:80px;}
+		    .user_img{width: 100%;height: 70%;border:1px solid #ddd;}
+		    .img_upload{ margin: 10% auto;margin-left: 23%;overflow: hidden; width:100px !important;}
+		    .input_text{width: 560px !important;}
+		    .input_text1{width: 530px !important;}
+		    .input_text2{width: 620px !important;}
+		    .label_nane{width: 100px !important;}
+		    .up_files{margin-top: 5px !important;}
+		    .open_file{filter:alpha(opacity=0) !important; opacity:0 !important;position: relative; top:-30px;right: 15px;width:100px;height: 30px;}
+		    .upfiles_main{width: 90%; margin: 15px 5%;  background-color: white;}
+		    .upfiles_ul{width: 100%;height: 100%;border-top: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;}
+		    .upfiles_li{width: 100%; height: 55px; clear: both !important; border-bottom: 1px solid #ddd;}
+		    .upfiles_div1{width: 30%;height: 55px; float:left;text-align: center; font:24px;line-height: 55px;}
+		    .upfiles_div2{width: 54%;height: 55px; float:left;border-left: 1px solid #ddd;text-align: center; line-height: 55px;} 
+		    .upfiles_div3{width: 15%;height: 55px; float:left;border-left: 1px solid #ddd;text-align: center; line-height: 55px;}
+		    .upfiles_h{line-height: 55px;}
+		    .upfiles_ok{margin-top: 20px; margin-left: 20px;}
+		    .tab-wrapper .n-invalid {border: 1px solid #f00;}
+		    .msg-open{overflow: inherit !important;}
+		</style>
+	</head>
+	<!--有的class选择器加了!important-->
+	<body>
+		<div class="tab-wrapper">
+			<div class="tab-navigation">
+				<ul role="tablist" class="nav nav-tabs">
+					<li class="active"><a href="#tab1">基本信息</a></li>
+					<li><a href="#tab2">入职信息</a></li>
+					<li><a href="#tab3">教育信息</a></li>
+					<li><a href="#tab4">附件</a></li>
+				</ul>
+			</div>
+			<div class="tab-panel">
+				<div class="tab-content">
+					<div id="tab1" role="tabpanel" class="tab-pane active am-scroller nano">
+						<div class="manage-wrap">
+							<div id="manage-wrap" class="manage-wrap">
+								<form id="hr-records-main-form" action="">
+									<div id="base-form">
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item">
+						                        <div class="label-wrap"><label for="user_code">档案编号</label></div>
+						                        <div class="ctn-wrap msg-open"><input name="user_code" type="text" value="" class="ui-input" id=""></div>
+						                    </li>
+						                    <li class="row-item">
+						                        <div class="label-wrap"><label for="name">员工工号</label></div>
+						                        <div class="ctn-wrap msg-open"><input name="name" type="text" value="" class="ui-input"  id=""></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item">
+						                        <div class="label-wrap"><label for="record_code">姓名</label></div>
+						                        <div class="ctn-wrap msg-open"><input name="record_code" type="text" value="" class="ui-input" id=""></div>
+						                    </li>
+						                    <li class="row-item  no_padding">
+						                        <div class="label-wrap"><label for="barCode">性别</label></div>
+						                        <div class="ctn-wrap msg-open"><span id="sex"></span></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item">
+						                        <div class="label-wrap"><label for="number">民族</label></div>
+						                        <div class="ctn-wrap msg-open"><input name="z_nation_id" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item clearfix">
+						                        <div class="label-wrap"><label for="number">籍贯</label></div>
+						                        <div class="ctn-wrap msg-open"><input name="native" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item ">
+						                        <div class="label-wrap"><label for="number">身份证号</label></div>
+						                        <div class="ctn-wrap msg-open"><input name="card_code" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item">
+						                        <div class="label-wrap"><label for="number">出生日期</label></div>
+						                        <div class="ctn-wrap msg-open"><input name="birthday" type="text" value="" id="birthdayDate" class="ui-input ui-datepicker-input" name="number" id="number"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item">
+						                        <div class="label-wrap"><label for="number">健康状况</label></div>
+						                        <div class="ctn-wrap msg-open"><input name="z_health_id" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item">
+						                        <div class="label-wrap"><label for="number">婚姻状况</label></div>
+						                        <div class="ctn-wrap msg-open"><input name="z_marriage_id" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item">
+						                        <div class="label-wrap"><label for="number">政治面貌</label></div>
+						                        <div class="ctn-wrap"><input name="z_political_id" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item  no_padding">
+						                        <div class="label-wrap"><label for="barCode">户口地址</label></div>
+						                        <div class="ctn-wrap"><input name="address" type="text" value="" class="ui-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item row-item2">
+						                        <div class="label-wrap"><label for="number">专长爱好</label></div>
+						                        <div class="ctn-wrap"><input name="hobby" type="text" value="" class="ui-input input_text2" name="number" id="number"></div>
+						                   </li>
+										</ul>
+										<div class="message_img" id="localImag">
+									        <img class="user_img" name="img_url" id='changeImg' src="../../../img/avatar.jpg">
+									        <a href="javascript:;" class="img_upload ui-btn ui-btn-sp">&nbsp;&nbsp;上传照片
+									            <input type="file" id="uploadFile" class="open_file"/>
+									        </a>
+								        </div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div id="tab2" role="tabpanel" class="tab-pane am-scroller nano">
+						<div class="manage-wrap">
+							<div id="manage-wrap" class="manage-wrap">
+								<form id="manage-form" action="">
+									<div id="base-form">
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item row-item1">
+						                        <div class="label-wrap"><label for="number">职位</label></div>
+						                        <div class="ctn-wrap"><input name="hr_position" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item row-item1">
+						                        <div class="label-wrap"><label for="number">入职日期</label></div>
+						                        <div class="ctn-wrap"><input name="hiredate" id="hiredateDate" type="text" value="" class="ui-input ui-datepicker-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item row-item1  no_padding">
+						                        <div class="label-wrap"><label for="barCode">转正日期</label></div>
+						                        <div class="ctn-wrap"><input name="formal" type="text" id="formalDate" value="" class="ui-input ui-datepicker-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item row-item1">
+						                        <div class="label-wrap"><label for="number">工龄</label></div>
+						                        <div class="ctn-wrap"><input name="aged" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item row-item1">
+						                        <div class="label-wrap"><label for="number">上岗时间</label></div>
+						                        <div class="ctn-wrap"><input name="on_work_date" id="workDate" type="text" value="" class="ui-input ui-datepicker-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item row-item1 no_padding">
+						                        <div class="label-wrap"><label for="barCode">合同签定日</label></div>
+						                        <div class="ctn-wrap"><input name="contract_start" id="contractStartDate" type="text" value="" class="ui-input ui-datepicker-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item row-item1">
+						                        <div class="label-wrap"><label for="number">合同到期</label></div>
+						                        <div class="ctn-wrap"><input name="contract_end" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item row-item1">
+						                        <div class="label-wrap"><label for="number">聘用方式</label></div>
+						                        <div class="ctn-wrap"><input name="employ_type" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item row-item1 no_padding">
+						                        <div class="label-wrap"><label for="barCode">聘用来源</label></div>
+						                        <div class="ctn-wrap"><input name="employ_from" type="text" value="" class="ui-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item row-item1">
+						                        <div class="label-wrap"><label for="number">全职/兼职</label></div>
+						                        <div class="ctn-wrap"><input name="is_full_time" placeholder="(是否全职)1是0否" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item row-item1">
+						                        <div class="label-wrap"><label for="number">职称</label></div>
+						                        <div class="ctn-wrap"><input name="hr_title" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item row-item1 no_padding">
+						                        <div class="label-wrap"><label for="barCode">部门</label></div>
+						                        <div class="ctn-wrap"><input name="hr_department_id" type="text" value="" class="ui-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div id="tab3" role="tabpanel" class="tab-pane am-scroller nano">
+						<div class="manage-wrap">
+							<div id="manage-wrap" class="manage-wrap">
+								<form id="manage-form" action="">
+									<div id="base-form">
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item row-item1">
+						                        <div class="label-wrap"><label for="number">学历</label></div>
+						                        <div class="ctn-wrap"><input name="z_education_id" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item row-item1">
+						                        <div class="label-wrap"><label for="number">学位</label></div>
+						                        <div class="ctn-wrap"><input name="z_degree_id" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item row-item1  no_padding">
+						                        <div class="label-wrap"><label for="barCode">毕业学校</label></div>
+						                        <div class="ctn-wrap"><input name="school" type="text" value="" class="ui-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item row-item1">
+						                        <div class="label-wrap"><label for="number">专业</label></div>
+						                        <div class="ctn-wrap"><input name="professional" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item row-item1">
+						                        <div class="label-wrap"><label for="number">毕业时间</label></div>
+						                        <div class="ctn-wrap"><input name="graduation_date" id="graduationDate" type="text" value="" class="ui-input ui-datepicker-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item row-item1 no_padding">
+						                        <div class="label-wrap"><label for="barCode">普通话等级</label></div>
+						                        <div class="ctn-wrap"><input name="mandarin_class" type="text" value="" class="ui-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item row-item1">
+						                        <div class="label-wrap"><label for="number">外语语种</label></div>
+						                        <div class="ctn-wrap"><input name="language" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item row-item1">
+						                        <div class="label-wrap"><label for="number">驾照</label></div>
+						                        <div class="ctn-wrap"><input name="drive_ability" type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item row-item1 no_padding">
+						                        <div class="label-wrap"><label for="barCode">驾照时间</label></div>
+						                        <div class="ctn-wrap"><input name="drive_ability_time" id="driveDate" type="text" value="" class="ui-input ui-datepicker-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div id="tab4" role="tabpanel" class="tab-pane am-scroller nano">
+						<div class="manage-wrap">
+							<div id="manage-wrap" class="manage-wrap">
+								<form id="manage-form" action="">
+									<div id="base-form">
+										<!--<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item row-item2">
+						                        <div class="label-wrap label_nane"><label for="number">上次简历</label></div>
+						                        <div class="ctn-wrap up_files"><input type="file" class="" value=""  name="number" id="number"></div>
+						                  </li>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item row-item2">
+						                        <div class="label-wrap label_nane"><label for="number">上次证书</label></div>
+						                        <div class="ctn-wrap up_files"><input type="file" class="" value=""  name="number" id="number"></div>
+						                  </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item row-item2">
+						                        <div class="label-wrap label_nane"><label for="number">上次合同</label></div>
+						                        <div class="ctn-wrap up_files"><input type="file" class="" value=""  name="number" id="number"></div>
+						                  </li>
+										</ul>-->
+										<div class="upfiles_main">
+											<ul class="upfiles_ul" id="upfiles_ul">
+												<li class="upfiles_li">
+													<div class="upfiles_div1">
+														<h4 class="upfiles_h">名称</h4>
+													</div>
+													<div class="upfiles_div2">
+														<h4 class="upfiles_h">文件</h4>
+													</div>
+													<div class="upfiles_div3">
+														<a class="ui-btn btn-blue"href="javascript:void(0);" onclick="add_new();">新增<a>
+													</div>
+												</li>
+												<!--<li class="upfiles_li">
+													<div class="upfiles_div1">
+														<input class="ui-input"/>
+													</div>
+													<div class="upfiles_div2">
+														<input type="file" class="upfiles_ok" value=""  name="number" id="number">
+													</div>
+													<div class="upfiles_div3">
+														<a class="ui-btn"href="javascript:void(0);">删除<a>
+													</div>
+												</li>-->
+											</ul>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/plugins.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/validator/jquery.validator.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/validator/zh_CN.js" ></script>
+		<script type="text/javascript" src="../../../js/common.js" ></script>
+		<script type="text/javascript" src="../../../js/app/hr/records/add.js" ></script>
+	    <script>
+            $('#uploadFile').filereader({
+                        type:['jpg','jpeg','png'],
+                        max_size:600,
+                        preview:$('#img'),
+                        success:function(){alert('OK')},
+                        preview_attr:{id:'ttt', height:'200px', width:'160px'}
+                    });
+        </script>
+	</body>
+</html>

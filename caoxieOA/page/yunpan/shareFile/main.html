@@ -1,0 +1,96 @@
+				<div class="title">
+					<div class="title_prompt">提示：分享超过一年的记录将自动清理。</div>
+					<div class="share_num" style="position: absolute; right: 40px; top:20px;">已加载<span>3</span>个</div>
+				</div>
+				<div class="menu">
+					<div class="radio"><span class="m_f_name">分享文件</span><a class="file_sel_all"></a><div class="share_menu_return"><span ><i class="fa fa-repeat"></i><span style="margin-left: 5px;">取消分享</span></span></div></div>
+					<div class="size">下载次数</div>
+					<div class="d_time">浏览次数</div>
+					<div class="time">分享时间</div>
+				</div>
+				<table class="file_table file_table_share" >
+					<tr class=" share_table_item" >
+						<td class="item_sel" >
+							<div class="radio"><a></a></div>
+							<div class="file" ><a class="icon icon-folder"></a><span class="m_f_name">网页设计</span></div>
+						</td>
+						<td class="item_size" >0</td>
+						<td class="item_d_time" >0</td>
+						<td class="item_r_time" >2016-10-12 10:00</td>
+						<td class="item_r_time" ><span class="share_return" style="visibility: hidden;"><i class="fa fa-repeat"></i><span style="margin-left: 5px;">取消分享</span></span></td>
+					</tr>
+					<tr class=" share_table_item" >
+						<td class="item_sel" >
+							<div class="radio" ><a></a></div>
+							<div class="file" ><a class="icon icon-folder"></a><span class="m_f_name">网页设计</span></div>
+						</td>
+						<td class="item_size" >0</td>
+						<td class="item_d_time" >0</td>
+						<td class="item_r_time" >2016-10-12 10:00</td>
+						<td class="item_r_time"><span class="share_return" style="visibility: hidden;"><i class="fa fa-repeat"></i><span style="margin-left: 5px;">取消分享</span></span></td>
+					</tr>
+					<tr class=" share_table_item" >
+						<td class="item_sel" >
+							<div class="radio" ><a></a></div>
+							<div class="file" ><a class="icon icon-folder"></a><span class="m_f_name" >网页设计</span></div>
+						</td>
+						<td class="item_size" >0</td>
+						<td class="item_d_time" >0</td>
+						<td class="item_r_time" >2016-10-12 10:00</td>
+						<td class="item_r_time">
+							<span class="share_return" style="visibility: hidden;"><i class="fa fa-repeat"></i><span style="margin-left: 5px;">取消分享</span></span>
+						</td>
+					</tr>
+				</table>
+<script>
+		// 加载数据
+	function initFileList(){
+		var fileListsT = {
+			status: '',
+			fileList:[{
+				getIcon: 't-folder',
+				getIconBg: 'icon-folder',
+				name: '文档.mp3',
+				dowNum: '1',
+				viewNum: '5',
+				iconNumClass: 'share',
+				hasSync: '',
+				hasMark: '',
+				hasLink: '',
+				hasDownload: '',
+				fmttime: '2016-08-17 22:55:14',
+				id:1,
+			},{
+				getIcon: 't-folder',
+				getIconBg: 'icon-folder',
+				name: '文档.pptx',
+				dowNum: '1',
+				viewNum: '5',
+				iconNumClass: 'share',
+				hasSync: '',
+				hasMark: '',
+				hasLink: '',
+				hasDownload: '',
+				fmttime: '2016-08-17 22:55:14',
+				id:2,
+			},{
+				getIcon: 't-folder',
+				getIconBg: 'icon-folder',
+				name: '文档.png',
+				dowNum: '1',
+				viewNum: '5',
+				iconNumClass: 'share',
+				hasSync: '',
+				hasMark: '',
+				hasLink: '',
+				hasDownload: '',
+				fmttime: '2016-08-17 22:55:14',
+				id:3,
+			}]
+		};
+		var fileListDom = "";
+		fileListDom = template('file_table_share', fileListsT);
+		$('.file_share .file_table_share').html(fileListDom);
+	}
+	initFileList();
+</script>				

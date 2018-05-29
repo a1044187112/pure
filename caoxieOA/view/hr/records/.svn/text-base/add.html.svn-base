@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>职员添加</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style type="text/css">
+		    .manage-wrap .ui-input{ width: 220px;}
+			.base-form{*zoom: 1;/*margin:0 -10px;*/margin-top: 15px;}
+			.base-form:after{content: '.';display: block;clear: both;height: 0;overflow: hidden;}
+			.base-form .row-item{float: left;height: 31px;margin: 0 10px;overflow: visible;padding-bottom:15px; }
+			.new-liclass .row-item{width: 320px;}
+			.new-liclass .row-item{padding-right:20px;}
+			.new-liclassm .no_padding{ padding-right:0 }
+
+			.tab-wrapper{
+				display: -webkit-box;
+			    display: flex;
+			    display: -ms-flexbox;
+			    display: -webkit-flex;
+			    -webkit-box-orient: vertical;
+			    -webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			    flex-direction: column;
+			    -webkit-flex-direction: column;
+			    height: 100%;
+			    padding: 10px;
+			}
+			.tab-wrapper .tab-navigation .nav-tabs>li>a:focus,.details-warp .tab-navigation .nav-tabs>li>a:hover{border:0;border-bottom: 2px solid #C6E2FF;}
+			.tab-wrapper .tab-navigation .nav-tabs>li>a{background-color:transparent;border-width:0;padding:10px 20px;min-width:auto;color: #8A959E;font-weight: normal;}
+			.tab-wrapper .tab-navigation .nav-tabs>li>a i{font-size:14px;margin-right: 10px;}
+			.tab-wrapper .tab-navigation .nav-tabs>li.active{
+				border-bottom: 2px solid #00B2EE;
+			}
+			.tab-wrapper .tab-panel .tab-content{height:100%;position:relative;width:100%;padding:0;background:0 0;}
+			.tab-wrapper .tab-panel .tab-content .tab-pane{height:100%;position:relative;width:100%;display: none;padding: 10px;}
+			.tab-wrapper .tab-panel .tab-content .tab-pane>.content{overflow:auto;bottom:0;left:0;position:absolute;right:0;top:0}
+			.tab-wrapper .tab-panel .tab-content .tab-pane h2{color:#e1e1e1;font-size:15px;font-weight:400;padding-bottom:15px;border-bottom:1px solid #6d6b6b;padding-left:5px;margin-bottom:25px;margin-top:18px;}
+			.tab-wrapper .tab-panel .tab-content .tab-pane.active{display: block;}
+		</style>
+	</head>
+	<body>
+		<div class="tab-wrapper">
+			<div class="tab-navigation">
+				<ul role="tablist" class="nav nav-tabs">
+					<li class="active"><a href="#tab1">基本信息</a></li>
+					<li><a href="#tab2">入职信息</a></li>
+					<li><a href="#tab3">教育信息</a></li>
+					<li><a href="#tab3">合同信息</a></li>
+				</ul>
+			</div>
+			<div class="tab-panel">
+				<div class="tab-content">
+					<div id="tab1" role="tabpanel" class="tab-pane active am-scroller nano">
+						<div class="manage-wrap">
+							<div id="manage-wrap" class="manage-wrap">
+								<form id="manage-form" action="">
+									<div id="base-form">
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item">
+						                        <div class="label-wrap"><label for="number">档案编号</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item">
+						                        <div class="label-wrap"><label for="number">姓名</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item  no_padding">
+						                        <div class="label-wrap"><label for="barCode">性别</label></div>
+						                        <div class="ctn-wrap"><span id="sex"></span></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item">
+						                        <div class="label-wrap"><label for="number">民族</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item">
+						                        <div class="label-wrap"><label for="number">籍贯</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item  no_padding">
+						                        <div class="label-wrap"><label for="barCode">身份证号</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item">
+						                        <div class="label-wrap"><label for="number">出生日期</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item">
+						                        <div class="label-wrap"><label for="number">年龄</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item  no_padding">
+						                        <div class="label-wrap"><label for="barCode">政治面貌</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item">
+						                        <div class="label-wrap"><label for="number">健康状况</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item">
+						                        <div class="label-wrap"><label for="number">婚姻状况</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item  no_padding">
+						                        <div class="label-wrap"><label for="barCode">户口性质</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item">
+						                        <div class="label-wrap"><label for="number">出生地</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item">
+						                        <div class="label-wrap"><label for="number">户口地址</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+										</ul>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div id="tab2" role="tabpanel" class="tab-pane am-scroller nano">
+						<div class="manage-wrap">
+							<div id="manage-wrap" class="manage-wrap">
+								<form id="manage-form" action="">
+									<div id="base-form">
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item">
+						                        <div class="label-wrap"><label for="number">职务</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item">
+						                        <div class="label-wrap"><label for="number">职称</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item  no_padding">
+						                        <div class="label-wrap"><label for="barCode">入职时间</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item">
+						                        <div class="label-wrap"><label for="number">转正日期</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item">
+						                        <div class="label-wrap"><label for="number">上岗时间</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item  no_padding">
+						                        <div class="label-wrap"><label for="barCode">工龄</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item">
+						                        <div class="label-wrap"><label for="number">合同签订日</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item">
+						                        <div class="label-wrap"><label for="number">合同到期</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item  no_padding">
+						                        <div class="label-wrap"><label for="barCode">聘用方式</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+										<ul class="mod-form-rows base-form cf new-liclass">
+											<li class="row-item">
+						                        <div class="label-wrap"><label for="number">聘用来源</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item">
+						                        <div class="label-wrap"><label for="number">全职/兼职</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="number" id="number"></div>
+						                    </li>
+						                    <li class="row-item  no_padding">
+						                        <div class="label-wrap"><label for="barCode">所属部门</label></div>
+						                        <div class="ctn-wrap"><input type="text" value="" class="ui-input" name="barCode" id="barCode"></div>
+						                    </li>
+										</ul>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/plugins.js" ></script>
+		<script type="text/javascript" src="../../../js/app/hr/records/add.js" ></script>
+	</body>
+</html>

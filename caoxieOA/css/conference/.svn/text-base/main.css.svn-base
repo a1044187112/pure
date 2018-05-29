@@ -1,0 +1,42 @@
+*{
+	font-family: Helvetica, "Helvetica Neue", "Century Gothic", "微软雅黑", "Microsoft Yahei", "STXihei"
+}
+.sidebard-panel {
+	background: rgb(240, 240, 240);
+}
+.right-wrap {
+	background: white;
+}
+#crTime{
+	/*width:400px;*/
+}
+#crTime input{
+}
+.meet_table{
+	width: 100%;
+	padding-top: 15px;
+	margin-left: 10px;
+	margin-top:10px
+}
+.meet_table .thead{
+	font-size: 13px;
+	font-weight: 600;
+	color: #555;
+	border-bottom:1px solid #ddd;
+}
+.meet_table .m_t_item td:first-child{
+	width: 25px;
+}
+.meet_table .m_t_item td{
+	height: 50px;
+	padding-top:15px;
+	line-height: 35px;
+}
+.meet_table .thead td i{
+	color: #777;
+	font-size: 15px;
+}
+.meet_table .m_t_item td i{
+	color: #999;
+	font-size: 15px;
+}

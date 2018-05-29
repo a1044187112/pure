@@ -1,0 +1,146 @@
+<link rel="stylesheet" href="../../../../js/lib/bootstrap/css/bootstrap.min.css" />
+<style type="text/css">
+	.warp-top{
+    	width: 100%;
+    	font-size: 14px;
+    	color: #7F7F7F;
+    	padding: 5px;
+    }
+    h2.title{
+		font-size: 22px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	h2.title a{
+		font-weight: normal;
+		font-size: 12px;
+		color: #00B2EE;
+		float: right;
+	}
+	.label-wrap label{
+		font-size: 14px;
+		color: #9e9e9e;
+		float: left;
+	}
+	.mod-form-rows .label-wrap{font-size:12px;}
+	.mod-form-rows .row-item {padding-bottom: 15px;margin-bottom: 0;}/*兼容IE7 ，重写common的演示*/
+	.manage-wrapper{margin:25px auto 10px;}
+	.manage-wrap .ui-input{width: 168px;}
+	.base-form{*zoom: 1;}
+	.base-form:after{content: '.';display: block;clear: both;height: 0;overflow: hidden;}
+	.base-form li{float: left;width: 290px;}
+	.base-form li.odd{padding-right:25px;}
+	.manage-wrap textarea.ui-input{width: 100%;height: 60px;}
+	#receiveFunds,#periodReceiveFunds{text-align: right;}
+	
+	.contacters{margin-bottom: 10px; }
+	.contacters h3{margin-bottom: 10px;font-weight: normal;color: #9e9e9e;}
+	.mod-form-rows .pb0{padding-bottom:0;}
+    .mod-form-rows .ctn-wrap{overflow: visible;}
+	#manage-wrap .n-invalid {border: 1px solid #f00;}
+	.select-table-warp .title{
+		color:#878787;
+	}
+	.select-table-warp td{border-color: #F5F5F5;}
+	.select-table-warp td input{margin: 0px !important;}
+	.select-table-warp .ui-jqgrid .ui-th-div{
+		text-align: center;
+		color: #969696 !important;
+	}
+	.select-table-warp td.edit-cell.success{
+		height: 40px;
+	}
+	.select-table-warp .operating span{
+		margin: 0px !important;
+	}
+	.table > tbody tr{
+				height: 30px;
+				line-height: 30px;
+			}
+	.datacolor{color: #919191;}
+	.btncolor{color:#6B6B6B !important; font-size: 15px !important;}
+	.table-width{width:100%;}
+	.table-td-width3{width:35%;}
+	.table-td-width4{width:15%;text-align: right;}
+	.ui-input-wid{width: 100%;height: 30px;}
+	.td-titleconter{padding-right: 30px;}
+	.tr-height{height: 60px;}
+	.tr-height_add{height: 80px;}
+	.goods-div-Relation{padding-top: 5px;}
+</style>
+<div class="wrapper wuliao-warp">
+	<div class="warp-top">
+		<form id="add-form">
+		<h2 class="title">派车申请
+			<a href="javascript:void(0);" class="btn btn-link btncolor" id="btn-paicheback"  >返回</a>
+		</h2>
+		<hr style="border: 1px solid #FAFAFA; margin-bottom: 10px;"/>
+		<div class="manage-wrap">
+			  <table  class="table-width"  border="0">
+					<tr  class="tr-height">
+						<td class="table-td-width4">
+							<div class="ctn-wrap  td-titleconter"  ><label for="name" class="datacolor">车牌号:</label></div>
+						</td>
+						<td class="table-td-width3"><span id="platenumber"></span></td>
+						<td class="table-td-width4">
+							<div class="ctn-wrap  td-titleconter"  ><label for="name" class="datacolor">用车人:</label></div>
+						</td>
+						<td class="table-td-width3"><input type="text" value="王XX" class="ui-input"  readonly="readonly"></td>
+					</tr>
+					<tr  class="tr-height">
+						<td class="table-td-width4">
+							<div class="ctn-wrap  td-titleconter"  ><label for="name"  class="datacolor">用车司机:</label></div>
+						</td>
+						<td class="table-td-width3"><input type="text" value="张三" class="ui-input"  ></td>
+						<td class="table-td-width4">
+							<div class="ctn-wrap  td-titleconter"  ><label for="name"  class="datacolor">司机电话:</label></div>
+						</td>
+						<td class="table-td-width3"><input type="text" value="1383838438" class="ui-input"  ></td>
+					</tr>
+					<tr  class="tr-height">
+						<td class="table-td-width4">
+							<div class="ctn-wrap  td-titleconter"  ><label for="name"  class="datacolor">用车时间:</label></div>
+						</td>
+						<td class="table-td-width3"><input type="text" value="2016-09-09" class="ui-input ui-datepicker-input"  ></td>
+						<td class="table-td-width4">
+							<div class="ctn-wrap  td-titleconter" ><label for="name" class="datacolor">返回时间:</label></div>
+						</td>
+						<td class="table-td-width3"><input type="text" value="2016-09-09" class="ui-input ui-datepicker-input"  ></td>
+					</tr>
+					<tr  class="tr-height_add">
+						<td class="table-td-width4">
+							<div class="ctn-wrap  td-titleconter"  ><label  for="name" class="datacolor">办事地点:</label></div>
+						</td>
+						<td colspan="3">
+							<input  type="text"  class="ui-input-wid"    placeholder="请填写办事地点">
+						</td>
+					</tr>
+						<tr  class="tr-height_add">
+						<td class="table-td-width4">
+							<div class="ctn-wrap  td-titleconter"  ><label  for="name" class="datacolor">用车理由:</label></div>
+						</td>
+						<td colspan="3">
+							<textarea name="marke" id="marke" class="ui-input"  placeholder="请填写用车理由"></textarea>
+						</td>
+					</tr>
+			   </table>
+			<div class="contacters  goods-div-Relation"  >
+             <label for="name"  class="sizelab">附件</label>
+        	 <span style="margin-left: 20px;"><a  id="i-attach" title="添加附件" for="#workflow"  href="javascript:void(0);"  class="blue"><i class="fa fa-paperclip"></i>上传附件</a></span>
+	        </div>
+	        <div style="height:10px;"></div>
+			<div class="contacters  goods-div-Relation"  >
+				<div class="label-wrap"><label for="name">关联项目</label></div>
+	            <div class="ctn-wrap" style="margin-left: 70px;"><a class="ui-btn ui-btn-sp" id="add"><i class="fa fa-plus"></i> </a></div>
+			</div>
+			 <div style="height:10px;"></div>
+			<div class="contacters  goods-div-Relation"  >
+				<div class="label-wrap"><label for="name">审批人</label></div>
+	            <div class="ctn-wrap" style="margin-left: 70px;"><a class="ui-btn ui-btn-sp" id="add"><i class="fa fa-plus"></i> </a></div>
+			</div>
+            </div>
+		</form>
+	</div>
+</div>
+<script type="text/javascript" src="../../../js/app/oa/approval/sendcar/add.js" ></script>

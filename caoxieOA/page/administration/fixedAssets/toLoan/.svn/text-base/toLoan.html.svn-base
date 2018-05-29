@@ -1,0 +1,23 @@
+<div class="mod-search cf">
+	<div class="fl">
+		<ul class="ul-inline">
+			<li>
+				<input type="text" id="matchCon" class="ui-input ui-input-ph" value="XXXX" / style="width: 220px;">
+			</li>
+			<li>
+				<a class="btn btn-white btn-bitbucket">
+					<i class="fa fa-search"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="fr" style="margin-top: 10px;">
+		<a class="ui-btn" id="purchase"  href="javascript:void(0);">借调</a>
+	</div>
+</div>
+
+<div class="grid-wrap">
+	<table id="grid_receive"></table>
+	<div id="page_receive"></div>
+</div>
+<script type="text/javascript " src="../../../js/app/administration/fixedAssets/toLoan/toLoan.js"></script>

@@ -1,0 +1,85 @@
+<div class="manage-wrapper">
+	<div id="manage-wrap" class="manage-wrap">
+		<form id="manage-form" action="">
+			<ul class="mod-form-rows base-form cf clearfix" id="base-form" style="margin-top: 10px;">
+				<li class="row-item float_left">
+					<div class="label-wrap"><label for="title" class="font_sty">标题</label></div>
+					<div class="ctn-wrap"><span class="spanSty">标题11111111</span></div>
+				</li>
+				<li class="row-item float_right">
+					<div class="label-wrap"><label for="users_id" class="font_sty">培训讲师</label></div>
+					<div class="ctn-wrap">
+						<span class="spanSty">培训讲师22222</span>
+					</div>
+				</li>
+			</ul>
+			<ul class="mod-form-rows base-form cf clearfix" id="base-form">
+				<li class="row-item float_left">
+					<div class="label-wrap"><label for="approve_users_id" class="font_sty">审批人</label></div>
+					<div class="ctn-wrap"><span class="spanSty">审批人555</span></div>
+				</li>
+				<li class="row-item float_right">
+					<div class="label-wrap"><label for="approve_time" class="font_sty">审批时间</label></div>
+					<div class="ctn-wrap"><span class="spanSty">审批时间666</span></div>
+				</li>
+				<li class="row-item" style="float: left; width: 90%;margin-left: 20px;">
+					<div class="label-wrap"><label for="approve_result" class="font_sty">审批结果</label></div>
+					<div class="ctn-wrap"><span class="spanSty">审批结果777</span></div>
+				</li>
+			</ul>
+			<ul class="mod-form-rows base-form cf clearfix" id="base-form">
+				<li class="row-item li_magenLift">
+					<div class="label-wrap"><label for="users_id" class="font_sty">培训人员</label></div>
+					<div class="ctn-wrap">
+						<span class="spanSty">培训人员3333</span>
+					</div>
+				</li>
+				<li class="row-item li_magenLift">
+					<div class="label-wrap"><label for="number" class="font_sty">培训课程</label></div>
+					<div class="ctn-wrap"><span class="spanSty">培训课程444培训课程444培训课程444培训课程444</span>
+
+					</div>
+				</li>
+			</ul>
+			<ul class="mod-form-rows remark" style="margin-left: 10px;">
+				<li class="row-item row-item1 row-item2" style="width: 90.5%;">
+					<div class="label-wrap"><label for="approve_opinion" class="font_sty">培训内容</label></div>
+					<div class="ctn-wrap"><span class="spanSty">培训内容培训内容培训内容培训内容培训内容培训内容</span></div>
+				</li>
+			</ul>
+			<ul class="mod-form-rows remark" style="margin-left: 10px;">
+				<li class="row-item row-item1 row-item2" style="width: 90.5%;">
+					<div class="label-wrap"><label for="approve_opinion" class="font_sty">审批意见</label></div>
+					<div class="ctn-wrap"><span class="spanSty">审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见审批意见</span></div>
+				</li>
+			</ul>
+			<ul class="mod-form-rows remark" style="margin-left: 10px; margin-top: 10px'';">
+				<li class="row-item row-item1 row-item2">
+					<div class="label-wrap"><label for="note" class="font_sty">上传文件</label></div>
+					<div class="ctn-wrap">
+						<div class="upfiles_main upfiles_main_show" style="width: 99.5%;">
+							<ul class="upfiles_ul" id="upfiles_ul">
+								<li class="upfiles_li">
+									<div class="upfiles_div1">
+										<h4 class="upfiles_h">名称</h4>
+									</div>
+									<div class="upfiles_div2">
+										<h4 class="upfiles_h">文件</h4>
+									</div>
+								</li>
+								<li class="upfiles_li">
+									<div class="upfiles_div1">
+										<span class="upfiles_h" name="name">名称</span>
+									</div>
+									<div class="upfiles_div2">
+										<span class="upfiles_h" name="path">文件.doc</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</form>
+	</div>
+</div>

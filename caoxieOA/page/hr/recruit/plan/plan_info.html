@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>招聘计划</title>
+		<style type="text/css">
+			.input_sif{
+				width:90px;
+				text-align: right;
+			}
+			.ctn-wrap table{
+				width:100%;
+			}
+			.plan_choice_ren_td_input{
+				width:100px;
+			}
+			.input_date{
+				width:120px;
+			}
+			.textarea_date{
+				width:250px;
+			}
+			.xuqiu_t{
+				width:130px;
+				height: 34px;
+			}
+		</style>
+	<head>
+	<body>
+		<div class="mod-search cf">
+				<div class="fl">
+					<ul class="ul-inline">
+						<li>
+							<label>计划名称:</label>
+							<input type="text" id="matchCon" class="ui-input ui-input-ph" placeholder="搜索职位" />
+						</li>
+						<li>
+				            <label>用工时间:</label>
+				            <input type="text" id="beginDate" value="2016-06-08" class="ui-input ui-datepicker-input">
+				            <i>至</i>
+				            <input type="text" id="endDate" value="2016-06-14" class="ui-input ui-datepicker-input">
+				        </li>
+				        <li>
+							<label>状态:</label>
+							<span id="seach_stant"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="fr">
+					<a class="ui-btn ui-btn-sp" id="add_demand" href="javascript:void(0);">添加</a>
+					<a class="ui-btn" id="edit_demandbyid" target="_blank" href="javascript:void(0);">修改</a>
+					<a href="javascript:void(0);" class="ui-btn" id="btn-batchDel">删除</a>
+				</div>
+			</div>
+			<div class="grid-wrap">
+				<table id="plan_grid"></table>
+				<div id="plan_page"></div>
+			</div>
+			
+			<script type="text/javascript" src="../../../js/lib/plugins.js" ></script>
+		    <script type="text/javascript" src="../../../js/lib/eui.dialog.js" ></script>
+		    <script type="text/javascript" src="../../../js/app/hr/recruit/plan/plan_info.js" ></script>
+    </body>
+</html>

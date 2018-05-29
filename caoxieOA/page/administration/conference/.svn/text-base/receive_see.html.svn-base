@@ -1,0 +1,100 @@
+<style type="text/css">
+	.warp-top{
+    	width: 100%;
+    	font-size: 14px;
+    	color: #7F7F7F;
+    	padding: 5px;
+    }
+    h2.title{
+		font-size: 22px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	h2.title a{
+		font-weight: normal;
+		font-size: 12px;
+		color: #00B2EE;
+		float: right;
+	}
+	.label-wrap label{
+		font-size: 14px;
+		color: #9e9e9e;
+		float: left;
+	}
+	.mod-form-rows .label-wrap{font-size:12px;}
+	.mod-form-rows .row-item {padding-bottom: 15px;margin-bottom: 0;}/*兼容IE7 ，重写common的演示*/
+	.manage-wrapper{margin:20px auto 10px;}
+	.manage-wrap .ui-input{width: 168px;}
+	.base-form{*zoom: 1;}
+	.base-form:after{content: '.';display: block;clear: both;height: 0;overflow: hidden;}
+	.base-form li{float: left;width: 290px;}
+	.base-form li.odd{padding-right:20px;}
+	.manage-wrap textarea.ui-input{width: 100%;height: 60px;overflow:hidden;}
+	#receiveFunds,#periodReceiveFunds{text-align: right;}
+	
+	.contacters{margin-bottom: 10px; }
+	.contacters h3{margin-bottom: 10px;font-weight: normal;color: #9e9e9e;}
+	.mod-form-rows .pb0{padding-bottom:0;}
+    .mod-form-rows .ctn-wrap{overflow: visible;}
+	#manage-wrap .n-invalid {border: 1px solid #f00;}
+	.select-table-warp .title{
+		color:#878787;
+	}
+	.select-table-warp td{border-color: #F5F5F5;}
+	.select-table-warp td input{margin: 0px !important;}
+	.select-table-warp .ui-jqgrid .ui-th-div{
+		text-align: center;
+		color: #969696 !important;
+	}
+	.select-table-warp td.edit-cell.success{
+		height: 40px;
+	}
+	.select-table-warp .operating span{
+		margin: 0px !important;
+	}
+	.label-wrap label{font-size: 15px;font-weight: 600;color: #334556;}
+</style>
+<div class="wrapper wuliao-warp">
+	<div class="warp-top">
+		<h2 class="title">办公用品入库</h2>
+		<hr style="border: 1px solid #FAFAFA; margin-bottom: 10px;"/>
+		<div class="manage-wrap">
+			<ul class="mod-form-rows base-form cf">
+				<li class="row-item">
+                    <div class="label-wrap"><label for="name">入库人</label></div>
+                    <div class="ctn-wrap">xxxxx</div>
+                </li>
+                <li class="row-item odd">
+                    <div class="label-wrap"><label for="name">部门</label></div>
+                    <div class="ctn-wrap">采购部</div>
+                </li>
+                <li class="row-item">
+                    <div class="label-wrap"><label for="name">时间</label></div>
+                    <div class="ctn-wrap">2012-1-1</div>
+                </li>
+				<li class="row-item odd">
+					<div class="label-wrap"><label>入库方式</label></div>
+					<div class="ctn-wrap">采购</div>
+				</li>
+			</ul>
+			<div class="contacters">
+				<div class="grid-wrap">
+		           <table id="grid_receiveSee"></table>
+		        </div>
+			</div>
+			
+			<ul class="mod-form-rows">
+		        <li class="row-item pb0">
+		            <div class="ctn-wrap" style="font-size: 15px;font-weight: 600;color: #334556;">备注信息</div>
+		            <div class="ctn-wrap">备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息</div>
+		        </li>
+		    </ul>
+		   
+		</div>
+	</div>
+</div>
+<div id="initCombo" class="dn">
+	<input type="text" class="textbox goodsAuto" name="goods" autocomplete="off" />
+</div>
+<script type="text/javascript" src="../../../js/app/administration/officeSupplies/receive/receive_see.js"></script>

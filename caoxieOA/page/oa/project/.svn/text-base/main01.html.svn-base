@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>项目管理</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.css"/>
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style type="text/css">
+			.btn-yello{
+				background-color: #FFA500;
+			}
+			
+			.progress-bar{
+				background-color: #FF7F00;
+				border: none;
+				color: #fff !important;
+			}
+			
+			.tree-selector{
+				margin-top: 10px;
+			}
+			
+			.tree-selector li{
+				width: 100%;
+				height: 39px;
+				margin-top: 2px;
+				line-height: 39px;
+				padding-left: 30px;
+				color: #A1AABA;
+				cursor:pointer;
+				border-left:3px solid #FFFFFF;
+			}
+			.tree-selector li:hover{
+				border-left:3px solid #00BFFF;
+				background: #EAF0FB;
+				color: #76B0F3;
+			}
+			
+			.tree-selector li.active{
+				border-left:3px solid #00BFFF;
+				background: #EAF0FB;
+				color: #76B0F3;
+			}
+			
+			.tree-selector li i{
+				font-size: 16px;
+			}
+			
+			.tree-selector li span{
+				margin-left: 5px;
+			}
+			
+			/*---------------- 表格 ------------------*/*
+			.right-wrap {position:absolute;clear: both;left: 215px;top: 0px;right: 0px;bottom: 0px;}
+		</style>
+	</head>
+	<body>
+		<!-- siled begin -->
+		<div class="sidebard-panel">
+			<div class="  p10">
+				<a class="btn btn-yello btn-block" href="javascript:;"><i class="fa fa-plus-circle"></i> 创建项目</a>
+			</div>
+			<div class="sidebar-content p5">
+				<ul class="tree-selector">
+					<li class="active">
+						<i class="fa fa-user"></i>
+					    <span>我负责的</span>
+					</li>
+					<li>
+						<i class="fa fa-users"></i>
+					    <span>我参与的</span>
+					</li>
+					<li>
+						<i class="fa fa-list"></i>
+					    <span>全部项目</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- siled end -->
+		
+		<div class="right-wrap" style="overflow: auto;">
+			<div class="wrapper">
+				<div class="mod-search cf">
+					<div class="fl">
+						<ul class="ul-inline">
+							<li>
+								<input type="email" placeholder="成员姓名" class="form-control">
+							</li>
+							<li>
+								<a class="btn btn-white btn-bitbucket">
+		                            <i class="fa fa-search"></i>
+		                        </a>
+							</li>
+						</ul>
+					</div>
+					<div class="fr">
+						<div class="btn-group">
+                            <a class="btn btn-white" type="button">编辑</a>
+                            <a class="btn btn-white" type="button">锁定</a>
+                            <a class="btn btn-white" type="button">授权</a>
+                        </div>
+					</div>
+				</div>
+				<div class="grid-wrap noborder-warp">
+					<table id="grid"></table>
+					<div id="page"></div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- script -->
+		<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/eui.grid.js" ></script>
+		<script type="text/javascript" src="../../../js/common.js" ></script>
+		<script type="text/javascript" src="../../../js/app/oa/project/main.js" ></script>
+	</body>
+</html>

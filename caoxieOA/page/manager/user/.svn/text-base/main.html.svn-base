@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户信息管理</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style type="text/css">
+			a {
+			    -webkit-font-smoothing: subpixel-antialiased;
+			    color: #69d0d1;
+			}
+			.site-content{
+				display: -webkit-box;
+			    display: flex;
+			    display: -ms-flexbox;
+			    display: -webkit-flex;
+			    -webkit-box-orient: vertical;
+			    -webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			    flex-direction: column;
+			    -webkit-flex-direction: column;
+			    height: 100%;
+			    padding: 10px;
+			    background: #FFFFFF;
+			}
+			.site-content .module-header {
+			    height: 60px;
+			    margin-right: 30px;
+			}
+			.site-content .module-body .header-with-nav, .site-content .module-header {
+			    border-bottom: solid 1px #eaeff1;
+			}
+			.site-content .module-header:after, .site-content .module-header:before {
+			    content: " ";
+			    display: table;
+			}
+			.clearfix:after, .site-content .module-header:after {
+			    content: '';
+			    height: 0;
+			    clear: both;
+			}
+			.site-content .module-header .title {
+			    font-size: 20px;
+			    margin-top: 20px;
+			    line-height: 60px;
+			    color: #6f8092;
+			    display: inline-block;
+			}
+			.site-content .module-header .title h3{
+				font-weight: normal;
+			}
+			.site-content .module-header .flex-panel {
+			    float: right;
+			    display: inline-block;
+			}
+			.site-content .module-header .flex-panel .lc-tabs {
+			    margin-top: 15px;
+			}
+			
+			.site-content .module-body{
+				padding: 10px;
+			}
+			.lc-tabs li{
+				border: none;
+				background: #FFFFFF;
+			}
+			.lc-tabs li a {
+			    padding: 10px 20px;
+			    margin-right: 20px;
+			    font-size: 16px;
+			    border-radius: 0;
+			    color: #6f8092;
+			}
+			.lc-tabs>li.active {
+			    border-left: none;
+			    background: #fff;
+			}
+			.lc-tabs li.active a, .lc-tabs li.active a:focus, .lc-tabs li.active a:hover {
+			    background: #FFFFFF;
+			    border: none;
+			    color: #00B2EE;
+			    border: none;
+			    border-bottom: solid 3px #00B2EE;
+			}
+			.lc-tabs li.active a {
+				background: #FFFFFF;
+				color: #6f8092;
+				border-left: none !important;
+				border-right: none !important;
+			    border-bottom: solid 3px #00B2EE;
+			}
+			
+			.profile {
+			    padding: 20px;
+			}
+			
+			.profile .form-control {
+			    width: 60%;
+			}
+			
+			.user-img-1{
+				margin-right: 50px;
+			}
+			
+			.item-row{
+				width: 100%;
+				margin-top: 10px;
+			}
+			.table > tbody tr{
+				height: 60px;
+				line-height: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="site-content">
+			<div class="module-header">
+				<div class="title">
+					<h3><i class="fa fa-cog"></i> 账号设置</h3>
+				</div>
+				<div class="flex-panel">
+					<ul class="nav nav-pills lc-tabs">
+						<li class="active"><a href="#tab1">基本设置</a></li>
+						<li><a href="#tab2">头像修改</a></li>
+						<li><a href="#tab3">访问日志</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab-panel">
+				<div class="module-body tab-content">
+					<div id="tab1"  class="tab-pane active profile setting">
+						<form class="form-horizontal" id="user-main-set-form">
+				<div class="profile setting">
+						<div class="form-group">
+	                        <label class="col-sm-2 control-label">用户名</label>
+	                        <div class="col-sm-10">
+	                            <input name="name"  type="text" disabled="" class="form-control" value="13312233321"> 
+	                            <span class="help-block m-b-none">此用户名用于登录当前企业，用户名为登录用户手机号码不可变更</span>
+	                        </div>
+	                    </div>
+	                 <div class="hr-line-dashed"></div>
+	                	<div class="form-group">
+	                        <label class="col-sm-2 control-label">姓名</label>
+	                        <div class="col-sm-10">
+	                            <input name="user_name"  type="text" class="form-control"> 
+	                            <span class="help-block m-b-none">真实姓名，企业成员知道如何称呼你</span>
+	                        </div>
+	                    </div>
+	                <div class="hr-line-dashed"></div>
+	                	<div class="form-group">
+	                        <label class="col-sm-2 control-label">登录密码</label>
+	                        <div class="col-sm-10">
+	                            <input name="pwd"  type="password" class="form-control"> 
+	                            <span class="help-block m-b-none">修改密码时需要输入当前密码。</span>
+	                        </div>
+	                    </div>
+	                <div class="hr-line-dashed"></div>
+	                	<div class="form-group">
+	                        <label class="col-sm-2 control-label">新密码</label>
+	                        <div class="col-sm-10">
+	                            <input name="new_pwd"  type="password" class="form-control"> 
+	                            <span class="help-block m-b-none">为了您的账号安全，请保存好您的新密码。</span>
+	                        </div>
+	                    </div>
+	                <div class="hr-line-dashed"></div>
+	                	<div class="form-group">
+	                        <label class="col-sm-2 control-label">确认密码</label>
+	                        <div class="col-sm-10">
+	                            <input name="sure_pwd"  type="password" class="form-control"> 
+	                            <span class="help-block m-b-none">两次输入的密码需一致。</span>
+	                        </div>
+	                    </div>
+	                	<div class="form-group">
+	                		<div class="col-sm-4 col-sm-offset-2">
+                                <button id="user-main-set-submit" class="btn btn-primary" type="submit">提交修改</button>
+                            </div>
+	                    </div>
+				</div>
+				</form>
+					</div>
+					<div id="tab2" class="tab-pane">
+						<div class="row">
+							<div class="col-md-4">
+							</div>
+							<div class="col-md-6">
+								<div class="item-row">
+									<span class="f18">选择一张个人正面照片作为头像，企业成员可以更容易认识你</span>
+								</div>
+								<div class="item-row">
+									<img class="user-img-1" src="../../../img/user_128px_1138889_easyicon.net.png" />
+									<img src="../../../img/user_72px_1138889_easyicon.net.png"  />
+								</div>
+								<div class="item-row">
+									<a id="btn-upload" href="javascript:;" class="btn btn-w-m btn-info fileinput-button">
+										选择照片上传
+										<input id="upfile" type="file" name="files[]" multiple>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab3" class="tab-pane">
+						<div id="table-content"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script id="table-tmp" type="text/html">
+			<table class="table table-hover">
+				<thead>
+                    <tr>
+                        <th>#</th>
+                        <th>登录地址</th>
+                        <th>登录设备</th>
+                        <th>登录时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                	{{each list}}
+                	<tr>
+                        <td>{{$index}}</td>
+                        <td>{{$value.address}}</td>
+                        <td>{{$value.equipment}}</td>
+                        <td class="text-navy">{{$value.time}}</td>
+                    </tr>
+                	{{/each}}
+                </tbody>
+			</table>
+		</script>
+		<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap.min.js" ></script>
+		<!-- upload -->
+		<script type="text/javascript" src="../../../js/lib/fileUpload/jquery.ui.widget.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/fileUpload/jquery.iframe-transport.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/fileUpload/jquery.fileupload.js" ></script>
+		<!-- upload -->
+		<script type="text/javascript" src="../../../js/lib/plugins.js" ></script>
+		<script type="text/javascript" src="../../../js/common.js" ></script>
+		<script type="text/javascript" src="../../../js/app/manager/user/main.js" ></script>
+	</body>
+</html>

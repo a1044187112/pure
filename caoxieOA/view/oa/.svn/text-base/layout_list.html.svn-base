@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>布局表格</title>
+		<link rel="stylesheet" href="../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../css/hplus.css" />
+		<link rel="stylesheet" href="../../css/ui.jqgrid-bootstrap.css" />
+		<link rel="stylesheet" href="../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../css/common.css" />
+		<style type="text/css">
+			/*body{overflow-y:hidden;background: #F0F3F4;}*/
+			body{overflow: hidden;background-color: #F0F3F4;}
+			.tree-selector{
+				margin-top: 10px;
+			}
+			
+			.tree-selector li{
+				width: 100%;
+				height: 35px;
+				line-height: 35px;
+				padding-left: 30px;
+				color: #A1AABA;
+				cursor:pointer;
+			}
+			.tree-selector li:hover{
+				background: #EAF0FB;
+				color: #76B0F3;
+			}
+			
+			.tree-selector li.active{
+				background: #EAF0FB;
+				color: #76B0F3;
+			}
+			
+			.tree-selector li i{
+				font-size: 16px;
+			}
+			
+			.tree-selector li span{
+				margin-left: 5px;
+			}
+			
+			.progress-bar{
+				background-color: #FF7F00;
+				border: none;
+				color: #fff !important;
+			}
+			
+			/*---------------- 表格 ------------------*/*
+			.right-wrap {position:absolute;clear: both;left: 215px;top: 0px;right: 0px;bottom: 0px;}
+		</style>
+	</head>
+	<body>
+		<div class="cf">
+			<div class="fl cf left-panel" id='tree'>
+				<div class="header">
+					<a href="javascript:;" class="ui-btn btn" id="add-btn"><i class="fa fa-plus"></i>新增任务</a>
+				</div>
+				<div class="body">
+					<ul class="tree-selector">
+						<li class="active">
+							<i class="fa fa-clock-o"></i>
+						    <span>未完成</span>
+						</li>
+						<li>
+							<i class="fa fa-check"></i>
+						    <span>已完成</span>
+						</li>
+						<li>
+							<i class="fa fa-trash-o"></i>
+						    <span>已取消任务</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right-wrap fl cf" style="overflow: auto;">
+				<div class="wrapper">
+					<div class="mod-search cf">
+						<div class="fl">
+							<ul class="ul-inline">
+								<li>
+									<input type="text" id="matchCon" class="ui-input ui-input-ph" value="XXXX" />
+								</li>
+								<li>
+						            <label>日期:</label>
+						            <input type="text" id="beginDate" value="2016-06-08" class="ui-input ui-datepicker-input">
+						            <i>-</i>
+						            <input type="text" id="endDate" value="2016-06-14" class="ui-input ui-datepicker-input">
+						        </li>
+							</ul>
+						</div>
+						<div class="fr">
+							<a class="ui-btn ui-btn-sp" id="add" href="javascript:void(0);">滑动弹窗</a>
+							<a class="ui-btn" id="openWin" target="_blank" href="javascript:void(0);">弹窗</a>
+							<a href="#" class="ui-btn" id="btn-batchDel">删除</a>
+						</div>
+					</div>
+					<div class="grid-wrap noborder-warp">
+						<table id="grid"></table>
+						<div id="page"></div>
+					</div>
+				</div>
+				<!--
+				<div class="jgridBox">
+		            <div id="dm_kuaipan" class="jgrid"></div>
+		        </div>
+		       -->
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../js/lib/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../../js/lib/i18n/grid.locale-cn.js" ></script>
+		<script type="text/javascript" src="../../js/lib/jchGrid/jsh.jGrid.js" ></script>
+		<script type="text/javascript" src="../../js/lib/jquery.jqGrid.min.js" ></script>
+		<script type="text/javascript" src="../../js/common.js" ></script>
+		<script type="text/javascript" src="../../js/app/oa/layoutList.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>发起私聊</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<link rel="stylesheet" href="../../../js/lib/validator/jquery.validator.css" />
+		<style type="text/css">
+			.search{
+				width: 90%;
+				margin-left: 5%;
+				margin-top:20px;
+				height: 40px;
+				font-size: 16px;
+				line-height: 40px;
+			}
+			.con .item{
+				width: 100%;
+				padding-left: 5%;
+				margin-top: 15px;
+				border-bottom: 1px solid #ddd;
+				position: relative;
+				padding-bottom: 8px;
+			}
+			.con .item .item_intro{
+				position: absolute;
+				left: 100px;
+				top: 0;
+				width: 50%;
+				font-size: 14px;
+				padding-top: 4px;
+				line-height: 1.5;
+				color: #111;
+			}
+			.con .item .item_intro div:nth-child(2){
+				color: #999;
+			}
+			.item .item_wechat{
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				line-height: 50px;
+				font-size: 16px;
+				color: #69d0d1;
+				padding-right: 10%;
+			}
+			.action-toolbar {
+			    display: -webkit-box;
+			    display: flex;
+			    display: -ms-flexbox;
+			    display: -webkit-flex;
+			    -webkit-box-orient: horizontal;
+			    -webkit-box-direction: normal;
+			    -ms-flex-direction: row;
+			    flex-direction: row;
+			    -webkit-flex-direction: row;
+			    padding: 0 30px;
+			 }
+			  .member-list {
+			    margin-top: 10px;
+			    max-height: 450px;
+			    overflow-y: auto;
+			    overflow-x: hidden;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: white;">
+		<div class="wrapper clearfix" style="padding: 20px 0px;">
+			<form id="add-department-form" class="clearfix">
+			<div  class="action-toolbar">
+				<input class="search" placeholder="输入成员名查找" />
+			</div>
+			<div  class="member-list">
+				<ul class="con">
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+					<li class="item">
+						<img alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+						<div class="item_intro">  
+							<div>王力宏</div>
+							<div>@wlh</div>
+						</div>
+						<a class="item_wechat"> <i class="fa fa"></i>发消息</a>
+					</li>
+				</ul>	
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="../../../js/lib/jquery.js"></script>
+		<script type="text/javascript" src="../../../js/lib/validator/jquery.validator.js"></script>
+		<script type="text/javascript" src="../../../js/lib/validator/zh_CN.js"></script>
+		<script type="text/javascript" src="../../../js/lib/plugins.js"></script>
+		<script type="text/javascript" src="../../../js/common.js"></script>
+		<script type="text/javascript" src="../../../js/app/news/choiceinto/private_chat.js"></script>
+	</body>
+
+</html>

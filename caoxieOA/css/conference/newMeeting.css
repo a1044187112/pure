@@ -1,0 +1,227 @@
+*{
+	list-style: none;
+	text-decoration: none;
+	margin:0px;
+	padding:0px;
+	font-family: Helvetica, "Helvetica Neue", "Century Gothic", "微软雅黑", "Microsoft Yahei", "STXihei";
+}
+body{
+	width: 100%;
+}
+.con_page{
+	width: 100%;
+}
+.con .form_item{
+	color: #999;
+	padding-left: 35px;
+	font-size: 15px;
+	margin-top:12px ;
+}
+.con .form_item input{
+	width: 100%;
+	margin-top:5px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	border:1px solid #ddd;
+	border-radius: 3px;
+}
+.con .form_item .m_is_cycle{
+	width: 100%;
+	color: #999;
+	border:1px solid #ddd;
+	height: 35px;
+	line-height: 35px;
+	font-size: 15px;
+	margin-top:8px;
+	border-radius: 3px;
+}
+.con .form_item .m_is_available{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	padding-left: 10px;
+	color: white;
+	border:1px solid #ddd;
+	margin-top:8px;
+	background: #91ce33;
+	position: relative;
+	border-radius: 3px;
+}
+.con .form_item .m_is_available .fa{
+	margin-left: 45px;
+}
+.con .form_item #selectator_select4{
+	height: 35px;
+	margin-top:12px;
+	border-radius: 3px;
+	width: 100% !important;
+}
+.con .form_item #selectator_select4 ul{
+	border:1px solid #ccc;
+}
+.con .form_item #selectator_select4 input{
+	border:none;
+}
+
+
+.con .form_item textarea{
+	width: 100%;
+	border:1px solid #ddd;
+	resize: none;
+	margin-top: 5px;
+	padding:10px 10px 10px 15px;
+	border-radius: 3px;
+}
+.con .up_file{
+	margin-left: 35px;
+	margin-top: 12px;
+	font-size: 15px;
+	color: #888;
+}
+.con .up_file input{
+	border:none !important;
+}
+.con_page .row_item_m_s{
+	width: 100%;
+	border:1px solid #ddd;
+	padding-bottom: 10px;
+}
+.con_page .row_item .sle_meet_room{
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	color: #888;
+	margin-top:12px;
+}
+.con_page .row_item .s_m_r{
+	width: 100%;
+}
+.con_page .row_item .s_m_r select{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	color: #888;
+	font-size: 15px;
+	outline: none;
+	border:none;
+	border-bottom: 1px solid #ccc;
+}
+.con_page .row_item .s_m_r img{
+	width: 94%;
+	margin-left: 3%;
+	margin-top:5px;
+}
+.con_page .row_item .been_sel_is{
+	margin-top:15px;
+	width: 100%;
+	position: relative;
+}
+.con_page .row_item .been_sel_is .been_sel_is_span{
+	display: block;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	color: 16px;
+	font-size: #999;
+	padding-left: 20px;
+	letter-spacing: 1px;
+}
+.con_page .row_item .been_sel_is .been_m_num{
+	color: orange;
+	font-size: 18px;
+}
+.con_page .row_item .been_sel_is .been_m_info{
+	width: 50px;
+	font-size: 15px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: orange;
+	color: white;
+	border: none;
+	position: absolute;
+	top:0;
+	right: 10px;
+	border-radius: 2px;
+}
+.con_page .row_item .week{
+	width:100%;
+	padding-left: 4px;
+	margin-top:8px;
+}
+.con_page .row_item .week_item{
+	display: inline-block;
+	margin-left:-2px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	color: #999;
+	list-style: none;
+	text-align: center;
+	width: 28px;
+	border-radius: 2px;
+	background: rgb(248,248,248);
+	border:1px solid #eee;
+}
+.con_page .row_item .week_item:hover{
+	background: #fff;
+}
+.con_page .row_item .week_active{
+	background: #fff;
+}
+.con_page .row_item .add_sel_style{
+	width: 100%;
+	display: inline;
+}
+.con_page .row_item .add_style{
+	width: 100%;
+}
+.con_page .row_item .add_style select{
+	display: inline-block;
+	width: 29%;
+	height: 35px;
+	border-radius:3px;
+	color: #999;
+	font-size: 14px;
+	border:1px solid #ddd;
+	margin-top: 12px;
+}
+.con_page .row_item .add_style select:nth-child(2){
+	margin-left: 10px;
+}
+.con_page .row_item .add_style select:nth-child(3){
+	margin-left: 10px;
+}
+.con_page .row_item .add_style .del_add{
+	display: inline-block;
+	margin-left: 15px;
+	color: #999;
+}
+.con_page .row_item .add_style .del_add:hover{
+	color: rgb(255,156,156);
+}
+.con_page .row_item  .add_remind{
+	color: rgb(105,208,209);
+	font-size: 15px;
+}
+.con_page .row_item  .add_remind:hover{
+	text-decoration: underline;
+}
+
+
+.equipment-list .eq_l_item{
+	width: 100%;
+	padding-left: 5px;
+	color: #999;
+	padding-top:3px;
+	padding-bottom: 5px;
+}
+.equipment-list .eq_l_item .sel_all{
+	margin-left: 100px;
+	font-size: 17px;
+}
+.equipment-list .eq_l_item .m_f_name{
+	margin-left: 5px;
+}

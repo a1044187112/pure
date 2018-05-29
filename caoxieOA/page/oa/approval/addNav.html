@@ -1,0 +1,336 @@
+<style type="text/css">
+   .nav-warp{
+    	width: 100%;
+    }
+	.nav-warp .tab-panel{height:100%;width:99%;}
+	.nav-warp .nav-tabs{height: 35px;border-bottom: 1px solid #F2F2F2;}
+	.nav-warp .nav-tabs li,.wrapper .nav-tabs li a{height: 34px;line-height: 18px;}
+	.nav-warp .tab-navigation .nav-tabs>li>a{background-color:transparent;border-width:0;padding:10px 20px;min-width:auto;color: #8A959E;font-weight: normal;}
+	.nav-warp .tab-navigation .nav-tabs>li>a:focus,.nav-warp .tab-navigation .nav-tabs>li>a:hover{border-bottom: 2px solid #C6E2FF;}
+	.nav-warp .tab-navigation .nav-tabs>li>a i{font-size:14px;margin-right: 10px;}
+	.nav-warp .tab-navigation .nav-tabs>li.active{
+		border-bottom: 2px solid #00B2EE;
+	}
+	.dwrapper .tab-navigation .nav-tabs>li.active a{
+		color: #00B2EE;
+	}
+	@media (max-width:767px){
+		.tab-navigation .nav-justified{display:table;}
+		.tab-navigation .nav-justified>li{display:table-cell}
+		.tab-navigation .nav-justified>li>a{margin-bottom:0;min-width:40px}
+	}
+	.nav-warp .tab-panel .tab-content{height:100%;position:relative;width:100%;padding:0;background:0 0;}
+	.nav-warp .tab-panel .tab-content .tab-pane{height:100%;position:relative;width:100%;display: none;padding: 10px;}
+	.nav-warp .tab-panel .tab-content .tab-pane>.content{overflow:auto;bottom:0;left:0;position:absolute;right:0;top:0}
+	.nav-warp .tab-panel .tab-content .tab-pane h2{color:#e1e1e1;font-size:15px;font-weight:400;padding-bottom:15px;border-bottom:1px solid #6d6b6b;padding-left:5px;margin-bottom:25px;margin-top:18px;}
+	.nav-warp .tab-panel .tab-content .tab-pane.active{display: block;}
+	
+	.wform-list {
+		list-style: none;
+		margin: 0;
+		min-height: 10px;
+		margin-top: 8px
+	}
+		
+	.wform-list>li {
+		float: left;
+		width: 32%;
+		margin: 0 .6% 15px;
+		border: 1px solid #EDEDED;
+		background: #fff
+	}
+	
+	.wform-list>li h4:hover {
+		color: #08c
+	}
+	
+	.wform-list>li:hover {
+		border: 1px dashed #7ed1ff;
+		background: #f1f9ff
+	}
+	
+	.wform-list>li:hover .btn {
+		border-color: #7ed1ff;
+		background: #f9fcff
+	}
+	
+	.wform-list>li:hover .btn:hover {
+		background: #d7ecff
+	}
+	
+	.wform-list li .list-box {
+		position: relative
+	}
+	
+	.wform-list li .content {
+		left: 0;
+		right: 20px;
+		top: 0
+	}
+	
+	.wform-manage-list {
+		list-style: none;
+		margin: 0;
+		min-height: 10px;
+		margin-top: 15px
+	}
+	
+	.wform-manage-list .wform-list li .list-box {
+		position: relative
+	}
+	
+	.wform-list .isGn {
+		background: rgba(221,221,221,1);
+		border-radius: 11px;
+		color: #000;
+		line-height: 22px;
+		padding: 0 7px;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 4px
+	}
+	
+	.wform-list .content>input.form-control {
+		margin: 0 45px 0 35px;
+		width: auto!important
+	}
+	
+	.wform-list>li {
+		margin: 0 .5% 15px;
+		width: 19%;
+		min-width: 280px;
+		height: 80px;
+		padding: 15px;
+		cursor: pointer;
+	}
+	
+	.wform-list.member>li {
+		height: 135px
+	}
+	
+	.workflows-container .wform-list>li,.modal .wform-list>li {
+		margin: 0 .8% 15px!important;
+		width: 48%!important
+	}
+	
+	.wform-list>li .formItem-disable {
+		position: absolute;
+		left: 35px;
+		top: 63px
+	}
+	
+	.wform-list>li:hover .formItem-disable {
+		color: #47b6ee
+	}
+	
+	.wform-list>li .status {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font-size: 16px;
+		color: #eea236
+	}
+	
+	.wform-list>li .serial {
+		background: #e9e9e9;
+		border-radius: 50%;
+		font-size: 12px;
+		height: 24px;
+		line-height: 24px;
+		position: absolute;
+		text-align: center;
+		width: 24px;
+		margin: 3px 0 0 0;
+		color: #fff
+	}
+	
+	.wform-list>li:hover .serial {
+		background: #47b6ee;
+		color: #fff
+	}
+	
+	.wform-list>li h4 {
+		color: #9C9C9C;
+		cursor: pointer;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 30px;
+		margin: 0 0 0 35px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		width: 148px
+	}
+	
+	.wform-list>li h4 input {
+		margin-top: -2px
+	}
+	
+	.wform-list>li .description,.wform-list li .nodescription {
+		margin: 5px 0 0;
+		color: #999;
+		font-size: 12px;
+		margin: 0 27px 0 35px;
+		min-height: 18px
+	}
+	
+	.wform-list .list-box>.btn-group {
+		float: right;
+		margin: 10px 0 0 0
+	}
+	
+	.wform-list .list-box>.btn-group>.btn:first-child {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0
+	}
+	
+	.wform-li .btn-group {
+		background: 0;
+		height: auto;
+		width: auto;
+		float: right;
+		margin: 0 10px 0 0
+	}
+	
+	.wform-li .btn-group>a {
+		-moz-user-select: none;
+		background-color: #fff;
+		background-image: none;
+		border: 1px solid #ccc;
+		color: #333;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: normal;
+		margin-bottom: 0;
+		text-align: center;
+		vertical-align: middle;
+		white-space: nowrap;
+		font-size: 12px;
+		line-height: 1.5;
+		float: left;
+		position: relative;
+		margin-left: 0;
+		height: auto;
+		width: auto
+	}
+	
+	.wform-li .btn-group>a>span {
+		display: inline-block;
+		padding: 5px 10px
+	}
+	
+	.wform-li .btn-group>a:hover {
+		background: #d7ecff;
+		border: 1px solid #7ed1ff
+	}
+	
+	.wform-li .text-content {
+		margin: -15px 10px 0 30px!important;
+		color: #999;
+		height: auto!important
+	}
+	
+	.wform-li .text-content>.creat-message {
+		margin: 0 0 5px
+	}
+	
+	.wform-li .text-content>div:last-child {
+		margin: 0
+	}
+	
+	.wform-li .group-data {
+		margin: -45px 0 0
+	}
+	
+</style>
+<div class="nav-warp">
+	<div class="tab-navigation">
+		<ul role="tablist" class="nav nav-tabs">
+			<li class="active"><a href="#tab1">办公审批</a></li>
+			<li><a href="#tab2">行政审批</a></li>
+		</ul>
+	</div>
+	<div class="tab-panel">
+		<div class="tab-content" id="tab1" >
+			<ul class="wform-list clearfix">
+				<li class="js_formitemsli" sort="6">
+					<div class="list-box js_formListBox">
+						<div class="content">
+							<span id="form-number" class="serial" style="background-color: #FFC125">1</span>
+							<h4 id="form-title" class="title router ellipsis filterSlip_js js_formtitle" href="/workflows/6996725099156266688/6996725099278266720" title="物品申领单">物品申领单</h4>
+							<p id="form-describe" class="ellipsis nodescription" title="暂无审批表描述">暂无审批表描述</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    var navListData = [{
+    	no: 1,
+    	url: 'addWuLiao.html',
+    	title: '物品申领单',
+    	remark: '暂无审批表描述'
+    },{
+    	no: 2,
+    	url: 'wiped/add.html',
+    	title: '报销申请单',
+    	remark: '暂无审批表描述'
+    },{
+    	no: 3,
+    	url: 'job/add.html',
+    	title: '工作请示单',
+    	remark: '暂无审批表描述'
+    },{
+    	no: 4,
+    	url: 'evection/add.html',
+    	title: '出差申请单',
+    	remark: '暂无审批表描述'
+    },{
+    	no: 5,
+    	url: 'out/add.html',
+    	title: '外出申请单',
+    	remark: '暂无审批表描述'
+    },{
+    	no: 6,
+    	url: 'leave/add.html',
+    	title: '请假申请单',
+    	remark: '暂无审批表描述'
+    },{
+    	no: 7,
+    	url: 'sendcar/add.html',
+    	title: '派车申请单',
+    	remark: '暂无审批表描述'
+    }];
+    var colors = ['#FFEC8B','#FFB90F','#FF7F24','#87CEFF','#63B8FF','#66CD00','#00EEEE'];
+    var NavLIST =  template.compile('<li class="js_formitemsli" sort="6" url="{{url}}">'+
+					'<div class="list-box js_formListBox">'+
+						'<div class="content">'+
+							'<span id="form-number" class="serial" style="background-color: {{color}};">{{no}}</span>'+
+							'<h4 id="form-title" class="title router ellipsis filterSlip_js js_formtitle"  title="{{title}}">{{title}}</h4>'+
+							'<p id="form-describe" class="ellipsis nodescription" title="{{remark}}">{{remark}}</p>'+
+						'</div>'+
+					'</div>'+
+				'</li>');
+	$(function(){
+		var navDom = "";
+		$.each(navListData,function(i,item){
+			navDom += NavLIST({
+				no: i,
+				color: !colors[i] ? '#00EEEE' : colors[i],
+				url: item.url,
+				title: item.title,
+				remark: item.remark
+			});
+		})
+		$('.wform-list').html(navDom);
+		$('.wform-list li').on('click',function(){
+			var url = $(this).attr('url');
+			THISPAGE.sidePanel.options.closeBtn = 0;
+			THISPAGE.sidePanel.realod(url);
+		});
+	});
+	
+</script>

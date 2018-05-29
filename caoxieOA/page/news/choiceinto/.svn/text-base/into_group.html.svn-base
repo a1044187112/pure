@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>加入群组</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<link rel="stylesheet" href="../../../js/lib/validator/jquery.validator.css" />
+		<style type="text/css">
+				*{
+				margin: 0px;
+				padding: 0px;
+			}
+			.clearfix{
+				padding:0px !important;
+				padding-top: 15px !important;
+			}
+			.search{
+				padding-top: 10px;
+			}
+			.search .search_ser{
+				width: 44%;
+				margin-left: 6%;
+				line-height: 40px;
+			}
+			.search .search_ser .search_input{
+				width: 100%;
+				height: 40px;
+				font-size: 16px;
+				background-color: #fefefe;
+				border: 1px solid #ddd;
+			}
+			.search .search_new{
+				width: 40%;
+				line-height: 40px;
+				font-size: 16px;
+				padding-left: 10px;
+			}
+			.search .search_new a{
+				display: block;
+				height: 40px;
+				width: 60%;;
+				float: right;
+				background-color: #4cac68;
+				color: #eee;
+				text-align: center;
+				border-radius: 5px;
+				/*margin-left: 10%;*/
+			}
+			.item {
+				height: 60px;
+				margin-top: 15px;
+				position: relative;
+				
+			}
+			.item .item_img{
+				margin-left: 8%;
+				widows: 20%;
+			}
+			.item .item_intro{
+				position: absolute;
+				top: 0;
+				left: 20%;
+				width: 50%;
+				font-size: 14px;
+				line-height: 1.8;
+			}
+			.item .item_intro div:nth-child(1){
+				color: #111;
+			}
+			.item .item_intro div:nth-child(2){
+				color: #999;
+			}
+			.item .item_state{
+				position: absolute;
+				right: 0px;
+				width: 30%;
+				text-align: right;
+				color: #999;
+				top:0;
+				line-height: 70px;
+				font-size: 14px;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: white;">
+		<div class="wrapper clearfix container" style="padding: 20px 0px;">
+			<form id="add-department-form" >
+				<div class="row search">
+					<div class="col-md-5 col-sm-5 col-xs-6 search_ser">
+						<!--<i class="fa fa-search" style="font-size: 16px;"></i>-->
+						<input class="search_input" placeholder="输入群组名查找" />
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6 search_new">或者 <a href="javascript:;">新建群组</a></div>
+				</div>
+				
+				<div class="row item" style="width: 100%;">
+					<img class="item_img" alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+					<div class="item_intro">
+						<div>企业公告</div>
+						<div>xxx 创建于 2016年9月5日 15:00</div>
+					</div>
+					<div class=" item_state">已加入</div>
+				</div>
+				
+				<div class="row item" style="width: 100%;">
+					<img class="item_img" alt="image" src="../../../img/avatar.jpg" style="width:50px; height:50px;">
+					<div class="item_intro">
+						<div>企业公告</div>
+						<div>xxx 创建于 2016年9月5日 15:00</div>
+					</div>
+					<div class=" item_state">已加入</div>
+				</div>
+				
+			</form>
+		</div>
+		<script type="text/javascript" src="../../../js/lib/jquery.js"></script>
+		<script type="text/javascript" src="../../../js/lib/validator/jquery.validator.js"></script>
+		<script type="text/javascript" src="../../../js/lib/validator/zh_CN.js"></script>
+		<script type="text/javascript" src="../../../js/lib/plugins.js"></script>
+		<script type="text/javascript" src="../../../js/common.js"></script>
+		<script type="text/javascript" src="../../../js/app/news/choiceinto/into_group.js"></script>
+	</body>
+
+</html>

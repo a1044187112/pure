@@ -1,0 +1,482 @@
+<style type="text/css">
+	.details-warp {
+		width: 100%;
+	}
+	
+	.details-warp .warp-top {
+		width: 100%;
+		font-size: 14px;
+		color: #7F7F7F;
+		padding: 5px;
+	}
+	
+	.details-warp .warp-bottom {
+		width: 100%;
+		margin-top: 10px;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	h2.title {
+		font-size: 22px;
+		margin-bottom: 10px;
+		color: #7EC0EE;
+	}
+	
+	label {
+		font-size: 16px;
+		color: #B7B7B7;
+	}
+	
+	.details-warp .row-item {
+		margin-bottom: 6px;
+	}
+	
+	.details-warp .progress-bar {
+		background-color: #AEEEEE;
+	}
+	
+	img.img-circle {
+		width: 32px;
+		height: 32px
+	}
+	
+	.img-circle {
+		border-radius: 50%
+	}
+	
+	.details-warp .tab-panel {
+		height: 100%;
+		/*display: table-row;*/
+	}
+	
+	.details-warp .nav-tabs {
+		height: 35px;
+		border-bottom: 1px solid #F2F2F2;
+	}
+	
+	.details-warp .nav-tabs li,
+	.details-warp .nav-tabs li a {
+		height: 34px;
+		width: 20% !important;
+		line-height: 18px;
+	}
+	
+	.details-warp .tab-navigation .nav-tabs>li>a:focus,
+	.details-warp .tab-navigation .nav-tabs>li>a:hover {
+		border: 0;
+		border-bottom: 2px solid #C6E2FF;
+	}
+	
+	.details-warp .tab-navigation .nav-tabs>li>a {
+		background-color: transparent;
+		border-width: 0;
+		padding: 10px 20px;
+		min-width: auto;
+		color: #8A959E;
+		font-weight: normal;
+	}
+	
+	.details-warp .tab-navigation .nav-tabs>li>a i {
+		font-size: 14px;
+		margin-right: 10px;
+	}
+	
+	.details-warp .tab-navigation .nav-tabs>li.active {
+		border-bottom: 2px solid #00B2EE;
+	}
+	
+	.details-warp .tab-navigation .nav-tabs>li.active a {
+		color: #00B2EE;
+	}
+	
+	@media (max-width:767px) {
+		.tab-navigation .nav-justified {
+			display: table;
+		}
+		.tab-navigation .nav-justified>li {
+			display: table-cell
+		}
+		.tab-navigation .nav-justified>li>a {
+			margin-bottom: 0;
+			min-width: 40px
+		}
+	}
+	
+	.details-warp .tab-panel .tab-content {
+		height: 100%;
+		position: relative;
+		width: 100%;
+		padding: 0;
+		background: 0 0;
+	}
+	
+	.details-warp .tab-panel .tab-content .tab-pane {
+		height: 100%;
+		position: relative;
+		width: 100%;
+		display: none;
+		padding: 10px;
+	}
+	
+	.details-warp .tab-panel .tab-content .tab-pane>.content {
+		overflow: auto;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0
+	}
+	
+	.details-warp .tab-panel .tab-content .tab-pane h2 {
+		color: #e1e1e1;
+		font-size: 15px;
+		font-weight: 400;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #6d6b6b;
+		padding-left: 5px;
+		margin-bottom: 25px;
+		margin-top: 18px;
+	}
+	
+	.details-warp .tab-panel .tab-content .tab-pane.active {
+		display: block;
+	}
+	
+	.aImp {
+		width: 100% !important;
+		text-align: center;
+	}
+</style>
+
+<div class="manage-wrapper">
+	<div id="manage-wrap" class="manage-wrap" style="line-height: 30px;">
+		<div class="clearfix" style="margin-top: 10px;">
+			<div style="float:left;width: 20%;margin-top: 7px;">
+				<img src="../../../img/avatar.jpg" class="car_img" />
+			</div>
+			<div class="form-group" style="float:left;width: 36%;margin-bottom: 0px;margin-left: 8%;">
+				<div class="clearfix">
+					<label class="col-sm-5 control-label car_fontSty" for="username">车牌号：</label>
+					<div class="col-sm-6">
+						<span class="span_sty">123124124</span>
+					</div>
+				</div>
+				<div class="clearfix">
+					<label class="col-sm-5 control-label car_fontSty" for="username">数量：</label>
+					<div class="col-sm-6">
+						<span class="span_sty">121111</span>
+					</div>
+				</div>
+				<div class="clearfix">
+					<label class="col-sm-5 control-label car_fontSty" for="username">经办人：</label>
+					<div class="col-sm-6">
+						<span class="span_sty">121111</span>
+					</div>
+				</div>
+				<div class="clearfix">
+					<label class="col-sm-6 control-label car_fontSty" for="username">价格：</label>
+					<div class="col-sm-6">
+						<span class="span_sty">121111</span>
+					</div>
+				</div>
+				<div class="clearfix">
+					<label class="col-sm-6 control-label car_fontSty" for="username">厂家：</label>
+					<div class="col-sm-6">
+						<span class="span_sty">121111</span>
+					</div>
+				</div>
+			</div>
+			<div class="form-group" style="float:left;width: 36%;margin-bottom: 0px;">
+				<div class="clearfix">
+					<label class="col-sm-6 control-label car_fontSty" for="username">品牌：</label>
+					<div class="col-sm-6">
+						<span class="span_sty">99909</span>
+					</div>
+				</div>
+				<div class="clearfix">
+					<label class="col-sm-6 control-label car_fontSty" for="username">购买时间：</label>
+					<div class="col-sm-6">
+						<span class="span_sty">2016-8-8</span>
+					</div>
+				</div>
+				<div class="clearfix">
+					<label class="col-sm-6 control-label car_fontSty" for="username">供应商：</label>
+					<div class="col-sm-6">
+						<span class="span_sty">驾驶员</span>
+					</div>
+				</div>
+				<div class="clearfix">
+					<label class="col-sm-6 control-label car_fontSty" for="username">使用年限：</label>
+					<div class="col-sm-6">
+						<span class="span_sty">驾驶员</span>
+					</div>
+				</div>
+				<div class="clearfix">
+					<label class="col-sm-6 control-label car_fontSty" for="username">登记时间：</label>
+					<div class="col-sm-6">
+						<span class="span_sty">驾驶员</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hr-line-dashed"></div>
+
+		<div class="form-group" style="width: 95%;padding-bottom: 0px;">
+			<div class="clearfix">
+				<label class="col-sm-3 control-label font_sty" for="username">登记信息：</label>
+				<div class="col-sm-1">
+				</div>
+			</div>
+		</div>
+		<div class="details-warp">
+			<div class="warp-bottom">
+				<div class="tab-navigation">
+					<ul role="tablist" class="nav nav-tabs">
+						<li class="active">
+							<a href="#tab1" style="width: 100% !important;text-align: center;">保险登记</a>
+						</li>
+						<li>
+							<a href="#tab2" style="width: 100% !important;text-align: center">维修保养</a>
+						</li>
+						<li>
+							<a href="#tab3" style="width: 100% !important;text-align: center">车辆年检</a>
+						</li>
+						<li>
+							<a href="#tab4" style="width: 100% !important; text-align: center">事故登记</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-panel" style="width: 600px !important;">
+					<div class="tab-content">
+						<div id="tab1" role="tabpanel" class="tab-pane active am-scroller nano">
+							<div id="manage-wrap" class="manage-wrap" style="line-height: 30px;">
+								<div class="clearfix">
+									<div class="form-group" style="float:left;width: 50%;margin-bottom: 0px;">
+										<div class="clearfix">
+											<label class="col-sm-6 control-label font_sty" for="username">车牌号：</label>
+											<div class="col-sm-6">
+												<span class="span_sty">121223</span>
+											</div>
+										</div>
+										<div class="clearfix">
+											<label class="col-sm-6 control-label font_sty" for="username">保费：</label>
+											<div class="col-sm-6">
+												<span class="span_sty">121111</span>
+											</div>
+										</div>
+									</div>
+									<div class="form-group" style="float:left;width: 50%;margin-bottom: 0px;">
+										<div class="clearfix">
+											<label class="col-sm-6 control-label font_sty" for="username">投保日期：</label>
+											<div class="col-sm-6">
+												<span class="span_sty">2016-8-8</span>
+											</div>
+										</div>
+										<div class="clearfix">
+											<label class="col-sm-6 control-label font_sty" for="username">经办人：</label>
+											<div class="col-sm-6">
+												<span class="span_sty">xxx</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group" style="width: 90%;">
+									<div class="clearfix">
+										<label class="col-sm-3 control-label font_sty" for="username">保险公司：</label>
+										<div class="col-sm-7">
+											<span class="span_sty">XXXXXXXX保险公司</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="tab2" role="tabpanel" class="tab-pane am-scroller nano">
+							<div id="manage-wrap" class="manage-wrap" style="line-height: 30px;">
+								<div class="clearfix">
+									<div class="form-group" style="float:left;width: 45%;margin-bottom: 0px;">
+										<div class="clearfix">
+											<label class="col-sm-6 control-label font_sty" for="username">车牌号：</label>
+											<div class="col-sm-6">
+												<span class="span_sty">小赵</span>
+											</div>
+										</div>
+										<div class="clearfix">
+											<label class="col-sm-6 control-label font_sty" for="username">维修日期：</label>
+											<div class="col-sm-6">
+												<span class="span_sty">121111</span>
+											</div>
+										</div>
+										<div class="clearfix">
+											<label class="col-sm-6 control-label font_sty" for="username">费用：</label>
+											<div class="col-sm-6">
+												<span class="span_sty">121111</span>
+											</div>
+										</div>
+									</div>
+									<div class="form-group" style="float:left;width: 45%;margin-bottom: 0px;">
+										<div class="clearfix">
+											<label class="col-sm-6 control-label font_sty" for="username">修配厂：</label>
+											<div class="col-sm-6">
+												<span class="span_sty">99909</span>
+											</div>
+										</div>
+										<div class="clearfix">
+											<label class="col-sm-6 control-label font_sty" for="username">经办人：</label>
+											<div class="col-sm-6">
+												<span class="span_sty">2016-8-8</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group" style="width: 90%;">
+									<div class="clearfix">
+										<label class="col-sm-3 control-label font_sty" for="username">内容：</label>
+										<div class="col-sm-7">
+											<span class="span_sty">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="tab3" role="tabpanel" class="tab-pane am-scroller nano">
+							<div id="manage-wrap" class="manage-wrap" style="line-height: 30px;">
+								<div id="manage-wrap" class="manage-wrap" style="line-height: 30px;">
+									<div class="clearfix">
+										<div class="form-group" style="float:left;width: 45%;margin-bottom: 0px;">
+											<div class="clearfix">
+												<label class="col-sm-6 control-label font_sty" for="username">车牌号：</label>
+												<div class="col-sm-6">
+													<span class="span_sty">小赵</span>
+												</div>
+											</div>
+											<div class="clearfix">
+												<label class="col-sm-6 control-label font_sty" for="username">品牌：</label>
+												<div class="col-sm-6">
+													<span class="span_sty">121111</span>
+												</div>
+											</div>
+										</div>
+										<div class="form-group" style="float:left;width: 45%;margin-bottom: 0px;">
+											<div class="clearfix">
+												<label class="col-sm-6 control-label font_sty" for="username">大架号：</label>
+												<div class="col-sm-6">
+													<span class="span_sty">99909</span>
+												</div>
+											</div>
+											<div class="clearfix">
+												<label class="col-sm-6 control-label font_sty" for="username">驾驶员：</label>
+												<div class="col-sm-6">
+													<span class="span_sty">2016-8-8</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group" style="width: 90%;">
+										<div class="clearfix">
+											<label class="col-sm-3 control-label font_sty" for="username">下次年检日期：</label>
+											<div class="col-sm-7">
+												<span class="span_sty">下次年检日期下次年检日期下次年检日期下次年检日期下次年检日期</span>
+											</div>
+										</div>
+										<div class="clearfix">
+											<label class="col-sm-3 control-label font_sty" for="username">备注：</label>
+											<div class="col-sm-7">
+												<span class="span_sty">备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="tab4" role="tabpanel" class="tab-pane am-scroller nano">
+							<div id="manage-wrap" class="manage-wrap" style="line-height: 30px;">
+								<div id="manage-wrap" class="manage-wrap" style="line-height: 30px;">
+									<div class="clearfix">
+										<div class="form-group" style="float:left;width: 45%;margin-bottom: 0px;">
+											<div class="clearfix">
+												<label class="col-sm-6 control-label font_sty" for="username">车牌号：</label>
+												<div class="col-sm-6">
+													<span class="span_sty">小赵</span>
+												</div>
+											</div>
+											<div class="clearfix">
+												<label class="col-sm-6 control-label font_sty" for="username">大架号：</label>
+												<div class="col-sm-6">
+													<span class="span_sty">121111</span>
+												</div>
+											</div>
+										</div>
+										<div class="form-group" style="float:left;width: 45%;margin-bottom: 0px;">
+											<div class="clearfix">
+												<label class="col-sm-6 control-label font_sty" for="username">驾驶员：</label>
+												<div class="col-sm-6">
+													<span class="span_sty">99909</span>
+												</div>
+											</div>
+											<div class="clearfix">
+												<label class="col-sm-6 control-label font_sty" for="username">事故时间：</label>
+												<div class="col-sm-6">
+													<span class="span_sty">2016-8-8</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group" style="width: 90%;">
+										<div class="clearfix">
+											<label class="col-sm-3 control-label font_sty" for="username">事故发生地：</label>
+											<div class="col-sm-7">
+												<span class="span_sty">事故发生地事故发生地</span>
+											</div>
+										</div>
+										<div class="clearfix">
+											<label class="col-sm-3 control-label font_sty" for="username">事故详情：</label>
+											<div class="col-sm-7">
+												<span class="span_sty">事故详情事故详情事故详情事故详情事故详情事故详情事故详情事故详情</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<div class="carInformation_register">
+			<div class="fr" style="float:left;" id="clickSee_register">
+				<a class="btn btn-link" href="javascript:void(0);" url="register/insurance/insurance_see.html">保险登记</a>
+				<a href="javascript:void(0);" class="btn btn-link" url="register/repair/repair_see.html">维修保养</a>
+				<a href="javascript:void(0);" class="btn btn-link" url="register/yearlyInspection/yearlyInspection_see.html">车辆年检</a>
+				<a href="javascript:void(0);" class="btn btn-link" url="register/otherExpenses/otherExpenses_see.html">其他费用登记</a>
+				<a href="javascript:void(0);" class="btn btn-link" url="register/monthHistory/monthHistory_see.html">月历程登记</a>
+				<a href="javascript:void(0);" class="btn btn-link" url="register/comeOn/comeOn_see.html">加油登记</a>
+				<a href="javascript:void(0);" class="btn btn-link" url="register/accident/accident_see.html">事故登记</a>
+			</div>
+
+		</div>-->
+
+		<div class="hr-line-dashed"></div>
+
+		<div class="form-group" style="width: 95%;margin-top: 20px;">
+			<div class="clearfix">
+				<label class="col-sm-3 control-label font_sty" for="username" style="width: 80px !important;">备注：</label>
+				<div class="col-sm-9">
+					<span class="span_sty">备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="../../../js/app/administration/vehicle/carInformation/carInformation_see.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('.warp-bottom .tab-navigation a').click(function(e) {
+			e.preventDefault()
+			$(this).tab('show')
+		});
+	});
+</script>

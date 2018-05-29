@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选择父节点</title>
+		<link rel="stylesheet" href="../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../../css/hplus.css" />
+		<link rel="stylesheet" href="../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../css/common.css" />
+		<style type="text/css">
+			body{
+				background: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div>
+				
+			</div>
+			<div class="grid-wrap noborder-warp" style="width: 380px; ">
+				<table id="grid"></table>
+				<div id="page"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../js/lib/i18n/grid.locale-cn.js" ></script>
+		<script type="text/javascript" src="../../js/lib/jquery.jqGrid.min.js" ></script>
+		<script type="text/javascript" src="../../js/common.js" ></script>
+		<script type="text/javascript" src="../../js/app/select/select_users.js" ></script>
+	</body>
+</html>

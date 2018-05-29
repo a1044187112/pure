@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>审批</title>
+		<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="../../../css/hplus.css" />
+		<link rel="stylesheet" href="../../../css/ui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style type="text/css">
+			/*---------------- 表格 ------------------*/*
+			.right-wrap {position:absolute;clear: both;left: 215px;top: 0px;right: 0px;bottom: 0px;}
+			.sidebard-panel{background: #FCFCFC;color: #8B8989;}
+		</style>
+	</head>
+	<body>
+		<!-- siled begin -->
+		<div class="sidebard-panel">
+			<div class="header" style="text-align: center;padding: 10px;">
+				<h2><i class="fa fa-wpforms"></i> 审批</h2>
+			</div>
+			<div class="sidebar-content p5">
+				<div id="treeview" class="test"></div>
+			</div>
+		</div>
+		<!-- siled end -->
+		<div class="right-wrap" style="overflow: auto;">
+			<div class="wrapper">
+				<div class="mod-search cf">
+					<div class="fl">
+						<ul class="ul-inline">
+							<li>
+								<span id="type"></span>
+							</li>
+							<li>
+								<label>日期:</label>
+					            <input type="text" id="beginDate" value="2016-07-27" class="ui-input ui-datepicker-input">
+					            <i>-</i>
+					            <input type="text" id="endDate" value="2016-08-02" class="ui-input ui-datepicker-input">
+							</li>
+							<li>
+								<a class="btn btn-white btn-bitbucket">
+		                            <i class="fa fa-search"></i>
+		                        </a>
+							</li>
+						</ul>
+					</div>
+					<div class="fr">
+						<a class="ui-btn ui-btn-sp" id="add"><i class="fa fa-plus"></i> 新增</a>
+					</div>
+				</div>
+				<div class="grid-wrap noborder-warp">
+					<table id="grid"></table>
+					<div id="page"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/bootstrap/js/bootstrap-treeview.min.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/grid.js" ></script>
+		<script type="text/javascript" src="../../../js/lib/plugins.js" ></script>
+		<script type="text/javascript" src="../../../js/common.js" ></script>
+		<script type="text/javascript" src="../../../js/app/oa/approval/main.js" ></script>
+	</body>
+</html>

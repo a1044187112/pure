@@ -1,0 +1,235 @@
+<style>
+	*{
+		padding:0px;
+		margin:0px;
+		text-decoration: none;
+		list-style: none;
+		  font-family: Helvetica, "Helvetica Neue", "Century Gothic", "微软雅黑", "Microsoft Yahei", "STXihei";
+	}
+	.frame{
+		padding-left: 40px;
+		padding-right: 20px;
+	}
+	.title {
+		padding-bottom: 10px;
+	}
+	.title .t_itme{
+		display: inline-block;
+		padding-top:15px;
+		font-size: 14px;
+	}
+	.title .t_itme:first-child{
+		width: 50%;
+	}
+	.title .t_itme:nth-child(2){
+		width: 20%;
+		padding-left: 15px;
+	}
+	.title .t_itme:nth-child(3){
+		width: 26%;
+		text-align: right;
+		color: #0068B7;
+	}
+	.con_left{
+		border:1px solid #ddd;
+		padding:0px !important;
+		padding-top:10px !important;
+		height: 360px;
+		overflow: auto;
+		width: 40%;
+	}
+	.con_left .c_l_search{
+		position: relative;
+		width: 100%;
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 10px !important;
+	}
+	.con_left .c_l_search i{
+		position: absolute;
+		left: 10%;
+		color: #999;
+		top:10px;
+	}
+	.con_left .c_l_search input{
+		display: block;
+		width: 85%;
+		height: 35px;
+		margin:auto;
+		padding-left: 25px;
+		border-radius: 15px;
+		border:1px solid #ccc;
+		outline: none;
+	}
+	.con_left .con_title{
+		padding-top:15px;
+	}
+	.con_left .con_title i{
+		margin-left: 15px;
+		font-size: 22px;
+	}
+	.con_left .con_title span{
+		margin-left: 6px;
+	}
+	.con_group ,.con_py{
+		margin-left: 15px;
+	}
+	.con_g_item, .con_py_item{
+		margin-left: 10px;
+		position: relative;
+	}
+	.con_sel_item{
+		margin-left: 10px;
+		position: relative;
+	}
+	.con_g_item .name,.con_py_item .name{
+		height: 30px;
+		position: absolute;
+		top: 0;
+		left: 40px;
+		line-height: 30px;
+	}
+	.con_sel_item .name{
+		height: 30px;
+		position: absolute;
+		top: 0;
+		left: 40px;
+		line-height: 30px;
+	}
+	.fp img{
+		width: 25px;
+		height: 25px;
+		margin-top: 3px;
+	}
+	.con_g_item .sel,.con_py_item .sel {
+		position: absolute;
+		right: 20px;
+		height: 15px;
+		width: 15px;
+		border-radius: 50%;
+		border:1px solid #888;
+		top:8px;
+	}
+	
+	.con_right{
+		border:1px solid #ccc;
+		height: 360px;
+		padding-top: 10px;
+		margin-left: 10%;
+	}
+	.sel{
+		/*margin-left: 5px;*/
+	}
+	.sel_list .sel{
+		float: right;
+		width: 14px;
+		height: 14px;
+		border:1px solid #ccc;
+		border-radius: 50%;
+		background-color: red;
+		margin-top:-18px;
+	}
+</style>
+<link rel="stylesheet" href="../../../js/lib/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../../../css/font-awesome/css/font-awesome.min.css" />
+<div class="frame">
+	<div class="title">
+		<span class="t_itme">联系人</span>
+		<span class="t_itme">已添加(<span class="sel_num">0</span>)</span>
+		<span class="t_itme t_time_del">清空</span>
+	</div>
+	<div class="con">
+		<div class="col-xs-5 con_left">
+			<div class="c_l_search"><i class="fa fa-search"></i><input type="text" placeholder="搜索联系人" /></div>
+			<div class="">
+				<div class="con_title"><i class="fa fa-caret-right"></i>
+					<i class="fa fa-sort-down" style="font-size: 22px;display: none; margin-left: 10px;" ></i>
+					<span>联系人</span></div>
+				<div class="col-xs-12 col-sm-12 container_left container" style="display: none;">
+				<div class="con_group">
+					<div class="group_sel con_group_sel" >
+						<i class="fa fa-caret-right" style="font-size: 22px;"></i>
+						<i class="fa fa-sort-down" style="font-size: 22px;display: none; margin-left: -1px;" ></i><span class="sel" >群组</span></div>
+					<ul class="list group_list" style="display: none;">
+						<li class="con_g_item" data-id="1">
+							<div class=" fp"><img class="fp_img" src="../../../img/avatar.jpg"></div>
+							<div class="name">技术部</div>
+							<div class="sel"></div>
+						</li>
+						<li class="con_g_item" data-id="2">
+							<div class=" fp"><img class="fp_img" src="../../../img/avatar.jpg"></div>
+							<div class=" name">行政</div>
+							<div class="sel"></div>
+						</li>
+						<li class="con_g_item" data-id="3">
+							<div class="fp"><img class="fp_img" src="../../../img/avatar.jpg"></div>
+							<div class="name">人力资源</div>
+							<div class="sel"></div>
+							
+						</li>
+						<li class="con_g_item" data-id="4">
+							<div class="fp"><img class="fp_img" src="../../../img/avatar.jpg"></div>
+							<div class="name">xxxy</div>
+							<div class="sel"></div>
+						</li>
+					</ul>
+				</div>
+				<div class="con_py">
+					<div class="group_sel con_py_sel">
+						<i class="fa fa-caret-right" style="font-size: 22px;"></i>
+						<i class="fa fa-sort-down" style="font-size: 22px; display: none; margin-left: -1px;"></i><span class="sel">好友</span></div>
+					<ul class="list py_list" style="display: none;">
+						<li class="con_py_item" data-id="5">
+							<div class="fp"><img class="fp_img" src="../../../img/avatar.jpg"></div>
+							<div class="name">x</div>
+							<div class="sel"></div>
+						</li>
+						<li class="con_py_item" data-id="6">
+							<div class="fp"><img class="fp_img" src="../../../img/avatar.jpg"></div>
+							<div class="name">xxx</div>
+							<div class="sel"></div>
+						</li>
+						<li class="con_py_item" data-id="7">
+							<div class="fp"><img class="fp_img" src="../../../img/avatar.jpg"></div>
+							<div class="name">xxxx</div>
+							<div class="sel"></div>
+						</li>
+						<li class="con_py_item" data-id="8">
+							<div class="fp"><img class="fp_img" src="../../../img/avatar.jpg"></div>
+							<div class="name">xx</div>
+							<div class="sel"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	<div class="col-xs-5 con_right">
+			<ul class="list sel_list" >
+				<!--<li class="con_sel_item" data-id="1">
+					<div class="fp"><img src="../../../img/avatar.jpg"></div>
+					<div class="name">xxx</div>
+					<div class="sel"></div>
+				</li>
+				<li class="con_sel_item">
+					<div class="fp"><img src="../../../img/avatar.jpg"></div>
+					<div class="name">xxx</div>
+					<div class="sel"></div>
+				</li>
+				<li class="con_sel_item">
+					<div class="fp"><img src="../../../img/avatar.jpg"></div>
+					<div class="name">xxx</div>
+					<div class="sel"></div>
+				</li>
+				<li class="con_sel_item">
+					<div class="fp"><img src="../../../img/avatar.jpg"></div>
+					<div class="name">xxx</div>
+					<div class="sel"></div>
+				</li>-->
+			</ul>
+			
+		</div>
+</div>
+<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>
+<script src="../../../js/app/yunpan/sendFile/sendSelMem.js"></script>

@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="../../../js/lib/simditor/css/simditor.css" />
+<style>
+	textarea{
+		text-align: left !important;
+	}
+</style>
+<div class="manage-wrapper " style="height: 99%;">
+	<div id="manage-wrap" class="manage-wrap h-full">
+		<form id="manage-form_announcementSystem " action="" class="h-full">
+			<div class="mod-form-rows base-form cf h-full" id="base-form">
+				
+				<div class="row-item  row-item2 row-item_magen h-full">
+					<div class="form-group h-full" style="padding: 0 50px;">
+						<label class="col-sm-12 label-word">1. 今天完成了哪些工作？</label>
+						<div class="col-sm-12 marginb" >
+							<textarea name="note1" id="note1" autofocus required></textarea>
+						</div>
+						
+						<label class="col-sm-12 label-word">2. 今天未完成的工作有哪些？未完成的原因是什么？</label>
+						<div class="col-sm-12 marginb" >
+							<textarea name="note2" id="note2" autofocus required></textarea>
+						</div>
+						
+						<label class="col-sm-12 label-word">3. 工作中遇到什么问题？</label>
+						<div class="col-sm-12 marginb" >
+							<textarea name="note3" id="note3" autofocus required></textarea>
+						</div>
+						
+						<label class="col-sm-12 label-word">4.明天的工作计划是什么？</label>
+						<div class="col-sm-12 marginb" >
+							<textarea name="note4" id="note4" autofocus required></textarea>
+						</div>
+						
+						<label class="col-sm-12 label-word">5.有什么意见或建议吗？</label>
+						<div class="col-sm-12 marginb" >
+							<textarea name="note5" id="note5" autofocus required></textarea>
+						</div>
+						
+						<label class="col-sm-12 label-word">6.备注：</label>
+						<div class="col-sm-12 marginb" >
+							<textarea name="note6" id="note6" autofocus required></textarea>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+		</form>
+	</div>
+</div>
+<script type="text/javascript" src="../../../js/lib/validator/jquery.validator.js"></script>
+<script type="text/javascript" src="../../../js/lib/validator/zh_CN.js"></script>
+<!-- simditor -->
+<script type="text/javascript" src="../../../js/lib/simditor/module.min.js"></script>
+<script type="text/javascript" src="../../../js/lib/simditor/uploader.min.js"></script>
+<script type="text/javascript" src="../../../js/lib/simditor/hotkeys.js"></script>
+<script type="text/javascript" src="../../../js/lib/simditor/simditor.js"></script>
+<script type="text/javascript" src="../../../js/lib/simditor/simditor-fullscreen.js" ></script>
+<script type="text/javascript" src="../../../js/lib/simditor/markdown/marked.js" ></script>
+<script type="text/javascript" src="../../../js/lib/simditor/markdown/to-markdown.js" ></script>
+<script type="text/javascript" src="../../../js/lib/simditor/markdown/simditor-markdown.js" ></script>
+<script type="text/javascript" src="../../../js/lib/simditor/simditor-emoji.js" ></script>
+<!-- 编辑器 -->
+<script type="text/javascript" src="../../../js/app/oa/workreport/edit.js"></script>

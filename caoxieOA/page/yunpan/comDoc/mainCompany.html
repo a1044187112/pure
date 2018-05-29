@@ -1,0 +1,305 @@
+<style>
+		.my_info{
+				position: absolute;
+				width: 20%;
+				top:65px;
+				bottom:0;
+				z-index: 9999;
+				background: white;
+				right:0px;
+				border-left: 1px solid #ddd;
+				padding:20px 10px 0 10px;
+			}
+			.my_info .my_title{
+				font-size: 16px;line-height: 1.5;
+				width: 100%;
+			}
+			.my_info .m_t_fp img{
+				width: 50px;
+				height: 50px;
+				margin-top:20px;
+			}
+			.my_info .m_t_space{
+				width: 60%;
+				margin-top:35px;
+				margin-left: 30px;
+				font-size: 14px;
+				color: #999;
+			}
+</style>
+<div class="wrapper" style="background: #F5F6F9;border-bottom: 1px solid #C8CCD5;">
+				<div class="mod-search cf" >
+					<div class="fl">
+						<ul class="ul-inline">
+							<li>
+								<a class="btn btn-white btn_item_com new_file" style="position: relative;"><i class="fa fa-folder-o"></i>新建文件夹</a>
+								<a class="btn btn-white btn_item_com file_click_sel"><i class="fa fa-download"></i>下载</a>
+								<a class="btn btn-white btn_item_com file_click_sel"><i class="fa fa-folder-open-o"></i>移动到</a>
+								<a class="btn btn-white btn_item_com file_click_sel"><i class="fa fa-edit"></i>重命名</a>
+								<a class="btn btn-white btn_item_com file_click_sel"><i class="fa fa-remove"></i>删除</a>
+							</li>
+						</ul>
+						<div class="search" ><i class="fa fa-search"></i><input class="search_input" type="search" placeholder="搜索您的文件"></div>
+					</div>
+					<div class="fr">
+						<div class="btn-group">
+							<a type="group" class="btn btn-white active"><i class="fa fa-th-large"></i></a>
+                            <a type="list" class="btn btn-white"><i class="fa fa-align-justify"></i></a>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper" style="margin: 0px; padding: 0px;">
+				<div class="fixedPanel">
+					<div class="breadcrumb">
+						<div id="checkAll" class="radio " style="margin-top:-10px;">
+                            <a class="checkedimg fix-png"></a>
+                        </div>
+                        <ul class="crumbNav">
+                            <li>
+                            	<a data-path="/" class="fix-png" >我的文件</a>
+                            </li>
+                            <li title="管理文件夹"><a data-path="/管理文件夹/">管理文件夹</a></li>
+                        </ul>
+					</div>
+				</div>
+				<div id="fileWrapper" class="filePanel" style="width: 80%;">
+					<dl class="file-list clearfix" >
+						<dd class="file file-list-tr clearfix" data-name="文档" data-role="" data-type="0" data-dir="true" data-path="/文档/" data-iscompanyfolder="0" data-src="" data-link="" data-address="" data-sync="true" data-mark="false" data-time="" data-fmttime="2016-08-17 22:55:14" data-doer="" data-share="" data-auth="16:1111111111111110" data-size="0 B" data-subf="0" data-editor="evan" data-cmtcount="0" data-vnum="1" data-partition="PERSONAL" data-inode="110388649" data-rms_status="0" data-icon="icon-folder" data-issupportencrypt="true" data-haslinkclass="" data-authority263="" data-groupid="">
+							<div class="time">2016-08-17 22:55:14</div>
+							<div class="summary">
+							    <div class="radio"><a></a></div>
+							    <div class="actions xstar "><a class="mark">yjy</a></div>
+							    <div class="brief">
+							        <div class="info">
+							            <a class="icon icon-folder">
+							            </a>
+							            <hgroup>
+							                <h3 class="thumH3" title="文档">文档</h3>
+							                <input class="name_input" type="text" />
+							                <h4>0项</h4>
+							            </hgroup>
+							            <span class="confirm_btn file_op_btn">确定</span>
+				           				<span class="cancel_btn file_op_btn">取消</span>
+							        </div>
+							        <ul class="actions position-abs">
+							            
+							            <li class="active"><a class="sync">同步</a></li>
+							            <li class="hide"><a class="twoD"><!--发送此文件-->二维码</a></li>
+							            
+							            <li class=""><a class="link">发送此文件</a></li>
+							            <li class=""><a class="download">下载</a></li>
+							        </ul>
+							    </div>
+							
+							</div>
+							<div class="discuss-panel clearfix"></div>
+						</dd>
+						<dd class="file file-list-tr clearfix" data-name="管理文件夹" data-role="" data-type="0" data-dir="true" data-path="/管理文件夹/" data-iscompanyfolder="0" data-src="" data-link="" data-address="" data-sync="false" data-mark="false" data-time="" data-fmttime="2016-08-17 09:32:23" data-doer="" data-share="" data-auth="16:1111111111111110" data-size="0 B" data-subf="0" data-editor="evan" data-cmtcount="0" data-vnum="1" data-partition="PERSONAL" data-inode="110304592" data-rms_status="0" data-icon="icon-folder" data-issupportencrypt="true" data-haslinkclass="" data-authority263="" data-groupid="">
+							<div class="time">2016-08-17 09:32:23</div>
+							<div class="summary">
+							    <div class="radio"><a></a></div>
+							    <div class="actions xstar "><a class="mark">yjy</a></div>
+							    <div class="brief">
+							        <div class="info">
+							            <a class="icon icon-folder">
+							            </a>
+							            <hgroup>
+							                <h3 class="thumH3" title="管理文件夹">管理文件夹</h3>
+							                <input class="name_input" type="text" />
+							                <h4>0项</h4>
+							            </hgroup>
+							            <span class="confirm_btn file_op_btn">确定</span>
+				           				 <span class="cancel_btn file_op_btn">取消</span>
+							        </div>
+							        <ul class="actions position-abs">
+							            
+							            <li class=""><a class="sync">同步</a></li>
+							            <li class="hide"><a class="twoD"><!--发送此文件-->二维码</a></li>
+							            
+							            <li class=""><a class="link">发送此文件</a></li>
+							            <li class=""><a class="download">下载</a></li>
+							        </ul>
+							    </div>
+							
+							</div>
+							<div class="discuss-panel clearfix"></div>
+						</dd>
+						<dd class="file file-list-tr clearfix" data-name="销售管理系统培训2016年4月12日星期二.docx" data-role="" data-type="0" data-dir="false" data-path="/销售管理系统培训2016年4月12日星期二.docx/" data-iscompanyfolder="0" data-src="" data-link="" data-address="" data-sync="false" data-mark="false" data-time="" data-fmttime="2016-08-17 10:33:57" data-doer="" data-share="" data-auth="16:1111111111111110" data-size="13.35 KB" data-subf="0" data-editor="evan" data-cmtcount="0" data-vnum="1" data-partition="PERSONAL" data-inode="110313656" data-rms_status="0" data-icon="icon-docx" data-issupportencrypt="true" data-haslinkclass="" data-authority263="" data-groupid="">
+							<div class="time">2016-08-17 10:33:57</div>
+							<div class="summary">
+							    <div class="radio"><a class="radio_sel"></a></div>
+							    <div class="actions xstar "><a class="mark">yjy</a></div>
+							    <div class="brief">
+							        <div class="info">
+							            <a class="icon icon-docx">
+							            </a>
+							            <hgroup>
+							                <h3 class="thumH3" title="销售管理系统培训2016年4月12日星期二.docx">销售管理系统培训2016年4月12日星期二.docx</h3>
+							                <input class="name_input" type="text" />
+							                <h4>13.35 KB&nbsp;·&nbsp;<a class="trends">0条动态</a></h4>
+							            </hgroup>
+							            <span class="confirm_btn file_op_btn">确定</span>
+				            			<span class="cancel_btn file_op_btn">取消</span>
+							        </div>
+							        <ul class="actions position-abs">
+							            
+							            <!--<li class="hide"><a class="sync">同步</a></li>
+							            <li class=""><a class="twoD">二维码</a></li>-->
+							            
+							            <li class=""><a class="link">发送此文件</a></li>
+							            <li class=""><a class="download">下载</a></li>
+							        </ul>
+							    </div>
+							
+							</div>
+							</dd>
+					</dl>
+				</div>
+				<div class="my_info" >
+					<div class="my_title">我的账号<hr /> 
+						<div class="col-xs-1 m_t_fp"><img src="../../img/avatar.jpg"/></div>
+						<div class="col-xs-1 m_t_space">已使用: <span class="m_t_been">0.5</span>G/<span class="m_t_acc">2</span>G</div>
+					</div>
+					<div class="file_info" style="display: none;">
+						<div><a class="icon icon-folder"></a><span class="file_name">文档</span><br /><span class="file_time">2016-9-18 10:00</span></div>
+						<div class="f_i_per">
+							<i class="fa fa-caret-down is_expand" style="font-size: 18px;display: inline-block;width: 10px;"></i><span style="margin-left: 8px;">权限</span><hr />
+							<div class="f_i_share">未共享此目录<span class="f_i_share_i">添加共享成员</span></div>
+						</div>
+						<div class="file_per">
+							<ul class="file_per_f">
+								<li class="file_per_c">
+									<img class="file_per_hp" src="../../img/avatar.jpg" style="vertical-align:top;"/>
+									<div class="file_per_intro">
+										<div class="file_per_name">张三(我)</div>
+										<div class="file_per_p_info"><span>可预览</span><i class="fa fa-caret-down" style="margin-left: 10px;"></i></div>
+									</div>
+									<div class="file_per_close">
+										<i class="fa fa-close"></i>
+									</div>
+								</li>
+								<li class="file_per_c">
+									<img class="file_per_hp" src="../../img/avatar.jpg" style="vertical-align:top;"/>
+									<div class="file_per_intro">
+										<div class="file_per_name">张三(我)</div>
+										<div class="file_per_p_info"><span>可预览</span><i class="fa fa-caret-down" style="margin-left: 10px;"></i></div>
+									</div>
+									<div class="file_per_close">
+										<i class="fa fa-close"></i>
+									</div>
+								</li>
+								<li class="file_per_c">
+									<img class="file_per_hp" src="../../img/avatar.jpg" style="vertical-align:top;"/>
+									<div class="file_per_intro">
+										<div class="file_per_name">张三(我)</div>
+										<div class="file_per_p_info"><span>可预览</span><i class="fa fa-caret-down" style="margin-left: 10px;"></i></div>
+									</div>
+									<div class="file_per_close">
+										<i class="fa fa-close"></i>
+									</div>
+								</li>
+								<li class="file_per_c">
+									<img class="file_per_hp" src="../../img/avatar.jpg" style="vertical-align:top;"/>
+									<div class="file_per_intro">
+										<div class="file_per_name">张三(我)</div>
+										<div class="file_per_p_info"><span>可预览</span><i class="fa fa-caret-down" style="margin-left: 10px;"></i></div>
+									</div>
+									<div class="file_per_close">
+										<i class="fa fa-close"></i>
+									</div>
+								</li>
+								<li class="file_per_c">
+									<img class="file_per_hp" src="../../img/avatar.jpg" style="vertical-align:top;"/>
+									<div class="file_per_intro">
+										<div class="file_per_name">张三(我)</div>
+										<div class="file_per_p_info"><span>可预览</span><i class="fa fa-caret-down" style="margin-left: 10px;"></i></div>									</div>
+									<div class="file_per_close">
+										<i class="fa fa-close"></i>
+									</div>
+								</li>
+								<li class="file_per_c">
+									<img class="file_per_hp" src="../../img/avatar.jpg" style="vertical-align:top;"/>
+									<div class="file_per_intro">
+										<div class="file_per_name">张三(我)</div>
+										<div class="file_per_p_info"><span>可预览</span><i class="fa fa-caret-down" style="margin-left: 10px;"></i></div>
+									</div>
+									<div class="file_per_close">
+										<i class="fa fa-close"></i>
+									</div>
+								</li>
+							</ul>
+							<ul class="file_per_menu">
+								<li class="file_per_menu_item">管理员</li>
+								<li class="file_per_menu_item">可预览，可下载</li>
+								<li class="file_per_menu_item">可预览，可上传</li>
+								<li class="file_per_menu_item">只可上传</li>
+								<li class="file_per_menu_item">只可预览</li>
+								<li class="file_per_menu_item">禁止访问</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+<script>
+	var type = "list";
+		$(".right-wrap").delegate(".wrapper .btn-group a","click",function(){
+			$('.wrapper .btn-group a').removeClass('active');
+			type = $(this).attr('type');
+			initFileList();
+			$(this).addClass('active');
+		});
+	function initFileList(){
+		var fileListsT = {
+			status: '',
+			fileList:[{
+				getIcon: 't-folder',
+				getIconBg: 'icon-folder',
+				name: '文档.mp3',
+				calculate: '1项',
+				iconNumClass: 'share',
+				hasSync: '',
+				hasMark: '',
+				hasLink: '',
+				hasDownload: '',
+				fmttime: '2016-08-17 22:55:14',
+				id:1,
+			},{
+				getIcon: 't-folder',
+				getIconBg: 'icon-folder',
+				name: '文档.pptx',
+				calculate: '1项',
+				iconNumClass: 'share',
+				hasSync: '',
+				hasMark: '',
+				hasLink: '',
+				hasDownload: '',
+				fmttime: '2016-08-17 22:55:14',
+				id:2,
+			},{
+				getIcon: 't-folder',
+				getIconBg: 'icon-folder',
+				name: '文档.png',
+				calculate: '1项',
+				iconNumClass: 'share',
+				hasSync: '',
+				hasMark: '',
+				hasLink: '',
+				hasDownload: '',
+				fmttime: '2016-08-17 22:55:14',
+				id:3,
+			}]
+		};
+		var fileListDom = "";
+		if(type == "list"){  // 列表模式
+			fileListDom = template('file-list', fileListsT);
+			$('.filePanel').removeClass('thumb-list');
+		}
+		else if(type == "group"){  // 图标模式
+			fileListDom = template('file-thumb-list', fileListsT);
+			$('.filePanel').addClass('thumb-list');
+		}
+		$('.filePanel .file-list').html(fileListDom);
+	}
+	initFileList();
+</script>

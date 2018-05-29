@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>职位需求描述</title>
+		
+		<style type="text/css">
+		    .body_b{
+		    	background-color: #F0F3F4;
+		    }
+		    .div_sif{
+		    	text-align: center;
+		    }
+		</style>
+	</head>
+	<body  class="body_b">
+		<div class="div_sif">
+		<textarea style="height: 250px;width:450px;"  id="copy_xqiuremark"></textarea>
+		</div>
+	<!--	<script type="text/javascript" src="../../../js/lib/jquery.js" ></script>-->
+		<script type="text/javascript">
+		   var iframe = parent.document.getElementById("home_iframe").contentWindow;
+			function copyxuqiu(){
+				var copy_xqiuremark=document.getElementById("copy_xqiuremark").value;
+				iframe.copyvalue(copy_xqiuremark);
+				//关闭窗口
+				 parent.layer.closeAll();
+			}
+		</script>
+	</body>
+</html>
